@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Транскрибування</title>
+	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/b7b4fab86aae1989c2bfad6b83b637cddfcd08a1_full.jpg">
+	<link rel="stylesheet" type="text/css" href="shared-dark.css">
+	<style>
+		:root { --tab-height: 0em; }
+		body > a:first-of-type {
+			float: right;
+			display: inline-block;
+			margin-top: 1em; margin-left: 2em;
+			padding: 0.5em;
+			box-sizing: border-box;
+			background: var(--button);
+			color: var(--text-color);
+			font-weight: bold;
+			border-radius: 0.5em;
+			transition: .2s ease;
+		}
+		body > a:first-of-type:hover { background: var(--button-light); text-decoration: none; }
+		/*h3 { background: var(--special2); }*/
+		h4 { font-style: italic; }
+		table {
+			box-sizing: border-box;
+			float: right;
+			margin: 1em; margin-top: 0;
+			text-align: center;
+		}
+		table[lang], #ipa, #zh { font-size: smaller; }
+		th, td { padding: 3px; }
+		p { margin: 0.5em 0; }
+		p:first-of-type, p:nth-of-type(2) { font-style: italic; }
+		p:first-of-type { font-weight: bold; }
+		p b:first-child, .initial { font-size: larger; }
+
+		#ipa { width: calc(100% - 2em); }
+		#ipa th { font-size: smaller; }
+		#ipa td {
+			width: 48px;
+			font-family: 'Noto Serif', 'Consolas', monospace;
+		}
+		#zh th {
+			font-weight: normal;
+			font-family: "Consolas", monospace;
+		}
+
+		.b { border-right: 0; }
+		.e { border-left: 0; }
+		.n { background: var(--body-light); }
+		.initial::after {
+			content: ",";
+			font-family: 'Merriweather', 'Noto Serif', serif;
+		}
+		.initial:last-of-type::after, .initial.fl::after { content: ":"; } /* fl = forced last */
+	</style>
+	<script>
+		function switchLang() {
+			const thSpanList = document.querySelectorAll("#ipa th span");
+			for (let i = 0; i < thSpanList.length; i++) { thSpanList[i].classList.toggle("hidden"); }
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<a href="/" title="Головна сторінка"><img></a>
+		<a href="ut.html">Переклади ігор Paradox</a>
+		<a href="transcript.html">Транскрибування</a>
+		<!--<a href="/lyr">Тексти пісень</a>--><br>
+	</header>
+	<h1>Транскрибування іноземних слів</h1>
+	<!--<a href="toponyms.html">Перейти до мапи топонімів</a>-->
+	<p>Усяка мова має свої обмеження. Українська&nbsp;— не виняток; традиційне транскрибування, як повелося, багато де неоднозначне та повне неточностей.<br>
+	З цієї причини я вирішив дещо воднозначити ці проблеми принаймні для себе.</p>
+	<p>Сторінка буде доповнюватися з часом.</p>
+	<h2>Довідкова таблиця <abbr title="Міжнародний фонетичний алфавіт">МФА</abbr></h2><hr>
+	<table id="ipa">
+		<tr>
+			<th rowspan="2" onclick="switchLang()"></th>
+			<th colspan="5"><span>Губні</span><span class="hidden">Labial</span></th>
+			<th colspan="10"><span>Зубні</span><span class="hidden">Coronal</span></th>
+			<th colspan="5"><span>Дорсальні</span><span class="hidden">Dorsal</span></th>
+			<th colspan="4"><span>Ларинґальні</span><span class="hidden">Laryngeal</span></th>
+		</tr>
+		<tr>
+			<th colspan="2"><span>Губно-губні</span><span class="hidden">Bi&#173;labial</span></th>
+			<th colspan="2"><span>Губно-зубні</span><span class="hidden">Labio&#173;dental</span></th>
+			<th colspan="2"><span>Язик.-зубні</span><span class="hidden">Linguo&#173;labial</span></th>
+			<th colspan="2"><span>Зубні</span><span class="hidden">Dental</span></th>
+			<th colspan="2"><span>Ясенні</span><span class="hidden">Alveolar</span></th>
+			<th colspan="2"><span>Шиплячі</span><span class="hidden">Post&#173;alveolar</span></th>
+			<th colspan="2"><span>Ретро&#173;флексні</span><span class="hidden">Retro&#173;flex</span></th>
+			<th colspan="2"><span>Пала&#173;тальні</span><span class="hidden">Palatal</span></th>
+			<th colspan="2"><span>Велярні</span><span class="hidden">Velar</span></th>
+			<th colspan="2"><span>Увулярні</span><span class="hidden">Uvular</span></th>
+			<th colspan="2"><span>Фарин&#173;ґальні/епі&#173;ґлот&#173;тальні</span><span class="hidden">Pharyn&#173;geal/epi&#173;glottal</span></th>
+			<th colspan="2"><span>Ґлот&#173;тальні</span><span class="hidden">Glottal</span></th>
+		</tr>
+		<tr>
+			<th><span>Носові</span><span class="hidden">Nasal</span></th>
+			<td class="b">m&#805;</td><td class="e">m</td>
+			<td class="b"></td><td class="e">&#625;</td>
+			<td class="b"></td><td class="e">n&#828;</td>
+			<td class="b"></td><td class="b e"></td>
+			<td class="b e">n&#805;</td><td class="b e">n</td>
+			<td class="b e"></td><td class="e"></td>
+			<td class="b">&#627;&#778;</td><td class="e">&#627;</td>
+			<td class="b">&#626;&#778;</td><td class="e">&#626;</td>
+			<td class="b">&eng;&#778;</td><td class="e">&eng;</td>
+			<td class="b"></td><td class="e">&#628;</td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+		</tr>
+		<tr>
+			<th><span>Проривні</span><span class="hidden">Plosive</span></th>
+			<td class="b">p</td><td class="e">b</td>
+			<td class="b">p&#810;</td><td class="e">b&#810;</td>
+			<td class="b">t&#828;</td><td class="e">d&#828;</td>
+			<td class="b"></td><td class="b e"></td>
+			<td class="b e">t</td><td class="b e">d</td>
+			<td class="b e"></td><td class="e"></td>
+			<td class="b">&#648;</td><td class="e">&#598;</td>
+			<td class="b">c</td><td class="e">&#607;</td>
+			<td class="b">k</td><td class="e">&#609;</td>
+			<td class="b">q</td><td class="e">&#610;</td>
+			<td class="b">&#673;</td><td class="e n"></td>
+			<td class="b">&#660;</td><td class="e n"></td>
+		</tr>
+		<tr>
+			<th><span>Сибілянтні фрикативи</span><span class="hidden">Sibilant fricative</span></th>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b"></td><td class="b e"></td>
+			<td class="b e">s</td><td class="e">z</td>
+			<td class="b">&#643;</td><td class="e">&#658;</td>
+			<td class="b">&#642;</td><td class="e">&#656;</td>
+			<td class="b">&#597;</td><td class="e">&#657;</td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+		</tr>
+		<tr>
+			<th><span>Несибілянтні фрикативи</span><span class="hidden">Non-sibilant fricative</span></th>
+			<td class="b">&#632;</td><td class="e" style="border-bottom: none;">&beta;</td>
+			<td class="b">f</td><td class="e">v</td>
+			<td class="b">&theta;&#828;</td><td class="e" style="border-bottom: none;">&eth;&#828;</td>
+			<td class="b">&theta;</td><td class="e" style="border-bottom: none;">&eth;</td>
+			<td class="b">θ̠</td><td class="e">ð̠</td>
+			<td class="b">ɹ̠̊&#724;</td><td class="e">ɹ̠&#724;</td>
+			<td class="b">ɻ̊&#724;</td><td class="e">ɻ&#724;</td>
+			<td class="b">&ccedil;</td><td class="e">ʝ</td>
+			<td class="b">x</td><td class="e">ɣ</td>
+			<td class="b">χ</td><td class="e" style="border-bottom: none;">ʁ</td>
+			<td class="b">ħ</td><td class="e" style="border-bottom: none;">ʕ</td>
+			<td class="b">h</td><td class="e">ɦ</td>
+		</tr>
+		<tr>
+			<th><span>Апроксиманти</span><span class="hidden">Approximant</span></th>
+			<td class="b"></td><td class="e" style="border-top: none;"></td>
+			<td class="b"></td><td class="e">&#651;</td>
+			<td class="b"></td><td class="e" style="border-top: none;"></td>
+			<td class="b"></td><td class="b e" style="border-top: none;"></td>
+			<td class="b e"></td><td class="b e">&#633;</td>
+			<td class="b e"></td><td class="e"></td>
+			<td class="b"></td><td class="e">&#635;</td>
+			<td class="b"></td><td class="e">j</td>
+			<td class="b"></td><td class="e">&#624;</td>
+			<td class="b"></td><td class="e" style="border-top: none;"></td>
+			<td class="b"></td><td class="e" style="border-top: none;"></td>
+			<td class="b"></td><td class="e">ʔ̞</td>
+		</tr>
+		<tr>
+			<th><span>Одноударні</span><span class="hidden">Tap/flap</span></th>
+			<td class="b"></td><td class="e">&#11377;&#799;</td>
+			<td class="b"></td><td class="e">&#11377;</td>
+			<td class="b"></td><td class="e">ɾ̼</td>
+			<td class="b"></td><td class="b e"></td>
+			<td class="b e">&#638;&#805;</td><td class="b e">&#638;</td>
+			<td class="b e"></td><td class="e"></td>
+			<td class="b">&#637;&#778;</td><td class="e">&#637;</td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b n"></td><td class="e n">ɡ̆</td>
+			<td class="b"></td><td class="e">ɢ̆</td>
+			<td class="b"></td><td class="e">ʡ̆</td>
+			<td class="b n"></td><td class="e n"></td>
+		</tr>
+		<tr>
+			<th><span>Дрижачі</span><span class="hidden">Trill</span></th>
+			<td class="b">&#665;&#805;</td><td class="e">&#665;</td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b"></td><td class="b e"></td>
+			<td class="b e">r&#805;</td><td class="b e">r</td>
+			<td class="b e"></td><td class="e"></td>
+			<td class="b">&#637;&#778;r&#805;</td><td class="e">&#637;r</td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b">&#640;&#805;</td><td class="e">&#640;</td>
+			<td class="b">&#668;</td><td class="e">&#674;</td>
+			<td class="b n"></td><td class="e n"></td>
+		</tr>
+		<tr>
+			<th><span>Бокові фрикативи</span><span class="hidden">Lateral fricative</span></th>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b"></td><td class="b e"></td>
+			<td class="b e">&#620;</td><td class="b e">&#622;</td>
+			<td class="b e"></td><td class="e"></td>
+			<td class="b">&#42894;</td><td class="e">&#621;&#724;</td>
+			<td class="b">𝼆</td><td class="e">ʎ̝</td>
+			<td class="b">𝼄</td><td class="e">ʟ̝</td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+		</tr>
+		<tr>
+			<th><span>Бокові апроксиманти</span><span class="hidden">Lateral approximant</span></th>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b"></td><td class="b e"></td>
+			<td class="b e"></td><td class="b e">l</td>
+			<td class="b e"></td><td class="e"></td>
+			<td class="b"></td><td class="e">&#621;</td>
+			<td class="b"></td><td class="e">ʎ</td>
+			<td class="b"></td><td class="e">ʟ</td>
+			<td class="b"></td><td class="e">ʟ̠</td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+		</tr>
+		<tr>
+			<th><span>Бокові одноударні</span><span class="hidden">Lateral tap/flap</span></th>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b"></td><td class="b e"></td>
+			<td class="b e">ɺ&#805;</td><td class="b e">ɺ</td>
+			<td class="b e"></td><td class="e"></td>
+			<td class="b">𝼈̥</td><td class="e">𝼈</td>
+			<td class="b"></td><td class="e">ʎ̆</td>
+			<td class="b"></td><td class="e">ʟ̆</td>
+			<td class="b"></td><td class="e"></td>
+			<td class="b n"></td><td class="e n"></td>
+			<td class="b n"></td><td class="e n"></td>
+		</tr>
+	</table>
+	<!--<h2>Транскрибування окремих звуків</h2><hr>
+	<h3>Голосні</h3>
+	<p><code class="initial">[æ]</code> Звук знаходиться між <b>⟨а⟩</b> й <b>⟨е⟩</b> (<i>неоднозначно</i>).</p>
+	<p><code class="initial">[ɶ]</code> <code class="initial">[&#248;]</code> <b>⟨е⟩</b> (<i>зручне рос.</i> <b>⟨ё⟩</b>).</p>
+	<p><code class="initial">[ʏ]</code> <code class="initial">[y]</code> <b>⟨у⟩</b> на початку слова, якщо в оригіналі перед голосним немає «<i>silent <b>H</b></i>» (тоді ⟨<b>г</b>+<b>ю</b>⟩). <b>⟨ю⟩</b> після приголосних. <b>⟨й⟩</b> після голосних.</p>
+	<p><code class="initial fl">[&#601;]</code> Оскільки <code>[&#601;]</code> здебільшого є редукованим голосним, у залежності від контексту, але здебільшого як <b>⟨е⟩</b>.</p>
+	<h3>Приголосні</h3>
+	<p><big><code>[l]</code> у європейських мовах:</big> Питання стосується пом'якшення звуку <code>[l]</code> в іноземних словах.<br><b>⟨л⟩</b> тверде*.</p>
+	<p><code class="initial">[ɡ]</code> Завжди <b>⟨ґ⟩</b>, крім <i>усталених слів</i>.</p>
+	<p><code class="initial">[h]</code> <b>⟨г⟩</b>, але <b>⟨х⟩</b> після глухого приголосного.</p>
+	<ul><p><code class="initial fl">[ʰ]</code> Однаково з <code>[h]</code>, але придих відображається не в усіх мовах.</p></ul>
+	<p><code class="initial">[w]</code> <b>⟨у⟩</b>, але <b>⟨в⟩</b>, якщо:</p>
+	<ul>
+		<li>перед голосними <b>І</b> <i>(та не після голосного)</i> й <b>У</b>;</li>
+		<li>після <b>К</b>*;</li>
+		<li>між <b>Д</b> та голосним*.</li>
+	</ul>
+	<p><code class="initial">[&#597;]</code> <code class="initial">[&#657;]</code> Звуки знаходиться приблизно між ⟨сь⟩/⟨зь⟩ та ⟨шь⟩/⟨жь⟩. Перевага віддається ⟨шь⟩/⟨жь⟩.</p>
+	<p><code class="initial">[c]</code> <code class="initial">[ɟ]</code> Звуки знаходиться приблизно між ⟨кь⟩/⟨ґь⟩ та ⟨ть⟩/⟨дь⟩. Перевага віддається ⟨ть⟩/⟨дь⟩.</p>-->
+	<!--<h2>Транскрибування мов</h2><hr>-->
+	<h2>Китайська</h2><hr>
+	<table id="zh" title="1. Академічна система&#10;2. Піньїнь&#10;3. Уейда–Джайлза&#10;4. Чесько-словацька система">
+		<tr>
+			<th>/m/</th><td>м</td><td colspan="3">m</td>
+			<th>/n/</th><td>нь</td><td colspan="3">n</td>
+			<th></th><td colspan="4"></td>
+			<th></th><td colspan="4"></td>
+			<th>/ŋ/</th><td>н</td><td colspan="3">ng</td>
+		</tr>
+		<tr>
+			<th>/pʰ/</th><td>п</td><td>p</td><td>p῾</td><td>pch</td>
+			<th>/tʰ/</th><td>т</td><td>t</td><td>t῾</td><td>tch</td>
+			<th></th><td colspan="4"></td>
+			<th></th><td colspan="4"></td>
+			<th>/kʰ/</th><td>к</td><td>k</td><td>k῾</td><td>kch</td>
+		</tr>
+		<tr>
+			<th>/p/</th><td>б</td><td>b</td><td colspan="2">p</td>
+			<th>/t/</th><td>д</td><td>d</td><td colspan="2">t</td>
+			<th></th><td colspan="4"></td>
+			<th></th><td colspan="4"></td>
+			<th>/k/</th><td>ґ</td><td>g</td><td colspan="2">k</td>
+		</tr>
+		<tr>
+			<th></th><td colspan="4"></td>
+			<th>/t͡sʰ/</th><td>ц</td><td>c</td><td>ts῾</td><td>cch</td>
+			<th>/ʈ͡ʂʰ/</th><td>ч</td><td>ch</td><td>ch῾</td><td>čch</td>
+			<th>[t͡ɕʰ]</th><td>ць</td><td>q</td><td>ch῾</td><td>ťch</td>
+			<th></th><td colspan="4"></td>
+		</tr>
+		<tr>
+			<th></th><td colspan="4"></td>
+			<th>/t͡s/</th><td>цз</td><td>z</td><td>ts</td><td>c</td>
+			<th>/ʈ͡ʂ/</th><td>чж</td><td>zh</td><td>ch</td><td>č</td>
+			<th>[t͡ɕ]</th><td>цзь</td><td>j</td><td>ch</td><td>ť</td>
+			<th></th><td colspan="4"></td>
+		</tr>
+		<tr>
+			<th>/f/</th><td>ф</td><td colspan="3">f</td>
+			<th>/s/</th><td>с</td><td colspan="3">s</td>
+			<th>/ʂ/</th><td>ш</td><td colspan="2">sh</td><td>š</td>
+			<th>[ɕ]</th><td>сь</td><td>x</td><td>hs</td><td>š</td>
+			<th>/x/<br><small>([h ~ x])</small></th><td>х</td><td colspan="2">h</td><td>ch</td>
+		</tr>
+		<tr>
+			<th></th><td colspan="4"></td>
+			<th>/l/</th><td>л</td><td colspan="3">l</td>
+			<th>/ʐ/<br><small>([ʐ ~ ɻ])</small></th><td>ж</td><td>r</td><td>j</td><td>ž</td>
+			<th></th><td colspan="4"></td>
+			<th></th><td colspan="4"></td>
+		</tr>
+	</table>
+	<p><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D1%85_%D1%81%D0%BB%D1%96%D0%B2_%D1%82%D0%B0_%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D1%85_%D0%BD%D0%B0%D0%B7%D0%B2_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D0%BC%D0%BE%D0%B2%D0%BE%D1%8E">Академічна система</a>.</p>
+	<br><br><br><br><br><br><br><br>
+	<h2>Португальська : TODO</h2><hr>
+	<p>Фонетична передача слів, будь то бразильська чи португальська.</p>
+	<p>Назалізовані голосні пишуться з <b>⟨н⟩</b> після них.</p>
+	<h3>Португальська (європейська)</h3>
+	<p><b>A</b> передаються як <b>⟨а⟩</b> (нагол. <code>[a]</code>, ненагол. <code>[ɐ]</code>*).</p>
+	<p><b>E</b> наголошені передаються як <b>⟨е⟩</b> <code>[ɛ]</code>, ненаголошені&nbsp;— як <b>⟨<abbr title="Ближче до рос. Ы">и</abbr>⟩</b> <code>[ɨ]</code> крім у кінці слова (<b>⟨е⟩</b>).</p>
+	<p><b>I</b> передаються як <b>⟨і⟩</b> <code>[i]</code>.</p>
+	<p><b>O</b> наголошені передаються як <b>⟨о⟩</b>, ненаголошені&nbsp;— як <b>⟨у⟩</b> <code>[u]</code>.</p>
+	<p><b>U</b> передаються як <b>⟨у⟩</b> <code>[u]</code>.</p>
+	<h3>Бразильська</h3>
+	<p><b>E</b> передаються як <b>⟨е⟩</b> <code>[e]</code>, але ненаголошені в останньому складі&nbsp;— як <b>⟨и⟩</b> <code>[ɪ]</code>.</p>
+	<p><b>O</b> передаються як <b>⟨о⟩</b> <code>[o]</code>, але в останньому складі&nbsp;— як <b>⟨у⟩</b> <code>[ʊ]</code>.</p>
+	<h2>Німецька : TODO</h2><hr>
+	<p><b>EI</b>&nbsp;— <b>⟨ай⟩</b>.</p>
+	<p><b>ÄU, EU</b>&nbsp;— <b>⟨ой⟩</b>.</p>
+	<p><b>L</b> <b>не</b> пом'якшується: <i>Лайпциґ</i> від <i lang="de">Leipzig</i>, <i>Фатерланд</i> від <i lang="de">Vaterland</i> тощо.</p>
+	<h2>Японська</h2><hr>
+	<table lang="jp">
+		<tr>
+			<td>あ / ア · а</td>
+			<td>い / イ · і</td>
+			<td>う / ウ · у</td>
+			<td>え / エ · е</td>
+			<td>お / オ · о</td>
+			<td>や / ヤ · я</td>
+			<td>ゆ / ユ · ю</td>
+			<td>よ / ヨ · йо</td>
+		</tr>
+		<tr>
+			<td>か / カ · ка</td>
+			<td>き / キ · кі</td>
+			<td>く / ク · ку</td>
+			<td>け / ケ · ке</td>
+			<td>こ / コ · ко</td>
+			<td>きゃ / キャ · кя</td>
+			<td>きゅ / キュ · кю</td>
+			<td>きょ / キョ · кьо</td>
+		</tr>
+		<tr>
+			<td>さ / サ · са</td>
+			<td>し / シ · ші</td>
+			<td>す / ス · су</td>
+			<td>せ / セ · се</td>
+			<td>そ / ソ · со</td>
+			<td>しゃ / シャ · шя</td>
+			<td>しゅ / シュ · шю</td>
+			<td>しょ / ショ · шьо</td>
+		</tr>
+		<tr>
+			<td>た / タ · та</td>
+			<td>ち / チ · чі</td>
+			<td>つ / ツ · цу</td>
+			<td>て / テ · те</td>
+			<td>と / ト · то</td>
+			<td>ちゃ / チャ · чя</td>
+			<td>ちゅ / チュ · чю</td>
+			<td>ちょ / チョ · чьо</td>
+		</tr>
+		<tr>
+			<td>な / ナ · на</td>
+			<td>に / ニ · ні</td>
+			<td>ぬ / ヌ · ну</td>
+			<td>ね / ネ · не</td>
+			<td>の / ノ · но</td>
+			<td>にゃ / ニャ · ня</td>
+			<td>にゅ / ニュ · ню</td>
+			<td>にょ / ニョ · ньо</td>
+		</tr>
+		<tr>
+			<td>は / ハ · ха</td>
+			<td>ひ / ヒ · хі</td>
+			<td>ふ / フ · фу</td>
+			<td>へ / ヘ · хе</td>
+			<td>ほ / ホ · хо</td>
+			<td>ひゃ / ヒャ · хя</td>
+			<td>ひゅ / ヒュ · хю</td>
+			<td>ひょ / ヒョ · хьо</td>
+		</tr>
+		<tr>
+			<td>ま / マ · ма</td>
+			<td>み / ミ · мі</td>
+			<td>む / ム · му</td>
+			<td>め / メ · ме</td>
+			<td>も / モ · мо</td>
+			<td>みゃ / ミャ · мя</td>
+			<td>みゅ / ミュ · мю</td>
+			<td>みょ / ミョ · мьо</td>
+		</tr>
+		<tr>
+			<td>ら / ラ · ра</td>
+			<td>り / リ · рі</td>
+			<td>る / ル · ру</td>
+			<td>れ / レ · ре</td>
+			<td>ろ / ロ · ро</td>
+			<td>りゃ / リャ · ря</td>
+			<td>りゅ / リュ · рю</td>
+			<td>りょ / リョ · рьо</td>
+		</tr>
+		<tr>	 
+			<td>わ / ワ · ва</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>を / ヲ · о</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr><td colspan="8">ん / ン · н</td></tr>
+		<tr>
+			<td>が / ガ · ґа</td>
+			<td>ぎ / ギ · ґі</td>
+			<td>ぐ / グ · ґу</td>
+			<td>げ / ゲ · ґе</td>
+			<td>ご / ゴ · ґо</td>
+			<td>ぎゃ / ギャ · ґя</td>
+			<td>ぎゅ / ギュ · ґю</td>
+			<td>ぎょ / ギョ · ґьо</td>
+		</tr>
+		<tr>
+			<td>ざ / ザ · дза</td>
+			<td>じ / ジ · джі</td>
+			<td>ず / ズ · дзу</td>
+			<td>ぜ / ゼ · дзе</td>
+			<td>ぞ / ゾ · дзо</td>
+			<td>じゃ / ジャ · джя</td>
+			<td>じゅ / ジュ · джю</td>
+			<td>じょ / ジョ · джьо</td>
+		</tr>
+		<tr>
+			<td>だ / ダ · да</td>
+			<td>ぢ / ヂ · джі</td>
+			<td>づ / ヅ · дзу</td>
+			<td>で / デ · де</td>
+			<td>ど / ド · до</td>
+			<td>ぢゃ / ヂャ · джя</td>
+			<td>ぢゅ / ヂュ · джю</td>
+			<td>ぢょ / ヂョ · джьо</td>
+		</tr>
+		<tr>
+			<td>ば / バ · ба</td>
+			<td>び / ビ · бі</td>
+			<td>ぶ / ブ · бу</td>
+			<td>べ / ベ · бе</td>
+			<td>ぼ / ボ · бо</td>
+			<td>びゃ / ビャ · бя</td>
+			<td>びゅ / ビュ · бю</td>
+			<td>びょ / ビョ · бьо</td>
+		</tr>
+		<tr>
+			<td>ぱ / パ · па</td>
+			<td>ぴ / ピ · пі</td>
+			<td>ぷ / プ · пу</td>
+			<td>ぺ / ペ · пе</td>
+			<td>ぽ / ポ · по</td>
+			<td>ぴゃ / ピャ · пя</td>
+			<td>ぴゅ / ピュ · пю</td>
+			<td>ぴょ / ピョ · пьо</td>
+		</tr>
+	</table>
+	<p><a href="https://uk.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%BE-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%86%D1%96%D1%97_%D1%82%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BB%D1%96%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%97#%D0%9D%D0%B0%D0%BA%D0%B0%D0%B4%D0%B7%D0%B0%D0%B2%D0%B0_(2009)">Система Накадзави</a>, але з <b>⟨джь⟩</b> замість <b>⟨дзь⟩</b>.</p>
+	<b>Особливості:</b>
+	<ul>
+		<li>довгі голосні можуть позначатися подвоєнням;</li>
+		<li>подвоєні приголосні записуються двома літерами;</li>
+		<li>дифтонґи あい <code>/ai/</code>, えい <code>/ei/</code>, おい <code>/oi/</code> записуються як <b>⟨ай⟩</b>, <b>⟨ей⟩</b>, <b>⟨ой⟩</b>;</li>
+		<li>голосні після ん <code>/ɴ/</code> відділені апострофом;</li>
+		<li>ん <code>/ɴ/</code> перед <i>б</i>, <i>п</i>, <i>м</i> записується як <b>⟨м⟩</b>;</li>
+		<li><code>/h/</code> в реалізації <code>[h]</code> та <code>[ç]</code> передається як <b>⟨х⟩</b>, попри правило про передачу <code>[h]</code> як <b>⟨г⟩</b>.</li>
+	</ul>
+	<b>Топоніми-винятки:</b>
+	<ul>
+	    <li><i>Токіо</i> (замість сист. і фонет. <i>Токьо</i>);</li>
+	    <li><i>Кіото</i> (замість сист. і фонет. <i>Кьото</i>);</li>
+	    <li><i>Йокогама</i> (замість сист. <i>Йокохама</i>).</li>
+	</ul>
+	<br><br><br>
+	<h2>Корейська</h2><hr>
+	<p><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D0%B2%D0%B8%D1%87%D0%B0">Адаптована система Концевича</a>.</p>
+	<b>Топоніми-винятки:</b>
+	<ul>
+	    <li><i>Сеул</i> (замість сист. <i>Соул</i>);</li>
+	    <li><i>Пхен'ян</i> (замість сист. <i>Пхьон'ян</i> і трад. <i>Пхеньян</i>).</li>
+	</ul>
+	<h2>Польська : TODO</h2><hr>
+	<p><b>Ą</b> <code>/ɔn/</code>&nbsp;— <b>⟨он⟩</b> (<b>⟨ом⟩</b> перед <i>B</i>, <i>P</i>).</p>
+	<p><b>Ć</b> <code>[t͡ɕ]</code>&nbsp;— <b>⟨ць⟩</b>.</p>
+	<p><b>DŹ</b> <code>[d͡ʑ]</code>&nbsp;— <b>⟨дзь⟩</b>.</p>
+	<p><b>Ę</b> <code>/ɛn/</code>&nbsp;— <b>⟨ен⟩</b> (<b>⟨ем⟩</b> перед <i>B</i>, <i>P</i>).</p>
+	<p><b>Ś</b> <code>[ɕ]</code>&nbsp;— <b>⟨сь⟩</b>.</p>
+	<p><b>Ź</b> <code>[ʑ]</code>&nbsp;— <b>⟨зь⟩</b>.</p>
+	<h2>Нідерландська : TODO</h2><hr>
+	<p>Фонетична передача слів.</p>
+	<h2>Фінська : TODO</h2><hr>
+	<p><b>Ä</b>&nbsp;— <b>⟨е⟩</b>.</p>
+	<p><b>L</b> пом'якшується тільки перед приголосним.*</p>
+</body>
+</html>

@@ -1,0 +1,155 @@
+:root {
+	--body: #222;
+	--body-50: #2228;
+	--body-light: #444;
+	--border: #BBB;
+	--text-color: white;
+	--link-color: wheat;
+	--heading-color: lightsteelblue /*skyblue*/;
+	--special: silver;
+	--special2: grey;
+	--header-bg: #000;
+	--button: #666;
+	--button-dark: #444;
+	--button-darker: #222;
+	--button-light: #888;
+
+	--nav-height: 4em;
+	--header-int: 0.25em;
+	--tab-height: calc(2em + 4px);
+	--header-height: calc(var(--nav-height) + var(--header-int) + var(--tab-height));
+}
+::selection { background: /*#D37607*/ darkolivegreen; color: var(--text-color); }
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+	position: absolute; top: var(--header-height);
+	margin: 0;
+	padding: 1em;
+	width: calc(100% - 2em);
+	background: var(--body);
+	color: var(--text-color);
+	font-family: "Merriweather", "Noto Serif", serif;
+}
+a { color: var(--link-color); text-decoration: none; }
+a:hover { text-decoration: underline; }
+abbr[title] { text-decoration-style: solid; }
+code { font-weight: normal; font-family: "Consolas", monospace; }
+header {
+	z-index: 1;
+	position: fixed; top: 0; left: 0;
+	box-sizing: border-box;
+	width: 100%; height: var(--header-height);
+	box-shadow: 0 0 24px black;
+	background: var(--header-bg);
+}
+header > a, header input[type=radio] + label {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+	background: var(--button-dark);
+	font-weight: bold;
+	transition: .2s ease;
+}
+header > a {
+	height: var(--nav-height);
+	text-transform: uppercase;
+	color: var(--text-color);
+}
+header > a:hover, header input[type=radio] + label:hover { background: var(--button); }
+header > a:hover { text-decoration: none; }
+header > a:active, header input[type=radio] + label:active, header input[type=radio]:checked + label { background: var(--button-darker); }
+header > a:first-of-type {
+	padding: 0.5em;
+	width: var(--nav-height);
+}
+header > a:first-of-type img {
+	content: url("https://avatars.akamai.steamstatic.com/b7b4fab86aae1989c2bfad6b83b637cddfcd08a1_full.jpg"); transition: .2s ease;
+	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid var(--special);
+	border-radius: 50%;
+	animation: rotation/*-alt*/ 30s infinite linear;
+}
+header > a:first-of-type:hover img { filter: brightness(120%); }
+header > a:not(:first-of-type) {
+	margin-left: -4.5px;
+	padding: calc((var(--nav-height) - 20px) / 2) 1em;
+}
+header input[type=radio]:not([name=filter]) {
+	display: none;
+	position: absolute;
+}
+header input[type=radio] + label {
+	margin-top: var(--header-int); margin-right: -0.29%;
+	padding: 0.5em;
+	width: calc(100% / var(--tab-count)); height: var(--tab-height);
+	white-space: nowrap;
+	text-align: center;
+	cursor: pointer;
+}
+button {
+	padding: 6px 24px;
+	border: none;
+	background: var(--button);
+	color: var(--text-color);
+	font-family: "Merriweather", "Noto Serif", serif;
+	transition: .2s ease;
+}
+button:not(.noclick) { cursor: pointer; }
+button:hover:not(.game > div button, .noclick) { background: var(--button-light); }
+button:active:not(.game > div button, .noclick) { background: var(--button-dark); }
+h1 {
+	margin: 0;
+	text-align: center;
+}
+h2 { margin-bottom: 0; }
+h1, h2, h3, h4, h5, h6 { color: var(--heading-color); }
+table { border-spacing: 0; }
+table, th, td { border: 1px solid var(--border); }
+hr {
+	height: 2px;
+	border: none;
+	background: linear-gradient(to right, transparent, var(--special), transparent);
+}
+
+[title]:not(header *) { cursor: help; }
+
+.hidden { display: none; }
+.hoverable:hover { background: #FFF6; color: white; }
+
+div[style*="display:block!important"] { height: 0; }
+
+/* ANIMATION KEYFRAMES */
+@keyframes rotation {
+	from { rotate: 0deg; }
+	to { rotate: 360deg; }
+}
+@keyframes rotation-alt {
+	0% { rotate: 0deg; }
+	8% { rotate: 0deg; }
+	8.3333% { rotate: 30deg; }
+	16.3333% { rotate: 30deg; }
+	16.6667% { rotate: 60deg; }
+	24.6667% { rotate: 60deg; }
+	25% { rotate: 90deg; }
+	33% { rotate: 90deg; }
+	33.3333% { rotate: 120deg; }
+	41.3333% { rotate: 120deg; }
+	41.6667% { rotate: 150deg; }
+	49.6667% { rotate: 150deg; }
+	50% { rotate: 180deg; }
+	58% { rotate: 180deg; }
+	58.3333% { rotate: 210deg; }
+	66.3333% { rotate: 210deg; }
+	66.6667% { rotate: 240deg; }
+	74.6667% { rotate: 240deg; }
+	75% { rotate: 270deg; }
+	83% { rotate: 270deg; }
+	83.3333% { rotate: 300deg; }
+	91.3333% { rotate: 300deg; }
+	91.6667% { rotate: 330deg; }
+	99.6667% { rotate: 330deg; }
+	100% { rotate: 360deg; }
+}

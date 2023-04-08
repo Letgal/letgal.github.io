@@ -18,22 +18,24 @@
 			height: var(--nav-height);
 		}
 		header div label { display: block; }
+		h3 { margin-bottom: 0; }
 
+		.game > img, .game > div {
+			box-sizing: border-box;
+			height: 4em;
+			margin-top: 0.5em;
+			border-top: 1px solid var(--special2);
+		}
 		.game > img {
 			float: left;
-			box-sizing: border-box; width: 4em; height: 4em;
-			border: 1px solid var(--border);
-			border-top-left-radius: 0.5em; border-bottom-left-radius: 0.5em;
+			width: 4em;
 			background-color: var(--border);
 		}
-		.game > img:not(.ff), .game > div { margin-top: 1em; }
+		.game > img.ff { margin-top: 0; }
 		.game > div {
-			box-sizing: border-box; height: 4em;
 			margin-left: 4em;
 			padding: 0.5em;
-			border: 1px solid var(--border); border-left: 0;
-			border-top-right-radius: 0.5em; border-bottom-right-radius: 0.5em;
-			background: var(--button-dark);
+			background: linear-gradient(to bottom, var(--button-dark), transparent);
 		}
 		.game > div::first-line {
 			font-size: 1.2em;
@@ -216,7 +218,7 @@
 
 	<p style="margin-top: 0; text-align: center;"><i><b>WIP.</b> Ця сторінка буде доповнюватися й оновлюватися з часом.</i></p>
 	<h1>Українські переклади <i id="name"></i></h1>
-	<p><b>Примітка:</b> Справа перелічені доступні посилання на переклади.</p>
+	<p style="margin-bottom: 0;"><b>Примітка:</b> Справа перелічені доступні посилання на переклади.</p>
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game" style="display: none;">
@@ -251,8 +253,8 @@
 
 	<!--HEARTS OF IRON IV-->
 	<div id="hoi4" class="game" style="display: none;">
-		<h2>Переклади ванілли</h2><hr>
-		<img src="https://steamuserimages-a.akamaihd.net/ugc/2054239156212644695/17634DD25EFA6965547983A79D9CF1AE5FAE33CD/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" style="margin-top: 0.5em;"><div>
+		<h2>Переклади ванілли</h2>
+		<img src="https://steamuserimages-a.akamaihd.net/ugc/2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://t.me/Hoi4Pereklad/8" title="> Hearts of Ukraine 4"></a>
 			<a href="https://mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI"></a>
 			<a href="https://mods.paradoxplaza.com/mods/38710/Any"></a>
@@ -276,13 +278,13 @@
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2811220993" title="Для старішої версії"></a>
 			<i>ПУП СС</i> <abbr title="Підтримувані мови: російська">�</abbr>
 		</div>
-		<h2>Переклади модів</h2><hr>
-		<p>Переклади з позначкою <b><i>Vanilla</i></b> включені в <a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548">цей переклад</a>.</p>
+		<h2>Переклади модів</h2>
+		<p>Переклади з позначкою «<b style="color: lightgreen;">V</b>» включені в <a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548">цей переклад</a>.</p>
 		<a href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" style="border-top-left-radius: 6px; border-bottom-left-radius: 6px;">Колекція перекладів</a>
 		<a href="https://steamcommunity.com/workshop/filedetails/?id=2912380366" style="margin-left: -0.26em;">Посібник (&gt; <i>Letōn</i>)</a>
 		<a href="https://steamcommunity.com/workshop/filedetails/?id=2908646220" style="margin-left: -0.26em; border-top-right-radius: 6px; border-bottom-right-radius: 6px;">Посібник (&gt; <i>Feniks4897</i>)</a>
 		<h3>Total Conversions</h3>
-		<img class="ff" src="https://steamuserimages-a.akamaihd.net/ugc/1978799422474817186/5918FEA9360CB09ABA37EC2C814298B30826AF44/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
+		<img src="https://steamuserimages-a.akamaihd.net/ugc/1978799422474817186/5918FEA9360CB09ABA37EC2C814298B30826AF44/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://mods.paradoxplaza.com/mods/46206/Any"></a>
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2826209198"></a>
 			Kaiserreich <abbr title="Підтримувані мови: російська">�</abbr><br>
@@ -326,7 +328,7 @@
 			<i>TTTSHOK</i>
 		</div>
 		<h3>Nation Overhauls</h3>
-		<img class="ff" src="https://steamuserimages-a.akamaihd.net/ugc/2012581497125527224/94D24885B344425D83089F3BFD4EE0165A69CCA0/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
+		<img src="https://steamuserimages-a.akamaihd.net/ugc/2012581497125527224/94D24885B344425D83089F3BFD4EE0165A69CCA0/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://t.me/HeartsofUkraine4/125"></a>
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2928183602"></a>
 			The Road to 56 <abbr title="Підтримувані мови: англійська">�</abbr><br>
@@ -357,7 +359,7 @@
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2921455018"></a>
 			AnimeCountry [REDUX] <abbr title="Підтримувані мови: англійська">�</abbr><br>
 			<i>TTTSHOK</i>
-		</div><hr style="margin-top: 1em; margin-bottom: 0;">
+		</div><hr style="margin-bottom: 0;">
 		<img src="https://steamuserimages-a.akamaihd.net/ugc/1933762067823087505/CEBB5D23792519E3EE32EF767071A0091D2CF836/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2892791413"></a>
 			The Storm: A German Focus Tree Overhaul <abbr title="Підтримувані мови: англійська">�</abbr><br>
@@ -469,16 +471,16 @@
 		</div>
 		<img src="https://steamuserimages-a.akamaihd.net/ugc/2019339430644196700/F9ED0374D525712EF476F67F9E8AC10AA986C7E6/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2943610090"></a>
-			Listenbourg<br>
+			Listenbourg <abbr title="Підтримувані мови: англійська">�</abbr><br>
 			<i>TTTSHOK</i>
 		</div>
 		<img src="https://steamuserimages-a.akamaihd.net/ugc/2019339430627525871/BB0422CCDC789288A53ADFBF66E97EDD9FA46975/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2941910863"></a>
-			Пивная страна<br>
+			Пивная страна <abbr title="Підтримувані мови: англійська">�</abbr><br>
 			<i>TTTSHOK</i>
 		</div>
 		<h3>Content Expansions</h3>
-		<img class="ff" src="https://steamuserimages-a.akamaihd.net/ugc/2023841948347006685/9447CB61CB83178EE59B2E342E93851D51CFAB99/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
+		<img src="https://steamuserimages-a.akamaihd.net/ugc/2023841948347006685/9447CB61CB83178EE59B2E342E93851D51CFAB99/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2935436509"></a>
 			Espionage Reworked <abbr title="Підтримувані мови: англійська, російська">�</abbr><br>
 			<i>Godresky</i>
@@ -534,7 +536,7 @@
 			<i>VectorMS</i>
 		</div>
 		<h3>Minor Extensions</h3>
-		<img class="ff"><div>
+		<img><div>
 			<button title="Переклад включений у ваніллу">V</button>
 			Toolpack Without the Errors<br>
 			<i>Letōn</i>
@@ -655,7 +657,7 @@
 				<a href="https://steamcommunity.com/workshop/filedetails/?id=2888955964"></a>
 			</div>
 			<div><img src="https://avatars.cloudflare.steamstatic.com/f2fe571b2cdc2dbd850b5ec2267e59de0136e3bf_medium.jpg" title="> TEXA"><a href="https://steamcommunity.com/workshop/filedetails/?id=2943496666"></a></div>
-			Demand It <abbr title="Підтримувані мови:&#10;> dansk1fe & Dmytr0 Gaming: англійська">�</abbr><br>
+			Demand It! <abbr title="Підтримувані мови:&#10;> dansk1fe & Dmytr0 Gaming: англійська&#10;> TEXA: англійська, українська">�</abbr><br>
 		</div>
 		<img src="https://steamuserimages-a.akamaihd.net/ugc/1966413568081758521/F92886F6D916C48BCB0280BCE52388D00352CBC3/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://t.me/HeartsofUkraine4/55"></a>
@@ -671,8 +673,8 @@
 		</div>
 	</div>
 	<div id="ck3" class="game" style="display: none;">
-		<h2>Переклади ванілли</h2><hr>
-		<img class="ff"><div>
+		<h2>Переклади ванілли</h2>
+		<img><div>
 			<a href="https://crowdin.com/project/crusader-kings-iii-ukrainian/invite/public?show_welcome&d=da28c97a915bfad4c8dd29a0f1a643d61240946"></a>
 		</div>
 		<img><div>
@@ -683,8 +685,8 @@
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2870588115" title="Для 1.8"></a>
 			<i>EYELESS</i>
 		</div>
-		<h2>Переклади модів</h2><hr>
-		<img class="ff" src="https://steamuserimages-a.akamaihd.net/ugc/2035104110928692339/EABC767613BE819BEA4834665684C09B17E4EC39/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
+		<h2>Переклади модів</h2>
+		<img src="https://steamuserimages-a.akamaihd.net/ugc/2035104110928692339/EABC767613BE819BEA4834665684C09B17E4EC39/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"><div>
 			<a href="https://steamcommunity.com/workshop/filedetails/?id=2951315616"></a>
 			Galicia-Volhynia Overhaul<br>
 			<i>Zarays</i>

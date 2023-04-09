@@ -1,3 +1,4 @@
+<!-- ῾ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +6,10 @@
 	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
 	<link rel="stylesheet" type="text/css" href="shared-dark.css">
 	<style>
-		:root { --tab-height: 0em; }
+		:root {
+			--tab-height: 0em;
+			--header-int: 0em;
+		}
 		body > a:first-of-type {
 			float: right;
 			display: inline-block;
@@ -25,9 +29,9 @@
 			box-sizing: border-box;
 			float: right;
 			margin: 1em; margin-top: 0;
+			font-size: smaller;
 			text-align: center;
 		}
-		table[lang], #ipa, #zh { font-size: smaller; }
 		th, td { padding: 3px; }
 		p { margin: 0.5em 0; }
 		p:first-of-type, p:nth-of-type(2) { font-style: italic; }
@@ -40,19 +44,24 @@
 			width: 48px;
 			font-family: 'Noto Serif', 'Consolas', monospace;
 		}
-		#zh th {
-			font-weight: normal;
-			font-family: "Consolas", monospace;
-		}
 
+		.code {
+			font-weight: normal;
+			font-family: 'Consolas', monospace;
+		}
 		.b { border-right: 0; }
 		.e { border-left: 0; }
-		.n { background: var(--body-light); }
 		.initial::after {
 			content: ",";
 			font-family: 'Merriweather', 'Noto Serif', serif;
 		}
 		.initial:last-of-type::after, .initial.fl::after { content: ":"; } /* fl = forced last */
+		.akad, .kici, .piyi, .wagi, .czsk { border-left: 0; }
+		.akad { background: #6228; }
+		.kici { background: #6628; }
+		.piyi { background: #2628; }
+		.wagi { background: #2668; }
+		.czsk { background: #2268; }
 	</style>
 	<script>
 		function switchLang() {
@@ -70,7 +79,7 @@
 	</header>
 	<h1>Транскрибування іноземних слів</h1>
 	<!--<a href="toponyms.html">Перейти до мапи топонімів</a>-->
-	<p>Усяка мова має свої обмеження. Українська&nbsp;— не виняток; традиційне транскрибування, як повелося, багато де неоднозначне та повне неточностей.<br>
+	<p>Усяка мова має свої обмеження. Українська&nbsp;— не виняток; традиційне транскрибування, як повелося, повне неоднозначностей і неточностей.<br>
 	З цієї причини я вирішив дещо воднозначити ці проблеми принаймні для себе.</p>
 	<p>Сторінка буде доповнюватися з часом.</p>
 	<h2>Довідкова таблиця <abbr title="Міжнародний фонетичний алфавіт">МФА</abbr></h2><hr>
@@ -319,11 +328,11 @@
 			<th></th><td colspan="4"></td>
 		</tr>
 	</table>
-	<p><a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D1%85_%D1%81%D0%BB%D1%96%D0%B2_%D1%82%D0%B0_%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D1%85_%D0%BD%D0%B0%D0%B7%D0%B2_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D0%BC%D0%BE%D0%B2%D0%BE%D1%8E">Академічна система</a>.</p>
-	<br><br><br><br><br><br><br><br>
+	<p>Наразі перевага віддається <a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D1%85_%D1%81%D0%BB%D1%96%D0%B2_%D1%82%D0%B0_%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D1%85_%D0%BD%D0%B0%D0%B7%D0%B2_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D0%BC%D0%BE%D0%B2%D0%BE%D1%8E">академічній системі</a>.</p>
+	<br><br><br><br><br><br><br><br><br>
 	<h2>Португальська : TODO</h2><hr>
 	<p>Фонетична передача слів, будь то бразильська чи португальська.</p>
-	<p>Назалізовані голосні пишуться з <b>⟨н⟩</b> після них.</p>
+	<p>Назалізовані голосні пишуться з <b>⟨н⟩</b> після них, напр. <i lang="pt">são</i> <code>[sɐ̃w̃]</code>&nbsp;— «<i>сан</i>».</p>
 	<h3>Португальська (європейська)</h3>
 	<p><b>A</b> передаються як <b>⟨а⟩</b> (нагол. <code>[a]</code>, ненагол. <code>[ɐ]</code>*).</p>
 	<p><b>E</b> наголошені передаються як <b>⟨е⟩</b> <code>[ɛ]</code>, ненаголошені&nbsp;— як <b>⟨<abbr title="Ближче до рос. Ы">и</abbr>⟩</b> <code>[ɨ]</code> крім у кінці слова (<b>⟨е⟩</b>).</p>
@@ -481,29 +490,29 @@
 			<td>ぴょ / ピョ · пьо</td>
 		</tr>
 	</table>
-	<p><a href="https://uk.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%BE-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%86%D1%96%D1%97_%D1%82%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BB%D1%96%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%97#%D0%9D%D0%B0%D0%BA%D0%B0%D0%B4%D0%B7%D0%B0%D0%B2%D0%B0_(2009)">Система Накадзави</a>, але з <b>⟨джь⟩</b> замість <b>⟨дзь⟩</b>.</p>
+	<p>Наразі перевага віддається <a href="https://uk.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%BE-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%86%D1%96%D1%97_%D1%82%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BB%D1%96%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%97#%D0%9D%D0%B0%D0%BA%D0%B0%D0%B4%D0%B7%D0%B0%D0%B2%D0%B0_(2009)">системі Накадзави</a>, але з <b>⟨джь⟩</b> замість <b>⟨дзь⟩</b>.</p>
 	<b>Особливості:</b>
 	<ul>
-		<li>довгі голосні можуть позначатися подвоєнням;</li>
+		<li>довгі голосні <i>можуть</i> позначатися подвоєнням;</li>
 		<li>подвоєні приголосні записуються двома літерами;</li>
-		<li>дифтонґи あい <code>/ai/</code>, えい <code>/ei/</code>, おい <code>/oi/</code> записуються як <b>⟨ай⟩</b>, <b>⟨ей⟩</b>, <b>⟨ой⟩</b>;</li>
-		<li>голосні після ん <code>/ɴ/</code> відділені апострофом;</li>
-		<li>ん <code>/ɴ/</code> перед <i>б</i>, <i>п</i>, <i>м</i> записується як <b>⟨м⟩</b>;</li>
+		<li>дифтонґи <span lang="jp">あい</span> <code>/ai/</code>, <span lang="jp">えい</span> <code>/ei/</code>, <span lang="jp">おい</span> <code>/oi/</code> записуються як <b>⟨ай⟩</b>, <b>⟨ей⟩</b>, <b>⟨ой⟩</b>;</li>
+		<li>голосні після <span lang="jp">ん</span> <code>/ɴ/</code> відділені апострофом;</li>
+		<li><span lang="jp">ん</span> <code>/ɴ/</code> перед <i>б</i>, <i>п</i>, <i>м</i> записується як <b>⟨м⟩</b>;</li>
 		<li><code>/h/</code> в реалізації <code>[h]</code> та <code>[ç]</code> передається як <b>⟨х⟩</b>, попри правило про передачу <code>[h]</code> як <b>⟨г⟩</b>.</li>
 	</ul>
 	<b>Топоніми-винятки:</b>
 	<ul>
-	    <li><i>Токіо</i> (замість сист. і фонет. <i>Токьо</i>);</li>
-	    <li><i>Кіото</i> (замість сист. і фонет. <i>Кьото</i>);</li>
-	    <li><i>Йокогама</i> (замість сист. <i>Йокохама</i>).</li>
+		<li><i>Токіо</i> (замість сист. і фонет. <i>Токьо</i>);</li>
+		<li><i>Кіото</i> (замість сист. і фонет. <i>Кьото</i>);</li>
+		<li><i>Йокогама</i> (замість сист. <i>Йокохама</i>).</li>
 	</ul>
-	<br><br><br>
+	<br>
 	<h2>Корейська</h2><hr>
-	<p><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D0%B2%D0%B8%D1%87%D0%B0">Адаптована система Концевича</a>.</p>
+	<p>Наразі перевага віддається <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D0%B2%D0%B8%D1%87%D0%B0">адаптованій системі Концевича</a>.</p>
 	<b>Топоніми-винятки:</b>
 	<ul>
-	    <li><i>Сеул</i> (замість сист. <i>Соул</i>);</li>
-	    <li><i>Пхен'ян</i> (замість сист. <i>Пхьон'ян</i> і трад. <i>Пхеньян</i>).</li>
+		<li><i>Сеул</i> (замість сист. <i>Соул</i>);</li>
+		<li><i>Пхен'ян</i> (замість сист. <i>Пхьон'ян</i> і трад. <i>Пхеньян</i>).</li>
 	</ul>
 	<h2>Польська : TODO</h2><hr>
 	<p><b>Ą</b> <code>/ɔn/</code>&nbsp;— <b>⟨он⟩</b> (<b>⟨ом⟩</b> перед <i>B</i>, <i>P</i>).</p>

@@ -65,7 +65,7 @@ header > a:first-of-type {
 	width: var(--nav-height);
 }
 header > a:first-of-type img {
-	content: url("https://avatars.akamai.steamstatic.com/b7b4fab86aae1989c2bfad6b83b637cddfcd08a1_full.jpg"); transition: .2s ease;
+	content: url("https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg"); transition: .2s ease;
 	box-sizing: border-box;
 	width: 100%;
 	border: 2px solid var(--special);

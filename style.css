@@ -1,11 +1,11 @@
 :root {
-	--body: #222;
-	--body-50: #2228;
-	--body-light: #444;
+	--body-color: #222;
+	--body-color-50: #2228;
+	--body-color-light: #444;
 	--border: #BBB;
 	--text-color: white;
 	--link-color: wheat;
-	--heading-color: lightsteelblue /*skyblue*/;
+	--heading-color: lightsteelblue;
 	--special: silver;
 	--special2: grey;
 	--header-bg: #000;
@@ -14,21 +14,24 @@
 	--button-darker: #222;
 	--button-light: #888;
 
+	--body-width: 100%;
 	--nav-height: 4em;
 	--header-int: 0.25em;
 	--tab-height: calc(2em + 4px);
 	--header-height: calc(var(--nav-height) + var(--header-int) + var(--tab-height));
+
+	--logo-url: url("https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg");
 }
-::selection { background: /*#D37607*/ darkolivegreen; color: var(--text-color); }
+::selection { background: darkolivegreen; color: var(--text-color); }
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
 	position: absolute; top: var(--header-height);
-	margin: 0;
+	margin: 0 calc((100% - var(--body-width)) / 2);
 	padding: 1em;
-	width: calc(100% - 2em);
-	background: var(--body);
+	width: calc(var(--body-width) - 2em);
+	background: var(--body-color);
 	color: var(--text-color);
 	font-family: "Merriweather", "Noto Serif", serif;
 }
@@ -65,7 +68,7 @@ header > a:first-of-type {
 	width: var(--nav-height);
 }
 header > a:first-of-type img {
-	content: url("https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg"); transition: .2s ease;
+	content: var(--logo-url); transition: .2s ease;
 	box-sizing: border-box;
 	width: 100%;
 	border: 2px solid var(--special);

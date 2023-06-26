@@ -3,18 +3,18 @@
 <head>
 	<title>Новини Hearts of Iron IV</title>
 	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
-	<link rel="stylesheet" type="text/css" href="https://letgal.github.io/shared-dark.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		:root {
-			--body-light: #333;
-			--body-lighter: #444;
+			--body-color-light: #333;
+			--body-color-lighter: #444;
 			--body-width: 50%;
+			--header-int: 0em;
+			--tab-height: 0em;
 			--tab-count: 36;
 		}
 		html { background: #111; }
 		body {
-			width: var(--body-width);
-			margin-inline: calc((100% - var(--body-width)) / 2);
 			padding: 3em;
 			font-size: smaller;
 		}
@@ -62,11 +62,11 @@
 			/*max-*/height: 88px;
 			margin-block-start: 1em;
 			padding: 0.5em;
-			background: var(--body-light);
+			background: var(--body-color-light);
 			transition: .2s ease;
 		}
 		.widget:hover {
-			background: var(--body-lighter);
+			background: var(--body-color-lighter);
 			text-decoration: none;
 		}
 		.widget img {
@@ -87,6 +87,7 @@
 		<!-- <input type="radio" name="post" id="13-04-2023"><label for="13-04-2023">13.04</label> -->
 		<!-- <input type="radio" name="post" id="02-05-2023"><label for="02-05-2023">02.05</label> -->
 	</header>
+	<h1 style="border: 1px solid var(--border); padding: 0.25em;">Work in progress :)</h1>
 	<div class="entry patch" id="1-12-13">
 		<h1>[Оновлення] Операція «Кабіна» (патч 1.12.12)</h1>
 		<p>Ориґінал: <a href="https://forum.paradoxplaza.com/forum/threads/war-effort-operation-cockpit-1-12-12-checksum-a266.1577867/">War Effort - Operation Cockpit [1.12.12 - Checksum a266]</a></p>

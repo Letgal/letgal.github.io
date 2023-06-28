@@ -101,8 +101,8 @@ button {
 	transition: .2s ease;
 }
 button:not(.noclick) { cursor: pointer; }
-button:hover:not(.game > div button, .noclick) { background: var(--button-light); }
-button:active:not(.game > div button, .noclick) { background: var(--button-dark); }
+button:hover:not(.noclick) { background: var(--button-light); }
+button:active:not(.noclick) { background: var(--button-dark); }
 h1 {
 	margin: 0;
 	text-align: center;
@@ -120,7 +120,6 @@ hr {
 [title]:not(header *) { cursor: help; }
 
 .hidden { display: none; }
-.hoverable:hover { background: #FFF6; color: white; }
 
 div[style*="display:block!important"] { height: 0; }
 

@@ -1,4 +1,3 @@
-<!-- ῾ -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +6,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		:root {
+			--body-width: 75%;
 			--header-int: 0em;
 			--tab-height: 0em;
+		}
+		body > p:first-of-type, body > p:nth-of-type(2) {
+			text-align: center;
+			font-style: italic;
 		}
 		body > a:first-of-type {
 			float: right;
@@ -23,7 +27,10 @@
 			transition: .2s ease;
 		}
 		body > a:first-of-type:hover { background: var(--button-light); text-decoration: none; }
-		/*h3 { background: var(--special2); }*/
+		h1 { margin-block-start: 0; }
+		/*h2 { background: var(--special2); }*/
+		h2 { margin-block-end: 0; }
+		h3 { margin-block-end: 0.5em; }
 		h4 { font-style: italic; }
 		table {
 			box-sizing: border-box;
@@ -34,26 +41,31 @@
 		}
 		th, td { padding: 3px; }
 		p { margin: 0.5em 0; }
-		p:first-of-type, p:nth-of-type(2) { font-style: italic; }
 		p:first-of-type { font-weight: bold; }
 		p b:first-child, .initial { font-size: larger; }
 
-		#ipa { width: calc(100% - 2em); }
+		:lang(pt), :lang(de) { font-style: italic; }
+		:lang(ar) {
+			font-family: "Noto Sans Arabic";
+			font-size: 1.5rem;
+		}
+
+		#ipa, #ar { width: calc(100% - 2em); }
 		#ipa th { font-size: smaller; }
 		#ipa td {
 			width: 48px;
-			font-family: 'Noto Serif', 'Consolas', monospace;
+			font-family: "Noto Serif", "Consolas", monospace;
 		}
 
 		.code {
 			font-weight: normal;
-			font-family: 'Consolas', monospace;
+			font-family: "Consolas", monospace;
 		}
 		.b { border-right: 0; }
 		.e { border-left: 0; }
 		.initial::after {
 			content: ",";
-			font-family: 'Merriweather', 'Noto Serif', serif;
+			font-family: "Merriweather", "Noto Serif", serif;
 		}
 		.initial:last-of-type::after, .initial.fl::after { content: ":"; } /* fl = forced last */
 		.akad, .kici, .piyi, .wagi, .czsk { border-left: 0; }
@@ -81,10 +93,9 @@
 	</header>
 	<h1>Транскрибування іноземних слів</h1>
 	<!--<a href="toponyms.html">Перейти до мапи топонімів</a>-->
-	<p>Усяка мова має свої обмеження. Українська&nbsp;— не виняток; традиційне транскрибування, як повелося, повне неоднозначностей і неточностей.<br>
-	З цієї причини я вирішив дещо воднозначити ці проблеми принаймні для себе.</p>
-	<p>Сторінка буде доповнюватися з часом.</p>
-	<h2>Довідкова таблиця <abbr title="Міжнародний фонетичний алфавіт">МФА</abbr></h2><hr>
+	<p>Усяка мова має свої обмеження. Українська&nbsp;— не виняток; традиційне транскрибування, як повелося, повне неоднозначностей і неточностей.<br>З цієї причини я вирішив дещо воднозначити ці проблеми&#8230; принаймні для себе.</p>
+	<p>Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
+	<!-- <h2>Довідкова таблиця <abbr title="Міжнародний фонетичний алфавіт">МФА</abbr></h2><hr>
 	<table id="ipa">
 		<tr>
 			<th rowspan="2" onclick="switchLang()"></th>
@@ -257,7 +268,7 @@
 			<td class="b n"></td><td class="e n"></td>
 			<td class="b n"></td><td class="e n"></td>
 		</tr>
-	</table>
+	</table> -->
 	<!--<h2>Транскрибування окремих звуків</h2><hr>
 	<h3>Голосні</h3>
 	<p><code class="initial">[æ]</code> Звук знаходиться між <b>⟨а⟩</b> й <b>⟨е⟩</b> (<i>неоднозначно</i>).</p>
@@ -278,63 +289,83 @@
 	<p><code class="initial">[&#597;]</code> <code class="initial">[&#657;]</code> Звуки знаходиться приблизно між ⟨сь⟩/⟨зь⟩ та ⟨шь⟩/⟨жь⟩. Перевага віддається ⟨шь⟩/⟨жь⟩.</p>
 	<p><code class="initial">[c]</code> <code class="initial">[ɟ]</code> Звуки знаходиться приблизно між ⟨кь⟩/⟨ґь⟩ та ⟨ть⟩/⟨дь⟩. Перевага віддається ⟨ть⟩/⟨дь⟩.</p>-->
 	<!--<h2>Транскрибування мов</h2><hr>-->
-	<h2>Китайська</h2><hr>
-	<table id="zh" title="1. Академічна система&#10;2. Піньїнь&#10;3. Уейда–Джайлза&#10;4. Чесько-словацька система">
-		<tr>
-			<th>/m/</th><td>м</td><td colspan="3">m</td>
-			<th>/n/</th><td>нь</td><td colspan="3">n</td>
-			<th></th><td colspan="4"></td>
-			<th></th><td colspan="4"></td>
-			<th>/ŋ/</th><td>н</td><td colspan="3">ng</td>
-		</tr>
-		<tr>
-			<th>/pʰ/</th><td>п</td><td>p</td><td>p῾</td><td>pch</td>
-			<th>/tʰ/</th><td>т</td><td>t</td><td>t῾</td><td>tch</td>
-			<th></th><td colspan="4"></td>
-			<th></th><td colspan="4"></td>
-			<th>/kʰ/</th><td>к</td><td>k</td><td>k῾</td><td>kch</td>
-		</tr>
-		<tr>
-			<th>/p/</th><td>б</td><td>b</td><td colspan="2">p</td>
-			<th>/t/</th><td>д</td><td>d</td><td colspan="2">t</td>
-			<th></th><td colspan="4"></td>
-			<th></th><td colspan="4"></td>
-			<th>/k/</th><td>ґ</td><td>g</td><td colspan="2">k</td>
-		</tr>
-		<tr>
-			<th></th><td colspan="4"></td>
-			<th>/t͡sʰ/</th><td>ц</td><td>c</td><td>ts῾</td><td>cch</td>
-			<th>/ʈ͡ʂʰ/</th><td>ч</td><td>ch</td><td>ch῾</td><td>čch</td>
-			<th>[t͡ɕʰ]</th><td>ць</td><td>q</td><td>ch῾</td><td>ťch</td>
-			<th></th><td colspan="4"></td>
-		</tr>
-		<tr>
-			<th></th><td colspan="4"></td>
-			<th>/t͡s/</th><td>цз</td><td>z</td><td>ts</td><td>c</td>
-			<th>/ʈ͡ʂ/</th><td>чж</td><td>zh</td><td>ch</td><td>č</td>
-			<th>[t͡ɕ]</th><td>цзь</td><td>j</td><td>ch</td><td>ť</td>
-			<th></th><td colspan="4"></td>
-		</tr>
-		<tr>
-			<th>/f/</th><td>ф</td><td colspan="3">f</td>
-			<th>/s/</th><td>с</td><td colspan="3">s</td>
-			<th>/ʂ/</th><td>ш</td><td colspan="2">sh</td><td>š</td>
-			<th>[ɕ]</th><td>сь</td><td>x</td><td>hs</td><td>š</td>
-			<th>/x/<br><small>([h ~ x])</small></th><td>х</td><td colspan="2">h</td><td>ch</td>
-		</tr>
-		<tr>
-			<th></th><td colspan="4"></td>
-			<th>/l/</th><td>л</td><td colspan="3">l</td>
-			<th>/ʐ/<br><small>([ʐ ~ ɻ])</small></th><td>ж</td><td>r</td><td>j</td><td>ž</td>
-			<th></th><td colspan="4"></td>
-			<th></th><td colspan="4"></td>
-		</tr>
-	</table>
-	<p>Наразі перевага віддається <a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D1%85_%D1%81%D0%BB%D1%96%D0%B2_%D1%82%D0%B0_%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D1%85_%D0%BD%D0%B0%D0%B7%D0%B2_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D0%BC%D0%BE%D0%B2%D0%BE%D1%8E">академічній системі</a>.</p>
-	<br><br><br><br><br><br><br><br><br>
+	<div>
+		<h2>Китайська</h2><hr>
+		<!-- ῾ for Wade–Giles -->
+		<table id="zh" title="1. Академічна система&#10;2. Піньїнь&#10;3. Уейда–Джайлза&#10;4. Чесько-словацька система">
+			<tr>
+				<th>/m/</th><td>м</td><td colspan="3">m</td>
+				<th>/n/</th><td>нь</td><td colspan="3">n</td>
+				<th></th><td colspan="4"></td>
+				<th></th><td colspan="4"></td>
+				<th>/ŋ/</th><td>н</td><td colspan="3">ng</td>
+			</tr>
+			<tr>
+				<th>/pʰ/</th><td>п</td><td>p</td><td>p῾</td><td>pch</td>
+				<th>/tʰ/</th><td>т</td><td>t</td><td>t῾</td><td>tch</td>
+				<th></th><td colspan="4"></td>
+				<th></th><td colspan="4"></td>
+				<th>/kʰ/</th><td>к</td><td>k</td><td>k῾</td><td>kch</td>
+			</tr>
+			<tr>
+				<th>/p/</th><td>б</td><td>b</td><td colspan="2">p</td>
+				<th>/t/</th><td>д</td><td>d</td><td colspan="2">t</td>
+				<th></th><td colspan="4"></td>
+				<th></th><td colspan="4"></td>
+				<th>/k/</th><td>ґ</td><td>g</td><td colspan="2">k</td>
+			</tr>
+			<tr>
+				<th></th><td colspan="4"></td>
+				<th>/t͡sʰ/</th><td>ц</td><td>c</td><td>ts῾</td><td>cch</td>
+				<th>/ʈ͡ʂʰ/</th><td>ч</td><td>ch</td><td>ch῾</td><td>čch</td>
+				<th>[t͡ɕʰ]</th><td>ць</td><td>q</td><td>ch῾</td><td>čch</td>
+				<th></th><td colspan="4"></td>
+			</tr>
+			<tr>
+				<th></th><td colspan="4"></td>
+				<th>/t͡s/</th><td>цз</td><td>z</td><td>ts</td><td>c</td>
+				<th>/ʈ͡ʂ/</th><td>чж</td><td>zh</td><td>ch</td><td>č</td>
+				<th>[t͡ɕ]</th><td>цзь</td><td>j</td><td>ch</td><td>ť</td>
+				<th></th><td colspan="4"></td>
+			</tr>
+			<tr>
+				<th>/f/</th><td>ф</td><td colspan="3">f</td>
+				<th>/s/</th><td>с</td><td colspan="3">s</td>
+				<th>/ʂ/</th><td>ш</td><td colspan="2">sh</td><td>š</td>
+				<th>[ɕ]</th><td>сь</td><td>x</td><td>hs</td><td>š</td>
+				<th>/x/<br><small>([h ~ x])</small></th><td>х</td><td colspan="2">h</td><td>ch</td>
+			</tr>
+			<tr>
+				<th></th><td colspan="4"></td>
+				<th>/l/</th><td>л</td><td colspan="3">l</td>
+				<th>/ʐ/<br><small>([ʐ ~ ɻ])</small></th><td>ж</td><td>r</td><td>j</td><td>ž</td>
+				<th></th><td colspan="4"></td>
+				<th></th><td colspan="4"></td>
+			</tr>
+		</table>
+		<p>Наразі я використовую <a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D1%85_%D1%81%D0%BB%D1%96%D0%B2_%D1%82%D0%B0_%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D1%85_%D0%BD%D0%B0%D0%B7%D0%B2_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D0%BC%D0%BE%D0%B2%D0%BE%D1%8E">академічну систему транскрипції</a>.</p>
+		<br><br><br><br><br><br><br><br>
+	</div>
+	<div>
+		<h2>Арабська</h2><hr>
+		<table id="ar" title="1. &#10;2. &#10;3. &#10;4. ">
+			<tr lang="ar">
+				<td>ا</td><td>ب</td><td>ت</td><td>ث</td><td>ج</td><td>ح</td><td>خ</td><td>د</td><td>ذ</td><td>ر</td><td>ز</td><td>س</td><td>ش</td><td>ص</td><td>ض</td><td>ط</td><td>ظ</td><td>ع</td><td>غ</td><td>ف</td><td>ق</td><td>ك</td><td>ل</td><td>م</td><td>ن</td><td>ه</td><td>و</td><td>ي</td><td>ء</td>
+			</tr>
+			<tr class="code">
+				<td>/ʔ/, /aː/</td><td>/b/</td><td>/t/</td><td>/θ/</td><td>/d͡ʒ/</td><td>/ħ/</td><td>/x/</td><td>/d/</td><td>/ð/</td><td>/r/</td><td>/z/</td><td>/s/</td><td>/ʃ/</td><td>/sˤ/</td><td>/dˤ/</td><td>/tˤ/</td><td>/ðˤ/</td><td>/ʕ/</td><td>/ɣ/</td><td>/f/</td><td>/q/</td><td>/k/</td><td>/l/</td><td>/m/</td><td>/n/</td><td>/h/</td><td>/w/, /uː/</td><td>/j/, /iː/</td><td>/ʔ/</td>
+			</tr>
+			<tr>
+				<td>ʾ, a/ā</td><td>b</td><td>t</td><td>th</td><td>j</td><td>ḥ</td><td>kh</td><td>d</td><td>dh</td><td>r</td><td>z</td><td>s</td><td>sh</td><td>ṣ</td><td>ḍ</td><td>ṭ</td><td>ẓ</td><td>ʿ</td><td>gh</td><td>f</td><td>q</td><td>k</td><td>l</td><td>m</td><td>n</td><td>h</td><td>w, u/ū</td><td>y, i/ī</td><td>ʾ</td>
+			</tr>
+			<tr>
+				<td>’, а/е</td><td>б</td><td>т</td><td>ѳ</td><td>дж</td><td>ҳ</td><td>х</td><td>д</td><td>дѳ</td><td>р</td><td>з</td><td>с</td><td>ш</td><td>с</td><td>д</td><td>т</td><td>дѳ</td><td>∅</td><td>г</td><td>ф</td><td>қ</td><td>к</td><td>л</td><td>м</td><td>н</td><td>г</td><td>ў, у</td><td>й, і</td><td>’</td>
+			</tr>
+		</table>
+	</div>
 	<h2>Португальська : TODO</h2><hr>
 	<p>Фонетична передача слів, будь то бразильська чи португальська.</p>
-	<p>Назалізовані голосні пишуться з <b>⟨н⟩</b> після них, напр. <i lang="pt">são</i> <code>[sɐ̃w̃]</code>&nbsp;— «<i>сан</i>».</p>
+	<p>Назалізовані голосні пишуться з <b>⟨н⟩</b> після них, напр. <span lang="pt">são</span> <code>[sɐ̃w̃]</code>&nbsp;— «<i>сан</i>».</p>
 	<h3>Португальська (європейська)</h3>
 	<p><b>A</b> передаються як <b>⟨а⟩</b> (нагол. <code>[a]</code>, ненагол. <code>[ɐ]</code>*).</p>
 	<p><b>E</b> наголошені передаються як <b>⟨е⟩</b> <code>[ɛ]</code>, ненаголошені&nbsp;— як <b>⟨<abbr title="Ближче до рос. Ы">и</abbr>⟩</b> <code>[ɨ]</code> крім у кінці слова (<b>⟨е⟩</b>).</p>
@@ -347,7 +378,7 @@
 	<h2>Німецька : TODO</h2><hr>
 	<p><b>EI</b>&nbsp;— <b>⟨ай⟩</b>.</p>
 	<p><b>ÄU, EU</b>&nbsp;— <b>⟨ой⟩</b>.</p>
-	<p><b>L</b> <b>не</b> пом'якшується: <i>Лайпциґ</i> від <i lang="de">Leipzig</i>, <i>Фатерланд</i> від <i lang="de">Vaterland</i> тощо.</p>
+	<p><b>L</b> <b>не</b> пом'якшується: <i>Лайпциґ</i> (<span lang="de">Leipzig</span>), <i>Фатерланд</i> (<span lang="de">Vaterland</span>) тощо.</p>
 	<h2>Японська</h2><hr>
 	<table lang="jp">
 		<tr>
@@ -492,30 +523,25 @@
 			<td>ぴょ / ピョ · пьо</td>
 		</tr>
 	</table>
-	<p>Наразі перевага віддається <a href="https://uk.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%BE-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%86%D1%96%D1%97_%D1%82%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BB%D1%96%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%97#%D0%9D%D0%B0%D0%BA%D0%B0%D0%B4%D0%B7%D0%B0%D0%B2%D0%B0_(2009)">системі Накадзави</a>, але з <b>⟨джь⟩</b> замість <b>⟨дзь⟩</b>.</p>
+	<p>Наразі я використовую <a href="https://uk.wikipedia.org/wiki/%D0%AF%D0%BF%D0%BE%D0%BD%D1%81%D1%8C%D0%BA%D0%BE-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D1%96_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B8_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%86%D1%96%D1%97_%D1%82%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BB%D1%96%D1%82%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%97#%D0%9D%D0%B0%D0%BA%D0%B0%D0%B4%D0%B7%D0%B0%D0%B2%D0%B0_(2009)">систему Накадзави</a>, але з <b>⟨джь⟩</b> замість <b>⟨дзь⟩</b>.</p>
 	<b>Особливості:</b>
 	<ul>
 		<li>довгі голосні <i>можуть</i> позначатися подвоєнням;</li>
 		<li>подвоєні приголосні записуються двома літерами;</li>
-		<li>дифтонґи <span lang="jp">あい</span> <code>/ai/</code>, <span lang="jp">えい</span> <code>/ei/</code>, <span lang="jp">おい</span> <code>/oi/</code> записуються як <b>⟨ай⟩</b>, <b>⟨ей⟩</b>, <b>⟨ой⟩</b>;</li>
+		<li>дифѳонґи <span lang="jp">あい</span> <code>/ai/</code>, <span lang="jp">えい</span> <code>/ei/</code>, <span lang="jp">おい</span> <code>/oi/</code> записуються як <b>⟨ай⟩</b>, <b>⟨ей⟩</b>, <b>⟨ой⟩</b>;</li>
 		<li>голосні після <span lang="jp">ん</span> <code>/ɴ/</code> відділені апострофом;</li>
 		<li><span lang="jp">ん</span> <code>/ɴ/</code> перед <i>б</i>, <i>п</i>, <i>м</i> записується як <b>⟨м⟩</b>;</li>
 		<li><code>/h/</code> в реалізації <code>[h]</code> та <code>[ç]</code> передається як <b>⟨х⟩</b>, попри правило про передачу <code>[h]</code> як <b>⟨г⟩</b>.</li>
 	</ul>
-	<b>Топоніми-винятки:</b>
+	<b>Також супротив правилу щодо «узвичаєних» японських слів я пишу і їх за системним варіантом:</b>
 	<ul>
-		<li><i>Токіо</i> (замість сист. і фонет. <i>Токьо</i>);</li>
-		<li><i>Кіото</i> (замість сист. і фонет. <i>Кьото</i>);</li>
-		<li><i>Йокогама</i> (замість сист. <i>Йокохама</i>).</li>
+		<li><i>Токьо</i> (замість трад. <i>Токіо</i>);</li>
+		<li><i>Кьото</i> (замість трад. <i>Кіото</i>);</li>
+		<li><i>Йокохама</i> (замість трад. <i>Йокогама</i>).</li>
 	</ul>
-	<br>
 	<h2>Корейська</h2><hr>
-	<p>Наразі перевага віддається <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D0%B2%D0%B8%D1%87%D0%B0">адаптованій системі Концевича</a>.</p>
-	<b>Топоніми-винятки:</b>
-	<ul>
-		<li><i>Сеул</i> (замість сист. <i>Соул</i>);</li>
-		<li><i>Пхен'ян</i> (замість сист. <i>Пхьон'ян</i> і трад. <i>Пхеньян</i>).</li>
-	</ul>
+	<p>Наразі я використовую <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D0%B2%D0%B8%D1%87%D0%B0">адаптовану систему Концевича</a>.</p>
+	<p>Виняток&nbsp;— трад. <i>Сеул</i> замість сист. <i>Соул</i>. Але супротив традиції я пишу сист. <i>Пхьон'ян</i> замість трад. <i>Пхеньян</i>.</p>
 	<h2>Польська : TODO</h2><hr>
 	<p><b>Ą</b> <code>/ɔn/</code>&nbsp;— <b>⟨он⟩</b> (<b>⟨ом⟩</b> перед <i>B</i>, <i>P</i>).</p>
 	<p><b>Ć</b> <code>[t͡ɕ]</code>&nbsp;— <b>⟨ць⟩</b>.</p>
@@ -525,6 +551,7 @@
 	<p><b>Ź</b> <code>[ʑ]</code>&nbsp;— <b>⟨зь⟩</b>.</p>
 	<h2>Нідерландська : TODO</h2><hr>
 	<p>Фонетична передача слів.</p>
+	<p><b>G</b>: <code>/ɣ/</code>&nbsp;— <b>⟨г⟩</b>; <code>/x/</code>&nbsp;— <b>⟨х⟩</b>.</p>
 	<h2>Фінська : TODO</h2><hr>
 	<p><b>Ä</b>&nbsp;— <b>⟨е⟩</b>.</p>
 	<p><b>L</b> пом'якшується тільки перед приголосним.*</p>

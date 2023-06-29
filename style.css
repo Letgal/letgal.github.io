@@ -107,11 +107,7 @@ button {
 button:not(.noclick) { cursor: pointer; }
 button:hover:not(.noclick) { background: var(--button-light); }
 button:active:not(.noclick) { background: var(--button-dark); }
-h1 {
-	margin: 0;
-	text-align: center;
-}
-h2 { margin-bottom: 0; }
+h1 { text-align: center; }
 h1, h2, h3, h4, h5, h6 { color: var(--heading-color); }
 table { border-spacing: 0; }
 table, th, td { border: 1px solid var(--border); }

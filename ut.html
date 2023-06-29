@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		:root {
-			--body-width: 80%;
+			--body-width: 50%;
 			--tab-count: 7;
 		}
 		body {
@@ -200,8 +200,9 @@
 	<header>
 		<a href="/" title="Головна сторінка"><img></a>
 		<a href="ut.html">Переклади ігор Paradox</a>
+		<a href="https://send.monobank.ua/jar/2hW6s9nEeY" target="_blank">Підтримати аўтора</a>
 		<!--<a href="transcript.html">Транскрибування</a>-->
-		<!--<a href="hoi4-news.html">Новини Hearts of Iron IV</a>-->
+		<a href="hoi4-news.html">Новини Hearts of Iron IV</a>
 		<!--<a href="/lyr">Тексти пісень</a>-->
 		<!-- <div>
 			<label title="Відфільтрувати за підтримуваністю англійської"><input type="checkbox" name="filter" onchange="filterByLang('en')">Англійська</label>
@@ -219,13 +220,13 @@
 
 	<p style="margin-top: 0; text-align: center;"><i>Ця сторінка буде доповнюватися й оновлюватися з часом.</i></p>
 	<h1>Українські переклади <i id="name"></i></h1>
-	<p style="margin-bottom: 0;"><b>Примітка:</b> Справа перелічені доступні посилання на переклади.</p>
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game">
 		<div class="notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/314494866252173216/6B212F836B5DCDA7D39FC52C565217D6AA88EAB7/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+				<i>vicner</i>
 				<ul>
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=632273228">Steam</a></li>
 					<li><a href="https://github.com/vicner/eu4">GitHub</a></li>
@@ -240,7 +241,8 @@
 		<h2>Переклади ванілли</h2>
 		<div class="notCollapsible">
 			<div class="entry noimage">
-				<ul style="margin-block-end: 0;">
+				<i>Спільнота</i>
+				<ul style="margin-block-start: 0.5em;">
 					<li><a href="https://toloka.to/t83938">Toloka</a></li>
 					<li><a href="https://crowdin.com/project/cities-skylines">Crowdin</a></li>
 				</ul>
@@ -265,9 +267,8 @@
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325032159963894/F589BCA56EE9E44C1D3BDC5A1B940AE434306989/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
 				<i>ser_rocko</i>
 				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2943508186" title="Для 3.6">Steam</a></li>
-					<li><a href="https://mods.paradoxplaza.com/mods/8155/Any" title="Для 3.6">Paradox Mods</a></li>
-					<li><a href="https://toloka.to/t85384" title="LITE & FULL&#10;Для старішої версії">Toloka</a></li>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2943508186">Steam</a> (для версії гри <i>3.8.2</i>)<img class="flag en"></li>
+					<li><a href="https://mods.paradoxplaza.com/mods/8155/Any">Paradox Mods</a> (для версії гри <i>3.8.2</i>)<img class="flag en"></li>
 				</ul>
 			</div>
 			<div class="entry noimage">
@@ -281,6 +282,12 @@
 			</div>
 		</div>
 		<h2>Переклади модів</h2>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Gigastructural Engineering & More</button>
+		<div>
+			<div class="entry noimage">
+				<ul><li><a href="https://github.com/Ukrainelocal/stellaris-gigastructures-ukraine-localisation">GitHub</a></li></ul>
+			</div>
+		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Detailed Tech Tooltips Reloaded</button>
 		<div>
 			<div class="entry">
@@ -297,13 +304,13 @@
 		<div class="notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Letōn</i> <abbr title="Ініціатор перекладу: Letōn&#10;Внесок зробили:&#10;  - OlshenUA&#10;  - BmB Kun&#10;  - Churban&#10;  - Shrek_UA&#10;  - Dmytr0 Gaming">�</abbr> для версії гри <i>1.12.14</i>
+				<i>Letōn</i> <abbr title="Ініціатор перекладу: Letōn&#10;Внесок зробили (в порядку спадання):&#10;  - OlshenUA&#10;  - BmB Kun&#10;  - Churban&#10;  - Shrek_UA&#10;  - Dmytr0 Gaming">�</abbr> для версії гри <i>1.12.14</i>
 				<ul style="columns: 2;">
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548">Steam</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 					<li><a href="https://mods.paradoxplaza.com/mods/38710/Any">Paradox Mods</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 					<li><a href="https://www.nexusmods.com/heartsofironiv/mods/53">Nexus Mods</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 					<li><a href="https://github.com/Letgal/hoi4_ut">GitHub</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
-					<li><a href="https://mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI">ZIP-файл</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
+					<li><a href="https://mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI">MEGA</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 				</ul>
 			</div>
 			<!--<div class="entry">
@@ -312,7 +319,7 @@
 				<ul>
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2726865975">Steam</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 					<li><a href="https://mods.paradoxplaza.com/mods/38711/Any">Paradox Mods</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
-					<li><a href="https://mega.nz/file/l45QQQoL#offGhBMFJvSZTqHM7utCmgPk7HUgWeIa-doP4aFhNgM">ZIP-файл</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
+					<li><a href="https://mega.nz/file/l45QQQoL#offGhBMFJvSZTqHM7utCmgPk7HUgWeIa-doP4aFhNgM">MEGA</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 				</ul>
 			</div>-->
 			<!-- <div class="entry">
@@ -902,7 +909,7 @@
 				<ul>
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2908253265">Steam</a><img class="flag en"><img class="flag ru"></li>
 					<li><a href="https://mods.paradoxplaza.com/mods/55431/Any">Paradox Mods</a><img class="flag en"><img class="flag ru"></li>
-					<li><a href="https://mega.nz/file/l4BlXKID#5F9mTQPhCrJiOjjdV3gji6yRISJEFtqjwg5BOKbXTUY">ZIP-файл</a><img class="flag en"><img class="flag ru"></li>
+					<li><a href="https://mega.nz/file/l4BlXKID#5F9mTQPhCrJiOjjdV3gji6yRISJEFtqjwg5BOKbXTUY">MEGA</a><img class="flag en"><img class="flag ru"></li>
 				</ul>
 			</div>
 		</div>
@@ -968,7 +975,7 @@
 				<ul>
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2912150988">Steam</a><img class="flag en"><img class="flag ru"></li>
 					<li><a href="https://mods.paradoxplaza.com/mods/55746/Any">Paradox Mods</a><img class="flag en"><img class="flag ru"></li>
-					<li><a href="https://mega.nz/file/YlgyDLgS#iYBjSz9ANYK7x03x13Mfwe5mauJJTjqa2OD5LLCm38U">ZIP-файл</a><img class="flag en"><img class="flag ru"></li>
+					<li><a href="https://mega.nz/file/YlgyDLgS#iYBjSz9ANYK7x03x13Mfwe5mauJJTjqa2OD5LLCm38U">MEGA</a><img class="flag en"><img class="flag ru"></li>
 				</ul>
 			</div>
 		</div>
@@ -1132,7 +1139,8 @@
 		<h2>Переклади ванілли</h2>
 		<div class="notCollapsible">
 			<div class="entry noimage">
-				<ul><li><a href="https://crowdin.com/project/crusader-kings-iii-ukrainian/invite/public?show_welcome&d=da28c97a915bfad4c8dd29a0f1a643d61240946">Crowdin</a></li></ul>
+				<i>Спільнота</i>
+				<ul style="margin-block-start: 0.5em;"><li><a href="https://crowdin.com/project/crusader-kings-iii-ukrainian/invite/public?show_welcome&d=da28c97a915bfad4c8dd29a0f1a643d61240946">Crowdin</a></li></ul>
 			</div>
 			<div class="entry noimage">
 				<i>ser_rocko</i>
@@ -1175,22 +1183,37 @@
 		<div class="notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Команда «Hearts of Ukraine 4»</i><!--  за додаткової підтримки -->
+				<i>Godresky</i> <abbr title="З допомогою:&#10;  - Пан Дмитро&#10;  - Пані Меліса&#10;  - Пан Марк Хан&#10;  - Пан Андріян&#10;  - _rlly_&#10;  - Letōn (шрифти)&#10;  - Дружня спільнота&#10;  - Греко-католицька церква">�</abbr>
 				<ul style="columns: 2;">
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2884178988">Steam</a></li>
-					<li><a href="https://mods.paradoxplaza.com/mods/55851/Any">Paradox Mods</a></li>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2884178988">Steam</a> (для версії гри 1.3.5)</li>
+					<li><a href="https://mods.paradoxplaza.com/mods/55851/Any" title="Для старішої версії">Paradox Mods</a> (для версії гри 1.1.2)</li>
 					<li><a href="https://github.com/Godresky/Victoria-3-Ukrainian-Translate">GitHub</a></li>
-					<li><a href="https://t.me/godresky_vika3/249">Telegram</a></li>
+					<li><a href="https://t.me/godresky_vika3/249">Telegram</a> (для версії гри 1.3.5)</li>
+					<li><a href="https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c">Google Диск</a> (для версії гри 1.3.5)</li>
 				</ul>
 			</div>
 		</div>
 		<h2>Переклади модів</h2>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Divergences</button>
+		<div>
+			<div class="entry">
+				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506411499069/BCEDB823B57F1B12B7808B30294FAB0FEE530D7F/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+				<i>BonLua</i>
+				<ul>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2995864776">Steam</a></li>
+					<li><a href="https://t.me/godresky_vika3/265">Telegram</a></li>
+				</ul>
+			</div>
+		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Null & Void</button>
 		<div>
 			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
 				<i>Letōn</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2995788213">Steam</a></li></ul>
+				<ul>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2995788213">Steam</a></li>
+					<li><a href="https://t.me/godresky_vika3/256">Telegram</a></li>
+				</ul>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Better Politics Mod</button>
@@ -1198,7 +1221,10 @@
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410879056/4AF8CB2EC2FA33C090699D85E536F37C7245498C/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
 				<i>SteveJobs</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2995810889">Steam</a></li></ul>
+				<ul>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2995810889">Steam</a></li>
+					<li><a href="https://t.me/godresky_vika3/261">Telegram</a></li>
+				</ul>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Heart of Appalachia, An Atompunk Mod</button>

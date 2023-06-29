@@ -51,18 +51,20 @@ header > a, header input[type=radio] + label {
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
-	background: var(--button-dark);
 	font-weight: bold;
 	transition: .2s ease;
 }
 header > a {
 	height: var(--nav-height);
 	text-transform: uppercase;
+}
+header > a:not([href^="http"]) {
+	background: var(--button-dark);
 	color: var(--text-color);
 }
-header > a:hover, header input[type=radio] + label:hover { background: var(--button); }
-header > a:hover { text-decoration: none; }
-header > a:active, header input[type=radio] + label:active, header input[type=radio]:checked + label { background: var(--button-darker); }
+header > a:not([href^="http"]):hover, header input[type=radio] + label:hover { background: var(--button); }
+header > a:not([href^="http"]):hover { text-decoration: none; }
+header > a:not([href^="http"]):active, header input[type=radio] + label:active, header input[type=radio]:checked + label { background: var(--button-darker); }
 header > a:first-of-type {
 	padding: 0.5em;
 	width: var(--nav-height);
@@ -80,6 +82,7 @@ header > a:not(:first-of-type) {
 	margin-left: -4.5px;
 	padding: calc((var(--nav-height) - 20px) / 2) 1em;
 }
+header > a[href^="http"] { float: right; }
 header input[type=radio]:not([name=filter]) {
 	display: none;
 	position: absolute;
@@ -88,6 +91,7 @@ header input[type=radio] + label {
 	margin-top: var(--header-int); margin-right: -0.29%;
 	padding: 0.5em;
 	width: calc(100% / var(--tab-count)); height: var(--tab-height);
+	background: var(--button-dark);
 	white-space: nowrap;
 	text-align: center;
 	cursor: pointer;

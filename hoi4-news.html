@@ -46,8 +46,23 @@
 			padding: 0.25em;
 		}
 		[lang] { font-style: italic; }
+		.visibilityToggle {
+			position: sticky; top: calc(var(--header-height) / 2);
+			margin-block: 0.5rem;
+			padding-block: 0.5rem;
+			background: var(--button-dark);
+			cursor: pointer;
+			transition: .2s ease;
+		}
+		.visibilityToggle:hover { background: var(--button); }
+		.visibilityToggle:active { background: var(--button-darker); }
+		.visibilityToggle + div {
+			height: 0;
+			overflow: hidden;
+			transition: height .5s ease-out;
+		}
 		.entry { line-height: 1.5; }
-		.entry:not(:first-of-type) { margin-block-start: 3em; }
+		.entry:not(:last-of-type) { margin-block-end: 3rem; }
 		/*.entry p:nth-of-type(1) { position: sticky; top: calc(var(--header-height) + 1em); }*/
 		.entry p:first-of-type:not(.date) a { font-weight: bold; }
 		.entry a[href*="https://forum.paradoxplaza.com"] img { transition: .2s ease; }
@@ -86,6 +101,13 @@
 		}
 		.widget p { color: var(--special2); }
 	</style>
+	<script type="text/javascript">
+		function toggleVisibility(x) {
+			var next = x.nextElementSibling;
+			if ( next.style.height ) { next.style.height = null; }
+			else { next.style.height = next.scrollHeight + "px"; }
+		};
+	</script>
 </head>
 <body>
 	<header>
@@ -100,6 +122,7 @@
 		<!-- <input type="radio" name="post" id="02-05-2023"><label for="02-05-2023">02.05</label> -->
 	</header>
 	<h1 style="border: 1px solid var(--border); padding: 0.25em;">Work in progress :)</h1>
+	<!-- <h1 class="visibilityToggle" onclick="toggleVisibility(this)">[Оновлення] Операція «Кабіна» (патч 1.12.12)</h1> -->
 	<div class="entry patch" id="1-12-13">
 		<h1>[Оновлення] Операція «Кабіна» (патч 1.12.12)</h1>
 		<p>Ориґінал: <a href="https://forum.paradoxplaza.com/forum/threads/war-effort-operation-cockpit-1-12-12-checksum-a266.1577867/">War Effort - Operation Cockpit [1.12.12 - Checksum a266]</a></p>
@@ -176,7 +199,8 @@
 
 		<p>– <span lang="en">Katten</span></p>
 	</div>
-	<div class="entry dev-diary" id="dd-organizations">
+	<!-- <h1 class="visibilityToggle" onclick="toggleVisibility(this)">[Куток розробників] Військово-промислові організації</h1> -->
+	<div class="entry dev-diary" id="dc-organizations">
 		<h1>[Куток розробників] Військово-промислові організації</h1>
 		<a href="https://forum.paradoxplaza.com/forum/developer-diary/developer-corner-military-industrial-orgs.1580554/" title="Developer Corner | Military Industrial Orgs."><img src="https://clan.cloudflare.steamstatic.com/images//9948323/253a376b69eea6817b83ab01d14587341e2cd03e.jpg"></a>
 		<p class="date">2&nbsp;травня 2023</p>
@@ -292,7 +316,8 @@
 		<p>На цьому, певно, на цей тиждень слід закінчити. Сподіваємося, Вам сподобалося.</p>
 		<p>Повертайтеся через два тижні, щоби глянути на новий «Куток розробників», де ми розглянемо ще одну механіку, яка буде в грі в найближчому майбутньому.</p>
 	</div>
-	<div class="entry dev-diary" id="dd-market">
+	<!-- <h1 class="visibilityToggle" onclick="toggleVisibility(this)">[Куток розробників] Міжнарожний ринок</h1> -->
+	<div class="entry dev-diary" id="dc-market">
 		<h1>[Куток розробників] Міжнарожний ринок</h1>
 		<a href="https://forum.paradoxplaza.com/forum/developer-diary/developer-corner-international-market.1583034" title="Developer Corner | International Market"><img src="https://clan.cloudflare.steamstatic.com/images/9948323/8544364410337dc26572a7e79c00c16159442c1d.png"></a>
 		<p class="date">1&nbsp; травня 2023</p>
@@ -413,6 +438,7 @@
 		<p>Сподіваюся, це зробить зрозумілішим те, як ВПО працюють в якості ігрової структури. І знову, побачимося в майбутніх кутках розробників.</p>
 		<p>Це все, що я хотів сказати за цей тиждень. Завжди ставте питання в коментарях. Побачимося десь через два тижні в наступному кутку розробників, де <span lang="en">Arheo</span> представить вам іншу майбутню механіку.</p>
 	</div>
+	<!-- <h1 class="visibilityToggle" onclick="toggleVisibility(this)">[Оновлення] Патч 1.12.14 (<span lang="en">hotfix</span>)</h1> -->
 	<div class="entry patch" id="1-12-14">
 		<h1>[Оновлення] Патч 1.12.14 (<span lang="en">hotfix</span>)</h1>
 		<p>Ориґінал: <a href="https://forum.paradoxplaza.com/forum/threads/operation-alpha-war-effort-initiative-1-12-13-checksum-b721.1584808/">Operation Alpha - War Effort Initiative [1.12.13 Checksum b721]</a></p>
@@ -420,9 +446,10 @@
 		<hr>
 
 		<p><span lang="sk">Generáli!</span> Це дрібний патч (<span lang="en">hotfix</span>), що стосується одного знайденого баґа, повʼязаного з медалями з <span lang="en">By Blood Alone</span>:</p>
-		<ul><li>Іконка доступних медалей більше не з'являється, якщо ви не володієте <span lang="en">By Blood Alone</span></li></ul>
+		<ul><li>Іконка доступних медалей більше не з’являється, якщо ви не володієте <span lang="en">By Blood Alone</span></li></ul>
 	</div>
-	<div class="entry dev-diary" id="dd-support">
+	<!-- <h1 class="visibilityToggle" onclick="toggleVisibility(this)">[Куток розробників] Роти підтримки</h1> -->
+	<div class="entry dev-diary" id="dc-support">
 		<h1>[Куток розробників] Роти підтримки</h1>
 		<a href="https://forum.paradoxplaza.com/forum/developer-diary/developer-corner-support-companies.1586754/" title="Developer Corner | Support Companies"><img src="https://clan.cloudflare.steamstatic.com/images/9948323/c14189c27105c4d0f9927929f135ad659e15b95f.png"></a>
 		<p class="date">3&nbsp; травня 2023</p>
@@ -469,7 +496,8 @@
 		<p>І, раз зайшла мова за щоденники, ми повернемося наступного тижня&#8230; Залишайтеся на зв’язку та занотуйте це в календар!</p>
 		<p>— <span lang="en">Arheo</span></p>
 	</div>
-	<div class="entry dev-diary" id="dd-support">
+	<!-- <h1 class="visibilityToggle" onclick="toggleVisibility(this)">[Анонс] Arms Against Tyranny || [Щоденник розробників] Історична Фінляндія</h1> -->
+	<div class="entry dev-diary" id="dd-FIN-hist">
 		<h1>[Анонс] Arms Against Tyranny || [Щоденник розробників] Історична Фінляндія</h1>
 		<a href="https://forum.paradoxplaza.com/forum/developer-diary/arms-against-tyranny-historical-finland.1588882/" title="Arms Against Tyranny | Historical Finland"><img src="https://clan.cloudflare.steamstatic.com/images/9948323/b210f600fab4319509fabf7056c49f5549619433.jpg"></a>
 		<p class="date">7&nbsp;червня 2023</p>

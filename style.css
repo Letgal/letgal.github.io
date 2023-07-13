@@ -16,9 +16,9 @@
 
 	--body-width: 100%;
 	--nav-height: 4em;
-	--header-int: 0.25em;
+	--gap-height: 0.25em;
 	--tab-height: calc(2em + 4px);
-	--header-height: calc(var(--nav-height) + var(--header-int) + var(--tab-height));
+	--header-height: calc(var(--nav-height) + var(--gap-height) + var(--tab-height));
 
 	--logo-url: url("https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg");
 }
@@ -29,8 +29,9 @@
 body {
 	position: absolute; top: var(--header-height);
 	margin: 0 calc((100% - var(--body-width)) / 2);
-	padding: 1em;
-	width: calc(var(--body-width) - 2em);
+	padding: 1rem;
+	box-sizing: border-box;
+	width: calc(var(--body-width) - 2em); min-height: calc(100vh - var(--header-height));
 	background: var(--body-color);
 	color: var(--text-color);
 	font-family: "Merriweather", "Noto Serif", serif;
@@ -47,6 +48,7 @@ header {
 	box-shadow: 0 0 24px black;
 	background: var(--header-bg);
 }
+header > div:last-of-type { display: flex; justify-content: space-evenly; }
 header > a, header input[type=radio] + label {
 	display: inline-block;
 	vertical-align: top;
@@ -56,6 +58,7 @@ header > a, header input[type=radio] + label {
 }
 header > a {
 	height: var(--nav-height);
+	padding: calc((var(--nav-height) - 20px) / 2) 1em;
 	text-transform: uppercase;
 }
 header > a:not([href^="http"]) {
@@ -78,19 +81,16 @@ header > a:first-of-type img {
 	animation: rotation/*-alt*/ 30s infinite linear;
 }
 header > a:first-of-type:hover img { filter: brightness(120%); }
-header > a:not(:first-of-type) {
-	margin-left: -4.5px;
-	padding: calc((var(--nav-height) - 20px) / 2) 1em;
-}
+header > a:first-of-type:active img { filter: brightness(80%); }
 header > a[href^="http"] { float: right; }
 header input[type=radio]:not([name=filter]) {
 	display: none;
 	position: absolute;
 }
 header input[type=radio] + label {
-	margin-top: var(--header-int); margin-right: -0.29%;
+	margin-top: var(--gap-height);
 	padding: 0.5em;
-	width: calc(100% / var(--tab-count)); height: var(--tab-height);
+	width: 100%; height: var(--tab-height);
 	background: var(--button-dark);
 	white-space: nowrap;
 	text-align: center;

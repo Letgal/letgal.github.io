@@ -5,22 +5,12 @@
 	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
-		:root {
-			--body-width: 50%;
-			--tab-count: 7;
-		}
+		:root { --body-width: 50%; }
 		body {
 			/*background-repeat: no-repeat;
 			background-position: 0 9em;
 			background-size: contain;*/
 		}
-		header div {
-			display: inline-block;
-			box-sizing: border-box;
-			padding: 2px;
-			height: var(--nav-height);
-		}
-		header div label { display: block; }
 		h2 { margin-block-end: 0; }
 		h3 { margin-block-end: 0; }
 
@@ -50,16 +40,13 @@
 		.visibilityToggle[title*="Новий переклад"] + div, .notCollapsible[title*="Новий переклад"] { background: linear-gradient(to bottom, darkgoldenrod, transparent); }
 
 		.entry { margin: 0.5em; }
-		.entry:not(.noimage) { min-height: 100px; }
 		.entry > img {
 			box-sizing: border-box;
 			height: 100px;
 		}
 		.entry > img:first-of-type { float: left; margin-right: 0.5em; }
-		.entry > i:first-of-type {
-			font-size: 1.2em;
-			font-weight: bold;
-		}
+		.entry > i { font-weight: bold; }
+		.entry > i:first-of-type { font-size: 1.2em; }
 		.entry > i:first-of-type::before { content: "> "; font-style: normal; }
 		.entry abbr[title] {
 			color: wheat;
@@ -127,6 +114,7 @@
 			font-style: normal;
 		}
 	</style>
+	<script type="text/javascript" src="shared.js"></script>
 	<script type="text/javascript">
 		function switchTo(x) {
 			if (x == "eu4") {
@@ -168,7 +156,7 @@
 
 		function toggleVisibility(x) {
 			var next = x.nextElementSibling;
-			if ( next.style.height ) { next.style.height = null; }
+			if (next.style.height) { next.style.height = null; }
 			else { next.style.height = next.scrollHeight + "px"; }
 		};
 
@@ -201,26 +189,22 @@
 		});*/
 	</script>
 </head>
-<body onload="document.getElementById('hoi4-radio').click();">
+<body onload="document.getElementById('hoi4-radio').click();/* generateEntries('test');*/ generateHeader()">
 	<header>
-		<a href="/" title="Головна сторінка"><img></a>
-		<a href="ut.html">Переклади ігор Paradox</a>
-		<!--<a href="transcript.html">Транскрибування</a>-->
-		<a href="hoi4-news.html">Новини Hearts of Iron IV</a>
-		<!--<a href="/lyr">Тексти пісень</a>-->
-		<a href="https://send.monobank.ua/jar/2hW6s9nEeY" target="_blank">Підтримати аўтора</a>
 		<!-- <div>
 			<label title="Відфільтрувати за підтримуваністю англійської"><input type="checkbox" name="filter" onchange="filterByLang('en')">Англійська</label>
 			<label title="Відфільтрувати за підтримуваністю російської"><input type="checkbox" name="filter" onchange="filterByLang('ru')">Російська</label>
 			<label title="Відфільтрувати за підтримуваністю української"><input type="checkbox" name="filter" onchange="filterByLang('uk')">Українська</label>
-		</div> --><br>
-		<input type="radio" name="game" id="eu4-radio" onchange="switchTo('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
-		<input type="radio" name="game" id="cs-radio" onchange="switchTo('cs')"><label for="cs-radio">Cities: Skylines</label>
-		<input type="radio" name="game" id="stel-radio" onchange="switchTo('stel')"><label for="stel-radio">Stellaris</label>
-		<input type="radio" name="game" id="hoi4-radio" onchange="switchTo('hoi4')"><label for="hoi4-radio">Hearts of Iron IV</label>
-		<input type="radio" name="game" id="ir-radio" onchange="switchTo('ir')"><label for="ir-radio">Imperator: Rome</label>
-		<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
-		<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
+		</div> -->
+		<div>
+			<input type="radio" name="game" id="eu4-radio" onchange="switchTo('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
+			<input type="radio" name="game" id="cs-radio" onchange="switchTo('cs')"><label for="cs-radio">Cities: Skylines</label>
+			<input type="radio" name="game" id="stel-radio" onchange="switchTo('stel')"><label for="stel-radio">Stellaris</label>
+			<input type="radio" name="game" id="hoi4-radio" onchange="switchTo('hoi4')"><label for="hoi4-radio">Hearts of Iron IV</label>
+			<input type="radio" name="game" id="ir-radio" onchange="switchTo('ir')"><label for="ir-radio">Imperator: Rome</label>
+			<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
+			<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
+		</div>
 	</header>
 
 	<p style="margin-top: 0; text-align: center;"><i>Ця сторінка буде доповнюватися й оновлюватися з часом.</i></p>
@@ -305,48 +289,6 @@
 
 	<!--HEARTS OF IRON IV-->
 	<div id="hoi4" class="game">
-		<!-- <button class="visibilityToggle" onclick="toggleVisibility(this)" style="font-size: 1rem; font-weight: normal; font-style: italic;">Клацніть, щоби розгорнути/згорнути список модоробів.</button>
-		<div>
-			<div class="entry noimage">
-				<i>TTTSHOK</i> (43 переклади)
-				<ul><li><a href="https://steamcommunity.com/id/tttshok2006/myworkshopfiles/?appid=394360">Майстерня Steam</a></li></ul>
-			</div>
-			<div class="entry noimage">
-				<i>Царь Игр</i> (8 перекладів)
-				<ul><li><a href="https://steamcommunity.com/profiles/76561198037676688/myworkshopfiles/?appid=394360">Майстерня Steam</a></li></ul>
-			</div>
-			<div class="entry noimage">
-				<i>Dmytr0 Gaming</i> (4 переклади)
-				<ul><li><a href="https://steamcommunity.com/profiles/76561199187702830/myworkshopfiles/?appid=394360">Майстерня Steam</a></li></ul>
-			</div>
-			<div class="entry noimage">
-				<i>Wenyanngat</i> (4 переклади)
-				<ul><li><a href="https://steamcommunity.com/id/wenyanngat/myworkshopfiles/?appid=394360">Майстерня Steam</a></li></ul>
-			</div>
-			<div class="entry noimage">
-				<i>Letōn</i> (3 переклади)
-				<ul>
-					<li><a href="https://steamcommunity.com/id/leton_ostislavic/myworkshopfiles/?appid=394360">Майстерня Steam</a></li>
-					<li><a href="https://mods.paradoxplaza.com/authors/Kubiczeski">Paradox Mods</a></li>
-				</ul>
-			</div>
-			<div class="entry noimage">
-				<i>Godresky</i> (2 переклади)
-				<ul>
-					<li><a href="https://steamcommunity.com/id/godresky/myworkshopfiles/?appid=394360">Майстерня Steam</a></li>
-					<li><a href="https://mods.paradoxplaza.com/authors/Godresky">Paradox Mods</a></li>
-				</ul>
-			</div>
-			<div class="entry noimage">
-				<i>Stepan</i> (1 переклад)
-				<ul><li><a href="https://steamcommunity.com/profiles/76561198065305432/myworkshopfiles/?appid=394360">Майстерня Steam</a></li></ul>
-			</div>
-			<div class="entry noimage">
-				<i>Conteynerrr</i> (1 переклад)
-				<ul><li><a href="https://steamcommunity.com/id/conteynerbich/myworkshopfiles/?appid=394360">Майстерня Steam</a></li></ul>
-			</div>
-		</div> -->
-
 		<h2>Переклади ванілли</h2>
 		<div class="notCollapsible">
 			<div class="entry">
@@ -360,31 +302,6 @@
 					<li><a href="https://mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI">MEGA</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 				</ul>
 			</div>
-			<!--<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2028339018378919028/9BF160B8002A1006CDE1AA651B50FC978A56EC8F/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Letōn</i> (розширений) <abbr title="Ініціатор перекладу: Letōn&#10;Внесок зробили:&#10;  - OlshenUA&#10;  - BmB Kun&#10;  - Churban&#10;  - Shrek_UA&#10;  - Dmytr0 Gaming">�</abbr> для версії гри <i>1.12</i>
-				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2726865975">Steam</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
-					<li><a href="https://mods.paradoxplaza.com/mods/38711/Any">Paradox Mods</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
-					<li><a href="https://mega.nz/file/l45QQQoL#offGhBMFJvSZTqHM7utCmgPk7HUgWeIa-doP4aFhNgM">MEGA</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
-				</ul>
-			</div>-->
-			<!-- <div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2045233293310450294/03DB7757B1705E6902DED8DA3BABE406809839D3/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Dmytr0 Gaming</i> для версії гри <i>1.12</i>
-				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2931643337">Steam</a><img class="flag uk"></li>
-					<li><a href="t.me/HeartsofUkraine4/169">Telegram</a><img class="flag uk"></li>
-				</ul>
-			</div> -->
-			<!-- <div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/1858309750232904661/C000F12168FBAC993ADD2AB752EE2548FA88DC36/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Команда «<b>ПУП СС</b>»</i> для версії гри <i>1.11</i>
-				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2811220993">Steam</a><img class="flag ru"></li>
-					<li><a href="https://mods.paradoxplaza.com/mods/44236/Any">Paradox Mods</a><img class="flag ru"></li>
-				</ul>
-			</div> -->
 		</div>
 
 		<h2>Переклади модів</h2>
@@ -413,10 +330,6 @@
 					<li><a href="https://mods.paradoxplaza.com/mods/46206/Any" title="Для старішої версії">Paradox Mods</a><img class="flag ru"></li>
 				</ul>
 			</div>
-			<!-- <div class="entry noimage">
-				<i>Dmytr0 Gaming</i>
-				<ul><li><a href="https://t.me/HeartsofUkraine4/387">Telegram</a></li></ul>
-			</div> -->
 		</div>
 		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Red Flood</button>
 		<div>
@@ -712,14 +625,6 @@
 				<i>Офіційний</i> <abbr title="Опублікував: GBV&#10;Перекладачі: Lonster і інші (перелічені на сторінці Steam)">�</abbr>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2963087258">Steam</a><img class="flag en"></li></ul>
 			</div>
-			<!-- <div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/1881954907561947164/963C7515B2B666D2F9D72B50DD47567489BD9FEB/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Команда «ПУП СС»</i>
-				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2963087258" title="Для старішої версії">Steam</a><img class="flag ru"></li>
-					<li><a href="https://mods.paradoxplaza.com/mods/44788/Any" title="Для старішої версії">Paradox Mods</a></li>
-				</ul>
-			</div> -->
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Ukrainian State: Redux</button>
 		<div>
@@ -727,11 +632,6 @@
 				<i>Команда «Hearts of Ukraine 4»</i>
 				<ul><li><a href="https://t.me/HeartsofUkraine4/84">Telegram</a><img class="flag en"></li></ul>
 			</div>
-			<!-- <div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/1881954907575399497/0AF576AD0F823D798A9FE8D577B0225CD54F5F69/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Команда «ПУП СС»</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2811703934" title="Для старішої версії">Steam</a><img class="flag ru"></li></ul>
-			</div> -->
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Ukraine 1.12</button>
 		<div>
@@ -806,17 +706,6 @@
 				</ul>
 			</div>
 		</div>
-		<!-- <button class="visibilityToggle" onclick="toggleVisibility(this)">On the Clouds of Heaven - Rise of Vatican</button>
-		<div>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/1842559735199332558/D76A4D65DFC1E962984FEA293D02E3B73B27B078/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Dmytr0 Gaming</i>
-				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2871242233">Steam</a><img class="flag en"></li>
-					<li><a href="https://t.me/HeartsofUkraine4/54">Telegram</a></li>
-				</ul>
-			</div>
-		</div> -->
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Femboyvaria</button>
 		<div>
 			<div class="entry">
@@ -1176,26 +1065,7 @@
 				<i>TEXA</i>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2943496666">Steam</a><img class="flag en"><img class="flag uk"></li></ul>
 			</div>
-			<!-- <div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044109228592375815/19CDD2C7694BE647E19439EA83D9A6389399917F/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>dansk1fe</i> & <i>Dmytr0 Gaming</i>
-				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2888955964">Steam</a><img class="flag en"></li>
-					<li><a href="https://t.me/HeartsofUkraine4/56">Telegram</a></li>
-				</ul>
-			</div> -->
 		</div>
-		<!-- <button class="visibilityToggle" onclick="toggleVisibility(this)">Colored Puppets</button>
-		<div>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/1966413568081758521/F92886F6D916C48BCB0280BCE52388D00352CBC3/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Dmytr0 Gaming</i>
-				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2894387136">Steam</a><img class="flag en"></li>
-					<li><a href="https://t.me/HeartsofUkraine4/55">Telegram</a></li>
-				</ul>
-			</div>
-		</div> -->
 	</div>
 	<div id="ir" class="game">
 		<div class="notCollapsible">

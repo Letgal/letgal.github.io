@@ -1,0 +1,14 @@
+body { line-height: 1.5; }
+body > p:first-of-type:not(.date) a { font-weight: bold; }
+body > a[href*="https://forum.paradoxplaza.com"] img { transition: .2s ease; }
+body > a[href*="https://forum.paradoxplaza.com"] img:hover { box-shadow: 0 0 1em #000; }
+h1 { margin-block-start: 0; }
+.date {
+	margin-block-end: 1em;
+	font-style: italic;
+	color: var(--special2);
+}
+.date::before { content: "Дата публікації: "; }
+.date::after { content: " р."; }
+.qm::before { content: "«"; }
+.qm::after { content: "»"; }

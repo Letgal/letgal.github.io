@@ -4,53 +4,14 @@
 	<title>Головна сторінка</title>
 	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-		:root {
-			--body-width: 50%;
-			--header-height: 0em;
-		}
-		a:not([href="/"]) {
-			display: block;
-			box-sizing: border-box; height: 2.2em;
-			margin-top: 0.5em;
-			padding: 0.5em;
-			border: 1px solid var(--border);
-			border-radius: 0.5em;
-			background: var(--button-dark);
-			text-align: center;
-			font-size: 1.2em; font-weight: bold;
-			color: var(--text-color);
-			transition: .2s ease;
-		}
-		a:not([href="/"]):hover {
-		    background: var(--button);
-		    text-decoration: none;
-		}
-		a:not([href="/"]):active { background: var(--button-darker); }
-		a[href="/"] {
-			display: block;
-			margin: 0 auto 2em auto;
-			width: 10em; height: 10em;
-			border-radius: 50%;
-		}
-		a[href="/"] img {
-			content: var(--logo-url); transition: .2s ease;
-			box-sizing: border-box;
-			width: 100%;
-			border: 4px solid var(--special);
-			border-radius: 50%;
-			animation: rotation 30s infinite linear;
-		}
-		a[href="/"]:hover img { filter: brightness(120%); }
-		hr { margin-block: 0.75em; }
-	</style>
+	<link rel="stylesheet" type="text/css" href="/index.css">
 </head>
 <body>
-	<a href="/" title="Головна сторінка"><img></a>
+	<a id="logo" href="/" title="Головна сторінка"><img></a>
 	<h1>Work in progress :)</h1>
 	<a href="ut.html">Переклади ігор <i>Paradox</i></a>
 	<!--<a href="transcript.html">Транскрибування</a>-->
-	<a href="hoi4-news.html">Новини <i>Hearts of Iron IV</i> (<i>не завершено</i>)</a>
+	<a href="hoi4-news">Новини <i>Hearts of Iron IV</i> (<i>не завершено</i>)</a>
 	<hr><a href="https://send.monobank.ua/jar/2hW6s9nEeY" target="_blank" style="color: var(--link-color);">Підтримати аўтора</a>
 </body>
 </html>

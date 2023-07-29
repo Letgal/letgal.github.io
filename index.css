@@ -1,6 +1,6 @@
 :root {
 	--body-width: 50%;
-	--header-height: 0em;
+	--collective-height: 0em;
 }
 a {
 	display: block;
@@ -11,7 +11,7 @@ a {
 	transition: .2s ease;
 }
 a:not(#logo) {
-	margin-block-start: 0.75rem;
+	margin-block: 0.75rem;
 	padding: 0.5rem;
 	border: 1px solid var(--border);
 	border-radius: 0.5rem;
@@ -39,4 +39,3 @@ a:not(#logo):active { background: var(--button-darker); }
 }
 #logo:hover img { filter: brightness(120%); }
 #logo:active img { filter: brightness(80%); }
-hr { margin-block: 0.75rem; }

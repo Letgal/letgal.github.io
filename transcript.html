@@ -3,17 +3,10 @@
 <head>
 	<title>Транскрибування</title>
 	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 	<style>
-		:root {
-			--body-width: 80%;
-			--gap-height: 0em;
-			--tab-height: 0em;
-		}
-		body > p:first-of-type, body > p:nth-of-type(2) {
-			text-align: center;
-			font-style: italic;
-		}
+		:root { --body-width: 80%; }
+		body > p:first-of-type, body > p:nth-of-type(2) { text-align: center; font-style: italic; }
 		body > a:first-of-type {
 			float: right;
 			display: inline-block;
@@ -45,29 +38,17 @@
 		p b:first-child, .initial { font-size: larger; }
 
 		:lang(pt), :lang(de) { font-style: italic; }
-		:lang(ar) {
-			font-family: "Noto Sans Arabic";
-			font-size: 1.5rem;
-		}
+		:lang(ar) { font-family: "Noto Sans Arabic"; font-size: 1.5rem; }
 
 		#ipa, #ar { width: calc(100% - 2em); }
 		#ipa th { font-size: smaller; }
-		#ipa td {
-			width: 48px;
-			font-family: "Noto Serif", "Consolas", monospace;
-		}
+		#ipa td { width: 48px; font-family: "Noto Serif", "Consolas", monospace; }
 
-		.code {
-			font-weight: normal;
-			font-family: "Consolas", monospace;
-		}
+		.code { font-weight: normal; font-family: "Consolas", monospace; }
 		.b { border-right: 0; }
 		.e { border-left: 0; }
-		.initial::after {
-			content: ",";
-			font-family: "Merriweather", "Noto Serif", serif;
-		}
-		.initial:last-of-type::after, .initial.fl::after { content: ":"; } /* fl = forced last */
+		.initial::after { content: ","; font-family: "Merriweather", "Noto Serif", serif; }
+		.initial:last-of-type::after, .initial.force-last::after { content: ":"; }
 		.akad, .kici, .piyi, .wagi, .czsk { border-left: 0; }
 		.akad { background: #6228; }
 		.kici { background: #6628; }
@@ -275,12 +256,12 @@
 	<p><code class="initial">[æ]</code> Звук знаходиться між <b>⟨а⟩</b> й <b>⟨е⟩</b> (<i>неоднозначно</i>).</p>
 	<p><code class="initial">[ɶ]</code> <code class="initial">[&#248;]</code> <b>⟨е⟩</b> (<i>зручне рос.</i> <b>⟨ё⟩</b>).</p>
 	<p><code class="initial">[ʏ]</code> <code class="initial">[y]</code> <b>⟨у⟩</b> на початку слова, якщо в оригіналі перед голосним немає «<i>silent <b>H</b></i>» (тоді ⟨<b>г</b>+<b>ю</b>⟩). <b>⟨ю⟩</b> після приголосних. <b>⟨й⟩</b> після голосних.</p>
-	<p><code class="initial fl">[&#601;]</code> Оскільки <code>[&#601;]</code> здебільшого є редукованим голосним, у залежності від контексту, але здебільшого як <b>⟨е⟩</b>.</p>
+	<p><code class="initial force-last">[&#601;]</code> Оскільки <code>[&#601;]</code> здебільшого є редукованим голосним, у залежності від контексту, але здебільшого як <b>⟨е⟩</b>.</p>
 	<h3>Приголосні</h3>
 	<p><big><code>[l]</code> у європейських мовах:</big> Питання стосується пом'якшення звуку <code>[l]</code> в іноземних словах.<br><b>⟨л⟩</b> тверде*.</p>
 	<p><code class="initial">[ɡ]</code> Завжди <b>⟨ґ⟩</b>, крім <i>усталених слів</i>.</p>
 	<p><code class="initial">[h]</code> <b>⟨г⟩</b>, але <b>⟨х⟩</b> після глухого приголосного.</p>
-	<ul><p><code class="initial fl">[ʰ]</code> Однаково з <code>[h]</code>, але придих відображається не в усіх мовах.</p></ul>
+	<ul><p><code class="initial force-last">[ʰ]</code> Однаково з <code>[h]</code>, але придих відображається не в усіх мовах.</p></ul>
 	<p><code class="initial">[w]</code> <b>⟨у⟩</b>, але <b>⟨в⟩</b>, якщо:</p>
 	<ul>
 		<li>перед голосними <b>І</b> <i>(та не після голосного)</i> й <b>У</b>;</li>

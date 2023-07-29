@@ -3,9 +3,13 @@
 <head>
 	<title>Переклади ігор Paradox</title>
 	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 	<style>
-		:root { --body-width: 50%; }
+		:root {
+			--root-color-50: #2228;
+			--body-width: 50%;
+			--collective-height: calc(var(--header-height) + 0.25rem + var(--nav-height));
+		}
 		body {
 			/*background-repeat: no-repeat;
 			background-position: 0 9em;
@@ -82,7 +86,7 @@
 			z-index: -1;
 			width: 100%; height: 1024px 103%;
 			content: "";
-			background: linear-gradient(to bottom, var(--body-color-50), var(--body-color));
+			background: linear-gradient(to bottom, var(--root-color-50), var(--root-color));
 		}
 		.game > img {
 			position: absolute; top: 0; left: 0;
@@ -90,23 +94,7 @@
 			width: 100%;
 		}*/
 
-		.noborder, .noborder th, .noborder td { border: none; }
-		.noborder th { padding: 0.5em; }
-		.noborder td { padding: 0; }
-		.noborder a {
-			display: block;
-			box-sizing: border-box;
-			width: 100%; height: 100%;
-			padding: 0.5em;
-			background: var(--button);
-			color: var(--text-color);
-			transition: .2s ease;
-		}
-		.noborder a:hover {
-			background: var(--button-light);
-			text-decoration: none;
-		}
-		.noborder a:active { background: var(--button-dark); }
+		.vanilla { color: lightgreen; }
 
 		#pack a { font-style: italic; }
 		#pack a::before {
@@ -114,9 +102,107 @@
 			font-style: normal;
 		}
 	</style>
-	<script type="text/javascript" src="shared.js"></script>
+	<script type="text/javascript" src="/shared.js"></script>
 	<script type="text/javascript">
+		const hoi4List = [
+			{
+				vanilla: true, author: "Letōn"/*,
+				image: "2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F"*/
+			},
+			{
+				mod: "Kaiserreich", author: "Stepan"/*,
+				image: "1978799422474817186/5918FEA9360CB09ABA37EC2C814298B30826AF44"*/
+			},
+			{
+				new: true, mod: "Red Flood", author: "Wenyanngat"/*,
+				image: "2042994105119617273/E1EB040A9FF7DA05CC8154023BFEF9AFC63648A6"*/
+			},
+			{
+				new: true, mod: "Pax Britannica: An Imperial Timeline", author: "Wenyanngat"/*,
+				image: "2044119435816333454/DBE956844AD957E53BB078CC69D1FD0C94E99C30"*/
+			},
+			{
+				mod: "Millenium Dawn: A Modern Day Mod", author: "TTTSHOK"/*,
+				image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384"*/
+			},
+			{
+				mod: "The Information Age 2018", author: "Godresky"/*,
+				image: "1799774361347164308/6913E546BF0486BD520D200989881BF786A5012B"*/
+			},
+			{
+				mod: "The Great War Redux", author: "TTTSHOK"/*,
+				image: "1869583325937331426/BF3DD3525FC2FF7F3B306F3C533F361A50E53BC6"*/
+			},
+			{
+				new: true, mod: "Disaster", author: "Wenyanngat"/*,
+				image: "2042994105117847101/14040A13A442FE987460820E589FA6FC243A3EF7"*/
+			},
+			{
+				mod: "The Age of a New Beginning", author: "TTTSHOK"/*,
+				image: "1985554187748650755/46A9EAF1D7745C228F91288EB5A52CDEADF35351"*/
+			},
+			{
+				mod: "Seçim 2023", author: "TTTSHOK"/*,
+				image: "2039612058721253582/4544DD46963371FC9E41DB038705FC8E1CB654E2"*/
+			},
+			{
+				mod: "East Showdown", author: "Conteynerrr"/*,
+				image: "2020467412156137733/6A3179CF9C11003DB514185C8C5BF5E58CD3141E"*/
+			},
+			{
+				mod: "The East Crisis", author: "Wenyanngat"/*,
+				image: "1793018961918301662/251D1EC898894FE408C9755AC0CE0873A6E6BCCE"*/
+			},
+			{
+				new: true, mod: "Scenario: Korea", author: "Wenyanngat"/*,
+				image: "2044119435813518421/60C6EBED1F22EF9512B7397F8E3C49A5AA3C0EF2"*/
+			},
+			{
+				mod: "SPEED5: Commanders in Conflict (Sonnenblum 1v1)", author: "TTTSHOK"/*,
+				image: "1986681082531933598/DA8809F08EB0DF0E8DE1903FC1C5D86E974CFD27"*/
+			}
+		]
+
+		function loadEntryList() {
+			if (localStorage.getItem("hoi4List")) {
+				hoi4List = JSON.parse(localStorage.getItem("hoi4List"));
+				showEntryList();
+			} else { outEmptyEntryList(); }
+		}
+
+		function saveEntryList() { localStorage.setItem("hoi4List", JSON.stringify(hoi4List)); }
+
+		function generateEntries(x) {
+			loadEntryList();
+			for (var i = 0; i < hoi4List.length; i++) {
+				const button = document.createElement("button"); button.className = "visibilityToggle"; button.setAttribute("onclick","toggleVisibility(this)"); button.innerText = hoi4List[i].mod;
+				if (hoi4List[i].new) { button.setAttribute("title","Новий переклад"); }
+				document.getElementById(x).appendChild(button);
+
+				const div = document.createElement("div");
+					const entry = document.createElement("div");
+						if (hoi4List[i].image) {
+							entry.className = "entry";
+							entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + hoi4List[i].image + "/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true'>";
+						}
+						else { entry.className = "entry noimage"; }
+						entry.innerHTML += "<i>" + hoi4List[i].author + "</i>";
+						const linksList = document.createElement("ul");
+							//for (var j = 0; j > hoi4List[i].links.length; j++) {
+							//	linksList.innerHTML += "<li><a src='/'>" + hoi4List[i].links[j] + "</a></li>";
+							//}
+						entry.appendChild(linksList);
+					div.appendChild(entry);
+				document.getElementById(x).appendChild(div);
+			}
+		}
+
 		function switchTo(x) {
+			//const allGames = document.getElementsByClassName("game");
+			//for (var i = 0; i > allGames.length; i++) {
+			//	allGames[i].style.display = "none";
+			//}
+			//document.getElementById(x).style.display = null;
 			if (x == "eu4") {
 				document.getElementById("eu4").style.display = null;
 				document.getElementById("name").innerHTML = "Europa Universalis IV";
@@ -160,6 +246,16 @@
 			else { next.style.height = next.scrollHeight + "px"; }
 		};
 
+		//const visToggle = document.getElementsByClassName("visibilityToggle");
+		//for (var i = 0; i < visToggle.length; i++) {
+		//	/*visToggle[i].addEventListener("click", function() {
+		//		const mod = this.nextElementSibling;
+		//		if (mod.style.height) { mod.style.height = null; }
+		//		else { mod.style.height = mod.scrollHeight + "px"; }
+		//	});*/
+		//	visToggle[i].setAttribute("onclick","toggleVisibility(this)");
+		//}
+
 		/*function filterByLang(x) {
 			const enSupport = document.querySelectorAll(".en:checked");
 			const ruSupport = document.querySelectorAll(".ru:checked");
@@ -189,26 +285,28 @@
 		});*/
 	</script>
 </head>
-<body onload="document.getElementById('hoi4-radio').click();/* generateEntries('test');*/ generateHeader()">
+<body onload="saveEntryList(); document.getElementById('hoi4-radio').click();/* generateEntries('test');*/ generateHeader()">
 	<header>
 		<!-- <div>
 			<label title="Відфільтрувати за підтримуваністю англійської"><input type="checkbox" name="filter" onchange="filterByLang('en')">Англійська</label>
 			<label title="Відфільтрувати за підтримуваністю російської"><input type="checkbox" name="filter" onchange="filterByLang('ru')">Російська</label>
 			<label title="Відфільтрувати за підтримуваністю української"><input type="checkbox" name="filter" onchange="filterByLang('uk')">Українська</label>
 		</div> -->
-		<div>
-			<input type="radio" name="game" id="eu4-radio" onchange="switchTo('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
-			<input type="radio" name="game" id="cs-radio" onchange="switchTo('cs')"><label for="cs-radio">Cities: Skylines</label>
-			<input type="radio" name="game" id="stel-radio" onchange="switchTo('stel')"><label for="stel-radio">Stellaris</label>
-			<input type="radio" name="game" id="hoi4-radio" onchange="switchTo('hoi4')"><label for="hoi4-radio">Hearts of Iron IV</label>
-			<input type="radio" name="game" id="ir-radio" onchange="switchTo('ir')"><label for="ir-radio">Imperator: Rome</label>
-			<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
-			<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
-		</div>
 	</header>
+	<nav>
+		<input type="radio" name="game" id="eu4-radio" onchange="switchTo('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
+		<input type="radio" name="game" id="cs-radio" onchange="switchTo('cs')"><label for="cs-radio">Cities: Skylines</label>
+		<input type="radio" name="game" id="stel-radio" onchange="switchTo('stel')"><label for="stel-radio">Stellaris</label>
+		<input type="radio" name="game" id="hoi4-radio" onchange="switchTo('hoi4')"><label for="hoi4-radio">Hearts of Iron IV</label>
+		<input type="radio" name="game" id="ir-radio" onchange="switchTo('ir')"><label for="ir-radio">Imperator: Rome</label>
+		<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
+		<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
+	</nav>
 
 	<p style="margin-top: 0; text-align: center;"><i>Ця сторінка буде доповнюватися й оновлюватися з часом.</i></p>
 	<h1>Українські переклади <i id="name"></i></h1>
+
+	<div id="test"></div>
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game">
@@ -305,19 +403,7 @@
 		</div>
 
 		<h2>Переклади модів</h2>
-		<p>Переклади з позначкою «<b style="color: lightgreen;">V</b>» включені в <a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548">цей переклад</a>.</p>
-		<table id="pack" class="noborder">
-			<tr>
-				<th>Колекції перекладів</th>
-				<td><a href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" style="border-top-left-radius: 0.5em;">Letōn</a></td>
-				<td><a href="https://steamcommunity.com/workshop/filedetails/?id=2849083956" style="border-top-right-radius: 0.5em;">Wenyanngat</a></td>
-			</tr>
-			<tr>
-				<th>Посібники</th>
-				<td><a href="https://steamcommunity.com/workshop/filedetails/?id=2912380366" style="border-bottom-left-radius: 0.5em;">Letōn</a></td>
-				<td><a href="https://steamcommunity.com/workshop/filedetails/?id=2908646220" style="border-bottom-right-radius: 0.5em;">Feniks4897</a></td>
-			</tr>
-		</table>
+		<p>Переклади з позначкою «<span class="vanilla">Переклад включений у ваніллу</span>» включені в <a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548">цей переклад</a>.</p>
 
 		<h3>Total Conversions</h3>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Kaiserreich</button>
@@ -331,7 +417,7 @@
 				</ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Red Flood</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Red Flood</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2042994105119617273/E1EB040A9FF7DA05CC8154023BFEF9AFC63648A6/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -339,7 +425,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2996988004">Steam</a><img class="flag ru"></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Pax Britannica: An Imperial Timeline</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Pax Britannica: An Imperial Timeline</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044119435816333454/DBE956844AD957E53BB078CC69D1FD0C94E99C30/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -374,12 +460,12 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2880535545">Steam</a><img class="flag ru"></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Disaster</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Disaster</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2042994105117847101/14040A13A442FE987460820E589FA6FC243A3EF7/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
 				<i>Wenyanngat</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2996786085">Steam</a><img class="flag en"></li><img class="flag ru"></li></ul>
+				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2996786085">Steam</a><img class="flag en"><img class="flag ru"></li></ul>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">The Age of a New Beginning</button>
@@ -417,7 +503,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2868122129">Steam</a> <abbr title="Мод порожній">�</abbr></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Scenario: Korea</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Scenario: Korea</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044119435813518421/60C6EBED1F22EF9512B7397F8E3C49A5AA3C0EF2/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -446,7 +532,7 @@
 				</ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">The Road to 56: Expanded & Enhanced</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">The Road to 56: Expanded & Enhanced</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2042994105113062046/3E8DC563A0BD2AF5EED8708AF7CA8D3565AF2090/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -505,7 +591,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2921455018">Steam</a><img class="flag en"></li></ul>
 			</div>
 		</div>
-		<hr style="margin-bottom: 0;">
+		<hr>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Ultimate German Focus Tree Updated</button>
 		<div>
 			<div class="entry">
@@ -649,7 +735,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2991114232">Steam</a><img class="flag en"><img class="flag ru"></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Belarus Independence Mod (<i>мод не оновлюється</i>)</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Belarus Independence Mod</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2022720583201384967/B7E795E3A83A15D96A27BB3B1B7AE1B9D66C820F/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -744,7 +830,7 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Universal Formable Nations</button>
@@ -767,7 +853,7 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Improved German Opposition</button>
@@ -806,7 +892,7 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Kovas' States Rework</button>
@@ -839,7 +925,7 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Toolpack 1.12</button>
@@ -854,7 +940,7 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 				<ul>
 					<li>State Transfer Tool</li>
 					<li>State Transfer Tool MP</li>
@@ -902,6 +988,7 @@
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2063250888841912440/CEA2768F4492C17E4FEEA45AE2DE834D9F23874A/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
 				<i>TEXA</i>
+				<br>(Переклад включений в ориґінал)
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2940022117">Steam</a><img class="flag uk"></ul>
 			</div>
 		</div>
@@ -917,14 +1004,14 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Country Roulette</button>
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Modifier Icons</button>
@@ -943,21 +1030,21 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Ledger</button>
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">TWR GDP Screen</button>
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1985554187739082248/4EB4F277FF27187BD012D95EE7DB24EC68728EA2/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -969,7 +1056,7 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 				<br>Моди в колекції:<ul style="columns: 2;">
 					<li>Diplomacy Alignment Triangle for HOI4</li>
 					<li>Diplomacy Alignment Triangle for Kaiserreich</li>
@@ -1002,7 +1089,7 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 				<br>Моди в колекції:<ul style="columns: 2;">
 					<li>Rename Factions</li>
 					<li>Rename Parties</li>
@@ -1015,7 +1102,7 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1878591893806101977/C645E1DBBAE85A49B566932C0C98E50FB5979986/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -1031,7 +1118,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2938839821">Steam</a><img class="flag en"></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Annex Subjects</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Annex Subjects</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2013720072663807467/DEE34A2A2D792989452E58B98DEF315EB6BBECCD/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -1043,19 +1130,19 @@
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/5104298832183720190/96E819FE7014AC645AFF2CBA092601DC6D0A8BC8/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
 				<i>BmB Kun</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2048998725">Steam</a> <abbr title="Текст не перекладений">�</abbr></ul>
+				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2912512076">Steam</a> <abbr title="Текст не перекладений">�</abbr></ul>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Recall Volunteers (&gt; <i>Yard1</i>)</button>
 		<div>
 			<div class="entry noimage">
 				<i>Letōn</i>
-				<br>(Переклад включений у ваніллу)
+				<br><span class="vanilla">(Переклад включений у ваніллу)</span>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Demand It!</button>
@@ -1136,7 +1223,7 @@
 			</div>
 		</div>
 		<h2>Переклади модів</h2>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Divergences</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Divergences</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506411499069/BCEDB823B57F1B12B7808B30294FAB0FEE530D7F/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -1147,7 +1234,7 @@
 				</ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Null & Void</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Null & Void</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -1158,7 +1245,7 @@
 				</ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" title="Новий переклад" onclick="toggleVisibility(this)">Better Politics Mod</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Better Politics Mod</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410879056/4AF8CB2EC2FA33C090699D85E536F37C7245498C/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">

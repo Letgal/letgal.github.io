@@ -1,7 +1,8 @@
 const headerButtons = [
 	{ text: "<img>", link: "/" },
 	{ text: "Переклади ігор Paradox", link: "/ut.html" },
-	{ text: "Новини Hearts of Iron IV", link: "/hoi4-news" },
+	// { text: "Транскрибування", link: "/transcript.html" },
+	// { text: "Новини Hearts of Iron IV", link: "/hoi4-news" },
 	{ text: "Підтримати аўтора", link: "https://send.monobank.ua/jar/2hW6s9nEeY" }
 ]
 

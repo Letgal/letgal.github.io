@@ -9,6 +9,7 @@
 			--root-color-50: #2228;
 			--body-width: 50%;
 			--collective-height: calc(var(--header-height) + 0.25rem + var(--nav-height));
+			--img-entry-height: 100px;
 		}
 		body {
 			/*background-repeat: no-repeat;
@@ -28,9 +29,9 @@
 		}
 		.visibilityToggle:hover { background: var(--button) !important; }
 		.visibilityToggle:active { background: var(--button-dark) !important; }
-		.visibilityToggle[title*="Новий переклад"] { background: darkgoldenrod; }
-		.visibilityToggle[title*="Новий переклад"]:hover { background: goldenrod !important; }
-		.visibilityToggle[title*="Новий переклад"]:active { background: darkgoldenrod !important; }
+		.visibilityToggle[title*="овий переклад"] { background: darkgoldenrod; }
+		.visibilityToggle[title*="овий переклад"]:hover { background: goldenrod !important; }
+		.visibilityToggle[title*="овий переклад"]:active { background: darkgoldenrod !important; }
 		.visibilityToggle + div {
 			height: 0;
 			overflow: hidden;
@@ -41,12 +42,13 @@
 			border-top: 2px solid var(--special2);
 		}
 		.visibilityToggle + div, .notCollapsible { background: linear-gradient(to bottom, var(--button-dark), transparent); }
-		.visibilityToggle[title*="Новий переклад"] + div, .notCollapsible[title*="Новий переклад"] { background: linear-gradient(to bottom, darkgoldenrod, transparent); }
+		.visibilityToggle[title*="овий переклад"] + div, .notCollapsible[title*="овий переклад"] { background: linear-gradient(to bottom, darkgoldenrod, transparent); }
 
 		.entry { margin: 0.5em; }
+		.entry:not(.noimage) { min-height: var(--img-entry-height); }
 		.entry > img {
 			box-sizing: border-box;
-			height: 100px;
+			height: var(--img-entry-height);
 		}
 		.entry > img:first-of-type { float: left; margin-right: 0.5em; }
 		.entry > i { font-weight: bold; }

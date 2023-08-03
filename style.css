@@ -1,4 +1,6 @@
 :root {
+	color-scheme: dark;
+	line-height: 1.5; letter-spacing: 0.5px;
 	background: var(--root-color);
 	color: var(--text-color);
 	font-family: "Merriweather", "Noto Serif", serif;
@@ -111,8 +113,13 @@ button {
 button:not(.noclick) { cursor: pointer; }
 button:hover:not(.noclick) { background: var(--button-light); }
 button:active:not(.noclick) { background: var(--button-dark); }
-h1 { text-align: center; }
 h1, h2, h3, h4, h5, h6 { color: var(--heading-color); }
+h1 {
+	line-height: 1.2; letter-spacing: 0;
+	text-align: center;
+}
+h2 { line-height: 1.3; letter-spacing: 0.2px; }
+h3 { line-height: 1.4; letter-spacing: 0.35px; }
 table { border-spacing: 0; }
 table, th, td { border: 1px solid var(--border); }
 hr {

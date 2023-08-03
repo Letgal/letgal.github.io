@@ -5,20 +5,7 @@
 	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
 	<link rel="stylesheet" type="text/css" href="/style.css">
 	<style>
-		:root { --body-width: 80%; }
 		body > p:first-of-type, body > p:nth-of-type(2) { text-align: center; font-style: italic; }
-		body > a:first-of-type {
-			float: right;
-			display: inline-block;
-			margin-top: 1em; margin-left: 2em;
-			padding: 0.5em;
-			box-sizing: border-box;
-			background: var(--button);
-			color: var(--text-color);
-			font-weight: bold;
-			border-radius: 0.5em;
-			transition: .2s ease;
-		}
 		body > a:first-of-type:hover { background: var(--button-light); text-decoration: none; }
 		h1 { margin-block-start: 0; }
 		/*h2 { background: var(--special2); }*/
@@ -29,7 +16,6 @@
 			box-sizing: border-box;
 			float: right;
 			margin: 1em; margin-top: 0;
-			max-width: 100%;
 			font-size: smaller;
 			text-align: center;
 		}
@@ -39,6 +25,18 @@
 		p > .initial::after { content: ","; font-family: "Merriweather", "Noto Serif", serif; }
 		p > .initial:last-of-type::after { content: ":"; }
 
+		/* [href="toponyms.html"] {
+			float: right;
+			display: inline-block;
+			margin-top: 1em; margin-left: 2em;
+			padding: 0.5em;
+			box-sizing: border-box;
+			background: var(--button);
+			color: var(--text-color);
+			font-weight: bold;
+			border-radius: 0.5em;
+			transition: .2s ease;
+		} */
 		:lang(pt), :lang(de) { font-style: italic; }
 		:lang(ar) { font-family: "Noto Naskh Arabic"; font-size: 1.5rem; }
 

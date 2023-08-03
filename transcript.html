@@ -29,34 +29,46 @@
 			box-sizing: border-box;
 			float: right;
 			margin: 1em; margin-top: 0;
+			max-width: 100%;
 			font-size: smaller;
 			text-align: center;
 		}
 		th, td { padding: 3px; }
 		p { margin: 0.5em 0; }
-		p:first-of-type { font-weight: bold; }
 		p b:first-child, .initial { font-size: larger; }
+		p > .initial::after { content: ","; font-family: "Merriweather", "Noto Serif", serif; }
+		p > .initial:last-of-type::after { content: ":"; }
 
 		:lang(pt), :lang(de) { font-style: italic; }
-		:lang(ar) { font-family: "Noto Sans Arabic"; font-size: 1.5rem; }
+		:lang(ar) { font-family: "Noto Naskh Arabic"; font-size: 1.5rem; }
 
 		#ipa, #ar { width: calc(100% - 2em); }
 		#ipa th { font-size: smaller; }
 		#ipa td { width: 48px; font-family: "Noto Serif", "Consolas", monospace; }
+		#zh {
+			margin-top: 1em;
+			font-size: x-small;
+		}
 
 		.code { font-weight: normal; font-family: "Consolas", monospace; }
 		.b { border-right: 0; }
 		.e { border-left: 0; }
-		.initial::after { content: ","; font-family: "Merriweather", "Noto Serif", serif; }
-		.initial:last-of-type::after, .initial.force-last::after { content: ":"; }
-		.akad, .kici, .piyi, .wagi, .czsk { border-left: 0; }
+		.legend {
+			display: inline-block;
+			vertical-align: sub;
+			margin-inline: 0.25em;
+			border: 1px solid var(--border);
+			width: 1em; height: 1em;
+			filter: brightness(200%);
+		}
+		.akad:not(.legend), .kici:not(.legend), .piyi:not(.legend), .wagi:not(.legend), .czsk:not(.legend) { border-left: 0; }
 		.akad { background: #6228; }
 		.kici { background: #6628; }
 		.piyi { background: #2628; }
 		.wagi { background: #2668; }
 		.czsk { background: #2268; }
 	</style>
-	<script type="text/javascript" src="shared.js"></script>
+	<script type="text/javascript" src="/shared.js"></script>
 	<script>
 		function switchLang() {
 			const thSpanList = document.querySelectorAll("#ipa th span");
@@ -64,18 +76,11 @@
 		}
 	</script>
 </head>
-<body>
-	<header>
-		<a href="/" title="Головна сторінка"><img></a>
-		<a href="ut.html">Переклади ігор Paradox</a>
-		<a href="transcript.html">Транскрибування</a>
-		<a href="hoi4-news.html">Новини Hearts of Iron IV</a>
-		<!--<a href="/lyr">Тексти пісень</a>-->
-		<a href="https://send.monobank.ua/jar/2hW6s9nEeY" target="_blank">Підтримати аўтора</a><br>
-	</header>
+<body onload="generateHeader()">
+	<header></header>
 	<h1>Транскрибування іноземних слів</h1>
 	<!--<a href="toponyms.html">Перейти до мапи топонімів</a>-->
-	<p>Усяка мова має свої обмеження. Українська&nbsp;— не виняток; традиційне транскрибування, як повелося, повне неоднозначностей і неточностей.<br>З цієї причини я вирішив дещо воднозначити ці проблеми&#8230; принаймні для себе.</p>
+	<p style="font-weight: bold;">Усяка мова має свої обмеження. Українська&nbsp;— не виняток; традиційне транскрибування, як повелося, повне неоднозначностей і неточностей.<br>З цієї причини я вирішив дещо воднозначити ці проблеми&#8230; принаймні для себе.</p>
 	<p>Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
 	<!-- <h2>Довідкова таблиця <abbr title="Міжнародний фонетичний алфавіт">МФА</abbr></h2><hr>
 	<table id="ipa">
@@ -256,12 +261,12 @@
 	<p><code class="initial">[æ]</code> Звук знаходиться між <b>⟨а⟩</b> й <b>⟨е⟩</b> (<i>неоднозначно</i>).</p>
 	<p><code class="initial">[ɶ]</code> <code class="initial">[&#248;]</code> <b>⟨е⟩</b> (<i>зручне рос.</i> <b>⟨ё⟩</b>).</p>
 	<p><code class="initial">[ʏ]</code> <code class="initial">[y]</code> <b>⟨у⟩</b> на початку слова, якщо в оригіналі перед голосним немає «<i>silent <b>H</b></i>» (тоді ⟨<b>г</b>+<b>ю</b>⟩). <b>⟨ю⟩</b> після приголосних. <b>⟨й⟩</b> після голосних.</p>
-	<p><code class="initial force-last">[&#601;]</code> Оскільки <code>[&#601;]</code> здебільшого є редукованим голосним, у залежності від контексту, але здебільшого як <b>⟨е⟩</b>.</p>
+	<p><code class="initial">[&#601;]</code> Оскільки <code>[&#601;]</code> здебільшого є редукованим голосним, у залежності від контексту, але здебільшого як <b>⟨е⟩</b>.</p>
 	<h3>Приголосні</h3>
 	<p><big><code>[l]</code> у європейських мовах:</big> Питання стосується пом'якшення звуку <code>[l]</code> в іноземних словах.<br><b>⟨л⟩</b> тверде*.</p>
 	<p><code class="initial">[ɡ]</code> Завжди <b>⟨ґ⟩</b>, крім <i>усталених слів</i>.</p>
 	<p><code class="initial">[h]</code> <b>⟨г⟩</b>, але <b>⟨х⟩</b> після глухого приголосного.</p>
-	<ul><p><code class="initial force-last">[ʰ]</code> Однаково з <code>[h]</code>, але придих відображається не в усіх мовах.</p></ul>
+	<ul><p><code class="initial">[ʰ]</code> Однаково з <code>[h]</code>, але придих відображається не в усіх мовах.</p></ul>
 	<p><code class="initial">[w]</code> <b>⟨у⟩</b>, але <b>⟨в⟩</b>, якщо:</p>
 	<ul>
 		<li>перед голосними <b>І</b> <i>(та не після голосного)</i> й <b>У</b>;</li>
@@ -273,62 +278,440 @@
 	<!--<h2>Транскрибування мов</h2><hr>-->
 	<div>
 		<h2>Китайська</h2><hr>
+		Довідка: <div class="legend akad"></div>Академічна сист. <div class="legend kici"></div>Сист. Кірносової-Цісар <div class="legend piyi"></div>Піньїнь <div class="legend wagi"></div>Сист. Уейда–Джайлза <div class="legend czsk"></div>Чесько-словацька сист.
 		<!-- ῾ for Wade–Giles -->
-		<table id="zh" title="1. Академічна система&#10;2. Піньїнь&#10;3. Уейда–Джайлза&#10;4. Чесько-словацька система">
+		<table id="zh">
 			<tr>
-				<th>/m/</th><td>м</td><td colspan="3">m</td>
-				<th>/n/</th><td>нь</td><td colspan="3">n</td>
-				<th></th><td colspan="4"></td>
-				<th></th><td colspan="4"></td>
-				<th>/ŋ/</th><td>н</td><td colspan="3">ng</td>
+				<td class="code" colspan="2">[a]</td><td class="akad" colspan="2">а</td><td class="kici" colspan="2">а</td><td class="piyi" colspan="2">a</td><td class="wagi" colspan="2">a</td><td class="czsk" colspan="2">a</td>
+				<td class="code" colspan="2">[e]</td><td class="akad" colspan="2">е</td><td class="kici" colspan="2">е</td><td class="piyi" colspan="2">e</td><td class="wagi" colspan="2">e</td><td class="czsk" colspan="2">e</td>
+				<td class="code" colspan="2">[o]</td><td class="akad" colspan="2">о</td><td class="kici" colspan="2">о</td><td class="piyi" colspan="2">o</td><td class="wagi" colspan="2">o</td><td class="czsk" colspan="2">o</td>
 			</tr>
 			<tr>
-				<th>/pʰ/</th><td>п</td><td>p</td><td>p῾</td><td>pch</td>
-				<th>/tʰ/</th><td>т</td><td>t</td><td>t῾</td><td>tch</td>
-				<th></th><td colspan="4"></td>
-				<th></th><td colspan="4"></td>
-				<th>/kʰ/</th><td>к</td><td>k</td><td>k῾</td><td>kch</td>
+				<td class="code" colspan="2">[ai&#815;]</td><td class="akad" colspan="2">ай</td><td class="kici" colspan="2">ай</td><td class="piyi" colspan="2">ai</td><td class="wagi" colspan="2">ai</td><td class="czsk" colspan="2">aj</td>
+				<td class="code" colspan="2">[ei&#815;]</td><td class="akad" colspan="2">ей</td><td class="kici" colspan="2">ей</td><td class="piyi" colspan="2">ei</td><td class="wagi" colspan="2">ei</td><td class="czsk" colspan="2">ej</td>
+				<td colspan="12"></td>
 			</tr>
 			<tr>
-				<th>/p/</th><td>б</td><td>b</td><td colspan="2">p</td>
-				<th>/t/</th><td>д</td><td>d</td><td colspan="2">t</td>
-				<th></th><td colspan="4"></td>
-				<th></th><td colspan="4"></td>
-				<th>/k/</th><td>ґ</td><td>g</td><td colspan="2">k</td>
+				<td class="code" colspan="2">[an]</td><td class="akad" colspan="2">ань</td><td class="kici" colspan="2">ань</td><td class="piyi" colspan="2">an</td><td class="wagi" colspan="2">an</td><td class="czsk" colspan="2">an</td>
+				<td class="code" colspan="2">[ən]</td><td class="akad" colspan="2">ень</td><td class="kici" colspan="2">ень</td><td class="piyi" colspan="2">en</td><td class="wagi" colspan="2">ên</td><td class="czsk" colspan="2">en</td>
+				<td colspan="12"></td>
 			</tr>
 			<tr>
-				<th></th><td colspan="4"></td>
-				<th>/t͡sʰ/</th><td>ц</td><td>c</td><td>ts῾</td><td>cch</td>
-				<th>/ʈ͡ʂʰ/</th><td>ч</td><td>ch</td><td>ch῾</td><td>čch</td>
-				<th>[t͡ɕʰ]</th><td>ць</td><td>q</td><td>ch῾</td><td>čch</td>
-				<th></th><td colspan="4"></td>
+				<td class="code" colspan="2">[aŋ]</td><td class="akad" colspan="2">ан</td><td class="kici" colspan="2">ан</td><td class="piyi" colspan="2">ang</td><td class="wagi" colspan="2">ang</td><td class="czsk" colspan="2">ang</td>
+				<td class="code" colspan="2">[əŋ]</td><td class="akad" colspan="2">ен</td><td class="kici" colspan="2">ен</td><td class="piyi" colspan="2">eng</td><td class="wagi" colspan="2">êng</td><td class="czsk" colspan="2">eng</td>
+				<td colspan="12"></td>
 			</tr>
 			<tr>
-				<th></th><td colspan="4"></td>
-				<th>/t͡s/</th><td>цз</td><td>z</td><td>ts</td><td>c</td>
-				<th>/ʈ͡ʂ/</th><td>чж</td><td>zh</td><td>ch</td><td>č</td>
-				<th>[t͡ɕ]</th><td>цзь</td><td>j</td><td>ch</td><td>ť</td>
-				<th></th><td colspan="4"></td>
+				<td class="code" colspan="2">[au&#815;]</td><td class="akad" colspan="2">ао</td><td class="kici" colspan="2">ао</td><td class="piyi" colspan="2">ao</td><td class="wagi" colspan="2">ao</td><td class="czsk" colspan="2">ao</td>
+				<td class="code" colspan="2">[aɚ̯]</td><td class="akad" colspan="2">ер</td><td class="kici" colspan="2">ер</td><td class="piyi" colspan="2">er</td><td class="wagi" colspan="2">êrh</td><td class="czsk" colspan="2">er</td>
+				<td class="code" colspan="2">[ou&#815;]</td><td class="akad" colspan="2">оу</td><td class="kici" colspan="2">ов</td><td class="piyi" colspan="2">ou</td><td class="wagi" colspan="2">ou</td><td class="czsk" colspan="2">ou</td>
+			</tr>
+			<tr><td colspan="36"></td></tr>
+			<tr>
+				<td class="code" colspan="2">[pʰa] / [pa]</td><td class="akad" colspan="2">па&ZeroWidthSpace;/&ZeroWidthSpace;ба</td><td class="kici" colspan="2">па&ZeroWidthSpace;/&ZeroWidthSpace;ба</td><td class="piyi" colspan="2">pa&ZeroWidthSpace;/&ZeroWidthSpace;ba</td><td class="wagi" colspan="2">pʻa&ZeroWidthSpace;/&ZeroWidthSpace;pa</td><td class="czsk" colspan="2">pcha&ZeroWidthSpace;/&ZeroWidthSpace;pa</td>
+				<td class="code" colspan="2">[tʰa] / [ta]</td><td class="akad" colspan="2">та&ZeroWidthSpace;/&ZeroWidthSpace;да</td><td class="kici" colspan="2">та&ZeroWidthSpace;/&ZeroWidthSpace;да</td><td class="piyi" colspan="2">ta&ZeroWidthSpace;/&ZeroWidthSpace;da</td><td class="wagi" colspan="2">tʻa&ZeroWidthSpace;/&ZeroWidthSpace;ta</td><td class="czsk" colspan="2">tcha&ZeroWidthSpace;/&ZeroWidthSpace;ta</td>
+				<td class="code" colspan="2">[kʰa] / [ka]</td><td class="akad" colspan="2">ка&ZeroWidthSpace;/&ZeroWidthSpace;ґа</td><td class="kici" colspan="2">ка&ZeroWidthSpace;/&ZeroWidthSpace;ґа</td><td class="piyi" colspan="2">ka&ZeroWidthSpace;/&ZeroWidthSpace;ga</td><td class="wagi" colspan="2">kʻa&ZeroWidthSpace;/&ZeroWidthSpace;ka</td><td class="czsk" colspan="2">kcha&ZeroWidthSpace;/&ZeroWidthSpace;ka</td>
 			</tr>
 			<tr>
-				<th>/f/</th><td>ф</td><td colspan="3">f</td>
-				<th>/s/</th><td>с</td><td colspan="3">s</td>
-				<th>/ʂ/</th><td>ш</td><td colspan="2">sh</td><td>š</td>
-				<th>[ɕ]</th><td>сь</td><td>x</td><td>hs</td><td>š</td>
-				<th>/x/<br><small>([h ~ x])</small></th><td>х</td><td colspan="2">h</td><td>ch</td>
+				<td class="code" colspan="2">[pʰai&#815;] / [pai&#815;]</td><td class="akad" colspan="2">пай&ZeroWidthSpace;/&ZeroWidthSpace;бай</td><td class="kici" colspan="2">пай&ZeroWidthSpace;/&ZeroWidthSpace;бай</td><td class="piyi" colspan="2">pa&ZeroWidthSpace;/&ZeroWidthSpace;bai</td><td class="wagi" colspan="2">pʻai&ZeroWidthSpace;/&ZeroWidthSpace;pai</td><td class="czsk" colspan="2">pchaj&ZeroWidthSpace;/&ZeroWidthSpace;paj</td>
+				<td class="code" colspan="2">[tʰai&#815;] / [tai&#815;]</td><td class="akad" colspan="2">тай&ZeroWidthSpace;/&ZeroWidthSpace;дай</td><td class="kici" colspan="2">тай&ZeroWidthSpace;/&ZeroWidthSpace;дай</td><td class="piyi" colspan="2">tai&ZeroWidthSpace;/&ZeroWidthSpace;dai</td><td class="wagi" colspan="2">tʻai&ZeroWidthSpace;/&ZeroWidthSpace;tai</td><td class="czsk" colspan="2">tchaj&ZeroWidthSpace;/&ZeroWidthSpace;taj</td>
+				<td class="code" colspan="2">[kʰai&#815;] / [kai&#815;]</td><td class="akad" colspan="2">кай&ZeroWidthSpace;/&ZeroWidthSpace;ґай</td><td class="kici" colspan="2">кай&ZeroWidthSpace;/&ZeroWidthSpace;ґай</td><td class="piyi" colspan="2">kai&ZeroWidthSpace;/&ZeroWidthSpace;gai</td><td class="wagi" colspan="2">kʻai&ZeroWidthSpace;/&ZeroWidthSpace;kai</td><td class="czsk" colspan="2">kchaj&ZeroWidthSpace;/&ZeroWidthSpace;kaj</td>
 			</tr>
 			<tr>
-				<th></th><td colspan="4"></td>
-				<th>/l/</th><td>л</td><td colspan="3">l</td>
-				<th>/ʐ/<br><small>([ʐ ~ ɻ])</small></th><td>ж</td><td>r</td><td>j</td><td>ž</td>
-				<th></th><td colspan="4"></td>
-				<th></th><td colspan="4"></td>
+				<td class="code" colspan="2">[pʰan] / [pan]</td><td class="akad" colspan="2">пань&ZeroWidthSpace;/&ZeroWidthSpace;бань</td><td class="kici" colspan="2">пань&ZeroWidthSpace;/&ZeroWidthSpace;бань</td><td class="piyi" colspan="2">pan&ZeroWidthSpace;/&ZeroWidthSpace;ban</td><td class="wagi" colspan="2">pʻan&ZeroWidthSpace;/&ZeroWidthSpace;pan</td><td class="czsk" colspan="2">pchan&ZeroWidthSpace;/&ZeroWidthSpace;pan</td>
+				<td class="code" colspan="2">[tʰan] / [tan]</td><td class="akad" colspan="2">тань&ZeroWidthSpace;/&ZeroWidthSpace;дань</td><td class="kici" colspan="2">тань&ZeroWidthSpace;/&ZeroWidthSpace;дань</td><td class="piyi" colspan="2">tan&ZeroWidthSpace;/&ZeroWidthSpace;dan</td><td class="wagi" colspan="2">tʻan&ZeroWidthSpace;/&ZeroWidthSpace;tan</td><td class="czsk" colspan="2">tchan&ZeroWidthSpace;/&ZeroWidthSpace;tan</td>
+				<td class="code" colspan="2">[kʰan] / [kan]</td><td class="akad" colspan="2">кань&ZeroWidthSpace;/&ZeroWidthSpace;ґань</td><td class="kici" colspan="2">кань&ZeroWidthSpace;/&ZeroWidthSpace;ґань</td><td class="piyi" colspan="2">kan&ZeroWidthSpace;/&ZeroWidthSpace;gan</td><td class="wagi" colspan="2">kʻan&ZeroWidthSpace;/&ZeroWidthSpace;kan</td><td class="czsk" colspan="2">kchan&ZeroWidthSpace;/&ZeroWidthSpace;kan</td>
 			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰaŋ] / [paŋ]</td><td class="akad" colspan="2">пан&ZeroWidthSpace;/&ZeroWidthSpace;бан</td><td class="kici" colspan="2">пан&ZeroWidthSpace;/&ZeroWidthSpace;бан</td><td class="piyi" colspan="2">pang&ZeroWidthSpace;/&ZeroWidthSpace;bang</td><td class="wagi" colspan="2">pʻang&ZeroWidthSpace;/&ZeroWidthSpace;pang</td><td class="czsk" colspan="2">pchang&ZeroWidthSpace;/&ZeroWidthSpace;pang</td>
+				<td class="code" colspan="2">[tʰaŋ] / [taŋ]</td><td class="akad" colspan="2">тан&ZeroWidthSpace;/&ZeroWidthSpace;дан</td><td class="kici" colspan="2">тан&ZeroWidthSpace;/&ZeroWidthSpace;дан</td><td class="piyi" colspan="2">tang&ZeroWidthSpace;/&ZeroWidthSpace;dang</td><td class="wagi" colspan="2">tʻang&ZeroWidthSpace;/&ZeroWidthSpace;tang</td><td class="czsk" colspan="2">tchang&ZeroWidthSpace;/&ZeroWidthSpace;tang</td>
+				<td class="code" colspan="2">[kʰaŋ] / [kaŋ]</td><td class="akad" colspan="2">кан&ZeroWidthSpace;/&ZeroWidthSpace;ґан</td><td class="kici" colspan="2">кан&ZeroWidthSpace;/&ZeroWidthSpace;ґан</td><td class="piyi" colspan="2">kang&ZeroWidthSpace;/&ZeroWidthSpace;gang</td><td class="wagi" colspan="2">kʻang&ZeroWidthSpace;/&ZeroWidthSpace;kang</td><td class="czsk" colspan="2">kchang&ZeroWidthSpace;/&ZeroWidthSpace;kang</td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰau&#815;] / [pau&#815;]</td><td class="akad" colspan="2">пао&ZeroWidthSpace;/&ZeroWidthSpace;бао</td><td class="kici" colspan="2">пао&ZeroWidthSpace;/&ZeroWidthSpace;бао</td><td class="piyi" colspan="2">pao&ZeroWidthSpace;/&ZeroWidthSpace;bao</td><td class="wagi" colspan="2">pʻao&ZeroWidthSpace;/&ZeroWidthSpace;pao</td><td class="czsk" colspan="2">pchao&ZeroWidthSpace;/&ZeroWidthSpace;pao</td>
+				<td class="code" colspan="2">[tʰau&#815;] / [tau&#815;]</td><td class="akad" colspan="2">тао&ZeroWidthSpace;/&ZeroWidthSpace;дао</td><td class="kici" colspan="2">тао&ZeroWidthSpace;/&ZeroWidthSpace;дао</td><td class="piyi" colspan="2">tao&ZeroWidthSpace;/&ZeroWidthSpace;dao</td><td class="wagi" colspan="2">tʻao&ZeroWidthSpace;/&ZeroWidthSpace;tao</td><td class="czsk" colspan="2">tchao&ZeroWidthSpace;/&ZeroWidthSpace;tao</td>
+				<td class="code" colspan="2">[kʰau&#815;] / [kau&#815;]</td><td class="akad" colspan="2">као&ZeroWidthSpace;/&ZeroWidthSpace;ґао</td><td class="kici" colspan="2">као&ZeroWidthSpace;/&ZeroWidthSpace;ґао</td><td class="piyi" colspan="2">kao&ZeroWidthSpace;/&ZeroWidthSpace;gao</td><td class="wagi" colspan="2">kʻao&ZeroWidthSpace;/&ZeroWidthSpace;kao</td><td class="czsk" colspan="2">kchao&ZeroWidthSpace;/&ZeroWidthSpace;kao</td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰɤ] / [pɤ]</td><td class="akad" colspan="2">пе&ZeroWidthSpace;/&ZeroWidthSpace;бе</td><td class="kici" colspan="2">пе&ZeroWidthSpace;/&ZeroWidthSpace;бе</td><td class="piyi" colspan="2">pe&ZeroWidthSpace;/&ZeroWidthSpace;be</td><td class="wagi" colspan="2">pʻê&ZeroWidthSpace;/&ZeroWidthSpace;pê</td><td class="czsk" colspan="2">pche&ZeroWidthSpace;/&ZeroWidthSpace;pe</td>
+				<td class="code" colspan="2">[tʰɤ] / [tɤ]</td><td class="akad" colspan="2">те&ZeroWidthSpace;/&ZeroWidthSpace;де</td><td class="kici" colspan="2">те&ZeroWidthSpace;/&ZeroWidthSpace;де</td><td class="piyi" colspan="2">te&ZeroWidthSpace;/&ZeroWidthSpace;de</td><td class="wagi" colspan="2">tʻê&ZeroWidthSpace;/&ZeroWidthSpace;tê</td><td class="czsk" colspan="2">tche&ZeroWidthSpace;/&ZeroWidthSpace;te</td>
+				<td class="code" colspan="2">[kʰɤ] / [kɤ]</td><td class="akad" colspan="2">ке&ZeroWidthSpace;/&ZeroWidthSpace;ґе</td><td class="kici" colspan="2">ке&ZeroWidthSpace;/&ZeroWidthSpace;ґе</td><td class="piyi" colspan="2">ke&ZeroWidthSpace;/&ZeroWidthSpace;ge</td><td class="wagi" colspan="2">kʻo&ZeroWidthSpace;/&ZeroWidthSpace;ko</td><td class="czsk" colspan="2">kche&ZeroWidthSpace;/&ZeroWidthSpace;ke</td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰei&#815;] / [pei&#815;]</td><td class="akad" colspan="2">пей&ZeroWidthSpace;/&ZeroWidthSpace;бей</td><td class="kici" colspan="2">пей&ZeroWidthSpace;/&ZeroWidthSpace;бей</td><td class="piyi" colspan="2">pei&ZeroWidthSpace;/&ZeroWidthSpace;bei</td><td class="wagi" colspan="2">pʻei&ZeroWidthSpace;/&ZeroWidthSpace;pei</td><td class="czsk" colspan="2">pchej&ZeroWidthSpace;/&ZeroWidthSpace;pej</td>
+				<td class="code" colspan="2">[tʰei&#815;] / [tei&#815;]</td><td class="akad" colspan="2">тей&ZeroWidthSpace;/&ZeroWidthSpace;дей</td><td class="kici" colspan="2">тей&ZeroWidthSpace;/&ZeroWidthSpace;дей</td><td class="piyi" colspan="2">tei&ZeroWidthSpace;/&ZeroWidthSpace;dei</td><td class="wagi" colspan="2">tʻei&ZeroWidthSpace;/&ZeroWidthSpace;tei</td><td class="czsk" colspan="2">tchej&ZeroWidthSpace;/&ZeroWidthSpace;tej</td>
+				<td class="code" colspan="2">[kʰei&#815;] / [kei&#815;]</td><td class="akad" colspan="2">кей&ZeroWidthSpace;/&ZeroWidthSpace;ґей</td><td class="kici" colspan="2">кей&ZeroWidthSpace;/&ZeroWidthSpace;ґей</td><td class="piyi" colspan="2">kei&ZeroWidthSpace;/&ZeroWidthSpace;gei</td><td class="wagi" colspan="2">kʻei&ZeroWidthSpace;/&ZeroWidthSpace;kei</td><td class="czsk" colspan="2">kchej&ZeroWidthSpace;/&ZeroWidthSpace;kej</td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰən] / [pən]</td><td class="akad" colspan="2">пень&ZeroWidthSpace;/&ZeroWidthSpace;бень</td><td class="kici" colspan="2">пень&ZeroWidthSpace;/&ZeroWidthSpace;бень</td><td class="piyi" colspan="2">pen&ZeroWidthSpace;/&ZeroWidthSpace;ben</td><td class="wagi" colspan="2">pʻen&ZeroWidthSpace;/&ZeroWidthSpace;pen</td><td class="czsk" colspan="2">pchen&ZeroWidthSpace;/&ZeroWidthSpace;pen</td>
+				<td class="code" colspan="2">/ [tən]</td><td class="akad" colspan="2">/&ZeroWidthSpace;день</td><td class="kici" colspan="2">/&ZeroWidthSpace;день</td><td class="piyi" colspan="2">/&ZeroWidthSpace;den</td><td class="wagi" colspan="2">/&ZeroWidthSpace;ten</td><td class="czsk" colspan="2">/&ZeroWidthSpace;ten</td>
+				<td class="code" colspan="2">[kʰən] / [kən]</td><td class="akad" colspan="2">кень&ZeroWidthSpace;/&ZeroWidthSpace;ґень</td><td class="kici" colspan="2">кень&ZeroWidthSpace;/&ZeroWidthSpace;ґень</td><td class="piyi" colspan="2">ken&ZeroWidthSpace;/&ZeroWidthSpace;gen</td><td class="wagi" colspan="2">kʻen&ZeroWidthSpace;/&ZeroWidthSpace;ken</td><td class="czsk" colspan="2">kchen&ZeroWidthSpace;/&ZeroWidthSpace;ken</td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰəŋ] / [pəŋ]</td><td class="akad" colspan="2">пен&ZeroWidthSpace;/&ZeroWidthSpace;бен</td><td class="kici" colspan="2">пен&ZeroWidthSpace;/&ZeroWidthSpace;бен</td><td class="piyi" colspan="2">peng&ZeroWidthSpace;/&ZeroWidthSpace;beng</td><td class="wagi" colspan="2">pʻeng&ZeroWidthSpace;/&ZeroWidthSpace;peng</td><td class="czsk" colspan="2">pcheng&ZeroWidthSpace;/&ZeroWidthSpace;peng</td>
+				<td class="code" colspan="2">[tʰəŋ] / [təŋ]</td><td class="akad" colspan="2">тен&ZeroWidthSpace;/&ZeroWidthSpace;ден</td><td class="kici" colspan="2">тен&ZeroWidthSpace;/&ZeroWidthSpace;ден</td><td class="piyi" colspan="2">teng&ZeroWidthSpace;/&ZeroWidthSpace;deng</td><td class="wagi" colspan="2">tʻeng&ZeroWidthSpace;/&ZeroWidthSpace;teng</td><td class="czsk" colspan="2">tcheng&ZeroWidthSpace;/&ZeroWidthSpace;teng</td>
+				<td class="code" colspan="2">[kʰəŋ] / [kəŋ]</td><td class="akad" colspan="2">кен&ZeroWidthSpace;/&ZeroWidthSpace;ґен</td><td class="kici" colspan="2">кен&ZeroWidthSpace;/&ZeroWidthSpace;ґен</td><td class="piyi" colspan="2">keng&ZeroWidthSpace;/&ZeroWidthSpace;geng</td><td class="wagi" colspan="2">kʻeng&ZeroWidthSpace;/&ZeroWidthSpace;keng</td><td class="czsk" colspan="2">kcheng&ZeroWidthSpace;/&ZeroWidthSpace;keng</td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰi] / [pi]</td><td class="akad" colspan="2">пі&ZeroWidthSpace;/&ZeroWidthSpace;бі</td><td class="kici" colspan="2">пі&ZeroWidthSpace;/&ZeroWidthSpace;бі</td><td class="piyi" colspan="2">pi&ZeroWidthSpace;/&ZeroWidthSpace;bi</td><td class="wagi" colspan="2">pʻi&ZeroWidthSpace;/&ZeroWidthSpace;pi</td><td class="czsk" colspan="2">pchi&ZeroWidthSpace;/&ZeroWidthSpace;pi</td>
+				<td class="code" colspan="2">[tʰi] / [ti]</td><td class="akad" colspan="2">ті&ZeroWidthSpace;/&ZeroWidthSpace;ді</td><td class="kici" colspan="2">ті&ZeroWidthSpace;/&ZeroWidthSpace;ді</td><td class="piyi" colspan="2">ti&ZeroWidthSpace;/&ZeroWidthSpace;di</td><td class="wagi" colspan="2">tʻi&ZeroWidthSpace;/&ZeroWidthSpace;ti</td><td class="czsk" colspan="2">tchi&ZeroWidthSpace;/&ZeroWidthSpace;ti</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">/ [tja]</td><td class="akad" colspan="2">/&ZeroWidthSpace;дя</td><td class="kici" colspan="2">/&ZeroWidthSpace;дя</td><td class="piyi" colspan="2">/&ZeroWidthSpace;dia</td><td class="wagi" colspan="2">/&ZeroWidthSpace;tia</td><td class="czsk" colspan="2">/&ZeroWidthSpace;tja</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰjɛn] / [pjɛn]</td><td class="akad" colspan="2">пянь&ZeroWidthSpace;/&ZeroWidthSpace;бянь</td><td class="kici" colspan="2">п'янь&ZeroWidthSpace;/&ZeroWidthSpace;б'янь</td><td class="piyi" colspan="2">pian&ZeroWidthSpace;/&ZeroWidthSpace;bian</td><td class="wagi" colspan="2">pʻien&ZeroWidthSpace;/&ZeroWidthSpace;pien</td><td class="czsk" colspan="2">pchien&ZeroWidthSpace;/&ZeroWidthSpace;pien</td>
+				<td class="code" colspan="2">[tʰjɛn] / [tjɛn]</td><td class="akad" colspan="2">тянь&ZeroWidthSpace;/&ZeroWidthSpace;дянь</td><td class="kici" colspan="2">тянь&ZeroWidthSpace;/&ZeroWidthSpace;дянь</td><td class="piyi" colspan="2">tian&ZeroWidthSpace;/&ZeroWidthSpace;dian</td><td class="wagi" colspan="2">tʻien&ZeroWidthSpace;/&ZeroWidthSpace;tien</td><td class="czsk" colspan="2">tchien&ZeroWidthSpace;/&ZeroWidthSpace;tien</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">/ [tjaŋ]</td><td class="akad" colspan="2">/&ZeroWidthSpace;дян</td><td class="kici" colspan="2">/&ZeroWidthSpace;дян</td><td class="piyi" colspan="2">/&ZeroWidthSpace;diang</td><td class="wagi" colspan="2">/&ZeroWidthSpace;tiang</td><td class="czsk" colspan="2">/&ZeroWidthSpace;tjang</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰjau&#815;] / [pjau&#815;]</td><td class="akad" colspan="2">пяо&ZeroWidthSpace;/&ZeroWidthSpace;бяо</td><td class="kici" colspan="2">п'яо&ZeroWidthSpace;/&ZeroWidthSpace;б'яо</td><td class="piyi" colspan="2">piao&ZeroWidthSpace;/&ZeroWidthSpace;biao</td><td class="wagi" colspan="2">pʻiao&ZeroWidthSpace;/&ZeroWidthSpace;piao</td><td class="czsk" colspan="2">pchiao&ZeroWidthSpace;/&ZeroWidthSpace;piao</td>
+				<td class="code" colspan="2">[tʰjau&#815;] / [tjau&#815;]</td><td class="akad" colspan="2">тяо&ZeroWidthSpace;/&ZeroWidthSpace;дяо</td><td class="kici" colspan="2">тяо&ZeroWidthSpace;/&ZeroWidthSpace;дяо</td><td class="piyi" colspan="2">tiao&ZeroWidthSpace;/&ZeroWidthSpace;diao</td><td class="wagi" colspan="2">tʻiao&ZeroWidthSpace;/&ZeroWidthSpace;tiao</td><td class="czsk" colspan="2">tchiao&ZeroWidthSpace;/&ZeroWidthSpace;tiao</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰje] / [pje]</td><td class="akad" colspan="2">пє&ZeroWidthSpace;/&ZeroWidthSpace;бє</td><td class="kici" colspan="2">п'є&ZeroWidthSpace;/&ZeroWidthSpace;б'є</td><td class="piyi" colspan="2">pie&ZeroWidthSpace;/&ZeroWidthSpace;bie</td><td class="wagi" colspan="2">pʻieh&ZeroWidthSpace;/&ZeroWidthSpace;pieh</td><td class="czsk" colspan="2">pchie&ZeroWidthSpace;/&ZeroWidthSpace;pie</td>
+				<td class="code" colspan="2">[tʰje] / [tje]</td><td class="akad" colspan="2">тє&ZeroWidthSpace;/&ZeroWidthSpace;дє</td><td class="kici" colspan="2">тє&ZeroWidthSpace;/&ZeroWidthSpace;дє</td><td class="piyi" colspan="2">tie&ZeroWidthSpace;/&ZeroWidthSpace;die</td><td class="wagi" colspan="2">tʻieh&ZeroWidthSpace;/&ZeroWidthSpace;tieh</td><td class="czsk" colspan="2">tchie&ZeroWidthSpace;/&ZeroWidthSpace;tie</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰin] / [pin]</td><td class="akad" colspan="2">пінь&ZeroWidthSpace;/&ZeroWidthSpace;бінь</td><td class="kici" colspan="2">пінь&ZeroWidthSpace;/&ZeroWidthSpace;бінь</td><td class="piyi" colspan="2">pin&ZeroWidthSpace;/&ZeroWidthSpace;bin</td><td class="wagi" colspan="2">pʻin&ZeroWidthSpace;/&ZeroWidthSpace;pin</td><td class="czsk" colspan="2">pchin&ZeroWidthSpace;/&ZeroWidthSpace;pin</td>
+				<td colspan="12"></td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰiŋ] / [piŋ]</td><td class="akad" colspan="2">пін&ZeroWidthSpace;/&ZeroWidthSpace;бін</td><td class="kici" colspan="2">пін&ZeroWidthSpace;/&ZeroWidthSpace;бін</td><td class="piyi" colspan="2">ping&ZeroWidthSpace;/&ZeroWidthSpace;bing</td><td class="wagi" colspan="2">pʻing&ZeroWidthSpace;/&ZeroWidthSpace;ping</td><td class="czsk" colspan="2">pching&ZeroWidthSpace;/&ZeroWidthSpace;ping</td>
+				<td class="code" colspan="2">[tʰiŋ] / [tiŋ]</td><td class="akad" colspan="2">тін&ZeroWidthSpace;/&ZeroWidthSpace;дін</td><td class="kici" colspan="2">тін&ZeroWidthSpace;/&ZeroWidthSpace;дін</td><td class="piyi" colspan="2">ting&ZeroWidthSpace;/&ZeroWidthSpace;ding</td><td class="wagi" colspan="2">tʻing&ZeroWidthSpace;/&ZeroWidthSpace;ting</td><td class="czsk" colspan="2">tching&ZeroWidthSpace;/&ZeroWidthSpace;ting</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">/ [tjou&#815;]</td><td class="akad" colspan="2">/&ZeroWidthSpace;дю</td><td class="kici" colspan="2">/&ZeroWidthSpace;дьов</td><td class="piyi" colspan="2">/&ZeroWidthSpace;diu</td><td class="wagi" colspan="2">/&ZeroWidthSpace;tiu</td><td class="czsk" colspan="2">/&ZeroWidthSpace;tjou</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰwo] / [pwo]</td><td class="akad" colspan="2">по&ZeroWidthSpace;/&ZeroWidthSpace;бо</td><td class="kici" colspan="2">по&ZeroWidthSpace;/&ZeroWidthSpace;бо</td><td class="piyi" colspan="2">po&ZeroWidthSpace;/&ZeroWidthSpace;bo</td><td class="wagi" colspan="2">pʻo&ZeroWidthSpace;/&ZeroWidthSpace;po</td><td class="czsk" colspan="2">pcho&ZeroWidthSpace;/&ZeroWidthSpace;po</td>
+				<td colspan="12"></td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[tʰʊŋ] / [tʊŋ]</td><td class="akad" colspan="2">тун&ZeroWidthSpace;/&ZeroWidthSpace;дун</td><td class="kici" colspan="2">тон&ZeroWidthSpace;/&ZeroWidthSpace;дон</td><td class="piyi" colspan="2">tong&ZeroWidthSpace;/&ZeroWidthSpace;dong</td><td class="wagi" colspan="2">tʻung&ZeroWidthSpace;/&ZeroWidthSpace;tung</td><td class="czsk" colspan="2">tchung&ZeroWidthSpace;/&ZeroWidthSpace;tung</td>
+				<td class="code" colspan="2">[kʰʊŋ] / [kʊŋ]</td><td class="akad" colspan="2">кун&ZeroWidthSpace;/&ZeroWidthSpace;ґун</td><td class="kici" colspan="2">кон&ZeroWidthSpace;/&ZeroWidthSpace;ґон</td><td class="piyi" colspan="2">kong&ZeroWidthSpace;/&ZeroWidthSpace;gong</td><td class="wagi" colspan="2">kʻung&ZeroWidthSpace;/&ZeroWidthSpace;kung</td><td class="czsk" colspan="2">kchung&ZeroWidthSpace;/&ZeroWidthSpace;kung</td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰou&#815;] /</td><td class="akad" colspan="2">поу /</td><td class="kici" colspan="2">пов /</td><td class="piyi" colspan="2">pou /</td><td class="wagi" colspan="2">pʻou /</td><td class="czsk" colspan="2">pchou /</td>
+				<td class="code" colspan="2">[tʰou&#815;] / [tou&#815;]</td><td class="akad" colspan="2">тоу&ZeroWidthSpace;/&ZeroWidthSpace;доу</td><td class="kici" colspan="2">тов&ZeroWidthSpace;/&ZeroWidthSpace;дов</td><td class="piyi" colspan="2">tou&ZeroWidthSpace;/&ZeroWidthSpace;dou</td><td class="wagi" colspan="2">tʻou&ZeroWidthSpace;/&ZeroWidthSpace;tou</td><td class="czsk" colspan="2">tchou&ZeroWidthSpace;/&ZeroWidthSpace;tou</td>
+				<td class="code" colspan="2">[kʰou&#815;] / [kou&#815;]</td><td class="akad" colspan="2">коу&ZeroWidthSpace;/&ZeroWidthSpace;ґоу</td><td class="kici" colspan="2">ков&ZeroWidthSpace;/&ZeroWidthSpace;ґов</td><td class="piyi" colspan="2">kou&ZeroWidthSpace;/&ZeroWidthSpace;gou</td><td class="wagi" colspan="2">kʻou&ZeroWidthSpace;/&ZeroWidthSpace;kou</td><td class="czsk" colspan="2">kchou&ZeroWidthSpace;/&ZeroWidthSpace;kou</td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[pʰu] / [pu]</td><td class="akad" colspan="2">пу&ZeroWidthSpace;/&ZeroWidthSpace;бу</td><td class="kici" colspan="2">пу&ZeroWidthSpace;/&ZeroWidthSpace;бу</td><td class="piyi" colspan="2">pu&ZeroWidthSpace;/&ZeroWidthSpace;bu</td><td class="wagi" colspan="2">pʻu&ZeroWidthSpace;/&ZeroWidthSpace;pu</td><td class="czsk" colspan="2">pchu&ZeroWidthSpace;/&ZeroWidthSpace;pu</td>
+				<td class="code" colspan="2">[tʰu] / [tu]</td><td class="akad" colspan="2">ту&ZeroWidthSpace;/&ZeroWidthSpace;ду</td><td class="kici" colspan="2">ту&ZeroWidthSpace;/&ZeroWidthSpace;ду</td><td class="piyi" colspan="2">tu&ZeroWidthSpace;/&ZeroWidthSpace;du</td><td class="wagi" colspan="2">tʻu&ZeroWidthSpace;/&ZeroWidthSpace;tu</td><td class="czsk" colspan="2">tchu&ZeroWidthSpace;/&ZeroWidthSpace;tu</td>
+				<td class="code" colspan="2">[kʰu] / [ku]</td><td class="akad" colspan="2">ку&ZeroWidthSpace;/&ZeroWidthSpace;ґу</td><td class="kici" colspan="2">ку&ZeroWidthSpace;/&ZeroWidthSpace;ґу</td><td class="piyi" colspan="2">ku&ZeroWidthSpace;/&ZeroWidthSpace;gu</td><td class="wagi" colspan="2">kʻu&ZeroWidthSpace;/&ZeroWidthSpace;ku</td><td class="czsk" colspan="2">kchu&ZeroWidthSpace;/&ZeroWidthSpace;ku</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[kʰwa] / [kwa]</td><td class="akad" colspan="2">куа&ZeroWidthSpace;/&ZeroWidthSpace;ґуа</td><td class="kici" colspan="2">ква&ZeroWidthSpace;/&ZeroWidthSpace;ґва</td><td class="piyi" colspan="2">kua&ZeroWidthSpace;/&ZeroWidthSpace;gua</td><td class="wagi" colspan="2">kʻua&ZeroWidthSpace;/&ZeroWidthSpace;kua</td><td class="czsk" colspan="2">kchua&ZeroWidthSpace;/&ZeroWidthSpace;kua</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[kʰwai&#815;] / [kwai&#815;]</td><td class="akad" colspan="2">куай&ZeroWidthSpace;/&ZeroWidthSpace;ґуай</td><td class="kici" colspan="2">квай&ZeroWidthSpace;/&ZeroWidthSpace;ґвай</td><td class="piyi" colspan="2">kuai&ZeroWidthSpace;/&ZeroWidthSpace;guai</td><td class="wagi" colspan="2">kʻuai&ZeroWidthSpace;/&ZeroWidthSpace;kuai</td><td class="czsk" colspan="2">kchuaj&ZeroWidthSpace;/&ZeroWidthSpace;kuaj</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[tʰwan] / [twan]</td><td class="akad" colspan="2">туань&ZeroWidthSpace;/&ZeroWidthSpace;дуань</td><td class="kici" colspan="2">твань&ZeroWidthSpace;/&ZeroWidthSpace;двань</td><td class="piyi" colspan="2">tuan&ZeroWidthSpace;/&ZeroWidthSpace;duan</td><td class="wagi" colspan="2">tʻuan&ZeroWidthSpace;/&ZeroWidthSpace;tuan</td><td class="czsk" colspan="2">tchuan&ZeroWidthSpace;/&ZeroWidthSpace;tuan</td>
+				<td class="code" colspan="2">[kʰwan] / [kwan]</td><td class="akad" colspan="2">куань&ZeroWidthSpace;/&ZeroWidthSpace;ґуань</td><td class="kici" colspan="2">квань&ZeroWidthSpace;/&ZeroWidthSpace;ґвань</td><td class="piyi" colspan="2">kuan&ZeroWidthSpace;/&ZeroWidthSpace;guan</td><td class="wagi" colspan="2">kʻuan&ZeroWidthSpace;/&ZeroWidthSpace;kuan</td><td class="czsk" colspan="2">kchuan&ZeroWidthSpace;/&ZeroWidthSpace;kuan</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[kʰwaŋ] / [kwaŋ]</td><td class="akad" colspan="2">куан&ZeroWidthSpace;/&ZeroWidthSpace;ґуан</td><td class="kici" colspan="2">кван&ZeroWidthSpace;/&ZeroWidthSpace;ґван</td><td class="piyi" colspan="2">kuang&ZeroWidthSpace;/&ZeroWidthSpace;guang</td><td class="wagi" colspan="2">kʻuang&ZeroWidthSpace;/&ZeroWidthSpace;kuang</td><td class="czsk" colspan="2">kchuang&ZeroWidthSpace;/&ZeroWidthSpace;kuang</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[tʰwei&#815;] / [twei&#815;]</td><td class="akad" colspan="2">туй&ZeroWidthSpace;/&ZeroWidthSpace;дуй</td><td class="kici" colspan="2">твей&ZeroWidthSpace;/&ZeroWidthSpace;двей</td><td class="piyi" colspan="2">tui&ZeroWidthSpace;/&ZeroWidthSpace;dui</td><td class="wagi" colspan="2">tʻui&ZeroWidthSpace;/&ZeroWidthSpace;tui</td><td class="czsk" colspan="2">tchuej&ZeroWidthSpace;/&ZeroWidthSpace;tuej</td>
+				<td class="code" colspan="2">[kʰwei&#815;] / [kwei&#815;]</td><td class="akad" colspan="2">куй&ZeroWidthSpace;/&ZeroWidthSpace;ґуй</td><td class="kici" colspan="2">квей&ZeroWidthSpace;/&ZeroWidthSpace;ґвей</td><td class="piyi" colspan="2">kui&ZeroWidthSpace;/&ZeroWidthSpace;gui</td><td class="wagi" colspan="2">kʻuei&ZeroWidthSpace;/&ZeroWidthSpace;kuei</td><td class="czsk" colspan="2">kchuej&ZeroWidthSpace;/&ZeroWidthSpace;kuej</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[tʰwən] / [twən]</td><td class="akad" colspan="2">тунь&ZeroWidthSpace;/&ZeroWidthSpace;дунь</td><td class="kici" colspan="2">твень&ZeroWidthSpace;/&ZeroWidthSpace;двень</td><td class="piyi" colspan="2">tun&ZeroWidthSpace;/&ZeroWidthSpace;dun</td><td class="wagi" colspan="2">tʻun&ZeroWidthSpace;/&ZeroWidthSpace;tun</td><td class="czsk" colspan="2">tchun&ZeroWidthSpace;/&ZeroWidthSpace;tun</td>
+				<td class="code" colspan="2">[kʰwən] / [kwən]</td><td class="akad" colspan="2">кунь&ZeroWidthSpace;/&ZeroWidthSpace;ґунь</td><td class="kici" colspan="2">квень&ZeroWidthSpace;/&ZeroWidthSpace;ґвень</td><td class="piyi" colspan="2">kun&ZeroWidthSpace;/&ZeroWidthSpace;gun</td><td class="wagi" colspan="2">kʻun&ZeroWidthSpace;/&ZeroWidthSpace;kun</td><td class="czsk" colspan="2">kchun&ZeroWidthSpace;/&ZeroWidthSpace;kun</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[tʰwo] / [two]</td><td class="akad" colspan="2">то&ZeroWidthSpace;/&ZeroWidthSpace;до</td><td class="kici" colspan="2">тво&ZeroWidthSpace;/&ZeroWidthSpace;дво</td><td class="piyi" colspan="2">tuo&ZeroWidthSpace;/&ZeroWidthSpace;duo</td><td class="wagi" colspan="2">tʻo&ZeroWidthSpace;/&ZeroWidthSpace;to</td><td class="czsk" colspan="2">tchuo&ZeroWidthSpace;/&ZeroWidthSpace;tuo</td>
+				<td class="code" colspan="2">[kʰwo] / [kwo]</td><td class="akad" colspan="2">ко&ZeroWidthSpace;/&ZeroWidthSpace;ґо</td><td class="kici" colspan="2">кво&ZeroWidthSpace;/&ZeroWidthSpace;ґво</td><td class="piyi" colspan="2">kuo&ZeroWidthSpace;/&ZeroWidthSpace;guo</td><td class="wagi" colspan="2">kʻuo&ZeroWidthSpace;/&ZeroWidthSpace;kuo</td><td class="czsk" colspan="2">kchuo&ZeroWidthSpace;/&ZeroWidthSpace;kuo</td>
+			</tr>
+			<tr><td colspan="36"></td></tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰa] / [t͡sa]</td><td class="akad" colspan="2">ца&ZeroWidthSpace;/&ZeroWidthSpace;цза</td><td class="kici" colspan="2">ца&ZeroWidthSpace;/&ZeroWidthSpace;дза</td><td class="piyi" colspan="2">ca&ZeroWidthSpace;/&ZeroWidthSpace;za</td><td class="wagi" colspan="2">tsʻa&ZeroWidthSpace;/&ZeroWidthSpace;tsa</td><td class="czsk" colspan="2">ccha&ZeroWidthSpace;/&ZeroWidthSpace;ca</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰa] / [ʈ͡ʂa]</td><td class="akad" colspan="2">ча&ZeroWidthSpace;/&ZeroWidthSpace;чжа</td><td class="kici" colspan="2">ча&ZeroWidthSpace;/&ZeroWidthSpace;джа</td><td class="piyi" colspan="2">cha&ZeroWidthSpace;/&ZeroWidthSpace;zha</td><td class="wagi" colspan="2">chʻa&ZeroWidthSpace;/&ZeroWidthSpace;cha</td><td class="czsk" colspan="2">čcha&ZeroWidthSpace;/&ZeroWidthSpace;ča</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰai&#815;] / [t͡sai&#815;]</td><td class="akad" colspan="2">цай&ZeroWidthSpace;/&ZeroWidthSpace;цзай</td><td class="kici" colspan="2">цай&ZeroWidthSpace;/&ZeroWidthSpace;дзай</td><td class="piyi" colspan="2">cai&ZeroWidthSpace;/&ZeroWidthSpace;zai</td><td class="wagi" colspan="2">tsʻai&ZeroWidthSpace;/&ZeroWidthSpace;tsai</td><td class="czsk" colspan="2">cchaj&ZeroWidthSpace;/&ZeroWidthSpace;caj</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰai&#815;] / [ʈ͡ʂai&#815;]</td><td class="akad" colspan="2">чай&ZeroWidthSpace;/&ZeroWidthSpace;чжай</td><td class="kici" colspan="2">чай&ZeroWidthSpace;/&ZeroWidthSpace;джай</td><td class="piyi" colspan="2">chai&ZeroWidthSpace;/&ZeroWidthSpace;zhai</td><td class="wagi" colspan="2">chʻai&ZeroWidthSpace;/&ZeroWidthSpace;chai</td><td class="czsk" colspan="2">čchaj&ZeroWidthSpace;/&ZeroWidthSpace;čaj</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰan] / [t͡san]</td><td class="akad" colspan="2">цань&ZeroWidthSpace;/&ZeroWidthSpace;цзань</td><td class="kici" colspan="2">цань&ZeroWidthSpace;/&ZeroWidthSpace;дзань</td><td class="piyi" colspan="2">can&ZeroWidthSpace;/&ZeroWidthSpace;zan</td><td class="wagi" colspan="2">tsʻan&ZeroWidthSpace;/&ZeroWidthSpace;tsan</td><td class="czsk" colspan="2">cchan&ZeroWidthSpace;/&ZeroWidthSpace;can</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰan] / [ʈ͡ʂan]</td><td class="akad" colspan="2">чань&ZeroWidthSpace;/&ZeroWidthSpace;чжань</td><td class="kici" colspan="2">чань&ZeroWidthSpace;/&ZeroWidthSpace;джань</td><td class="piyi" colspan="2">chan&ZeroWidthSpace;/&ZeroWidthSpace;zhan</td><td class="wagi" colspan="2">chʻan&ZeroWidthSpace;/&ZeroWidthSpace;chan</td><td class="czsk" colspan="2">čchan&ZeroWidthSpace;/&ZeroWidthSpace;čan</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰaŋ] / [t͡saŋ]</td><td class="akad" colspan="2">цан&ZeroWidthSpace;/&ZeroWidthSpace;цзан</td><td class="kici" colspan="2">цан&ZeroWidthSpace;/&ZeroWidthSpace;дзан</td><td class="piyi" colspan="2">cang&ZeroWidthSpace;/&ZeroWidthSpace;zang</td><td class="wagi" colspan="2">tsʻang&ZeroWidthSpace;/&ZeroWidthSpace;tsang</td><td class="czsk" colspan="2">cchang&ZeroWidthSpace;/&ZeroWidthSpace;cang</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰaŋ] / [ʈ͡ʂaŋ]</td><td class="akad" colspan="2">чан&ZeroWidthSpace;/&ZeroWidthSpace;чжан</td><td class="kici" colspan="2">чан&ZeroWidthSpace;/&ZeroWidthSpace;джан</td><td class="piyi" colspan="2">chang&ZeroWidthSpace;/&ZeroWidthSpace;zhang</td><td class="wagi" colspan="2">chʻang&ZeroWidthSpace;/&ZeroWidthSpace;chang</td><td class="czsk" colspan="2">čchang&ZeroWidthSpace;/&ZeroWidthSpace;čang</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰau&#815;] / [t͡sau&#815;]</td><td class="akad" colspan="2">цао&ZeroWidthSpace;/&ZeroWidthSpace;цзао</td><td class="kici" colspan="2">цао&ZeroWidthSpace;/&ZeroWidthSpace;дзао</td><td class="piyi" colspan="2">cao&ZeroWidthSpace;/&ZeroWidthSpace;zao</td><td class="wagi" colspan="2">tsʻao&ZeroWidthSpace;/&ZeroWidthSpace;tsao</td><td class="czsk" colspan="2">cchao&ZeroWidthSpace;/&ZeroWidthSpace;cao</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰau&#815;] / [ʈ͡ʂau&#815;]</td><td class="akad" colspan="2">чао&ZeroWidthSpace;/&ZeroWidthSpace;чжао</td><td class="kici" colspan="2">чао&ZeroWidthSpace;/&ZeroWidthSpace;джао</td><td class="piyi" colspan="2">chao&ZeroWidthSpace;/&ZeroWidthSpace;zhao</td><td class="wagi" colspan="2">chʻao&ZeroWidthSpace;/&ZeroWidthSpace;chao</td><td class="czsk" colspan="2">čchao&ZeroWidthSpace;/&ZeroWidthSpace;čao</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰɤ] / [t͡sɤ]</td><td class="akad" colspan="2">це&ZeroWidthSpace;/&ZeroWidthSpace;цзе</td><td class="kici" colspan="2">це&ZeroWidthSpace;/&ZeroWidthSpace;дзе</td><td class="piyi" colspan="2">ce&ZeroWidthSpace;/&ZeroWidthSpace;ze</td><td class="wagi" colspan="2">tsʻê&ZeroWidthSpace;/&ZeroWidthSpace;tsê</td><td class="czsk" colspan="2">cche&ZeroWidthSpace;/&ZeroWidthSpace;ce</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰɤ] / [ʈ͡ʂɤ]</td><td class="akad" colspan="2">че&ZeroWidthSpace;/&ZeroWidthSpace;чже</td><td class="kici" colspan="2">че&ZeroWidthSpace;/&ZeroWidthSpace;дже</td><td class="piyi" colspan="2">che&ZeroWidthSpace;/&ZeroWidthSpace;zhe</td><td class="wagi" colspan="2">chʻê&ZeroWidthSpace;/&ZeroWidthSpace;chê</td><td class="czsk" colspan="2">čche&ZeroWidthSpace;/&ZeroWidthSpace;če</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">/ [t͡sei&#815;]</td><td class="akad" colspan="2">/&ZeroWidthSpace;цзей</td><td class="kici" colspan="2">/&ZeroWidthSpace;дзей</td><td class="piyi" colspan="2">/&ZeroWidthSpace;zei</td><td class="wagi" colspan="2">/&ZeroWidthSpace;tsei</td><td class="czsk" colspan="2">/&ZeroWidthSpace;cej</td>
+				<td class="code" colspan="2">/ [ʈ͡ʂei&#815;]</td><td class="akad" colspan="2">/&ZeroWidthSpace;чжей</td><td class="kici" colspan="2">/&ZeroWidthSpace;джей</td><td class="piyi" colspan="2">/&ZeroWidthSpace;zhei</td><td class="wagi" colspan="2">/&ZeroWidthSpace;chei</td><td class="czsk" colspan="2">/&ZeroWidthSpace;čej</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰən] / [t͡sən]</td><td class="akad" colspan="2">цень&ZeroWidthSpace;/&ZeroWidthSpace;цзень</td><td class="kici" colspan="2">цень&ZeroWidthSpace;/&ZeroWidthSpace;дзень</td><td class="piyi" colspan="2">cen&ZeroWidthSpace;/&ZeroWidthSpace;zen</td><td class="wagi" colspan="2">tsʻên&ZeroWidthSpace;/&ZeroWidthSpace;tsên</td><td class="czsk" colspan="2">cchen&ZeroWidthSpace;/&ZeroWidthSpace;cen</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰən] / [ʈ͡ʂən]</td><td class="akad" colspan="2">чень&ZeroWidthSpace;/&ZeroWidthSpace;чжень</td><td class="kici" colspan="2">чень&ZeroWidthSpace;/&ZeroWidthSpace;джень</td><td class="piyi" colspan="2">chen&ZeroWidthSpace;/&ZeroWidthSpace;zhen</td><td class="wagi" colspan="2">chʻên&ZeroWidthSpace;/&ZeroWidthSpace;chên</td><td class="czsk" colspan="2">čchen&ZeroWidthSpace;/&ZeroWidthSpace;čen</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰəŋ] / [t͡səŋ]</td><td class="akad" colspan="2">цен&ZeroWidthSpace;/&ZeroWidthSpace;цзен</td><td class="kici" colspan="2">цен&ZeroWidthSpace;/&ZeroWidthSpace;дзен</td><td class="piyi" colspan="2">cen&ZeroWidthSpace;/&ZeroWidthSpace;zen</td><td class="wagi" colspan="2">tsʻên&ZeroWidthSpace;/&ZeroWidthSpace;tsên</td><td class="czsk" colspan="2">cchen&ZeroWidthSpace;/&ZeroWidthSpace;cen</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰəŋ] / [ʈ͡ʂəŋ]</td><td class="akad" colspan="2">чен&ZeroWidthSpace;/&ZeroWidthSpace;чжен</td><td class="kici" colspan="2">чен&ZeroWidthSpace;/&ZeroWidthSpace;джен</td><td class="piyi" colspan="2">chen&ZeroWidthSpace;/&ZeroWidthSpace;zhen</td><td class="wagi" colspan="2">chʻên&ZeroWidthSpace;/&ZeroWidthSpace;chên</td><td class="czsk" colspan="2">čchen&ZeroWidthSpace;/&ZeroWidthSpace;čen</td>
+				<td colspan="12"></td>
+			</tr>
+			<tr>
+				<td class="code" colspan="2">[t͡sʰɨ] / [t͡sɨ]</td><td class="akad" colspan="2">ци&ZeroWidthSpace;/&ZeroWidthSpace;цзи</td><td class="kici" colspan="2">ци&ZeroWidthSpace;/&ZeroWidthSpace;дзи</td><td class="piyi" colspan="2">ci&ZeroWidthSpace;/&ZeroWidthSpace;zi</td><td class="wagi" colspan="2">tzʻŭ&ZeroWidthSpace;/&ZeroWidthSpace;tzŭ</td><td class="czsk" colspan="2">cch’&ZeroWidthSpace;/&ZeroWidthSpace;c’</td>
+				<td class="code" colspan="2">[ʈ͡ʂʰɨ] / [ʈ͡ʂɨ]</td><td class="akad" colspan="2">чи&ZeroWidthSpace;/&ZeroWidthSpace;чжи</td><td class="kici" colspan="2">чи&ZeroWidthSpace;/&ZeroWidthSpace;джи</td><td class="piyi" colspan="2">chi&ZeroWidthSpace;/&ZeroWidthSpace;zhi</td><td class="wagi" colspan="2">chʻih&ZeroWidthSpace;/&ZeroWidthSpace;chih</td><td class="czsk" colspan="2">čch’&ZeroWidthSpace;/&ZeroWidthSpace;č’</td>
+				<td class="code" colspan="2">[t͡ɕʰi] / [t͡ɕi]</td><td class="akad" colspan="2">ці&ZeroWidthSpace;/&ZeroWidthSpace;цзі</td><td class="kici" colspan="2">ці&ZeroWidthSpace;/&ZeroWidthSpace;дзі</td><td class="piyi" colspan="2">qi&ZeroWidthSpace;/&ZeroWidthSpace;ji</td><td class="wagi" colspan="2">chʻi&ZeroWidthSpace;/&ZeroWidthSpace;chi</td><td class="czsk" colspan="2">čchi&ZeroWidthSpace;/&ZeroWidthSpace;ťi</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[t͡ɕʰja] / [t͡ɕja]</td><td class="akad" colspan="2">ця&ZeroWidthSpace;/&ZeroWidthSpace;цзя</td><td class="kici" colspan="2">ця&ZeroWidthSpace;/&ZeroWidthSpace;дзя</td><td class="piyi" colspan="2">qia&ZeroWidthSpace;/&ZeroWidthSpace;jia</td><td class="wagi" colspan="2">chʻia&ZeroWidthSpace;/&ZeroWidthSpace;chia</td><td class="czsk" colspan="2">čchja&ZeroWidthSpace;/&ZeroWidthSpace;ťja</td>
+			</tr>
+			<tr>
+				<td colspan="12"></td>
+				<td colspan="12"></td>
+				<td class="code" colspan="2">[t͡ɕʰjɛn] / [t͡ɕjɛn]</td><td class="akad" colspan="2">цянь&ZeroWidthSpace;/&ZeroWidthSpace;цзянь</td><td class="kici" colspan="2">цянь&ZeroWidthSpace;/&ZeroWidthSpace;дзянь</td><td class="piyi" colspan="2">qian&ZeroWidthSpace;/&ZeroWidthSpace;jian</td><td class="wagi" colspan="2">chʻien&ZeroWidthSpace;/&ZeroWidthSpace;chien</td><td class="czsk" colspan="2">čchien&ZeroWidthSpace;/&ZeroWidthSpace;ťien</td>
+			</tr>
+			<tr><td colspan="36"></td></tr>
+			<tr>
+				<td class="code">[m]</td><td class="akad">м</td><td class="kici">м</td><td class="piyi">m</td><td class="wagi">m</td><td class="czsk">m</td>
+				<td class="code">[n] / [ŋ]</td><td class="akad">н&ZeroWidthSpace;/&ZeroWidthSpace;нґ</td><td class="kici">н&ZeroWidthSpace;/&ZeroWidthSpace;н</td><td class="piyi">n&ZeroWidthSpace;/&ZeroWidthSpace;ng</td><td class="wagi">n&ZeroWidthSpace;/&ZeroWidthSpace;ng</td><td class="czsk">n&ZeroWidthSpace;/&ZeroWidthSpace;ng</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[ma]</td><td class="akad">ма</td><td class="kici">ма</td><td class="piyi">ma</td><td class="wagi">ma</td><td class="czsk">ma</td>
+				<td class="code">[na]</td><td class="akad">на</td><td class="kici">на</td><td class="piyi">na</td><td class="wagi">na</td><td class="czsk">na</td>
+				<td class="code">[fa]</td><td class="akad">фа</td><td class="kici">фа</td><td class="piyi">fa</td><td class="wagi">fa</td><td class="czsk">fa</td>
+				<td class="code">[sa]</td><td class="akad">са</td><td class="kici">са</td><td class="piyi">sa</td><td class="wagi">sa</td><td class="czsk">sa</td>
+				<td class="code">[ʂa]</td><td class="akad">ша</td><td class="kici">ша</td><td class="piyi">sha</td><td class="wagi">sha</td><td class="czsk">ša</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[mai&#815;]</td><td class="akad">май</td><td class="kici">май</td><td class="piyi">ma</td><td class="wagi">mai</td><td class="czsk">maj</td>
+				<td class="code">[nai&#815;]</td><td class="akad">най</td><td class="kici">най</td><td class="piyi">nai</td><td class="wagi">nai</td><td class="czsk">naj</td>
+				<td colspan="6"></td>
+				<td class="code">[sai&#815;]</td><td class="akad">сай</td><td class="kici">сань</td><td class="piyi">sai</td><td class="wagi">sai</td><td class="czsk">saj</td>
+				<td class="code">[ʂai&#815;]</td><td class="akad">шай</td><td class="kici">шань</td><td class="piyi">shai</td><td class="wagi">shai</td><td class="czsk">šaj</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[man]</td><td class="akad">мань</td><td class="kici">мань</td><td class="piyi">man</td><td class="wagi">man</td><td class="czsk">man</td>
+				<td class="code">[nan]</td><td class="akad">нань</td><td class="kici">нань</td><td class="piyi">nan</td><td class="wagi">nan</td><td class="czsk">nan</td>
+				<td class="code">[fan]</td><td class="akad">фань</td><td class="kici">фань</td><td class="piyi">fan</td><td class="wagi">fan</td><td class="czsk">fan</td>
+				<td class="code">[san]</td><td class="akad">сань</td><td class="kici">сань</td><td class="piyi">san</td><td class="wagi">san</td><td class="czsk">san</td>
+				<td class="code">[ʂan]</td><td class="akad">шань</td><td class="kici">шань</td><td class="piyi">shan</td><td class="wagi">shan</td><td class="czsk">šan</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[maŋ]</td><td class="akad">ман</td><td class="kici">ман</td><td class="piyi">mang</td><td class="wagi">mang</td><td class="czsk">mang</td>
+				<td class="code">[naŋ]</td><td class="akad">нан</td><td class="kici">нан</td><td class="piyi">nang</td><td class="wagi">nang</td><td class="czsk">nang</td>
+				<td class="code">[faŋ]</td><td class="akad">фан</td><td class="kici">фан</td><td class="piyi">fang</td><td class="wagi">fang</td><td class="czsk">fang</td>
+				<td class="code">[saŋ]</td><td class="akad">сан</td><td class="kici">сан</td><td class="piyi">sang</td><td class="wagi">sang</td><td class="czsk">sang</td>
+				<td class="code">[ʂaŋ]</td><td class="akad">шан</td><td class="kici">шан</td><td class="piyi">shang</td><td class="wagi">shang</td><td class="czsk">šang</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[mau&#815;]</td><td class="akad">мао</td><td class="kici">мао</td><td class="piyi">mao</td><td class="wagi">mao</td><td class="czsk">mao</td>
+				<td class="code">[nau&#815;]</td><td class="akad">нао</td><td class="kici">нао</td><td class="piyi">nao</td><td class="wagi">nao</td><td class="czsk">nao</td>
+				<td colspan="6"></td>
+				<td class="code">[sau&#815;]</td><td class="akad">сао</td><td class="kici">сао</td><td class="piyi">sao</td><td class="wagi">sao</td><td class="czsk">sao</td>
+				<td class="code">[ʂau&#815;]</td><td class="akad">шао</td><td class="kici">шао</td><td class="piyi">shao</td><td class="wagi">shao</td><td class="czsk">šao</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[mɤ]</td><td class="akad">ме</td><td class="kici">ме</td><td class="piyi">me</td><td class="wagi">mê</td><td class="czsk">me</td>
+				<td class="code">[nɤ]</td><td class="akad">не</td><td class="kici">не</td><td class="piyi">ne</td><td class="wagi">nê</td><td class="czsk">ne</td>
+				<td colspan="6"></td>
+				<td class="code">[sɤ]</td><td class="akad">се</td><td class="kici">се</td><td class="piyi">se</td><td class="wagi">sê</td><td class="czsk">se</td>
+				<td class="code">[ʂɤ]</td><td class="akad">ше</td><td class="kici">ше</td><td class="piyi">she</td><td class="wagi">shê</td><td class="czsk">še</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[mei&#815;]</td><td class="akad">мей</td><td class="kici">мей</td><td class="piyi">mei</td><td class="wagi">mei</td><td class="czsk">mej</td>
+				<td class="code">[nei&#815;]</td><td class="akad">ней</td><td class="kici">ней</td><td class="piyi">nei</td><td class="wagi">nei</td><td class="czsk">nej</td>
+				<td class="code">[fei&#815;]</td><td class="akad">фей</td><td class="kici">фей</td><td class="piyi">fei</td><td class="wagi">fei</td><td class="czsk">fej</td>
+				<td class="code">[sei&#815;]</td><td class="akad">сей</td><td class="kici">сей</td><td class="piyi">sei</td><td class="wagi">sei</td><td class="czsk">sej</td>
+				<td class="code">[ʂei&#815;]</td><td class="akad">шей</td><td class="kici">шей</td><td class="piyi">shei</td><td class="wagi">shei</td><td class="czsk">šej</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[mən]</td><td class="akad">мень</td><td class="kici">мень</td><td class="piyi">men</td><td class="wagi">mên</td><td class="czsk">men</td>
+				<td class="code">[nən]</td><td class="akad">нень</td><td class="kici">нень</td><td class="piyi">nen</td><td class="wagi">nên</td><td class="czsk">nen</td>
+				<td class="code">[fən]</td><td class="akad">фень</td><td class="kici">фень</td><td class="piyi">fen</td><td class="wagi">fên</td><td class="czsk">fen</td>
+				<td class="code">[sən]</td><td class="akad">сень</td><td class="kici">сень</td><td class="piyi">sen</td><td class="wagi">sên</td><td class="czsk">sen</td>
+				<td class="code">[ʂən]</td><td class="akad">шень</td><td class="kici">шень</td><td class="piyi">shen</td><td class="wagi">shên</td><td class="czsk">šen</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[məŋ]</td><td class="akad">мен</td><td class="kici">мен</td><td class="piyi">meng</td><td class="wagi">mêng</td><td class="czsk">meng</td>
+				<td class="code">[nəŋ]</td><td class="akad">нен</td><td class="kici">нен</td><td class="piyi">neng</td><td class="wagi">nêng</td><td class="czsk">neng</td>
+				<td class="code">[fəŋ]</td><td class="akad">фен</td><td class="kici">фен</td><td class="piyi">feng</td><td class="wagi">fêng</td><td class="czsk">feng</td>
+				<td class="code">[səŋ]</td><td class="akad">сен</td><td class="kici">сен</td><td class="piyi">seng</td><td class="wagi">sêng</td><td class="czsk">seng</td>
+				<td class="code">[ʂəŋ]</td><td class="akad">шен</td><td class="kici">шен</td><td class="piyi">sheng</td><td class="wagi">shêng</td><td class="czsk">šeng</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[mi]</td><td class="akad">мі</td><td class="kici">мі</td><td class="piyi">mi</td><td class="wagi">mi</td><td class="czsk">mi</td>
+				<td class="code">[ni]</td><td class="akad">ні</td><td class="kici">ні</td><td class="piyi">ni</td><td class="wagi">ni</td><td class="czsk">ni</td>
+				<td colspan="6"></td>
+				<td class="code">[sɨ]</td><td class="akad">си</td><td class="kici">си</td><td class="piyi">si</td><td class="wagi">ssŭ</td><td class="czsk">s’</td>
+				<td class="code">[ʂɨ]</td><td class="akad">ши</td><td class="kici">ши</td><td class="piyi">shi</td><td class="wagi">shih</td><td class="czsk">š’</td>
+				<td class="code">[ɕi]</td><td class="akad">сі</td><td class="kici">сі</td><td class="piyi">xi</td><td class="wagi">hsi</td><td class="czsk">si</td>
+			</tr>
+			<tr><td colspan="36"></td></tr>
+			<tr>
+				<th colspan="12">H</th>
+				<th colspan="12">L</th>
+				<th colspan="12">R</th>
+			</tr>
+			<tr>
+				<td class="" colspan="12"></td>
+				<td class="" colspan="12"></td>
+				<td class="" colspan="12"></td>
+			</tr>
+			<!--
+			<tr>
+				<td class="code">[t͡sʰan]</td><td colspan="2">цань</td><td>can</td><td>tsʻan</td><td>cchan</td>
+				<td class="code">[ʈ͡ʂʰan]</td><td colspan="2">чань</td><td>chan</td><td>chʻan</td><td>čchan</td>
+				<td class="code">[fan]</td><td colspan="2">фань</td><td colspan="3">fan</td>
+			</tr>
+			<tr>
+				<td class="code">[t͡sʰaŋ]</td><td colspan="2">цан</td><td>cang</td><td>tsʻang</td><td>cchang</td>
+				<td class="code">[ʈ͡ʂʰaŋ]</td><td colspan="2">чан</td><td>chang</td><td>chʻang</td><td>čchang</td>
+				<td class="code">[faŋ]</td><td colspan="2">фан</td><td colspan="3">fang</td>
+			</tr>
+			<tr>
+				<td class="code">[pau&#815;]</td><td colspan="2">бао</td><td>bao</td><td colspan="2">pao</td>
+				<td class="code">[t͡sʰau&#815;]</td><td colspan="2">цао</td><td>cao</td><td>tsʻao</td><td>cchao</td>
+				<td class="code">[ʈ͡ʂʰau&#815;]</td><td colspan="2">чао</td><td>chao</td><td>chʻao</td><td>čchao</td>
+				<td class="code">[tau&#815;]</td><td colspan="2">дао</td><td>dao</td><td colspan="2">tao</td>
+				<td colspan="6"></td>
+				<td class="code">[kau&#815;]</td><td colspan="2">ґао</td><td>gao</td><td colspan="2">kao</td>
+			</tr>
+			<tr>
+				<td colspan="6"></td>
+				<td class="code">[t͡sʰɤ]</td><td colspan="2">це</td><td>ce</td><td>tsʻê</td><td>cche</td>
+				<td class="code">[ʈ͡ʂʰɤ]</td><td colspan="2">че</td><td>che</td><td>chʻê</td><td>čche</td>
+				<td class="code">[tɤ]</td><td colspan="2">де</td><td>de</td><td>tê</td><td>t’</td>
+				<td colspan="6"></td>
+				<td class="code">[kɤ]</td><td colspan="2">ґе</td><td>ge</td><td>kê</td><td>k’</td>
+			</tr>
+			<tr>
+				<td class="code">[pei&#815;]</td><td colspan="2">бей</td><td>bei</td><td>pei</td><td>pej</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td class="code">[tei&#815;]</td><td colspan="2">дей</td><td>dei</td><td>tei</td><td>tej</td>
+				<td class="code">[fei&#815;]</td><td colspan="2">фей</td><td colspan="2">fei</td><td>fej</td>
+				<td class="code">[kei&#815;]</td><td colspan="2">ґей</td><td>gei</td><td>kei</td><td>kej</td>
+			</tr>
+			<tr>
+				<td class="code">[pən]</td><td colspan="2">бень</td><td>ben</td><td>pên</td><td>pen</td>
+				<td class="code">[t͡sʰən]</td><td colspan="2">цень</td><td>cen</td><td>tsʻên</td><td>cchen</td>
+				<td class="code">[ʈ͡ʂʰən]</td><td colspan="2">чень</td><td>chen</td><td>chʻên</td><td>čchen</td>
+				<td class="code">[tən]</td><td colspan="2">день</td><td>den</td><td>tên</td><td>ten</td>
+				<td class="code">[kən]</td><td colspan="2">ґень</td><td>gen</td><td>kên</td><td>ken</td>
+			</tr>
+			<tr>
+				<td class="code">[pəŋ]</td><td colspan="2">бен</td><td>beng</td><td>pêng</td><td>peng</td>
+				<td class="code">[t͡sʰəŋ]</td><td colspan="2">цен</td><td>ceng</td><td>tsʻêng</td><td>ccheng</td>
+				<td class="code">[ʈ͡ʂʰəŋ]</td><td colspan="2">чен</td><td>cheng</td><td>chʻêng</td><td>čcheng</td>
+				<td class="code">[təŋ]</td><td colspan="2">ден</td><td>deng</td><td>têng</td><td>teng</td>
+				<td class="code">[kəŋ]</td><td colspan="2">ґен</td><td>geng</td><td>kêng</td><td>keng</td>
+			</tr>
+			<tr>
+				<td class="code">[pi]</td><td colspan="2">бі</td><td>bi</td><td colspan="2">pi</td>
+				<td class="code">[t͡sʰɹ̩]</td><td colspan="2">ци</td><td>ci</td><td>tzʻŭ</td><td>cch’</td>
+				<td class="code">[ʈ͡ʂʰɹ̩]</td><td colspan="2">чи</td><td>chi</td><td>chʻih</td><td>čch’</td>
+				<td class="code">[ti]</td><td colspan="2">ді</td><td>di</td><td colspan="2">ti</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td class="code">[tja]</td><td colspan="2">дя</td><td>dia</td><td>tia</td><td>tja</td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[pjɛn]</td><td>бянь</td><td>б'янь</td><td>bian</td><td colspan="2">pien</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td class="code">[tjɛn]</td><td colspan="2">дянь</td><td>dian</td><td colspan="2">tien</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td class="code">[tjaŋ]</td><td colspan="2">дян</td><td>diang</td><td colspan="2">tiang</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[pjau&#815;]</td><td>бяо</td><td>б'яо</td><td>biao</td><td colspan="2">piao</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td class="code">[tjau&#815;]</td><td colspan="2">дяо</td><td>diao</td><td colspan="2">tiao</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+			</tr>
+			<tr>
+				<td class="code">[pje]</td><td>бє</td><td>б'є</td><td>biao</td><td>pieh</td><td>pie</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+				<td class="code">[tje]</td><td colspan="2">дє</td><td>diao</td><td>tieh</td><td>tie</td>
+				<td colspan="6"></td>
+				<td colspan="6"></td>
+			</tr> -->
 		</table>
 		<p>Наразі я використовую <a href="https://uk.wikipedia.org/wiki/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D1%96%D1%87%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BA%D1%80%D0%B8%D0%B1%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D0%BA%D0%B8%D1%82%D0%B0%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D1%85_%D1%81%D0%BB%D1%96%D0%B2_%D1%82%D0%B0_%D0%B2%D0%BB%D0%B0%D1%81%D0%BD%D0%B8%D1%85_%D0%BD%D0%B0%D0%B7%D0%B2_%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D1%8E_%D0%BC%D0%BE%D0%B2%D0%BE%D1%8E">академічну систему транскрипції</a>.</p>
-		<br><br><br><br><br><br><br><br>
 	</div>
-	<div>
+	<!-- <div>
 		<h2>Арабська</h2><hr>
 		<table id="ar" title="1. &#10;2. &#10;3. &#10;4. ">
 			<tr lang="ar">
@@ -360,7 +743,7 @@
 	<h2>Німецька : TODO</h2><hr>
 	<p><b>EI</b>&nbsp;— <b>⟨ай⟩</b>.</p>
 	<p><b>ÄU, EU</b>&nbsp;— <b>⟨ой⟩</b>.</p>
-	<p><b>L</b> <b>не</b> пом'якшується: <i>Лайпциґ</i> (<span lang="de">Leipzig</span>), <i>Фатерланд</i> (<span lang="de">Vaterland</span>) тощо.</p>
+	<p><b>L</b> <b>не</b> пом'якшується: <i>Лайпциґ</i> (<span lang="de">Leipzig</span>), <i>Фатерланд</i> (<span lang="de">Vaterland</span>) тощо.</p> -->
 	<h2>Японська</h2><hr>
 	<table lang="jp">
 		<tr>
@@ -524,7 +907,7 @@
 	<h2>Корейська</h2><hr>
 	<p>Наразі я використовую <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%9A%D0%BE%D0%BD%D1%86%D0%B5%D0%B2%D0%B8%D1%87%D0%B0">адаптовану систему Концевича</a>.</p>
 	<p>Виняток&nbsp;— трад. <i>Сеул</i> замість сист. <i>Соул</i>. Але супротив традиції я пишу сист. <i>Пхьон'ян</i> замість трад. <i>Пхеньян</i>.</p>
-	<h2>Польська : TODO</h2><hr>
+	<!-- <h2>Польська : TODO</h2><hr>
 	<p><b>Ą</b> <code>/ɔn/</code>&nbsp;— <b>⟨он⟩</b> (<b>⟨ом⟩</b> перед <i>B</i>, <i>P</i>).</p>
 	<p><b>Ć</b> <code>[t͡ɕ]</code>&nbsp;— <b>⟨ць⟩</b>.</p>
 	<p><b>DŹ</b> <code>[d͡ʑ]</code>&nbsp;— <b>⟨дзь⟩</b>.</p>
@@ -536,6 +919,6 @@
 	<p><b>G</b>: <code>/ɣ/</code>&nbsp;— <b>⟨г⟩</b>; <code>/x/</code>&nbsp;— <b>⟨х⟩</b>.</p>
 	<h2>Фінська : TODO</h2><hr>
 	<p><b>Ä</b>&nbsp;— <b>⟨е⟩</b>.</p>
-	<p><b>L</b> пом'якшується тільки перед приголосним.*</p>
+	<p><b>L</b> пом'якшується тільки перед приголосним.*</p> -->
 </body>
 </html>

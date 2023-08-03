@@ -11,11 +11,11 @@
 			--collective-height: calc(var(--header-height) + 0.25rem + var(--nav-height));
 			--img-entry-height: 100px;
 		}
-		body {
-			/*background-repeat: no-repeat;
+		/*body {
+			background-repeat: no-repeat;
 			background-position: 0 9em;
-			background-size: contain;*/
-		}
+			background-size: contain;
+		}*/
 		h2 { margin-block-end: 0; }
 		h3 { margin-block-end: 0; }
 
@@ -46,6 +46,7 @@
 
 		.entry { margin: 0.5em; }
 		.entry:not(.noimage) { min-height: var(--img-entry-height); }
+		.entry.noimage { padding-left: calc(100px + 0.5em); }
 		.entry > img {
 			box-sizing: border-box;
 			height: var(--img-entry-height);
@@ -64,24 +65,17 @@
 			margin-block: 0.5em;
 			columns: 1; /*Workaround*/
 		}
-
 		.entry .flag {
 			box-sizing: border-box;
 			height: 1em;
 			margin-left: 0.5em;
 			border: 1px solid var(--border);
-			vertical-align: middle;
+			vertical-align: sub;
 		}
 		.entry .flag.en { content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/180px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"); }
 		.entry .flag.ru { content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_Russia_%28Pantone%29.svg/180px-Flag_of_Russia_%28Pantone%29.svg.png"); }
 		.entry .flag.uk { content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/180px-Flag_of_Ukraine.svg.png"); }
-
-		.notCollapsible { padding: 0.5em; } /*Stupid Workaround*/
-		.notCollapsible > .entry { margin: 0; }
-		.notCollapsible > .entry:not(:first-of-type) { margin-top: 0.5em; }
-		.notCollapsible ul:nth-child(1), .notCollapsible ul:nth-child(2):not(.fm) { margin-block-start: 0; }
-
-		.noimage { padding-left: calc(100px + 0.5em); }
+		.notCollapsible { padding-bottom: 1px; } /*Stupid workaround to (almost) align .notCollapsible height with .entry*/
 
 		/*.game::before {
 			position: absolute; top: 9em; left: 0;

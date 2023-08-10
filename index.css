@@ -2,7 +2,7 @@
 	--body-width: 50%;
 	--collective-height: 0em;
 }
-a {
+a.block {
 	display: block;
 	box-sizing: border-box;
 	text-align: center;
@@ -10,18 +10,18 @@ a {
 	color: var(--text-color);
 	transition: .2s ease;
 }
-a:not(#logo) {
+a.block:not(#logo) {
 	margin-block: 0.75rem;
 	padding: 0.5rem;
 	border: 1px solid var(--border);
 	border-radius: 0.5rem;
 	background: var(--button-dark);
 }
-a:not(#logo):hover {
+a.block:not(#logo):hover {
 	background: var(--button);
 	text-decoration: none;
 }
-a:not(#logo):active { background: var(--button-darker); }
+a.block:not(#logo):active { background: var(--button-darker); }
 #logo {
 	margin-block: 0 2rem;
 	margin-inline: auto;

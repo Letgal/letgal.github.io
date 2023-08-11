@@ -7,15 +7,22 @@
 	<style>
 		:root {
 			--root-color-50: #2228;
-			--body-width: 50%;
+			--gold-color: darkgoldenrod;
+			--gold-color-hover: goldenrod;
+			--body-width: 60%;
 			--collective-height: calc(var(--header-height) + 0.25rem + var(--nav-height));
 			--img-entry-height: 100px;
+		}
+		:root.light {
+			--gold-color: #855308;
+			--gold-color-hover: lightgoldenrodyellow;
 		}
 		/*body {
 			background-repeat: no-repeat;
 			background-position: 0 9em;
 			background-size: contain;
 		}*/
+		header { box-shadow: none; }
 		h2 { margin-block-end: 0; }
 		h3 { margin-block-end: 0; }
 
@@ -29,9 +36,9 @@
 		}
 		.visibilityToggle:hover { background: var(--button) !important; }
 		.visibilityToggle:active { background: var(--button-dark) !important; }
-		.visibilityToggle[title*="овий переклад"] { background: darkgoldenrod; }
-		.visibilityToggle[title*="овий переклад"]:hover { background: goldenrod !important; }
-		.visibilityToggle[title*="овий переклад"]:active { background: darkgoldenrod !important; }
+		.visibilityToggle[title*="овий переклад"] { background: var(--gold-color); }
+		.visibilityToggle[title*="овий переклад"]:hover { background: var(--gold-color-hover) !important; }
+		.visibilityToggle[title*="овий переклад"]:active { background: var(--gold-color) !important; }
 		.visibilityToggle + div {
 			height: 0;
 			overflow: hidden;
@@ -42,7 +49,14 @@
 			border-top: 2px solid var(--special2);
 		}
 		.visibilityToggle + div, .notCollapsible { background: linear-gradient(to bottom, var(--button-dark), transparent); }
-		.visibilityToggle[title*="овий переклад"] + div, .notCollapsible[title*="овий переклад"] { background: linear-gradient(to bottom, darkgoldenrod, transparent); }
+		.visibilityToggle[title*="овий переклад"] + div { background: linear-gradient(to bottom, var(--gold-color), transparent); }
+		/* LIGHT */
+		:root.light .visibilityToggle { background: var(--button); }
+		:root.light .visibilityToggle:hover { background: var(--button-light) !important; }
+		:root.light .visibilityToggle:active { background: var(--button) !important; }
+		:root.light .visibilityToggle + div, :root.light .notCollapsible { background: var(--button-light); }
+		:root.light .visibilityToggle[title*="овий переклад"] + div { background: #FDD853; }
+		:root.light .visibilityToggle[title*="овий переклад"] + div a { color: var(--gold-color); }
 
 		.entry { margin: 0.5em; }
 		.entry:not(.noimage) { min-height: var(--img-entry-height); }
@@ -56,10 +70,10 @@
 		.entry > i:first-of-type { font-size: 1.2em; }
 		.entry > i:first-of-type::before { content: "> "; font-style: normal; }
 		.entry abbr[title] {
-			color: wheat;
+			color: var(--link-color);
 			text-decoration: none;
 		}
- 		.entry abbr[title*="од порожній"], .entry abbr[title*="екст не перекладений"] { color: coral; } /* Без першої літери для знаходження обох регістрів */
+ 		.entry abbr[title*="од порожній"], .entry abbr[title*="екст не перекладений"] { color: coral; }
  		.entry [title*="ля старішої версії"] { text-decoration: line-through; }
 		.entry > ul {
 			margin-block: 0.5em;
@@ -68,7 +82,7 @@
 		.entry .flag {
 			box-sizing: border-box;
 			height: 1em;
-			margin-left: 0.5em;
+			margin-left: calc(1em / 3);
 			border: 1px solid var(--border);
 			vertical-align: sub;
 		}
@@ -76,6 +90,7 @@
 		.entry .flag.ru { content: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Russia_%28Pantone%29.svg"); }
 		.entry .flag.uk { content: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"); }
 		.notCollapsible { padding-bottom: 1px; } /*Stupid workaround to (almost) align .notCollapsible height with .entry*/
+ 		:root.light .entry abbr[title*="од порожній"], :root.light .entry abbr[title*="екст не перекладений"] { color: brown; } /* LIGHT */
 
 		/*.game::before {
 			position: absolute; top: 9em; left: 0;
@@ -91,12 +106,7 @@
 		}*/
 
 		.vanilla { color: lightgreen; }
-
-		#pack a { font-style: italic; }
-		#pack a::before {
-			content: "> ";
-			font-style: normal;
-		}
+		:root.light .vanilla { color: green; } /* LIGHT */
 	</style>
 	<script type="text/javascript" src="/shared.js"></script>
 	<script type="text/javascript">

@@ -30,11 +30,12 @@
 :root.light {
 	color-scheme: light;
 	--root-color: #FFF;
+	--border: #444;
 	--text-color: #222;
 	--link-color: darkslateblue;
 	--heading-color: steelblue;
-	--special: dimgray;
-	--special2: darkgrey;
+	--special: grey;
+	--special2: dimgrey;
 	--header-bg: #DDD;
 	--button: #BBB;
 	--button-dark: #999;

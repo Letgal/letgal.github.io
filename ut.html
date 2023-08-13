@@ -3,7 +3,7 @@
 <head>
 	<title>Переклади ігор Paradox</title>
 	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
-	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		:root {
 			--root-color-50: #2228;
@@ -66,8 +66,9 @@
 			height: var(--img-entry-height);
 		}
 		.entry > img:first-of-type { float: left; margin-right: 0.5em; }
+		.entry > h3 { margin-block: 0; }
+		.entry > h3, .entry > i:first-of-type { font-size: 1.2em; }
 		.entry > i { font-weight: bold; }
-		.entry > i:first-of-type { font-size: 1.2em; }
 		.entry > i:first-of-type::before { content: "> "; font-style: normal; }
 		.entry abbr[title] {
 			color: var(--link-color);
@@ -108,7 +109,56 @@
 		.vanilla { color: lightgreen; }
 		:root.light .vanilla { color: green; } /* LIGHT */
 	</style>
-	<script type="text/javascript" src="/shared.js"></script>
+	<script type="text/javascript" src="shared.js"></script>
+	<script type="text/javascript">
+		function switchTo(x) {
+			//const allGames = document.getElementsByClassName("game");
+			//for (i = 0; i > allGames.length; i++) { allGames[i].style.display = "none"; }
+
+			if (x == "eu4") { document.getElementById("name").innerHTML = "Europa Universalis IV"; }
+			else { document.getElementById("eu4").style.display = "none"; }
+			if (x == "cs") { document.getElementById("name").innerHTML = "Cities: Skylines"; }
+			else { document.getElementById("cs").style.display = "none"; }
+			if (x == "stel") { document.getElementById("name").innerHTML = "Stellaris"; }
+			else { document.getElementById("stel").style.display = "none"; }
+			if (x == "hoi4") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2732054856' target='_blank'>Hearts of Iron IV</a>"; }
+			else { document.getElementById("hoi4").style.display = "none"; }
+			if (x == "ir") { document.getElementById("name").innerHTML = "Imperator: Rome"; }
+			else { document.getElementById("ir").style.display = "none"; }
+			if (x == "ck3") { document.getElementById("name").innerHTML = "Crusader Kings III"; }
+			else { document.getElementById("ck3").style.display = "none"; }
+			if (x == "v3") { document.getElementById("name").innerHTML = "Victoria 3"; }
+			else { document.getElementById("v3").style.display = "none"; }	
+			document.getElementById(x).style.display = null;
+		}
+
+		function toggleVisibility(x) {
+			var next = x.nextElementSibling;
+			if (next.style.height) { next.style.height = null; }
+			else { next.style.height = next.scrollHeight + "px"; }
+		}
+
+		/*function filterByLang(x) {
+			const enSupport = document.querySelectorAll(".en:checked");
+			const ruSupport = document.querySelectorAll(".ru:checked");
+			const ukSupport = document.querySelectorAll(".uk:checked");
+			if (x == "en") {
+				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = "darkolivegreen"; }
+			} else {
+				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
+			}
+			if (x == "ru") {
+				for (let i = 0; i < ruSupport.length; i++) { ruSupport[i].style.backgroundColor = "darkolivegreen"; }
+			} else {
+				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
+			}
+			if (x == "uk") {
+				for (let i = 0; i < ukSupport.length; i++) { ukSupport[i].style.backgroundColor = "darkolivegreen"; }
+			} else {
+				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
+			}
+		}*/
+	</script>
 	<script type="text/javascript">
 		const hoi4List = [
 			{
@@ -169,14 +219,10 @@
 			}
 		]
 
-		function loadEntryList() {
-			if (localStorage.getItem("hoi4List")) {
-				hoi4List = JSON.parse(localStorage.getItem("hoi4List"));
-				showEntryList();
-			} else { outEmptyEntryList(); }
-		}
-
 		function saveEntryList() { localStorage.setItem("hoi4List", JSON.stringify(hoi4List)); }
+		saveEntryList();
+
+		function loadEntryList() { const hoi4List = JSON.parse(localStorage.getItem("hoi4List")); }
 
 		function generateEntries(x) {
 			loadEntryList();
@@ -203,95 +249,15 @@
 			}
 		}
 
-		function switchTo(x) {
-			//const allGames = document.getElementsByClassName("game");
-			//for (var i = 0; i > allGames.length; i++) {
-			//	allGames[i].style.display = "none";
-			//}
-			//document.getElementById(x).style.display = null;
-			if (x == "eu4") {
-				document.getElementById("eu4").style.display = null;
-				document.getElementById("name").innerHTML = "Europa Universalis IV";
-			}
-			else { document.getElementById("eu4").style.display = "none"; }
-			if (x == "cs") {
-				document.getElementById("cs").style.display = null;
-				document.getElementById("name").innerHTML = "Cities: Skylines";
-			}
-			else { document.getElementById("cs").style.display = "none"; }
-			if (x == "stel") {
-				document.getElementById("stel").style.display = null;
-				document.getElementById("name").innerHTML = "Stellaris";
-			}
-			else { document.getElementById("stel").style.display = "none"; }
-			if (x == "hoi4") {
-				document.getElementById("hoi4").style.display = null;
-				document.getElementById("name").innerHTML = "Hearts of Iron IV";
-			}
-			else { document.getElementById("hoi4").style.display = "none"; }
-			if (x == "ir") {
-				document.getElementById("ir").style.display = null;
-				document.getElementById("name").innerHTML = "Imperator: Rome";
-			}
-			else { document.getElementById("ir").style.display = "none"; }
-			if (x == "ck3") {
-				document.getElementById("ck3").style.display = null;
-				document.getElementById("name").innerHTML = "Crusader Kings III";
-			}
-			else { document.getElementById("ck3").style.display = "none"; }
-			if (x == "v3") {
-				document.getElementById("v3").style.display = null;
-				document.getElementById("name").innerHTML = "Victoria 3";
-			}
-			else { document.getElementById("v3").style.display = "none"; }
-		}
-
-		function toggleVisibility(x) {
-			var next = x.nextElementSibling;
-			if (next.style.height) { next.style.height = null; }
-			else { next.style.height = next.scrollHeight + "px"; }
-		};
-
-		//const visToggle = document.getElementsByClassName("visibilityToggle");
-		//for (var i = 0; i < visToggle.length; i++) {
-		//	/*visToggle[i].addEventListener("click", function() {
-		//		const mod = this.nextElementSibling;
-		//		if (mod.style.height) { mod.style.height = null; }
-		//		else { mod.style.height = mod.scrollHeight + "px"; }
-		//	});*/
-		//	visToggle[i].setAttribute("onclick","toggleVisibility(this)");
-		//}
-
-		/*function filterByLang(x) {
-			const enSupport = document.querySelectorAll(".en:checked");
-			const ruSupport = document.querySelectorAll(".ru:checked");
-			const ukSupport = document.querySelectorAll(".uk:checked");
-			if (x == "en") {
-				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = "darkolivegreen"; }
-			} else {
-				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
-			}
-			if (x == "ru") {
-				for (let i = 0; i < ruSupport.length; i++) { ruSupport[i].style.backgroundColor = "darkolivegreen"; }
-			} else {
-				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
-			}
-			if (x == "uk") {
-				for (let i = 0; i < ukSupport.length; i++) { ukSupport[i].style.backgroundColor = "darkolivegreen"; }
-			} else {
-				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
 			}
 		}
-		$("#filters :checkbox").click(function() {
-			var re = new RegExp($("#filters :checkbox:checked").map(function() { return this.value; }).get().join("|") );
-			$("div").each(function() {
-				var $this = $(this);
-				$this[re.source!="" && re.test($this.attr("class")) ? "show" : "hide"]();
-			});
-		});*/
+
+
+
+		}
 	</script>
 </head>
-<body onload="saveEntryList(); document.getElementById('hoi4-radio').click();/* generateEntries('test');*/ generateHeader()">
+<body onload="generateHeader(); document.getElementById('hoi4-radio').click(); generateEntries('hoi4'); ">
 	<header>
 		<!-- <div>
 			<label title="Відфільтрувати за підтримуваністю англійської"><input type="checkbox" name="filter" onchange="filterByLang('en')">Англійська</label>
@@ -311,8 +277,6 @@
 
 	<p style="margin-top: 0; text-align: center;"><i>Ця сторінка буде доповнюватися й оновлюватися з часом.</i></p>
 	<h1>Українські переклади <i id="name"></i></h1>
-
-	<div id="test"></div>
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game">
@@ -394,6 +358,9 @@
 	<!--HEARTS OF IRON IV-->
 	<div id="hoi4" class="game">
 		<h2>Переклади ванілли</h2>
+
+	<!-- IMPERATOR: ROME -->
+	<div id="ir" class="game">
 		<div class="notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -405,8 +372,12 @@
 					<li><a href="https://github.com/Letgal/hoi4_ut">GitHub</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 					<li><a href="https://mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI">MEGA</a><img class="flag en"><img class="flag ru"><img class="flag uk"></li>
 				</ul>
+				<img src="https://modscontent.paradox-interactive.com/imperator_rome/d1bc0e50-9d4c-11eb-a3f3-9ffac6a2b1cb/content/cover.jpg">
+				<i>ser_rocko</i>
+				<ul><li><a href="https://mods.paradoxplaza.com/mods/23889/Any">Paradox Mods</a></li></ul>
 			</div>
 		</div>
+	</div>
 
 		<h2>Переклади модів</h2>
 		<p>Переклади з позначкою «<span class="vanilla">Переклад включений у ваніллу</span>» включені в <a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548">цей переклад</a>.</p>
@@ -1160,15 +1131,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="ir" class="game">
-		<div class="notCollapsible">
-			<div class="entry">
-				<img src="https://modscontent.paradox-interactive.com/imperator_rome/d1bc0e50-9d4c-11eb-a3f3-9ffac6a2b1cb/content/cover.jpg">
-				<i>ser_rocko</i>
-				<ul><li><a href="https://mods.paradoxplaza.com/mods/23889/Any">Paradox Mods</a></li></ul>
-			</div>
-		</div>
-	</div>
+	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
 		<h2>Переклади ванілли</h2>
 		<div class="notCollapsible">
@@ -1212,6 +1175,8 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- VICTORIA 3 -->
 	<div id="v3" class="game">
 		<h2>Переклад ванілли</h2>
 		<div class="notCollapsible">

@@ -1,8 +1,9 @@
 :root {
+	--header-bg: #111;
 	--body-width: 50%;
 	--collective-height: 0em;
 }
-a.block {
+a.block, #logo {
 	display: block;
 	box-sizing: border-box;
 	text-align: center;
@@ -10,18 +11,18 @@ a.block {
 	color: var(--text-color);
 	transition: .2s ease;
 }
-a.block:not(#logo) {
+a.block {
 	margin-block: 0.75rem;
 	padding: 0.5rem;
 	border: 1px solid var(--border);
 	border-radius: 0.5rem;
 	background: var(--button-dark);
 }
-a.block:not(#logo):hover {
+a.block:hover {
 	background: var(--button);
 	text-decoration: none;
 }
-a.block:not(#logo):active { background: var(--button-darker); }
+a.block:active { background: var(--button-darker); }
 #logo {
 	margin-block: 0 2rem;
 	margin-inline: auto;
@@ -39,3 +40,7 @@ a.block:not(#logo):active { background: var(--button-darker); }
 }
 #logo:hover img { filter: brightness(120%); }
 #logo:active img { filter: brightness(80%); }
+
+:root.light a.block { background: var(--button); }
+:root.light a.block:hover { background: var(--button-light); }
+:root.light a.block:active { background: var(--button-dark); }

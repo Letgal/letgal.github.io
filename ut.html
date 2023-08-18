@@ -58,7 +58,7 @@
 		:root.light .visibilityToggle + div, :root.light .notCollapsible { background: var(--button-light); }
 		:root.light .visibilityToggle[title*="овий переклад"] + div { background: #FDD853; }
 		:root.light .visibilityToggle[title*="овий переклад"] + div a { color: var(--gold-color); }
- 		:root.light .notCollapsibleSolid { background: var(--button); }
+ 		:root.light .notCollapsibleSolid { background: var(--button-light); }
 
 		.entry { margin: 0.5em; }
 		.entry:not(.noimage) { min-height: var(--img-entry-height); }
@@ -164,7 +164,7 @@
 	<script type="text/javascript">
 		const hoi4List = [
 			{
-				author: "Letōn", note: "<abbr title='Ініціатор перекладу: Letōn&#10;Внесок зробили (в порядку спадання):&#10;  - OlshenUA&#10;  - BmB Kun&#10;  - Churban&#10;  - Shrek_UA&#10;  - Dmytr0 Gaming'>�</abbr> для версії гри <i>1.12.14</i><br><p>+ Переклади з позначкою «<span class='vanilla'>Переклад включений у ваніллу</span>».</p>",
+				author: "Letōn", note: "<abbr title='Ініціатор перекладу: Letōn&#10;Внесок зробили (в порядку спадання):&#10;  - OlshenUA&#10;  - BmB Kun&#10;  - Churban&#10;  - Shrek_UA&#10;  - Dmytr0 Gaming'>�</abbr> для версії гри <i>1.12.14</i><br><p>+ Переклади, позначені <span class='vanilla'>зеленим</span>.</p>",
 				image: "2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2706358548'>Steam</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://mods.paradoxplaza.com/mods/38710/Any'>Paradox Mods</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://www.nexusmods.com/heartsofironiv/mods/53'>Nexus Mods</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://github.com/Letgal/hoi4_ut'>GitHub</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI'>MEGA</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li>", dual: true
 					/*links: [
@@ -750,7 +750,7 @@
 								if (hoi4List[i].dual) { linksList.setAttribute("style", "columns: 2;"); }
 								linksList.innerHTML = hoi4List[i].links; /* Stupid Workaround */
 								//for (j = 0; j > hoi4List[i].links.length; j++) {
-								//	linksList.innerHTML += "<li><a src='" + hoi4List[i].links[j].link + "'>" + hoi4List[i].links[j].type + "</a></li>";
+								//	linksList.innerHTML += "<li><a href='" + hoi4List[i].links[j].link + "'>" + hoi4List[i].links[j].type + "</a></li>";
 								//}
 							entry.appendChild(linksList);
 						}
@@ -793,7 +793,7 @@
 		}
 	</script>
 </head>
-<body onload="generateHeader(); document.getElementById('hoi4-radio').click(); generateEntries('hoi4'); ">
+<body onload="generateHeader(); generateEntries('hoi4'); document.getElementById('hoi4-radio').click();">
 	<header>
 		<!-- <div>
 			<label title="Відфільтрувати за підтримуваністю англійської"><input type="checkbox" name="filter" onchange="filterByLang('en')">Англійська</label>

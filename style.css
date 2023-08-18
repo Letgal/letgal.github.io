@@ -16,12 +16,12 @@
 	--special2: grey;
 	--header-bg: #000;
 	--button: #666;
+	--button-light: #888;
 	--button-dark: #444;
 	--button-darker: #222;
-	--button-light: #888;
 
 	--body-width: 100%;
-	--header-height: 4em;
+	--header-height: 3rem;
 	--nav-height: calc(2em + 4px);
 	--collective-height: var(--header-height);
 
@@ -38,9 +38,9 @@
 	--special2: dimgrey;
 	--header-bg: #DDD;
 	--button: #BBB;
+	--button-light: #DDD;
 	--button-dark: #999;
 	--button-darker: #777;
-	--button-light: #DDD;
 }
 ::selection { background: darkolivegreen; color: white; }
 
@@ -51,77 +51,6 @@ body {
 	box-sizing: border-box;
 	width: calc(var(--body-width) - 2em); min-height: calc(100vh - var(--collective-height));
 }
-header, nav {
-	position: fixed; left: 0;
-	width: 100%;
-	box-shadow: 0 0 24px black;
-	background: var(--header-bg);
-}
-header > a, nav input[type=radio] + label {
-	display: inline-block;
-	box-sizing: border-box;
-	font-weight: bold;
-	transition: .2s ease;
-}
-header > a[href^="/"]:hover, nav input[type=radio] + label:hover { background: var(--button); }
-header > a[href^="/"]:active, nav input[type=radio] + label:active, nav input[type=radio]:checked + label { background: var(--button-darker); }
-header {
-	z-index: 1;
-	top: 0;
-	box-sizing: border-box;
-	height: var(--header-height);
-}
-header > a {
-	vertical-align: top;
-	height: var(--header-height);
-	padding: calc((var(--header-height) - 20.36px) / 2) 1em;
-	text-transform: uppercase;
-}
-header > a[href^="/"] {
-	background: var(--button-dark);
-	color: var(--text-color);
-}
-header > a[href^="/"]:hover { text-decoration: none; }
-header > a:first-of-type {
-	padding: 0.5em;
-	width: var(--header-height);
-}
-header > a:first-of-type img {
-	content: var(--logo-url); transition: .2s ease;
-	box-sizing: border-box;
-	width: 100%;
-	border: 2px solid var(--special);
-	border-radius: 50%;
-	animation: rotation/*-alt*/ 30s infinite linear;
-}
-header > a:first-of-type:hover img { filter: brightness(120%); }
-header > a:first-of-type:active img { filter: brightness(80%); }
-header > a:not([href^="/"]), header > label { float: right; }
-header > .align {
-	display: inline-block;
-	padding-block: calc((var(--header-height) - 24px) / 2);
-}
-nav {
-	display: flex; justify-content: space-evenly;
-	top: var(--header-height);
-	padding-top: 0.25em;
-	height: var(--nav-height);
-}
-nav input[type=radio]:not([name=filter]) { display: none; }
-nav input[type=radio] + label {
-	padding: 0.5em;
-	width: 100%; height: var(--nav-height);
-	background: var(--button-dark);
-	white-space: nowrap;
-	text-align: center;
-	cursor: pointer;
-}
-nav input[type=radio]:checked + label { cursor: default; }
-/* LIGHT */
-:root.light header > a[href^="/"]:hover, :root.light nav input[type=radio] + label:hover { background: var(--button-light); }
-:root.light header > a[href^="/"]:active, :root.light nav input[type=radio] + label:active, :root.light nav input[type=radio]:checked + label { background: var(--button-dark); }
-:root.light header > a[href^="/"] { background: var(--button); }
-:root.light nav input[type=radio] + label { background: var(--button); }
 
 a { color: var(--link-color); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -131,7 +60,6 @@ button {
 	padding: 6px 24px;
 	border: none;
 	background: var(--button);
-	color: var(--text-color);
 	font-family: "Merriweather", "Noto Serif", serif;
 	transition: .2s ease;
 }
@@ -158,7 +86,74 @@ hr {
 .hidden { display: none; }
 .noselect { user-select: none; }
 
-div[style*="display:block!important"] { height: 0; }
+header, nav {
+	position: fixed; left: 0;
+	width: 100%;
+	box-shadow: 0 0 24px black;
+	background: var(--header-bg);
+}
+header > a, header > button, nav input[type=radio] + label {
+	display: inline-block;
+	box-sizing: border-box;
+	background: var(--button-dark);
+	font-weight: bold;
+	transition: .2s ease;
+}
+header > a:hover, header > button:hover, nav input[type=radio] + label:hover { background: var(--button); }
+header > a:active, header > button:active, nav input[type=radio] + label:active, nav input[type=radio]:checked + label { background: var(--button-darker); }
+header {
+	z-index: 1;
+	top: 0;
+	box-sizing: border-box;
+	height: var(--header-height);
+}
+header > a, header > button {
+	vertical-align: top;
+	height: var(--header-height);
+	padding: calc((var(--header-height) - 1.5rem) / 2) 0.5em;
+	text-transform: uppercase;
+}
+header > a { color: var(--text-color); }
+header > a:hover { text-decoration: none; }
+header > a:first-of-type {
+	padding: 0;
+	width: var(--header-height);
+}
+header > a:first-of-type img {
+	content: var(--logo-url); transition: .2s ease;
+	box-sizing: border-box;
+	width: 100%;
+	border: 2px solid var(--special);
+	border-radius: 50%;
+	animation: rotation/*-alt 15s*/ 30s infinite linear;
+}
+header > a:first-of-type:hover img { filter: brightness(120%); }
+header > a:first-of-type:active img { filter: brightness(80%); }
+header > button { font-size: 1rem; }
+header > .align {
+	display: inline-block;
+	padding-block: calc((var(--header-height) - 1.5rem) / 2);
+}
+header > .right { float: right; }
+nav {
+	display: flex; justify-content: space-evenly;
+	top: var(--header-height);
+	padding-top: 0.25em;
+	height: var(--nav-height);
+}
+nav input[type=radio]:not([name=filter]) { display: none; }
+nav input[type=radio] + label {
+	padding: 0.5em;
+	width: 100%; height: var(--nav-height);
+	white-space: nowrap;
+	text-align: center;
+	cursor: pointer;
+}
+nav input[type=radio]:checked + label { cursor: default; }
+/* LIGHT */
+:root.light header > a, :root.light header > button, :root.light nav input[type=radio] + label { background: var(--button); }
+:root.light header > a:hover, :root.light header > button:hover, :root.light nav input[type=radio] + label:hover { background: var(--button-light); }
+:root.light header > a:active, :root.light header > button:active, :root.light nav input[type=radio] + label:active, nav input[type=radio]:checked + label { background: var(--button-dark); }
 
 /* ANIMATION KEYFRAMES */
 @keyframes rotation {

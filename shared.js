@@ -2,7 +2,8 @@ const headerButtons = [
 	{
 		tag: "a",
 		text: "<img>",
-		attr: "href", value: "/"
+		attr: "href", value: "/",
+		attr2: "title", value2: "Головна сторінка"
 	},
 	{
 		tag: "a",
@@ -24,17 +25,19 @@ const headerButtons = [
 	// 	text: "Новини Hearts of Iron IV",
 	// 	attr: "href", value: "/hoi4-news"
 	// },
+	// {
+	// 	tag: "a",
+	// 	text: "Підтримати автора",
+	// 	attr: "class", value: "right",
+	// 	attr2: "href", value2: "https://send.monobank.ua/jar/2hW6s9nEeY",
+	// 	attr3: "target", value3: "_blank"
+	// },
 	{
-		tag: "a",
-		text: "Підтримати автора",
-		attr: "href", value: "https://send.monobank.ua/jar/2hW6s9nEeY",
-		attr2: "target", value2: "_blank"
-	},
-	{
-		tag: "label",
-		text: "<input type='checkbox' onchange='switchTheme()'>✹",
-		attr: "class", value: "align noselect",
-		attr2: "title", value2: "Увімкнути світлу ѳему (налаштування не зберігається)"
+		tag: "button",
+		text: "✹",
+		attr: "class", value: "right noselect",
+		attr2: "title", value2: "Увімкнути світлу ѳему (налаштування не зберігається)",
+		attr3: "onclick", value3: "switchTheme()"
 	}
 ]
 
@@ -44,6 +47,7 @@ function generateHeader() {
 		const headerButton = document.createElement(headerButtons[i].tag);
 		headerButton.setAttribute(headerButtons[i].attr, headerButtons[i].value);
 		if (headerButtons[i].attr2) { headerButton.setAttribute(headerButtons[i].attr2, headerButtons[i].value2); }
+		if (headerButtons[i].attr3) { headerButton.setAttribute(headerButtons[i].attr3, headerButtons[i].value3); }
 		headerButton.innerHTML = headerButtons[i].text;
 		header.insertBefore(headerButton, header.children[i]);
 	}

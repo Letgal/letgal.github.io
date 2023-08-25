@@ -25,6 +25,7 @@
 		header { box-shadow: none; }
 		h2 { margin-block-end: 0; }
 		h3 { margin-block-end: 0; }
+		/*:root.light header > a:first-of-type img { filter: invert(100%); }*/
 
 		.visibilityToggle {
 			display: block;
@@ -72,11 +73,12 @@
 		.entry > h3, .entry > i:first-of-type { font-size: 1.2em; }
 		.entry > i { font-weight: bold; }
 		.entry > i:first-of-type::before { content: "> "; font-style: normal; }
-		.entry abbr[title] {
+		.entry dfn[title] {
 			color: var(--link-color);
-			text-decoration: none;
+			font-style: normal;
+			cursor: help;
 		}
- 		.entry abbr[title*="од порожній"], .entry abbr[title*="екст не перекладений"] { color: coral; }
+ 		.entry dfn[title*="од порожній"], .entry dfn[title*="екст не перекладений"] { color: coral; }
  		.entry [title*="ля старішої версії"] { text-decoration: line-through; }
 		.entry > ul {
 			margin-block: 0.5em;
@@ -93,7 +95,7 @@
 		.entry .flag.ru { content: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Russia_%28Pantone%29.svg"); }
 		.entry .flag.uk { content: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"); }
 		.notCollapsible { padding-bottom: 1px; } /*Stupid workaround to (almost) align .notCollapsible height with .entry*/
- 		:root.light .entry abbr[title*="од порожній"], :root.light .entry abbr[title*="екст не перекладений"] { color: brown; } /* LIGHT */
+ 		:root.light .entry dfn[title*="од порожній"], :root.light .entry dfn[title*="екст не перекладений"] { color: brown; } /* LIGHT */
 
 		/*.game::before {
 			position: absolute; top: 9em; left: 0;
@@ -123,13 +125,13 @@
 			else { document.getElementById("cs").style.display = "none"; }
 			if (x == "stel") { document.getElementById("name").innerHTML = "Stellaris"; }
 			else { document.getElementById("stel").style.display = "none"; }
-			if (x == "hoi4") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/sharedfiles/filedetails/?id=2732054856' target='_blank'>Hearts of Iron IV</a>"; }
+			if (x == "hoi4") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2732054856' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Hearts of Iron IV</a>"; }
 			else { document.getElementById("hoi4").style.display = "none"; }
 			if (x == "ir") { document.getElementById("name").innerHTML = "Imperator: Rome"; }
 			else { document.getElementById("ir").style.display = "none"; }
 			if (x == "ck3") { document.getElementById("name").innerHTML = "Crusader Kings III"; }
 			else { document.getElementById("ck3").style.display = "none"; }
-			if (x == "v3") { document.getElementById("name").innerHTML = "Victoria 3"; }
+			if (x == "v3") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>"; }
 			else { document.getElementById("v3").style.display = "none"; }	
 			document.getElementById(x).style.display = null;
 		}
@@ -162,19 +164,36 @@
 		}*/
 	</script>
 	<script type="text/javascript">
-		const hoi4List = [
+		const hoi4Vanilla = [
 			{
-				author: "Letōn", note: "<abbr title='Ініціатор перекладу: Letōn&#10;Внесок зробили (в порядку спадання):&#10;  - OlshenUA&#10;  - BmB Kun&#10;  - Churban&#10;  - Shrek_UA&#10;  - Dmytr0 Gaming'>�</abbr> для версії гри <i>1.12.14</i><br><p>+ Переклади, позначені <span class='vanilla'>зеленим</span>.</p>",
+				author: "Letōn", note: "<dfn title='Ініціатор перекладу: Letōn\nВнесок зробили (в порядку спадання):\n  - OlshenUA\n  - BmB Kun\n  - Churban\n  - Shrek_UA\n  - Dmytr0 Gaming'>�</dfn> для версії гри <i>1.12.14</i>",
 				image: "2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F",
-				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2706358548'>Steam</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://mods.paradoxplaza.com/mods/38710/Any'>Paradox Mods</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://www.nexusmods.com/heartsofironiv/mods/53'>Nexus Mods</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://github.com/Letgal/hoi4_ut'>GitHub</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI'>MEGA</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li>", dual: true
-					/*links: [
-						{ link: "2706358548", type: "Steam", lang: ["en", "ru", "uk"] },
-						{ link: "3870", type: "Paradox Mods", lang: ["en", "ru", "uk"] },
-						{ link: "53", type: "Nexus Mods", lang: ["en", "ru", "uk"] },
-						{ link: "Letgal/hoi4_ut", type: "GitHub", lang: ["en", "ru", "uk"] },
-						{ link: "mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI", type: "MEGA", lang: ["en", "ru", "uk"] }
-					]*/
+				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2706358548'>Steam</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://mods.paradoxplaza.com/mods/38710/Any'>Paradox Mods</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://www.nexusmods.com/heartsofironiv/mods/53'>Nexus Mods</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://github.com/Letgal/hoi4_ut'>GitHub</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li><li><a href='https://mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI'>MEGA</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li>", dual: true,
+				/*links: [
+					{ link: "2706358548", type: "Steam", lang: ["en", "ru", "uk"] },
+					{ link: "3870", type: "Paradox Mods", lang: ["en", "ru", "uk"] },
+					{ link: "53", type: "Nexus Mods", lang: ["en", "ru", "uk"] },
+					{ link: "Letgal/hoi4_ut", type: "GitHub", lang: ["en", "ru", "uk"] },
+					{ link: "mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI", type: "MEGA", lang: ["en", "ru", "uk"] }
+				],*/
+				more: "<p style='font-size: small;'><abbr title='Моди з включеними перекладами можна використовувати безпосередньо.'>Сюди ж включені переклади ось цих модів:</abbr></p><ul style='font-size: small; columns: 2;'><li>Battle Royale</li><li>City Maker</li><li>Coring Button</li><li>Country Roulette</li><li><abbr title='Це колекція, в яку входять:\n  - Diplomatic Alignment Triangle for HOI4\n  - Diplomatic Alignment Triangle for Kaiserreich\n  - Diplomatic Alignment Triangle for The New Order\n  - Diplomatic Alignment Triangle for Millennium Dawn\n  - Diplomatic Alignment Triangle for Red Flood\n  - Diplomatic Alignment Triangle for Calm Before the Storm\n  - Diplomatic Alignment Triangle for TWR\n  - Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</abbr></li><li>Faction Distance Limiter</li><li>Formable Nations in Setup Options</li><li>League of Nations</li><li>Ledger</li><li>Map Modes+</li><li>Peace Deals</li><li>Recall Volunteers (> <i>Yard1</i>)</li><li>Recall Volunteers (> <i>Not Monika Plus</i>)</li><li><abbr title='Це колекція, в яку входять:\n  - Rename Factions\n  - Rename Parties\n  - Rename States\n  - Rename Country Leaders'>Rename Mods</abbr></li><li>State Transfer Tool</li><li>State Transfer Tool MP</li><li>Toolpack Without the Errors</li><li>TWR GDP Screen</li><li>Yearly Event Cards</li></ul>"
+			}
+		]
+		const hoi4Mods = [
+			{
+				category: 2,
+				mod: "Make Ukraine Great Again", author: "Waiting CS2",
+				image: "2052005325255177482/D2F1076DD494C740825F8B46BE15E2A9F2BA52A7",
+				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3020195995'>Steam</a><img class='flag ru'></li>"
 			},
+			{
+				category: 4,
+				mod: "Manpower Alpha", author: "TEXA", note: "",
+				image: "2063250888841912440/CEA2768F4492C17E4FEEA45AE2DE834D9F23874A",
+				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2940022117'>Steam</a><img class='flag uk'></li>"
+			}
+		]
+		const hoi4Translations = [
 			{
 				category: 1,
 				mod: "Kaiserreich", author: "Stepan",
@@ -203,14 +222,31 @@
 				category: 1,
 				mod: "The Information Age 2018", author: "Godresky",
 				image: "1799774361347164308/6913E546BF0486BD520D200989881BF786A5012B",
-				// links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2866159880'>Steam</a><img class='flag en'><img class='flag uk'></li><li><a href='https://t.me/HeartsofUkraine4/77'>Telegram</a></li>",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2866159880'>Steam</a><img class='flag en'><img class='flag uk'></li>"
+			},
+			{
+				category: 1,
+				mod: "The Great War", author: "Stepan",
+				image: "2006969747431694825/A24D203567D51748BCC5D2A1B4629E104C31093F",
+				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3023052626'>Steam</a><img class='flag en'></li>"
 			},
 			{
 				category: 1,
 				mod: "The Great War Redux", author: "TTTSHOK",
 				image: "1869583325937331426/BF3DD3525FC2FF7F3B306F3C533F361A50E53BC6",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2880535545'>Steam</a><img class='flag ru'></li>"
+			},
+			{
+				category: 1,
+				mod: "Equestria at War", author: "All-Ampirian",
+				image: "2012599970446403734/EB5A283FB5FC8AADFBE34F5AB598BC6ED7F72C96",
+				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3025056095'>Steam</a><img class='flag ru'></li>"
+			},
+			{
+				category: 1,
+				mod: "Equestria at War", author: "Letōn",
+				// image: "1869583325937331426/BF3DD3525FC2FF7F3B306F3C533F361A50E53BC6",
+				links: "<li><a href='https://github.com/Letgal/hoi_ut-eaw'>GitHub</a><img class='flag en'></li>"
 			},
 			{
 				category: 1,
@@ -240,7 +276,7 @@
 			// 	category: 1,
 			// 	mod: "The East Crisis", author: "Wenyanngat",
 			// 	image: "1793018961918301662/251D1EC898894FE408C9755AC0CE0873A6E6BCCE",
-			// 	links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2868122129'>Steam</a> <abbr title='Мод порожній'>�</abbr></li>"
+			// 	links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2868122129'>Steam</a> <dfn title='Мод порожній'>�</dfn></li>"
 			// },
 			{
 				category: 1,
@@ -258,7 +294,6 @@
 				category: 2,
 				mod: "The Road to 56", author: "TTTSHOK",
 				image: "2012581497125527224/94D24885B344425D83089F3BFD4EE0165A69CCA0",
-				// links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2928183602'>Steam</a><img class='flag en'></li><li><a href='https://t.me/HeartsofUkraine4/125'>Telegram</a></li>",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2928183602'>Steam</a><img class='flag en'></li>"
 			},
 			{
@@ -283,7 +318,6 @@
 				category: 2,
 				mod: "South America Rework", author: "TTTSHOK",
 				image: "2019340063660896642/26B0FCAF8B2AD153E370F938E1B0F36AF501E9CD",
-				// links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2944824025'>Steam</a><img class='flag en'></li><li><a href='https://t.me/HeartsofUkraine4/246'>Telegram</a></li>",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2944824025'>Steam</a><img class='flag en'></li>"
 			},
 			{
@@ -391,15 +425,10 @@
 			},
 			{
 				category: 2,
-				mod: "Ukraine Above All", author: "GBV", note: "(офіційний) <abbr title='Опублікував: GBV&#10;Перекладачі: Lonster й інші (перелічені на сторінці Steam)'>�</abbr>",
+				mod: "Ukraine Above All", author: "GBV", note: "(офіційний) <dfn title='Опублікував: GBV\nПерекладачі: Lonster й інші (перелічені на сторінці Steam)'>�</dfn>",
 				image: "2040735491762509515/3066631A48A09B3FC6F24AC5D8699F5E84BB2D61",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2963087258'>Steam</a><img class='flag en'></li>"
 			},
-			//{
-			//	category: 2,
-			//	mod: "Ukrainian State: Redux", author: "Команда «Hearts of Ukraine 4»",
-			//	links: "<li><a href='https://t.me/HeartsofUkraine4/84'>Telegram</a><img class='flag en'></li>"
-			//},
 			{
 				category: 2,
 				mod: "The Last Hetman", author: "Команда «GGA Studio»", note: "(офіційний)",
@@ -434,7 +463,6 @@
 				category: 2,
 				mod: "Maharaj: A Complete Nepal Overhaul", author: "TTTSHOK",
 				image: "1869583325942104366/34598D0B2732D2623B5FDF6581F44A88D204E876",
-				// links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2880963651'>Steam</a><img class='flag en'><img class='flag ru'></li><li><a href='https://t.me/HeartsofUkraine4/84'>Telegram</a></li>",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2880963651'>Steam</a><img class='flag en'><img class='flag ru'></li>"
 			},
 			{
@@ -447,14 +475,12 @@
 				category: 2,
 				mod: "Anarkhiya-mama, za nas!", author: "TTTSHOK",
 				image: "1986681082533060243/B08154A9DA6C15230E3327D34573120E99E6AB36",
-				// links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2901048281'>Steam</a><img class='flag en'></li><li><a href='https://t.me/HeartsofUkraine4/84'>Telegram</a></li>",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2901048281'>Steam</a><img class='flag en'></li>"
 			},
 			{
 				category: 2,
 				mod: "Catalan War", author: "TTTSHOK",
 				image: "5078403134280946066/DA27C5799137DC4D0EFC83F2A3223A6BCCE73E32",
-				// links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2907629967'>Steam</a><img class='flag en'></li><li><a href='https://t.me/HeartsofUkraine4/97'>Telegram</a></li>",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2907629967'>Steam</a><img class='flag en'></li>"
 			},
 			{
@@ -482,10 +508,6 @@
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2935436509'>Steam</a><img class='flag en'><img class='flag ru'></li>"
 			},
 			{
-				category: 3, noCollapse: true,
-				mod: "Formable Nations in Setup Options", author: "Letōn"
-			},
-			{
 				category: 3,
 				mod: "Universal Formable Nations", author: "Царь Игр",
 				image: "5105424732025379617/3EAE90B4E0572CD5E0BB71450D978678AF6A2A54",
@@ -496,10 +518,6 @@
 				mod: "Formable Nations", author: "TTTSHOK",
 				image: "1986681082527236621/7F38836D8A626EA2CA4C5A885BF0B00589CBA585",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2900502530'>Steam</a><img class='flag en'></li>"
-			},
-			{
-				category: 3, noCollapse: true,
-				mod: "League of Nations", author: "Letōn"
 			},
 			{
 				category: 3,
@@ -526,10 +544,6 @@
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2925100155'>Steam</a><img class='flag en'><img class='flag ru'></li>"
 			},
 			{
-				category: 3, noCollapse: true,
-				mod: "Battle Royale", author: "Letōn"
-			},
-			{
 				category: 3,
 				mod: "Kovas' States Rework", author: "TTTSHOK",
 				image: "1878592397749992765/4D434AC8CE3AE57CDCC9CCCB1E2C079503A90043",
@@ -548,19 +562,10 @@
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2919985045'>Steam</a><img class='flag en'></li>"
 			},
 			{
-				category: 4, noCollapse: true,
-				mod: "Toolpack Without the Errors", author: "Letōn"
-			},
-			{
 				category: 4,
 				mod: "Toolpack 1.12", author: "TTTSHOK",
 				image: "1985554187744216682/CA1FECAE205539CAFE1F2F443BBC1D663C46EA61",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2897992396'>Steam</a><img class='flag en'></li>"
-			},
-			{
-				category: 4, noCollapse: true,
-				mod: "State Transfer Tool", author: "Letōn",
-				links: "<li>State Transfer Tool</li><li>State Transfer Tool MP</li>"
 			},
 			{
 				category: 4,
@@ -600,23 +605,9 @@
 			},
 			{
 				category: 4,
-				mod: "Manpower Alpha", author: "TEXA", note: "<br>(Переклад включений в ориґінал)",
-				image: "2063250888841912440/CEA2768F4492C17E4FEEA45AE2DE834D9F23874A",
-				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2940022117'>Steam</a><img class='flag uk'></li>"
-			},
-			{
-				category: 4,
 				mod: "Strategic Artillery Bombardment", author: "BmB Kun",
 				image: "5104298832183069179/BF70A3FCD142006958216D9E32CD8080AE3EA52E",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2912440858'>Steam</a><img class='flag en'><img class='flag ru'></li>"
-			},
-			{
-				category: 4, noCollapse: true,
-				mod: "Faction Distance Limiter", author: "Letōn"
-			},
-			{
-				category: 4, noCollapse: true,
-				mod: "Country Roulette", author: "Letōn"
 			},
 			{
 				category: 4,
@@ -625,27 +616,10 @@
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2912150988'>Steam</a><img class='flag en'><img class='flag ru'></li><li><a href='https://mods.paradoxplaza.com/mods/55746/Any'>Paradox Mods</a><img class='flag en'><img class='flag ru'></li><li><a href='https://mega.nz/file/YlgyDLgS#iYBjSz9ANYK7x03x13Mfwe5mauJJTjqa2OD5LLCm38U'>MEGA</a><img class='flag en'><img class='flag ru'></li>"
 			},
 			{
-				category: 4, noCollapse: true,
-				mod: "Yearly Event Cards", author: "Letōn"
-			},
-			{
-				category: 4, noCollapse: true,
-				mod: "Ledger", author: "Letōn"
-			},
-			{
-				category: 4, noCollapse: true,
-				mod: "TWR GDP Screen", author: "Letōn"
-			},
-			{
 				category: 4,
 				mod: "TWR GDP Screen", author: "TTTSHOK",
 				image: "1985554187739082248/4EB4F277FF27187BD012D95EE7DB24EC68728EA2",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2897487105' title='Для старішої версії'>Steam</a><img class='flag en'></li>"
-			},
-			{
-				category: 4, noCollapse: true,
-				mod: "Колекція модів «<i>Diplomatic Alignment Triangle</i>»", author: "Letōn", note: "<br>Моди в колекції:",
-				links: "<li>D.A.T. for HOI4</li><li>D.A.T. for Kaiserreich</li><li>D.A.T. for The New Order</li><li>D.A.T. for Millennium Dawn</li><li>D.A.T. for Red Flood</li><li>D.A.T. for Calm Before the Storm</li><li>D.A.T. for TWR</li><li>D.A.T. for Bruderkrieg</li>", dual: true
 			},
 			{
 				category: 4,
@@ -658,15 +632,6 @@
 				mod: "Cores & Claims GUI", author: "TTTSHOK",
 				image: "1933762067822062773/90048FD89825A78D9E8866F8658210BBF4CD9E6F",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2892688290'>Steam</a><img class='flag ru'></li>"
-			},
-			{
-				category: 4, noCollapse: true,
-				mod: "Колекція модів «<i>Rename Mods</i>»", author: "Letōn", note: "<br>Моди в колекції:",
-				links: "<li>Rename Factions</li><li>Rename Parties</li><li>Rename States</li><li>Rename Country Leaders</li>", dual: true
-			},
-			{
-				category: 4, noCollapse: true,
-				mod: "City Maker", author: "Letōn"
 			},
 			{
 				category: 4,
@@ -686,20 +651,12 @@
 				image: "2013720072663807467/DEE34A2A2D792989452E58B98DEF315EB6BBECCD",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2993758938'>Steam</a><img class='flag en'><img class='flag ru'><img class='flag uk'></li>"
 			},
-			{
-				category: 4, noCollapse: true,
-				mod: "Recall Volunteers (> Not Monika Plus)", author: "Letōn"
-			},
 			// {
 			// 	category: 4,
 			// 	mod: "Recall Volunteers (> Not Monika Plus)", author: "BmB Kun",
 			// 	image: "5104298832183720190/96E819FE7014AC645AFF2CBA092601DC6D0A8BC8",
-			// 	links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2912512076'>Steam</a> <abbr title='Текст не перекладений'>�</abbr></li>"
+			// 	links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2912512076'>Steam</a> <dfn title='Текст не перекладений'>�</dfn></li>"
 			// },
-			{
-				category: 4, noCollapse: true,
-				mod: "Recall Volunteers (> Yard1)", author: "Letōn"
-			},
 			{
 				category: 4,
 				mod: "Demand It!", author: "TEXA",
@@ -708,61 +665,160 @@
 			}
 		]
 
-		function saveEntryList() { localStorage.setItem("hoi4List", JSON.stringify(hoi4List)); }
+		function saveEntryList() {
+			localStorage.setItem("hoi4Vanilla", JSON.stringify(hoi4Vanilla));
+			localStorage.setItem("hoi4Mods", JSON.stringify(hoi4Mods));
+			localStorage.setItem("hoi4Translations", JSON.stringify(hoi4Translations));
+		}
 		saveEntryList();
 
-		function loadEntryList() { const hoi4List = JSON.parse(localStorage.getItem("hoi4List")); }
+		function loadEntryList() {
+			const hoi4Vanilla = JSON.parse(localStorage.getItem("hoi4Vanilla"));
+			const hoi4Mods = JSON.parse(localStorage.getItem("hoi4Mods"));
+			const hoi4Translations = JSON.parse(localStorage.getItem("hoi4Translations"));
+		}
 
-		function generateEntries(x) {
-			loadEntryList();
+		function generateVanilla(x) {
+			for (i = 0; i < hoi4Vanilla.length; i++) {
+				const div = document.createElement("div");
+					div.className = "notCollapsible";
+					const entry = document.createElement("div");
+						if (hoi4Vanilla[i].image) {
+							entry.className = "entry";
+							entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + hoi4Vanilla[i].image + "/?imw=200&imh=200'>";
+						}
+						else { entry.className = "entry noimage"; }
+						entry.innerHTML += "<i>" + hoi4Vanilla[i].author + "</i>";
+						if (hoi4Vanilla[i].note) { entry.innerHTML += " " + hoi4Vanilla[i].note; }
+						if (hoi4Vanilla[i].links) {
+							const linksList = document.createElement("ul");
+								if (hoi4Vanilla[i].dual) { linksList.setAttribute("style", "columns: 2;"); }
+								linksList.innerHTML = hoi4Vanilla[i].links; /* Stupid Workaround */
+								//for (j = 0; j > hoi4Vanilla[i].links.length; j++) {
+								//	linksList.innerHTML += "<li><a href='" + hoi4Vanilla[i].links[j].link + "'>" + hoi4Vanilla[i].links[j].type + "</a></li>";
+								//}
+							entry.appendChild(linksList);
+						}
+						if (hoi4Vanilla[i].more) { entry.innerHTML += hoi4Vanilla[i].more; }
+					//if (hoi4Vanilla[i].mod != hoi4Vanilla[i--].mod) { div.appendChild(entry); }
+					div.appendChild(entry);
+				document.getElementById(x).appendChild(div);
+			}
+		}
 
-			const vanillaHeading = document.createElement("h2"); vanillaHeading.innerHTML = "Переклади ванілли";
-			document.getElementById(x).appendChild(vanillaHeading);
-
-			for (i = 0; i < hoi4List.length; i++) {
-				if (hoi4List[i].category && !hoi4List[i].noCollapse) {
-					const button = document.createElement("button"); button.className = "visibilityToggle cat" + hoi4List[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = hoi4List[i].mod;
-					if (hoi4List[i].new) { button.setAttribute("title", "Новий переклад"); }
+		function generateMods(x) {
+			for (i = 0; i < hoi4Mods.length; i++) {
+				if (hoi4Mods[i].category && !hoi4Mods[i].noCollapse) {
+					const button = document.createElement("button"); button.className = "visibilityToggle cat" + hoi4Mods[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = hoi4Mods[i].mod;
+					if (hoi4Mods[i].new) { button.setAttribute("title", "Новий переклад"); }
 					document.getElementById(x).appendChild(button);
 				}
 
 				const div = document.createElement("div");
-					if (!hoi4List[i].category || hoi4List[i].noCollapse) {
-						if (hoi4List[i].noCollapse) { div.className = "notCollapsible notCollapsibleSolid"; }
+					if (!hoi4Mods[i].category || hoi4Mods[i].noCollapse) {
+						if (hoi4Mods[i].noCollapse) { div.className = "notCollapsible notCollapsibleSolid"; }
 						else { div.className = "notCollapsible"; }
 					}
 					const entry = document.createElement("div");
-						if (hoi4List[i].noCollapse) {
+						if (hoi4Mods[i].noCollapse) {
 							const noCollapseHeading = document.createElement("h3");
 							noCollapseHeading.className = "vanilla";
-							noCollapseHeading.innerHTML = hoi4List[i].mod;
+							noCollapseHeading.innerHTML = hoi4Mods[i].mod;
 							entry.appendChild(noCollapseHeading);
 						}
-						if (hoi4List[i].image) {
+						if (hoi4Mods[i].image) {
 							entry.className = "entry";
-							entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + hoi4List[i].image + "/?imw=200&imh=200'>";
+							entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + hoi4Mods[i].image + "/?imw=200&imh=200'>";
 						}
 						else { entry.className = "entry noimage"; }
-						entry.innerHTML += "<i>" + hoi4List[i].author + "</i>";
-						if (hoi4List[i].note) { entry.innerHTML += " " + hoi4List[i].note; }
-						if (hoi4List[i].links) {
+						entry.innerHTML += "<i>" + hoi4Mods[i].author + "</i>";
+						if (hoi4Mods[i].note) { entry.innerHTML += " " + hoi4Mods[i].note; }
+						if (hoi4Mods[i].links) {
 							const linksList = document.createElement("ul");
-								if (hoi4List[i].dual) { linksList.setAttribute("style", "columns: 2;"); }
-								linksList.innerHTML = hoi4List[i].links; /* Stupid Workaround */
-								//for (j = 0; j > hoi4List[i].links.length; j++) {
-								//	linksList.innerHTML += "<li><a href='" + hoi4List[i].links[j].link + "'>" + hoi4List[i].links[j].type + "</a></li>";
+								if (hoi4Mods[i].dual) { linksList.setAttribute("style", "columns: 2;"); }
+								linksList.innerHTML = hoi4Mods[i].links; /* Stupid Workaround */
+								//for (j = 0; j > hoi4Mods[i].links.length; j++) {
+								//	linksList.innerHTML += "<li><a href='" + hoi4Mods[i].links[j].link + "'>" + hoi4Mods[i].links[j].type + "</a></li>";
 								//}
 							entry.appendChild(linksList);
 						}
-					//if (hoi4List[i].mod != hoi4List[i--].mod) { div.appendChild(entry); }
+					//if (hoi4Mods[i].mod != hoi4Mods[i--].mod) { div.appendChild(entry); }
 					div.appendChild(entry);
 				document.getElementById(x).appendChild(div);
-
-				if (!hoi4List[i].category/*, hoi4List[i++].category*/) {
-					const modHeading = document.createElement("h2"); modHeading.innerHTML = "Переклади модів";
-					document.getElementById(x).appendChild(modHeading);
-				}
 			}
+		}
+
+		function generateTranslations(x) {
+			for (i = 0; i < hoi4Translations.length; i++) {
+				if (hoi4Translations[i].category && !hoi4Translations[i].noCollapse) {
+					const button = document.createElement("button"); button.className = "visibilityToggle cat" + hoi4Translations[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = hoi4Translations[i].mod;
+					if (hoi4Translations[i].new) { button.setAttribute("title", "Новий переклад"); }
+					document.getElementById(x).appendChild(button);
+				}
+
+				const div = document.createElement("div");
+					if (!hoi4Translations[i].category || hoi4Translations[i].noCollapse) {
+						if (hoi4Translations[i].noCollapse) { div.className = "notCollapsible notCollapsibleSolid"; }
+						else { div.className = "notCollapsible"; }
+					}
+					const entry = document.createElement("div");
+						if (hoi4Translations[i].noCollapse) {
+							const noCollapseHeading = document.createElement("h3");
+							noCollapseHeading.className = "vanilla";
+							noCollapseHeading.innerHTML = hoi4Translations[i].mod;
+							entry.appendChild(noCollapseHeading);
+						}
+						if (hoi4Translations[i].image) {
+							entry.className = "entry";
+							entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + hoi4Translations[i].image + "/?imw=200&imh=200'>";
+						}
+						else { entry.className = "entry noimage"; }
+						entry.innerHTML += "<i>" + hoi4Translations[i].author + "</i>";
+						if (hoi4Translations[i].note) { entry.innerHTML += " " + hoi4Translations[i].note; }
+						if (hoi4Translations[i].links) {
+							const linksList = document.createElement("ul");
+								if (hoi4Translations[i].dual) { linksList.setAttribute("style", "columns: 2;"); }
+								linksList.innerHTML = hoi4Translations[i].links; /* Stupid Workaround */
+								//for (j = 0; j > hoi4Translations[i].links.length; j++) {
+								//	linksList.innerHTML += "<li><a href='" + hoi4Translations[i].links[j].link + "'>" + hoi4Translations[i].links[j].type + "</a></li>";
+								//}
+							entry.appendChild(linksList);
+						}
+					//if (hoi4Translations[i].mod != hoi4Translations[i--].mod) { div.appendChild(entry); }
+					div.appendChild(entry);
+				document.getElementById(x).appendChild(div);
+			}
+		}
+
+		function generateEntries(x) {
+			loadEntryList();
+
+			const vanillaHeading = document.createElement("h2");
+				vanillaHeading.innerHTML = "Переклади гри";
+			document.getElementById(x).appendChild(vanillaHeading);
+
+			generateVanilla(x);
+
+			// const modHeading = document.createElement("h2");
+			// 	modHeading.innerHTML = "Моди українською мовою";
+			// document.getElementById(x).appendChild(modHeading);
+			// const modSubHeading = document.createElement("p");
+			// 	modSubHeading.style.fontStyle = "italic";
+			// 	modSubHeading.innerHTML = "Ці моди містять текст українською мовою (мод не є окремим перекладом, а текст є частиною ориґіналу).";
+			// document.getElementById(x).appendChild(modSubHeading);
+
+			// generateMods(x);
+
+			const transHeading = document.createElement("h2");
+				transHeading.innerHTML = "Окремі переклади модів";
+			document.getElementById(x).appendChild(transHeading);
+			const transSubHeading = document.createElement("p");
+				transSubHeading.style.fontStyle = "italic";
+				transSubHeading.innerHTML = "Ці переклади є окремими від ориґіналів модами.";
+			document.getElementById(x).appendChild(transSubHeading);
+
+			generateTranslations(x);
+
 			generateCategories();
 		}
 
@@ -812,7 +868,7 @@
 	</nav>
 
 	<p style="margin-top: 0; text-align: center;"><i>Ця сторінка буде доповнюватися й оновлюватися з часом.</i></p>
-	<h1>Українські переклади <i id="name"></i></h1>
+	<h1>Моди до <i id="name"></i> українською</h1>
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game">
@@ -831,7 +887,7 @@
 
 	<!--CITIES: SKYLINES-->
 	<div id="cs" class="game">
-		<h2>Переклади ванілли</h2>
+		<h2>Переклади гри</h2>
 		<div class="notCollapsible">
 			<div class="entry noimage">
 				<i>Спільнота</i>
@@ -854,7 +910,7 @@
 
 	<!--STELLARIS-->
 	<div id="stel" class="game">
-		<h2>Переклади ванілли</h2>
+		<h2>Переклади гри</h2>
 		<div class="notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325032159963894/F589BCA56EE9E44C1D3BDC5A1B940AE434306989/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
@@ -907,7 +963,7 @@
 
 	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
-		<h2>Переклади ванілли</h2>
+		<h2>Переклади гри</h2>
 		<div class="notCollapsible">
 			<div class="entry noimage">
 				<i>Спільнота</i>
@@ -956,7 +1012,7 @@
 		<div class="notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
-				<i>Godresky</i> <abbr title="З допомогою:&#10;  - Пан Дмитро&#10;  - Пані Меліса&#10;  - Пан Марк Хан&#10;  - Пан Андріян&#10;  - _rlly_&#10;  - Letōn (шрифти)&#10;  - Дружня спільнота&#10;  - Греко-католицька церква">�</abbr>
+				<i>Godresky</i> <dfn title="З допомогою:\n  - Пан Дмитро\n  - Пані Меліса\n  - Пан Марк Хан\n  - Пан Андріян\n  - _rlly_\n  - Letōn (шрифти)\n  - Дружня спільнота\n  - Греко-католицька церква">�</dfn>
 				для версії гри <i>1.3.5</i>
 				<ul style="columns: 2;">
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2884178988">Steam</a><img class="flag en"></li>

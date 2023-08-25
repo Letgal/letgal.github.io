@@ -153,7 +153,7 @@ nav input[type=radio]:checked + label { cursor: default; }
 /* LIGHT */
 :root.light header > a, :root.light header > button, :root.light nav input[type=radio] + label { background: var(--button); }
 :root.light header > a:hover, :root.light header > button:hover, :root.light nav input[type=radio] + label:hover { background: var(--button-light); }
-:root.light header > a:active, :root.light header > button:active, :root.light nav input[type=radio] + label:active, nav input[type=radio]:checked + label { background: var(--button-dark); }
+:root.light header > a:active, :root.light header > button:active, :root.light nav input[type=radio] + label:active, :root.light nav input[type=radio]:checked + label { background: var(--button-dark); }
 
 /* ANIMATION KEYFRAMES */
 @keyframes rotation {

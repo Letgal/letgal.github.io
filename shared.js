@@ -7,7 +7,7 @@ const headerButtons = [
 	},
 	{
 		tag: "a",
-		text: "Укр. переклади ігор Paradox",
+		text: "Українські моди до ігор Paradox",
 		attr: "href", value: "/ut.html"
 	},
 	// {

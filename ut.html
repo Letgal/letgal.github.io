@@ -27,6 +27,11 @@
 		h3 { margin-block-end: 0; }
 		/*:root.light header > a:first-of-type img { filter: invert(100%); }*/
 
+		.intro {
+			margin-top: 0; margin-bottom: 0.5rem;
+			text-align: center;
+			font-style: italic;
+		}
 		.visibilityToggle {
 			display: block;
 			width: 100%;
@@ -182,13 +187,19 @@
 		const hoi4Mods = [
 			{
 				category: 2,
+				mod: "Ukrainian People's Republic in Exile", author: "SteveJobs",
+				image: "2047502867529603480/07D13DB394D55948C30AC9D965EA517D847AC54C",
+				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3025365180'>Steam</a><img class='flag uk'></li>"
+			},
+			{
+				category: 2,
 				mod: "Make Ukraine Great Again", author: "Waiting CS2",
 				image: "2052005325255177482/D2F1076DD494C740825F8B46BE15E2A9F2BA52A7",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3020195995'>Steam</a><img class='flag ru'></li>"
 			},
 			{
 				category: 4,
-				mod: "Manpower Alpha", author: "TEXA", note: "",
+				mod: "Manpower Alpha", author: "TEXA",
 				image: "2063250888841912440/CEA2768F4492C17E4FEEA45AE2DE834D9F23874A",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2940022117'>Steam</a><img class='flag uk'></li>"
 			}
@@ -443,15 +454,15 @@
 			},
 			{
 				category: 2,
-				mod: "Rise of Belarusian Sun", author: "Команда «GGA Studio»",
-				image: "2011467728948966981/5A84CFE22E18FF2865D80521B69B356DDB2F4D96",
-				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2991114232'>Steam</a><img class='flag en'><img class='flag ru'></li>"
+				mod: "Ukrainian People's Republic in Exile", author: "SteveJobs", note: "(офіційний)",
+				image: "2047502867529771871/B5B5FE0A369BB7259A0B2F0E3AF55366E53927F1",
+				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3025376231'>Steam</a><img class='flag en'><img class='flag uk'></li>"
 			},
 			{
 				category: 2,
-				mod: "Belarus Independence Mod", author: "Команда «GGA Studio»",
-				image: "2022720583201384967/B7E795E3A83A15D96A27BB3B1B7AE1B9D66C820F",
-				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2959330716'>Steam</a><img class='flag ru'></li>"
+				mod: "Rise of Belarusian Sun", author: "Команда «GGA Studio»", note: "(офіційний)",
+				image: "2011467728948966981/5A84CFE22E18FF2865D80521B69B356DDB2F4D96",
+				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2991114232'>Steam</a><img class='flag en'><img class='flag ru'></li>"
 			},
 			{
 				category: 2,
@@ -867,7 +878,8 @@
 		<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
 	</nav>
 
-	<p style="margin-top: 0; text-align: center;"><i>Ця сторінка буде доповнюватися й оновлюватися з часом.</i></p>
+	<p class="intro">Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
+	<p class="intro">Якщо якийсь із скриптів не працює, спробуйте перезавантажити сторінку.</p>
 	<h1>Моди до <i id="name"></i> українською</h1>
 
 	<!--EUROPA UNIVERSALIS IV-->

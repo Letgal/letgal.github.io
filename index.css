@@ -3,6 +3,7 @@
 	--body-width: 50%;
 	--collective-height: 0em;
 }
+body { padding-top: 5em; }
 a.block, #logo {
 	display: block;
 	box-sizing: border-box;
@@ -24,8 +25,8 @@ a.block:hover {
 }
 a.block:active { background: var(--button-darker); }
 #logo {
-	margin-block: 0 2rem;
-	margin-inline: auto;
+	position: absolute; top: 0; left: 50%;
+	translate: -50% -50%;
 	width: 10rem; height: 10rem;
 	border-radius: 50%;
 }
@@ -38,8 +39,8 @@ a.block:active { background: var(--button-darker); }
 	transition: .2s ease;
 	animation: rotation 30s infinite linear;
 }
-#logo:hover img { filter: brightness(120%); }
-#logo:active img { filter: brightness(80%); }
+#logo:hover img { filter: brightness(130%); }
+#logo:active img { filter: brightness(70%); }
 
 :root.light a.block { background: var(--button); }
 :root.light a.block:hover { background: var(--button-light); }

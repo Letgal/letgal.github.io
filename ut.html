@@ -25,7 +25,6 @@
 		header { box-shadow: none; }
 		h2 { margin-block-end: 0; }
 		h3 { margin-block-end: 0; }
-		/*:root.light header > a:first-of-type img { filter: invert(100%); }*/
 
 		.intro {
 			margin-top: 0; margin-bottom: 0.5rem;
@@ -33,15 +32,14 @@
 			font-style: italic;
 		}
 		.visibilityToggle {
-			display: block;
 			width: 100%;
-			background: var(--button-dark);
+			/*border-radius: 0.5em;*/
 			text-align: center;
 			font-size: 1.2em;
 			font-weight: bold;
 		}
-		.visibilityToggle:hover { background: var(--button) !important; }
 		.visibilityToggle:active { background: var(--button-dark) !important; }
+		.visibilityToggle.opened { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 		.visibilityToggle[title*="овий переклад"] { background: var(--gold-color); }
 		.visibilityToggle[title*="овий переклад"]:hover { background: var(--gold-color-hover) !important; }
 		.visibilityToggle[title*="овий переклад"]:active { background: var(--gold-color) !important; }
@@ -58,13 +56,9 @@
 		.visibilityToggle[title*="овий переклад"] + div { background: linear-gradient(to bottom, var(--gold-color), transparent); }
 		.notCollapsibleSolid { background: var(--button-dark); }
 		/* LIGHT */
-		:root.light .visibilityToggle { background: var(--button); }
-		:root.light .visibilityToggle:hover { background: var(--button-light) !important; }
-		:root.light .visibilityToggle:active { background: var(--button) !important; }
-		:root.light .visibilityToggle + div, :root.light .notCollapsible { background: var(--button-light); }
+		:root.light .visibilityToggle + div, :root.light .notCollapsible { background: var(--button); }
 		:root.light .visibilityToggle[title*="овий переклад"] + div { background: #FDD853; }
 		:root.light .visibilityToggle[title*="овий переклад"] + div a { color: var(--gold-color); }
- 		:root.light .notCollapsibleSolid { background: var(--button-light); }
 
 		.entry { margin: 0.5em; }
 		.entry:not(.noimage) { min-height: var(--img-entry-height); }
@@ -134,14 +128,15 @@
 			else { document.getElementById("hoi4").style.display = "none"; }
 			if (x == "ir") { document.getElementById("name").innerHTML = "Imperator: Rome"; }
 			else { document.getElementById("ir").style.display = "none"; }
-			if (x == "ck3") { document.getElementById("name").innerHTML = "Crusader Kings III"; }
+			if (x == "ck3") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2945041310' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Crusader Kings III</a>"; }
 			else { document.getElementById("ck3").style.display = "none"; }
 			if (x == "v3") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>"; }
-			else { document.getElementById("v3").style.display = "none"; }	
+			else { document.getElementById("v3").style.display = "none"; }
 			document.getElementById(x).style.display = null;
 		}
 
 		function toggleVisibility(x) {
+			// x.classList.toggle("opened");
 			var next = x.nextElementSibling;
 			if (next.style.height) { next.style.height = null; }
 			else { next.style.height = next.scrollHeight + "px"; }
@@ -257,7 +252,7 @@
 				category: 1,
 				mod: "Equestria at War", author: "Letōn",
 				// image: "1869583325937331426/BF3DD3525FC2FF7F3B306F3C533F361A50E53BC6",
-				links: "<li><a href='https://github.com/Letgal/hoi_ut-eaw'>GitHub</a><img class='flag en'></li>"
+				links: "<li><a href='https://github.com/Letgal/hoi4_ut-eaw'>GitHub</a><img class='flag en'></li>"
 			},
 			{
 				category: 1,
@@ -297,7 +292,7 @@
 			},
 			{
 				category: 1,
-				mod: "SPEED5: Commanders in Conflict (Sonnenblum 1v1)", author: "TTTSHOK",
+				mod: "SPEED5: Commanders in Conflict", author: "TTTSHOK",
 				image: "1986681082531933598/DA8809F08EB0DF0E8DE1903FC1C5D86E974CFD27",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2900943701' title='Для старішої версії'>Steam</a><img class='flag en'></li>"
 			},
@@ -887,7 +882,7 @@
 		<div class="notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/314494866252173216/6B212F836B5DCDA7D39FC52C565217D6AA88EAB7/?imw=200&imh=200">
-				<i>vicner</i>
+				<i>vicner</i> для версії гри <i>1.35</i>
 				<ul>
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=632273228">Steam</a></li>
 					<li><a href="https://github.com/vicner/eu4">GitHub</a></li>
@@ -904,8 +899,16 @@
 			<div class="entry noimage">
 				<i>Спільнота</i>
 				<ul style="margin-block-start: 0.5em;">
-					<li><a href="https://toloka.to/t83938">Toloka</a></li>
 					<li><a href="https://crowdin.com/project/cities-skylines">Crowdin</a></li>
+					<li><a href="https://toloka.to/t83938">Toloka</a></li>
+				</ul>
+			</div>
+			<div class="entry">
+				<img src="https://steamuserimages-a.akamaihd.net/ugc/2013723347171334029/8CAEE0481DB1A451FAFAB171B59FABDE75C00461/?imw=200&imh=200">
+				<i>Kemza</i> &amp; <i>Vasenka88</i>
+				<ul>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3012910170">Steam</a></li>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3011689406">Посібник з ручного встановлення (Steam)</a></li>
 				</ul>
 			</div>
 		</div>
@@ -915,7 +918,7 @@
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2031727496928501266/296B83E9B6C1E17998A06F8A311187FF3C82BBB7/?imw=200&imh=200">
 				<i>Alex Sokol</i>
-				<ul><li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2958882190">Посібник з установлення перекладу в Steam</a></li></ul>
+				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2958882190">Посібник з установлення (Steam)</a></li></ul>
 			</div>
 		</div>
 	</div>
@@ -925,6 +928,19 @@
 		<h2>Переклади гри</h2>
 		<div class="notCollapsible">
 			<div class="entry">
+				<img src="https://steamuserimages-a.akamaihd.net/ugc/2028347991371402362/EDCAF1F7254F2C65260DA698CE92F196BE0EF5DF/?imw=200&imh=200">
+				<i>Ivan Anthony</i>+ для версії гри <i>3.8.4</i>
+				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2907350739">Steam</a><img class="flag ru"></li></ul>
+			</div>
+			<div class="entry">
+				<img src="https://steamuserimages-a.akamaihd.net/ugc/2022724735480708458/166AF4A6BD15366C8EE8688BF305B84FF0303F3D/?imw=200&imh=200">
+				<i>Clamor_S</i> для версії гри <i>3.8.4</i>
+				<ul>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2977722107">Steam</a><img class="flag ru"></li>
+					<li><a href="https://github.com/clamor-s/ukrainian_localization_stellaris">GitHub</a><img class="flag ru"></li>
+				</ul>
+			</div>
+			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325032159963894/F589BCA56EE9E44C1D3BDC5A1B940AE434306989/?imw=200&imh=200">
 				<i>ser_rocko</i> для версії гри <i>3.8.2</i>
 				<ul>
@@ -933,21 +949,8 @@
 				</ul>
 			</div>
 			<div class="entry noimage">
-				<i>Команда «Єднання»</i>
-				<ul class="fm"><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2906120862">Steam</a></li></ul>
-			</div>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2028347991371402362/EDCAF1F7254F2C65260DA698CE92F196BE0EF5DF/?imw=200&imh=200">
-				<i>Ivan Anthony</i>+ для версії гри <i>3.8.4</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2907350739">Steam</a></li></ul>
-			</div>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2022724735480708458/166AF4A6BD15366C8EE8688BF305B84FF0303F3D/?imw=200&imh=200">
-				<i>Clamor_S</i>
-				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2977722107">Steam</a></li>
-					<li><a href="https://github.com/clamor-s/ukrainian_localization_stellaris">GitHub</a></li>
-				</ul>
+				<i>Команда «Єднання»</i> для версії гри <i>3.6.1</i>
+				<ul class="fm"><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2906120862">Steam</a><img class="flag ru"></li></ul>
 			</div>
 		</div>
 		<h2>Переклади модів</h2>
@@ -956,7 +959,7 @@
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2012596709456380707/E698B301400CE2D1A42C932415A0D641037073D3/?imw=200&imh=200">
 				<i>Ivan Anthony</i>+
-				<ul><li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3006909509">Steam</a></li></ul>
+				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3006909509">Steam</a></li></ul>
 			</div>
 		</div>
 		<!-- <button class="visibilityToggle" onclick="toggleVisibility(this)">Gigastructural Engineering &amp; More</button>
@@ -970,7 +973,7 @@
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2012596709455985158/0228847194BBD3C53E94F4EF70DEBD0599CB650D/?imw=200&imh=200">
 				<i>Ivan Anthony</i>+
-				<ul><li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3006863304">Steam</a></li></ul>
+				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3006863304">Steam</a></li></ul>
 			</div>
 		</div>
 		<button class="visibilityToggle" onclick="toggleVisibility(this)">Detailed Tech Tooltips Reloaded</button>
@@ -1004,8 +1007,8 @@
 			<div class="entry noimage">
 				<i>ser_rocko</i>+
 				<ul style="margin-block-start: 0.5em;">
-					<li><a href="https://toloka.to/t114007">Toloka</a></li>
 					<li><a href="https://crowdin.com/project/crusader-kings-iii-ukrainian">Crowdin</a></li>
+					<li><a href="https://toloka.to/t114007">Toloka</a></li>
 				</ul>
 			</div>
 			<div class="entry">
@@ -1054,7 +1057,7 @@
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2884178988">Steam</a><img class="flag en"></li>
 					<li><a href="https://mods.paradoxplaza.com/mods/55851/Any" title="Для старішої версії">Paradox Mods</a> (<i>1.1.2</i>)<img class="flag en"></li>
 					<li><a href="https://github.com/Godresky/Victoria-3-Ukrainian-Translate">GitHub</a><img class="flag en"></li>
-					<li><a href="https://t.me/godresky_vika3/249">Telegram</a><img class="flag en"></li>
+					<li><a href="https://t.me/godresky_vika3/357">Telegram</a><img class="flag en"></li>
 					<li><a href="https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c">Google Диск</a><img class="flag en"></li>
 				</ul>
 			</div>
@@ -1071,7 +1074,7 @@
 				</ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Null & Void</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Null &amp; Void</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5/?imw=200&imh=200">
@@ -1109,7 +1112,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2969305916">Steam</a></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Prostitution & Brothels</button>
+		<button class="visibilityToggle" onclick="toggleVisibility(this)">Prostitution &amp; Brothels</button>
 		<div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044114931082763311/3B295E44C6E54D7731B7F26D105F87CE3A161F24/?imw=200&imh=200">

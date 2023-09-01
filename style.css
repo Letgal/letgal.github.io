@@ -37,10 +37,10 @@
 	--special: grey;
 	--special2: dimgrey;
 	--header-bg: #DDD;
-	--button: #BBB;
-	--button-light: #DDD;
-	--button-dark: #999;
-	--button-darker: #777;
+	--button: #CCC;
+	--button-light: #EEE;
+	--button-dark: #AAA;
+	--button-darker: #888;
 }
 ::selection { background: darkolivegreen; color: white; }
 
@@ -59,13 +59,13 @@ code { font-weight: normal; font-family: "Consolas", monospace; }
 button {
 	padding: 6px 24px;
 	border: none;
-	background: var(--button);
+	background: var(--button-dark);
 	font-family: "Merriweather", "Noto Serif", serif;
 	transition: .2s ease;
 }
 button:not(.noclick) { cursor: pointer; }
-button:hover:not(.noclick) { background: var(--button-light); }
-button:active:not(.noclick) { background: var(--button-dark); }
+button:hover:not(.noclick) { background: var(--button); }
+button:active:not(.noclick) { background: var(--button-darker); }
 h1, h2, h3, h4, h5, h6 { color: var(--heading-color); }
 h1 {
 	line-height: 1.2; letter-spacing: 0;
@@ -81,16 +81,12 @@ hr {
 	background: linear-gradient(to right, transparent, var(--special), transparent);
 }
 
-[title]:not(header *) { cursor: help; }
-
-.hidden { display: none; }
-.noselect { user-select: none; }
-
 header, nav {
 	position: fixed; left: 0;
 	width: 100%;
 	box-shadow: 0 0 24px black;
 	background: var(--header-bg);
+	user-select: none;
 }
 header > a, header > button, nav input[type=radio] + label {
 	display: inline-block;
@@ -123,12 +119,12 @@ header > a:first-of-type img {
 	content: var(--logo-url); transition: .2s ease;
 	box-sizing: border-box;
 	width: 100%;
-	border: 2px solid var(--special);
-	border-radius: 50%;
-	animation: rotation/*-alt 15s*/ 30s infinite linear;
+	border: 2px solid var(--button-light);
+	/*border-radius: 50%;
+	animation: rotation 30s infinite linear;*/
 }
-header > a:first-of-type:hover img { filter: brightness(120%); }
-header > a:first-of-type:active img { filter: brightness(80%); }
+header > a:first-of-type:hover img { filter: brightness(130%); }
+header > a:first-of-type:active img { filter: brightness(70%); }
 header > button { font-size: 1rem; }
 header > .align {
 	display: inline-block;
@@ -154,6 +150,11 @@ nav input[type=radio]:checked + label { cursor: default; }
 :root.light header > a, :root.light header > button, :root.light nav input[type=radio] + label { background: var(--button); }
 :root.light header > a:hover, :root.light header > button:hover, :root.light nav input[type=radio] + label:hover { background: var(--button-light); }
 :root.light header > a:active, :root.light header > button:active, :root.light nav input[type=radio] + label:active, :root.light nav input[type=radio]:checked + label { background: var(--button-dark); }
+
+[title]:not(header *) { cursor: help; }
+
+.hidden { display: none; }
+.noselect { user-select: none; }
 
 /* ANIMATION KEYFRAMES */
 @keyframes rotation {

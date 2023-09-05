@@ -57,7 +57,7 @@ a:hover { text-decoration: underline; }
 abbr[title] { text-decoration-style: solid; }
 code { font-weight: normal; font-family: "Consolas", monospace; }
 button {
-	padding: 6px 24px;
+	padding: 0.5em 1em;
 	border: none;
 	background: var(--button-dark);
 	font-family: "Merriweather", "Noto Serif", serif;
@@ -95,8 +95,6 @@ header > a, header > button, nav input[type=radio] + label {
 	font-weight: bold;
 	transition: .2s ease;
 }
-header > a:hover, header > button:hover, nav input[type=radio] + label:hover { background: var(--button); }
-header > a:active, header > button:active, nav input[type=radio] + label:active, nav input[type=radio]:checked + label { background: var(--button-darker); }
 header {
 	z-index: 1;
 	top: 0;
@@ -109,13 +107,16 @@ header > a, header > button {
 	padding: calc((var(--header-height) - 1.5rem) / 2) 0.5em;
 	text-transform: uppercase;
 }
+header > * { font-size: 1rem; }
+header > a:hover, header > button:hover { background: var(--button); }
+header > a:active, header > button:active { background: var(--button-darker); }
 header > a { color: var(--text-color); }
 header > a:hover { text-decoration: none; }
-header > a:first-of-type {
+header > #logo {
 	padding: 0;
-	width: var(--header-height);
+	aspect-ratio: 1/1;
 }
-header > a:first-of-type img {
+header > #logo img {
 	content: var(--logo-url); transition: .2s ease;
 	box-sizing: border-box;
 	width: 100%;
@@ -123,9 +124,8 @@ header > a:first-of-type img {
 	/*border-radius: 50%;
 	animation: rotation 30s infinite linear;*/
 }
-header > a:first-of-type:hover img { filter: brightness(130%); }
-header > a:first-of-type:active img { filter: brightness(70%); }
-header > button { font-size: 1rem; }
+header > #logo:hover img { filter: brightness(130%); }
+header > #logo:active img { filter: brightness(70%); }
 header > .align {
 	display: inline-block;
 	padding-block: calc((var(--header-height) - 1.5rem) / 2);
@@ -146,6 +146,8 @@ nav input[type=radio] + label {
 	cursor: pointer;
 }
 nav input[type=radio]:checked + label { cursor: default; }
+nav input[type=radio] + label:hover { background: var(--button); }
+nav input[type=radio] + label:active, nav input[type=radio]:checked + label { background: var(--button-darker); }
 /* LIGHT */
 :root.light header > a, :root.light header > button, :root.light nav input[type=radio] + label { background: var(--button); }
 :root.light header > a:hover, :root.light header > button:hover, :root.light nav input[type=radio] + label:hover { background: var(--button-light); }

@@ -2,8 +2,9 @@ const headerButtons = [
 	{
 		tag: "a",
 		text: "<img>",
-		attr: "href", value: "/",
-		attr2: "title", value2: "Головна сторінка"
+		attr: "id", value: "logo",
+		attr2: "href", value2: "/",
+		attr3: "title", value3: "Головна сторінка"
 	},
 	{
 		tag: "a",

@@ -9,6 +9,7 @@
 			--root-color-50: #2228;
 			--gold-color: darkgoldenrod;
 			--gold-color-hover: goldenrod;
+			--invalid: coral;
 			--body-width: 60%;
 			--collective-height: calc(var(--header-height) + 0.25rem + var(--nav-height));
 			--img-entry-height: 100px;
@@ -16,6 +17,7 @@
 		:root.light {
 			--gold-color: #855308;
 			--gold-color-hover: lightgoldenrodyellow;
+			--invalid: brown;
 		}
 		/*body {
 			background-repeat: no-repeat;
@@ -31,34 +33,44 @@
 			text-align: center;
 			font-style: italic;
 		}
-		.visibilityToggle {
+		.visToggle {
+			padding: 6px 0;
 			width: 100%;
 			/*border-radius: 0.5em;*/
 			text-align: center;
-			font-size: 1.2em;
+			font-size: 1.2rem;
 			font-weight: bold;
 		}
-		.visibilityToggle:active { background: var(--button-dark) !important; }
-		.visibilityToggle.opened { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-		.visibilityToggle[title*="овий переклад"] { background: var(--gold-color); }
-		.visibilityToggle[title*="овий переклад"]:hover { background: var(--gold-color-hover) !important; }
-		.visibilityToggle[title*="овий переклад"]:active { background: var(--gold-color) !important; }
-		.visibilityToggle + div {
+		.visToggle:active { background: var(--button-dark) !important; }
+		.visToggle.opened { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+		.visToggle[title*="овий переклад"] { background: var(--gold-color); }
+		.visToggle[title*="овий переклад"]:hover { background: var(--gold-color-hover) !important; }
+		.visToggle[title*="овий переклад"]:active { background: var(--gold-color) !important; }
+		.visToggle, .notCollapsible {
+			margin-top: 0.5em;
+			border-top: 2px solid var(--special2);
+		}
+		.visToggle[title*="овий переклад"] + .group { background: linear-gradient(to bottom, var(--gold-color), transparent); }
+		.group { background: linear-gradient(to bottom, var(--button-dark), transparent); }
+		.group:not(.notCollapsible) {
 			height: 0;
 			overflow: hidden;
 			transition: height .2s ease-out;
 		}
-		.visibilityToggle, .notCollapsible {
-			margin-top: 0.5em;
-			border-top: 2px solid var(--special2);
+		.group > h4 {
+			margin-block: 0;
+			padding-block: 6px;
+			color: var(--text-color);
+			line-height: 24px;
+			font-size: 1.2rem;
+			text-align: center;
 		}
-		.visibilityToggle + div, .notCollapsible { background: linear-gradient(to bottom, var(--button-dark), transparent); }
-		.visibilityToggle[title*="овий переклад"] + div { background: linear-gradient(to bottom, var(--gold-color), transparent); }
-		.notCollapsibleSolid { background: var(--button-dark); }
+		.group.notCollapsible { padding-bottom: 1px; } /*Stupid workaround to (almost) align .notCollapsible height with .entry*/
+		.group.notCollapsible.solid { background: var(--button-dark); }
 		/* LIGHT */
-		:root.light .visibilityToggle + div, :root.light .notCollapsible { background: var(--button); }
-		:root.light .visibilityToggle[title*="овий переклад"] + div { background: #FDD853; }
-		:root.light .visibilityToggle[title*="овий переклад"] + div a { color: var(--gold-color); }
+		:root.light .group { background: var(--button); }
+		:root.light .visToggle[title*="овий переклад"] + .group { background: #FDD853; }
+		:root.light .visToggle[title*="овий переклад"] + .group a { color: var(--gold-color); }
 
 		.entry { margin: 0.5em; }
 		.entry:not(.noimage) { min-height: var(--img-entry-height); }
@@ -72,12 +84,12 @@
 		.entry > h3, .entry > i:first-of-type { font-size: 1.2em; }
 		.entry > i { font-weight: bold; }
 		.entry > i:first-of-type::before { content: "> "; font-style: normal; }
-		.entry dfn[title] {
+		.entry > dfn[title] {
 			color: var(--link-color);
 			font-style: normal;
 			cursor: help;
 		}
- 		.entry dfn[title*="од порожній"], .entry dfn[title*="екст не перекладений"] { color: coral; }
+ 		.entry > dfn[title*="од порожній"], .entry > dfn[title*="екст не перекладений"] { color: var(--invalid); }
  		.entry [title*="ля старішої версії"] { text-decoration: line-through; }
 		.entry > ul {
 			margin-block: 0.5em;
@@ -93,8 +105,6 @@
 		.entry .flag.en { content: url("https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"); }
 		.entry .flag.ru { content: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Russia_%28Pantone%29.svg"); }
 		.entry .flag.uk { content: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"); }
-		.notCollapsible { padding-bottom: 1px; } /*Stupid workaround to (almost) align .notCollapsible height with .entry*/
- 		:root.light .entry dfn[title*="од порожній"], :root.light .entry dfn[title*="екст не перекладений"] { color: brown; } /* LIGHT */
 
 		/*.game::before {
 			position: absolute; top: 9em; left: 0;
@@ -233,7 +243,7 @@
 			{
 				category: 1,
 				mod: "The Great War", author: "Stepan",
-				image: "2006969747431694825/A24D203567D51748BCC5D2A1B4629E104C31093F",
+				image: "2006971200365789308/9C5A8026DAB9A5248D41D20F616B75C0CE869A7A",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3023052626'>Steam</a><img class='flag en'></li>"
 			},
 			{
@@ -242,16 +252,16 @@
 				image: "1869583325937331426/BF3DD3525FC2FF7F3B306F3C533F361A50E53BC6",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2880535545'>Steam</a><img class='flag ru'></li>"
 			},
-			{
-				category: 1,
-				mod: "Equestria at War", author: "All-Ampirian",
-				image: "2012599970446403734/EB5A283FB5FC8AADFBE34F5AB598BC6ED7F72C96",
-				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3025056095'>Steam</a><img class='flag ru'></li>"
-			},
+			// {
+			// 	category: 1,
+			// 	mod: "Equestria at War", author: "All-Ampirian",
+			// 	image: "2012599970446403734/EB5A283FB5FC8AADFBE34F5AB598BC6ED7F72C96",
+			// 	links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3025056095'>Steam</a><img class='flag ru'></li>"
+			// },
 			{
 				category: 1,
 				mod: "Equestria at War", author: "Letōn",
-				// image: "1869583325937331426/BF3DD3525FC2FF7F3B306F3C533F361A50E53BC6",
+				image: "",
 				links: "<li><a href='https://github.com/Letgal/hoi4_ut-eaw'>GitHub</a><img class='flag en'></li>"
 			},
 			{
@@ -687,7 +697,7 @@
 		function generateVanilla(x) {
 			for (i = 0; i < hoi4Vanilla.length; i++) {
 				const div = document.createElement("div");
-					div.className = "notCollapsible";
+					div.className = "group notCollapsible";
 					const entry = document.createElement("div");
 						if (hoi4Vanilla[i].image) {
 							entry.className = "entry";
@@ -715,16 +725,15 @@
 		function generateMods(x) {
 			for (i = 0; i < hoi4Mods.length; i++) {
 				if (hoi4Mods[i].category && !hoi4Mods[i].noCollapse) {
-					const button = document.createElement("button"); button.className = "visibilityToggle cat" + hoi4Mods[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = hoi4Mods[i].mod;
+					const button = document.createElement("button"); button.className = "visToggle cat" + hoi4Mods[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = hoi4Mods[i].mod;
 					if (hoi4Mods[i].new) { button.setAttribute("title", "Новий переклад"); }
 					document.getElementById(x).appendChild(button);
 				}
 
 				const div = document.createElement("div");
-					if (!hoi4Mods[i].category || hoi4Mods[i].noCollapse) {
-						if (hoi4Mods[i].noCollapse) { div.className = "notCollapsible notCollapsibleSolid"; }
-						else { div.className = "notCollapsible"; }
-					}
+					if (hoi4Mods[i].noCollapse) { div.className = "group notCollapsible solid"; }
+					else if (!hoi4Mods[i].category) { div.className = "group notCollapsible"; }
+					else { div.className = "group"; }
 					const entry = document.createElement("div");
 						if (hoi4Mods[i].noCollapse) {
 							const noCollapseHeading = document.createElement("h3");
@@ -757,16 +766,15 @@
 		function generateTranslations(x) {
 			for (i = 0; i < hoi4Translations.length; i++) {
 				if (hoi4Translations[i].category && !hoi4Translations[i].noCollapse) {
-					const button = document.createElement("button"); button.className = "visibilityToggle cat" + hoi4Translations[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = hoi4Translations[i].mod;
+					const button = document.createElement("button"); button.className = "visToggle cat" + hoi4Translations[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = hoi4Translations[i].mod;
 					if (hoi4Translations[i].new) { button.setAttribute("title", "Новий переклад"); }
 					document.getElementById(x).appendChild(button);
 				}
 
 				const div = document.createElement("div");
-					if (!hoi4Translations[i].category || hoi4Translations[i].noCollapse) {
-						if (hoi4Translations[i].noCollapse) { div.className = "notCollapsible notCollapsibleSolid"; }
-						else { div.className = "notCollapsible"; }
-					}
+					if (hoi4Translations[i].noCollapse) { div.className = "group notCollapsible solid"; }
+					else if (!hoi4Translations[i].category) { div.className = "group notCollapsible"; }
+					else { div.className = "group"; }
 					const entry = document.createElement("div");
 						if (hoi4Translations[i].noCollapse) {
 							const noCollapseHeading = document.createElement("h3");
@@ -855,7 +863,7 @@
 		}
 	</script>
 </head>
-<body onload="generateHeader(); generateEntries('hoi4'); document.getElementById('hoi4-radio').click();">
+<body onload="generateHeader(); generateEntries('hoi4'); document.getElementById('eu4-radio').click(); document.getElementById('hoi4-radio').click();">
 	<header>
 		<!-- <div>
 			<label title="Відфільтрувати за підтримуваністю англійської"><input type="checkbox" name="filter" onchange="filterByLang('en')">Англійська</label>
@@ -879,7 +887,7 @@
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game">
-		<div class="notCollapsible">
+		<div class="group notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/314494866252173216/6B212F836B5DCDA7D39FC52C565217D6AA88EAB7/?imw=200&imh=200">
 				<i>vicner</i> для версії гри <i>1.35</i>
@@ -895,7 +903,7 @@
 	<!--CITIES: SKYLINES-->
 	<div id="cs" class="game">
 		<h2>Переклади гри</h2>
-		<div class="notCollapsible">
+		<div class="group notCollapsible">
 			<div class="entry noimage">
 				<i>Спільнота</i>
 				<ul style="margin-block-start: 0.5em;">
@@ -913,8 +921,8 @@
 			</div>
 		</div>
 		<h2>Переклади модів</h2>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">No Problem Notifications</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>No Problem Notifications</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2031727496928501266/296B83E9B6C1E17998A06F8A311187FF3C82BBB7/?imw=200&imh=200">
 				<i>Alex Sokol</i>
@@ -926,7 +934,7 @@
 	<!--STELLARIS-->
 	<div id="stel" class="game">
 		<h2>Переклади гри</h2>
-		<div class="notCollapsible">
+		<div class="group notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2028347991371402362/EDCAF1F7254F2C65260DA698CE92F196BE0EF5DF/?imw=200&imh=200">
 				<i>Ivan Anthony</i>+ для версії гри <i>3.8.4</i>
@@ -954,30 +962,30 @@
 			</div>
 		</div>
 		<h2>Переклади модів</h2>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Superstates - Imperium Alternatives</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Superstates - Imperium Alternatives</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2012596709456380707/E698B301400CE2D1A42C932415A0D641037073D3/?imw=200&imh=200">
 				<i>Ivan Anthony</i>+
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3006909509">Steam</a></li></ul>
 			</div>
 		</div>
-		<!-- <button class="visibilityToggle" onclick="toggleVisibility(this)">Gigastructural Engineering &amp; More</button>
-		<div>
+		<!-- <div class="group notCollapsible">
+			<h4>Gigastructural Engineering &amp; More</h4>
 			<div class="entry noimage">
 				<ul><li><a href="https://github.com/Ukrainelocal/stellaris-gigastructures-ukraine-localisation">GitHub</a></li></ul>
 			</div>
 		</div> -->
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Hypothetical Stars</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Hypothetical Stars</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2012596709455985158/0228847194BBD3C53E94F4EF70DEBD0599CB650D/?imw=200&imh=200">
 				<i>Ivan Anthony</i>+
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3006863304">Steam</a></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Detailed Tech Tooltips Reloaded</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Detailed Tech Tooltips Reloaded</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/958588636181009009/24B120A057E1B7CA4F31B68793743C60EA352044/?imw=200&imh=200">
 				<i>ARZUMATA</i>
@@ -991,7 +999,7 @@
 
 	<!-- IMPERATOR: ROME -->
 	<div id="ir" class="game">
-		<div class="notCollapsible">
+		<div class="group notCollapsible">
 			<div class="entry">
 				<img src="https://modscontent.paradox-interactive.com/imperator_rome/d1bc0e50-9d4c-11eb-a3f3-9ffac6a2b1cb/content/cover.jpg">
 				<i>ser_rocko</i>
@@ -1003,9 +1011,9 @@
 	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
 		<h2>Переклади гри</h2>
-		<div class="notCollapsible">
+		<div class="group notCollapsible">
 			<div class="entry noimage">
-				<i>ser_rocko</i>+
+				<i>Спільнота</i> (<i>ser_rocko</i> й інші)
 				<ul style="margin-block-start: 0.5em;">
 					<li><a href="https://crowdin.com/project/crusader-kings-iii-ukrainian">Crowdin</a></li>
 					<li><a href="https://toloka.to/t114007">Toloka</a></li>
@@ -1019,24 +1027,24 @@
 			</div>
 		</div>
 		<h2>Переклади модів</h2>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Galicia-Volhynia Overhaul</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Galicia-Volhynia Overhaul</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2035104110928692339/EABC767613BE819BEA4834665684C09B17E4EC39/?imw=200&imh=200">
 				<i>Zarays</i>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2951315616">Steam</a></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Quando Sumus - Decisions of CK3</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Quando Sumus - Decisions of CK3</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325665253010856/0836241980CF67292DF214F5DF3F84DB7B80B9CB/?imw=200&imh=200">
 				<i>EYELESS</i>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2946635017">Steam</a></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Better CoA Designer</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Better CoA Designer</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325665238034150/7094FAF45B353CCEDE3D32CCC9EB88DE19D66C8A/?imw=200&imh=200">
 				<i>EYELESS</i>
@@ -1048,10 +1056,10 @@
 	<!-- VICTORIA 3 -->
 	<div id="v3" class="game">
 		<h2>Переклад ванілли</h2>
-		<div class="notCollapsible">
+		<div class="group notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4/?imw=200&imh=200">
-				<i>Godresky</i> <dfn title="З допомогою:\n  - Пан Дмитро\n  - Пані Меліса\n  - Пан Марк Хан\n  - Пан Андріян\n  - _rlly_\n  - Letōn (шрифти)\n  - Дружня спільнота\n  - Греко-католицька церква">�</dfn>
+				<i>Godresky</i> <dfn title="З допомогою:&#10;  - Пан Дмитро&#10;  - Пані Меліса&#10;  - Пан Марк Хан&#10;  - Пан Андріян&#10;  - _rlly_&#10;  - twentysixz&#10;  - Letōn (шрифти)&#10;  - Дружня спільнота&#10;  - Греко-католицька церква">�</dfn>
 				для версії гри <i>1.3.6</i>
 				<ul style="columns: 2;">
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2884178988">Steam</a><img class="flag en"></li>
@@ -1063,8 +1071,8 @@
 			</div>
 		</div>
 		<h2>Переклади модів</h2>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Divergences</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Divergences</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506411499069/BCEDB823B57F1B12B7808B30294FAB0FEE530D7F/?imw=200&imh=200">
 				<i>BonLua</i>
@@ -1074,8 +1082,8 @@
 				</ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Null &amp; Void</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Null &amp; Void</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5/?imw=200&imh=200">
 				<i>Letōn</i>
@@ -1085,8 +1093,8 @@
 				</ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Better Politics Mod</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Better Politics Mod</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410879056/4AF8CB2EC2FA33C090699D85E536F37C7245498C/?imw=200&imh=200">
 				<i>SteveJobs</i>
@@ -1096,24 +1104,25 @@
 				</ul>
 			</div>
 		</div>
-		<!-- <button class="visibilityToggle" onclick="toggleVisibility(this)">Heart of Appalachia, An Atompunk Mod</button>
-		<div>
+		<!-- 
+		<div class="group notCollapsible">
+			<h4>Heart of Appalachia, An Atompunk Mod</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2055378369205166442/3C7BCE7242768EBDDCDA1D855C96D75D2601F213/?imw=200&imh=200">
 				<i>vallhallikus</i>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2992650794">Steam</a></li></ul>
 			</div>
 		</div> -->
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Seeds of Change: Agriculture Overhaul</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Seeds of Change: Agriculture Overhaul</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044114298292730837/E713FEBFF40DA05867D004FF2D28D8919BEB774A/?imw=200&imh=200">
 				<i>Godresky</i>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2969305916">Steam</a></li></ul>
 			</div>
 		</div>
-		<button class="visibilityToggle" onclick="toggleVisibility(this)">Prostitution &amp; Brothels</button>
-		<div>
+		<div class="group notCollapsible">
+			<h4>Prostitution &amp; Brothels</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044114931082763311/3B295E44C6E54D7731B7F26D105F87CE3A161F24/?imw=200&imh=200">
 				<i>Godresky</i>

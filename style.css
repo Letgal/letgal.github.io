@@ -29,11 +29,24 @@
 
 	--logo-url: url("https://avatars.githubusercontent.com/u/121316813?v=4");
 }
+:root.purple {
+	--root-color: #213;
+	--border: #BAC;
+	--link-color: wheat;
+	--heading-color: lightsteelblue;
+	--special: silver;
+	--special2: grey;
+	--header-bg: #102;
+	--button: #657;
+	--button-light: #879;
+	--button-dark: #435;
+	--button-darker: #213;
+}
 :root.light {
 	color-scheme: light;
 	--root-color: #FFF;
-	--border: #444;
-	--text-color: #222;
+	--border: #555;
+	--text-color: #333;
 	--link-color: darkslateblue;
 	--heading-color: steelblue;
 	--special: grey;
@@ -43,6 +56,21 @@
 	--button-light: #EEE;
 	--button-dark: #AAA;
 	--button-darker: #888;
+}
+:root.almond {
+	color-scheme: light;
+	--root-color: blanchedalmond;
+	--border: saddlebrown;
+	--text-color: #333;
+	--link-color: darkslateblue;
+	--heading-color: steelblue;
+	--special: grey;
+	--special2: dimgrey;
+	--header-bg: bisque;
+	--button: wheat;
+	--button-light: antiquewhite;
+	--button-dark: burlywood;
+	--button-darker: peru;
 }
 ::selection { background: darkolivegreen; color: white; }
 
@@ -62,6 +90,7 @@ button {
 	padding: 0.5em 1em;
 	border: none;
 	background: var(--button-dark);
+	color: var(--text-color);
 	font-family: "Merriweather", "Noto Serif", serif;
 	transition: .2s ease;
 }
@@ -89,6 +118,7 @@ header, nav {
 	box-shadow: 0 0 24px black;
 	background: var(--header-bg);
 	user-select: none;
+	z-index: 1;
 }
 header > a, header > button, nav input[type=radio] + label {
 	display: inline-block;

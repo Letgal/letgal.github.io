@@ -10,6 +10,8 @@
 	--root-color: #222;
 	--border: #BBB;
 	--text-color: #DDD;
+	--text-color-dark: #DDD; /* No switching */
+	--text-color-light: #222; /* No switching */
 	--link-color: wheat;
 	--heading-color: lightsteelblue;
 	--special: silver;

@@ -1,4 +1,4 @@
-const headerButtons = [
+const webLinks = [
 	{
 		tag: "a",
 		text: "<img>",
@@ -42,15 +42,15 @@ const headerButtons = [
 	}
 ]
 
-function generateHeader() {
-	const header = document.querySelector("header");
-	for (var i = 0; i < headerButtons.length; i++) {
-		const headerButton = document.createElement(headerButtons[i].tag);
-		headerButton.setAttribute(headerButtons[i].attr, headerButtons[i].value);
-		if (headerButtons[i].attr2) { headerButton.setAttribute(headerButtons[i].attr2, headerButtons[i].value2); }
-		if (headerButtons[i].attr3) { headerButton.setAttribute(headerButtons[i].attr3, headerButtons[i].value3); }
-		headerButton.innerHTML = headerButtons[i].text;
-		header.insertBefore(headerButton, header.children[i]);
+function generateLinks(x, y = 0) {
+	const container = document.querySelector(x);
+	for (var i = 0; i < webLinks.length; i++) {
+		const webLink = document.createElement(webLinks[i].tag);
+		webLink.setAttribute(webLinks[i].attr, webLinks[i].value);
+		if (webLinks[i].attr2) { webLink.setAttribute(webLinks[i].attr2, webLinks[i].value2); }
+		if (webLinks[i].attr3) { webLink.setAttribute(webLinks[i].attr3, webLinks[i].value3); }
+		webLink.innerHTML = webLinks[i].text;
+		container.insertBefore(webLink, container.children[i + y]);
 	}
 }
 

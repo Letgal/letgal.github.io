@@ -27,7 +27,7 @@
 	--nav-height: calc(2em + 4px);
 	--collective-height: var(--header-height);
 
-	--logo-url: url("https://avatars.githubusercontent.com/u/121316813?v=4");
+	--logo-url: url("https://avatars.githubusercontent.com/u/121316813");
 }
 :root.purple {
 	--root-color: #213;
@@ -95,8 +95,8 @@ button {
 	transition: .2s ease;
 }
 button:not(.noclick) { cursor: pointer; }
-button:hover:not(.noclick) { background: var(--button); }
-button:active:not(.noclick) { background: var(--button-darker); }
+button:not(.noclick):hover { background: var(--button); }
+button:not(.noclick):active { background: var(--button-darker); }
 h1, h2, h3, h4, h5, h6 { color: var(--heading-color); }
 h1 {
 	line-height: 1.2; letter-spacing: 0;

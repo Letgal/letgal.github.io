@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Переклади ігор Paradox</title>
-	<link rel="icon" type="image/x-icon" href="https://avatars.akamai.steamstatic.com/c73f328b2c8c2f360e798ec89cfa9a6f31d1e7c9_full.jpg">
+	<title>Українські переклади ігор Paradox</title>
+	<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/121316813">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
 		:root {
@@ -45,13 +45,13 @@
 		.visToggle[title*="овий переклад"] { background: var(--gold-color); }
 		.visToggle[title*="овий переклад"]:hover { background: var(--gold-color-hover) !important; }
 		.visToggle[title*="овий переклад"]:active { background: var(--gold-color) !important; }
-		.visToggle, .notCollapsible {
+		.visToggle, .nocollapse {
 			margin-top: 0.5em;
 			border-top: 2px solid var(--special2);
 		}
 		.visToggle[title*="овий переклад"] + .group { background: linear-gradient(to bottom, var(--gold-color), transparent); }
 		.group { background: linear-gradient(to bottom, var(--button-dark), transparent); }
-		.group:not(.notCollapsible) {
+		.group:not(.nocollapse) {
 			height: 0;
 			overflow: hidden;
 			transition: height .2s ease-out;
@@ -64,8 +64,7 @@
 			font-size: 1.2rem;
 			text-align: center;
 		}
-		.group.notCollapsible { padding-bottom: 1px; } /*Stupid workaround to (almost) align .notCollapsible height with .entry*/
-		.group.notCollapsible.solid { background: var(--button-dark); }
+		.group.nocollapse { padding-bottom: 1px; } /*Stupid workaround to (almost) align .nocollapse height with .entry*/
 		/* LIGHT */
 		:root.light .group { background: var(--button); }
 		:root.light .visToggle[title*="овий переклад"] + .group { background: #FDD853; }
@@ -111,8 +110,8 @@
 			font-size: 90%; font-weight: bold;
 			transition: .2s ease;
 		}
-		.entry > ul:first-of-type a:hover { text-decoration: none; filter: brightness(120%); }
-		.entry > ul:first-of-type a:active { filter: brightness(80%); }
+		.entry > ul:first-of-type a:hover { text-decoration: none; filter: brightness(130%); }
+		.entry > ul:first-of-type a:active { filter: brightness(70%); }
 		.entry > ul:first-of-type a[href*="steamcommunity.com"] { background: linear-gradient(to right, #2358, #3468); }
 		/*.entry > ul:first-of-type a[href*="nexusmods.com"] { background: linear-gradient(to right, #A628, #9518); }*/
 		.entry > ul:first-of-type a:first-of-type {
@@ -120,6 +119,8 @@
 			border-top-left-radius: 0.5em; border-bottom-left-radius: 0.5em;
 			background: linear-gradient(to right, #555, #666);
 		}
+		.entry > ul:first-of-type a:first-of-type:hover { filter: brightness(120%); }
+		.entry > ul:first-of-type a:first-of-type:active { filter: brightness(80%); }
 		.entry > ul:first-of-type a:first-of-type[href*="steamcommunity.com"] { background: linear-gradient(to right, #346, #457); }
 		/*.entry > ul:first-of-type a:first-of-type[href*="nexusmods.com"] { background: linear-gradient(to right, #A62, #951); }*/
 		.entry > ul:first-of-type a:first-of-type[title*="ля старішої версії"] {
@@ -142,9 +143,6 @@
 			position: absolute; top: 0; left: 0;
 			width: 100%;
 		}*/
-
-		.vanilla { color: lightgreen; }
-		:root.light .vanilla { color: green; } /* LIGHT */
 	</style>
 	<script type="text/javascript" src="shared.js"></script>
 	<script type="text/javascript">
@@ -162,7 +160,8 @@
 			else { document.getElementById("hoi4").style.display = "none"; }
 			if (x == "ir") { document.getElementById("name").innerHTML = "Imperator: Rome"; }
 			else { document.getElementById("ir").style.display = "none"; }
-			if (x == "ck3") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2945041310' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Crusader Kings III</a>"; }
+			if (x == "ck3") { document.getElementById("name").innerHTML = "Crusader Kings III"; }
+			// if (x == "ck3") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2945041310' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Crusader Kings III</a>"; }
 			else { document.getElementById("ck3").style.display = "none"; }
 			if (x == "v3") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>"; }
 			else { document.getElementById("v3").style.display = "none"; }
@@ -200,6 +199,7 @@
 	<script type="text/javascript">
 		const hoi4Vanilla = [
 			{
+				category: "vanilla",
 				author: "Letōn", note: "<dfn title='Ініціатор перекладу: Letōn\nВнесок зробили (в порядку спадання):\n  - OlshenUA\n  - BmB Kun\n  - Churban\n  - Shrek_UA\n  - Dmytr0 Gaming'>�</dfn> для версії гри <i>1.12.14</i>",
 				image: "2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2706358548' target='_blank'>Steam<img class='flag en'><img class='flag ru'><img class='flag uk'></a></li><li><a href='https://mods.paradoxplaza.com/mods/38710/Any' target='_blank'>Paradox Mods<img class='flag en'><img class='flag ru'><img class='flag uk'></a></li><li><a href='https://www.nexusmods.com/heartsofironiv/mods/53' target='_blank'>Nexus Mods<img class='flag en'><img class='flag ru'><img class='flag uk'></a></li><li><a href='https://github.com/Letgal/hoi4_ut' target='_blank'>GitHub<img class='flag en'><img class='flag ru'><img class='flag uk'></a></li><li><a href='https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view' target='_blank'>Google Диск<img class='flag en'><img class='flag ru'><img class='flag uk'></a></li>", dual: true,
@@ -720,39 +720,35 @@
 
 		function generateEntries(x, y) {
 			for (i = 0; i < x.length; i++) {
-				if (x[i].category && !x[i].noCollapse) {
+				if (x[i].category != "vanilla" && !x[i].noCollapse) {
 					const button = document.createElement("button"); button.className = "visToggle cat" + x[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = x[i].mod;
 					if (x[i].new) { button.setAttribute("title", "Новий переклад"); }
 					document.getElementById(y).appendChild(button);
 				}
 
 				const div = document.createElement("div");
+					div.className = "group";
+					if (x[i].category == "vanilla") { div.classList.add("vanilla"); div.classList.add("nocollapse"); }
 					if (x[i].noCollapse) {
-						div.className = "group notCollapsible solid";
+						div.classList.add("nocollapse");
 						const noCollapseHeading = document.createElement("h4");
 						noCollapseHeading.innerHTML = x[i].mod;
 						x[i].appendChild(noCollapseHeading);
 					}
-					else if (!x[i].category) { div.className = "group notCollapsible"; }
-					else { div.className = "group"; }
 					const entry = document.createElement("div");
-						if (x[i].image) {
-							entry.className = "entry";
-							entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + x[i].image + "/?imw=200&imh=200'>";
-						}
-						else { entry.className = "entry noimage"; }
+						entry.className = "entry";
+						if (x[i].image) { entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + x[i].image + "/?imw=200&imh=200'>"; }
+						else { entry.classList.add("noimage"); }
 						entry.innerHTML += "<i>" + x[i].author + "</i>";
 						if (x[i].note) { entry.innerHTML += " " + x[i].note; }
 						if (x[i].links) {
 							const linksList = document.createElement("ul");
 							linksList.className = "links";
 							if (x[i].dual) { linksList.setAttribute("style", "columns: 2;"); }
-							linksList.innerHTML = x[i].links;
-							// for (j = 0; j > x[i].links.length; j++) { linksList.innerHTML += x[i].links[j]; }
+							linksList.innerHTML = x[i].links; // Workaround; please ignore
 							entry.appendChild(linksList);
 						}
 						if (x[i].more) { entry.innerHTML += x[i].more; }
-					//if (x[i].mod != x[i--].mod) { div.appendChild(entry); }
 					div.appendChild(entry);
 				document.getElementById(y).appendChild(div);
 			}
@@ -791,33 +787,34 @@
 		}
 
 		function generateCategories(x) {
-			const allTotal = document.querySelectorAll(".cat1");
-			const allOverhaul = document.querySelectorAll(".cat2");
-			const allExpansion = document.querySelectorAll(".cat3");
-			const allUtility = document.querySelectorAll(".cat4");
-
 			const firstTotal = document.querySelector(".cat1");
+			const firstOverhaul = document.querySelector(".cat2");
+			const firstExpansion = document.querySelector(".cat3");
+			const firstUtility = document.querySelector(".cat4");
+
+			const hoi4AllTotal = document.querySelectorAll("#hoi4 .cat1");
+			const hoi4AllOverhaul = document.querySelectorAll("#hoi4 .cat2");
+			const hoi4AllExpansion = document.querySelectorAll("#hoi4 .cat3");
+			const hoi4AllUtility = document.querySelectorAll("#hoi4 .cat4");
+
 			const headingTotal = document.createElement("h3");
-			headingTotal.innerHTML = "Total Overhauls (" + allTotal.length + ")";
+			headingTotal.innerHTML = "Повні ревізії (" + hoi4AllTotal.length + ")";
 			document.getElementById(x).insertBefore(headingTotal, firstTotal);
 
-			const firstOverhaul = document.querySelector(".cat2");
 			const headingOverhaul = document.createElement("h3");
-			headingOverhaul.innerHTML = "Nation Overhauls (" + allOverhaul.length + ")";
+			headingOverhaul.innerHTML = "Ревізії країн (" + hoi4AllOverhaul.length + ")";
 			document.getElementById(x).insertBefore(headingOverhaul, firstOverhaul);
 
 			//const ninthOverhaul = document.querySelector(".cat2:nth-of-type(9)");
 			//const overhaulLine = document.createElement("hr");
 			//document.getElementById(x).insertBefore(overhaulLine, ninthOverhaul);
 
-			const firstExpansion = document.querySelector(".cat3");
 			const headingExpansion = document.createElement("h3");
-			headingExpansion.innerHTML = "Content Expansions (" + allExpansion.length + ")";
+			headingExpansion.innerHTML = "Розширення вмісту (" + hoi4AllExpansion.length + ")";
 			document.getElementById(x).insertBefore(headingExpansion, firstExpansion);
 
-			const firstUtility = document.querySelector(".cat4");
 			const headingUtility = document.createElement("h3");
-			headingUtility.innerHTML = "Minor Extensions/Utilities (" + allUtility.length + ")";
+			headingUtility.innerHTML = "Дрібні розширення/утиліти (" + hoi4AllUtility.length + ")";
 			document.getElementById(x).insertBefore(headingUtility, firstUtility);
 		}
 	</script>
@@ -846,7 +843,7 @@
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game">
-		<div class="group notCollapsible">
+		<div class="group vanilla nocollapse">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/314494866252173216/6B212F836B5DCDA7D39FC52C565217D6AA88EAB7/?imw=200&imh=200">
 				<i>vicner</i> для версії гри <i>1.35</i>
@@ -862,7 +859,7 @@
 	<!--CITIES: SKYLINES-->
 	<div id="cs" class="game">
 		<h2>Переклади гри (1)</h2>
-		<div class="group notCollapsible">
+		<div class="group vanilla nocollapse">
 			<div class="entry noimage">
 				<i>Спільнота</i>
 				<ul style="margin-block-start: 0.5em;">
@@ -880,7 +877,7 @@
 			</div>
 		</div>
 		<h2>Переклади модів (1)</h2>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>No Problem Notifications</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2031727496928501266/296B83E9B6C1E17998A06F8A311187FF3C82BBB7/?imw=200&imh=200">
@@ -893,7 +890,7 @@
 	<!--STELLARIS-->
 	<div id="stel" class="game">
 		<h2>Переклади гри (4)</h2>
-		<div class="group notCollapsible">
+		<div class="group vanilla nocollapse">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2028347991371402362/EDCAF1F7254F2C65260DA698CE92F196BE0EF5DF/?imw=200&imh=200">
 				<i>Ivan Anthony</i>+ для версії гри <i>3.8.4</i>
@@ -921,7 +918,7 @@
 			</div>
 		</div>
 		<h2>Переклади модів (3)</h2>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Superstates - Imperium Alternatives</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2012596709456380707/E698B301400CE2D1A42C932415A0D641037073D3/?imw=200&imh=200">
@@ -929,13 +926,13 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3006909509" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=3005307317" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
 			</div>
 		</div>
-		<!-- <div class="group notCollapsible">
+		<!-- <div class="group nocollapse">
 			<h4>Gigastructural Engineering &amp; More</h4>
 			<div class="entry noimage">
 				<ul><li><a href="https://github.com/Ukrainelocal/stellaris-gigastructures-ukraine-localisation" target="_blank">GitHub</a><a href="https://steamcommunity.com/workshop/filedetails/?id=1121692237" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
 			</div>
 		</div> -->
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Hypothetical Stars</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2012596709455985158/0228847194BBD3C53E94F4EF70DEBD0599CB650D/?imw=200&imh=200">
@@ -943,7 +940,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3006863304" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=910751973" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
 			</div>
 		</div>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Detailed Tech Tooltips Reloaded</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/958588636181009009/24B120A057E1B7CA4F31B68793743C60EA352044/?imw=200&imh=200">
@@ -958,7 +955,7 @@
 
 	<!-- IMPERATOR: ROME -->
 	<div id="ir" class="game">
-		<div class="group notCollapsible">
+		<div class="group vanilla nocollapse">
 			<div class="entry">
 				<img src="https://modscontent.paradox-interactive.com/imperator_rome/d1bc0e50-9d4c-11eb-a3f3-9ffac6a2b1cb/content/cover.jpg">
 				<i>ser_rocko</i>
@@ -970,7 +967,7 @@
 	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
 		<h2>Переклади гри (1)</h2>
-		<div class="group notCollapsible">
+		<div class="group vanilla nocollapse">
 			<div class="entry noimage">
 				<i>Спільнота</i> (<i>ser_rocko</i> й інші)
 				<ul style="margin-block-start: 0.5em;">
@@ -986,7 +983,7 @@
 			</div> -->
 		</div>
 		<h2>Переклади модів (1)</h2>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Galicia-Volhynia Overhaul</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2035104110928692339/EABC767613BE819BEA4834665684C09B17E4EC39/?imw=200&imh=200">
@@ -994,7 +991,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2951315616" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2784541038" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
 			</div>
 		</div>
-		<!-- <div class="group notCollapsible">
+		<!-- <div class="group nocollapse">
 			<h4>Quando Sumus - Decisions of CK3</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325665253010856/0836241980CF67292DF214F5DF3F84DB7B80B9CB/?imw=200&imh=200">
@@ -1002,7 +999,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2946635017" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2818339011" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
 			</div>
 		</div>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Better CoA Designer</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325665238034150/7094FAF45B353CCEDE3D32CCC9EB88DE19D66C8A/?imw=200&imh=200">
@@ -1015,7 +1012,7 @@
 	<!-- VICTORIA 3 -->
 	<div id="v3" class="game">
 		<h2>Переклад ванілли (1)</h2>
-		<div class="group notCollapsible">
+		<div class="group vanilla nocollapse">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4/?imw=200&imh=200">
 				<i>Godresky</i> <dfn title="З допомогою:&#10;  - Пан Дмитро&#10;  - Пані Меліса&#10;  - Пан Марк Хан&#10;  - Пан Андріян&#10;  - _rlly_&#10;  - twentysixz&#10;  - Letōn (шрифти)&#10;  - Дружня спільнота&#10;  - Греко-католицька церква">�</dfn>
@@ -1030,7 +1027,7 @@
 			</div>
 		</div>
 		<h2>Переклади модів (5)</h2>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Divergences</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506411499069/BCEDB823B57F1B12B7808B30294FAB0FEE530D7F/?imw=200&imh=200">
@@ -1041,7 +1038,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Null &amp; Void</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5/?imw=200&imh=200">
@@ -1052,7 +1049,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Better Politics Mod</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410879056/4AF8CB2EC2FA33C090699D85E536F37C7245498C/?imw=200&imh=200">
@@ -1064,7 +1061,7 @@
 			</div>
 		</div>
 		<!-- 
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Heart of Appalachia, An Atompunk Mod</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2055378369205166442/3C7BCE7242768EBDDCDA1D855C96D75D2601F213/?imw=200&imh=200">
@@ -1072,7 +1069,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2992650794" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2921015600" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
 			</div>
 		</div> -->
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Seeds of Change: Agriculture Overhaul</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044114298292730837/E713FEBFF40DA05867D004FF2D28D8919BEB774A/?imw=200&imh=200">
@@ -1080,7 +1077,7 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2969305916" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2966872937" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
 			</div>
 		</div>
-		<div class="group notCollapsible">
+		<div class="group nocollapse">
 			<h4>Prostitution &amp; Brothels</h4>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044114931082763311/3B295E44C6E54D7731B7F26D105F87CE3A161F24/?imw=200&imh=200">

@@ -114,17 +114,18 @@
 		.entry > ul:first-of-type a:hover { text-decoration: none; filter: brightness(120%); }
 		.entry > ul:first-of-type a:active { filter: brightness(80%); }
 		.entry > ul:first-of-type a[href*="steamcommunity.com"] { background: linear-gradient(to right, #2358, #3468); }
+		/*.entry > ul:first-of-type a[href*="nexusmods.com"] { background: linear-gradient(to right, #A628, #9518); }*/
 		.entry > ul:first-of-type a:first-of-type {
 			position: static; z-index: 2;
 			border-top-left-radius: 0.5em; border-bottom-left-radius: 0.5em;
 			background: linear-gradient(to right, #555, #666);
 		}
 		.entry > ul:first-of-type a:first-of-type[href*="steamcommunity.com"] { background: linear-gradient(to right, #346, #457); }
+		/*.entry > ul:first-of-type a:first-of-type[href*="nexusmods.com"] { background: linear-gradient(to right, #A62, #951); }*/
 		.entry > ul:first-of-type a:first-of-type[title*="ля старішої версії"] {
-			background: linear-gradient(to right, #633, #744);
+			background: linear-gradient(to right, #733, #844);
 			text-decoration: line-through;
 		}
-		/*.entry > ul:first-of-type a:first-of-type[href*="nexusmods.com"] { background: linear-gradient(to right, #C72, #D83); }*/
 		.entry > ul:first-of-type a:last-of-type { border-top-right-radius: 0.5em; border-bottom-right-radius: 0.5em; }
 		.entry > ul:first-of-type a:not(:first-of-type) { border-left: 1px solid var(--text-color-light); padding-inline: 1em; }
 		.entry > ul:first-of-type a .flag { border-color: #BBB; }
@@ -761,13 +762,13 @@
 			loadEntryList();
 
 			const vanillaHeading = document.createElement("h2");
-				vanillaHeading.innerHTML = "Переклади гри";
+				vanillaHeading.innerHTML = "Переклади гри (" + hoi4Vanilla.length + ")";
 			document.getElementById(x).appendChild(vanillaHeading);
 
 			generateEntries(hoi4Vanilla, x);
 
 			// const modHeading = document.createElement("h2");
-			// 	modHeading.innerHTML = "Моди українською мовою";
+			// 	modHeading.innerHTML = "Моди українською мовою (" + hoi4Mods.length + ")";
 			// document.getElementById(x).appendChild(modHeading);
 			// const modSubHeading = document.createElement("p");
 			// 	modSubHeading.style.fontStyle = "italic";
@@ -777,7 +778,7 @@
 			// generateEntries(hoi4Mods, x);
 
 			const transHeading = document.createElement("h2");
-				transHeading.innerHTML = "Окремі переклади модів";
+				transHeading.innerHTML = "Окремі переклади модів (" + hoi4Translations.length + ")";
 			document.getElementById(x).appendChild(transHeading);
 			const transSubHeading = document.createElement("p");
 				transSubHeading.style.fontStyle = "italic";
@@ -786,33 +787,38 @@
 
 			generateEntries(hoi4Translations, x);
 
-			generateCategories();
+			generateCategories(x);
 		}
 
-		function generateCategories() {
+		function generateCategories(x) {
+			const allTotal = document.querySelectorAll(".cat1");
+			const allOverhaul = document.querySelectorAll(".cat2");
+			const allExpansion = document.querySelectorAll(".cat3");
+			const allUtility = document.querySelectorAll(".cat4");
+
 			const firstTotal = document.querySelector(".cat1");
 			const headingTotal = document.createElement("h3");
-			headingTotal.innerHTML = "Total Overhauls";
-			document.getElementById("hoi4").insertBefore(headingTotal, firstTotal);
+			headingTotal.innerHTML = "Total Overhauls (" + allTotal.length + ")";
+			document.getElementById(x).insertBefore(headingTotal, firstTotal);
 
 			const firstOverhaul = document.querySelector(".cat2");
 			const headingOverhaul = document.createElement("h3");
-			headingOverhaul.innerHTML = "Nation Overhauls";
-			document.getElementById("hoi4").insertBefore(headingOverhaul, firstOverhaul);
+			headingOverhaul.innerHTML = "Nation Overhauls (" + allOverhaul.length + ")";
+			document.getElementById(x).insertBefore(headingOverhaul, firstOverhaul);
 
 			//const ninthOverhaul = document.querySelector(".cat2:nth-of-type(9)");
 			//const overhaulLine = document.createElement("hr");
-			//document.getElementById("hoi4").insertBefore(overhaulLine, ninthOverhaul);
+			//document.getElementById(x).insertBefore(overhaulLine, ninthOverhaul);
 
 			const firstExpansion = document.querySelector(".cat3");
 			const headingExpansion = document.createElement("h3");
-			headingExpansion.innerHTML = "Content Expansions";
-			document.getElementById("hoi4").insertBefore(headingExpansion, firstExpansion);
+			headingExpansion.innerHTML = "Content Expansions (" + allExpansion.length + ")";
+			document.getElementById(x).insertBefore(headingExpansion, firstExpansion);
 
 			const firstUtility = document.querySelector(".cat4");
 			const headingUtility = document.createElement("h3");
-			headingUtility.innerHTML = "Minor Extensions/Utilities";
-			document.getElementById("hoi4").insertBefore(headingUtility, firstUtility);
+			headingUtility.innerHTML = "Minor Extensions/Utilities (" + allUtility.length + ")";
+			document.getElementById(x).insertBefore(headingUtility, firstUtility);
 		}
 	</script>
 </head>
@@ -855,7 +861,7 @@
 
 	<!--CITIES: SKYLINES-->
 	<div id="cs" class="game">
-		<h2>Переклади гри</h2>
+		<h2>Переклади гри (1)</h2>
 		<div class="group notCollapsible">
 			<div class="entry noimage">
 				<i>Спільнота</i>
@@ -873,7 +879,7 @@
 				</ul>
 			</div>
 		</div>
-		<h2>Переклади модів</h2>
+		<h2>Переклади модів (1)</h2>
 		<div class="group notCollapsible">
 			<h4>No Problem Notifications</h4>
 			<div class="entry">
@@ -886,7 +892,7 @@
 
 	<!--STELLARIS-->
 	<div id="stel" class="game">
-		<h2>Переклади гри</h2>
+		<h2>Переклади гри (4)</h2>
 		<div class="group notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2028347991371402362/EDCAF1F7254F2C65260DA698CE92F196BE0EF5DF/?imw=200&imh=200">
@@ -914,7 +920,7 @@
 				<ul class="fm"><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2906120862" title="Для старішої версії" target="_blank">Steam<img class="flag ru"></a></li></ul>
 			</div>
 		</div>
-		<h2>Переклади модів</h2>
+		<h2>Переклади модів (3)</h2>
 		<div class="group notCollapsible">
 			<h4>Superstates - Imperium Alternatives</h4>
 			<div class="entry">
@@ -963,7 +969,7 @@
 
 	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
-		<h2>Переклади гри</h2>
+		<h2>Переклади гри (1)</h2>
 		<div class="group notCollapsible">
 			<div class="entry noimage">
 				<i>Спільнота</i> (<i>ser_rocko</i> й інші)
@@ -972,14 +978,14 @@
 					<li><a href="https://toloka.to/t114007" target="_blank">Toloka</a></li>
 				</ul>
 			</div>
-			<div class="entry">
+			<!-- <div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1798649638832509914/1585A37E6818B28B79FDF27EBDF8DF46DEF7962A/?imw=200&imh=200">
 				<i>EYELESS</i>
 				для версії гри <i>1.9.0.4</i>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2870588115" target="_blank">Steam</a></li></ul>
-			</div>
+			</div> -->
 		</div>
-		<h2>Переклади модів</h2>
+		<h2>Переклади модів (1)</h2>
 		<div class="group notCollapsible">
 			<h4>Galicia-Volhynia Overhaul</h4>
 			<div class="entry">
@@ -1008,7 +1014,7 @@
 
 	<!-- VICTORIA 3 -->
 	<div id="v3" class="game">
-		<h2>Переклад ванілли</h2>
+		<h2>Переклад ванілли (1)</h2>
 		<div class="group notCollapsible">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4/?imw=200&imh=200">
@@ -1023,7 +1029,7 @@
 				</ul>
 			</div>
 		</div>
-		<h2>Переклади модів</h2>
+		<h2>Переклади модів (5)</h2>
 		<div class="group notCollapsible">
 			<h4>Divergences</h4>
 			<div class="entry">

@@ -8,7 +8,7 @@ const webLinks = [
 	},
 	{
 		tag: "a",
-		text: "Українські моди до ігор Paradox",
+		text: "Українські моди ігор Paradox",
 		attr: "href", value: "/ut.html"
 	},
 	// {

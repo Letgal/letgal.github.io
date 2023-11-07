@@ -79,7 +79,7 @@ body {
 	margin: 0 calc((100% - var(--body-width)) / 2);
 	padding: 1rem;
 	box-sizing: border-box;
-	width: calc(var(--body-width) - 2em); min-height: calc(100vh - var(--collective-height));
+	width: var(--body-width); min-height: calc(100vh - var(--collective-height));
 }
 
 a { color: var(--link-color); text-decoration: none; }

@@ -9,7 +9,7 @@
 			--gold-color: darkgoldenrod;
 			--gold-color-hover: goldenrod;
 			--invalid: coral;
-			--body-width: 100%;
+			--body-width: 75%;
 			--img-entry-height: 100px;
 		}
 		:root.light {
@@ -17,48 +17,44 @@
 			--gold-color-hover: lightgoldenrodyellow;
 			--invalid: brown;
 		}
-		/*body {
-			background-repeat: no-repeat;
+		body {
+			margin: 0 2.5% 0 calc(100% - var(--body-width) - 2.5%);
+			/*background-repeat: no-repeat;
 			background-position: 0 9em;
-			background-size: contain;
-		}*/
+			background-size: contain;*/
+		}
 		nav {
+			z-index: 0;
 			box-sizing: border-box;
-			float: left;
 			flex-direction: column;
-			position: sticky; top: calc(var(--header-height) + 1rem); left: 1rem;
+			top: calc(var(--header-height) + 1rem); left: calc(2.5% + 1rem);
 			padding: 0.5em;
-			width: 20%; height: auto;
-			border: 2px solid var(--button-dark);
+			width: calc(20% - 1rem); height: auto;
+			border: 2px solid var(--button);
 			border-radius: 0.5em;
-			background: var(--button-darker);
+			background: #333;
 			box-shadow: none;
-			overflow: hidden;
 		}
 		nav h3 {
-			margin-block: 0.25rem;
+			margin-block: 0 0.5em;
 			text-align: center;
 		}
 		nav input[type="radio"] + label {
 			box-sizing: border-box;
 			height: auto;
 			margin-top: 0.25rem;
-			padding: 0.25em;
+			padding: 0.125em;
 			border: 2px solid transparent;
-			border-radius: 0.5em;
+			border-radius: 0.25em;
 		}
-		nav input[type="radio"]:checked + label { border: 2px solid var(--button-dark); }
+		nav input[type="radio"]:active + label { border: 2px solid var(--button-dark); }
+		nav input[type="radio"]:checked + label { border: 2px solid var(--button); }
 		h2 { margin-block-end: 0; }
 		h3 { margin-block-end: 0; }
 		/* LIGHT */
-		:root.light nav { border-color: var(--button-darker); background: var(--header-bg); box-shadow: 0 4px var(--button-darker); }
-		:root.light nav input[type="radio"] + label { border-color: var(--button-dark); }
+		:root.light nav { border-color: var(--button-darker); background: var(--header-bg); }
+		:root.light nav input[type="radio"]:active + label { border-color: var(--button-dark); background: var(--button); }
 		:root.light nav input[type="radio"]:checked + label { border-color: var(--button-darker); }
-
-		.game {
-			float: right;
-			width: calc(80% - 2rem);
-		}
 
 		.intro {
 			margin-top: 0; margin-bottom: 0.5rem;
@@ -876,11 +872,6 @@
 			<label title="Відфільтрувати за підтримуваністю української"><input type="checkbox" name="filter" onchange="filterByLang('uk')">Українська</label>
 		</div> -->
 	</header>
-
-	<p class="intro">Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
-	<p class="intro">Якщо якийсь із скриптів не працює, спробуйте перезавантажити сторінку.</p>
-	<h1>Моди для <i id="title"></i> українською</h1>
-
 	<nav>
 		<h3>Ігри</h3>
 		<input type="radio" name="game" id="ck2-radio" onchange="switchTo('ck2')"><label for="ck2-radio">Crusader Kings II</label>
@@ -892,6 +883,10 @@
 		<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
 		<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
 	</nav>
+
+	<p class="intro">Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
+	<p class="intro">Якщо якийсь із скриптів не працює, спробуйте перезавантажити сторінку.</p>
+	<h1>Моди для <i id="title"></i> українською</h1>
 
 	<!--CRUSADER KINGS II-->
 	<div id="ck2" class="game">

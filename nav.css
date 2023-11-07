@@ -1,0 +1,48 @@
+:root { --body-width: 75%; }
+
+body { margin: 0 2.5% 0 calc(100% - var(--body-width) - 2.5%); }
+
+nav {
+	display: flex; flex-direction: column;
+	position: fixed; top: calc(var(--header-height) + 1rem); left: calc(2.5% + 1rem);
+	box-sizing: border-box;
+	width: calc(20% - 1rem);
+	border: 2px solid var(--button); border-radius: 0.5em;
+	padding: 0.5em;
+	background: #333;
+	user-select: none;
+}
+nav > h2 {
+	margin-block: 0 0.5em;
+	font-size: 1.2rem;
+	text-align: center;
+}
+nav input[type=radio]:not([name=filter]) { display: none; }
+nav input[type=radio] + label {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.125em;
+	border: 2px solid transparent; border-radius: 0.25em;
+	background: var(--button-dark);
+	font-weight: bold;
+	text-align: center;
+	transition: .2s ease;
+	cursor: pointer;
+}
+nav input[type=radio] + label:not(:first-of-type) { margin-top: 0.25rem; }
+nav input[type=radio] + label:hover { background: var(--button); }
+nav input[type=radio] + label:active {
+	border: 2px solid var(--button-dark);
+	background: var(--button-darker);
+}
+nav input[type=radio]:checked + label {
+	border: 2px solid var(--button);
+	background: var(--button-darker);
+	cursor: default;
+}
+/* LIGHT */
+:root.light nav { background: var(--header-bg); }
+:root.light nav { border-color: var(--button-darker); background: var(--header-bg); }
+:root.light nav input[type="radio"] + label:active { border-color: var(--button-dark); background: var(--button); }
+:root.light nav input[type="radio"]:checked + label { border-color: var(--button-darker); }

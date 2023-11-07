@@ -112,14 +112,7 @@ hr {
 	background: linear-gradient(to right, transparent, var(--special), transparent);
 }
 
-header, nav {
-	position: fixed; left: 0;
-	width: 100%;
-	box-shadow: 0 0 24px black;
-	background: var(--header-bg);
-	user-select: none;
-}
-header > a, header > button, nav input[type=radio] + label {
+header > a, header > button {
 	display: inline-block;
 	box-sizing: border-box;
 	background: var(--button-dark);
@@ -127,10 +120,14 @@ header > a, header > button, nav input[type=radio] + label {
 	transition: .2s ease;
 }
 header {
-	z-index: 2;
+	z-index: 1;
+	position: fixed; left: 0;
 	top: 0;
 	box-sizing: border-box;
-	height: var(--header-height);
+	width: 100%; height: var(--header-height);
+	box-shadow: 0 0 24px black;
+	background: var(--header-bg);
+	user-select: none;
 }
 header > a, header > button {
 	vertical-align: top;
@@ -162,24 +159,6 @@ header > .align {
 	padding-block: calc((var(--header-height) - 1.5rem) / 2);
 }
 header > .right { float: right; }
-nav {
-	z-index: 1;
-	display: flex; justify-content: space-evenly;
-	top: var(--header-height);
-	padding-top: 0.25em;
-	height: var(--nav-height);
-}
-nav input[type=radio]:not([name=filter]) { display: none; }
-nav input[type=radio] + label {
-	padding: 0.5em;
-	width: 100%; height: var(--nav-height);
-	white-space: nowrap;
-	text-align: center;
-	cursor: pointer;
-}
-nav input[type=radio]:checked + label { cursor: default; }
-nav input[type=radio] + label:hover { background: var(--button); }
-nav input[type=radio] + label:active, nav input[type=radio]:checked + label { background: var(--button-darker); }
 /* LIGHT */
 :root.light header > a, :root.light header > button, :root.light nav input[type=radio] + label { background: var(--button); }
 :root.light header > a:hover, :root.light header > button:hover, :root.light nav input[type=radio] + label:hover { background: var(--button-light); }

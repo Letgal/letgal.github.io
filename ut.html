@@ -184,6 +184,7 @@
 
 			let gameTitle;
 			switch(x) {
+				case "ck2": gameTitle = "Crusader Kings II"; break;
 				case "eu4": gameTitle = "Europa Universalis IV"; break;
 				case "cs": gameTitle = "Cities: Skylines"; break;
 				case "stel": gameTitle = "Stellaris"; break;
@@ -191,10 +192,12 @@
 				case "ir": gameTitle = "Imperator: Rome"; break;
 				case "ck3": gameTitle = "Crusader Kings III"; break;
 				// <a href='https://steamcommunity.com/workshop/filedetails/?id=2945041310' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Crusader Kings III</a>
-				case "v3": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>";
+				case "v3": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>"; break;
+				default: gameTitle = "ігор Paradox";
 			}
 			document.getElementById("title").innerHTML = gameTitle;
 
+			if (x != "ck2") { document.getElementById("ck2").style.display = "none"; }
 			if (x != "eu4") { document.getElementById("eu4").style.display = "none"; }
 			if (x != "cs") { document.getElementById("cs").style.display = "none"; }
 			if (x != "stel") { document.getElementById("stel").style.display = "none"; }
@@ -865,7 +868,7 @@
 		}
 	</script>
 </head>
-<body onload="generateLinks('header'); generateContent('hoi4'); document.getElementById('eu4-radio').click(); document.getElementById('hoi4-radio').click();">
+<body onload="generateLinks('header'); generateContent('hoi4'); document.getElementById('ck2-radio').click(); document.getElementById('hoi4-radio').click();">
 	<header>
 		<!-- <div>
 			<label title="Відфільтрувати за підтримуваністю англійської"><input type="checkbox" name="filter" onchange="filterByLang('en')">Англійська</label>
@@ -880,6 +883,7 @@
 
 	<nav>
 		<h3>Ігри</h3>
+		<input type="radio" name="game" id="ck2-radio" onchange="switchTo('ck2')"><label for="ck2-radio">Crusader Kings II</label>
 		<input type="radio" name="game" id="eu4-radio" onchange="switchTo('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
 		<input type="radio" name="game" id="cs-radio" onchange="switchTo('cs')"><label for="cs-radio">Cities: Skylines</label>
 		<input type="radio" name="game" id="stel-radio" onchange="switchTo('stel')"><label for="stel-radio">Stellaris</label>
@@ -888,6 +892,16 @@
 		<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
 		<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
 	</nav>
+
+	<!--CRUSADER KINGS II-->
+	<div id="ck2" class="game">
+		<div class="group vanilla nocollapse">
+			<div class="entry noimage">
+				<i>Ucraina Unione Strategists</i>
+				<ul><li><a href="https://t.me/PatchLocalisationUA/131">Telegram</a></li></ul>
+			</div>
+		</div>
+	</div>
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game">
@@ -906,7 +920,7 @@
 
 	<!--CITIES: SKYLINES-->
 	<div id="cs" class="game">
-		<h2>Переклади гри (1)</h2>
+		<h2>Переклади гри (2)</h2>
 		<div class="group vanilla nocollapse">
 			<div class="entry noimage">
 				<i>Спільнота</i>
@@ -921,6 +935,7 @@
 				<ul>
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3012910170" target="_blank">Steam</a></li>
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3011689406" target="_blank">Посібник з ручного встановлення (Steam)</a></li>
+					<li><a href="https://github.com/Vasenka88/Cities-Ukrainian-Localization" target="_blank">GitHub</a></li>
 				</ul>
 			</div>
 		</div>

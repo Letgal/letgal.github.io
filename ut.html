@@ -9,8 +9,7 @@
 			--gold-color: darkgoldenrod;
 			--gold-color-hover: goldenrod;
 			--invalid: coral;
-			--body-width: 60%;
-			--collective-height: calc(var(--header-height) + 0.25rem + var(--nav-height));
+			--body-width: 100%;
 			--img-entry-height: 100px;
 		}
 		:root.light {
@@ -23,9 +22,43 @@
 			background-position: 0 9em;
 			background-size: contain;
 		}*/
-		header { box-shadow: none; }
+		nav {
+			box-sizing: border-box;
+			float: left;
+			flex-direction: column;
+			position: sticky; top: calc(var(--header-height) + 1rem); left: 1rem;
+			padding: 0.5em;
+			width: 20%; height: auto;
+			border: 2px solid var(--button-dark);
+			border-radius: 0.5em;
+			background: var(--button-darker);
+			box-shadow: none;
+			overflow: hidden;
+		}
+		nav h3 {
+			margin-block: 0.25rem;
+			text-align: center;
+		}
+		nav input[type="radio"] + label {
+			box-sizing: border-box;
+			height: auto;
+			margin-top: 0.25rem;
+			padding: 0.25em;
+			border: 2px solid transparent;
+			border-radius: 0.5em;
+		}
+		nav input[type="radio"]:checked + label { border: 2px solid var(--button-dark); }
 		h2 { margin-block-end: 0; }
 		h3 { margin-block-end: 0; }
+		/* LIGHT */
+		:root.light nav { border-color: var(--button-darker); background: var(--header-bg); box-shadow: 0 4px var(--button-darker); }
+		:root.light nav input[type="radio"] + label { border-color: var(--button-dark); }
+		:root.light nav input[type="radio"]:checked + label { border-color: var(--button-darker); }
+
+		.game {
+			float: right;
+			width: calc(80% - 2rem);
+		}
 
 		.intro {
 			margin-top: 0; margin-bottom: 0.5rem;
@@ -140,6 +173,8 @@
 			position: absolute; top: 0; left: 0;
 			width: 100%;
 		}*/
+
+		.game > :first-child { margin-top: 0; }
 	</style>
 	<script type="text/javascript" src="shared.js"></script>
 	<script type="text/javascript">
@@ -147,21 +182,26 @@
 			//const allGames = document.getElementsByClassName("game");
 			//for (i = 0; i > allGames.length; i++) { allGames[i].style.display = "none"; }
 
-			if (x == "eu4") { document.getElementById("name").innerHTML = "Europa Universalis IV"; }
-			else { document.getElementById("eu4").style.display = "none"; }
-			if (x == "cs") { document.getElementById("name").innerHTML = "Cities: Skylines"; }
-			else { document.getElementById("cs").style.display = "none"; }
-			if (x == "stel") { document.getElementById("name").innerHTML = "Stellaris"; }
-			else { document.getElementById("stel").style.display = "none"; }
-			if (x == "hoi4") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2732054856' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Hearts of Iron IV</a>"; }
-			else { document.getElementById("hoi4").style.display = "none"; }
-			if (x == "ir") { document.getElementById("name").innerHTML = "Imperator: Rome"; }
-			else { document.getElementById("ir").style.display = "none"; }
-			if (x == "ck3") { document.getElementById("name").innerHTML = "Crusader Kings III"; }
-			// if (x == "ck3") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2945041310' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Crusader Kings III</a>"; }
-			else { document.getElementById("ck3").style.display = "none"; }
-			if (x == "v3") { document.getElementById("name").innerHTML = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>"; }
-			else { document.getElementById("v3").style.display = "none"; }
+			let gameTitle;
+			switch(x) {
+				case "eu4": gameTitle = "Europa Universalis IV"; break;
+				case "cs": gameTitle = "Cities: Skylines"; break;
+				case "stel": gameTitle = "Stellaris"; break;
+				case "hoi4": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2732054856' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Hearts of Iron IV</a>"; break;
+				case "ir": gameTitle = "Imperator: Rome"; break;
+				case "ck3": gameTitle = "Crusader Kings III"; break;
+				// <a href='https://steamcommunity.com/workshop/filedetails/?id=2945041310' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Crusader Kings III</a>
+				case "v3": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>";
+			}
+			document.getElementById("title").innerHTML = gameTitle;
+
+			if (x != "eu4") { document.getElementById("eu4").style.display = "none"; }
+			if (x != "cs") { document.getElementById("cs").style.display = "none"; }
+			if (x != "stel") { document.getElementById("stel").style.display = "none"; }
+			if (x != "hoi4") { document.getElementById("hoi4").style.display = "none"; }
+			if (x != "ir") { document.getElementById("ir").style.display = "none"; }
+			if (x != "ck3") { document.getElementById("ck3").style.display = "none"; }
+			if (x != "v3") { document.getElementById("v3").style.display = "none"; }
 			document.getElementById(x).style.display = null;
 		}
 
@@ -833,7 +873,13 @@
 			<label title="Відфільтрувати за підтримуваністю української"><input type="checkbox" name="filter" onchange="filterByLang('uk')">Українська</label>
 		</div> -->
 	</header>
+
+	<p class="intro">Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
+	<p class="intro">Якщо якийсь із скриптів не працює, спробуйте перезавантажити сторінку.</p>
+	<h1>Моди для <i id="title"></i> українською</h1>
+
 	<nav>
+		<h3>Ігри</h3>
 		<input type="radio" name="game" id="eu4-radio" onchange="switchTo('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
 		<input type="radio" name="game" id="cs-radio" onchange="switchTo('cs')"><label for="cs-radio">Cities: Skylines</label>
 		<input type="radio" name="game" id="stel-radio" onchange="switchTo('stel')"><label for="stel-radio">Stellaris</label>
@@ -842,10 +888,6 @@
 		<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
 		<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
 	</nav>
-
-	<p class="intro">Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
-	<p class="intro">Якщо якийсь із скриптів не працює, спробуйте перезавантажити сторінку.</p>
-	<h1>Моди до <i id="name"></i> українською</h1>
 
 	<!--EUROPA UNIVERSALIS IV-->
 	<div id="eu4" class="game">
@@ -874,7 +916,7 @@
 				</ul>
 			</div>
 			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2013723347171334029/8CAEE0481DB1A451FAFAB171B59FABDE75C00461/?imw=200">
+				<img src="https://steamuserimages-a.akamaihd.net/ugc/2080157681027340972/505CBA24E786CF6236B936DDC553FC4060F71CDF/?imw=200">
 				<i>Kemza</i> &amp; <i>Vasenka88</i>
 				<ul>
 					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3012910170" target="_blank">Steam</a></li>
@@ -899,23 +941,23 @@
 		<div class="group vanilla nocollapse">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2028347991371402362/EDCAF1F7254F2C65260DA698CE92F196BE0EF5DF/?imw=200">
-				<i>Ivan Anthony</i> та інші для версії гри <i>3.8.4</i>
+				<i>Ivan Anthony</i> та інші для версії гри <i>3.9.1</i>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2907350739" target="_blank">Steam<img class="flag ru"></a></li></ul>
 			</div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2022724735480708458/166AF4A6BD15366C8EE8688BF305B84FF0303F3D/?imw=200">
 				<i>Clamor_S</i> для версії гри <i>3.8.4</i>
 				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2977722107" target="_blank">Steam<img class="flag ru"></a></li>
-					<li><a href="https://github.com/clamor-s/ukrainian_localization_stellaris" target="_blank">GitHub<img class="flag ru"></a></li>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2977722107" title="Для старішої версії" target="_blank">Steam<img class="flag ru"></a></li>
+					<li><a href="https://github.com/clamor-s/ukrainian_localization_stellaris" title="Для старішої версії" target="_blank">GitHub<img class="flag ru"></a></li>
 				</ul>
 			</div>
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325032159963894/F589BCA56EE9E44C1D3BDC5A1B940AE434306989/?imw=200">
 				<i>ser_rocko</i> для версії гри <i>3.8.2</i>
 				<ul>
-					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2943508186" target="_blank">Steam<img class="flag en"></a></li>
-					<li><a href="https://mods.paradoxplaza.com/mods/8155/Any" target="_blank">Paradox Mods<img class="flag en"></a></li>
+					<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2943508186" title="Для старішої версії" target="_blank">Steam<img class="flag en"></a></li>
+					<li><a href="https://mods.paradoxplaza.com/mods/8155/Any" title="Для старішої версії" target="_blank">Paradox Mods<img class="flag en"></a></li>
 				</ul>
 			</div>
 			<div class="entry noimage">

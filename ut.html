@@ -158,6 +158,7 @@
 				case "ck3": gameTitle = "Crusader Kings III"; break;
 				// <a href='https://steamcommunity.com/workshop/filedetails/?id=2945041310' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Crusader Kings III</a>
 				case "v3": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>"; break;
+				case "cs2": gameTitle = "Cities: Skylines II"; break;
 				default: gameTitle = "ігор Paradox";
 			}
 			document.getElementById("title").innerHTML = gameTitle;
@@ -170,6 +171,7 @@
 			if (x != "ir") { document.getElementById("ir").style.display = "none"; }
 			if (x != "ck3") { document.getElementById("ck3").style.display = "none"; }
 			if (x != "v3") { document.getElementById("v3").style.display = "none"; }
+			if (x != "cs2") { document.getElementById("cs2").style.display = "none"; }
 			document.getElementById(x).style.display = null;
 		}
 
@@ -215,7 +217,7 @@
 					{ link: "Letgal/hoi4_ut", type: "GitHub", lang: ["en", "ru", "uk"] },
 					{ link: "https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view", type: "Google Диск", lang: ["en", "ru", "uk"] } // mega.nz/file/M0AmAQYY#dLlvwmGCQqnZXwgMCLPGoYRQJ3RmCpjOHk3Iyi-voPI
 				],*/
-				more: "<p style='font-size: small;'><abbr title='Моди з включеними перекладами можна використовувати безпосередньо.'>Сюди ж включені переклади ось цих модів:</abbr></p><ul style='font-size: small; columns: 2;'><li>Battle Royale</li><li>City Maker</li><li>Coring Button</li><li>Country Roulette</li><li><abbr title='Це колекція, в яку входять:\n  - Diplomatic Alignment Triangle for HOI4\n  - Diplomatic Alignment Triangle for Kaiserreich\n  - Diplomatic Alignment Triangle for The New Order\n  - Diplomatic Alignment Triangle for Millennium Dawn\n  - Diplomatic Alignment Triangle for Red Flood\n  - Diplomatic Alignment Triangle for Calm Before the Storm\n  - Diplomatic Alignment Triangle for TWR\n  - Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</abbr></li><li>Faction Distance Limiter</li><li>Formable Nations in Setup Options</li><li>League of Nations</li><li>Ledger</li><li>Map Modes+</li><li>Peace Deals</li><li>Recall Volunteers (> <i>Yard1</i>)</li><li>Recall Volunteers (> <i>Not Monika Plus</i>)</li><li><abbr title='Це колекція, в яку входять:\n  - Rename Factions\n  - Rename Parties\n  - Rename States\n  - Rename Country Leaders'>Rename Mods</abbr></li><li>State Transfer Tool</li><li>State Transfer Tool MP</li><li>Toolpack Without the Errors</li><li>TWR GDP Screen</li><li>Yearly Event Cards</li></ul>"
+				more: "<p style='font-size: small;'><abbr title='Моди з включеними перекладами можна використовувати безпосередньо.'>Сюди ж включені переклади ось цих модів:</abbr></p><ul style='font-size: small; columns: 2;'><li>Battle Royale (<a href='https://steamcommunity.com/workshop/filedetails/?id=1292092419'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36492/Any'><i>Paradox Mods</i></a>)</li><li>City Maker (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880422651'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/52733/Any'><i>Paradox Mods</i></a>)</li><li>Coring Button (<a href='https://steamcommunity.com/workshop/filedetails/?id=1913968458'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36852/Any'><i>Paradox Mods</i></a>)</li><li>Country Roulette (<a href='https://steamcommunity.com/workshop/filedetails/?id=1422190791'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/51002/Any'><i>Paradox Mods</i></a>)</li><li><abbr title='Це колекція, в яку входять:\n  - Diplomatic Alignment Triangle for HOI4\n  - Diplomatic Alignment Triangle for Kaiserreich\n  - Diplomatic Alignment Triangle for The New Order\n  - Diplomatic Alignment Triangle for Millennium Dawn\n  - Diplomatic Alignment Triangle for Red Flood\n  - Diplomatic Alignment Triangle for Calm Before the Storm\n  - Diplomatic Alignment Triangle for TWR\n  - Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</abbr> (<a href='https://steamcommunity.com/workshop/filedetails/?id=2208527069'><i>Steam</i></a>)</li><li>Faction Distance Limiter (<a href='https://steamcommunity.com/workshop/filedetails/?id=2729537713'><i>Steam</i></a>)</li><li>Formable Nations in Setup Options (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880621905'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/40759/Any'><i>Paradox Mods</i></a>)</li><li>League of Nations (<a href='https://steamcommunity.com/workshop/filedetails/?id=1425386497'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/33402/Any'><i>Paradox Mods</i></a>)</li><li>Ledger (<a href='https://steamcommunity.com/workshop/filedetails/?id=1704370481'><i>Steam</i></a>)</li><li>Map Modes+ (<a href='https://steamcommunity.com/workshop/filedetails/?id=2665267027'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/37707/Any'><i>Paradox Mods</i></a>)</li><li>Peace Deals (<a href='https://steamcommunity.com/workshop/filedetails/?id=2412445347'><i>Steam</i></a>)</li><li>Recall Volunteers (<small>&gt; <i>Yard1</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2048998725'><i>Steam</i></a>)</li><li>Recall Volunteers (<small>&gt; <i>Not Monika Plus</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2014636418'><i>Steam</i></a>)</li><li><abbr title='Це колекція, в яку входять:\n  - Rename Factions\n  - Rename Parties\n  - Rename States\n  - Rename Country Leaders'>Rename Mods</abbr> (<a href='https://steamcommunity.com/workshop/filedetails/?id=1692642692'><i>Steam</i></a>)</li><li>State Transfer Tool (<a href='https://steamcommunity.com/workshop/filedetails/?id=1367081844'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/26720/Any'><i>Paradox Mods</i></a>)</li><li>State Transfer Tool MP (<a href='https://steamcommunity.com/workshop/filedetails/?id=1368778634'><i>Steam</i></a>)</li><li>Toolpack Without the Errors (<a href='https://steamcommunity.com/workshop/filedetails/?id=2913150560'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/56593/Any'><i>Paradox Mods</i></a>)</li><li>TWR GDP Screen (<a href='https://steamcommunity.com/workshop/filedetails/?id=2895467881'><i>Steam</i></a>)</li><li>Yearly Event Cards (<a href='https://steamcommunity.com/workshop/filedetails/?id=2782147906'><i>Steam</i></a>)</li></ul>"
 			}
 		]
 		const hoi4Mods = [
@@ -851,6 +853,7 @@
 		<input type="radio" name="game" id="ir-radio" onchange="switchTo('ir')"><label for="ir-radio">Imperator: Rome</label>
 		<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
 		<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
+		<input type="radio" name="game" id="cs2-radio" onchange="switchTo('cs2')"><label for="cs2-radio">Cities: Skylines II</label>
 	</nav>
 
 	<p class="intro">Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
@@ -1116,6 +1119,16 @@
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044114931082763311/3B295E44C6E54D7731B7F26D105F87CE3A161F24/?imw=200">
 				<i>Godresky</i>
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2970795803" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2882813615" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- CITIES: SKYLINES II -->
+	<div id="cs2" class="game">
+		<div class="group vanilla nocollapse">
+			<div class="entry noimage">
+				<i>minenkoden</i>
+				<ul><li><a href="https://github.com/minenkoden/skylines2-ua" target="_blank">GitHub</a></li></ul>
 			</div>
 		</div>
 	</div>

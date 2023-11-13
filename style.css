@@ -112,13 +112,6 @@ hr {
 	background: linear-gradient(to right, transparent, var(--special), transparent);
 }
 
-header > a, header > button {
-	display: inline-block;
-	box-sizing: border-box;
-	background: var(--button-dark);
-	font-weight: bold;
-	transition: .2s ease;
-}
 header {
 	z-index: 1;
 	position: fixed; left: 0;
@@ -129,13 +122,18 @@ header {
 	background: var(--header-bg);
 	user-select: none;
 }
+header > * { font-size: 1rem; }
 header > a, header > button {
-	vertical-align: top;
+	display: inline-block;
+	box-sizing: border-box;
 	height: var(--header-height);
 	padding: calc((var(--header-height) - 1.5rem) / 2) 0.5em;
+	background: var(--button-dark);
+	vertical-align: top;
 	text-transform: uppercase;
+	font-weight: bold;
+	transition: .2s ease;
 }
-header > * { font-size: 1rem; }
 header > a:hover, header > button:hover { background: var(--button); }
 header > a:active, header > button:active { background: var(--button-darker); }
 header > a { color: var(--text-color); }

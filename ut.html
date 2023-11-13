@@ -155,8 +155,7 @@
 				case "stel": gameTitle = "Stellaris"; break;
 				case "hoi4": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2732054856' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Hearts of Iron IV</a>"; break;
 				case "ir": gameTitle = "Imperator: Rome"; break;
-				case "ck3": gameTitle = "Crusader Kings III"; break;
-				// <a href='https://steamcommunity.com/workshop/filedetails/?id=2945041310' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Crusader Kings III</a>
+				case "ck3": gameTitle = "Crusader Kings III"; break; // https://steamcommunity.com/workshop/filedetails/?id=2945041310
 				case "v3": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>"; break;
 				case "cs2": gameTitle = "Cities: Skylines II"; break;
 				default: gameTitle = "ігор Paradox";
@@ -226,12 +225,6 @@
 				mod: "Ukrainian People's Republic in Exile", author: "SteveJobs",
 				image: "2047502867529603480/07D13DB394D55948C30AC9D965EA517D847AC54C",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3025365180' target='_blank'>Steam<img class='flag uk'></a></li>"
-			},
-			{
-				category: 2,
-				mod: "Make Ukraine Great Again", author: "Waiting CS2",
-				image: "2052005325255177482/D2F1076DD494C740825F8B46BE15E2A9F2BA52A7",
-				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3020195995' target='_blank'>Steam<img class='flag ru'></a></li>"
 			},
 			{
 				category: 4,
@@ -324,7 +317,7 @@
 			},
 			// {
 			// 	category: 1,
-			// 	mod: "The East Crisis", author: "Wenyanngat",
+			// 	mod: "The East Crisis", author: "Wenyanngat", note: "<dfn title='Мод порожній'>�</dfn>",
 			// 	image: "1793018961918301662/251D1EC898894FE408C9755AC0CE0873A6E6BCCE",
 			// 	links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2868122129' target='_blank'>Steam</a> <dfn title='Мод порожній'>�</dfn> <a href='https://steamcommunity.com/workshop/filedetails/?id=2875656847' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a></li>"
 			// },
@@ -535,7 +528,7 @@
 			},
 			{
 				category: 2,
-				mod: "Catalan War", author: "TTTSHOK",
+				mod: "Catalan War Mod", author: "TTTSHOK",
 				image: "5078403134280946066/DA27C5799137DC4D0EFC83F2A3223A6BCCE73E32",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=2907629967' target='_blank'>Steam<img class='flag en'></a><a href='https://steamcommunity.com/workshop/filedetails/?id=2527070507' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a></li>"
 			},
@@ -640,12 +633,6 @@
 				mod: "Peace Deals", author: "nzr.kslc",
 				image: "2057632705747504704/AA53F5E700AE1FF9370ED86C3BF8E00A5D1CAFBE",
 				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3008545966' target='_blank'>Steam<img class='flag en'></a><a href='https://steamcommunity.com/workshop/filedetails/?id=2412445347' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a></li>"
-			},
-			{
-				category: 4,
-				mod: "Better Government", author: "nzr.kslc", note: "& <i>KYR_MAN</i>",
-				image: "2006967209930413804/5F578940707B7905EF3F4539DBAF6DA0C2CEF532",
-				links: "<li><a href='https://steamcommunity.com/workshop/filedetails/?id=3007644622' target='_blank'>Steam<img class='flag en'></a><a href='https://steamcommunity.com/workshop/filedetails/?id=2666375814' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a></li>"
 			},
 			{
 				category: 4,
@@ -780,21 +767,21 @@
 			generateEntries(hoi4Vanilla, x);
 
 			// const modHeading = document.createElement("h2");
-			// 	modHeading.innerHTML = "Моди українською мовою (" + hoi4Mods.length + ")";
+			// 	modHeading.innerHTML = "Інтеґровані переклади (" + hoi4Mods.length + ")";
 			// document.getElementById(x).appendChild(modHeading);
 			// const modSubHeading = document.createElement("p");
 			// 	modSubHeading.style.fontStyle = "italic";
-			// 	modSubHeading.innerHTML = "Ці моди містять текст українською мовою (мод не є окремим перекладом, а текст є частиною ориґіналу).";
+			// 	modSubHeading.innerHTML = "Ці моди містять інтеґрований текст українською мовою.";
 			// document.getElementById(x).appendChild(modSubHeading);
 
 			// generateEntries(hoi4Mods, x);
 
 			const transHeading = document.createElement("h2");
-				transHeading.innerHTML = "Окремі переклади модів (" + hoi4Translations.length + ")";
+				transHeading.innerHTML = "Окремі переклади (" + hoi4Translations.length + ")";
 			document.getElementById(x).appendChild(transHeading);
 			const transSubHeading = document.createElement("p");
 				transSubHeading.style.fontStyle = "italic";
-				transSubHeading.innerHTML = "Ці переклади є окремими від ориґіналів модами.";
+				transSubHeading.innerHTML = "Ці моди є окремими від ориґіналів перекладами.";
 			document.getElementById(x).appendChild(transSubHeading);
 
 			generateEntries(hoi4Translations, x);
@@ -860,7 +847,7 @@
 	<p class="intro">Якщо якийсь із скриптів не працює, спробуйте перезавантажити сторінку.</p>
 	<h1>Моди для <i id="title"></i> українською</h1>
 
-	<!--CRUSADER KINGS II-->
+	<!-- CRUSADER KINGS II -->
 	<div id="ck2" class="game">
 		<div class="group vanilla nocollapse">
 			<div class="entry noimage">
@@ -870,7 +857,7 @@
 		</div>
 	</div>
 
-	<!--EUROPA UNIVERSALIS IV-->
+	<!-- EUROPA UNIVERSALIS IV -->
 	<div id="eu4" class="game">
 		<div class="group vanilla nocollapse">
 			<div class="entry">
@@ -885,7 +872,7 @@
 		</div>
 	</div>
 
-	<!--CITIES: SKYLINES-->
+	<!-- CITIES: SKYLINES -->
 	<div id="cs" class="game">
 		<h2>Переклади гри (2)</h2>
 		<div class="group vanilla nocollapse">
@@ -917,7 +904,7 @@
 		</div>
 	</div>
 
-	<!--STELLARIS-->
+	<!-- STELLARIS -->
 	<div id="stel" class="game">
 		<h2>Переклади гри (4)</h2>
 		<div class="group vanilla nocollapse">
@@ -980,7 +967,7 @@
 		</div>
 	</div>
 
-	<!--HEARTS OF IRON IV-->
+	<!-- HEARTS OF IRON IV -->
 	<div id="hoi4" class="game"></div>
 
 	<!-- IMPERATOR: ROME -->
@@ -1009,11 +996,8 @@
 				</ul>
 			</div>
 			<div class="entry noimage">
-				<!-- <img src="https://steamuserimages-a.akamaihd.net/ugc/1798649638832509914/1585A37E6818B28B79FDF27EBDF8DF46DEF7962A/?imw=200"> -->
 				<i>EYELESS</i>
-				<!-- для версії гри <i>1.9.0.4</i> -->
 				<ul>
-					<!-- <li><a href="https://steamcommunity.com/workshop/filedetails/?id=2870588115" target="_blank">Steam</a></li> -->
 					<li><a href="https://github.com/EYELESS-UA/Crusader-Kings-3-Ukrainian-localization" target="_blank">GitHub</a></li>
 				</ul>
 			</div>
@@ -1027,22 +1011,6 @@
 				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2951315616" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2784541038" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
 			</div>
 		</div>
-		<!-- <div class="group nocollapse">
-			<h4>Quando Sumus - Decisions of CK3</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325665253010856/0836241980CF67292DF214F5DF3F84DB7B80B9CB/?imw=200">
-				<i>EYELESS</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2946635017" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2818339011" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
-			</div>
-		</div>
-		<div class="group nocollapse">
-			<h4>Better CoA Designer</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325665238034150/7094FAF45B353CCEDE3D32CCC9EB88DE19D66C8A/?imw=200">
-				<i>EYELESS</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2945038135" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2766055258" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
-			</div>
-		</div> -->
 	</div>
 
 	<!-- VICTORIA 3 -->
@@ -1096,15 +1064,6 @@
 				</ul>
 			</div>
 		</div>
-		<!-- 
-		<div class="group nocollapse">
-			<h4>Heart of Appalachia, An Atompunk Mod</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2055378369205166442/3C7BCE7242768EBDDCDA1D855C96D75D2601F213/?imw=200">
-				<i>vallhallikus</i>
-				<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=2992650794" target="_blank">Steam</a><a href="https://steamcommunity.com/workshop/filedetails/?id=2921015600" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a></li></ul>
-			</div>
-		</div> -->
 		<div class="group nocollapse">
 			<h4>Seeds of Change: Agriculture Overhaul</h4>
 			<div class="entry">

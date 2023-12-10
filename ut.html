@@ -68,10 +68,10 @@
 		.entry .flag {
 			box-sizing: border-box;
 			height: 1em;
-			margin-left: calc(1em / 3);
 			border: 1px solid var(--border);
 			vertical-align: middle;
 		}
+		.entry .flag:not(:first-of-type) { margin-left: calc(1em / 3); }
 		.entry .flag.en { content: url("https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"); }
 		.entry .flag.ru { content: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Russia_%28Pantone%29.svg"); }
 		.entry .flag.uk { content: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"); }
@@ -238,6 +238,7 @@
 					{
 						type: "Steam",
 						link: "<a href='https://steamcommunity.com/workshop/filedetails/?id=3037168613' target='_blank' title='Перейти на сторінку моду'>&raquo;</a>",
+						lang: "<img class='flag ru'>",
 						lastUpdate: "17&nbsp;вер. 2023"
 					}
 				]
@@ -383,7 +384,8 @@
 					{
 						type: "GitHub",
 						link: "<a href='https://github.com/Letgal/hoi4_ut-eaw' target='_blank' title='Перейти на сторінку репозитарію'>&raquo;</a>",
-						lang: "<img class='flag en'>"
+						lang: "<img class='flag en'>",
+						version: "2.2.1.2"
 					}
 				]
 			},
@@ -1170,6 +1172,7 @@
 					{
 						type: "Steam",
 						link: "<a href='https://steamcommunity.com/workshop/filedetails/?id=3094616251' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a><a href='https://steamcommunity.com/workshop/filedetails/?id=3094616725' target='_blank' title='Перейти на сторінку моду'>&raquo;</a>",
+						lang: "<img class='flag en'><img class='flag ru'><img class='flag uk'>",
 						lastUpdate: "25&nbsp;лист. 2023"
 					}
 				]
@@ -1325,6 +1328,7 @@
 					{
 						type: "Steam",
 						link: "<a href='https://steamcommunity.com/workshop/filedetails/?id=3068109795' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a><a href='https://steamcommunity.com/workshop/filedetails/?id=3068130903' target='_blank' title='Перейти на сторінку моду'>&raquo;</a>",
+						lang: "<img class='flag en'><img class='flag ru'><img class='flag uk'>",
 						lastUpdate: "1&nbsp;лист. 2023"
 					}
 				]
@@ -1386,38 +1390,6 @@
 			}
 		}
 
-		function generateContent(x) {
-			loadEntryList();
-
-			// const vanillaHeading = document.createElement("h2");
-			// 	vanillaHeading.innerHTML = "Переклади гри (" + hoi4Vanilla.length + ")";
-			// document.getElementById(x).appendChild(vanillaHeading);
-
-			// generateEntries(hoi4Vanilla, x);
-
-			// const modHeading = document.createElement("h2");
-			// 	modHeading.innerHTML = "Інтеґровані переклади (" + hoi4Mods.length + ")";
-			// document.getElementById(x).appendChild(modHeading);
-			// const modSubHeading = document.createElement("p");
-			// 	modSubHeading.style.fontStyle = "italic";
-			// 	modSubHeading.innerHTML = "Ці моди містять інтеґрований текст українською мовою.";
-			// document.getElementById(x).appendChild(modSubHeading);
-
-			// generateEntries(hoi4Mods, x);
-
-			const transHeading = document.createElement("h2");
-				transHeading.innerHTML = "Окремі переклади (" + hoi4Translations.length + ")";
-			document.getElementById(x).appendChild(transHeading);
-			const transSubHeading = document.createElement("p");
-				transSubHeading.style.fontStyle = "italic";
-				transSubHeading.innerHTML = "Ці моди є окремими від ориґіналів перекладами.";
-			document.getElementById(x).appendChild(transSubHeading);
-
-			generateEntries(hoi4Translations, x);
-
-			generateCategories(x);
-		}
-
 		function generateCategories(x) {
 			const firstTotal = document.querySelector(".cat1");
 			const firstOverhaul = document.querySelector(".cat2");
@@ -1448,6 +1420,38 @@
 			const headingUtility = document.createElement("h3");
 			headingUtility.innerHTML = "Дрібні розширення/утиліти (" + hoi4AllUtility.length + ")";
 			document.getElementById(x).insertBefore(headingUtility, firstUtility);
+		}
+
+		function generateContent(x) {
+			loadEntryList();
+
+			// const vanillaHeading = document.createElement("h2");
+			// 	vanillaHeading.innerHTML = "Переклади гри (" + hoi4Vanilla.length + ")";
+			// document.getElementById(x).appendChild(vanillaHeading);
+
+			// generateEntries(hoi4Vanilla, x);
+
+			// const modHeading = document.createElement("h2");
+			// 	modHeading.innerHTML = "Інтеґровані переклади (" + hoi4Mods.length + ")";
+			// document.getElementById(x).appendChild(modHeading);
+			// const modSubHeading = document.createElement("p");
+			// 	modSubHeading.style.fontStyle = "italic";
+			// 	modSubHeading.innerHTML = "Ці моди містять інтеґрований текст українською мовою.";
+			// document.getElementById(x).appendChild(modSubHeading);
+
+			// generateEntries(hoi4Mods, x);
+
+			const transHeading = document.createElement("h2");
+				transHeading.innerHTML = "Окремі переклади (" + hoi4Translations.length + ")";
+			document.getElementById(x).appendChild(transHeading);
+			const transSubHeading = document.createElement("p");
+				transSubHeading.style.fontStyle = "italic";
+				transSubHeading.innerHTML = "Ці моди є окремими від ориґіналів перекладами.";
+			document.getElementById(x).appendChild(transSubHeading);
+
+			generateEntries(hoi4Translations, x);
+
+			generateCategories(x);
 		}
 	</script>
 </head>
@@ -1583,9 +1587,9 @@
 					<div class="steam">
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2907350739" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag ru"></p>
-						<p class="version">Підтримувана версія: <i>3.9.1</i></p>
-						<p>Останнє оновлення: <i>4&nbsp;жовт. 2023</i></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
+						<p class="version">Підтримувана версія: <i>3.10.2</i></p>
+						<p>Останнє оновлення: <i>6&nbsp;груд. 2023</i></p>
 					</div>
 				</div>
 			</div>
@@ -1596,14 +1600,14 @@
 					<div class="steam old">
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2977722107" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag ru"></p>
+						<p>Підтримувані мови: <img class="flag ru"></p>
 						<p class="version">Підтримувана версія: <i>3.8.4</i></p>
 						<p>Останнє оновлення: <i>17&nbsp;черв. 2023</i></p>
 					</div>
 					<div>
 						<h5>GitHub</h5>
 						<a href="https://github.com/clamor-s/ukrainian_localization_stellaris" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag ru"></p>
+						<p>Підтримувані мови: <img class="flag ru"></p>
 					</div>
 				</div>
 			</div>
@@ -1614,14 +1618,14 @@
 					<div class="steam old">
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2943508186" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p class="version">Підтримувана версія: <i>3.8.2</i></p>
 						<p>Останнє оновлення: <i>31&nbsp;трав. 2023</i></p>
 					</div>
 					<div class="old">
 						<h5>Paradox Mods</h5>
 						<a href="https://mods.paradoxplaza.com/mods/8155/Any" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p class="version">Підтримувана версія: <i>3.8.2</i></p>
 						<p>Останнє оновлення: <i>31&nbsp;трав. 2023</i></p>
 					</div>
@@ -1634,7 +1638,7 @@
 					<div class="steam old">
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2906120862" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag ru"></p>
+						<p>Підтримувані мови: <img class="flag ru"></p>
 						<p class="version">Підтримувана версія: <i>3.6.1</i></p>
 						<p>Останнє оновлення: <i>24&nbsp;груд. 2022</i></p>
 					</div>
@@ -1707,38 +1711,38 @@
 		<div class="group vanilla nocollapse">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F/?imw=200">
-				<i>Letōn</i>, <i>TTTSHOK</i>, <i>Lonster</i>, <i>OlshenUA</i> та <dfn style='text-decoration: underline;' title='Ініціатор перекладу: Letōn\nВнесок зробили (в порядку спадання):\n  • TTTSHOK\n  • Lonster\n  • OlshenUA\n  • BmB Kun\n  • Churban\n  • Shrek_UA\n  • Dmytr0 Gaming'>інші</dfn>
+				<i>Letōn</i>, <i>TTTSHOK</i>, <i>Lonster</i>, <i>OlshenUA</i> та <dfn style='text-decoration: underline;' title='Ініціатор перекладу: Letōn&#10;Внесок зробили (в порядку спадання):&#10;  &bull; TTTSHOK&#10;  &bull; Lonster&#10;  &bull; OlshenUA&#10;  &bull; BmB Kun&#10;  &bull; Churban&#10;  &bull; Shrek_UA&#10;  &bull; Dmytr0 Gaming'>інші</dfn>
 				<div class="grid">
 					<div class="steam">
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"><img class='flag ru'><img class='flag uk'></p>
+						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
 						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
 						<p>Останнє оновлення: <i>29&nbsp;лист. 2023</i></p>
 					</div>
 					<div>
 						<h5>Paradox Mods</h5>
 						<a href="https://mods.paradoxplaza.com/mods/38710/Any" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"><img class='flag ru'><img class='flag uk'></p>
+						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
 						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
 						<p>Останнє оновлення: <i>29&nbsp;лист. 2023</i></p>
 					</div>
 					<div><h5>Nexus Mods</h5>
 						<a href="https://nexusmods.com/heartsofironiv/mods/53" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"><img class='flag ru'><img class='flag uk'></p>
+						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
 						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
 						<p>Останнє оновлення: <i>29&nbsp;лист. 2023</i></p>
 					</div>
 					<div>
 						<h5>GitHub</h5>
 						<a href="https://github.com/Letgal/hoi4_ut" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"><img class='flag ru'><img class='flag uk'></p>
+						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
 						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
 					</div>
 					<div>
 						<h5>Google Диск</h5>
 						<a href="https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"><img class='flag ru'><img class='flag uk'></p>
+						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
 						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
 						<p>Останнє оновлення: <i>29&nbsp;лист. 2023</i></p>
 					</div>
@@ -1749,7 +1753,7 @@
 					<li>City Maker (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880422651'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/52733/Any'><i>Paradox Mods</i></a>)</li>
 					<li>Coring Button (<a href='https://steamcommunity.com/workshop/filedetails/?id=1913968458'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36852/Any'><i>Paradox Mods</i></a>)</li>
 					<li>Country Roulette (<a href='https://steamcommunity.com/workshop/filedetails/?id=1422190791'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/51002/Any'><i>Paradox Mods</i></a>)</li>
-					<li><abbr title='Це колекція, в яку входять:\n  • Diplomatic Alignment Triangle for HOI4\n  • Diplomatic Alignment Triangle for Kaiserreich\n  • Diplomatic Alignment Triangle for The New Order\n  • Diplomatic Alignment Triangle for Millennium Dawn\n  • Diplomatic Alignment Triangle for Red Flood\n  • Diplomatic Alignment Triangle for Calm Before the Storm\n  • Diplomatic Alignment Triangle for TWR\n  • Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</abbr> (<a href='https://steamcommunity.com/workshop/filedetails/?id=2208527069'><i>Steam</i></a>)</li>
+					<li><abbr title='Це колекція, в яку входять:&#10;  &bull; Diplomatic Alignment Triangle for HOI4&#10;  &bull; Diplomatic Alignment Triangle for Kaiserreich&#10;  &bull; Diplomatic Alignment Triangle for The New Order&#10;  &bull; Diplomatic Alignment Triangle for Millennium Dawn&#10;  &bull; Diplomatic Alignment Triangle for Red Flood&#10;  &bull; Diplomatic Alignment Triangle for Calm Before the Storm&#10;  &bull; Diplomatic Alignment Triangle for TWR&#10;  &bull; Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</abbr> (<a href='https://steamcommunity.com/workshop/filedetails/?id=2208527069'><i>Steam</i></a>)</li>
 					<li>Faction Distance Limiter (<a href='https://steamcommunity.com/workshop/filedetails/?id=2729537713'><i>Steam</i></a>)</li>
 					<li>Formable Nations in Setup Options (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880621905'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/40759/Any'><i>Paradox Mods</i></a>)</li>
 					<li>League of Nations (<a href='https://steamcommunity.com/workshop/filedetails/?id=1425386497'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/33402/Any'><i>Paradox Mods</i></a>)</li>
@@ -1758,7 +1762,7 @@
 					<li>Peace Deals (<a href='https://steamcommunity.com/workshop/filedetails/?id=2412445347'><i>Steam</i></a>)</li>
 					<li>Recall Volunteers (<small>&gt; <i>Yard1</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2048998725'><i>Steam</i></a>)</li>
 					<li>Recall Volunteers (<small>&gt; <i>Not Monika Plus</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2014636418'><i>Steam</i></a>)</li>
-					<li><abbr title='Це колекція, в яку входять:\n  • Rename Factions\n  • Rename Parties\n  • Rename States\n  • Rename Country Leaders'>Rename Mods</abbr> (<a href='https://steamcommunity.com/workshop/filedetails/?id=1692642692'><i>Steam</i></a>)</li>
+					<li><abbr title='Це колекція, в яку входять:&#10;  &bull; Rename Factions&#10;  &bull; Rename Parties&#10;  &bull; Rename States&#10;  &bull; Rename Country Leaders'>Rename Mods</abbr> (<a href='https://steamcommunity.com/workshop/filedetails/?id=1692642692'><i>Steam</i></a>)</li>
 					<li>State Transfer Tool (<a href='https://steamcommunity.com/workshop/filedetails/?id=1367081844'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/26720/Any'><i>Paradox Mods</i></a>)</li>
 					<li>State Transfer Tool MP (<a href='https://steamcommunity.com/workshop/filedetails/?id=1368778634'><i>Steam</i></a>)</li>
 					<li>Toolpack Without the Errors (<a href='https://steamcommunity.com/workshop/filedetails/?id=2913150560'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/56593/Any'><i>Paradox Mods</i></a>)</li>
@@ -1838,38 +1842,39 @@
 		<div class="group vanilla nocollapse">
 			<div class="entry">
 				<img src="https://steamuserimages-a.akamaihd.net/ugc/1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4/?imw=200">
-				<i>Godresky</i> <dfn title="З допомогою:&#10;  • Пан Дмитро&#10;  • Пані Меліса&#10;  • remark644&#10;  • Пан Андріян&#10;  • _rlly_&#10;  • twentysixz&#10;  • Letōn (шрифти)&#10;  • Дружня спільнота&#10;  • Греко-католицька церква">�</dfn>
+				<i>Godresky</i> <dfn title="З допомогою:&#10;  &bull; Пан Дмитро&#10;  &bull; Пані Меліса&#10;  &bull; remark644&#10;  &bull; Пан Андріян&#10;  &bull; _rlly_&#10;  &bull; twentysixz&#10;  &bull; Letōn (шрифти)&#10;  &bull; Дружня спільнота&#10;  &bull; Греко-католицька церква">�</dfn>
 				<div class="grid">
 					<div class="steam">
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2884178988" target="_blank">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p class="version">Підтримувана версія: <i>1.5.9</i></p>
 						<p>Останнє оновлення: <i>19&nbsp;лист. 2023</i></p>
 					</div>
 					<div class="old">
 						<h5>Paradox Mods</h5>
 						<a href="https://mods.paradoxplaza.com/mods/55851/Any" title="Для старішої версії" target="_blank">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p class="version">Підтримувана версія: <i>1.1.2</i></p>
 						<p>Останнє оновлення: <i>1&nbsp;лют. 2023</i></p>
 					</div>
 					<div><h5>GitHub</h5>
 						<a href="https://github.com/Godresky/Victoria-3-Ukrainian-Translate" target="_blank">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p class="version">Підтримувана версія: <i>1.5.9</i></p>
 					</div>
 					<div class="old">
 						<h5>Telegram</h5>
 						<a href="https://t.me/godresky_vika3/357" target="_blank">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p>Останнє оновлення: <i>1&nbsp;серп. 2023</i></p>
 					</div>
-					<div class="old">
+					<div>
 						<h5>Google Диск</h5>
 						<a href="https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c" target="_blank">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
-						<p>Останнє оновлення: <i>1&nbsp;серп. 2023</i></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
+						<p class="version">Підтримувана версія: <i>1.5.9</i></p>
+						<p>Останнє оновлення: <i>19&nbsp;лист. 2023</i></p>
 					</div>
 				</div>
 			</div>
@@ -1885,13 +1890,13 @@
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2881894183" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2995864776" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p>Останнє оновлення: <i>30&nbsp;черв. 2023</i></p>
 					</div>
 					<div>
 						<h5>Telegram</h5>
 						<a href="https://t.me/godresky_vika3/272" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p>Останнє оновлення: <i>29&nbsp;черв. 2023</i></p>
 					</div>
 				</div>
@@ -1907,13 +1912,13 @@
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2902210880" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2995788213" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p>Останнє оновлення: <i>28&nbsp;черв. 2023</i></p>
 					</div>
 					<div>
 						<h5>Telegram</h5>
 						<a href="https://t.me/godresky_vika3/256" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p>Останнє оновлення: <i>28&nbsp;черв. 2023</i></p>
 					</div>
 				</div>
@@ -1929,13 +1934,13 @@
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2932134122" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2995810889" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p>Останнє оновлення: <i>28&nbsp;черв. 2023</i></p>
 					</div>
 					<div>
 						<h5>Telegram</h5>
 						<a href="https://t.me/godresky_vika3/261" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Підтримувані мови:<img class="flag en"></p>
+						<p>Підтримувані мови: <img class="flag en"></p>
 						<p>Останнє оновлення: <i>28&nbsp;черв. 2023</i></p>
 					</div>
 				</div>

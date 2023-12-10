@@ -41,8 +41,3 @@ nav input[type=radio]:checked + label {
 	background: var(--button-darker);
 	cursor: default;
 }
-/* LIGHT */
-:root.light nav { background: var(--header-bg); }
-:root.light nav { border-color: var(--button-darker); background: var(--header-bg); }
-:root.light nav input[type="radio"] + label:active { border-color: var(--button-dark); background: var(--button); }
-:root.light nav input[type="radio"]:checked + label { border-color: var(--button-darker); }

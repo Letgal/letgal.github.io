@@ -12,11 +12,6 @@
 			--invalid: coral;
 			--img-entry-height: 100px;
 		}
-		:root.light {
-			--gold-color: #855308;
-			--gold-color-hover: lightgoldenrodyellow;
-			--invalid: brown;
-		}
 		/*body {
 			background-repeat: no-repeat;
 			background-position: 0 9em;
@@ -63,10 +58,6 @@
 			text-align: center;
 		}
 		.group.nocollapse { padding-bottom: 1px; } /*Stupid workaround to (almost) align .nocollapse height with .entry*/
-		/* LIGHT */
-		:root.light .group { background: var(--button); }
-		:root.light .visToggle[title*="овий переклад"] + .group { background: #FDD853; }
-		:root.light .visToggle[title*="овий переклад"] + .group a { color: var(--gold-color); }
 
 		.entry { margin: 0.5em; }
 		.entry:not(.noimage) { min-height: var(--img-entry-height); }
@@ -145,7 +136,6 @@
 			color: #CF9;
 		}
 		.grid > div a:last-of-type:hover { background: linear-gradient(to bottom, #AD7, #7A4); }
-		:root.light .grid > div { background: var(--header-bg); }
 
 		/*.game::before {
 			z-index: -1;

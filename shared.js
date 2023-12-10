@@ -33,13 +33,13 @@ const webLinks = [
 	// 	attr2: "href", value2: "https://send.monobank.ua/jar/2hW6s9nEeY",
 	// 	attr3: "target", value3: "_blank"
 	// },
-	{
-		tag: "button",
-		text: "✹",
-		attr: "class", value: "right noselect",
-		attr2: "title", value2: "Увімкнути світлу ѳему (налаштування не зберігається)",
-		attr3: "onclick", value3: "switchTheme()"
-	}
+	// {
+	// 	tag: "button",
+	// 	text: "✹",
+	// 	attr: "class", value: "right noselect",
+	// 	attr2: "title", value2: "Увімкнути світлу ѳему (налаштування не зберігається)",
+	// 	attr3: "onclick", value3: "switchTheme()"
+	// }
 ]
 
 function generateLinks(x, y = 0) {

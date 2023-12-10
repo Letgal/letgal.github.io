@@ -41,7 +41,3 @@ a.block:active { background: var(--button-darker); }
 }
 #logo:hover img { filter: brightness(130%); }
 #logo:active img { filter: brightness(70%); }
-
-:root.light a.block { background: var(--button); }
-:root.light a.block:hover { background: var(--button-light); }
-:root.light a.block:active { background: var(--button-dark); }

@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
 	color-scheme: dark;
 	line-height: 1.5; letter-spacing: 0.5px;
 	background: var(--root-color);
 	color: var(--text-color);
-	font-family: "Merriweather", "Noto Serif", serif;
+	font-family: var(--serif);
 
 	--root-color: #222;
 	--border: #BBB;
@@ -27,6 +28,10 @@
 	--nav-height: calc(2em + 4px);
 	--collective-height: var(--header-height);
 
+	--serif: "Noto Serif", serif;
+	--sans-serif: "Noto Sans", sans-serif;
+	--monospace: "Consolas", monospace;
+
 	--logo-url: url("https://avatars.githubusercontent.com/u/121316813");
 }
 ::selection { background: darkolivegreen; color: white; }
@@ -42,13 +47,13 @@ body {
 a { color: var(--link-color); text-decoration: none; }
 a:hover { text-decoration: underline; }
 abbr[title] { text-decoration-style: solid; }
-code { font-weight: normal; font-family: "Consolas", monospace; }
+code { font-weight: normal; font-family: var(--monospace); }
 button {
 	padding: 0.5em 1em;
 	border: none;
 	background: var(--button-dark);
 	color: var(--text-color);
-	font-family: "Merriweather", "Noto Serif", serif;
+	font-family: var(--serif);
 	transition: .2s ease;
 }
 button:not(.noclick) { cursor: pointer; }

@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
@@ -33,8 +34,8 @@
 	--nav-height: calc(2em + 4px);
 	--collective-height: var(--header-height);
 
-	--serif: "Noto Serif", serif;
-	--sans-serif: "Noto Sans", sans-serif;
+	--serif: "Merriweather", serif;
+	--sans-serif: "Merriweather Sans", "Noto Sans", sans-serif;
 	--monospace: "Consolas", monospace;
 
 	--logo-url: url("https://avatars.githubusercontent.com/u/121316813");
@@ -107,7 +108,7 @@ header > a, header > button {
 	padding: calc((var(--header-height) - 1.5rem) / 2) 0.5em;
 	background: var(--button-dark);
 	vertical-align: top;
-	text-transform: uppercase;
+	font-family: var(--sans-serif);
 	font-weight: bold;
 	transition: .2s ease;
 }

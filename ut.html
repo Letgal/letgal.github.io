@@ -29,11 +29,13 @@
 			padding: 6px 0;
 			width: 100%;
 			/*border-radius: 0.5em;*/
+			background: var(--button-dark);
 			text-align: center;
 			font-family: var(--sans-serif);
 			font-size: 1.2rem;
 			font-weight: bold;
 		}
+		.visToggle:hover { background: var(--button) !important; }
 		.visToggle:active { background: var(--button-dark) !important; }
 		.visToggle.opened { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 		.visToggle[title*="овий переклад"] { background: var(--gold-color); }
@@ -41,7 +43,7 @@
 		.visToggle[title*="овий переклад"]:active { background: var(--gold-color) !important; }
 		.visToggle, .nocollapse {
 			margin-top: 0.5em;
-			border-top: 2px solid var(--special2);
+			border-top: 2px solid var(--border);
 		}
 		.visToggle[title*="овий переклад"] + .group { background: linear-gradient(to bottom, var(--gold-color), transparent); }
 		.group { background: linear-gradient(to bottom, var(--button-dark), transparent); }
@@ -87,7 +89,7 @@
 			font-style: normal;
 			cursor: help;
 		}
-		.entry > dfn[title*="од порожній"], .entry > dfn[title*="екст не перекладений"] { color: var(--invalid); }
+		/*.entry > dfn[title*="од порожній"], .entry > dfn[title*="екст не перекладений"] { color: var(--invalid); }*/
 
 		.grid {
 			display: grid;
@@ -108,7 +110,7 @@
 			margin: 0;
 			padding-inline: 0.5em;
 			background: linear-gradient(to right, #555, #777);
-			color: var(--text-color-dark);
+			color: var(--text-color);
 			font-size: 0.8rem;
 		}
 		.grid > div.steam h5 { background: linear-gradient(to right, #346, #568); }
@@ -121,22 +123,21 @@
 			display: inline-block;
 			margin: 0.25em;
 			padding: 0.25em 0.5em;
-			border: 1px solid #444;
 			border-radius: 0.25em;
-			background: linear-gradient(to bottom, #999, #666);
-			color: #CCC;
+			background: var(--button);
+			color: #DDD;
+			font-size: 120%;
 			transition: .2s ease;
 		}
 		.grid > div a:hover {
-			background: linear-gradient(to bottom, #AAA, #777);
+			background: var(--button-light);
 			text-decoration: none;
 		}
 		.grid > div a:last-of-type {
-			border: 1px solid #471;
-			background: linear-gradient(to bottom, #9C6, #693);
-			color: #CF9;
+			background: var(--primary);
+			color: black;
 		}
-		.grid > div a:last-of-type:hover { background: linear-gradient(to bottom, #AD7, #7A4); }
+		.grid > div a:last-of-type:hover { background: var(--primary-hover); }
 
 		/*.game::before {
 			z-index: -1;

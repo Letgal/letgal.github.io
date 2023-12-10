@@ -15,15 +15,15 @@ a.block, #logo {
 a.block {
 	margin-block: 0.75rem;
 	padding: 0.5rem;
-	border: 1px solid var(--border);
 	border-radius: 0.5rem;
-	background: var(--button-dark);
+	background: var(--primary);
+	color: black;
 }
 a.block:hover {
-	background: var(--button);
+	background: var(--primary-hover);
 	text-decoration: none;
 }
-a.block:active { background: var(--button-darker); }
+a.block:active { background: var(--primary-active); }
 #logo {
 	position: absolute; top: 0; left: 50%;
 	translate: -50% -50%;

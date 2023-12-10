@@ -9,15 +9,20 @@
 	font-family: var(--serif);
 
 	--root-color: #222;
-	--border: #BBB;
+	--border: darkgrey;
 	--text-color: #DDD;
-	--text-color-dark: #DDD; /* No switching */
-	--text-color-light: #222; /* No switching */
-	--link-color: wheat;
-	--heading-color: lightsteelblue;
+	--link-color: var(--accent);
+	--heading-color: #EEE;
 	--special: silver;
 	--special2: grey;
 	--header-bg: #000;
+	--primary: hsl(254.12deg 67.11% 74.5%);
+	--primary-hover: hsl(254.12deg 67.11% 84.5%);
+	--primary-active: hsl(254.12deg 67.11% 64.5%);
+	--secondary: hsl(254.12deg 50.3325% 52.15%);
+	--secondary-hover: hsl(254.12deg 50.3325% 62.15%);
+	--secondary-active: hsl(254.12deg 50.3325% 42.15%);
+	--accent: hsl(254.12deg 100% 74.5%);
 	--button: #666;
 	--button-light: #888;
 	--button-dark: #444;
@@ -51,15 +56,18 @@ code { font-weight: normal; font-family: var(--monospace); }
 button {
 	padding: 0.5em 1em;
 	border: none;
-	background: var(--button-dark);
+	background: var(--primary);
 	color: var(--text-color);
 	font-family: var(--serif);
 	transition: .2s ease;
 }
 button:not(.noclick) { cursor: pointer; }
-button:not(.noclick):hover { background: var(--button); }
-button:not(.noclick):active { background: var(--button-darker); }
-h1, h2, h3, h4, h5, h6 { color: var(--heading-color); }
+button:not(.noclick):hover { background: var(--primary-hover); }
+button:not(.noclick):active { background: var(--primary-active); }
+button.secondary { background: var(--secondary); }
+button.secondary:hover { background: var(--secondary-hover); }
+button.secondary:active { background: var(--secondary-active); }
+h1, h2, h3, h4, h5, h6 { color: var(--heading-color); font-family: var(--sans-serif); }
 h1 {
 	line-height: 1.2; letter-spacing: 0;
 	text-align: center;
@@ -108,7 +116,7 @@ header > #logo img {
 	content: var(--logo-url); transition: .2s ease;
 	box-sizing: border-box;
 	width: 100%;
-	border: 2px solid var(--button-light);
+	border: 2px solid var(--border);
 	/*border-radius: 50%;
 	animation: rotation 30s infinite linear;*/
 }

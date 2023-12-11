@@ -38,14 +38,10 @@
 		.visToggle:hover { background: var(--button) !important; }
 		.visToggle:active { background: var(--button-dark) !important; }
 		.visToggle.opened { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-		.visToggle[title*="овий переклад"] { background: var(--gold-color); }
-		.visToggle[title*="овий переклад"]:hover { background: var(--gold-color-hover) !important; }
-		.visToggle[title*="овий переклад"]:active { background: var(--gold-color) !important; }
 		.visToggle, .nocollapse {
 			margin-top: 0.5em;
 			border-top: 2px solid var(--border);
 		}
-		.visToggle[title*="овий переклад"] + .group { background: linear-gradient(to bottom, var(--gold-color), transparent); }
 		.group { background: linear-gradient(to bottom, var(--button-dark), transparent); }
 		.group:not(.nocollapse) {
 			height: 0;
@@ -124,13 +120,13 @@
 			margin: 0.25em;
 			padding: 0.25em 0.5em;
 			border-radius: 0.25em;
-			background: var(--button);
+			background: var(--secondary);
 			color: #DDD;
 			font-size: 120%;
 			transition: .2s ease;
 		}
 		.grid > div a:hover {
-			background: var(--button-light);
+			background: var(--secondary-hover);
 			text-decoration: none;
 		}
 		.grid > div a:last-of-type {
@@ -312,11 +308,11 @@
 			},
 			{
 				category: 1,
-				mod: "Millenium Dawn: A Modern Day Mod", author: "TTTSHOK",
+				mod: "Millennium Dawn: A Modern Day Mod", author: "TTTSHOK",
 				image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384",
 				links: [
 					{
-						type: "Steam",
+						type: "Steam", old: true,
 						link: "https://steamcommunity.com/workshop/filedetails/?id=2881606189",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
 						lang: "<img class='flag ru'>",
@@ -1431,7 +1427,6 @@
 			for (i = 0; i < x.length; i++) {
 				if (x[i].category != "vanilla" && !x[i].noCollapse) {
 					const button = document.createElement("button"); button.className = "visToggle cat" + x[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = x[i].mod;
-					if (x[i].new) { button.setAttribute("title", "Новий переклад"); }
 					document.getElementById(y).appendChild(button);
 				}
 

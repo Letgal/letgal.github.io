@@ -13,6 +13,7 @@
 	--border: darkgrey;
 	--text-color: #DDD;
 	--link-color: var(--accent);
+	--link-color-hover: var(--accent-hover);
 	--heading-color: #EEE;
 	--special: silver;
 	--special2: grey;
@@ -20,10 +21,11 @@
 	--primary: hsl(254.12deg 67.11% 74.5%);
 	--primary-hover: hsl(254.12deg 67.11% 84.5%);
 	--primary-active: hsl(254.12deg 67.11% 64.5%);
-	--secondary: hsl(254.12deg 50.3325% 52.15%);
-	--secondary-hover: hsl(254.12deg 50.3325% 62.15%);
-	--secondary-active: hsl(254.12deg 50.3325% 42.15%);
+	--secondary: hsl(254.12deg 33.555% 52.15%);
+	--secondary-hover: hsl(254.12deg 33.555% 62.15%);
+	--secondary-active: hsl(254.12deg 33.555% 42.15%);
 	--accent: hsl(254.12deg 100% 74.5%);
+	--accent-hover: hsl(254.12deg 100% 84.5%);
 	--button: #666;
 	--button-light: #888;
 	--button-dark: #444;
@@ -51,7 +53,7 @@ body {
 }
 
 a { color: var(--link-color); text-decoration: none; }
-a:hover { text-decoration: underline; }
+a:hover { color: var(--link-color-hover); }
 abbr[title] { text-decoration-style: solid; }
 code { font-weight: normal; font-family: var(--monospace); }
 button {
@@ -115,7 +117,7 @@ header > a, header > button {
 header > a:hover, header > button:hover { background: var(--button); }
 header > a:active, header > button:active { background: var(--button-darker); }
 header > a { color: var(--text-color); }
-header > a:hover { text-decoration: none; }
+header > a:hover { color: var(--text-color); }
 header > #logo {
 	padding: 0;
 	aspect-ratio: 1/1;
@@ -138,7 +140,7 @@ header > .right { float: right; }
 
 h1 + p { text-align: center; }
 
-[title]:not(header *) { cursor: help; }
+[title]:not(header *, a) { cursor: help; }
 
 .hidden { display: none; }
 .noselect { user-select: none; }

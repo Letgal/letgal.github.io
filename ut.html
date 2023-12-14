@@ -1501,30 +1501,15 @@
 		function generateContent(x) {
 			loadEntryList();
 
-			// const vanillaHeading = document.createElement("h2");
-			// 	vanillaHeading.innerHTML = "Переклади гри (" + hoi4Vanilla.length + ")";
-			// document.getElementById(x).appendChild(vanillaHeading);
-
+			// document.getElementById(x).innerHTML += "<h2>Переклади гри (" + hoi4Vanilla.length + ")</h2>";
 			// generateEntries(hoi4Vanilla, x);
 
-			// const modHeading = document.createElement("h2");
-			// 	modHeading.innerHTML = "Інтеґровані переклади (" + hoi4Mods.length + ")";
-			// document.getElementById(x).appendChild(modHeading);
-			// const modSubHeading = document.createElement("p");
-			// 	modSubHeading.style.fontStyle = "italic";
-			// 	modSubHeading.innerHTML = "Ці моди містять інтеґрований текст українською мовою.";
-			// document.getElementById(x).appendChild(modSubHeading);
-
+			// document.getElementById(x).innerHTML += "<h2>Інтеґровані переклади (" + hoi4Mods.length + ")</h2>";
+			// document.getElementById(x).innerHTML += "<p style='font-style: italic;'>Ці моди містять інтеґрований текст українською мовою.</p>";
 			// generateEntries(hoi4Mods, x);
 
-			const transHeading = document.createElement("h2");
-				transHeading.innerHTML = "Окремі переклади (" + hoi4Translations.length + ")";
-			document.getElementById(x).appendChild(transHeading);
-			const transSubHeading = document.createElement("p");
-				transSubHeading.style.fontStyle = "italic";
-				transSubHeading.innerHTML = "Ці моди є окремими від ориґіналів перекладами.";
-			document.getElementById(x).appendChild(transSubHeading);
-
+			document.getElementById(x).innerHTML += "<h2>Переклади модів (" + hoi4Translations.length + ")</h2>"; // Окремі переклади
+			// document.getElementById(x).innerHTML += "<p style='font-style: italic;'>Ці моди є окремими від ориґіналів перекладами.</p>";
 			generateEntries(hoi4Translations, x);
 
 			generateCategories(x);
@@ -1793,34 +1778,34 @@
 						<h5>Steam</h5>
 						<a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
 						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
-						<p>Останнє оновлення: <i>29&nbsp;лист. 2023</i></p>
+						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
+						<p>Останнє оновлення: <i>14&nbsp;груд. 2023</i></p>
 					</div>
 					<div>
 						<h5>Paradox Mods</h5>
 						<a href="https://mods.paradoxplaza.com/mods/38710/Any" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
 						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
-						<p>Останнє оновлення: <i>29&nbsp;лист. 2023</i></p>
+						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
+						<p>Останнє оновлення: <i>14&nbsp;груд. 2023</i></p>
 					</div>
 					<div><h5>Nexus Mods</h5>
 						<a href="https://nexusmods.com/heartsofironiv/mods/53" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
 						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
-						<p>Останнє оновлення: <i>29&nbsp;лист. 2023</i></p>
+						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
+						<p>Останнє оновлення: <i>14&nbsp;груд. 2023</i></p>
 					</div>
 					<div>
 						<h5>GitHub</h5>
 						<a href="https://github.com/Letgal/hoi4_ut" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
 						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
+						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
 					</div>
 					<div>
 						<h5>Google Диск</h5>
 						<a href="https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
 						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.5</i></p>
-						<p>Останнє оновлення: <i>29&nbsp;лист. 2023</i></p>
+						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
+						<p>Останнє оновлення: <i>14&nbsp;груд. 2023</i></p>
 					</div>
 				</div>
 				<p style='font-size: small;'><abbr title='Моди з включеними перекладами можна використовувати безпосередньо.'>Сюди ж включені переклади ось цих модів:</abbr></p>

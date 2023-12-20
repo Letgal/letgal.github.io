@@ -122,7 +122,7 @@ header > a, header > button {
 	background: var(--button-dark);
 	vertical-align: top;
 	font-family: var(--sans-serif);
-	font-weight: bold;
+	font-weight: 600;
 	transition: .2s ease;
 }
 header > a:hover, header > button:hover { background: var(--button); }

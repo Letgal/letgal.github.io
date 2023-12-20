@@ -20,20 +20,14 @@
 		h2 { margin-block-end: 0; }
 		h3 { margin-block-end: 0; }
 
-		.intro {
-			margin-top: 0; margin-bottom: 0.5rem;
-			text-align: center;
-			font-style: italic;
-		}
 		.visToggle {
 			padding: 6px 0;
 			width: 100%;
-			/*border-radius: 0.5em;*/
 			background: var(--button-dark);
 			text-align: center;
 			font-family: var(--sans-serif);
 			font-size: 1.2rem;
-			font-weight: bold;
+			font-weight: 500;
 		}
 		.visToggle:hover { background: var(--button) !important; }
 		.visToggle:active { background: var(--button-dark) !important; }
@@ -85,7 +79,6 @@
 			font-style: normal;
 			cursor: help;
 		}
-		/*.entry > dfn[title*="од порожній"], .entry > dfn[title*="екст не перекладений"] { color: var(--invalid); }*/
 
 		.grid {
 			display: grid;
@@ -134,19 +127,6 @@
 			color: black;
 		}
 		.grid > div a:last-of-type:hover { background: var(--primary-hover); }
-
-		/*.game::before {
-			z-index: -1;
-			position: absolute; top: 9em; left: 0;
-			width: 100%; height: 1024px 103%;
-			content: "";
-			background: linear-gradient(to bottom, var(--root-color-50), var(--root-color));
-		}
-		.game > img {
-			z-index: -1;
-			position: absolute; top: 0; left: 0;
-			width: 100%;
-		}*/
 
 		.game > :first-child { margin-top: 0; }
 	</style>
@@ -232,7 +212,7 @@
 				]
 			}
 		]
-		const hoi4Translations = [
+		const databaseHoi4 = [
 			// Darkest Hour — https://github.com/Godresky/Darkest-Hour-Ukrainian-Translate
 			// Fire of Poltava — https://github.com/Godresky/Fire-of-Poltava-Ukrainian-Translate
 			// Ukrainian State: the Great Reborn — https://github.com/Godresky/USTGR-Ukrainian-Translate
@@ -1392,14 +1372,14 @@
 		function saveDatabase() {
 			// localStorage.setItem("hoi4Vanilla", JSON.stringify(hoi4Vanilla));
 			localStorage.setItem("hoi4Mods", JSON.stringify(hoi4Mods));
-			localStorage.setItem("hoi4Translations", JSON.stringify(hoi4Translations));
+			localStorage.setItem("databaseHoi4", JSON.stringify(databaseHoi4));
 		}
 		saveDatabase();
 
 		function loadDatabase() {
 			// const hoi4Vanilla = JSON.parse(localStorage.getItem("hoi4Vanilla"));
 			const hoi4Mods = JSON.parse(localStorage.getItem("hoi4Mods"));
-			const hoi4Translations = JSON.parse(localStorage.getItem("hoi4Translations"));
+			const databaseHoi4 = JSON.parse(localStorage.getItem("databaseHoi4"));
 		}
 		loadDatabase();
 
@@ -1486,9 +1466,9 @@
 			// document.getElementById(x).innerHTML += "<p style='font-style: italic;'>Ці моди містять інтеґрований текст українською мовою.</p>";
 			// generateEntries(hoi4Mods, x);
 
-			document.getElementById(x).innerHTML += "<h2>Переклади модів (" + hoi4Translations.length + ")</h2>"; // Окремі переклади
+			document.getElementById(x).innerHTML += "<h2>Переклади модів (" + databaseHoi4.length + ")</h2>"; // Окремі переклади
 			// document.getElementById(x).innerHTML += "<p style='font-style: italic;'>Ці моди є окремими від ориґіналів перекладами.</p>";
-			generateEntries(hoi4Translations, x);
+			generateEntries(databaseHoi4, x);
 
 			generateCategories(x);
 		}

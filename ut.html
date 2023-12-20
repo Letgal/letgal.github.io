@@ -189,27 +189,6 @@
 			if (next.style.height) { next.style.height = null; }
 			else { next.style.height = next.scrollHeight + "px"; }
 		}
-
-		/*function filterByLang(x) {
-			const enSupport = document.querySelectorAll(".en:checked");
-			const ruSupport = document.querySelectorAll(".ru:checked");
-			const ukSupport = document.querySelectorAll(".uk:checked");
-			if (x == "en") {
-				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = "darkolivegreen"; }
-			} else {
-				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
-			}
-			if (x == "ru") {
-				for (let i = 0; i < ruSupport.length; i++) { ruSupport[i].style.backgroundColor = "darkolivegreen"; }
-			} else {
-				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
-			}
-			if (x == "uk") {
-				for (let i = 0; i < ukSupport.length; i++) { ukSupport[i].style.backgroundColor = "darkolivegreen"; }
-			} else {
-				for (let i = 0; i < enSupport.length; i++) { enSupport[i].style.backgroundColor = ""; }
-			}
-		}*/
 	</script>
 	<script type="text/javascript">
 		const hoi4Mods = [
@@ -1410,18 +1389,19 @@
 			}
 		]
 
-		function saveEntryList() {
+		function saveDatabase() {
 			// localStorage.setItem("hoi4Vanilla", JSON.stringify(hoi4Vanilla));
 			localStorage.setItem("hoi4Mods", JSON.stringify(hoi4Mods));
 			localStorage.setItem("hoi4Translations", JSON.stringify(hoi4Translations));
 		}
-		saveEntryList();
+		saveDatabase();
 
-		function loadEntryList() {
+		function loadDatabase() {
 			// const hoi4Vanilla = JSON.parse(localStorage.getItem("hoi4Vanilla"));
 			const hoi4Mods = JSON.parse(localStorage.getItem("hoi4Mods"));
 			const hoi4Translations = JSON.parse(localStorage.getItem("hoi4Translations"));
 		}
+		loadDatabase();
 
 		function generateEntries(x, y) {
 			for (i = 0; i < x.length; i++) {
@@ -1499,8 +1479,6 @@
 		}
 
 		function generateContent(x) {
-			loadEntryList();
-
 			// document.getElementById(x).innerHTML += "<h2>Переклади гри (" + hoi4Vanilla.length + ")</h2>";
 			// generateEntries(hoi4Vanilla, x);
 
@@ -1517,13 +1495,7 @@
 	</script>
 </head>
 <body onload="generateLinks('header'); generateContent('hoi4'); document.getElementById('ck2-radio').click(); document.getElementById('hoi4-radio').click();">
-	<header>
-		<!-- <div>
-			<label title="Відфільтрувати за підтримуваністю англійської"><input type="checkbox" name="filter" onchange="filterByLang('en')">Англійська</label>
-			<label title="Відфільтрувати за підтримуваністю російської"><input type="checkbox" name="filter" onchange="filterByLang('ru')">Російська</label>
-			<label title="Відфільтрувати за підтримуваністю української"><input type="checkbox" name="filter" onchange="filterByLang('uk')">Українська</label>
-		</div> -->
-	</header>
+	<header></header>
 	<nav>
 		<h2>Ігри</h2>
 		<input type="radio" name="game" id="ck2-radio" onchange="switchTo('ck2')"><label for="ck2-radio">Crusader Kings II</label>

@@ -54,7 +54,12 @@ body {
 
 a { color: var(--link-color); text-decoration: none; }
 a:hover { color: var(--link-color-hover); }
-abbr[title] { text-decoration-style: solid; }
+abbr[title], dfn[title] {
+	color: var(--link-color);
+	font-style: normal;
+	text-decoration: none /*underline solid*/;
+	cursor: help;
+}
 code { font-weight: normal; font-family: var(--monospace); }
 button {
 	padding: 0.5em 1em;
@@ -145,8 +150,6 @@ header > .align {
 header > .right { float: right; }
 
 h1 + p { text-align: center; }
-
-[title]:not(header *, a) { cursor: help; }
 
 .hidden { display: none; }
 .noselect { user-select: none; }

@@ -10,74 +10,93 @@
 			--gold-color: darkgoldenrod;
 			--gold-color-hover: goldenrod;
 			--invalid: coral;
-			--img-entry-height: 100px;
+			--entry-thumbnail-height: 200px;
 		}
 		/*body {
 			background-repeat: no-repeat;
 			background-position: 0 9em;
 			background-size: contain;
 		}*/
-		h2 { margin-block-end: 0; }
-		h3 { margin-block-end: 0; }
+		h2 { margin-block-end: 0.5em; }
+		h3 { margin-block-end: calc(1em / 3); }
 
-		.visToggle {
-			padding: 6px 0;
+		p[title], span[title] { text-decoration: underline; cursor: help; }
+
+		.game { display: none; }
+
+		button.mod {
 			width: 100%;
+			margin-block: 0.125em;
+			padding: 0.5em 0;
+			border-radius: 0.5em;
 			background: var(--button-dark);
 			text-align: center;
 			font-family: var(--sans-serif);
 			font-size: 1.2rem;
 			font-weight: 500;
 		}
-		.visToggle:hover { background: var(--button) !important; }
-		.visToggle:active { background: var(--button-dark) !important; }
-		.visToggle.opened { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-		.visToggle, .nocollapse {
-			margin-top: 0.5em;
-			border-top: 2px solid var(--border);
+		button.mod:hover { background: var(--button) !important; }
+		button.mod:active { background: var(--button-dark) !important; }
+
+		#after {
+			display: none; opacity: 0;
+			position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+			background: #000;
+			cursor: pointer;
+			animation: fadeIn .5s ease forwards;
 		}
-		.group { background: linear-gradient(to bottom, var(--button-dark), transparent); }
-		.group:not(.nocollapse) {
-			height: 0;
+
+		#mod-details {
+			display: none;
+			position: fixed; top: 20%; bottom: 0; left: 10%; right: 10%;
+			padding: 1rem;
+			border-top-left-radius: 2em; border-top-right-radius: 2em;
+			background: linear-gradient(to bottom, #222, #111);
 			overflow: hidden;
-			transition: height .2s ease-out;
+			box-shadow: 0 0 2rem black;
+			animation: slideUp .5s ease forwards;
 		}
-		.group > h4 {
-			margin-block: 0;
-			padding-block: 6px;
-			color: var(--text-color);
-			line-height: 24px;
-			font-size: 1.2rem;
+		#mod-details > h3 {
+			margin-top: 0;
 			text-align: center;
 		}
-		.group.nocollapse { padding-bottom: 1px; } /*Stupid workaround to (almost) align .nocollapse height with .entry*/
+		#mod-details > img:first-of-type, #mod-details > div.noimage {
+			float: left;
+			height: var(--entry-thumbnail-height);
+			margin-right: 1em;
+			border: 1px solid #111;
+			border-radius: 1em;
+			box-shadow: 0 0.5em 0.5em black;
+		}
+		#mod-details > div.noimage { aspect-ratio: 1/1; background: #222; }
+		#mod-details > p {
+			color: var(--special);
+		}
+		#mod-details > p i { color: var(--text-color); }
+		#mod-details > p.authors i { font-weight: bold; }
+		#mod-details > p.authors i:first-of-type { font-size: larger; }
 
-		.entry { margin: 0.5em; }
-		.entry:not(.noimage) { min-height: var(--img-entry-height); }
-		.entry.noimage { padding-left: calc(100px + 0.5em); }
-		.entry .flag {
-			box-sizing: border-box;
-			height: 1em;
-			border: 1px solid var(--border);
-			vertical-align: middle;
+		button#close {
+			float: right;
+			box-sizing: content-box;
+			height: calc(7em / 6); aspect-ratio: 1/1;
+			padding: 0;
+			border: 3px solid var(--primary);
+			border-radius: 50%;
+			background: transparent;
+			color: var(--primary);
+			font-size: x-large;
+			font-family: var(--sans-serif);
+			font-weight: bold;
+			transition: .2s ease;
 		}
-		.entry .flag:not(:first-of-type) { margin-left: calc(1em / 3); }
-		.entry .flag.en { content: url("https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"); }
-		.entry .flag.ru { content: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Russia_%28Pantone%29.svg"); }
-		.entry .flag.uk { content: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"); }
-		.entry > img {
-			box-sizing: border-box;
-			height: var(--img-entry-height);
+		button#close:hover {
+			border-color: var(--primary-hover);
+			color: var(--primary-hover);
 		}
-		.entry > img:first-of-type { float: left; margin-right: 0.5em; }
-		.entry > h3 { margin-block: 0; }
-		.entry > h3, .entry > i:first-of-type { font-size: 1.2em; }
-		.entry > i { font-weight: bold; }
-		.entry > i:first-of-type::before { content: "> "; font-style: normal; }
-		.entry > dfn[title] {
-			color: var(--link-color);
-			font-style: normal;
-			cursor: help;
+		button#close:active {
+			border-color: var(--primary-active);
+			color: var(--primary-active);
 		}
 
 		.grid {
@@ -90,7 +109,7 @@
 			display: inline-block;
 			border: 1px solid var(--border);
 			border-radius: 0.5em;
-			background: var(--button-dark);
+			background: var(--button-darker);
 			color: var(--special);
 			font-size: 0.8rem;
 			overflow: hidden;
@@ -98,12 +117,12 @@
 		.grid > div h5 {
 			margin: 0;
 			padding-inline: 0.5em;
-			background: linear-gradient(to right, #555, #777);
+			background: linear-gradient(to right, #444, #666);
 			color: var(--text-color);
 			font-size: 0.8rem;
 		}
-		.grid > div.steam h5 { background: linear-gradient(to right, #346, #568); }
-		.grid > div.old h5 { background: linear-gradient(to right, #844, #A66); }
+		.grid > div.steam h5 { background: linear-gradient(to right, #235, #457); }
+		.grid > div.old h5 { background: linear-gradient(to right, #733, #955); }
 		.grid > div p { margin: 0 0.5em; }
 		.grid > div p i { color: var(--text-color); }
 		.grid > div.old p.version i { color: var(--invalid); }
@@ -128,17 +147,32 @@
 		}
 		.grid > div a:last-of-type:hover { background: var(--primary-hover); }
 
-		.game > :first-child { margin-top: 0; }
+		@keyframes fadeIn {
+			from { opacity: 0; }
+			to { opacity: 0.5; }
+		}
+		@keyframes slideUp {
+			from { top: 100%; }
+			to { top: 20%; }
+		}
 	</style>
 	<script type="text/javascript" src="shared.js"></script>
 	<script type="text/javascript" src="ut-db.js"></script>
 	<script type="text/javascript">
-		function switchTo(x) {
-			//const allGames = document.getElementsByClassName("game");
-			//for (i = 0; i > allGames.length; i++) { allGames[i].style.display = "none"; }
+		function switchGame(game) {
+			if (game != "ck2") { document.getElementById("ck2").style.display = null; }
+			if (game != "eu4") { document.getElementById("eu4").style.display = null; }
+			if (game != "cs") { document.getElementById("cs").style.display = null; }
+			if (game != "stel") { document.getElementById("stel").style.display = null; }
+			if (game != "hoi4") { document.getElementById("hoi4").style.display = null; }
+			if (game != "ir") { document.getElementById("ir").style.display = null; }
+			if (game != "ck3") { document.getElementById("ck3").style.display = null; }
+			if (game != "v3") { document.getElementById("v3").style.display = null; }
+			if (game != "cs2") { document.getElementById("cs2").style.display = null; }
+			document.getElementById(game).style.display = "block";
 
 			let gameTitle;
-			switch(x) {
+			switch(game) {
 				case "ck2": gameTitle = "Crusader Kings II"; break;
 				case "eu4": gameTitle = "Europa Universalis IV"; break;
 				case "cs": gameTitle = "Cities: Skylines"; break;
@@ -151,85 +185,23 @@
 				default: gameTitle = "ігор Paradox";
 			}
 			document.getElementById("title").innerHTML = gameTitle;
-
-			if (x != "ck2") { document.getElementById("ck2").style.display = "none"; }
-			if (x != "eu4") { document.getElementById("eu4").style.display = "none"; }
-			if (x != "cs") { document.getElementById("cs").style.display = "none"; }
-			if (x != "stel") { document.getElementById("stel").style.display = "none"; }
-			if (x != "hoi4") { document.getElementById("hoi4").style.display = "none"; }
-			if (x != "ir") { document.getElementById("ir").style.display = "none"; }
-			if (x != "ck3") { document.getElementById("ck3").style.display = "none"; }
-			if (x != "v3") { document.getElementById("v3").style.display = "none"; }
-			if (x != "cs2") { document.getElementById("cs2").style.display = "none"; }
-			document.getElementById(x).style.display = null;
-		}
-
-		function toggleVisibility(x) {
-			// x.classList.toggle("opened");
-			var next = x.nextElementSibling;
-			if (next.style.height) { next.style.height = null; }
-			else { next.style.height = next.scrollHeight + "px"; }
 		}
 	</script>
 	<script type="text/javascript">
-		function saveDatabase() {
-			// localStorage.setItem("hoi4Vanilla", JSON.stringify(hoi4Vanilla));
-			localStorage.setItem("hoi4Mods", JSON.stringify(hoi4Mods));
-			localStorage.setItem("databaseHoi4", JSON.stringify(databaseHoi4));
-		}
-		saveDatabase();
-
-		function loadDatabase() {
-			// const hoi4Vanilla = JSON.parse(localStorage.getItem("hoi4Vanilla"));
-			const hoi4Mods = JSON.parse(localStorage.getItem("hoi4Mods"));
-			const databaseHoi4 = JSON.parse(localStorage.getItem("databaseHoi4"));
-		}
-		loadDatabase();
-
-		function generateEntries(x, y) {
-			for (i = 0; i < x.length; i++) {
-				if (x[i].category != "vanilla" && !x[i].noCollapse) {
-					const button = document.createElement("button"); button.className = "visToggle cat" + x[i].category; button.setAttribute("onclick", "toggleVisibility(this)"); button.innerHTML = x[i].mod;
-					document.getElementById(y).appendChild(button);
-				}
-
-				const div = document.createElement("div");
-					div.className = "group";
-					if (x[i].category == "vanilla") { div.classList.add("vanilla"); div.classList.add("nocollapse"); }
-					if (x[i].noCollapse) {
-						div.classList.add("nocollapse");
-						const noCollapseHeading = document.createElement("h4");
-						noCollapseHeading.innerHTML = x[i].mod;
-						x[i].appendChild(noCollapseHeading);
-					}
-					const entry = document.createElement("div");
-						entry.className = "entry";
-						if (x[i].image) { entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + x[i].image + "/?imw=200'>"; }
-						else { entry.classList.add("noimage"); }
-						entry.innerHTML += "<i>" + x[i].author + "</i>";
-						if (x[i].note) { entry.innerHTML += " " + x[i].note; }
-						const linksList = document.createElement("div");
-							linksList.className = "grid";
-							for (j = 0; j < x[i].links.length; j++) {
-								const linkContainer = document.createElement("div");
-									if (x[i].links[j].type == "Steam") { linkContainer.classList.add("steam"); }
-									if (x[i].links[j].old) { linkContainer.classList.add("old"); }
-									linkContainer.innerHTML += "<h5>" + x[i].links[j].type + "</h5>"
-									if (x[i].links[j].linkOriginal) { linkContainer.innerHTML += "<a href='" + x[i].links[j].linkOriginal + "' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a>"; }
-									linkContainer.innerHTML += "<a href='" + x[i].links[j].link + "' target='_blank' title='Перейти на сторінку перекладу'>&raquo;</a>";
-									if (x[i].links[j].lang) { linkContainer.innerHTML += "<p>Підтримувані мови: " + x[i].links[j].lang + "</p>"; }
-									if (x[i].links[j].version) { linkContainer.innerHTML += "<p class='version'>Підтримувана версія: <i>" + x[i].links[j].version + "</i></p>"; }
-									if (x[i].links[j].lastUpdate) { linkContainer.innerHTML += "<p>Останнє оновлення: <i>" + x[i].links[j].lastUpdate + "</i></p>"; }
-								linksList.appendChild(linkContainer);
-							}
-						entry.appendChild(linksList);
-						if (x[i].more) { entry.innerHTML += x[i].more; }
-					div.appendChild(entry);
-				document.getElementById(y).appendChild(div);
+		function createSimpleModListForHoi4() {
+			document.getElementById("hoi4").innerHTML += "<h2>Переклади модів (" + (databaseHoi4.length - 1) + ")</h2>";
+			for (i = 1; i < databaseHoi4.length; i++) {
+				const button = document.createElement("button");
+					button.className = "mod cat" + databaseHoi4[i].category;
+					button.setAttribute("onclick", "openModDetails(databaseHoi4, " + i + ")");
+					button.innerHTML = databaseHoi4[i].mod;
+				document.getElementById("hoi4").appendChild(button);
 			}
 		}
 
-		function generateCategories(x) {
+		function createFormattedModListForHoi4() {
+			createSimpleModListForHoi4();
+
 			const firstTotal = document.querySelector(".cat1");
 			const firstOverhaul = document.querySelector(".cat2");
 			const firstExpansion = document.querySelector(".cat3");
@@ -242,54 +214,79 @@
 
 			const headingTotal = document.createElement("h3");
 			headingTotal.innerHTML = "Повні ревізії (" + hoi4AllTotal.length + ")";
-			document.getElementById(x).insertBefore(headingTotal, firstTotal);
+			document.getElementById("hoi4").insertBefore(headingTotal, firstTotal);
 
 			const headingOverhaul = document.createElement("h3");
 			headingOverhaul.innerHTML = "Ревізії країн (" + hoi4AllOverhaul.length + ")";
-			document.getElementById(x).insertBefore(headingOverhaul, firstOverhaul);
-
-			//const ninthOverhaul = document.querySelector(".cat2:nth-of-type(9)");
-			//const overhaulLine = document.createElement("hr");
-			//document.getElementById(x).insertBefore(overhaulLine, ninthOverhaul);
+			document.getElementById("hoi4").insertBefore(headingOverhaul, firstOverhaul);
 
 			const headingExpansion = document.createElement("h3");
 			headingExpansion.innerHTML = "Розширення вмісту (" + hoi4AllExpansion.length + ")";
-			document.getElementById(x).insertBefore(headingExpansion, firstExpansion);
+			document.getElementById("hoi4").insertBefore(headingExpansion, firstExpansion);
 
 			const headingUtility = document.createElement("h3");
 			headingUtility.innerHTML = "Дрібні розширення/утиліти (" + hoi4AllUtility.length + ")";
-			document.getElementById(x).insertBefore(headingUtility, firstUtility);
+			document.getElementById("hoi4").insertBefore(headingUtility, firstUtility);
+		}
+	</script>
+	<script type="text/javascript">
+		function openModDetails(database, i) {
+			document.getElementById("after").style.display = "block";
+			document.getElementById("mod-details").style.display = "block";
+
+			const modal = document.getElementById("mod-details");
+
+			if (database[i].image) { modal.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + database[i].image + "/?imw=200'>"; }
+			else { modal.innerHTML = "<div class='noimage'></div>"; }
+			modal.innerHTML += "<h3>" + database[i].mod + "</h3>";
+			const modAuthors = document.createElement("p");
+				modAuthors.className = "authors";
+				modAuthors.innerHTML += "Автор(и): "
+				for (j = 0; j < database[i].authors.length; j++) {
+					modAuthors.innerHTML += "<i>" + database[i].authors[j] + "</i>";
+					if (i < (database[i].authors.length - 1)) { modAuthors.innerHTML += ", "; }
+				}
+				if (database[i].note) { modAuthors.innerHTML += " " + database[i].note; }
+			modal.appendChild(modAuthors);
+			const linksList = document.createElement("div");
+				linksList.className = "grid";
+				for (j = 0; j < database[i].links.length; j++) {
+					const linkContainer = document.createElement("div");
+						if (database[i].links[j].type == "Steam") { linkContainer.classList.add("steam"); }
+						if (database[i].links[j].old) { linkContainer.classList.add("old"); }
+						linkContainer.innerHTML += "<h5>" + database[i].links[j].type + "</h5>"
+						if (database[i].links[j].linkOriginal) { linkContainer.innerHTML += "<a href='" + database[i].links[j].linkOriginal + "' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a>"; }
+						linkContainer.innerHTML += "<a href='" + database[i].links[j].link + "' target='_blank' title='Перейти на сторінку перекладу'>&raquo;</a>";
+						if (database[i].links[j].lang) { linkContainer.innerHTML += "<p>Мова гри: <i>" + database[i].links[j].lang + "</i></p>"; }
+						if (database[i].links[j].version) { linkContainer.innerHTML += "<p class='version'>Підтримувана версія: <i>" + database[i].links[j].version + "</i></p>"; }
+						if (database[i].links[j].lastUpdate) { linkContainer.innerHTML += "<p>Останнє оновлення: <i>" + database[i].links[j].lastUpdate + "</i></p>"; }
+					linksList.appendChild(linkContainer);
+				}
+			modal.appendChild(linksList);
+			if (x[y].more) { modal.innerHTML += x[y].more; }
 		}
 
-		function generateContent(x) {
-			// document.getElementById(x).innerHTML += "<h2>Переклади гри (" + hoi4Vanilla.length + ")</h2>";
-			// generateEntries(hoi4Vanilla, x);
+		function closeModDetails() {
+			document.getElementById("after").style.display = "";
+			document.getElementById("mod-details").style.display = "";
 
-			// document.getElementById(x).innerHTML += "<h2>Інтеґровані переклади (" + hoi4Mods.length + ")</h2>";
-			// document.getElementById(x).innerHTML += "<p style='font-style: italic;'>Ці моди містять інтеґрований текст українською мовою.</p>";
-			// generateEntries(hoi4Mods, x);
-
-			document.getElementById(x).innerHTML += "<h2>Переклади модів (" + databaseHoi4.length + ")</h2>"; // Окремі переклади
-			// document.getElementById(x).innerHTML += "<p style='font-style: italic;'>Ці моди є окремими від ориґіналів перекладами.</p>";
-			generateEntries(databaseHoi4, x);
-
-			generateCategories(x);
+			document.getElementById("mod-details").innerHTML = "<button id='close' onclick='closeModDetails();'>&times;</button>";
 		}
 	</script>
 </head>
-<body onload="generateLinks('header'); generateContent('hoi4'); document.getElementById('ck2-radio').click(); document.getElementById('hoi4-radio').click();">
+<body onload="generateLinks('header'); createFormattedModListForHoi4(); document.getElementById('ck2-radio').click(); document.getElementById('hoi4-radio').click();">
 	<header></header>
 	<nav>
 		<h2>Ігри</h2>
-		<input type="radio" name="game" id="ck2-radio" onchange="switchTo('ck2')"><label for="ck2-radio">Crusader Kings II</label>
-		<input type="radio" name="game" id="eu4-radio" onchange="switchTo('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
-		<input type="radio" name="game" id="cs-radio" onchange="switchTo('cs')"><label for="cs-radio">Cities: Skylines</label>
-		<input type="radio" name="game" id="stel-radio" onchange="switchTo('stel')"><label for="stel-radio">Stellaris</label>
-		<input type="radio" name="game" id="hoi4-radio" onchange="switchTo('hoi4')"><label for="hoi4-radio">Hearts of Iron IV</label>
-		<input type="radio" name="game" id="ir-radio" onchange="switchTo('ir')"><label for="ir-radio">Imperator: Rome</label>
-		<input type="radio" name="game" id="ck3-radio" onchange="switchTo('ck3')"><label for="ck3-radio">Crusader Kings III</label>
-		<input type="radio" name="game" id="v3-radio" onchange="switchTo('v3')"><label for="v3-radio">Victoria 3</label>
-		<input type="radio" name="game" id="cs2-radio" onchange="switchTo('cs2')"><label for="cs2-radio">Cities: Skylines II</label>
+		<input type="radio" name="game" id="ck2-radio" onchange="switchGame('ck2')"><label for="ck2-radio">Crusader Kings II</label>
+		<input type="radio" name="game" id="eu4-radio" onchange="switchGame('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
+		<input type="radio" name="game" id="cs-radio" onchange="switchGame('cs')"><label for="cs-radio">Cities: Skylines</label>
+		<input type="radio" name="game" id="stel-radio" onchange="switchGame('stel')"><label for="stel-radio">Stellaris</label>
+		<input type="radio" name="game" id="hoi4-radio" onchange="switchGame('hoi4')"><label for="hoi4-radio">Hearts of Iron IV</label>
+		<input type="radio" name="game" id="ir-radio" onchange="switchGame('ir')"><label for="ir-radio">Imperator: Rome</label>
+		<input type="radio" name="game" id="ck3-radio" onchange="switchGame('ck3')"><label for="ck3-radio">Crusader Kings III</label>
+		<input type="radio" name="game" id="v3-radio" onchange="switchGame('v3')"><label for="v3-radio">Victoria 3</label>
+		<input type="radio" name="game" id="cs2-radio" onchange="switchGame('cs2')"><label for="cs2-radio">Cities: Skylines II</label>
 	</nav>
 
 	<p class="intro">Ця сторінка буде доповнюватися й оновлюватися з часом.</p>
@@ -297,517 +294,68 @@
 	<h1>Моди для <i id="title"></i> українською</h1>
 
 	<!-- CRUSADER KINGS II -->
-	<div id="ck2" class="game">
-		<div class="group vanilla nocollapse">
-			<div class="entry noimage">
-				<i>Ucraina Unione Strategists</i>
-				<div class="grid">
-					<div>
-						<h5>Telegram</h5>
-						<a href="https://t.me/PatchLocalisationUA/131" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Останнє оновлення: <i>18&nbsp;лист. 2021</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id="ck2" class="game"><button class="mod" onclick="openModDetails(databaseCk2, 0);">Crusader Kings II</button></div>
 
 	<!-- EUROPA UNIVERSALIS IV -->
-	<div id="eu4" class="game">
-		<div class="group vanilla nocollapse">
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/314494866252173216/6B212F836B5DCDA7D39FC52C565217D6AA88EAB7/?imw=200">
-				<i>vicner</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=632273228" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p class="version">Підтримувана версія: <i>1.36</i></p>
-						<p>Останнє оновлення: <i>24&nbsp;лист. 2023</i></p>
-					</div>
-					<div>
-						<h5>GitHub</h5>
-						<a href="https://github.com/vicner/eu4" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-						<p class="version">Підтримувана версія: <i>1.36</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id="eu4" class="game"><button class="mod" onclick="openModDetails(databaseEu4, 0);">Europa Universalis IV</button></div>
 
 	<!-- CITIES: SKYLINES -->
 	<div id="cs" class="game">
 		<h2>Переклади гри (2)</h2>
-		<div class="group vanilla nocollapse">
-			<div class="entry noimage">
-				<i>Спільнота</i>
-				<div class="grid">
-					<div>
-						<h5>Crowdin</h5>
-						<a href="https://crowdin.com/project/cities-skylines" target="_blank" title="Перейти на сторінку перекладу">&raquo;</a>
-					</div>
-				</div>
-			</div>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2080157681027340972/505CBA24E786CF6236B936DDC553FC4060F71CDF/?imw=200">
-				<i>Kemza</i> &amp; <i>Vasenka88</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=3011689406" target="_blank" title="Перейти на посібник із ручного встановлення">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=3012910170" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Останнє оновлення: <i>8&nbsp;жовт. 2023</i></p>
-					</div>
-					<div>
-						<h5>GitHub</h5>
-						<a href="https://github.com/Vasenka88/Cities-Ukrainian-Localization" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-					</div>
-					<div>
-						<h5>Google Диск</h5>
-						<a href="https://drive.google.com/drive/folders/1q8SZfQE3ZkZAMC3Kni3DU2ihpijPdtfQ" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Останнє оновлення: <i>8&nbsp;жовт. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<button class="mod" onclick="openModDetails(databaseCs, 0);">Cities: Skylines (<i>Спільнота</i>)</button>
+		<button class="mod" onclick="openModDetails(databaseCs, 1);">Cities: Skylines (<i>Kemza</i> & <i>Vasenka88</i>)</button>
+
 		<h2>Переклади модів (1)</h2>
-		<div class="group nocollapse">
-			<h4>No Problem Notifications</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2031727496928501266/296B83E9B6C1E17998A06F8A311187FF3C82BBB7/?imw=200">
-				<i>Alex Sokol</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2866992009" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2958882190" target="_blank" title="Перейти на посібник із ручного встановлення">&raquo;</a>
-					</div>
-					<div>
-						<h5>Google Диск</h5>
-						<a href="https://drive.google.com/drive/folders/18gRSIdMs9QDEnPN1oENrBqT55pMRf08Y" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Останнє оновлення: <i>7&nbsp;квіт. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<button class="mod" onclick="openModDetails(databaseCs, 2);">No Problem Notifications</button>
 	</div>
 
 	<!-- STELLARIS -->
 	<div id="stel" class="game">
 		<h2>Переклади гри (4)</h2>
-		<div class="group vanilla nocollapse">
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2028347991371402362/EDCAF1F7254F2C65260DA698CE92F196BE0EF5DF/?imw=200">
-				<i>Ivan Anthony</i> та інші
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2907350739" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p class="version">Підтримувана версія: <i>3.10.2</i></p>
-						<p>Останнє оновлення: <i>6&nbsp;груд. 2023</i></p>
-					</div>
-				</div>
-			</div>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2022724735480708458/166AF4A6BD15366C8EE8688BF305B84FF0303F3D/?imw=200">
-				<i>Clamor_S</i>
-				<div class="grid">
-					<div class="steam old">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2977722107" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag ru"></p>
-						<p class="version">Підтримувана версія: <i>3.8.4</i></p>
-						<p>Останнє оновлення: <i>17&nbsp;черв. 2023</i></p>
-					</div>
-					<div>
-						<h5>GitHub</h5>
-						<a href="https://github.com/clamor-s/ukrainian_localization_stellaris" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag ru"></p>
-					</div>
-				</div>
-			</div>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2001325032159963894/F589BCA56EE9E44C1D3BDC5A1B940AE434306989/?imw=200">
-				<i>ser_rocko</i>
-				<div class="grid">
-					<div class="steam old">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2943508186" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p class="version">Підтримувана версія: <i>3.8.2</i></p>
-						<p>Останнє оновлення: <i>31&nbsp;трав. 2023</i></p>
-					</div>
-					<div class="old">
-						<h5>Paradox Mods</h5>
-						<a href="https://mods.paradoxplaza.com/mods/8155/Any" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p class="version">Підтримувана версія: <i>3.8.2</i></p>
-						<p>Останнє оновлення: <i>31&nbsp;трав. 2023</i></p>
-					</div>
-				</div>
-			</div>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/5075025434545741005/BE3C08BB749DF02A38B65E5E5308A4ED1ED54823/?imw=200">
-				<i>Команда &laquo;Єднання&raquo;</i>
-				<div class="grid">
-					<div class="steam old">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2906120862" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag ru"></p>
-						<p class="version">Підтримувана версія: <i>3.6.1</i></p>
-						<p>Останнє оновлення: <i>24&nbsp;груд. 2022</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<button class="mod" onclick="openModDetails(databaseStel, 0);">Stellaris (<i>Ivan Anthony</i>)</button>
+		<button class="mod" onclick="openModDetails(databaseStel, 1);">Stellaris (<i>Clamor_S</i>)</button>
+		<button class="mod" onclick="openModDetails(databaseStel, 2);">Stellaris (<i>ser_rocko</i>)</button>
+		<button class="mod" onclick="openModDetails(databaseStel, 3);">Stellaris (<i>Команда &laquo;Єднання&raquo;</i>)</button>
+
 		<h2>Переклади модів (3)</h2>
-		<div class="group nocollapse">
-			<h4>Superstates - Imperium Alternatives</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2012596709456380707/E698B301400CE2D1A42C932415A0D641037073D3/?imw=200">
-				<i>Ivan Anthony</i> та інші
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=3005307317" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=3006909509" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Останнє оновлення: <i>16&nbsp;вер. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- <div class="group nocollapse">
-			<h4>Gigastructural Engineering &amp; More</h4>
-			<div class="entry noimage">
-				<div class="grid">
-					<div>
-						<h5>GitHub</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=1121692237" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://github.com/Ukrainelocal/stellaris-gigastructures-ukraine-localisation" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		<div class="group nocollapse">
-			<h4>Hypothetical Stars</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2012596709455985158/0228847194BBD3C53E94F4EF70DEBD0599CB650D/?imw=200">
-				<i>Ivan Anthony</i> та інші
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=910751973" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=3006863304" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Останнє оновлення: <i>19&nbsp;лип. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="group nocollapse">
-			<h4>Detailed Tech Tooltips Reloaded</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/958588636181009009/24B120A057E1B7CA4F31B68793743C60EA352044/?imw=200">
-				<i>ARZUMATA</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=1435832483" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=1442341409" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Останнє оновлення: <i>7&nbsp;серп. 2018</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<button class="mod" onclick="openModDetails(databaseStel, 4);">Superstates - Imperium Alternatives</button>
+		<!-- <button class="mod" onclick="openModDetails(databaseStel, 5);">Gigastructural Engineering &amp; More</button> -->
+		<button class="mod" onclick="openModDetails(databaseStel, 5);">Hypothetical Stars</button>
+		<button class="mod" onclick="openModDetails(databaseStel, 6);">Detailed Tech Tooltips Reloaded</button>
 	</div>
 
 	<!-- HEARTS OF IRON IV -->
 	<div id="hoi4" class="game">
 		<h2>Переклади гри (1)</h2>
-		<div class="group vanilla nocollapse">
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F/?imw=200">
-				<i>Letōn</i>, <i>TTTSHOK</i>, <i>Lonster</i>, <i>OlshenUA</i> та <dfn style='text-decoration: underline;' title='Ініціатор перекладу: Letōn&#10;Внесок зробили (в порядку спадання):&#10;  &bull; TTTSHOK&#10;  &bull; Lonster&#10;  &bull; OlshenUA&#10;  &bull; BmB Kun&#10;  &bull; Churban&#10;  &bull; Shrek_UA&#10;  &bull; Dmytr0 Gaming'>інші</dfn>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
-						<p>Останнє оновлення: <i>14&nbsp;груд. 2023</i></p>
-					</div>
-					<div>
-						<h5>Paradox Mods</h5>
-						<a href="https://mods.paradoxplaza.com/mods/38710/Any" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
-						<p>Останнє оновлення: <i>14&nbsp;груд. 2023</i></p>
-					</div>
-					<div><h5>Nexus Mods</h5>
-						<a href="https://nexusmods.com/heartsofironiv/mods/53" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
-						<p>Останнє оновлення: <i>14&nbsp;груд. 2023</i></p>
-					</div>
-					<div>
-						<h5>GitHub</h5>
-						<a href="https://github.com/Letgal/hoi4_ut" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
-					</div>
-					<div>
-						<h5>Google Диск</h5>
-						<a href="https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"><img class='flag ru'><img class='flag uk'></p>
-						<p class="version">Підтримувана версія: <i>1.13.6</i></p>
-						<p>Останнє оновлення: <i>14&nbsp;груд. 2023</i></p>
-					</div>
-				</div>
-				<p style='font-size: small;'><abbr title='Моди з включеними перекладами можна використовувати безпосередньо.'>Сюди ж включені переклади ось цих модів:</abbr></p>
-				<ul style='font-size: small; columns: 2;'>
-					<li>Battle Royale (<a href='https://steamcommunity.com/workshop/filedetails/?id=1292092419'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36492/Any'><i>Paradox Mods</i></a>)</li>
-					<li>City Maker (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880422651'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/52733/Any'><i>Paradox Mods</i></a>)</li>
-					<li>Coring Button (<a href='https://steamcommunity.com/workshop/filedetails/?id=1913968458'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36852/Any'><i>Paradox Mods</i></a>)</li>
-					<li>Country Roulette (<a href='https://steamcommunity.com/workshop/filedetails/?id=1422190791'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/51002/Any'><i>Paradox Mods</i></a>)</li>
-					<li><abbr title='Це колекція, в яку входять:&#10;  &bull; Diplomatic Alignment Triangle for HOI4&#10;  &bull; Diplomatic Alignment Triangle for Kaiserreich&#10;  &bull; Diplomatic Alignment Triangle for The New Order&#10;  &bull; Diplomatic Alignment Triangle for Millennium Dawn&#10;  &bull; Diplomatic Alignment Triangle for Red Flood&#10;  &bull; Diplomatic Alignment Triangle for Calm Before the Storm&#10;  &bull; Diplomatic Alignment Triangle for TWR&#10;  &bull; Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</abbr> (<a href='https://steamcommunity.com/workshop/filedetails/?id=2208527069'><i>Steam</i></a>)</li>
-					<li>Faction Distance Limiter (<a href='https://steamcommunity.com/workshop/filedetails/?id=2729537713'><i>Steam</i></a>)</li>
-					<li>Formable Nations in Setup Options (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880621905'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/40759/Any'><i>Paradox Mods</i></a>)</li>
-					<li>League of Nations (<a href='https://steamcommunity.com/workshop/filedetails/?id=1425386497'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/33402/Any'><i>Paradox Mods</i></a>)</li>
-					<li>Ledger (<a href='https://steamcommunity.com/workshop/filedetails/?id=1704370481'><i>Steam</i></a>)</li>
-					<li>Map Modes+ (<a href='https://steamcommunity.com/workshop/filedetails/?id=2665267027'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/37707/Any'><i>Paradox Mods</i></a>)</li>
-					<li>Peace Deals (<a href='https://steamcommunity.com/workshop/filedetails/?id=2412445347'><i>Steam</i></a>)</li>
-					<li>Recall Volunteers (<small>&gt; <i>Yard1</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2048998725'><i>Steam</i></a>)</li>
-					<li>Recall Volunteers (<small>&gt; <i>Not Monika Plus</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2014636418'><i>Steam</i></a>)</li>
-					<li><abbr title='Це колекція, в яку входять:&#10;  &bull; Rename Factions&#10;  &bull; Rename Parties&#10;  &bull; Rename States&#10;  &bull; Rename Country Leaders'>Rename Mods</abbr> (<a href='https://steamcommunity.com/workshop/filedetails/?id=1692642692'><i>Steam</i></a>)</li>
-					<li>State Transfer Tool (<a href='https://steamcommunity.com/workshop/filedetails/?id=1367081844'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/26720/Any'><i>Paradox Mods</i></a>)</li>
-					<li>State Transfer Tool MP (<a href='https://steamcommunity.com/workshop/filedetails/?id=1368778634'><i>Steam</i></a>)</li>
-					<li>Toolpack Without the Errors (<a href='https://steamcommunity.com/workshop/filedetails/?id=2913150560'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/56593/Any'><i>Paradox Mods</i></a>)</li>
-					<li>TWR GDP Screen (<a href='https://steamcommunity.com/workshop/filedetails/?id=2895467881'><i>Steam</i></a>)</li>
-					<li>Yearly Event Cards (<a href='https://steamcommunity.com/workshop/filedetails/?id=2782147906'><i>Steam</i></a>)</li>
-				</ul>
-			</div>
-		</div>
+		<button class="mod" onclick="openModDetails(databaseHoi4, 0);">Hearts of Iron IV</button>
 	</div>
 
 	<!-- IMPERATOR: ROME -->
-	<div id="ir" class="game">
-		<div class="group vanilla nocollapse">
-			<div class="entry">
-				<img src="https://modscontent.paradox-interactive.com/imperator_rome/d1bc0e50-9d4c-11eb-a3f3-9ffac6a2b1cb/content/cover.jpg">
-				<i>ser_rocko</i>
-				<div class="grid">
-					<div>
-						<h5>Telegram</h5>
-						<a href="https://t.me/PatchLocalisationUA/140" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p class="version">Підтримувана версія: <i>2.0.3</i></p>
-						<p>Останнє оновлення: <i>22&nbsp;лист. 2021</i></p>
-					</div>
-					<div class="old">
-						<h5>Paradox Mods</h5>
-						<a href="https://mods.paradoxplaza.com/mods/23889/Any" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id="ir" class="game"><button class="mod" onclick="openModDetails(databaseIr, 0);">Imperator: Rome</button></div>
 
 	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
-		<h2>Переклади гри (2)</h2>
-		<div class="group vanilla nocollapse">
-			<div class="entry noimage">
-				<i>Спільнота</i> (<i>ser_rocko</i> й інші)
-				<div class="grid">
-					<div>
-						<h5>Crowdin</h5>
-						<a href="https://crowdin.com/project/crusader-kings-iii-ukrainian" target="_blank" title="Перейти на сторінку перекладу">&raquo;</a>
-					</div>
-				</div>
-			</div>
-			<div class="entry noimage">
-				<i>EYELESS</i>
-				<div class="grid">
-					<div>
-						<h5>GitHub</h5>
-						<a href="https://github.com/EYELESS-UA/Crusader-Kings-3-Ukrainian-localization" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-						<p class="version">Підтримувана версія: <i>1.9.0.4</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<h2>Переклади модів (1)</h2>
-		<div class="group nocollapse">
-			<h4>Galicia-Volhynia Overhaul</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2035104110928692339/EABC767613BE819BEA4834665684C09B17E4EC39/?imw=200">
-				<i>Zarays</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2784541038" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2951315616" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		<button class="mod" onclick="openModDetails(databaseCk3, 0);">Crusader Kings III (<i>Спільнота</i>)</button>
+		<button class="mod" onclick="openModDetails(databaseCk3, 1);">Crusader Kings III (<i>EYELESS</i>)</button>
 	</div>
 
 	<!-- VICTORIA 3 -->
 	<div id="v3" class="game">
 		<h2>Переклади гри (1)</h2>
-		<div class="group vanilla nocollapse">
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4/?imw=200">
-				<i>Godresky</i> <dfn title="З допомогою:&#10;  &bull; Пан Дмитро&#10;  &bull; Пані Меліса&#10;  &bull; remark644&#10;  &bull; Пан Андріян&#10;  &bull; _rlly_&#10;  &bull; twentysixz&#10;  &bull; Letōn (шрифти)&#10;  &bull; Дружня спільнота&#10;  &bull; Греко-католицька церква">�</dfn>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2884178988" target="_blank">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p class="version">Підтримувана версія: <i>1.5.9</i></p>
-						<p>Останнє оновлення: <i>19&nbsp;лист. 2023</i></p>
-					</div>
-					<div class="old">
-						<h5>Paradox Mods</h5>
-						<a href="https://mods.paradoxplaza.com/mods/55851/Any" title="Для старішої версії" target="_blank">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p class="version">Підтримувана версія: <i>1.1.2</i></p>
-						<p>Останнє оновлення: <i>1&nbsp;лют. 2023</i></p>
-					</div>
-					<div><h5>GitHub</h5>
-						<a href="https://github.com/Godresky/Victoria-3-Ukrainian-Translate" target="_blank">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p class="version">Підтримувана версія: <i>1.5.9</i></p>
-					</div>
-					<div class="old">
-						<h5>Telegram</h5>
-						<a href="https://t.me/godresky_vika3/357" target="_blank">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p>Останнє оновлення: <i>1&nbsp;серп. 2023</i></p>
-					</div>
-					<div>
-						<h5>Google Диск</h5>
-						<a href="https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c" target="_blank">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p class="version">Підтримувана версія: <i>1.5.9</i></p>
-						<p>Останнє оновлення: <i>19&nbsp;лист. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<button class="mod" onclick="openModDetails(databaseV3, 0);">Victoria 3 (<i>Godresky</i>)</button>
+
 		<h2>Переклади модів (5)</h2>
-		<div class="group nocollapse">
-			<h4>Divergences</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506411499069/BCEDB823B57F1B12B7808B30294FAB0FEE530D7F/?imw=200">
-				<i>BonLua</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2881894183" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2995864776" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p>Останнє оновлення: <i>30&nbsp;черв. 2023</i></p>
-					</div>
-					<div>
-						<h5>Telegram</h5>
-						<a href="https://t.me/godresky_vika3/272" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p>Останнє оновлення: <i>29&nbsp;черв. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="group nocollapse">
-			<h4>Null &amp; Void</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5/?imw=200">
-				<i>Letōn</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2902210880" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2995788213" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p>Останнє оновлення: <i>28&nbsp;черв. 2023</i></p>
-					</div>
-					<div>
-						<h5>Telegram</h5>
-						<a href="https://t.me/godresky_vika3/256" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p>Останнє оновлення: <i>28&nbsp;черв. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="group nocollapse">
-			<h4>Better Politics Mod</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2027231506410879056/4AF8CB2EC2FA33C090699D85E536F37C7245498C/?imw=200">
-				<i>SteveJobs</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2932134122" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2995810889" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p>Останнє оновлення: <i>28&nbsp;черв. 2023</i></p>
-					</div>
-					<div>
-						<h5>Telegram</h5>
-						<a href="https://t.me/godresky_vika3/261" target="_blank" title="Перейти на сторінку файлу">&raquo;</a>
-						<p>Підтримувані мови: <img class="flag en"></p>
-						<p>Останнє оновлення: <i>28&nbsp;черв. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="group nocollapse">
-			<h4>Seeds of Change: Agriculture Overhaul</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044114298292730837/E713FEBFF40DA05867D004FF2D28D8919BEB774A/?imw=200">
-				<i>Godresky</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2966872937" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2969305916" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Останнє оновлення: <i>8&nbsp;трав. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="group nocollapse">
-			<h4>Prostitution &amp; Brothels</h4>
-			<div class="entry">
-				<img src="https://steamuserimages-a.akamaihd.net/ugc/2044114931082763311/3B295E44C6E54D7731B7F26D105F87CE3A161F24/?imw=200">
-				<i>Godresky</i>
-				<div class="grid">
-					<div class="steam">
-						<h5>Steam</h5>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2882813615" target="_blank" title="Перейти на сторінку ориґіналу">&raquo;</a>
-						<a href="https://steamcommunity.com/workshop/filedetails/?id=2970795803" target="_blank" title="Перейти на сторінку моду">&raquo;</a>
-						<p>Останнє оновлення: <i>3&nbsp;трав. 2023</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
+		<button class="mod" onclick="openModDetails(databaseV3, 1);">Divergences</button>
+		<button class="mod" onclick="openModDetails(databaseV3, 2);">Null &amp; Void</button>
+		<button class="mod" onclick="openModDetails(databaseV3, 3);">Better Politics Mod</button>
+		<button class="mod" onclick="openModDetails(databaseV3, 4);">Seeds of Change: Agriculture Overhaul</button>
+		<button class="mod" onclick="openModDetails(databaseV3, 5);">Prostitution &amp; Brothels</button>
 	</div>
 
 	<!-- CITIES: SKYLINES II -->
-	<div id="cs2" class="game">
-		<div class="group vanilla nocollapse">
-			<div class="entry noimage">
-				<i>minenkoden</i>
-				<div class="grid">
-					<div>
-						<h5>GitHub</h5>
-						<a href="https://github.com/minenkoden/skylines2-ua" target="_blank" title="Перейти на сторінку репозитарію">&raquo;</a>
-						<p class="version">Підтримувана версія: <i>1.0.14f1</i></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div id="cs2" class="game"><button class="mod" onclick="openModDetails(databaseCs2, 0);">Cities: Skylines II</button></div>
+
+	<div id="after" onclick="closeModDetails();"></div>
+	<div id="mod-details"><button id='close' onclick='closeModDetails();'>&times;</button></div>
 </body>
 </html>

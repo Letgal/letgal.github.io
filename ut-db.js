@@ -1,8 +1,248 @@
+const databaseCk2 = [
+	{
+		mod: "Crusader Kings II",
+		authors: ["Ucraina Unione Strategists"],
+		image: "",
+		links: [
+			{
+				type: "Telegram",
+				link: "https://t.me/PatchLocalisationUA/131",
+				lastUpdate: "18&nbsp;лист. 2021"
+			}
+		]
+	}
+]
+const databaseEu4 = [
+	{
+		mod: "Europa Universalis IV",
+		authors: ["vicner"],
+		image: "314494866252173216/6B212F836B5DCDA7D39FC52C565217D6AA88EAB7",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
+				version: "1.36", lastUpdate: "24&nbsp;лист. 2023"
+			},
+			{
+				type: "GitHub",
+				link: "https://github.com/vicner/eu4",
+				version: "1.36"
+			}
+		]
+	}
+]
+const databaseCs = [
+	{
+		mod: "Cities: Skylines",
+		authors: ["Спільнота"],
+		image: "",
+		links: [
+			{
+				type: "Crowdin",
+				link: "https://crowdin.com/project/cities-skylines"
+			}
+		]
+	},
+	{
+		mod: "Cities: Skylines",
+		authors: ["Kemza"], note: "<i>Vasenka88</i>",
+		image: "2080157681027340972/505CBA24E786CF6236B936DDC553FC4060F71CDF",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3012910170",
+				lastUpdate: "8&nbsp;жовт. 2023"
+			},
+			{
+				type: "Steam (ручне встановлення)",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3011689406",
+				lastUpdate: "8&nbsp;жовт. 2023"
+			},
+			{
+				type: "GitHub",
+				link: "https://github.com/Vasenka88/Cities-Ukrainian-Localization"
+			},
+			{
+				type: "Google Диск",
+				link: "https://drive.google.com/drive/folders/1q8SZfQE3ZkZAMC3Kni3DU2ihpijPdtfQ",
+				lastUpdate: "8&nbsp;жовт. 2023"
+			}
+		]
+	},
+	{
+		mod: "No Problem Notifications",
+		authors: ["Alex Sokol"],
+		image: "2031727496928501266/296B83E9B6C1E17998A06F8A311187FF3C82BBB7",
+		links: [
+			{
+				type: "Steam (ручне встановлення)",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2958882190",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2866992009"
+			},
+			{
+				type: "Google Диск",
+				link: "https://drive.google.com/drive/folders/18gRSIdMs9QDEnPN1oENrBqT55pMRf08Y",
+				lastUpdate: "7&nbsp;квіт. 2023"
+			}
+		]
+	}
+]
+const databaseStel = [
+	{
+		mod: "Stellaris",
+		authors: ["Ivan Anthony"], note: "та інші",
+		image: "2028347991371402362/EDCAF1F7254F2C65260DA698CE92F196BE0EF5DF",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
+				lang: "англ.", version: "3.10.2", lastUpdate: "6&nbsp;груд. 2023"
+			}
+		]
+	},
+	{
+		mod: "Stellaris",
+		authors: ["Clamor_S"],
+		image: "2022724735480708458/166AF4A6BD15366C8EE8688BF305B84FF0303F3D",
+		links: [
+			{
+				type: "Steam", old: true,
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2977722107",
+				lang: "рос.", version: "3.8.4", lastUpdate: "17&nbsp;черв. 2023"
+			},
+			{
+				type: "GitHub",
+				link: "https://github.com/clamor-s/ukrainian_localization_stellaris",
+				lang: "рос."
+			}
+		]
+	},
+	{
+		mod: "Stellaris",
+		authors: ["ser_rocko"],
+		image: "2001325032159963894/F589BCA56EE9E44C1D3BDC5A1B940AE434306989",
+		links: [
+			{
+				type: "Steam", old: true,
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2943508186",
+				lang: "англ.", version: "3.8.2", lastUpdate: "31&nbsp;трав. 2023"
+			},
+			{
+				type: "Paradox Mods", old: true,
+				link: "https://mods.paradoxplaza.com/mods/8155/Any",
+				lang: "англ.", version: "3.8.2", lastUpdate: "31&nbsp;трав. 2023"
+			}
+		]
+	},
+	{
+		mod: "Stellaris",
+		authors: ["Команда &laquo;Єднання&raquo;"],
+		image: "5075025434545741005/BE3C08BB749DF02A38B65E5E5308A4ED1ED54823",
+		links: [
+			{
+				type: "Steam", old: true,
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2906120862",
+				lang: "рос.", version: "3.6.1", lastUpdate: "24&nbsp;груд. 2022"
+			}
+		]
+	},
+	{
+		mod: "Superstates - Imperium Alternatives",
+		authors: ["Ivan Anthony"], note: "та інші",
+		image: "2012596709456380707/E698B301400CE2D1A42C932415A0D641037073D3",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3006909509",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3005307317",
+				lastUpdate: "16&nbsp;вер. 2023"
+			}
+		]
+	},
+	/*{
+		mod: "Gigastructural Engineering &amp; More",
+		authors: ["Ukrainelocal"],
+		image: "",
+		links: [
+			{
+				type: "GitHub",
+				link: "github.com/Ukrainelocal/stellaris-gigastructures-ukraine-localisation"
+			}
+		]
+	},*/
+	{
+		mod: "Hypothetical Stars",
+		authors: ["Ivan Anthony"], note: "та інші",
+		image: "2012596709455985158/0228847194BBD3C53E94F4EF70DEBD0599CB650D",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3006863304",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=910751973",
+				lastUpdate: "19&nbsp;лип. 2023"
+			}
+		]
+	},
+	{
+		mod: "Detailed Tech Tooltips Reloaded",
+		authors: ["ARZUMATA"],
+		image: "958588636181009009/24B120A057E1B7CA4F31B68793743C60EA352044",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=1442341409",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1435832483",
+				lastUpdate: "7&nbsp;серп. 2018"
+			}
+		]
+	}
+]
+// const hoi4Mods = [
+// 	{
+// 		category: 2,
+// 		mod: "Ukrainian People's Republic in Exile",
+// 		authors: ["SteveJobs"],
+// 		image: "2047502867529603480/07D13DB394D55948C30AC9D965EA517D847AC54C",
+// 		links: [
+// 			{
+// 				type: "Steam",
+// 				link: "https://steamcommunity.com/workshop/filedetails/?id=3025365180",
+// 				lang: "укр.", lastUpdate: "11&nbsp;жовт. 2023"
+// 			}
+// 		]
+// 	},
+// 	{
+// 		category: 3,
+// 		mod: "Chaos Mod - Random Events",
+// 		authors: ["Muro"],
+// 		image: "2110555166959819205/5F9755A52B79E3F37693285C3EFDC86A715938E7",
+// 		links: [
+// 			{
+// 				type: "Steam",
+// 				link: "https://steamcommunity.com/workshop/filedetails/?id=3037168613",
+// 				lang: "рос.", lastUpdate: "17&nbsp;вер. 2023"
+// 			}
+// 		]
+// 	},
+// 	{
+// 		category: 4,
+// 		mod: "Manpower Alpha",
+// 		authors: ["TEXA"],
+// 		image: "2063250888841912440/CEA2768F4492C17E4FEEA45AE2DE834D9F23874A",
+// 		links: [
+// 			{
+// 				type: "Steam",
+// 				link: "https://steamcommunity.com/workshop/filedetails/?id=2940022117",
+// 				lang: "укр.", lastUpdate: "29&nbsp;серп. 2023"
+// 			}
+// 		]
+// 	}
+// ]
 const databaseHoi4 = [
 	// Darkest Hour — https://github.com/Godresky/Darkest-Hour-Ukrainian-Translate
 	// Fire of Poltava — https://github.com/Godresky/Fire-of-Poltava-Ukrainian-Translate
 	// Ukrainian State: the Great Reborn — https://github.com/Godresky/USTGR-Ukrainian-Translate
-		
+
 	{
 		category: 0,
 		mod: "Hearts of Iron IV",
@@ -32,11 +272,11 @@ const databaseHoi4 = [
 			},
 			{
 				type: "Google Диск",
-				link: "https://https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view",
+				link: "https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view",
 				lang: "англ., рос., укр.", version: "1.13.6", lastUpdate: "14&nbsp;груд. 2023"
 			}
 		],
-		more: "<p style='font-size: small;' title='Моди з включеними перекладами можна використовувати безпосередньо.'>Сюди ж включені переклади ось цих модів:</p><ul style='font-size: small; columns: 2;'><li>Battle Royale (<a href='https://steamcommunity.com/workshop/filedetails/?id=1292092419'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36492/Any'><i>Paradox Mods</i></a>)</li><li>City Maker (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880422651'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/52733/Any'><i>Paradox Mods</i></a>)</li><li>Coring Button (<a href='https://steamcommunity.com/workshop/filedetails/?id=1913968458'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36852/Any'><i>Paradox Mods</i></a>)</li><li>Country Roulette (<a href='https://steamcommunity.com/workshop/filedetails/?id=1422190791'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/51002/Any'><i>Paradox Mods</i></a>)</li><li><span title='Це колекція, в яку входять:&#10;  &bull; Diplomatic Alignment Triangle for HOI4&#10;  &bull; Diplomatic Alignment Triangle for Kaiserreich&#10;  &bull; Diplomatic Alignment Triangle for The New Order&#10;  &bull; Diplomatic Alignment Triangle for Millennium Dawn&#10;  &bull; Diplomatic Alignment Triangle for Red Flood&#10;  &bull; Diplomatic Alignment Triangle for Calm Before the Storm&#10;  &bull; Diplomatic Alignment Triangle for TWR&#10;  &bull; Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</span> (<a href='https://steamcommunity.com/workshop/filedetails/?id=2208527069'><i>Steam</i></a>)</li><li>Faction Distance Limiter (<a href='https://steamcommunity.com/workshop/filedetails/?id=2729537713'><i>Steam</i></a>)</li><li>Formable Nations in Setup Options (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880621905'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/40759/Any'><i>Paradox Mods</i></a>)</li><li>League of Nations (<a href='https://steamcommunity.com/workshop/filedetails/?id=1425386497'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/33402/Any'><i>Paradox Mods</i></a>)</li><li>Ledger (<a href='https://steamcommunity.com/workshop/filedetails/?id=1704370481'><i>Steam</i></a>)</li><li>Map Modes+ (<a href='https://steamcommunity.com/workshop/filedetails/?id=2665267027'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/37707/Any'><i>Paradox Mods</i></a>)</li><li>Peace Deals (<a href='https://steamcommunity.com/workshop/filedetails/?id=2412445347'><i>Steam</i></a>)</li><li>Recall Volunteers (<small>&gt; <i>Yard1</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2048998725'><i>Steam</i></a>)</li><li>Recall Volunteers (<small>&gt; <i>Not Monika Plus</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2014636418'><i>Steam</i></a>)</li><li><span title='Це колекція, в яку входять:&#10;  &bull; Rename Factions&#10;  &bull; Rename Parties&#10;  &bull; Rename States&#10;  &bull; Rename Country Leaders'>Rename Mods</span> (<a href='https://steamcommunity.com/workshop/filedetails/?id=1692642692'><i>Steam</i></a>)</li><li>State Transfer Tool (<a href='https://steamcommunity.com/workshop/filedetails/?id=1367081844'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/26720/Any'><i>Paradox Mods</i></a>)</li><li>State Transfer Tool MP (<a href='https://steamcommunity.com/workshop/filedetails/?id=1368778634'><i>Steam</i></a>)</li><li>Toolpack Without the Errors (<a href='https://steamcommunity.com/workshop/filedetails/?id=2913150560'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/56593/Any'><i>Paradox Mods</i></a>)</li><li>TWR GDP Screen (<a href='https://steamcommunity.com/workshop/filedetails/?id=2895467881'><i>Steam</i></a>)</li><li>Yearly Event Cards (<a href='https://steamcommunity.com/workshop/filedetails/?id=2782147906'><i>Steam</i></a>)</li></ul>"
+		more: "<p style='font-size: small;' title='Моди з включеними перекладами можна використовувати безпосередньо.'>Сюди ж включені переклади ось цих модів:</p><ul style='font-size: small; columns: 2;'><li>Battle Royale (<a href='https://steamcommunity.com/workshop/filedetails/?id=1292092419'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36492/Any'><i>Paradox Mods</i></a>)</li><li>City Maker (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880422651'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/52733/Any'><i>Paradox Mods</i></a>)</li><li>Coring Button (<a href='https://steamcommunity.com/workshop/filedetails/?id=1913968458'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36852/Any'><i>Paradox Mods</i></a>)</li><li>Country Roulette (<a href='https://steamcommunity.com/workshop/filedetails/?id=1422190791'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/51002/Any'><i>Paradox Mods</i></a>)</li><li><span title='Це колекція, в яку входять:\n  &bull; Diplomatic Alignment Triangle for HOI4\n  &bull; Diplomatic Alignment Triangle for Kaiserreich\n  &bull; Diplomatic Alignment Triangle for The New Order\n  &bull; Diplomatic Alignment Triangle for Millennium Dawn\n  &bull; Diplomatic Alignment Triangle for Red Flood\n  &bull; Diplomatic Alignment Triangle for Calm Before the Storm\n  &bull; Diplomatic Alignment Triangle for TWR\n  &bull; Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</span> (<a href='https://steamcommunity.com/workshop/filedetails/?id=2208527069'><i>Steam</i></a>)</li><li>Faction Distance Limiter (<a href='https://steamcommunity.com/workshop/filedetails/?id=2729537713'><i>Steam</i></a>)</li><li>Formable Nations in Setup Options (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880621905'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/40759/Any'><i>Paradox Mods</i></a>)</li><li>League of Nations (<a href='https://steamcommunity.com/workshop/filedetails/?id=1425386497'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/33402/Any'><i>Paradox Mods</i></a>)</li><li>Ledger (<a href='https://steamcommunity.com/workshop/filedetails/?id=1704370481'><i>Steam</i></a>)</li><li>Map Modes+ (<a href='https://steamcommunity.com/workshop/filedetails/?id=2665267027'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/37707/Any'><i>Paradox Mods</i></a>)</li><li>Peace Deals (<a href='https://steamcommunity.com/workshop/filedetails/?id=2412445347'><i>Steam</i></a>)</li><li>Recall Volunteers (<small>&gt; <i>Yard1</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2048998725'><i>Steam</i></a>)</li><li>Recall Volunteers (<small>&gt; <i>Not Monika Plus</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2014636418'><i>Steam</i></a>)</li><li><span title='Це колекція, в яку входять:\n  &bull; Rename Factions\n  &bull; Rename Parties\n  &bull; Rename States\n  &bull; Rename Country Leaders'>Rename Mods</span> (<a href='https://steamcommunity.com/workshop/filedetails/?id=1692642692'><i>Steam</i></a>)</li><li>State Transfer Tool (<a href='https://steamcommunity.com/workshop/filedetails/?id=1367081844'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/26720/Any'><i>Paradox Mods</i></a>)</li><li>State Transfer Tool MP (<a href='https://steamcommunity.com/workshop/filedetails/?id=1368778634'><i>Steam</i></a>)</li><li>Toolpack Without the Errors (<a href='https://steamcommunity.com/workshop/filedetails/?id=2913150560'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/56593/Any'><i>Paradox Mods</i></a>)</li><li>TWR GDP Screen (<a href='https://steamcommunity.com/workshop/filedetails/?id=2895467881'><i>Steam</i></a>)</li><li>Yearly Event Cards (<a href='https://steamcommunity.com/workshop/filedetails/?id=2782147906'><i>Steam</i></a>)</li></ul>"
 	},
 	{
 		category: 1,
@@ -592,7 +832,7 @@ const databaseHoi4 = [
 			},
 			{
 				type: "Transifex",
-				link: "https://explore.transifex.com/uaa-translation-project/ukraine-above-all-mod' target='_blank' title='Перейти на сторінку перекладу'>&raquo;</a>"
+				link: "https://explore.transifex.com/uaa-translation-project/ukraine-above-all-mod"
 			}
 		]
 	},
@@ -1183,6 +1423,183 @@ const databaseHoi4 = [
 				link: "https://steamcommunity.com/workshop/filedetails/?id=3068130903",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3068109795",
 				lang: "англ., рос., укр.", lastUpdate: "1&nbsp;лист. 2023"
+			}
+		]
+	}
+]
+const databaseIr = [
+	{
+		mod: "Imperator: Rome",
+		authors: ["ser_rocko"],
+		image: "", // https://modscontent.paradox-interactive.com/imperator_rome/d1bc0e50-9d4c-11eb-a3f3-9ffac6a2b1cb/content/cover.jpg
+		links: [
+			{
+				type: "Telegram",
+				link: "https://t.me/PatchLocalisationUA/140",
+				version: "2.0.3", lastUpdate: "22&nbsp;лист. 2021"
+			},
+			{
+				type: "Paradox Mods", old: true,
+				link: "https://mods.paradoxplaza.com/mods/23889/Any"
+			}
+		]
+	}
+]
+const databaseCk3 = [
+	{
+		mod: "Crusader Kings III",
+		authors: ["Спільнота"], note: "(<i>ser_rocko</i> та інші)",
+		image: "",
+		links: [
+			{
+				type: "Crowdin",
+				link: "https://crowdin.com/project/crusader-kings-iii-ukrainian"
+			}
+		]
+	},
+	{
+		mod: "Crusader Kings III",
+		authors: ["EYELESS"],
+		image: "",
+		links: [
+			{
+				type: "GitHub", old: true,
+				link: "https://github.com/EYELESS-UA/Crusader-Kings-3-Ukrainian-localization",
+				version: "1.9.0.4"
+			}
+		]
+	}
+]
+const databaseV3 = [
+	{
+		category: 0,
+		mod: "Victoria 3",
+		authors: ["Godresky"], note: "<dfn title='З допомогою:\n  &bull; Пан Дмитро\n  &bull; Пані Меліса\n  &bull; remark644\n  &bull; Пан Андріян\n  &bull; _rlly_\n  &bull; twentysixz\n  &bull; Letōn (шрифти)\n  &bull; Дружня спільнота\n  &bull; Греко-католицька церква'>�</dfn>",
+		image: "1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2884178988",
+				lang: "англ.", version: "1.5.9", lastUpdate: "19&nbsp;лист. 2023"
+			},
+			{
+				type: "Paradox Mods", old: true,
+				link: "https://mods.paradoxplaza.com/mods/55851/Any",
+				lang: "англ.", version: "1.1.2", lastUpdate: "1&nbsp;лют. 2023"
+			},
+			{
+				type: "GitHub",
+				link: "https://github.com/Godresky/Victoria-3-Ukrainian-Translate",
+				lang: "англ.", version: "1.5.9"
+			},
+			{
+				type: "Telegram", old: true,
+				link: "https://t.me/godresky_vika3/357",
+				lang: "англ.", lastUpdate: "1&nbsp;серп. 2023"
+			},
+			{
+				type: "Google Диск",
+				link: "https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c",
+				lang: "англ.", version: "1.5.9", lastUpdate: "19&nbsp;лист. 2023"
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "Divergences",
+		authors: ["BonLua"],
+		image: "2027231506411499069/BCEDB823B57F1B12B7808B30294FAB0FEE530D7F",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2995864776",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2881894183",
+				lang: "англ.", lastUpdate: "30&nbsp;черв. 2023"
+			},
+			{
+				type: "Telegram",
+				link: "https://t.me/godresky_vika3/272",
+				lang: "англ.", lastUpdate: "29&nbsp;черв. 2023"
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "Null &amp; Void",
+		authors: ["Letōn"],
+		image: "2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2995788213",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2902210880",
+				lang: "англ.", lastUpdate: "28&nbsp;черв. 2023"
+			},
+			{
+				type: "Telegram",
+				link: "https://t.me/godresky_vika3/256",
+				lang: "англ.", lastUpdate: "28&nbsp;черв. 2023"
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "Better Politics Mod",
+		authors: ["SteveJobs"],
+		image: "2027231506410879056/4AF8CB2EC2FA33C090699D85E536F37C7245498C",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2995810889",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2932134122",
+				lang: "англ.", lastUpdate: "28&nbsp;черв. 2023"
+			},
+			{
+				type: "Telegram",
+				link: "https://t.me/godresky_vika3/261",
+				lang: "англ.", lastUpdate: "28&nbsp;черв. 2023"
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "Seeds of Change: Agriculture Overhaul",
+		authors: ["Godresky"],
+		image: "2044114298292730837/E713FEBFF40DA05867D004FF2D28D8919BEB774A",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2969305916",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2966872937",
+				lang: "англ.", lastUpdate: "8&nbsp;трав. 2023"
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "Prostitution &amp; Brothels",
+		authors: ["Godresky"],
+		image: "2044114931082763311/3B295E44C6E54D7731B7F26D105F87CE3A161F24",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2970795803",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2882813615",
+				lang: "англ.", lastUpdate: "3&nbsp;трав. 2023"
+			}
+		]
+	}
+]
+const databaseCs2 = [
+	{
+		mod: "Cities: Skylines II",
+		authors: ["minenkoden"],
+		image: "",
+		links: [
+			{
+				type: "GitHub",
+				link: "https://github.com/minenkoden/skylines2-ua",
+				version: "1.0.14f1"
 			}
 		]
 	}

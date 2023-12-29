@@ -632,7 +632,7 @@ const databaseHoi4 = [
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2990701306",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2987257705",
-				lang: "англ., рос., укр.", lastUpdate: "4&nbsp;груд. 2023"
+				lang: "англ., рос., укр.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -646,7 +646,7 @@ const databaseHoi4 = [
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2984175335",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2980946394",
-				lang: "англ., рос., укр.", lastUpdate: "4&nbsp;груд. 2023"
+				lang: "англ., рос., укр.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -1033,7 +1033,7 @@ const databaseHoi4 = [
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2905389788",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2903112840",
-				lang: "англ., рос.", lastUpdate: "4&nbsp;груд. 2023"
+				lang: "англ., рос.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -1061,7 +1061,7 @@ const databaseHoi4 = [
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2923608697",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2888818205",
-				lang: "англ., рос.", lastUpdate: "4&nbsp;груд. 2023"
+				lang: "англ., рос.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -1089,7 +1089,7 @@ const databaseHoi4 = [
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2926566235",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2784902401",
-				lang: "англ., рос.", lastUpdate: "4&nbsp;груд. 2023"
+				lang: "англ., рос.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -1103,7 +1103,7 @@ const databaseHoi4 = [
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2925100155",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2804147047",
-				lang: "англ., рос.", lastUpdate: "4&nbsp;груд. 2023"
+				lang: "англ., рос.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -1146,6 +1146,20 @@ const databaseHoi4 = [
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2919985045",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2910971965",
 				lang: "англ.", lastUpdate: "18&nbsp;січ. 2023"
+			}
+		]
+	},
+	{
+		category: 3,
+		mod: "Dissolved Germany",
+		authors: ["Царь Игр"],
+		image: "2028351009678394474/B8F2199EAA037F6869798F9AC713D4B215C6F654",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2964383523",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2951153275",
+				lang: "англ., рос., укр.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -1379,7 +1393,7 @@ const databaseHoi4 = [
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2993758938",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2505146371",
-				lang: "англ., рос., укр.", lastUpdate: "4&nbsp;груд. 2023"
+				lang: "англ., рос., укр.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -1599,7 +1613,11 @@ const databaseCs2 = [
 			{
 				type: "GitHub",
 				link: "https://github.com/minenkoden/skylines2-ua",
-				version: "1.0.14f1"
+				version: "1.0.18f1"
+			},
+			{
+				type: "Steam (ручне встановлення)",
+				link: "https://steamcommunity.com/sharedfiles/filedetails/?id=3067392946"
 			}
 		]
 	}

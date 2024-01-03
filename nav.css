@@ -9,7 +9,7 @@ nav {
 	width: calc(20% - 1rem);
 	border: 2px solid var(--border); border-radius: 0.5em;
 	padding: 0.5em;
-	background: #333;
+	background: #222;
 	user-select: none;
 }
 nav > h2 {
@@ -35,11 +35,11 @@ nav input[type=radio] + label {
 nav input[type=radio] + label:not(:first-of-type) { margin-top: 0.25rem; }
 nav input[type=radio] + label:hover { background: var(--button); }
 nav input[type=radio] + label:active {
-	border: 2px solid var(--button-dark);
+	border: 2px solid var(--button);
 	background: var(--button-darker);
 }
 nav input[type=radio]:checked + label {
-	border: 2px solid var(--button);
+	border: 2px solid var(--button-light);
 	background: var(--button-darker);
 	cursor: default;
 }

@@ -1494,7 +1494,7 @@ const databaseV3 = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2884178988",
-				lang: "англ.", version: "1.5.9", lastUpdate: "19&nbsp;лист. 2023"
+				lang: "англ.", version: "1.5.12", lastUpdate: "29&nbsp;груд. 2023"
 			},
 			{
 				type: "Paradox Mods", old: true,
@@ -1504,7 +1504,7 @@ const databaseV3 = [
 			{
 				type: "GitHub",
 				link: "https://github.com/Godresky/Victoria-3-Ukrainian-Translate",
-				lang: "англ.", version: "1.5.9"
+				lang: "англ.", version: "1.5.12"
 			},
 			{
 				type: "Telegram", old: true,
@@ -1514,7 +1514,7 @@ const databaseV3 = [
 			{
 				type: "Google Диск",
 				link: "https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c",
-				lang: "англ.", version: "1.5.9", lastUpdate: "19&nbsp;лист. 2023"
+				lang: "англ.", version: "1.5.12", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},

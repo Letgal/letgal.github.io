@@ -18,17 +18,17 @@
 	--special: silver;
 	--special2: grey;
 	--header-bg: #000;
-	--primary: hsl(254.12deg 67.11% 74.5%);
-	--primary-hover: hsl(254.12deg 67.11% 84.5%);
-	--primary-active: hsl(254.12deg 67.11% 64.5%);
-	--secondary: hsl(254.12deg 33.555% 52.15%);
-	--secondary-hover: hsl(254.12deg 33.555% 62.15%);
-	--secondary-active: hsl(254.12deg 33.555% 42.15%);
-	--accent: hsl(254.12deg 100% 74.5%);
-	--accent-hover: hsl(254.12deg 100% 84.5%);
-	--button: #666;
-	--button-light: #888;
-	--button-dark: #444;
+	--primary: hsl(256deg 100% 80%);
+	--primary-hover: hsl(256deg 100% 90%);
+	--primary-active: hsl(256deg 100% 70%);
+	--secondary: hsl(256deg 40% 40%);
+	--secondary-hover: hsl(256deg 40% 50%);
+	--secondary-active: hsl(256deg 40% 30%);
+	--accent: hsl(256deg 100% 75%);
+	--accent-hover: hsl(256deg 100% 85%);
+	--button: #555;
+	--button-light: #777;
+	--button-dark: #333;
 	--button-darker: #222;
 
 	--body-width: 100%;
@@ -55,7 +55,7 @@ body {
 a { color: var(--link-color); text-decoration: none; }
 a:hover { color: var(--link-color-hover); }
 abbr[title], dfn[title] {
-	color: var(--link-color);
+	color: var(--accent);
 	font-style: normal;
 	text-decoration: none /*underline solid*/;
 	cursor: help;
@@ -64,17 +64,15 @@ code { font-weight: normal; font-family: var(--monospace); }
 button {
 	padding: 0.5em 1em;
 	border: none;
-	background: var(--primary);
+	background: var(--button);
 	color: var(--text-color);
+	letter-spacing: 0.5px;
 	font-family: var(--serif);
 	transition: .2s ease;
 }
 button:not(.noclick) { cursor: pointer; }
-button:not(.noclick):hover { background: var(--primary-hover); }
-button:not(.noclick):active { background: var(--primary-active); }
-button.secondary { background: var(--secondary); }
-button.secondary:hover { background: var(--secondary-hover); }
-button.secondary:active { background: var(--secondary-active); }
+button:not(.noclick):hover { background: var(--button-light); }
+button:not(.noclick):active { background: var(--button-dark); }
 h1, h2, h3, h4, h5, h6 {
 	color: var(--heading-color);
 	font-family: var(--sans-serif);
@@ -159,6 +157,13 @@ h1 + p { text-align: center; }
 	font-style: italic;
 }
 .intro:first-of-type { margin-block-start: 0; }
+
+.primary { background: var(--primary); color: #222 !important; }
+.primary:hover { background: var(--primary-hover) !important; }
+.primary:active { background: var(--primary-active) !important; }
+.secondary { background: var(--secondary); }
+.secondary:hover { background: var(--secondary-hover) !important; }
+.secondary:active { background: var(--secondary-active) !important; }
 
 /* ANIMATION KEYFRAMES */
 @keyframes rotation {

@@ -1,10 +1,10 @@
 :root {
-	--header-bg: #111;
 	--body-width: 60%;
 	--collective-height: 0em;
 }
+
 body { padding-top: 5em; }
-a.block, #logo {
+a.block, button.block, #logo {
 	display: block;
 	box-sizing: border-box;
 	text-align: center;
@@ -12,17 +12,14 @@ a.block, #logo {
 	color: var(--text-color);
 	transition: .2s ease;
 }
-a.block {
+a.block, button.block {
+	width: 100%;
 	margin-block: 0.75rem;
 	padding: 0.5rem;
 	border-radius: 0.5rem;
-	background: var(--primary);
-	color: black;
 }
-a.block:hover {
-	background: var(--primary-hover);
-	text-decoration: none;
-}
+a.block { background: var(--primary); color: black; }
+a.block:hover { background: var(--primary-hover); text-decoration: none; }
 a.block:active { background: var(--primary-active); }
 #logo {
 	position: absolute; top: 0; left: 50%;

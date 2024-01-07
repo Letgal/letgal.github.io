@@ -299,7 +299,7 @@ const databaseHoi4 = [
 	{
 		category: 1,
 		mod: "Red Flood",
-		authors: ["Wenyanngat"],
+		authors: ["wenyangat"],
 		image: "2042994105119617273/E1EB040A9FF7DA05CC8154023BFEF9AFC63648A6",
 		links: [
 			{
@@ -313,7 +313,7 @@ const databaseHoi4 = [
 	{
 		category: 1,
 		mod: "Pax Britannica: An Imperial Timeline",
-		authors: ["Wenyanngat"],
+		authors: ["wenyangat"],
 		image: "2044119435816333454/DBE956844AD957E53BB078CC69D1FD0C94E99C30",
 		links: [
 			{
@@ -415,7 +415,7 @@ const databaseHoi4 = [
 	{
 		category: 1,
 		mod: "Disaster",
-		authors: ["Wenyanngat"],
+		authors: ["wenyangat"],
 		image: "2042994105117847101/14040A13A442FE987460820E589FA6FC243A3EF7",
 		links: [
 			{
@@ -470,7 +470,7 @@ const databaseHoi4 = [
 	// {
 	// 	category: 1,
 	// 	mod: "The East Crisis",
-	// 	authors: ["Wenyanngat"], note: "<dfn title='Мод порожній'>�</dfn>",
+	// 	authors: ["wenyangat"], note: "<dfn title='Мод порожній'>�</dfn>",
 	// 	image: "1793018961918301662/251D1EC898894FE408C9755AC0CE0873A6E6BCCE",
 	// 	links: [
 	// 		{
@@ -484,7 +484,7 @@ const databaseHoi4 = [
 	{
 		category: 1,
 		mod: "Scenario: Korea",
-		authors: ["Wenyanngat"],
+		authors: ["wenyangat"],
 		image: "2044119435813518421/60C6EBED1F22EF9512B7397F8E3C49A5AA3C0EF2",
 		links: [
 			{
@@ -526,7 +526,7 @@ const databaseHoi4 = [
 	{
 		category: 2,
 		mod: "The Road to 56: Expanded &amp; Enhanced",
-		authors: ["Wenyanngat"],
+		authors: ["wenyangat"],
 		image: "2042994105113062046/3E8DC563A0BD2AF5EED8708AF7CA8D3565AF2090",
 		links: [
 			{
@@ -582,7 +582,7 @@ const databaseHoi4 = [
 	{
 		category: 2,
 		mod: "Arbre générique +",
-		authors: ["Wenyanngat"],
+		authors: ["wenyangat"],
 		image: "2012579677858503373/C3E17D038DDD664FCA6BEF5C81AC9C9324725371",
 		links: [
 			{
@@ -833,6 +833,20 @@ const databaseHoi4 = [
 			{
 				type: "Transifex",
 				link: "https://explore.transifex.com/uaa-translation-project/ukraine-above-all-mod"
+			}
+		]
+	},
+	{
+		category: 2,
+		mod: "Ukrainian State: the Great Reborn",
+		authors: ["Shield", "Godresky", "Alex", "Illuhmanka"],
+		image: "2260308645835966035/7AD7FE313969D61DAE43B7D37673BDA503E57D28",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3125928554",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
+				lang: "англ.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},

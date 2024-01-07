@@ -241,7 +241,7 @@
 				modAuthors.innerHTML += "Автор(и): "
 				for (j = 0; j < database[i].authors.length; j++) {
 					modAuthors.innerHTML += "<i>" + database[i].authors[j] + "</i>";
-					if (i < (database[i].authors.length - 1)) { modAuthors.innerHTML += ", "; }
+					if (j < (database[i].authors.length - 1)) { modAuthors.innerHTML += ", "; }
 				}
 				if (database[i].note) { modAuthors.innerHTML += " " + database[i].note; }
 			modal.appendChild(modAuthors);

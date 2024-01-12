@@ -96,7 +96,7 @@ const databaseStel = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-				lang: "англ.", version: "3.10.2", lastUpdate: "6&nbsp;груд. 2023"
+				lang: "англ.", version: "3.10.3", lastUpdate: "10&nbsp;січ. 2024"
 			}
 		]
 	},
@@ -821,14 +821,14 @@ const databaseHoi4 = [
 	{
 		category: 2,
 		mod: "Ukraine Above All",
-		authors: ["GBV"], note: "(офіційний) <dfn title='Опублікував: GBV\nПерекладачі: Lonster й інші (перелічені на сторінці Steam)'>�</dfn>",
+		authors: ["GBV"], note: "(офіційний) <dfn title='Опублікував: GBV\nПерекладачі:\n  &bull; Lonster\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>�</dfn>",
 		image: "2040735491762509515/3066631A48A09B3FC6F24AC5D8699F5E84BB2D61",
 		links: [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-				lang: "англ.", lastUpdate: "2&nbsp;лист. 2023"
+				lang: "рос.", lastUpdate: "23&nbsp;груд. 2023"
 			},
 			{
 				type: "Transifex",

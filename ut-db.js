@@ -442,14 +442,14 @@ const databaseHoi4 = [
 	},
 	{
 		category: 1,
-		mod: "Seçim 2023",
-		authors: ["TTTSHOK"],
-		image: "2039612058721253582/4544DD46963371FC9E41DB038705FC8E1CB654E2",
+		mod: "Across the Dnieper",
+		authors: ["Alfer209"],
 		links: [
 			{
 				type: "Steam",
-				link: "https://steamcommunity.com/workshop/filedetails/?id=2976671996",
-				lang: "англ.", lastUpdate: "18&nbsp;трав. 2023"
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3125901830",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3033918961",
+				lang: "англ.", lastUpdate: "29&nbsp;груд. 2023"
 			}
 		]
 	},
@@ -463,7 +463,7 @@ const databaseHoi4 = [
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2953333379",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2948642461",
-				lang: "рос.", lastUpdate: "6&nbsp;квітня 2023"
+				lang: "рос.", lastUpdate: "6&nbsp;квіт. 2023"
 			}
 		]
 	},
@@ -481,6 +481,19 @@ const databaseHoi4 = [
 	// 		}
 	// 	]
 	// },
+	{
+		category: 1,
+		mod: "Seçim 2023",
+		authors: ["TTTSHOK"],
+		image: "2039612058721253582/4544DD46963371FC9E41DB038705FC8E1CB654E2",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=2976671996",
+				lang: "англ.", lastUpdate: "18&nbsp;трав. 2023"
+			}
+		]
+	},
 	{
 		category: 1,
 		mod: "Scenario: Korea",

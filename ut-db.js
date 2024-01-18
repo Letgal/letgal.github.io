@@ -1489,6 +1489,18 @@ const databaseIr = [
 const databaseCk3 = [
 	{
 		mod: "Crusader Kings III",
+		authors: ["KYR_MAN"],
+		image: "2263686345567763505/29A56491C59F08EBBEDF9E95DDFEDE2B2C8B73D9",
+		links: [
+			{
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
+				lastUpdate: "18&nbsp;січ. 2024"
+			}
+		]
+	},
+	{
+		mod: "Crusader Kings III",
 		authors: ["Спільнота"], note: "(<i>dfk</i>, <i>ser_rocko</i> та інші)",
 		image: "",
 		links: [

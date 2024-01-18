@@ -36,6 +36,7 @@
 		}
 
 		#after {
+			z-index: 2;
 			display: none; opacity: 0;
 			position: fixed; top: 0; bottom: 0; left: 0; right: 0;
 			background: #000;
@@ -44,6 +45,7 @@
 		}
 
 		#mod-details {
+			z-index: 2;
 			display: none;
 			position: fixed; top: 20%; bottom: 0; left: 10%; right: 10%;
 			padding: 1rem;
@@ -114,7 +116,7 @@
 		.grid > div h5 {
 			margin: 0;
 			padding-inline: 0.5em;
-			background: linear-gradient(to right, #444, #666);
+			background: linear-gradient(to right, var(--secondary), var(--secondary-hover));
 			color: var(--text-color);
 			font-size: 0.8rem;
 		}

@@ -5,7 +5,7 @@ const databaseCk2 = [
 		image: "",
 		links: [
 			{
-				type: "Telegram",
+				type: "Telegram", old: true,
 				link: "https://t.me/PatchLocalisationUA/131",
 				lastUpdate: "18&nbsp;лист. 2021"
 			}
@@ -1489,7 +1489,7 @@ const databaseIr = [
 const databaseCk3 = [
 	{
 		mod: "Crusader Kings III",
-		authors: ["Спільнота"], note: "(<i>ser_rocko</i> та інші)",
+		authors: ["Спільнота"], note: "(<i>dfk</i>, <i>ser_rocko</i> та інші)",
 		image: "",
 		links: [
 			{

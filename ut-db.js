@@ -21,7 +21,7 @@ const databaseEu4 = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-				version: "1.36", lastUpdate: "24&nbsp;лист. 2023"
+				version: "1.36", lastUpdate: "10&nbsp;січ. 2024"
 			},
 			{
 				type: "GitHub",
@@ -287,7 +287,7 @@ const databaseHoi4 = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
-				lang: "англ.", lastUpdate: "24&nbsp;лист. 2023"
+				lang: "англ.", lastUpdate: "20&nbsp;січ. 2024"
 			},
 			{
 				type: "Paradox Mods", old: true,
@@ -1495,7 +1495,7 @@ const databaseCk3 = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-				lastUpdate: "18&nbsp;січ. 2024"
+				lastUpdate: "20&nbsp;січ. 2024"
 			}
 		]
 	},

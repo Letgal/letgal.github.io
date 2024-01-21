@@ -34,13 +34,24 @@
 			font-size: 1.2rem;
 			font-weight: 500;
 		}
-		a > button.mod {
-			background: var(--secondary);
-			font-size: 1rem;
+		a.collection {
+			position: relative; top: calc(-1em / 1.5);
+			display: block;
+			padding-block: calc(1em / 3);
+			border-radius: 0.5em;
+			text-align: center;
+			font-family: var(--sans-serif);
+			font-weight: 600;
+			transition: .2s ease;
 		}
-		a > button.mod:hover { background: var(--secondary-hover); }
-		a > button.mod:active { background: var(--secondary-active); }
-		a > button.mod::after { content: " (зовнішнє посилання)"; }
+		a.collection:hover {
+			background-color: var(--secondary-active);
+			color: var(--text-color);
+		}
+		a.collection::after {
+			content: " (зовнішнє посилання)";
+			font-size: smaller;
+		}
 
 		#after {
 			z-index: 2;
@@ -325,7 +336,7 @@
 
 	<!-- HEARTS OF IRON IV -->
 	<div id="hoi4" class="game">
-		<a href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" target="_blank"><button class="mod">Колекція перекладів у Майстерні Steam</button></a>
+		<a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" target="_blank">Колекція перекладів у Майстерні Steam</a>
 		<h2>Переклади гри (1)</h2>
 		<button class="mod" onclick="openModDetails(databaseHoi4, 0);">Hearts of Iron IV</button>
 	</div>
@@ -335,7 +346,7 @@
 
 	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
-		<!-- <a href="https://steamcommunity.com/workshop/filedetails/?id=2945041310" target="_blank"><button class="mod">Колекція перекладів у Майстерні Steam</button></a> -->
+		<!-- <a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2945041310" target="_blank">Колекція перекладів у Майстерні Steam</a> -->
 		<button class="mod" onclick="openModDetails(databaseCk3, 0);">Crusader Kings III (<i>KYR_MAN</i>)</button>
 		<button class="mod" onclick="openModDetails(databaseCk3, 1);">Crusader Kings III (<i>Спільнота</i>)</button>
 		<button class="mod" onclick="openModDetails(databaseCk3, 2);">Crusader Kings III (<i>EYELESS</i>)</button>
@@ -343,7 +354,7 @@
 
 	<!-- VICTORIA 3 -->
 	<div id="v3" class="game">
-		<a href="https://steamcommunity.com/workshop/filedetails/?id=2972290673" target="_blank"><button class="mod">Колекція перекладів у Майстерні Steam</button></a>
+		<a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2972290673" target="_blank">Колекція перекладів у Майстерні Steam</a>
 		<h2>Переклади гри (1)</h2>
 		<button class="mod" onclick="openModDetails(databaseV3, 0);">Victoria 3 (<i>Godresky</i>)</button>
 

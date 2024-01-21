@@ -1495,7 +1495,7 @@ const databaseCk3 = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-				lastUpdate: "20&nbsp;січ. 2024"
+				lastUpdate: "21&nbsp;січ. 2024"
 			}
 		]
 	},

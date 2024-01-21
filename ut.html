@@ -34,6 +34,13 @@
 			font-size: 1.2rem;
 			font-weight: 500;
 		}
+		a > button.mod {
+			background: var(--secondary);
+			font-size: 1rem;
+		}
+		a > button.mod:hover { background: var(--secondary-hover); }
+		a > button.mod:active { background: var(--secondary-active); }
+		a > button.mod::after { content: " (зовнішнє посилання)"; }
 
 		#after {
 			z-index: 2;
@@ -159,15 +166,8 @@
 	<script type="text/javascript" src="ut-db.js"></script>
 	<script type="text/javascript">
 		function switchGame(game) {
-			if (game != "ck2") { document.getElementById("ck2").style.display = null; }
-			if (game != "eu4") { document.getElementById("eu4").style.display = null; }
-			if (game != "cs") { document.getElementById("cs").style.display = null; }
-			if (game != "stel") { document.getElementById("stel").style.display = null; }
-			if (game != "hoi4") { document.getElementById("hoi4").style.display = null; }
-			if (game != "ir") { document.getElementById("ir").style.display = null; }
-			if (game != "ck3") { document.getElementById("ck3").style.display = null; }
-			if (game != "v3") { document.getElementById("v3").style.display = null; }
-			if (game != "cs2") { document.getElementById("cs2").style.display = null; }
+			let allGames = document.getElementsByClassName("game");
+			for (i = 0; i < allGames.length; i++) { allGames[i].style.display = null; }
 			document.getElementById(game).style.display = "block";
 
 			let gameTitle;
@@ -176,10 +176,10 @@
 				case "eu4": gameTitle = "Europa Universalis IV"; break;
 				case "cs": gameTitle = "Cities: Skylines"; break;
 				case "stel": gameTitle = "Stellaris"; break;
-				case "hoi4": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2732054856' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Hearts of Iron IV</a>"; break;
+				case "hoi4": gameTitle = "Hearts of Iron IV"; break;
 				case "ir": gameTitle = "Imperator: Rome"; break;
-				case "ck3": gameTitle = "Crusader Kings III"; break; // https://steamcommunity.com/workshop/filedetails/?id=2945041310
-				case "v3": gameTitle = "<a href='https://steamcommunity.com/workshop/filedetails/?id=2972290673' target='_blank' title='Клацніть, щоби перейти на колекцію всіх доступних модів у Steam.'>Victoria 3</a>"; break;
+				case "ck3": gameTitle = "Crusader Kings III"; break;
+				case "v3": gameTitle = "Victoria 3"; break;
 				case "cs2": gameTitle = "Cities: Skylines II"; break;
 				default: gameTitle = "ігор Paradox";
 			}
@@ -325,6 +325,7 @@
 
 	<!-- HEARTS OF IRON IV -->
 	<div id="hoi4" class="game">
+		<a href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" target="_blank"><button class="mod">Колекція перекладів у Майстерні Steam</button></a>
 		<h2>Переклади гри (1)</h2>
 		<button class="mod" onclick="openModDetails(databaseHoi4, 0);">Hearts of Iron IV</button>
 	</div>
@@ -334,6 +335,7 @@
 
 	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
+		<!-- <a href="https://steamcommunity.com/workshop/filedetails/?id=2945041310" target="_blank"><button class="mod">Колекція перекладів у Майстерні Steam</button></a> -->
 		<button class="mod" onclick="openModDetails(databaseCk3, 0);">Crusader Kings III (<i>KYR_MAN</i>)</button>
 		<button class="mod" onclick="openModDetails(databaseCk3, 1);">Crusader Kings III (<i>Спільнота</i>)</button>
 		<button class="mod" onclick="openModDetails(databaseCk3, 2);">Crusader Kings III (<i>EYELESS</i>)</button>
@@ -341,6 +343,7 @@
 
 	<!-- VICTORIA 3 -->
 	<div id="v3" class="game">
+		<a href="https://steamcommunity.com/workshop/filedetails/?id=2972290673" target="_blank"><button class="mod">Колекція перекладів у Майстерні Steam</button></a>
 		<h2>Переклади гри (1)</h2>
 		<button class="mod" onclick="openModDetails(databaseV3, 0);">Victoria 3 (<i>Godresky</i>)</button>
 

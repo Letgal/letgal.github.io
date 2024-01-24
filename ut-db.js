@@ -443,13 +443,14 @@ const databaseHoi4 = [
 	{
 		category: 1,
 		mod: "Across the Dnieper",
-		authors: ["Alfer209"],
+		authors: ["Alfer209", "w1ron[UA]", "ILP"],
+		image: "2306473078268315846/0795820794B5622ED13C4ED167536FFF5527AA66",
 		links: [
 			{
 				type: "Steam",
-				link: "https://steamcommunity.com/workshop/filedetails/?id=3125901830",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3145375996",
 				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3033918961",
-				lang: "англ.", lastUpdate: "29&nbsp;груд. 2023"
+				lang: "англ.", lastUpdate: "23&nbsp;січ. 2024"
 			}
 		]
 	},
@@ -1495,7 +1496,7 @@ const databaseCk3 = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-				lastUpdate: "21&nbsp;січ. 2024"
+				version: "1.11.4", lastUpdate: "23&nbsp;січ. 2024"
 			}
 		]
 	},

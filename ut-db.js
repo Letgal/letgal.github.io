@@ -21,7 +21,7 @@ const databaseEu4 = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-				version: "1.36", lastUpdate: "10&nbsp;січ. 2024"
+				version: "1.36", lastUpdate: "30&nbsp;січ. 2024"
 			},
 			{
 				type: "GitHub",
@@ -34,18 +34,7 @@ const databaseEu4 = [
 const databaseCs = [
 	{
 		mod: "Cities: Skylines",
-		authors: ["Спільнота"],
-		image: "",
-		links: [
-			{
-				type: "Crowdin",
-				link: "https://crowdin.com/project/cities-skylines"
-			}
-		]
-	},
-	{
-		mod: "Cities: Skylines",
-		authors: ["Kemza"], note: "<i>Vasenka88</i>",
+		authors: ["Kemza", "Vasenka88"],
 		image: "2080157681027340972/505CBA24E786CF6236B936DDC553FC4060F71CDF",
 		links: [
 			{
@@ -66,6 +55,18 @@ const databaseCs = [
 				type: "Google Диск",
 				link: "https://drive.google.com/drive/folders/1q8SZfQE3ZkZAMC3Kni3DU2ihpijPdtfQ",
 				lastUpdate: "8&nbsp;жовт. 2023"
+			}
+		]
+	},
+	{
+		mod: "Cities: Skylines",
+		authors: ["Спільнота"],
+		image: "",
+		links: [
+			{
+				type: "Crowdin",
+				link: "https://crowdin.com/project/cities-skylines",
+				lastUpdate: "26&nbsp;вер. 2023"
 			}
 		]
 	},
@@ -1496,18 +1497,7 @@ const databaseCk3 = [
 			{
 				type: "Steam",
 				link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-				version: "1.11.4", lastUpdate: "23&nbsp;січ. 2024"
-			}
-		]
-	},
-	{
-		mod: "Crusader Kings III",
-		authors: ["Спільнота"], note: "(<i>dfk</i>, <i>ser_rocko</i> та інші)",
-		image: "",
-		links: [
-			{
-				type: "Crowdin",
-				link: "https://crowdin.com/project/crusader-kings-iii-ukrainian"
+				version: "1.11.4", lastUpdate: "30&nbsp;січ. 2024"
 			}
 		]
 	},
@@ -1522,13 +1512,25 @@ const databaseCk3 = [
 				version: "1.9.0.4"
 			}
 		]
+	},
+	{
+		mod: "Crusader Kings III",
+		authors: ["Спільнота"], note: "(<i>dfk</i>, <i>ser_rocko</i> та інші)",
+		image: "",
+		links: [
+			{
+				type: "Crowdin",
+				link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
+				lastUpdate: "1&nbsp;січ. 2024"
+			}
+		]
 	}
 ]
 const databaseV3 = [
 	{
 		category: 0,
 		mod: "Victoria 3",
-		authors: ["Godresky"], note: "<dfn title='З допомогою:\n  &bull; Пан Дмитро\n  &bull; Пані Меліса\n  &bull; remark644\n  &bull; Пан Андріян\n  &bull; _rlly_\n  &bull; twentysixz\n  &bull; Letōn (шрифти)\n  &bull; Дружня спільнота\n  &bull; Греко-католицька церква'>�</dfn>",
+		authors: ["Godresky"], note: "та <dfn title='З допомогою:\n  &bull; Пан Дмитро\n  &bull; Пані Меліса\n  &bull; remark644\n  &bull; Пан Андріян\n  &bull; _rlly_\n  &bull; twentysixz\n  &bull; Letōn (шрифти)\n  &bull; Дружня спільнота\n  &bull; Греко-католицька церква'>інші</dfn>",
 		image: "1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4",
 		links: [
 			{

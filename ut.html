@@ -10,6 +10,9 @@
 			--gold-color: darkgoldenrod;
 			--gold-color-hover: goldenrod;
 			--invalid: coral;
+			--mod-grid2-width: calc(50% - 0.25em);
+			--mod-grid3-width: calc((100% - 1em) / 3);
+			--mod-grid4-width: calc(25% - 0.375em);
 			--entry-thumbnail-height: 200px;
 		}
 		/*body {
@@ -23,6 +26,14 @@
 		p[title], span[title] { text-decoration: underline; cursor: help; }
 
 		.game { display: none; }
+
+		/* MODLIST */
+		.gridlist { display: grid; gap: 0.5em; }
+		.gridlist.col-2 { grid-template-columns: var(--mod-grid2-width) var(--mod-grid2-width); }
+		.gridlist.col-3 { grid-template-columns: var(--mod-grid3-width) var(--mod-grid3-width) var(--mod-grid3-width); }
+		.gridlist.col-4 { grid-template-columns: var(--mod-grid4-width) var(--mod-grid4-width) var(--mod-grid4-width) var(--mod-grid4-width); }
+
+		.mod.old { color: var(--invalid); }
 
 		button.mod {
 			width: 100%;
@@ -118,7 +129,7 @@
 
 		.grid {
 			display: grid;
-			grid-template-columns: auto auto auto;
+			grid-template-columns: calc((100% - 2em) / 3) calc((100% - 2em) / 3) calc((100% - 2em) / 3);
 			gap: 0.5rem; column-gap: 1rem;
 			margin-top: 0.5rem;
 		}
@@ -246,8 +257,8 @@
 
 			const modal = document.getElementById("mod-details");
 
-			if (database[i].image) { modal.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + database[i].image + "/?imw=200'>"; }
-			else { modal.innerHTML = "<div class='noimage'></div>"; }
+			if (database[i].image) { modal.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + database[i].image + "/'>"; }
+			else { modal.innerHTML += "<div class='noimage'></div>"; }
 			modal.innerHTML += "<h3>" + database[i].mod + "</h3>";
 			const modAuthors = document.createElement("p");
 				modAuthors.className = "authors";
@@ -304,16 +315,18 @@
 	<h1>Моди для <i id="title"></i> українською</h1>
 
 	<!-- CRUSADER KINGS II -->
-	<div id="ck2" class="game"><button class="mod" onclick="openModDetails(databaseCk2, 0);">Crusader Kings II</button></div>
+	<div id="ck2" class="game"><button class="mod" onclick="openModDetails(databaseCk2, 0);">-</button></div>
 
 	<!-- EUROPA UNIVERSALIS IV -->
-	<div id="eu4" class="game"><button class="mod" onclick="openModDetails(databaseEu4, 0);">Europa Universalis IV</button></div>
+	<div id="eu4" class="game"><button class="mod" onclick="openModDetails(databaseEu4, 0);"><span title="Оновлено для версії 1.36">1.36</span></button></div>
 
 	<!-- CITIES: SKYLINES -->
 	<div id="cs" class="game">
 		<h2>Переклади гри (2)</h2>
-		<button class="mod" onclick="openModDetails(databaseCs, 0);">Cities: Skylines (<i>Спільнота</i>)</button>
-		<button class="mod" onclick="openModDetails(databaseCs, 1);">Cities: Skylines (<i>Kemza</i> & <i>Vasenka88</i>)</button>
+		<div class="gridlist col-2">
+			<button class="mod" onclick="openModDetails(databaseCs, 0);">Від <i>Kemza</i> та <i>Vasenka88</i></button>
+			<button class="mod" onclick="openModDetails(databaseCs, 1);"><i>Crowdin</i></button>
+		</div>
 
 		<h2>Переклади модів (1)</h2>
 		<button class="mod" onclick="openModDetails(databaseCs, 2);">No Problem Notifications</button>
@@ -322,10 +335,12 @@
 	<!-- STELLARIS -->
 	<div id="stel" class="game">
 		<h2>Переклади гри (4)</h2>
-		<button class="mod" onclick="openModDetails(databaseStel, 0);">Stellaris (<i>Ivan Anthony</i>)</button>
-		<button class="mod" onclick="openModDetails(databaseStel, 1);">Stellaris (<i>Clamor_S</i>)</button>
-		<button class="mod" onclick="openModDetails(databaseStel, 2);">Stellaris (<i>ser_rocko</i>)</button>
-		<button class="mod" onclick="openModDetails(databaseStel, 3);">Stellaris (<i>Команда &laquo;Єднання&raquo;</i>)</button>
+		<div class="gridlist col-4">
+			<button class="mod" onclick="openModDetails(databaseStel, 0);"><span title="Оновлено для версії 3.10.3">3.10.3</span></button>
+			<button class="mod old" onclick="openModDetails(databaseStel, 1);"><span title="Оновлено для версії 3.8.4">3.8.4</span></button>
+			<button class="mod old" onclick="openModDetails(databaseStel, 2);"><span title="Оновлено для версії 3.8.2">3.8.2</span></button>
+			<button class="mod old" onclick="openModDetails(databaseStel, 3);"><span title="Оновлено для версії 3.6.1">3.6.1</span></button>
+		</div>
 
 		<h2>Переклади модів (3)</h2>
 		<button class="mod" onclick="openModDetails(databaseStel, 4);">Superstates - Imperium Alternatives</button>
@@ -338,25 +353,27 @@
 	<div id="hoi4" class="game">
 		<a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" target="_blank">Колекція перекладів у Майстерні Steam</a>
 		<h2>Переклади гри (1)</h2>
-		<button class="mod" onclick="openModDetails(databaseHoi4, 0);">Hearts of Iron IV</button>
+		<button class="mod" onclick="openModDetails(databaseHoi4, 0);"><span title="Оновлено для версії 1.13.6">1.13.6</span></button>
 	</div>
 
 	<!-- IMPERATOR: ROME -->
-	<div id="ir" class="game"><button class="mod" onclick="openModDetails(databaseIr, 0);">Imperator: Rome</button></div>
+	<div id="ir" class="game"><button class="mod" onclick="openModDetails(databaseIr, 0);">-</button></div>
 
 	<!-- CRUSADER KINGS III -->
 	<div id="ck3" class="game">
 		<!-- <a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2945041310" target="_blank">Колекція перекладів у Майстерні Steam</a> -->
-		<button class="mod" onclick="openModDetails(databaseCk3, 0);">Crusader Kings III (<i>KYR_MAN</i>)</button>
-		<button class="mod" onclick="openModDetails(databaseCk3, 1);">Crusader Kings III (<i>Спільнота</i>)</button>
-		<button class="mod" onclick="openModDetails(databaseCk3, 2);">Crusader Kings III (<i>EYELESS</i>)</button>
+		<div class="gridlist col-3">
+			<button class="mod" onclick="openModDetails(databaseCk3, 0);"><span title="Оновлено для версії 1.11.4">1.11.4</span></button>
+			<button class="mod old" onclick="openModDetails(databaseCk3, 1);"><span title="Оновлено для версії 1.9.0.4">1.9.0.4</span></button>
+			<button class="mod" onclick="openModDetails(databaseCk3, 2);"><i>Crowdin</i></button>
+		</div>
 	</div>
 
 	<!-- VICTORIA 3 -->
 	<div id="v3" class="game">
 		<a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2972290673" target="_blank">Колекція перекладів у Майстерні Steam</a>
 		<h2>Переклади гри (1)</h2>
-		<button class="mod" onclick="openModDetails(databaseV3, 0);">Victoria 3 (<i>Godresky</i>)</button>
+		<button class="mod" onclick="openModDetails(databaseV3, 0);"><span title="Оновлено для версії 1.5.12">1.5.12</span></button>
 
 		<h2>Переклади модів (5)</h2>
 		<button class="mod" onclick="openModDetails(databaseV3, 1);">Divergences</button>
@@ -367,7 +384,7 @@
 	</div>
 
 	<!-- CITIES: SKYLINES II -->
-	<div id="cs2" class="game"><button class="mod" onclick="openModDetails(databaseCs2, 0);">Cities: Skylines II</button></div>
+	<div id="cs2" class="game"><button class="mod" onclick="openModDetails(databaseCs2, 0);"><span title="Оновлено для версії 1.0.18f1">1.0.18f1</span></button></div>
 
 	<div id="after" onclick="closeModDetails();"></div>
 	<div id="mod-details"><button id='close' onclick='closeModDetails();'>&times;</button></div>

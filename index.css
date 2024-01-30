@@ -18,7 +18,7 @@ a.block, button.block {
 	padding: 0.5rem;
 	border-radius: 0.5rem;
 }
-a.block { background: var(--primary); color: black; }
+a.block { background: var(--primary); color: #222; }
 a.block:hover { background: var(--primary-hover); text-decoration: none; }
 a.block:active { background: var(--primary-active); }
 #logo {

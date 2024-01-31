@@ -27,14 +27,7 @@
 
 		.game { display: none; }
 
-		/* MODLIST */
-		.gridlist { display: grid; gap: 0.5em; }
-		.gridlist.col-2 { grid-template-columns: var(--mod-grid2-width) var(--mod-grid2-width); }
-		.gridlist.col-3 { grid-template-columns: var(--mod-grid3-width) var(--mod-grid3-width) var(--mod-grid3-width); }
-		.gridlist.col-4 { grid-template-columns: var(--mod-grid4-width) var(--mod-grid4-width) var(--mod-grid4-width) var(--mod-grid4-width); }
-
-		.mod.old { color: var(--invalid); }
-
+		/* MOD LIST */
 		button.mod {
 			width: 100%;
 			margin-block: 0.125em;
@@ -64,6 +57,14 @@
 			font-size: smaller;
 		}
 
+		.gridlist { display: grid; gap: 0.5em; }
+		.gridlist.col-2 { grid-template-columns: var(--mod-grid2-width) var(--mod-grid2-width); }
+		.gridlist.col-3 { grid-template-columns: var(--mod-grid3-width) var(--mod-grid3-width) var(--mod-grid3-width); }
+		.gridlist.col-4 { grid-template-columns: var(--mod-grid4-width) var(--mod-grid4-width) var(--mod-grid4-width) var(--mod-grid4-width); }
+
+		.mod.old { color: var(--invalid); }
+
+		/* MODAL WINDOW & BG */
 		#after {
 			z-index: 2;
 			display: none; opacity: 0;
@@ -72,7 +73,6 @@
 			cursor: pointer;
 			animation: fadeIn .5s ease forwards;
 		}
-
 		#mod-details {
 			z-index: 2;
 			display: none;
@@ -84,27 +84,7 @@
 			box-shadow: 0 0 2rem black;
 			animation: slideUp .5s ease forwards;
 		}
-		#mod-details > h3 {
-			margin-top: 0;
-			text-align: center;
-		}
-		#mod-details > img:first-of-type, #mod-details > div.noimage {
-			float: left;
-			height: var(--entry-thumbnail-height);
-			margin-right: 1em;
-			border: 1px solid #111;
-			border-radius: 1em;
-			box-shadow: 0 0.5em 0.5em black;
-		}
-		#mod-details > div.noimage { aspect-ratio: 1/1; background: #222; }
-		#mod-details > p {
-			color: var(--special);
-		}
-		#mod-details > p i { color: var(--text-color); }
-		#mod-details > p.authors i { font-weight: bold; }
-		#mod-details > p.authors i:first-of-type { font-size: larger; }
-
-		button#close {
+		#close {
 			float: right;
 			box-sizing: content-box;
 			height: calc(7em / 6); aspect-ratio: 1/1;
@@ -118,22 +98,46 @@
 			font-weight: bold;
 			transition: .2s ease;
 		}
-		button#close:hover {
+		#close:hover {
 			border-color: var(--primary-hover);
 			color: var(--primary-hover);
 		}
-		button#close:active {
+		#close:active {
 			border-color: var(--primary-active);
 			color: var(--primary-active);
 		}
 
-		.grid {
+		/* MOD ENTRIES */
+		#mod-details > h3 {
+			margin-top: 0;
+			text-align: center;
+		}
+		#mod-details > hr { margin-block: 1em; }
+
+		.entry { min-height: calc(var(--entry-thumbnail-height) + 2px); }
+		.entry > img:first-of-type, .entry > div.noimage {
+			float: left;
+			height: var(--entry-thumbnail-height);
+			margin-right: 1em;
+			border: 1px solid #111;
+			border-radius: 1em;
+			box-shadow: 0 0.5em 0.5em black;
+		}
+		.entry > div.noimage { aspect-ratio: 1/1; background: #222; }
+		.entry > p {
+			color: var(--special);
+		}
+		.entry > p span, .entry > p i { color: var(--text-color); }
+		.entry > p.authors span { font-weight: bold; font-style: italic; }
+		.entry > p.authors span:first-of-type { font-size: larger; }
+
+		.links-grid {
 			display: grid;
 			grid-template-columns: calc((100% - 2em) / 3) calc((100% - 2em) / 3) calc((100% - 2em) / 3);
 			gap: 0.5rem; column-gap: 1rem;
 			margin-top: 0.5rem;
 		}
-		.grid > div {
+		.links-grid > div {
 			display: inline-block;
 			border: 1px solid var(--border);
 			border-radius: 0.5em;
@@ -142,19 +146,19 @@
 			font-size: 0.8rem;
 			overflow: hidden;
 		}
-		.grid > div h5 {
+		.links-grid > div h5 {
 			margin: 0;
 			padding-inline: 0.5em;
 			background: linear-gradient(to right, var(--secondary), var(--secondary-hover));
 			color: var(--text-color);
 			font-size: 0.8rem;
 		}
-		.grid > div.steam h5 { background: linear-gradient(to right, #235, #457); }
-		.grid > div.old h5 { background: linear-gradient(to right, #733, #955); }
-		.grid > div p { margin: 0 0.5em; }
-		.grid > div p i { color: var(--text-color); }
-		.grid > div.old p.version i { color: var(--invalid); }
-		.grid > div a {
+		.links-grid > div.steam h5 { background: linear-gradient(to right, #235, #457); }
+		.links-grid > div.old h5 { background: linear-gradient(to right, #733, #955); }
+		.links-grid > div p { margin: 0 0.5em; }
+		.links-grid > div p i { color: var(--text-color); }
+		.links-grid > div.old p.version i { color: var(--invalid); }
+		.links-grid > div a {
 			float: right;
 			display: inline-block;
 			margin: 0.25em;
@@ -165,15 +169,17 @@
 			font-size: 120%;
 			transition: .2s ease;
 		}
-		.grid > div a:hover {
+		.links-grid > div a:hover {
 			background: var(--secondary-hover);
 			text-decoration: none;
 		}
-		.grid > div a:last-of-type {
+		.links-grid > div a:last-of-type {
 			background: var(--primary);
 			color: black;
 		}
-		.grid > div a:last-of-type:hover { background: var(--primary-hover); }
+		.links-grid > div a:last-of-type:hover { background: var(--primary-hover); }
+		.more-info { font-size: smaller; font-weight: bold; }
+		.more-info > a { cursor: pointer; }
 
 		@keyframes fadeIn {
 			from { opacity: 0; }
@@ -187,12 +193,13 @@
 	<script type="text/javascript" src="shared.js"></script>
 	<script type="text/javascript" src="ut-db.js"></script>
 	<script type="text/javascript">
+		let allGames = document.getElementsByClassName("game");
+		let gameTitle;
+
 		function switchGame(game) {
-			let allGames = document.getElementsByClassName("game");
 			for (i = 0; i < allGames.length; i++) { allGames[i].style.display = null; }
 			document.getElementById(game).style.display = "block";
 
-			let gameTitle;
 			switch(game) {
 				case "ck2": gameTitle = "Crusader Kings II"; break;
 				case "eu4": gameTitle = "Europa Universalis IV"; break;
@@ -216,6 +223,7 @@
 					button.className = "mod cat" + databaseHoi4[i].category;
 					button.setAttribute("onclick", "openModDetails(databaseHoi4, " + i + ")");
 					button.innerHTML = databaseHoi4[i].mod;
+					// if (databaseHoi4[i].entries.length > 1) { button.innerHTML += " (" + databaseHoi4[i].entries.length + ")"; }
 				document.getElementById("hoi4").appendChild(button);
 			}
 		}
@@ -257,34 +265,40 @@
 
 			const modal = document.getElementById("mod-details");
 
-			if (database[i].image) { modal.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + database[i].image + "/'>"; }
-			else { modal.innerHTML += "<div class='noimage'></div>"; }
 			modal.innerHTML += "<h3>" + database[i].mod + "</h3>";
-			const modAuthors = document.createElement("p");
-				modAuthors.className = "authors";
-				modAuthors.innerHTML += "Автор(и): "
-				for (j = 0; j < database[i].authors.length; j++) {
-					modAuthors.innerHTML += "<i>" + database[i].authors[j] + "</i>";
-					if (j < (database[i].authors.length - 1)) { modAuthors.innerHTML += ", "; }
-				}
-				if (database[i].note) { modAuthors.innerHTML += " " + database[i].note; }
-			modal.appendChild(modAuthors);
-			const linksList = document.createElement("div");
-				linksList.className = "grid";
-				for (j = 0; j < database[i].links.length; j++) {
-					const linkContainer = document.createElement("div");
-						if (database[i].links[j].type == "Steam") { linkContainer.classList.add("steam"); }
-						if (database[i].links[j].old) { linkContainer.classList.add("old"); }
-						linkContainer.innerHTML += "<h5>" + database[i].links[j].type + "</h5>"
-						if (database[i].links[j].linkOriginal) { linkContainer.innerHTML += "<a href='" + database[i].links[j].linkOriginal + "' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a>"; }
-						linkContainer.innerHTML += "<a href='" + database[i].links[j].link + "' target='_blank' title='Перейти на сторінку перекладу'>&raquo;</a>";
-						if (database[i].links[j].lang) { linkContainer.innerHTML += "<p>Мова гри: <i>" + database[i].links[j].lang + "</i></p>"; }
-						if (database[i].links[j].version) { linkContainer.innerHTML += "<p class='version'>Підтримувана версія: <i>" + database[i].links[j].version + "</i></p>"; }
-						if (database[i].links[j].lastUpdate) { linkContainer.innerHTML += "<p>Останнє оновлення: <i>" + database[i].links[j].lastUpdate + "</i></p>"; }
-					linksList.appendChild(linkContainer);
-				}
-			modal.appendChild(linksList);
-			if (x[y].more) { modal.innerHTML += x[y].more; }
+			for (j = 0; j < database[i].entries.length; j++) {
+				if (j > 0) { modal.innerHTML += "<hr>"; }
+				const entry = document.createElement("div");
+					entry.className = "entry";
+					if (database[i].entries[j].image) { entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + database[i].entries[j].image + "/'>"; }
+					else { entry.innerHTML += "<div class='noimage'></div>"; }
+					const modAuthors = document.createElement("p");
+						modAuthors.className = "authors";
+						modAuthors.innerHTML += "Автор(и): "
+						for (k = 0; k < database[i].entries[j].authors.length; k++) {
+							modAuthors.innerHTML += "<span>" + database[i].entries[j].authors[k] + "</span>";
+							if (k < (database[i].entries[j].authors.length - 1)) { modAuthors.innerHTML += ", "; }
+						}
+						if (database[i].entries[j].note) { modAuthors.innerHTML += " " + database[i].entries[j].note; }
+					entry.appendChild(modAuthors);
+					const linksList = document.createElement("div");
+						linksList.className = "links-grid";
+						for (k = 0; k < database[i].entries[j].links.length; k++) {
+							const linkContainer = document.createElement("div");
+								if (database[i].entries[j].links[k].type == "Steam") { linkContainer.classList.add("steam"); }
+								if (database[i].entries[j].links[k].old) { linkContainer.classList.add("old"); }
+								linkContainer.innerHTML += "<h5>" + database[i].entries[j].links[k].type + "</h5>"
+								if (database[i].entries[j].links[k].linkOriginal) { linkContainer.innerHTML += "<a href='" + database[i].entries[j].links[k].linkOriginal + "' target='_blank' title='Перейти на сторінку ориґіналу'>&raquo;</a>"; }
+								linkContainer.innerHTML += "<a href='" + database[i].entries[j].links[k].link + "' target='_blank' title='Перейти на сторінку перекладу'>&raquo;</a>";
+								if (database[i].entries[j].links[k].lang) { linkContainer.innerHTML += "<p>Мова гри: <i>" + database[i].entries[j].links[k].lang + "</i></p>"; }
+								if (database[i].entries[j].links[k].version) { linkContainer.innerHTML += "<p class='version'>Підтрим. версія: <i>" + database[i].entries[j].links[k].version + "</i></p>"; }
+								if (database[i].entries[j].links[k].lastUpdate) { linkContainer.innerHTML += "<p>Оновлено <i>" + database[i].entries[j].links[k].lastUpdate + "</i></p>"; }
+							linksList.appendChild(linkContainer);
+						}
+					entry.appendChild(linksList);
+					if (database[i].entries[j].more) { entry.innerHTML += database[i].entries[j].more; }
+				modal.appendChild(entry);
+			}
 		}
 
 		function closeModDetails() {

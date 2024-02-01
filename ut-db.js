@@ -95,6 +95,25 @@ const databaseCs = [
 				}
 			]
 		} ]
+	},
+	{
+		mod: "Move It!",
+		entries: [ {
+			authors: ["Alex Sokol"],
+			image: "2273816816209782774/372DCBB1BB5DE58DA63F5ABAC7C308ED04FE93BF",
+			links: [
+				{
+					type: "Steam (ручне встановлення)",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3099028765",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1619685021"
+				},
+				{
+					type: "Google Диск",
+					link: "https://drive.google.com/drive/folders/1isIqi4ZEmKWGcC5XgkY0kmVcVfMW91NW",
+					lastUpdate: "28&nbsp;лист. 2023"
+				}
+			]
+		} ]
 	}
 ]
 const databaseStel = [

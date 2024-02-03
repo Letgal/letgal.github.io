@@ -962,10 +962,10 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, official: true,
 		mod: "Ukraine Above All",
 		entries: [ {
-			authors: ["GBV"], note: "(офіційний) <dfn title='Опублікував: GBV\nПерекладачі:\n  &bull; Lonster\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>�</dfn>",
+			authors: ["GBV", "Lonster"], note: "та <dfn title='Опублікував: GBV\nПерекладачі:\n  &bull; Lonster\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>інші</dfn>",
 			image: "2040735491762509515/3066631A48A09B3FC6F24AC5D8699F5E84BB2D61",
 			links: [
 				{
@@ -998,10 +998,10 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, official: true,
 		mod: "The Last Hetman",
 		entries: [ {
-			authors: ["GGA Studio"], note: "(офіційний)",
+			authors: ["GGA Studio"],
 			image: "2031738275759068112/A00172D4682B7118CCCAC7E5DDD4561DA07EA973",
 			links: [
 				{
@@ -1029,11 +1029,11 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	{
-		category: 2,
+	/*{
+		category: 2, official: true,
 		mod: "Ukrainian People's Republic in Exile",
 		entries: [ {
-			authors: ["SteveJobs"], note: "(офіційний)",
+			authors: ["SteveJobs"],
 			image: "2047502867529771871/B5B5FE0A369BB7259A0B2F0E3AF55366E53927F1",
 			links: [
 				{
@@ -1044,19 +1044,19 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
-		category: 2,
+		category: 2, official: true,
 		mod: "Rise of Kharkiv",
 		entries: [ {
-			authors: ["Marsik"], note: "(офіційний)",
+			authors: ["Marsik"],
 			image: "2107179278780894840/74428728AEFF46BACA97A69400FF37C6421712CF",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3046951035",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3046950536",
-					lang: "англ., укр.", lastUpdate: "3&nbsp;лист. 2023"
+					lang: "англ., укр.", lastUpdate: "22&nbsp;січ. 2024"
 				}
 			]
 		} ]

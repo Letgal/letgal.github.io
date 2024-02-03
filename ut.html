@@ -112,6 +112,12 @@
 			margin-top: 0;
 			text-align: center;
 		}
+		#mod-details > h3 img {
+			height: 1em;
+			vertical-align: -7.5%;
+			margin-right: 0.25em;
+			cursor: help;
+		}
 		#mod-details > hr { margin-block: 1em; }
 
 		.entry { min-height: calc(var(--entry-thumbnail-height) + 2px); }
@@ -222,7 +228,8 @@
 				const button = document.createElement("button");
 					button.className = "mod cat" + databaseHoi4[i].category;
 					button.setAttribute("onclick", "openModDetails(databaseHoi4, " + i + ")");
-					button.innerHTML = databaseHoi4[i].mod;
+					// if (databaseHoi4[i].official) { button.innerHTML += "<img src='gfx/official-mark.svg' title='Офіційний переклад'>"; }
+					button.innerHTML += databaseHoi4[i].mod;
 					// if (databaseHoi4[i].entries.length > 1) { button.innerHTML += " (" + databaseHoi4[i].entries.length + ")"; }
 				document.getElementById("hoi4").appendChild(button);
 			}
@@ -265,7 +272,10 @@
 
 			const modal = document.getElementById("mod-details");
 
-			modal.innerHTML += "<h3>" + database[i].mod + "</h3>";
+			const modTitle = document.createElement("h3");
+				if (database[i].official) { modTitle.innerHTML += "<img src='gfx/official-mark.svg' title='Офіційний переклад'>"; }
+				modTitle.innerHTML += database[i].mod;
+			modal.appendChild(modTitle);
 			for (j = 0; j < database[i].entries.length; j++) {
 				if (j > 0) { modal.innerHTML += "<hr>"; }
 				const entry = document.createElement("div");

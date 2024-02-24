@@ -23,7 +23,7 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.36", lastUpdate: "30&nbsp;січ. 2024"
+					version: "1.36", lastUpdate: "19&nbsp;лют. 2024"
 				},
 				{
 					type: "GitHub",
@@ -48,8 +48,7 @@ const databaseCs = [
 				},
 				{
 					type: "Steam (ручне встановлення)",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3011689406",
-					lastUpdate: "8&nbsp;жовт. 2023"
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3011689406"
 				},
 				{
 					type: "GitHub",
@@ -58,7 +57,7 @@ const databaseCs = [
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1q8SZfQE3ZkZAMC3Kni3DU2ihpijPdtfQ",
-					lastUpdate: "8&nbsp;жовт. 2023"
+					lastUpdate: "20&nbsp;січ. 2024"
 				}
 			]
 		} ]
@@ -1029,22 +1028,22 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	/*{
+	{
 		category: 2, official: true,
-		mod: "Ukrainian People's Republic in Exile",
+		mod: "UPR in Exile",
 		entries: [ {
 			authors: ["SteveJobs"],
-			image: "2047502867529771871/B5B5FE0A369BB7259A0B2F0E3AF55366E53927F1",
+			image: "5948762624228797387/B5B5FE0A369BB7259A0B2F0E3AF55366E53927F1",
 			links: [
 				{
 					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3025376231",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3167117205",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3025365180",
-					lang: "англ., укр.", lastUpdate: "11&nbsp;жовт. 2023"
+					lang: "англ., укр.", lastUpdate: "24&nbsp;лют. 2024"
 				}
 			]
 		} ]
-	},*/
+	},
 	{
 		category: 2, official: true,
 		mod: "Rise of Kharkiv",
@@ -1714,7 +1713,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					version: "1.11.4", lastUpdate: "30&nbsp;січ. 2024"
+					version: "1.11.4", lastUpdate: "23&nbsp;лют. 2024"
 				}
 			]
 		} ]
@@ -1742,7 +1741,7 @@ const databaseCk3 = [
 				{
 					type: "Crowdin",
 					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
-					lastUpdate: "1&nbsp;січ. 2024"
+					lastUpdate: "11&nbsp;лют. 2024"
 				}
 			]
 		} ]
@@ -1890,7 +1889,7 @@ const databaseCs2 = [
 				{
 					type: "GitHub",
 					link: "https://github.com/minenkoden/skylines2-ua",
-					version: "1.0.18f1"
+					version: "1.0.19f1"
 				},
 				{
 					type: "Steam (ручне встановлення)",

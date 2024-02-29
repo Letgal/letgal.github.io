@@ -5,8 +5,13 @@ const databaseCk2 = [
 			authors: ["Ucraina Unione Strategists"],
 			links: [
 				{
-					type: "Telegram", old: true,
+					type: "Telegram (інсталятор)", old: true,
 					link: "https://t.me/PatchLocalisationUA/131",
+					lastUpdate: "18&nbsp;лист. 2021"
+				},
+				{
+					type: "Google Диск (інсталятор)", old: true,
+					link: "https://drive.google.com/file/d/1HLtltgMC7ym9X710YR4Ob-KsUsJUCdfw/view",
 					lastUpdate: "18&nbsp;лист. 2021"
 				}
 			]
@@ -299,22 +304,22 @@ const databaseHoi4 = [
 		entries: [ {
 			authors: ["Letōn", "TTTSHOK", "Lonster", "OlshenUA"],
 			note: "та <dfn title='Ініціатор перекладу: Letōn\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; BmB Kun\n  &bull; Churban\n  &bull; Shrek_UA\n  &bull; Dmytr0 Gaming'>інші</dfn>",
-			image: "2054240492562344100/2CDD1C9C02364E03BB3B8400052B0C8169BBB55F",
+			image: "2477613670055108412/047149D8243863E8D75CBA17904AF11515247402",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос., укр.", version: "1.13.6", lastUpdate: "31&nbsp;груд. 2023"
+					lang: "англ., рос., укр.", version: "1.13.6", lastUpdate: "29&nbsp;лют. 2024"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос., укр.", version: "1.13.6", lastUpdate: "31&nbsp;груд. 2023"
+					lang: "англ., рос., укр.", version: "1.13.6", lastUpdate: "29&nbsp;лют. 2024"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос., укр.", version: "1.13.6", lastUpdate: "31&nbsp;груд. 2023"
+					lang: "англ., рос., укр.", version: "1.13.6", lastUpdate: "29&nbsp;лют. 2024"
 				},
 				{
 					type: "GitHub",
@@ -322,7 +327,7 @@ const databaseHoi4 = [
 					lang: "англ., рос., укр.", version: "1.13.6"
 				},
 				{
-					type: "Google Диск",
+					type: "Google Диск", old: true,
 					link: "https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view",
 					lang: "англ., рос., укр.", version: "1.13.6", lastUpdate: "31&nbsp;груд. 2023"
 				}
@@ -1713,7 +1718,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					version: "1.11.4", lastUpdate: "23&nbsp;лют. 2024"
+					version: "1.11.4", lastUpdate: "28&nbsp;лют. 2024"
 				}
 			]
 		} ]

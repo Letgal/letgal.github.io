@@ -303,7 +303,7 @@ const databaseHoi4 = [
 		mod: "Hearts of Iron IV",
 		entries: [ {
 			authors: ["Letōn", "TTTSHOK", "Lonster", "OlshenUA"],
-			note: "та <dfn title='Ініціатор перекладу: Letōn\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; BmB Kun\n  &bull; Churban\n  &bull; Shrek_UA\n  &bull; Dmytr0 Gaming'>інші</dfn>",
+			note: "та <dfn title='Ініціатор, головний перекладач: Letōn\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; BmB Kun\n  &bull; Churban\n  &bull; Shrek_UA\n  &bull; Dmytr0 Gaming'>інші</dfn>",
 			image: "2477613670055108412/047149D8243863E8D75CBA17904AF11515247402",
 			links: [
 				{
@@ -345,11 +345,13 @@ const databaseHoi4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
 					lang: "англ.", lastUpdate: "20&nbsp;січ. 2024"
 				},
 				{
 					type: "Paradox Mods", old: true,
 					link: "https://mods.paradoxplaza.com/mods/46206/Any",
+					linkOriginal: "https://mods.paradoxplaza.com/mods/6810/Any",
 					lang: "рос.", lastUpdate: "26&nbsp;черв. 2022"
 				}
 			]
@@ -1718,7 +1720,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					version: "1.11.4", lastUpdate: "28&nbsp;лют. 2024"
+					lang: "англ.", version: "1.11.4", lastUpdate: "2&nbsp;бер. 2024"
 				}
 			]
 		} ]

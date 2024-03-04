@@ -219,6 +219,12 @@
 			}
 			document.getElementById("title").innerHTML = gameTitle;
 		}
+
+		const shortMonth = ["січ", "лют", "бер", "квіт", "трав", "черв", "лип", "серп", "вер", "жовт", "лист", "груд"];
+		function formatDate(x) {
+			const trueDate = new Date(x);
+			return trueDate.getDate() + "&nbsp;" + shortMonth[trueDate.getMonth()] + ". " + trueDate.getFullYear();
+		}
 	</script>
 	<script type="text/javascript">
 		function createSimpleModListForHoi4() {
@@ -301,7 +307,7 @@
 								linkContainer.innerHTML += "<a href='" + database[i].entries[j].links[k].link + "' target='_blank' title='Перейти на сторінку перекладу'>&raquo;</a>";
 								if (database[i].entries[j].links[k].lang) { linkContainer.innerHTML += "<p>Мова гри: <i>" + database[i].entries[j].links[k].lang + "</i></p>"; }
 								if (database[i].entries[j].links[k].version) { linkContainer.innerHTML += "<p class='version'>Підтрим. версія: <i>" + database[i].entries[j].links[k].version + "</i></p>"; }
-								if (database[i].entries[j].links[k].lastUpdate) { linkContainer.innerHTML += "<p>Оновлено <i>" + database[i].entries[j].links[k].lastUpdate + "</i></p>"; }
+								if (database[i].entries[j].links[k].lastUpdate) { linkContainer.innerHTML += "<p>Оновлено <i>" + formatDate(database[i].entries[j].links[k].lastUpdate) + "</i></p>"; }
 							linksList.appendChild(linkContainer);
 						}
 					entry.appendChild(linksList);

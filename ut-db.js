@@ -463,6 +463,23 @@ const databaseHoi4 = [
 		mod: "Equestria at War",
 		entries: [
 			{
+				authors: ["Letōn"],
+				image: "2467481203452187089/9ECA52B6DA0F3FF70068C5A0F71F80751A4B090D",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
+						lang: "англ., рос.", version: "2.2.2", lastUpdate: "2024-03-09"
+					},
+					{
+						type: "GitHub",
+						link: "https://github.com/Letgal/hoi4_ut-eaw",
+						lang: "англ., рос.", version: "2.2.2"
+					}
+				]
+			},
+			{
 				authors: ["All-Ampirian"],
 				image: "2012600514542057610/EB5A283FB5FC8AADFBE34F5AB598BC6ED7F72C96",
 				links: [
@@ -471,17 +488,6 @@ const databaseHoi4 = [
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3028688252",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
 						lang: "рос.", lastUpdate: "2023-08-31"
-					}
-				]
-			},
-			{
-				authors: ["Letōn"],
-				image: "",
-				links: [
-					{
-						type: "GitHub",
-						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						lang: "англ.", version: "2.2.1.2"
 					}
 				]
 			}
@@ -1720,7 +1726,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.", version: "1.11.4", lastUpdate: "2024-03-07"
+					lang: "англ.", version: "1.11.4", lastUpdate: "2024-03-08"
 				}
 			]
 		} ]

@@ -470,12 +470,12 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.2.2", lastUpdate: "2024-03-09"
+						lang: "англ., рос.", version: "2.2.2.1", lastUpdate: "2024-03-11"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						lang: "англ., рос.", version: "2.2.2"
+						lang: "англ., рос.", version: "2.2.2.1"
 					}
 				]
 			},
@@ -984,7 +984,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2023-12-23"
+					lang: "рос.", lastUpdate: "2024-03-11"
 				},
 				{
 					type: "Transifex",
@@ -1052,7 +1052,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3167117205",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3025365180",
-					lang: "англ., укр.", lastUpdate: "2024-02-24"
+					lang: "англ., укр.", lastUpdate: "2024-03-11"
 				}
 			]
 		} ]

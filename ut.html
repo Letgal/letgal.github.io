@@ -10,9 +10,6 @@
 			--gold-color: darkgoldenrod;
 			--gold-color-hover: goldenrod;
 			--invalid: coral;
-			--mod-grid2-width: calc(50% - 0.25em);
-			--mod-grid3-width: calc((100% - 1em) / 3);
-			--mod-grid4-width: calc(25% - 0.375em);
 			--entry-thumbnail-height: 200px;
 		}
 		/*body {
@@ -58,9 +55,9 @@
 		}
 
 		.gridlist { display: grid; gap: 0.5em; }
-		.gridlist.col-2 { grid-template-columns: var(--mod-grid2-width) var(--mod-grid2-width); }
-		.gridlist.col-3 { grid-template-columns: var(--mod-grid3-width) var(--mod-grid3-width) var(--mod-grid3-width); }
-		.gridlist.col-4 { grid-template-columns: var(--mod-grid4-width) var(--mod-grid4-width) var(--mod-grid4-width) var(--mod-grid4-width); }
+		.gridlist.col-2 { grid-template-columns: 1fr 1fr; }
+		.gridlist.col-3 { grid-template-columns: 1fr 1fr 1fr; }
+		.gridlist.col-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
 
 		.mod.old { color: var(--invalid); }
 

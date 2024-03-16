@@ -1726,7 +1726,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.", version: "1.11.4", lastUpdate: "2024-03-13"
+					lang: "англ.", version: "1.11.4", lastUpdate: "2024-03-15"
 				}
 			]
 		} ]

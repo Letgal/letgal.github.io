@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Що я створив :: letgal.github.io</title>
+	<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/121316813">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<style type="text/css">
+		:root { --body-width: calc(100% / 1.5); }
+
+		.container {
+			display: grid; grid-template-columns: 1fr 1fr;
+			gap: 1em;
+		}
+		.container p { font-family: var(--sans-serif); font-size: smaller; }
+		.container ul { font-size: smaller; }
+
+		.container > div { padding: 0.5em; border: 1px solid var(--special2); }
+		.container > div::before {
+			display: block;
+			float: left;
+			min-width: 5em; height: 100%;
+			margin: -0.5em; margin-right: 0.5em;
+			background-size: contain; background-repeat: no-repeat;
+		}
+		.container > div h4 {
+			margin: 0;
+			text-align: center;
+		}
+		.container > div p { margin-block: 0.5em; }
+		.container > div ul { margin-block-start: 0.5em; margin-block-end: 0; }
+		.container > a { margin: 0; }
+
+		.category {
+			padding: 0.25em;
+			border-radius: 0.5em;
+			background-color: var(--button);
+			font-family: var(--sans-serif);
+			font-size: 75%;
+		}
+
+		#hoi4-uk::before { content: ""; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/2477613670055108412/047149D8243863E8D75CBA17904AF11515247402/"); }
+		#hoi4-eaw-uk::before { content: ""; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/2467481203452187089/9ECA52B6DA0F3FF70068C5A0F71F80751A4B090D/"); }
+		#hoi4-uk ul, #hoi4-eaw-uk ul { position: relative; left: 3em; }
+		#hoi4-minor-uk { grid-column: 1 / span 2; columns: 3; }
+	</style>
+	<script type="text/javascript" src="shared.js"></script>
+</head>
+<body>
+	<a id="logo" href="/" title="Повернутися на головну сторінку"><img></a>
+	<h1>Що я створив</h1>
+	<div class="container">
+		<div id="hoi4-uk">
+			<h4>Український переклад</h4>
+			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+			<ul>
+				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548">Steam</a></li>
+				<li><a href="https://mods.paradoxplaza.com/mods/38710/Any">Paradox Mods</a></li>
+				<li><a href="https://www.nexusmods.com/heartsofironiv/mods/53">Nexus Mods</a></li>
+				<li><a href="https://github.com/Letgal/hoi4_ukrainian_localization">GitHub</a></li>
+				<li><a href="https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view">Google Диск</a></li>
+			</ul>
+		</div>
+		<div id="hoi4-eaw-uk">
+			<h4>Equestria at War</h4>
+			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+			<ul>
+				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3176454246">Steam</a></li>
+				<li><a href="https://github.com/Letgal/hoi4_ul-equestria_at_war">GitHub</a></li>
+			</ul>
+		</div>
+		<div id="hoi4-minor-uk">
+			<h4>Невеликі моди</h4>
+			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+			<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3119420273">Збірка перекладів<small> (Steam)</small></a></li></ul>
+			<p>Dynamic Research Slots:</p>
+			<ul>
+				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2908253265">Steam</a></li>
+				<li><a href="https://mods.paradoxplaza.com/mods/55431/Any">Paradox Mods</a></li>
+				<li><a href="https://mega.nz/file/l4BlXKID#5F9mTQPhCrJiOjjdV3gji6yRISJEFtqjwg5BOKbXTUY">MEGA<small> (ZIP)</small></a></li>
+			</ul>
+			<p>Modifier Icons:</p>
+			<ul>
+				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2912150988">Steam</a></li>
+				<li><a href="https://mods.paradoxplaza.com/mods/55746/Any">Paradox Mods</a></li>
+				<li><a href="https://mega.nz/file/YlgyDLgS#iYBjSz9ANYK7x03x13Mfwe5mauJJTjqa2OD5LLCm38U">MEGA<small> (ZIP)</small></a></li>
+			</ul>
+		</div>
+		<!-- <div>
+			<h4>Словацький переклад</h4>
+			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+			<ul><li><a href="https://github.com/Letgal/hoi4_st">GitHub</a></li></ul>
+		</div> -->
+		<a class="block" href="https://drukarnia.com.ua/leton" style="grid-column: auto / span 2;">Переклади щоденників</a>
+	</div>
+	<!-- <h3>Окремі моди</h3>
+	<div class="creation">
+		<h4>Russian Civil War</h4>
+		<ul><li><a href="https://github.com/Letgal/hoi4_rcw">GitHub</a></li></ul>
+	</div>
+	<div class="creation">
+		<h4>Soviet Republics, Rise!</h4>
+		<ul><li><a href="https://github.com/Letgal/hoi4_srr">GitHub</a></li></ul>
+	</div>
+	<div class="creation">
+		<h4>Censorship&nbsp;&amp; Propaganda</h4>
+		<ul><li><a href="https://github.com/Letgal/hoi4_cap">GitHub</a></li></ul>
+	</div> -->
+</body>
+</html>

@@ -309,27 +309,27 @@ const databaseHoi4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос., укр.", version: "1.14.1", lastUpdate: "2024-03-08"
+					lang: "англ., рос., укр.", version: "1.14.3", lastUpdate: "2024-03-19"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос., укр.", version: "1.14.1", lastUpdate: "2024-03-08"
+					lang: "англ., рос., укр.", version: "1.14.3", lastUpdate: "2024-03-19"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос., укр.", version: "1.14.1", lastUpdate: "2024-03-08"
+					lang: "англ., рос., укр.", version: "1.14.3", lastUpdate: "2024-03-19"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					lang: "англ., рос., укр.", version: "1.14.1"
+					lang: "англ., рос., укр.", version: "1.14.3"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view",
-					lang: "англ., рос., укр.", version: "1.14.1", lastUpdate: "2024-03-08"
+					lang: "англ., рос., укр.", version: "1.14.3", lastUpdate: "2024-03-19"
 				}
 			],
 			more: "<p class='more-info'>Окремо також доступний <a href='https://steamcommunity.com/workshop/filedetails/?id=3119420273'>набір перекладів дрібних модів</a>:</p><ul style='font-size: small; columns: 2;'><li>Battle Royale (<a href='https://steamcommunity.com/workshop/filedetails/?id=1292092419'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36492/Any'><i>Paradox Mods</i></a>)</li><li>City Maker (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880422651'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/52733/Any'><i>Paradox Mods</i></a>)</li><li>Coring Button (<a href='https://steamcommunity.com/workshop/filedetails/?id=1913968458'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/36852/Any'><i>Paradox Mods</i></a>)</li><li>Country Roulette (<a href='https://steamcommunity.com/workshop/filedetails/?id=1422190791'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/51002/Any'><i>Paradox Mods</i></a>)</li><li><span title='Це колекція, в яку входять:\n  &bull; Diplomatic Alignment Triangle for HOI4\n  &bull; Diplomatic Alignment Triangle for Kaiserreich\n  &bull; Diplomatic Alignment Triangle for The New Order\n  &bull; Diplomatic Alignment Triangle for Millennium Dawn\n  &bull; Diplomatic Alignment Triangle for Red Flood\n  &bull; Diplomatic Alignment Triangle for Calm Before the Storm\n  &bull; Diplomatic Alignment Triangle for TWR\n  &bull; Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</span> (<a href='https://steamcommunity.com/workshop/filedetails/?id=2208527069'><i>Steam</i></a>)</li><li>Faction Distance Limiter (<a href='https://steamcommunity.com/workshop/filedetails/?id=2729537713'><i>Steam</i></a>)</li><li>Formable Nations in Setup Options (<a href='https://steamcommunity.com/workshop/filedetails/?id=2880621905'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/40759/Any'><i>Paradox Mods</i></a>)</li><li>League of Nations (<a href='https://steamcommunity.com/workshop/filedetails/?id=1425386497'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/33402/Any'><i>Paradox Mods</i></a>)</li><li>Ledger (<a href='https://steamcommunity.com/workshop/filedetails/?id=1704370481'><i>Steam</i></a>)</li><li>Map Modes+ (<a href='https://steamcommunity.com/workshop/filedetails/?id=2665267027'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/37707/Any'><i>Paradox Mods</i></a>)</li><li>Peace Deals (<a href='https://steamcommunity.com/workshop/filedetails/?id=2412445347'><i>Steam</i></a>)</li><li>Recall Volunteers (<small>&gt; <i>Yard1</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2048998725'><i>Steam</i></a>)</li><li>Recall Volunteers (<small>&gt; <i>Not Monika Plus</i>;</small> <a href='https://steamcommunity.com/workshop/filedetails/?id=2014636418'><i>Steam</i></a>)</li><li><span title='Це колекція, в яку входять:\n  &bull; Rename Factions\n  &bull; Rename Parties\n  &bull; Rename States\n  &bull; Rename Country Leaders'>Rename Mods</span> (<a href='https://steamcommunity.com/workshop/filedetails/?id=1692642692'><i>Steam</i></a>)</li><li>State Transfer Tool (<a href='https://steamcommunity.com/workshop/filedetails/?id=1367081844'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/26720/Any'><i>Paradox Mods</i></a>)</li><li>State Transfer Tool MP (<a href='https://steamcommunity.com/workshop/filedetails/?id=1368778634'><i>Steam</i></a>)</li><li>Toolpack Without the Errors (<a href='https://steamcommunity.com/workshop/filedetails/?id=2913150560'><i>Steam</i></a>&nbsp;&bull; <a href='https://mods.paradoxplaza.com/mods/56593/Any'><i>Paradox Mods</i></a>)</li><li>TWR GDP Screen (<a href='https://steamcommunity.com/workshop/filedetails/?id=2895467881'><i>Steam</i></a>)</li><li>Yearly Event Cards (<a href='https://steamcommunity.com/workshop/filedetails/?id=2782147906'><i>Steam</i></a>)</li></ul>"
@@ -1726,7 +1726,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.", version: "1.11.4", lastUpdate: "2024-03-15"
+					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-03-18"
 				}
 			]
 		} ]

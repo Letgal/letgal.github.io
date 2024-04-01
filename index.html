@@ -35,146 +35,22 @@
 		h5 { margin-block-start: calc(1rem / 3 * 2); margin-block-end: calc(1rem / 3); }
 		h4 + h5 { color: var(--special); font-style: italic; }
 
-		.intro { font-style: normal; }
-
-		#after {
-			display: none; opacity: 0;
-			position: fixed; top: 0; bottom: 0; left: 0; right: 0;
-			background: #000;
-			cursor: pointer;
-			animation: fadeIn .5s ease forwards;
-		}
-
-		#modal {
-			display: none;
-			position: fixed; left: 20%; right: 20%;
-			padding: 1rem;
-			border-radius: 2em;
-			background: linear-gradient(to bottom, #222, #111);
-			overflow: hidden;
-			box-shadow: 0 0 2rem black;
-			animation: slideUp .5s ease forwards;
-		}
-		#modal > h3 { margin: 0; text-align: center; }
-		#modal > p { margin-block: 0.5em; font-family: var(--sans-serif); }
-		#modal > p { color: var(--special); font-weight: bold; }
-		#modal > p:first-of-type ~ p { color: var(--special2); font-style: italic; }
-		#modal > ul { columns: 3; }
-		#modal li a {
-			padding: 0.25em;
-			border-radius: 0.5em;
-			background: var(--secondary);
-			color: var(--text-color);
-			font-size: 0.8em;
-			transition: .2s ease;
-		}
-		#modal li a:hover { background: var(--secondary-hover); }
-
-		#modal > .float { float: right; }
-		#modal > .float > p:first-child {
-			margin-block: 0.5em;
-			color: var(--special);
-			font-family: var(--sans-serif);
-			font-weight: bold;
-		}
-		#modal > .float ul {
-			margin-block: 0.5em;
-			padding-inline-start: 1em;
-			font-size: smaller;
-		}
-		#modal > .float li { font-style: italic; }
-
-		button#close {
-			float: right;
-			box-sizing: content-box;
-			height: calc(7em / 6); aspect-ratio: 1/1;
-			padding: 0;
-			border: 3px solid var(--primary);
-			border-radius: 50%;
-			background: transparent;
-			color: var(--primary);
-			font-size: x-large;
-			font-family: var(--sans-serif);
-			font-weight: bold;
-			transition: .2s ease;
-		}
-		button#close:hover {
-			border-color: var(--primary-hover);
-			color: var(--primary-hover);
-			transform: scale(1.25);
-		}
-
-		@keyframes fadeIn {
-			from { opacity: 0; }
-			to { opacity: 0.5; }
-		}
-		@keyframes slideUp {
-			from { top: 100%; bottom: -50%; }
-			to { top: 25%; bottom: 25%; }
+		.intro {
+			margin-block: 1em;
+			font-style: normal;
 		}
 	</style>
 	<script type="text/javascript" src="shared.js"></script>
-	<script type="text/javascript">
-		const myCreations = [
-			{
-				title: "Український переклад Hearts of Iron IV",
-				content: "<div class='float'><p><abbr title='Окреме спасибі цим людям за їхній безпосередній внесок у розвиток перекладу!'>Подяка</abbr>:</p><ul><li>TTTSHOK</li><li>Lonster</li><li>OlshenUA</li><li>BmB Kun</li><li>Churban</li><li>Shrek_UA</li><li>Dmytr0 Gaming</li></ul></div><p>Не завершений; оновлюється зрідка</p><p>У розробці з весни 2021&nbsp;р.</p><p>Зроблено з допомогою від спільноти <span style='font-style: normal;'>&lt;3</span></p><ul><li><a href='https://steamcommunity.com/workshop/filedetails/?id=2706358548'>Steam</a></li><li><a href='https://mods.paradoxplaza.com/mods/38710/Any'>Paradox Mods</a></li><li><a href='https://www.nexusmods.com/heartsofironiv/mods/53'>Nexus Mods</a></li><li><a href='https://github.com/Letgal/hoi4_ut'>GitHub</a></li><li><a href='https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view'>Google Диск</a></li></ul>"
-			},
-			{
-				title: "Український переклад Equestria at War",
-				content: "<p>Не завершений; оновлюється часто</p><ul><li><a href='https://github.com/Letgal/hoi4_ut-eaw'>GitHub</a></li></ul>"
-			},
-			{
-				title: "Українські переклади дрібних модів для HOI4",
-				content: "<p>Набір різних модів:</p><ul><li><a href='https://steamcommunity.com/workshop/filedetails/?id=3119420273'>Steam</a></li></ul><p>Dynamic Research Slots:</p><ul><li><a href='https://steamcommunity.com/workshop/filedetails/?id=2908253265'>Steam</a></li><li><a href='https://mods.paradoxplaza.com/mods/55431/Any'>Paradox Mods</a></li><li><a href='https://mega.nz/file/l4BlXKID#5F9mTQPhCrJiOjjdV3gji6yRISJEFtqjwg5BOKbXTUY'>MEGA<small> (ZIP)</small></a></li></ul><p>Modifier Icons:</p><ul><li><a href='https://steamcommunity.com/workshop/filedetails/?id=2912150988'>Steam</a></li><li><a href='https://mods.paradoxplaza.com/mods/55746/Any'>Paradox Mods</a></li><li><a href='https://mega.nz/file/YlgyDLgS#iYBjSz9ANYK7x03x13Mfwe5mauJJTjqa2OD5LLCm38U'>MEGA<small> (ZIP)</small></a></li></ul>"
-			},
-			{
-				title: "Словацький переклад Hearts of Iron IV",
-				content: "<p>Не завершений, нині не оновлюється</p><ul><li><a href='https://github.com/Letgal/hoi4_st'>GitHub</a></li></ul>"
-			}
-		]
-
-		function openCreationDetails(x) {
-			document.getElementById("after").style.display = "block";
-			document.getElementById("modal").style.display = "block";
-
-			document.getElementById("modal").innerHTML = "<h3>" + myCreations[x].title + "</h3>";
-			document.getElementById("modal").innerHTML += myCreations[x].content;
-		}
-
-		function closeCreationDetails() {
-			document.getElementById("after").style.display = "";
-			document.getElementById("modal").style.display = "";
-			document.getElementById("modal").innerHTML = "";
-		}
-
-		// function copyText(x) { navigator.clipboard.writeText(x.innerText); }
-	</script>
 </head>
 <body onload="/*generateLinks('body', 2);*/">
 	<a id="logo" href="/"><img></a>
 	<h1 lang="sk">Vitajte!</h1>
 	<p class="intro">Ви натрапили на мою сторінку.</p>
-	<hr><p class="intro">Я роблю переклади! Роблю я їх <i>вручну</i>, бо так ліпше.</p>
-	<p class="intro">Просто це займає <i>забагато</i> часу.</p>
-	<hr><p class="intro" style="font-weight: bold;">Дякую за увагу <span style="font-family: var(--sans-serif);">:Þ</span></p>
+	<p class="intro">Я роблю переклади! Роблю я їх <i>вручну</i>, бо так ліпше.<br>Просто це займає <i>багато</i> часу.</p>
+	<p class="intro"><b>Примітка:</b> Ця сторінка досі недороблена.</p>
+	<p class="intro" style="font-weight: bold;">Дякую за увагу <span style="font-family: var(--sans-serif);">&colon;&THORN;</span></p>
 	<h2>Щось шукаєте?</h2>
 	<a class="block" href="/ut.html">Українські моди для ігор Paradox</a>
 	<a class="block" href="/creations.html">Що я створив</a>
-	<!--<a class="block" href="/ut-skyrim.html" class="block">Українські переклади <i>Skyrim</i></a>-->
-	<!--<a class="block" href="/transcript.html">Транскрибування</a>-->
-	<!--<a class="block" href="/hoi4-news">Новини <i>Hearts of Iron IV</i></a>-->
-	<!--<hr><a class="block" href="https://send.monobank.ua/jar/2hW6s9nEeY" target="_blank" style="color: var(--link-color);">Підтримати автора</a>-->
-
-	<!-- <footer>
-		<dl>
-			<dt>Я, деінде</dt>
-			<dd><b>Revolt:</b> <span title="Клацніть, щоби скопіювати." onclick="copyText(this)">leton#8967</span></dd>
-			<dd><b>Discord:</b> <span title="Клацніть, щоби скопіювати." onclick="copyText(this)">leton_</span></dd>
-			<dd><b>Telegram:</b> <a href="https://t.me/galathos" target="_blank" style="font-family: 'Noto Naskh Arabic', serif; font-style: normal;">روديم</a></dd>
-			<dd><b>GitHub:</b> <a href="https://github.com/Letgal" target="_blank">Letgal</a></dd>
-			<dd><b>Steam:</b> <a href="https://steamcommunity.com/id/leton_ostislavic" target="_blank">Letōn</a></dd>
-		</dl>
-	</footer> -->
 </body>
 </html>

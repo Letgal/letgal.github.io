@@ -18,9 +18,9 @@
 	--special: silver;
 	--special2: grey;
 	--header-bg: #000;
-	--primary: hsl(256deg 100% 80%);
-	--primary-hover: hsl(256deg 100% 90%);
-	--primary-active: hsl(256deg 100% 70%);
+	--primary: hsl(256deg 80% 80%);
+	--primary-hover: hsl(256deg 80% 90%);
+	--primary-active: hsl(256deg 80% 70%);
 	--secondary: hsl(256deg 40% 40%);
 	--secondary-hover: hsl(256deg 40% 50%);
 	--secondary-active: hsl(256deg 40% 30%);

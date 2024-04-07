@@ -130,7 +130,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.10.3", lastUpdate: "2024-01-10"
+					lang: "англ.", version: "3.11.2", lastUpdate: "2024-03-22"
 				}
 			]
 		} ]
@@ -760,7 +760,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2990701306",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2987257705",
-					lang: "англ., рос., укр.", lastUpdate: "2024-03-13"
+					lang: "англ., рос., укр.", lastUpdate: "2024-04-05"
 				}
 			]
 		} ]
@@ -776,7 +776,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2984175335",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2980946394",
-					lang: "англ., рос., укр.", lastUpdate: "2024-03-13"
+					lang: "англ., рос., укр.", lastUpdate: "2024-04-05"
 				}
 			]
 		} ]
@@ -1233,7 +1233,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2905389788",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2903112840",
-					lang: "англ., рос.", lastUpdate: "2024-03-13"
+					lang: "англ., рос.", lastUpdate: "2024-04-05"
 				}
 			]
 		} ]
@@ -1265,7 +1265,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2923608697",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2888818205",
-					lang: "англ., рос.", lastUpdate: "2024-03-13"
+					lang: "англ., рос.", lastUpdate: "2024-04-05"
 				}
 			]
 		} ]
@@ -1297,7 +1297,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2926566235",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2784902401",
-					lang: "англ., рос.", lastUpdate: "2024-03-13"
+					lang: "англ., рос.", lastUpdate: "2024-04-05"
 				}
 			]
 		} ]
@@ -1313,7 +1313,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2925100155",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2804147047",
-					lang: "англ., рос.", lastUpdate: "2024-03-13"
+					lang: "англ., рос.", lastUpdate: "2024-04-05"
 				}
 			]
 		} ]
@@ -1377,7 +1377,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2964383523",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2951153275",
-					lang: "англ., рос., укр.", lastUpdate: "2024-03-13"
+					lang: "англ., рос., укр.", lastUpdate: "2024-04-05"
 				}
 			]
 		} ]
@@ -1641,7 +1641,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2993758938",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2505146371",
-					lang: "англ., рос., укр.", lastUpdate: "2024-03-13"
+					lang: "англ., рос., укр.", lastUpdate: "2024-04-05"
 				}
 			]
 		} ]
@@ -1726,7 +1726,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-03-18"
+					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-03-29"
 				}
 			]
 		} ]

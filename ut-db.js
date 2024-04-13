@@ -470,7 +470,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.2.2.1", lastUpdate: "2024-03-11"
+						lang: "англ., рос.", version: "2.2.2.1", lastUpdate: "2024-04-08"
 					},
 					{
 						type: "GitHub",
@@ -1004,7 +1004,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3125928554",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-					lang: "англ.", lastUpdate: "2023-12-29"
+					lang: "англ.", lastUpdate: "2024-04-13"
 				}
 			]
 		} ]
@@ -1726,7 +1726,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-03-29"
+					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-04-09"
 				}
 			]
 		} ]
@@ -1902,7 +1902,7 @@ const databaseCs2 = [
 				{
 					type: "GitHub",
 					link: "https://github.com/minenkoden/skylines2-ua",
-					version: "1.0.19f1"
+					version: "1.1.0f1"
 				},
 				{
 					type: "Steam (ручне встановлення)",

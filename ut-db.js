@@ -470,12 +470,12 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.2.2.1", lastUpdate: "2024-04-08"
+						lang: "англ., рос.", version: "2.2.2.4", lastUpdate: "2024-04-18"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						lang: "англ., рос.", version: "2.2.2.1"
+						lang: "англ., рос.", version: "2.2.2.4"
 					}
 				]
 			},
@@ -1026,6 +1026,22 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
+		category: 2, official: true,
+		mod: "Flames of eastern Europe",
+		entries: [ {
+			authors: ["SteveJobs"],
+			image: "5948762624228797387/B5B5FE0A369BB7259A0B2F0E3AF55366E53927F1",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3082763478",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3025365180",
+					lang: "англ., укр.", lastUpdate: "2024-04-27"
+				}
+			]
+		} ]
+	},
+	{
 		category: 2,
 		mod: "Ukraine 1.12",
 		entries: [ {
@@ -1037,22 +1053,6 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2915977323",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2912897446",
 					lang: "англ., рос.", lastUpdate: "2023-01-10"
-				}
-			]
-		} ]
-	},
-	{
-		category: 2, official: true,
-		mod: "UPR in Exile",
-		entries: [ {
-			authors: ["SteveJobs"],
-			image: "5948762624228797387/B5B5FE0A369BB7259A0B2F0E3AF55366E53927F1",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3167117205",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3025365180",
-					lang: "англ., укр.", lastUpdate: "2024-03-11"
 				}
 			]
 		} ]
@@ -1726,7 +1726,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-04-09"
+					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-04-24"
 				}
 			]
 		} ]

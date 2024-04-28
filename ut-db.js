@@ -1754,7 +1754,7 @@ const databaseCk3 = [
 				{
 					type: "Crowdin",
 					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
-					lastUpdate: "2024-02-11"
+					lastUpdate: "2024-04-24"
 				}
 			]
 		} ]
@@ -1783,11 +1783,11 @@ const databaseV3 = [
 					link: "https://github.com/Godresky/Victoria-3-Ukrainian-Translate",
 					lang: "англ.", version: "1.5.12"
 				},
-				{
+				/*{
 					type: "Telegram", old: true,
 					link: "https://t.me/godresky_vika3/357",
 					lang: "англ.", lastUpdate: "2023-08-01"
-				},
+				},*/
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c",

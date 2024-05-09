@@ -173,20 +173,6 @@ const databaseStel = [
 			]
 		} ]
 	},
-	/*{
-		mod: "Stellaris",
-		entries: [ {
-			authors: ["Команда &laquo;Єднання&raquo;"],
-			image: "5075025434545741005/BE3C08BB749DF02A38B65E5E5308A4ED1ED54823",
-			links: [
-				{
-					type: "Steam", old: true,
-					link: "https://steamcommunity.com/workshop/filedetails/?id=2906120862",
-					lang: "рос.", version: "3.6.1", lastUpdate: "2022-12-24"
-				}
-			]
-		} ]
-	},*/
 	{
 		mod: "Superstates - Imperium Alternatives",
 		entries: [ {
@@ -1042,6 +1028,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3082763478",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3025365180",
 					lang: "англ., укр.", lastUpdate: "2024-04-27"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2, official: true,
+		mod: "Eastern Frontlines: Ukrainian spring",
+		entries: [ {
+			authors: ["Sil_Olexandr"],
+			image: "2469738708360056199/92EA1F4867E3258DC138114C84D23D63B5A68663",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3242954012",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3242940301",
+					lang: "англ., рос., укр.", lastUpdate: "2024-05-09"
 				}
 			]
 		} ]

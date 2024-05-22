@@ -28,12 +28,17 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.36", lastUpdate: "2024-02-19"
+					version: "1.37.1", lastUpdate: "2024-05-21"
+				},
+				{
+					type: "Paradox Mods",
+					link: "https://mods.paradoxplaza.com/mods/54275/Any",
+					version: "1.37.1", lastUpdate: "2024-05-21"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/vicner/eu4",
-					version: "1.36"
+					version: "1.37.1"
 				}
 			]
 		} ]
@@ -196,7 +201,7 @@ const databaseStel = [
 			links: [
 				{
 					type: "GitHub",
-					link: "github.com/Ukrainelocal/stellaris-gigastructures-ukraine-localisation"
+					link: "https://github.com/Ukrainelocal/stellaris-gigastructures-ukraine-localisation"
 				}
 			]
 		} ]
@@ -282,7 +287,6 @@ const databaseStel = [
 const databaseHoi4 = [
 	// Darkest Hour — https://github.com/Godresky/Darkest-Hour-Ukrainian-Translate
 	// Fire of Poltava — https://github.com/Godresky/Fire-of-Poltava-Ukrainian-Translate
-	// Ukrainian State: the Great Reborn — https://github.com/Godresky/USTGR-Ukrainian-Translate
 
 	{
 		category: "vanilla",
@@ -456,12 +460,12 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.2.2.4", lastUpdate: "2024-04-18"
+						lang: "англ., рос.", version: "2.2.2.5", lastUpdate: "2024-05-11"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						lang: "англ., рос.", version: "2.2.2.4"
+						lang: "англ., рос.", version: "2.2.2.5"
 					}
 				]
 			},
@@ -975,7 +979,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2024-03-11"
+					lang: "рос.", lastUpdate: "2024-03-21"
 				},
 				{
 					type: "Transifex",
@@ -995,8 +999,13 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3125928554",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-					lang: "англ.", lastUpdate: "2024-04-13"
-				}
+					lang: "англ.", lastUpdate: "2024-05-16"
+				}/*,
+				{
+					type: "GitHub",
+					link: "https://github.com/Godresky/USTGR-Ukrainian-Translate",
+					lang: "англ."
+				}*/
 			]
 		} ]
 	},
@@ -1021,7 +1030,7 @@ const databaseHoi4 = [
 		mod: "Flames of eastern Europe",
 		entries: [ {
 			authors: ["SteveJobs"],
-			image: "5948762624228797387/B5B5FE0A369BB7259A0B2F0E3AF55366E53927F1",
+			image: "2504640412324247556/8D835B5D6C610A5DB013158851E4BFFF402E3863",
 			links: [
 				{
 					type: "Steam",
@@ -1034,7 +1043,7 @@ const databaseHoi4 = [
 	},
 	{
 		category: 2, official: true,
-		mod: "Eastern Frontlines: Ukrainian spring",
+		mod: "Eastern Frontlines",
 		entries: [ {
 			authors: ["Sil_Olexandr"],
 			image: "2469738708360056199/92EA1F4867E3258DC138114C84D23D63B5A68663",
@@ -1043,7 +1052,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3242954012",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3242940301",
-					lang: "англ., рос., укр.", lastUpdate: "2024-05-09"
+					lang: "англ., рос., укр.", lastUpdate: "2024-05-21"
 				}
 			]
 		} ]
@@ -1223,7 +1232,7 @@ const databaseHoi4 = [
 				},
 				{
 					type: "GitHub",
-					link: "github.com/Godresky/Espionage-Reworked-Ukrainian-Translate",
+					link: "https://github.com/Godresky/Espionage-Reworked-Ukrainian-Translate",
 					lang: "англ., укр."
 				}
 			]
@@ -1733,7 +1742,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-05-05"
+					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-05-19"
 				}
 			]
 		} ]
@@ -1761,7 +1770,7 @@ const databaseCk3 = [
 				{
 					type: "Crowdin",
 					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
-					lastUpdate: "2024-04-24"
+					lastUpdate: "2024-05-22"
 				}
 			]
 		} ]

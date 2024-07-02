@@ -28,12 +28,12 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.37.1", lastUpdate: "2024-05-28"
+					version: "1.37.1", lastUpdate: "2024-06-18"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/54275/Any",
-					version: "1.37.1", lastUpdate: "2024-05-21"
+					version: "1.37.1", lastUpdate: "2024-06-27"
 				},
 				{
 					type: "GitHub",
@@ -129,13 +129,13 @@ const databaseStel = [
 	{
 		mod: "Stellaris",
 		entries: [ {
-			authors: ["Ivan Anthony", "Ailigean", "Queez"], note: "та інші",
+			authors: ["Aallhan", "Ailigean", "Queez"], note: "та інші",
 			image: "2508017401746832331/083DE52F38CD1B928E26A3764C22F36BE6273DFC",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.11.2", lastUpdate: "2024-04-23"
+					lang: "англ.", version: "3.12.5", lastUpdate: "2024-07-01"
 				}
 			]
 		} ]
@@ -178,10 +178,10 @@ const databaseStel = [
 			]
 		} ]
 	},
-	{
+	/*{
 		mod: "Superstates - Imperium Alternatives",
 		entries: [ {
-			authors: ["Ivan Anthony"], note: "та інші",
+			authors: ["Aallhan"], note: "та інші",
 			image: "2012596709456380707/E698B301400CE2D1A42C932415A0D641037073D3",
 			links: [
 				{
@@ -192,7 +192,7 @@ const databaseStel = [
 				}
 			]
 		} ]
-	},
+	},*/
 	/*{
 		mod: "Gigastructural Engineering &amp; More",
 		entries: [ {
@@ -206,10 +206,10 @@ const databaseStel = [
 			]
 		} ]
 	},*/
-	{
+	/*{
 		mod: "Hypothetical Stars",
 		entries: [ {
-			authors: ["Ivan Anthony"], note: "та інші",
+			authors: ["Aallhan"], note: "та інші",
 			image: "2012596709455985158/0228847194BBD3C53E94F4EF70DEBD0599CB650D",
 			links: [
 				{
@@ -220,7 +220,7 @@ const databaseStel = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		mod: "Detailed Tech Tooltips Reloaded",
 		entries: [ {
@@ -299,27 +299,27 @@ const databaseHoi4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос., укр.", version: "1.14.5", lastUpdate: "2024-05-31"
+					lang: "англ., рос., укр.", version: "1.14.7", lastUpdate: "2024-06-30"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос., укр.", version: "1.14.5", lastUpdate: "2024-05-31"
+					lang: "англ., рос., укр.", version: "1.14.7", lastUpdate: "2024-06-30"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос., укр.", version: "1.14.5", lastUpdate: "2024-05-31"
+					lang: "англ., рос., укр.", version: "1.14.7", lastUpdate: "2024-06-30"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					lang: "англ., рос., укр.", version: "1.14.5"
+					lang: "англ., рос., укр.", version: "1.14.7"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос., укр.", version: "1.14.5", lastUpdate: "2024-05-31"
+					lang: "англ., рос., укр.", version: "1.14.7", lastUpdate: "2024-06-30"
 				}
 			],
 			more: "<p class='more-info'>Окремо також доступний <a href='https://steamcommunity.com/workshop/filedetails/?id=3119420273' target='_blank'>набір перекладів дрібних модів</a> <small style='color: var(--special2);'>(список перелічений на сторінці моду)</small>.</p>"
@@ -358,7 +358,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2996988004",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2815832636",
-					lang: "рос.", lastUpdate: "2023-07-01"
+					lang: "рос.", lastUpdate: "2023-06-30"
 				}
 			]
 		} ]
@@ -374,7 +374,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2994846957",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2792132018",
-					lang: "англ., рос.", lastUpdate: "2023-07-01"
+					lang: "англ., рос.", lastUpdate: "2023-06-30"
 				}
 			]
 		} ]
@@ -460,12 +460,12 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.2.2.5", lastUpdate: "2024-05-11"
+						lang: "англ., рос.", version: "2.2.2.6", lastUpdate: "2024-06-30"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						lang: "англ., рос.", version: "2.2.2.5"
+						lang: "англ., рос.", version: "2.2.2.6"
 					}
 				]
 			},
@@ -494,7 +494,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2996786085",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2993556191",
-					lang: "англ., рос.", lastUpdate: "2023-07-30"
+					lang: "англ., рос.", lastUpdate: "2023-06-30"
 				}
 			]
 		} ]
@@ -526,7 +526,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3145375996",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3033918961",
-					lang: "англ.", lastUpdate: "2024-01-23"
+					lang: "англ.", lastUpdate: "2024-01-22"
 				}
 			]
 		} ]
@@ -589,7 +589,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2994579415",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2992651889",
-					lang: "англ., рос.", lastUpdate: "2023-25-06"
+					lang: "англ., рос.", lastUpdate: "2023-06-25"
 				}
 			]
 		} ]
@@ -954,6 +954,22 @@ const databaseHoi4 = [
 	},
 	{
 		category: 2,
+		mod: "Ireland Expanded",
+		entries: [ {
+			authors: ["nonzoron"],
+			image: "2047490891216696224/D4E73A54FA0D16981C21D1E7C9F9D2B6E7CC9729",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=2964049988",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2788553865",
+					lang: "англ., рос.", lastUpdate: "2023-04-18"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
 		mod: "Iran Glory Beta",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1084,7 +1100,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3046951035",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3046950536",
-					lang: "англ., укр.", lastUpdate: "2024-01-22"
+					lang: "англ., укр.", lastUpdate: "2024-05-08"
 				}
 			]
 		} ]
@@ -1117,6 +1133,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880963651",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2902278341",
 					lang: "англ., рос.", lastUpdate: "2022-12-03"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
+		mod: "Cuba Rework",
+		entries: [ {
+			authors: ["TTTSHOK"],
+			image: "2039610698672913533/82C3D0FC3D642FC7F0C48C3FBF6596A59966A3B0",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=2969916349",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2954063955",
+					lang: "англ.", lastUpdate: "2023-05-01"
 				}
 			]
 		} ]
@@ -1272,6 +1304,22 @@ const databaseHoi4 = [
 	},
 	{
 		category: 3,
+		mod: "Country Unions",
+		entries: [ {
+			authors: ["Rayan_293"],
+			image: "2501266527856820159/4295FE48DF3EE16FA7289272D272B4E2D7397766",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3262748463",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1977610093",
+					lang: "англ., рос., укр.", lastUpdate: "2024-06-07"
+				}
+			]
+		} ]
+	},
+	{
+		category: 3,
 		mod: "Improved German Opposition",
 		entries: [ {
 			authors: ["Царь Игр"],
@@ -1366,7 +1414,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	{
+	/*{
 		category: 3,
 		mod: "France, Le Grand",
 		entries: [ {
@@ -1381,7 +1429,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 3,
 		mod: "Dissolved Germany",
@@ -1393,7 +1441,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2964383523",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2951153275",
-					lang: "англ., рос., укр.", lastUpdate: "2024-04-05"
+					lang: "англ., рос., укр.", lastUpdate: "2024-03-13"
 				}
 			]
 		} ]
@@ -1500,7 +1548,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2943761447",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1368202826",
-					lang: "англ., укр.", lastUpdate: "2023-03-08"
+					lang: "англ., укр.", lastUpdate: "2023-03-07"
 				}
 			]
 		} ]
@@ -1639,9 +1687,9 @@ const databaseHoi4 = [
 			links: [
 				{
 					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=2936449085",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2938839821",
-					lang: "англ.", lastUpdate: "2023-02-20"
+					link: "https://steamcommunity.com/workshop/filedetails/?id=2938839821",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2936449085",
+					lang: "англ.", lastUpdate: "2023-02-25"
 				}
 			]
 		} ]
@@ -1658,6 +1706,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2993758938",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2505146371",
 					lang: "англ., рос., укр.", lastUpdate: "2024-04-05"
+				}
+			]
+		} ]
+	},
+	{
+		category: 4,
+		mod: "Demand It!",
+			entries: [ {
+			authors: ["TEXA"],
+			image: "2044109228592375815/19CDD2C7694BE647E19439EA83D9A6389399917F",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=2943496666",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1445449208",
+					lang: "англ., укр.", lastUpdate: "2023-05-24"
 				}
 			]
 		} ]
@@ -1681,16 +1745,16 @@ const databaseHoi4 = [
 	},*/
 	{
 		category: 4,
-		mod: "Demand It!",
-			entries: [ {
-			authors: ["TEXA"],
-			image: "2044109228592375815/19CDD2C7694BE647E19439EA83D9A6389399917F",
+		mod: "World News",
+		entries: [ {
+			authors: ["KrankyUA"],
+			image: "2491134159028187898/9D37FA4982EBCB546304ACAFB29327ECAB35BD45",
 			links: [
 				{
 					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=2943496666",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1445449208",
-					lang: "англ., укр.", lastUpdate: "2023-04-24"
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3268869028",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2013056623",
+					lang: "англ., рос.", lastUpdate: "2024-06-16"
 				}
 			]
 		} ]
@@ -1737,12 +1801,12 @@ const databaseCk3 = [
 		mod: "Crusader Kings III",
 		entries: [ {
 			authors: ["KYR_MAN"],
-			image: "2263686345567763505/29A56491C59F08EBBEDF9E95DDFEDE2B2C8B73D9",
+			image: "2471992409978284441/B05C590FA218C5E6EE2DDBABBBCB45C3BF56A589",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-05-27"
+					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-06-16"
 				}
 			]
 		} ]
@@ -1770,7 +1834,7 @@ const databaseCk3 = [
 				{
 					type: "Crowdin",
 					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
-					lastUpdate: "2024-05-22"
+					lastUpdate: "2024-06-24"
 				}
 			]
 		} ]

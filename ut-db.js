@@ -28,7 +28,7 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.37.1", lastUpdate: "2024-06-18"
+					version: "1.37.1", lastUpdate: "2024-07-05"
 				},
 				{
 					type: "Paradox Mods",
@@ -294,7 +294,7 @@ const databaseHoi4 = [
 		entries: [ {
 			authors: ["Letōn", "TTTSHOK", "Lonster", "OlshenUA"],
 			note: "та <dfn title='Ініціатор, головний перекладач: Letōn\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Ner Kun\n  &bull; Churban\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "2477613670055108412/047149D8243863E8D75CBA17904AF11515247402",
+			image: "2503519056824221093/FE552024C94ADB46B6CC56DCFA31ECA175637A95",
 			links: [
 				{
 					type: "Steam",
@@ -375,6 +375,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2994846957",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2792132018",
 					lang: "англ., рос.", lastUpdate: "2023-06-30"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "The New Order: Last Days of Europe",
+		entries: [ {
+			authors: ["Руди"],
+			image: "2549682215199141226/08144419BC2725801EFF559BD69ADFC4016EDA66",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3282813867",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2438003901",
+					lang: "рос.", lastUpdate: "2024-07-06"
 				}
 			]
 		} ]
@@ -906,6 +922,22 @@ const databaseHoi4 = [
 	},
 	{
 		category: 2,
+		mod: "Great Belgium",
+		entries: [ {
+			authors: ["nik_wern"],
+			image: "2486631096277844843/A9F07D3A61B5D3F13A3FDF5CA0B4D7CF776C0F96",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3273770556",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3273747377",
+					lang: "англ.", lastUpdate: "2024-06-30"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
 		mod: "Focus Tree for Sweden",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1314,6 +1346,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3262748463",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1977610093",
 					lang: "англ., рос., укр.", lastUpdate: "2024-06-07"
+				}
+			]
+		} ]
+	},
+	{
+		category: 3,
+		mod: "Großdeutschland: A Germany Expansion",
+		entries: [ {
+			authors: ["Царь Игр"],
+			image: "2538423216295688095/EF3F99C8D4E767197D59E1975AF9EEB98409F94C",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3282578963",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3029183401",
+					lang: "англ., рос., укр.", lastUpdate: "2024-07-05"
 				}
 			]
 		} ]

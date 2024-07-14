@@ -292,34 +292,34 @@ const databaseHoi4 = [
 		category: "vanilla",
 		mod: "Hearts of Iron IV",
 		entries: [ {
-			authors: ["Letōn", "TTTSHOK", "Lonster", "OlshenUA"],
-			note: "та <dfn title='Ініціатор, головний перекладач: Letōn\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Ner Kun\n  &bull; Churban\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
+			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "OlshenUA"],
+			note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Ner Kun\n  &bull; Churban\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
 			image: "2503519056824221093/FE552024C94ADB46B6CC56DCFA31ECA175637A95",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос., укр.", version: "1.14.7", lastUpdate: "2024-06-30"
+					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос., укр.", version: "1.14.7", lastUpdate: "2024-06-30"
+					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос., укр.", version: "1.14.7", lastUpdate: "2024-06-30"
+					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					lang: "англ., рос., укр.", version: "1.14.7"
+					lang: "англ., рос.", version: "1.14.7"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос., укр.", version: "1.14.7", lastUpdate: "2024-06-30"
+					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
 				}
 			],
 			more: "<p class='more-info'>Окремо також доступний <a href='https://steamcommunity.com/workshop/filedetails/?id=3119420273' target='_blank'>набір перекладів дрібних модів</a> <small style='color: var(--special2);'>(список перелічений на сторінці моду)</small>.</p>"
@@ -343,6 +343,22 @@ const databaseHoi4 = [
 					link: "https://mods.paradoxplaza.com/mods/46206/Any",
 					linkOriginal: "https://mods.paradoxplaza.com/mods/6810/Any",
 					lang: "рос.", lastUpdate: "2022-06-26"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "KaiserreduX",
+		entries: [ {
+			authors: ["Calicemtea"],
+			image: "2551934896671485734/208C0DC7B15C9121DAF673C0BD9033EB783E77CC",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3285395156",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2076426030",
+					lang: "англ.", lastUpdate: "2024-07-14"
 				}
 			]
 		} ]
@@ -379,7 +395,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	{
+	/*{
 		category: 1,
 		mod: "The New Order: Last Days of Europe",
 		entries: [ {
@@ -394,7 +410,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 1,
 		mod: "Millennium Dawn: A Modern Day Mod",
@@ -407,6 +423,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2881606189",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
 					lang: "рос.", lastUpdate: "2023-01-13"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "Millennium Dawn Classic",
+		entries: [ {
+			authors: ["Андрей"],
+			image: "2524912417428786242/A605C7F61998B55299B2E383370390CF4732F49B",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3283975327",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1847611462",
+					lang: "рос.", lastUpdate: "2023-07-07"
 				}
 			]
 		} ]
@@ -469,7 +501,7 @@ const databaseHoi4 = [
 		mod: "Equestria at War",
 		entries: [
 			{
-				authors: ["Letōn"],
+				authors: ["Letón Hostislavič"],
 				image: "2467481203452187089/9ECA52B6DA0F3FF70068C5A0F71F80751A4B090D",
 				links: [
 					{
@@ -1361,7 +1393,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3282578963",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3029183401",
-					lang: "англ., рос., укр.", lastUpdate: "2024-07-05"
+					lang: "англ., рос., укр.", lastUpdate: "2024-07-06"
 				}
 			]
 		} ]
@@ -1514,7 +1546,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Dynamic Research Slots",
 		entries: [ {
-			authors: ["Letōn"],
+			authors: ["Letón Hostislavič"],
 			image: "5120061430840103428/B932DFDE5B87DD82E37A299012E6BC539C558551",
 			links: [
 				{
@@ -1637,7 +1669,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Modifier Icons",
 		entries: [ {
-			authors: ["Letōn"],
+			authors: ["Letón Hostislavič"],
 			image: "5120061430874639683/E5F3A391B81A3B45D114E0387DCFD10D4587538C",
 			links: [
 				{
@@ -1893,7 +1925,7 @@ const databaseV3 = [
 		category: 0,
 		mod: "Victoria 3",
 		entries: [ {
-			authors: ["Godresky"], note: "та <dfn title='З допомогою:\n  &bull; Пан Дмитро\n  &bull; Пані Меліса\n  &bull; remark644\n  &bull; Пан Андріян\n  &bull; _rlly_\n  &bull; twentysixz\n  &bull; Letōn (шрифти)\n  &bull; Дружня спільнота\n  &bull; Греко-католицька церква'>інші</dfn>",
+			authors: ["Godresky"], note: "та <dfn title='З допомогою:\n  &bull; Пан Дмитро\n  &bull; Пані Меліса\n  &bull; remark644\n  &bull; Пан Андріян\n  &bull; _rlly_\n  &bull; twentysixz\n  &bull; Letón Hostislavič (шрифти)\n  &bull; Дружня спільнота\n  &bull; Греко-католицька церква'>інші</dfn>",
 			image: "1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4",
 			links: [
 				{
@@ -1949,7 +1981,7 @@ const databaseV3 = [
 		category: 1,
 		mod: "Null &amp; Void",
 		entries: [ {
-			authors: ["Letōn"],
+			authors: ["Letón Hostislavič"],
 			image: "2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5",
 			links: [
 				{

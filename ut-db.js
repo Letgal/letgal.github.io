@@ -28,7 +28,7 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.37.1", lastUpdate: "2024-07-05"
+					version: "1.37.1", lastUpdate: "2024-07-28"
 				},
 				{
 					type: "Paradox Mods",
@@ -135,7 +135,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.12.5", lastUpdate: "2024-07-01"
+					lang: "англ.", version: "3.12.5", lastUpdate: "2024-08-04"
 				}
 			]
 		} ]
@@ -291,7 +291,8 @@ const databaseHoi4 = [
 	{
 		category: "vanilla",
 		mod: "Hearts of Iron IV",
-		entries: [ {
+		entries: [
+			{
 			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "OlshenUA"],
 			note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Ner Kun\n  &bull; Churban\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
 			image: "2503519056824221093/FE552024C94ADB46B6CC56DCFA31ECA175637A95",
@@ -322,8 +323,20 @@ const databaseHoi4 = [
 					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
 				}
 			],
-			more: "<p class='more-info'>Окремо також доступний <a href='https://steamcommunity.com/workshop/filedetails/?id=3119420273' target='_blank'>набір перекладів дрібних модів</a> <small style='color: var(--special2);'>(список перелічений на сторінці моду)</small>.</p>"
-		} ]
+			},
+			{
+				authors: ["Letón Hostislavič"],
+				// image: "2503519056824221093/FE552024C94ADB46B6CC56DCFA31ECA175637A95",
+				links: [
+					{
+						type: "Steam", old: true,
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3119420273",
+						lang: "англ., рос.", version: "1.13", lastUpdate: "2023-12-23"
+					}
+				],
+				more: "<p class='more-info'>Це набір перекладів нижчеперелічених дрібних модифікацій:</p><ul style='font-size: small; columns: 2;'><li>Battle Royale</li><li>City Maker</li><li>Coring Button</li><li>Country Roulette</li><li><span title='Це колекція, в яку входять:\n  &bull; Diplomatic Alignment Triangle for HOI4\n  &bull; Diplomatic Alignment Triangle for Kaiserreich\n  &bull; Diplomatic Alignment Triangle for The New Order\n  &bull; Diplomatic Alignment Triangle for Millennium Dawn\n  &bull; Diplomatic Alignment Triangle for Red Flood\n  &bull; Diplomatic Alignment Triangle for Calm Before the Storm\n  &bull; Diplomatic Alignment Triangle for TWR\n  &bull; Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</span></li><li>Faction Distance Limiter</li><li>Formable Nations in Setup Options</li><li>League of Nations</li><li>Ledger</li><li>Map Modes+</li><li>Peace Deals</li><li>Recall Volunteers <small>(&gt; <i>Yard1</i>)</small></li><li>Recall Volunteers <small>(&gt; <i>Not Monika Plus</i>)</small></li><li><span title='Це колекція, в яку входять:\n  &bull; Rename Factions\n  &bull; Rename Parties\n  &bull; Rename States\n  &bull; Rename Country Leaders'>Rename Mods</span></li><li>State Transfer Tool</li><li>State Transfer Tool MP</li><li>Toolpack Without the Errors</li><li>TWR GDP Screen</li><li>Yearly Event Cards</li></ul>"
+			}
+		]
 	},
 	{
 		category: 1,
@@ -358,7 +371,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3285395156",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2076426030",
-					lang: "англ.", lastUpdate: "2024-07-14"
+					lang: "англ.", lastUpdate: "2024-08-01"
 				}
 			]
 		} ]
@@ -414,7 +427,20 @@ const databaseHoi4 = [
 	{
 		category: 1,
 		mod: "Millennium Dawn: A Modern Day Mod",
-		entries: [ {
+		entries: [
+			{
+				authors: ["Venom Snake", "Denus"],
+				image: "2482130582399647343/1252CC71B4176C5C431BA11F9CCCBD805BBD578D",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3294212570",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
+						lang: "рос.", lastUpdate: "2024-07-27"
+					}
+				]
+			},
+			{
 			authors: ["TTTSHOK"],
 			image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384",
 			links: [
@@ -425,7 +451,8 @@ const databaseHoi4 = [
 					lang: "рос.", lastUpdate: "2023-01-13"
 				}
 			]
-		} ]
+			}
+		]
 	},
 	{
 		category: 1,
@@ -501,14 +528,15 @@ const databaseHoi4 = [
 		mod: "Equestria at War",
 		entries: [
 			{
-				authors: ["Letón Hostislavič"],
+				authors: ["Letón Hostislavič", "ціктакомба", "Green Kitten"],
+				note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; ціктакомба\n  &bull; Green Kitten\n  &bull; StasJesus\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
 				image: "2467481203452187089/9ECA52B6DA0F3FF70068C5A0F71F80751A4B090D",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.2.2.6", lastUpdate: "2024-06-30"
+						lang: "англ., рос.", version: "2.2.2.6", lastUpdate: "2024-07-29"
 					},
 					{
 						type: "GitHub",
@@ -516,7 +544,7 @@ const databaseHoi4 = [
 						lang: "англ., рос.", version: "2.2.2.6"
 					}
 				]
-			},
+			}/*,
 			{
 				authors: ["All-Ampirian"],
 				image: "2012600514542057610/EB5A283FB5FC8AADFBE34F5AB598BC6ED7F72C96",
@@ -528,7 +556,7 @@ const databaseHoi4 = [
 						lang: "рос.", lastUpdate: "2023-08-31"
 					}
 				]
-			}
+			}*/
 		]
 	},
 	{
@@ -1417,18 +1445,32 @@ const databaseHoi4 = [
 	{
 		category: 3,
 		mod: "Reichskommissariats Plus",
-		entries: [ {
+		entries: [
+			{
+				authors: ["skRb"],
+				image: "2522662979054987382/7BC1C00E3E64DFAF2E0B6B9D099D09CB220DD4DA",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3296828104",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2910757018",
+						lang: "англ.", lastUpdate: "2024-07-26"
+					}
+				]
+			},
+			{
 			authors: ["TTTSHOK"],
 			image: "2012579137825230331/FD1E61BE5E08C97664CE8DFE4DF15D7B14845240",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2914202014",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2910757018",
 					lang: "англ.", lastUpdate: "2023-01-07"
 				}
 			]
-		} ]
+			}
+		]
 	},
 	{
 		category: 3,
@@ -2057,7 +2099,7 @@ const databaseCs2 = [
 		mod: "Cities: Skylines II",
 		entries: [ {
 			authors: ["minenkoden"],
-			image: "",
+			image: "2136454577518260848/BBFCA76673510170D7D92F7AE649C3F8A920D4F6",
 			links: [
 				{
 					type: "GitHub",
@@ -2066,7 +2108,7 @@ const databaseCs2 = [
 				},
 				{
 					type: "Steam (ручне встановлення)",
-					link: "https://steamcommunity.com/sharedfiles/filedetails/?id=3067392946"
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3067392946"
 				}
 			]
 		} ]

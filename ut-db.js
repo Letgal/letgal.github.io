@@ -28,17 +28,17 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.37.1", lastUpdate: "2024-07-28"
+					version: "1.37.2", lastUpdate: "2024-07-28"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/54275/Any",
-					version: "1.37.1", lastUpdate: "2024-06-27"
+					version: "1.37.2", lastUpdate: "2024-06-27"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/vicner/eu4",
-					version: "1.37.1"
+					version: "1.37.2"
 				}
 			]
 		} ]
@@ -371,7 +371,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3285395156",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2076426030",
-					lang: "англ.", lastUpdate: "2024-08-01"
+					lang: "англ.", lastUpdate: "2024-08-13"
 				}
 			]
 		} ]
@@ -428,7 +428,7 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "Millennium Dawn: A Modern Day Mod",
 		entries: [
-			{
+			/*{
 				authors: ["Venom Snake", "Denus"],
 				image: "2482130582399647343/1252CC71B4176C5C431BA11F9CCCBD805BBD578D",
 				links: [
@@ -439,7 +439,7 @@ const databaseHoi4 = [
 						lang: "рос.", lastUpdate: "2024-07-27"
 					}
 				]
-			},
+			},*/
 			{
 			authors: ["TTTSHOK"],
 			image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384",
@@ -525,23 +525,39 @@ const databaseHoi4 = [
 	},
 	{
 		category: 1,
+		mod: "Youjo Senki Redux",
+		entries: [ {
+			authors: ["denysmirnow"],
+			image: "2471998752266875316/D391206661C6475B2DA8A5BAB7A48F618663B82F",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3305152475",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2150229170",
+					lang: "англ., рос.", lastUpdate: "2024-08-22"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
 		mod: "Equestria at War",
 		entries: [
 			{
-				authors: ["Letón Hostislavič", "ціктакомба", "Green Kitten"],
-				note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; ціктакомба\n  &bull; Green Kitten\n  &bull; StasJesus\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
+				authors: ["Letón Hostislavič", "Green Kitten", "ціктакомба"],
+				note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Green Kitten\n  &bull; ціктакомба\n  &bull; StasJesus\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
 				image: "2467481203452187089/9ECA52B6DA0F3FF70068C5A0F71F80751A4B090D",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.2.2.6", lastUpdate: "2024-07-29"
+						lang: "англ., рос.", version: "2.2.2.7", lastUpdate: "2024-08-19"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						lang: "англ., рос.", version: "2.2.2.6"
+						lang: "англ., рос.", version: "2.2.2.7"
 					}
 				]
 			}/*,
@@ -1127,7 +1143,7 @@ const databaseHoi4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3012214374",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3014624883",
+					// linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3014624883",
 					lang: "англ., рос.", lastUpdate: "2023-09-30"
 				}
 			]
@@ -1135,16 +1151,16 @@ const databaseHoi4 = [
 	},
 	{
 		category: 2, official: true,
-		mod: "Flames of eastern Europe",
+		mod: "Flames of Eastern Europe",
 		entries: [ {
 			authors: ["SteveJobs"],
-			image: "2504640412324247556/8D835B5D6C610A5DB013158851E4BFFF402E3863",
+			image: "2420208624583163878/8D835B5D6C610A5DB013158851E4BFFF402E3863",
 			links: [
 				{
 					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3082763478",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3025365180",
-					lang: "англ., укр.", lastUpdate: "2024-04-27"
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3315532920",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3315326738",
+					lang: "англ., укр.", lastUpdate: "2024-08-24"
 				}
 			]
 		} ]
@@ -1923,14 +1939,34 @@ const databaseCk3 = [
 		mod: "Crusader Kings III",
 		entries: [ {
 			authors: ["KYR_MAN"],
-			image: "2471992409978284441/B05C590FA218C5E6EE2DDBABBBCB45C3BF56A589",
+			image: "2526038317285070860/29A56491C59F08EBBEDF9E95DDFEDE2B2C8B73D9",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.",/* version: "1.11.4",*/ lastUpdate: "2024-06-16"
+					lastUpdate: "2024-08-17"
 				}
 			]
+		} ]
+	},
+	{
+		mod: "Crusader Kings III",
+		entries: [ {
+			authors: ["Doffi"],
+			image: "2527156431486130539/5B81391D260EC3577AC4CE89B5A48C2EC3233CFB",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
+					lastUpdate: "2024-07-20"
+				},
+				{
+					type: "Dropbox",
+					link: "https://www.dropbox.com/scl/fo/wzb9p0kl3pk6xe0y3d4i4/AAkIV9WNoFVz7S7gzRYDfLI",
+					lastUpdate: "2024-08-08"
+				}
+			],
+			more: "<p class='more-info'>Сюди також включено переклади нижчеперелічених дрібних модифікацій:</p><ul style='font-size: small; columns: 2;'><li>Hometowns <small>(&gt; <i>Mekbots</i>)</small></li><li>Switch Character Interaction <small>(&gt; <i>FunGaming44</i>)</small></li><li>Rename Anyone <small>(&gt; <i>MacAwesome</i>)</small></li><li>Commanders+ <small>(&gt; <i>I Am Full Truie</i>)</small></li></ul>"
 		} ]
 	},
 	{

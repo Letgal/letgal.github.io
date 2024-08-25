@@ -441,16 +441,16 @@ const databaseHoi4 = [
 				]
 			},*/
 			{
-			authors: ["TTTSHOK"],
-			image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384",
-			links: [
-				{
-					type: "Steam", old: true,
-					link: "https://steamcommunity.com/workshop/filedetails/?id=2881606189",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
-					lang: "рос.", lastUpdate: "2023-01-13"
-				}
-			]
+				authors: ["TTTSHOK"],
+				image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384",
+				links: [
+					{
+						type: "Steam", old: true,
+						link: "https://steamcommunity.com/workshop/filedetails/?id=2881606189",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
+						lang: "рос.", lastUpdate: "2023-01-13"
+					}
+				]
 			}
 		]
 	},
@@ -511,14 +511,14 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "The Great War Redux",
 		entries: [ {
-			authors: ["TTTSHOK"],
-			image: "1869583325937331426/BF3DD3525FC2FF7F3B306F3C533F361A50E53BC6",
+			authors: ["TTTSHOK", "Letón Hostislavič"],
+			image: "2431467623661212907/D4E9EF0A0FF15730AD7608319EE1D9E38C3BDB8F",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1946557392",
-					lang: "рос.", lastUpdate: "2023-07-08"
+					lang: "англ., рос.", lastUpdate: "2024-08-25"
 				}
 			]
 		} ]
@@ -560,19 +560,26 @@ const databaseHoi4 = [
 						lang: "англ., рос.", version: "2.2.2.7"
 					}
 				]
-			}/*,
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "Equestria at War Super Events",
+		entries: [
 			{
-				authors: ["All-Ampirian"],
-				image: "2012600514542057610/EB5A283FB5FC8AADFBE34F5AB598BC6ED7F72C96",
+				authors: ["Green Kitten"],
+				note: "<dfn title='З допомогою від Letón Hostislavič (технічне налагодження, шрифти)'>�</dfn>",
+				image: "2384179827567248601/1F8F16C168AA22A53B029F3EAA0C6ADBC3DB608E",
 				links: [
 					{
 						type: "Steam",
-						link: "https://steamcommunity.com/workshop/filedetails/?id=3028688252",
-						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "рос.", lastUpdate: "2023-08-31"
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3315940642",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2335819732",
+						lang: "англ.", lastUpdate: "2024-08-24"
 					}
 				]
-			}*/
+			}
 		]
 	},
 	{

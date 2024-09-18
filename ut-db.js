@@ -135,7 +135,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.12.5", lastUpdate: "2024-08-04"
+					lang: "англ.", version: "3.12.5", lastUpdate: "2024-09-05"
 				}
 			]
 		} ]
@@ -342,14 +342,14 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "Kaiserreich",
 		entries: [ {
-			authors: ["Stepan"], note: "та інші",
+			authors: ["Stepan", "CodyMaster"], note: "та інші",
 			image: "1978799422474817186/5918FEA9360CB09ABA37EC2C814298B30826AF44",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", lastUpdate: "2024-01-20"
+					lang: "англ.", lastUpdate: "2024-09-04"
 				},
 				{
 					type: "Paradox Mods", old: true,
@@ -576,7 +576,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3315940642",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2335819732",
-						lang: "англ.", lastUpdate: "2024-08-24"
+						lang: "англ.", lastUpdate: "2024-09-01"
 					}
 				]
 			}
@@ -705,6 +705,23 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2900943701",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2898278820",
 					lang: "англ.", lastUpdate: "2022-12-12"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "hoi4 irl",
+		entries: [ {
+			authors: ["Green Kitten"],
+			note: "<dfn title='З допомогою від Letón Hostislavič (технічне налагодження)'>�</dfn>",
+			image: "2398817794632762374/65283B1BE0A546E60D76A1CC02C6F6577FA43234",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3324635840",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3318977347",
+					lang: "англ.", lastUpdate: "2024-09-04"
 				}
 			]
 		} ]
@@ -842,7 +859,7 @@ const databaseHoi4 = [
 		category: 2,
 		mod: "Ultimate German Focus Tree Updated",
 		entries: [ {
-			authors: ["Царь Игр"],
+			authors: ["Lila Licht"],
 			image: "2017097230051390857/855D3E27EDA32BE3E9DA679F6F6A955BED967C16",
 			links: [
 				{
@@ -857,18 +874,32 @@ const databaseHoi4 = [
 	{
 		category: 2,
 		mod: "German Rework",
-		entries: [ {
-			authors: ["Царь Игр"],
+		entries: [
+			{
+				authors: ["Не фидил минуту"],
+				image: "2375174713899878583/1B400EF2B5702CC1BC59C5C4C746413A77C24D47",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3330739587",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2980946394",
+						lang: "рос.", lastUpdate: "2024-09-14"
+					}
+				]
+			},
+			{
+			authors: ["Lila Licht"],
 			image: "2021599470218417087/35AD31F9D6EF4B91471D4C638C8F01825C9D3B65",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2984175335",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2980946394",
-					lang: "англ., рос., укр.", lastUpdate: "2024-04-05"
+					lang: "англ., рос., укр.", lastUpdate: "2024-09-14"
 				}
 			]
-		} ]
+			}
+		]
 	},
 	{
 		category: 2,
@@ -1167,7 +1198,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3315532920",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3315326738",
-					lang: "англ., укр.", lastUpdate: "2024-08-24"
+					lang: "англ., укр.", lastUpdate: "2024-08-30"
 				}
 			]
 		} ]
@@ -1389,7 +1420,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Universal Formable Nations",
 		entries: [ {
-			authors: ["Царь Игр"],
+			authors: ["Lila Licht"],
 			image: "5105424732025379617/3EAE90B4E0572CD5E0BB71450D978678AF6A2A54",
 			links: [
 				{
@@ -1437,14 +1468,14 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Großdeutschland: A Germany Expansion",
 		entries: [ {
-			authors: ["Царь Игр"],
+			authors: ["Lila Licht"],
 			image: "2538423216295688095/EF3F99C8D4E767197D59E1975AF9EEB98409F94C",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3282578963",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3029183401",
-					lang: "англ., рос., укр.", lastUpdate: "2024-07-06"
+					lang: "англ., рос., укр.", lastUpdate: "2024-09-18"
 				}
 			]
 		} ]
@@ -1453,14 +1484,14 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Improved German Opposition",
 		entries: [ {
-			authors: ["Царь Игр"],
+			authors: ["Lila Licht"],
 			image: "2039602457404816323/3AF9BD3C367B319AD4162A99FA63B72452734DBF",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2923608697",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2888818205",
-					lang: "англ., рос.", lastUpdate: "2024-04-05"
+					lang: "англ., рос.", lastUpdate: "2024-09-18"
 				}
 			]
 		} ]
@@ -1499,7 +1530,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Snow's Reichkommisariats",
 		entries: [ {
-			authors: ["Царь Игр"],
+			authors: ["Lila Licht"],
 			image: "2039603094842335081/E9F80654438295288CA023FA2C020776C2DDABAB",
 			links: [
 				{
@@ -1515,7 +1546,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Non-Aligned Reichkommisariats",
 		entries: [ {
-			authors: ["Царь Игр"],
+			authors: ["Lila Licht"],
 			image: "2039602457419400852/7B8F7ACB90DA5A01C5731F4398DA94F747ED9A28",
 			links: [
 				{
@@ -1579,7 +1610,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Dissolved Germany",
 		entries: [ {
-			authors: ["Царь Игр"],
+			authors: ["Lila Licht"],
 			image: "2028351009678394474/B8F2199EAA037F6869798F9AC713D4B215C6F654",
 			links: [
 				{
@@ -1664,6 +1695,23 @@ const databaseHoi4 = [
 				}
 			],
 			more: "<p class='more-info'><i>Примітка:</i> Ще один переклад уже включений у <a onclick='closeModDetails(); openModDetails(databaseHoi4, 0)'>переклад ванілли</a>.</p>"
+		} ]
+	},
+	{
+		category: 4,
+		mod: "Better Laws and Policies",
+		entries: [ {
+			authors: ["Green Kitten"],
+			note: "<dfn title='З допомогою від Letón Hostislavič (технічне налагодження)'>�</dfn>",
+			image: "2398817794634846197/29A4F1DD9B3F5A51A672E12550A2CDAF7ACC7C03",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3324847880",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3097661966",
+					lang: "англ.", lastUpdate: "2024-09-05"
+				}
+			]
 		} ]
 	},
 	{
@@ -1843,7 +1891,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Annex Subjects",
 		entries: [ {
-			authors: ["Царь Игр"],
+			authors: ["Lila Licht"],
 			image: "2013720072663807467/DEE34A2A2D792989452E58B98DEF315EB6BBECCD",
 			links: [
 				{
@@ -1899,7 +1947,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3268869028",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2013056623",
-					lang: "англ., рос.", lastUpdate: "2024-06-16"
+					lang: "англ., рос.", lastUpdate: "2024-09-15"
 				}
 			]
 		} ]
@@ -1951,7 +1999,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lastUpdate: "2024-08-17"
+					lastUpdate: "2024-09-16"
 				}
 			]
 		} ]

@@ -300,27 +300,27 @@ const databaseHoi4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
+					lang: "англ., рос.", version: "1.14.8", lastUpdate: "2024-09-20"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
+					lang: "англ., рос.", version: "1.14.8", lastUpdate: "2024-09-20"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
+					lang: "англ., рос.", version: "1.14.8", lastUpdate: "2024-09-20"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					lang: "англ., рос.", version: "1.14.7"
+					lang: "англ., рос.", version: "1.14.8"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.14.7", lastUpdate: "2024-07-14"
+					lang: "англ., рос.", version: "1.14.8", lastUpdate: "2024-09-20"
 				}
 			],
 			},
@@ -349,7 +349,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", lastUpdate: "2024-09-04"
+					lang: "англ.", lastUpdate: "2024-09-20"
 				},
 				{
 					type: "Paradox Mods", old: true,
@@ -408,10 +408,23 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	/*{
+	{
 		category: 1,
 		mod: "The New Order: Last Days of Europe",
-		entries: [ {
+		entries: [
+			{
+				authors: ["denysmirnow", "timon11037"],
+				image: "2478757956128945930/8E55B4DF0A888D16723DCDAAAD5F154F76A65073",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3334431115",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2438003901",
+						lang: "англ.", lastUpdate: "2023-09-20"
+					}
+				]
+			}/*,
+			{
 			authors: ["Руди"],
 			image: "2549682215199141226/08144419BC2725801EFF559BD69ADFC4016EDA66",
 			links: [
@@ -422,8 +435,9 @@ const databaseHoi4 = [
 					lang: "рос.", lastUpdate: "2024-07-06"
 				}
 			]
-		} ]
-	},*/
+			}*/
+		]
+	},
 	{
 		category: 1,
 		mod: "Millennium Dawn: A Modern Day Mod",
@@ -1198,7 +1212,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3315532920",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3315326738",
-					lang: "англ., укр.", lastUpdate: "2024-08-30"
+					lang: "англ., укр.", lastUpdate: "2024-09-20"
 				}
 			]
 		} ]
@@ -1427,7 +1441,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2905389788",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2903112840",
-					lang: "англ., рос.", lastUpdate: "2024-04-05"
+					lang: "англ., рос.", lastUpdate: "2024-09-18"
 				}
 			]
 		} ]

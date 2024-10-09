@@ -2,6 +2,26 @@ const databaseCk2 = [
 	{
 		mod: "Crusader Kings II",
 		entries: [ {
+			authors: ["Letón Hostislavič"],
+			image: "2501277222021666506/ED52A03FEA2EB4B2F413B39B850EE2FB7118867B",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
+					version: "3.3.3.5", lastUpdate: "2024-10-05"
+				},
+				{
+					type: "Google Диск",
+					link: "https://drive.google.com/file/d/1XxwZdm21CNbuJ4PMYQz1MyHEOZO9JGcu/view",
+					version: "3.3.3.5", lastUpdate: "2024-10-05"
+				}
+			],
+			more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
+		} ]
+	}/*,
+	{
+		mod: "Crusader Kings II",
+		entries: [ {
 			authors: ["Ucraina Unione Strategists"],
 			links: [
 				{
@@ -16,7 +36,7 @@ const databaseCk2 = [
 				}
 			]
 		} ]
-	}
+	}*/
 ]
 const databaseEu4 = [
 	{
@@ -81,7 +101,7 @@ const databaseCs = [
 				{
 					type: "Crowdin",
 					link: "https://crowdin.com/project/cities-skylines",
-					lastUpdate: "2023-09-26"
+					lastUpdate: "2024-09-04"
 				}
 			]
 		} ]
@@ -135,7 +155,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.12.5", lastUpdate: "2024-09-05"
+					lang: "англ.", version: "3.13.2", lastUpdate: "2024-10-08"
 				}
 			]
 		} ]
@@ -343,7 +363,7 @@ const databaseHoi4 = [
 		mod: "Kaiserreich",
 		entries: [ {
 			authors: ["Stepan", "CodyMaster"], note: "та інші",
-			image: "1978799422474817186/5918FEA9360CB09ABA37EC2C814298B30826AF44",
+			image: "2423587592582916237/5918FEA9360CB09ABA37EC2C814298B30826AF44",
 			links: [
 				{
 					type: "Steam",
@@ -371,7 +391,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3285395156",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2076426030",
-					lang: "англ.", lastUpdate: "2024-08-13"
+					lang: "англ.", lastUpdate: "2024-09-29"
 				}
 			]
 		} ]
@@ -1148,7 +1168,7 @@ const databaseHoi4 = [
 		category: 2, official: true,
 		mod: "Ukraine Above All",
 		entries: [ {
-			authors: ["GBV", "Lonster"], note: "та <dfn title='Опублікував: GBV\nПерекладачі:\n  &bull; Lonster\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>інші</dfn>",
+			authors: ["GBV", "Lonster"], note: "та <dfn title='Опублікував: GBV\nГоловний перекладач: Lonster\nІнші перекладачі:\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>інші</dfn>",
 			image: "2040735491762509515/3066631A48A09B3FC6F24AC5D8699F5E84BB2D61",
 			links: [
 				{
@@ -1168,14 +1188,14 @@ const databaseHoi4 = [
 		category: 2,
 		mod: "Ukrainian State: the Great Reborn",
 		entries: [ {
-			authors: ["Shield", "Godresky", "Alex", "Illuhmanka"],
+			authors: ["def", "Godresky", "alex"], note: "<dfn title='Подяки від авторів:\n  &bull; Illuhmanka\n  &bull; Molfar'>�</dfn>",
 			image: "2260308645835966035/7AD7FE313969D61DAE43B7D37673BDA503E57D28",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3125928554",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-					lang: "англ.", version: "1.5.2", lastUpdate: "2024-05-16"
+					lang: "англ.", version: "1.7", lastUpdate: "2024-09-27"
 				}/*,
 				{
 					type: "GitHub",
@@ -2007,13 +2027,22 @@ const databaseCk3 = [
 	{
 		mod: "Crusader Kings III",
 		entries: [ {
-			authors: ["KYR_MAN"],
+			authors: ["KYR_MAN"], note: "та спільнота",
 			image: "2526038317285070860/29A56491C59F08EBBEDF9E95DDFEDE2B2C8B73D9",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lastUpdate: "2024-09-16"
+					lastUpdate: "2024-10-06"
+				},
+				{
+					type: "GitHub",
+					link: "https://github.com/atelyk/CKIII-Ukr"
+				},
+				{
+					type: "Crowdin",
+					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
+					lastUpdate: "2024-10-06"
 				}
 			]
 		} ]
@@ -2036,34 +2065,6 @@ const databaseCk3 = [
 				}
 			],
 			more: "<p class='more-info'>Сюди також включено переклади нижчеперелічених дрібних модифікацій:</p><ul style='font-size: small; columns: 2;'><li>Hometowns <small>(&gt; <i>Mekbots</i>)</small></li><li>Switch Character Interaction <small>(&gt; <i>FunGaming44</i>)</small></li><li>Rename Anyone <small>(&gt; <i>MacAwesome</i>)</small></li><li>Commanders+ <small>(&gt; <i>I Am Full Truie</i>)</small></li></ul>"
-		} ]
-	},
-	{
-		mod: "Crusader Kings III",
-		entries: [ {
-			authors: ["EYELESS"],
-			image: "",
-			links: [
-				{
-					type: "GitHub", old: true,
-					link: "https://github.com/EYELESS-UA/Crusader-Kings-3-Ukrainian-localization",
-					version: "1.9.0.4"
-				}
-			]
-		} ]
-	},
-	{
-		mod: "Crusader Kings III",
-		entries: [ {
-			authors: ["Спільнота"], note: "(<i>dfk</i>, <i>ser_rocko</i> та інші)",
-			image: "",
-			links: [
-				{
-					type: "Crowdin",
-					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
-					lastUpdate: "2024-06-24"
-				}
-			]
 		} ]
 	}
 ]

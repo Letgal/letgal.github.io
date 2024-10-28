@@ -1,23 +1,42 @@
 const databaseCk2 = [
 	{
 		mod: "Crusader Kings II",
-		entries: [ {
+		entries: [
+			{
 			authors: ["Letón Hostislavič"],
-			image: "2501277222021666506/ED52A03FEA2EB4B2F413B39B850EE2FB7118867B",
+			image: "2506907626729943721/12DA0CCB7FF989ECE619CC2BD102591566C037ED",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-					version: "3.3.3.5", lastUpdate: "2024-10-05"
+					version: "3.3.5.1", lastUpdate: "2024-10-13"
 				},
 				{
-					type: "Google Диск",
-					link: "https://drive.google.com/file/d/1XxwZdm21CNbuJ4PMYQz1MyHEOZO9JGcu/view",
-					version: "3.3.3.5", lastUpdate: "2024-10-05"
+					type: "MEGA",
+					link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
+					version: "3.3.5.1", lastUpdate: "2024-10-13"
 				}
 			],
 			more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
-		} ]
+			},
+			{
+				authors: ["Letón Hostislavič"],
+				image: "2506907626730045027/590E82CFF2B43E8A537360E9139907C548D15CD0",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
+						version: "3.3.5.1", lastUpdate: "2024-10-13"
+					},
+					{
+						type: "MEGA",
+						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
+						version: "3.3.5.1", lastUpdate: "2024-10-13"
+					}
+				],
+				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
+			}
+		]
 	}/*,
 	{
 		mod: "Crusader Kings II",
@@ -48,17 +67,17 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.37.2", lastUpdate: "2024-07-28"
+					version: "1.37", lastUpdate: "2024-10-21"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/54275/Any",
-					version: "1.37.2", lastUpdate: "2024-06-27"
+					version: "1.37", lastUpdate: "2024-06-27"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/vicner/eu4",
-					version: "1.37.2"
+					version: "1.37"
 				}
 			]
 		} ]
@@ -346,12 +365,12 @@ const databaseHoi4 = [
 			},
 			{
 				authors: ["Letón Hostislavič"],
-				// image: "2503519056824221093/FE552024C94ADB46B6CC56DCFA31ECA175637A95",
+				image: "2506908624515294550/70AF3F0B9EED671CF4B487D384C304E654920AC1",
 				links: [
 					{
-						type: "Steam", old: true,
+						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3119420273",
-						lang: "англ., рос.", version: "1.13", lastUpdate: "2023-12-23"
+						lang: "англ., рос.", version: "1.14", lastUpdate: "2024-10-28"
 					}
 				],
 				more: "<p class='more-info'>Це набір перекладів нижчеперелічених дрібних модифікацій:</p><ul style='font-size: small; columns: 2;'><li>Battle Royale</li><li>City Maker</li><li>Coring Button</li><li>Country Roulette</li><li><span title='Це колекція, в яку входять:\n  &bull; Diplomatic Alignment Triangle for HOI4\n  &bull; Diplomatic Alignment Triangle for Kaiserreich\n  &bull; Diplomatic Alignment Triangle for The New Order\n  &bull; Diplomatic Alignment Triangle for Millennium Dawn\n  &bull; Diplomatic Alignment Triangle for Red Flood\n  &bull; Diplomatic Alignment Triangle for Calm Before the Storm\n  &bull; Diplomatic Alignment Triangle for TWR\n  &bull; Diplomatic Alignment Triangle for for Bruderkrieg'>Diplomatic Alignment Triangle</span></li><li>Faction Distance Limiter</li><li>Formable Nations in Setup Options</li><li>League of Nations</li><li>Ledger</li><li>Map Modes+</li><li>Peace Deals</li><li>Recall Volunteers <small>(&gt; <i>Yard1</i>)</small></li><li>Recall Volunteers <small>(&gt; <i>Not Monika Plus</i>)</small></li><li><span title='Це колекція, в яку входять:\n  &bull; Rename Factions\n  &bull; Rename Parties\n  &bull; Rename States\n  &bull; Rename Country Leaders'>Rename Mods</span></li><li>State Transfer Tool</li><li>State Transfer Tool MP</li><li>Toolpack Without the Errors</li><li>TWR GDP Screen</li><li>Yearly Event Cards</li></ul>"
@@ -384,14 +403,14 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "KaiserreduX",
 		entries: [ {
-			authors: ["Calicemtea"],
+			authors: ["Salisemtea"],
 			image: "2551934896671485734/208C0DC7B15C9121DAF673C0BD9033EB783E77CC",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3285395156",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2076426030",
-					lang: "англ.", lastUpdate: "2024-09-29"
+					lang: "англ.", lastUpdate: "2024-10-12"
 				}
 			]
 		} ]
@@ -610,7 +629,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3315940642",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2335819732",
-						lang: "англ.", lastUpdate: "2024-09-01"
+						lang: "англ.", lastUpdate: "2024-10-17"
 					}
 				]
 			}
@@ -676,6 +695,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2953333379",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2948642461",
 					lang: "рос.", lastUpdate: "2023-04-06"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "Avatar - The last Airbender",
+		entries: [ {
+			authors: ["PusoGANG"],
+			image: "2478761126840663972/8CA6913296D0088155439F6671AFA2AABA4C789B",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3353560188",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3277883529",
+					lang: "рос.", lastUpdate: "2024-10-26"
 				}
 			]
 		} ]
@@ -755,7 +790,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3324635840",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3318977347",
-					lang: "англ.", lastUpdate: "2024-09-04"
+					lang: "англ.", lastUpdate: "2024-10-17"
 				}
 			]
 		} ]
@@ -1743,7 +1778,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3324847880",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3097661966",
-					lang: "англ.", lastUpdate: "2024-09-05"
+					lang: "англ.", lastUpdate: "2024-10-17"
 				}
 			]
 		} ]
@@ -1981,7 +2016,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3268869028",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2013056623",
-					lang: "англ., рос.", lastUpdate: "2024-09-15"
+					lang: "англ., рос.", lastUpdate: "2024-10-19"
 				}
 			]
 		} ]
@@ -2033,16 +2068,22 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lastUpdate: "2024-10-06"
+					lang: "англ.", version: "1.13", lastUpdate: "2024-10-27"
+				},
+				{
+					type: "Paradox Mods",
+					link: "https://mods.paradoxplaza.com/mods/83117/Any",
+					lang: "англ.", version: "1.13", lastUpdate: "2024-10-27"
 				},
 				{
 					type: "GitHub",
-					link: "https://github.com/atelyk/CKIII-Ukr"
+					link: "https://github.com/atelyk/CKIII-Ukr",
+					lang: "англ.", version: "1.13"
 				},
 				{
 					type: "Crowdin",
 					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
-					lastUpdate: "2024-10-06"
+					lang: "англ.", version: "1.13", lastUpdate: "2024-10-27"
 				}
 			]
 		} ]
@@ -2056,12 +2097,12 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lastUpdate: "2024-07-20"
+					lastUpdate: "2024-10-24"
 				},
 				{
 					type: "Dropbox",
 					link: "https://www.dropbox.com/scl/fo/wzb9p0kl3pk6xe0y3d4i4/AAkIV9WNoFVz7S7gzRYDfLI",
-					lastUpdate: "2024-08-08"
+					lastUpdate: "2024-08-18"
 				}
 			],
 			more: "<p class='more-info'>Сюди також включено переклади нижчеперелічених дрібних модифікацій:</p><ul style='font-size: small; columns: 2;'><li>Hometowns <small>(&gt; <i>Mekbots</i>)</small></li><li>Switch Character Interaction <small>(&gt; <i>FunGaming44</i>)</small></li><li>Rename Anyone <small>(&gt; <i>MacAwesome</i>)</small></li><li>Commanders+ <small>(&gt; <i>I Am Full Truie</i>)</small></li></ul>"

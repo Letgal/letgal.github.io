@@ -73,9 +73,8 @@
 		#mod-details {
 			z-index: 2;
 			display: none;
-			position: fixed; top: 20%; bottom: 0; left: 10%; right: 10%;
+			position: fixed; top: 0; bottom: 0; left: 10%; right: 10%;
 			padding: 1rem;
-			border-top-left-radius: 2em; border-top-right-radius: 2em;
 			background: linear-gradient(to bottom, #222, #111);
 			overflow-x: hidden;
 			box-shadow: 0 0 2rem black;
@@ -189,7 +188,7 @@
 		}
 		@keyframes slideUp {
 			from { top: 100%; }
-			to { top: 20%; }
+			to { top: var(--header-height); }
 		}
 	</style>
 	<script type="text/javascript" src="shared.js"></script>
@@ -341,10 +340,10 @@
 	<h1>Моди для <i id="title"></i> українською</h1>
 
 	<!-- CRUSADER KINGS II -->
-	<div id="ck2" class="game"><button class="mod" onclick="openModDetails(databaseCk2, 0);">Переклад гри (версія 3.3.3.5)</button></div>
+	<div id="ck2" class="game"><button class="mod" onclick="openModDetails(databaseCk2, 0);">Переклад гри (версія 3.3.5.1)</button></div>
 
 	<!-- EUROPA UNIVERSALIS IV -->
-	<div id="eu4" class="game"><button class="mod" onclick="openModDetails(databaseEu4, 0);">Переклад гри (версія 1.37)</button></div>
+	<div id="eu4" class="game"><button class="mod" onclick="openModDetails(databaseEu4, 0);">Переклад гри (версія 1.37.2)</button></div>
 
 	<!-- CITIES: SKYLINES -->
 	<div id="cs" class="game">
@@ -365,7 +364,7 @@
 	<div id="stel" class="game">
 		<h2>Переклади гри (3)</h2>
 		<div class="gridlist col-3">
-			<button class="mod" onclick="openModDetails(databaseStel, 0);"><span title="Оновлено для версії 3.13.2">3.13.2</span></button>
+			<button class="mod" onclick="openModDetails(databaseStel, 0);"><span title="Оновлено для версії 3.14">3.14</span></button>
 			<button class="mod" onclick="openModDetails(databaseStel, 1);"><span title="Оновлено для версії 3.11">3.11</span></button>
 			<button class="mod old" onclick="openModDetails(databaseStel, 2);"><span title="Оновлено для версії 3.8.4">3.8.4</span></button>
 		</div>
@@ -381,7 +380,7 @@
 	<div id="hoi4" class="game">
 		<a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" target="_blank">Колекція перекладів у Майстерні Steam</a>
 		<h2>Переклади гри (1)</h2>
-		<button class="mod" onclick="openModDetails(databaseHoi4, 0);"><span title="Оновлено для версії 1.14.8">1.14.8</span></button>
+		<button class="mod" onclick="openModDetails(databaseHoi4, 0);">Переклад гри (версія 1.15.0)</button>
 	</div>
 
 	<!-- IMPERATOR: ROME -->
@@ -411,7 +410,7 @@
 	</div>
 
 	<!-- CITIES: SKYLINES II -->
-	<div id="cs2" class="game"><button class="mod" onclick="openModDetails(databaseCs2, 0);">Переклад гри (версія 1.1.0f1)</button></div>
+	<div id="cs2" class="game"><button class="mod" onclick="openModDetails(databaseCs2, 0);">Переклад гри (версія 1.1.11f1)</button></div>
 
 	<div id="after" onclick="closeModDetails();"></div>
 	<div id="mod-details"><button id='close' onclick='closeModDetails();'>&times;</button></div>

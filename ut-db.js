@@ -3,35 +3,45 @@ const databaseCk2 = [
 		mod: "Crusader Kings II",
 		entries: [
 			{
-			authors: ["Letón Hostislavič"],
-			image: "2506907626729943721/12DA0CCB7FF989ECE619CC2BD102591566C037ED",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-					version: "3.3.5.1", lastUpdate: "2024-10-13"
-				},
-				{
-					type: "MEGA",
-					link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-					version: "3.3.5.1", lastUpdate: "2024-10-13"
-				}
-			],
-			more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
+				authors: ["Letón Hostislavič"],
+				image: "63709816687445419/C97DA1FA5CAD4CB664270A448309DD94435FB19A",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
+						version: "3.3.5.1", lastUpdate: "2024-12-07"
+					},
+					{
+						type: "Nexus Mods",
+						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
+						version: "3.3.5.1", lastUpdate: "2024-12-07"
+					},
+					{
+						type: "MEGA",
+						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
+						version: "3.3.5.1", lastUpdate: "2024-12-07"
+					}
+				],
+				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
 			},
 			{
 				authors: ["Letón Hostislavič"],
-				image: "2506907626730045027/590E82CFF2B43E8A537360E9139907C548D15CD0",
+				image: "63709816687446934/E6D91F444C189883CA5CA2299BF2BD6C35839463",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2024-10-13"
+						version: "3.3.5.1", lastUpdate: "2024-12-07"
+					},
+					{
+						type: "Nexus Mods",
+						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
+						version: "3.3.5.1", lastUpdate: "2024-12-07"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2024-10-13"
+						version: "3.3.5.1", lastUpdate: "2024-12-07"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
@@ -119,8 +129,7 @@ const databaseCs = [
 			links: [
 				{
 					type: "Crowdin",
-					link: "https://crowdin.com/project/cities-skylines",
-					lastUpdate: "2024-09-04"
+					link: "https://crowdin.com/project/cities-skylines"
 				}
 			]
 		} ]
@@ -174,7 +183,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.13.2", lastUpdate: "2024-10-08"
+					lang: "англ.", version: "3.14", lastUpdate: "2024-11-21"
 				}
 			]
 		} ]
@@ -333,33 +342,33 @@ const databaseHoi4 = [
 		entries: [
 			{
 			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "OlshenUA"],
-			note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Ner Kun\n  &bull; Churban\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "2503519056824221093/FE552024C94ADB46B6CC56DCFA31ECA175637A95",
+			note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; ціктакомба\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
+			image: "63707821971450914/4741CDD77DEF659BB861D31C946CA03E62AB7419",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.14.8", lastUpdate: "2024-09-20"
+					lang: "англ., рос.", version: "1.15.0", lastUpdate: "2024-11-18"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.14.8", lastUpdate: "2024-09-20"
+					lang: "англ., рос.", version: "1.15.0", lastUpdate: "2024-11-18"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.14.8", lastUpdate: "2024-09-20"
+					lang: "англ., рос.", version: "1.15.0", lastUpdate: "2024-11-18"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					lang: "англ., рос.", version: "1.14.8"
+					lang: "англ., рос.", version: "1.15.0"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.14.8", lastUpdate: "2024-09-20"
+					lang: "англ., рос.", version: "1.15.0", lastUpdate: "2024-11-18"
 				}
 			],
 			},
@@ -388,18 +397,28 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", lastUpdate: "2024-09-20"
+					lang: "англ.", lastUpdate: "2024-11-18"
 				},
 				{
 					type: "Paradox Mods", old: true,
 					link: "https://mods.paradoxplaza.com/mods/46206/Any",
 					linkOriginal: "https://mods.paradoxplaza.com/mods/6810/Any",
 					lang: "рос.", lastUpdate: "2022-06-26"
+				},
+				{
+					type: "Nexus Mods", old: true,
+					link: "https://www.nexusmods.com/heartsofironiv/mods/86",
+					lang: "англ.", lastUpdate: "2024-09-05"
+				},
+				{
+					type: "GitHub",
+					link: "https://github.com/CodyMaster3/kr_ukrainian_localization",
+					lang: "англ."
 				}
 			]
 		} ]
 	},
-	{
+	/*{
 		category: 1,
 		mod: "KaiserreduX",
 		entries: [ {
@@ -414,7 +433,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 1,
 		mod: "Red Flood",
@@ -459,7 +478,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3334431115",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2438003901",
-						lang: "англ.", lastUpdate: "2023-09-20"
+						lang: "англ.", lastUpdate: "2023-10-20"
 					}
 				]
 			}/*,
@@ -568,10 +587,10 @@ const databaseHoi4 = [
 			image: "2431467623661212907/D4E9EF0A0FF15730AD7608319EE1D9E38C3BDB8F",
 			links: [
 				{
-					type: "Steam", old: true,
+					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1946557392",
-					lang: "англ., рос.", lastUpdate: "2024-08-25"
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
+					lang: "англ., рос.", lastUpdate: "2024-12-02"
 				}
 			]
 		} ]
@@ -1210,7 +1229,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2024-03-21"
+					lang: "рос.", lastUpdate: "2024-11-24"
 				},
 				{
 					type: "Transifex",
@@ -2068,22 +2087,22 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.", version: "1.13", lastUpdate: "2024-10-27"
+					lang: "англ.", version: "1.14", lastUpdate: "2024-12-05"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/83117/Any",
-					lang: "англ.", version: "1.13", lastUpdate: "2024-10-27"
+					lang: "англ.", version: "1.14", lastUpdate: "2024-11-20"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/atelyk/CKIII-Ukr",
-					lang: "англ.", version: "1.13"
+					lang: "англ.", version: "1.14"
 				},
 				{
 					type: "Crowdin",
 					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
-					lang: "англ.", version: "1.13", lastUpdate: "2024-10-27"
+					lang: "англ.", version: "1.14"
 				}
 			]
 		} ]
@@ -2091,21 +2110,21 @@ const databaseCk3 = [
 	{
 		mod: "Crusader Kings III",
 		entries: [ {
-			authors: ["Doffi"],
+			authors: ["Doffi", "@AHrEJl"],
 			image: "2527156431486130539/5B81391D260EC3577AC4CE89B5A48C2EC3233CFB",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lastUpdate: "2024-10-24"
+					lastUpdate: "2024-11-19"
 				},
 				{
 					type: "Dropbox",
 					link: "https://www.dropbox.com/scl/fo/wzb9p0kl3pk6xe0y3d4i4/AAkIV9WNoFVz7S7gzRYDfLI",
-					lastUpdate: "2024-08-18"
+					lastUpdate: "2024-11-13"
 				}
 			],
-			more: "<p class='more-info'>Сюди також включено переклади нижчеперелічених дрібних модифікацій:</p><ul style='font-size: small; columns: 2;'><li>Hometowns <small>(&gt; <i>Mekbots</i>)</small></li><li>Switch Character Interaction <small>(&gt; <i>FunGaming44</i>)</small></li><li>Rename Anyone <small>(&gt; <i>MacAwesome</i>)</small></li><li>Commanders+ <small>(&gt; <i>I Am Full Truie</i>)</small></li></ul>"
+			more: "<p class='more-info'>Сюди також включено переклади декількох дрібних модифікацій (список є на сторінці Steam).</p>"
 		} ]
 	}
 ]
@@ -2251,7 +2270,7 @@ const databaseCs2 = [
 				{
 					type: "GitHub",
 					link: "https://github.com/minenkoden/skylines2-ua",
-					version: "1.1.0f1"
+					version: "1.1.11f1"
 				},
 				{
 					type: "Steam (ручне встановлення)",

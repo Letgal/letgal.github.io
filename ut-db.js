@@ -626,7 +626,7 @@ const databaseHoi4 = [
 			{
 				authors: ["Letón Hostislavič", "Green Kitten", "ціктакомба"],
 				note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Green Kitten\n  &bull; ціктакомба\n  &bull; StasJesus\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
-				image: "2467481203452187089/9ECA52B6DA0F3FF70068C5A0F71F80751A4B090D",
+				image: "63714075381741610/528380F393A5C2A27F559852140F410DE2D96C46",
 				links: [
 					{
 						type: "Steam",

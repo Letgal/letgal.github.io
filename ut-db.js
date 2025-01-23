@@ -9,17 +9,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2024-12-07"
+						version: "3.3.5.1", lastUpdate: "2025-01-13"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2024-12-07"
+						version: "3.3.5.1", lastUpdate: "2025-01-13"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2024-12-07"
+						version: "3.3.5.1", lastUpdate: "2025-01-13"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
@@ -31,17 +31,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2024-12-07"
+						version: "3.3.5.1", lastUpdate: "2025-01-13"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2024-12-07"
+						version: "3.3.5.1", lastUpdate: "2025-01-13"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2024-12-07"
+						version: "3.3.5.1", lastUpdate: "2025-01-13"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
@@ -77,12 +77,12 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.37", lastUpdate: "2024-10-21"
+					version: "1.37", lastUpdate: "2025-01-14"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/54275/Any",
-					version: "1.37", lastUpdate: "2024-06-27"
+					version: "1.37.5", lastUpdate: "2024-12-16"
 				},
 				{
 					type: "GitHub",
@@ -183,7 +183,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.14", lastUpdate: "2024-11-21"
+					lang: "англ.", version: "3.14", lastUpdate: "2024-12-29"
 				}
 			]
 		} ]
@@ -348,27 +348,27 @@ const databaseHoi4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.15.0", lastUpdate: "2024-11-18"
+					lang: "англ., рос.", version: "1.15.3", lastUpdate: "2025-01-20"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.15.0", lastUpdate: "2024-11-18"
+					lang: "англ., рос.", version: "1.15.3", lastUpdate: "2025-01-20"
 				},
 				{
 					type: "Nexus Mods",
-					link: "https://nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.15.0", lastUpdate: "2024-11-18"
+					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
+					lang: "англ., рос.", version: "1.15.3", lastUpdate: "2025-01-20"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					lang: "англ., рос.", version: "1.15.0"
+					lang: "англ., рос.", version: "1.15.3"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.15.0", lastUpdate: "2024-11-18"
+					lang: "англ., рос.", version: "1.15.3", lastUpdate: "2025-01-20"
 				}
 			],
 			},
@@ -406,7 +406,7 @@ const databaseHoi4 = [
 					lang: "рос.", lastUpdate: "2022-06-26"
 				},
 				{
-					type: "Nexus Mods", old: true,
+					type: "Nexus Mods",/* old: true,*/
 					link: "https://www.nexusmods.com/heartsofironiv/mods/86",
 					lang: "англ.", lastUpdate: "2024-09-05"
 				},
@@ -422,14 +422,13 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "KaiserreduX",
 		entries: [ {
-			authors: ["Salisemtea"],
-			image: "2551934896671485734/208C0DC7B15C9121DAF673C0BD9033EB783E77CC",
+			authors: ["Braunfel"],
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3285395156",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2076426030",
-					lang: "англ.", lastUpdate: "2024-10-12"
+					lang: "англ.", lastUpdate: "2025-01-18"
 				}
 			]
 		} ]
@@ -481,37 +480,30 @@ const databaseHoi4 = [
 						lang: "англ.", lastUpdate: "2023-10-20"
 					}
 				]
-			}/*,
-			{
-			authors: ["Руди"],
-			image: "2549682215199141226/08144419BC2725801EFF559BD69ADFC4016EDA66",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3282813867",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2438003901",
-					lang: "рос.", lastUpdate: "2024-07-06"
-				}
-			]
-			}*/
+			}
 		]
 	},
 	{
 		category: 1,
 		mod: "Millennium Dawn: A Modern Day Mod",
 		entries: [
-			/*{
-				authors: ["Venom Snake", "Denus"],
-				image: "2482130582399647343/1252CC71B4176C5C431BA11F9CCCBD805BBD578D",
+			{
+				authors: ["4oomba"],
+				image: "25429846520414984/49C5D26686BAC8AD878A76B0F41B1BE08A1FAD91",
 				links: [
 					{
 						type: "Steam",
-						link: "https://steamcommunity.com/workshop/filedetails/?id=3294212570",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3385590256",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
-						lang: "рос.", lastUpdate: "2024-07-27"
+						lang: "англ., рос.", version: "1.11.1", lastUpdate: "2025-01-15"
+					},
+					{
+						type: "Nexus Mods",
+						link: "https://www.nexusmods.com/heartsofironiv/mods/96",
+						lang: "англ., рос.", version: "1.11.1", lastUpdate: "2025-01-15"
 					}
 				]
-			},*/
+			},
 			{
 				authors: ["TTTSHOK"],
 				image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384",
@@ -550,7 +542,7 @@ const databaseHoi4 = [
 			image: "1799774361347164308/6913E546BF0486BD520D200989881BF786A5012B",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2866159880",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2718874788",
 					lang: "англ., укр.", lastUpdate: "2023-02-11"
@@ -606,7 +598,23 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3305152475",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2150229170",
-					lang: "англ., рос.", lastUpdate: "2024-08-22"
+					lang: "англ., рос.", lastUpdate: "2025-01-07"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "Old World Blues",
+		entries: [ {
+			authors: ["Green Kitten"],
+			image: "44568068867294455/6FCE7BB2CEB0CBF368EE5FAA14D38A0D3EE5116E",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3368978184",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2265420196",
+					lang: "англ.", lastUpdate: "2024-11-20"
 				}
 			]
 		} ]
@@ -624,12 +632,17 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.2.2.7", lastUpdate: "2024-08-19"
+						lang: "англ., рос.", version: "2.3.1.5", lastUpdate: "2025-01-23"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						lang: "англ., рос.", version: "2.2.2.7"
+						lang: "англ., рос.", version: "2.3.1.5"
+					},
+					{
+						type: "Google Диск",
+						link: "https://drive.google.com/drive/folders/1NLaPzRGszZmv8u1Auz-RItKONAO9Avc5",
+						lang: "англ., рос.", version: "2.3.1.5", lastUpdate: "2025-01-23"
 					}
 				]
 			}
@@ -1229,7 +1242,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2024-11-24"
+					lang: "рос.", lastUpdate: "2024-12-23"
 				},
 				{
 					type: "Transifex",
@@ -1249,7 +1262,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3125928554",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-					lang: "англ.", version: "1.7", lastUpdate: "2024-09-27"
+					lang: "англ.", version: "1.7", lastUpdate: "2024-11-13"
 				}/*,
 				{
 					type: "GitHub",
@@ -1267,7 +1280,7 @@ const databaseHoi4 = [
 			image: "2031738275759068112/A00172D4682B7118CCCAC7E5DDD4561DA07EA973",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3012214374",
 					// linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3014624883",
 					lang: "англ., рос.", lastUpdate: "2023-09-30"
@@ -1523,18 +1536,32 @@ const databaseHoi4 = [
 	{
 		category: 3,
 		mod: "Formable Nations",
-		entries: [ {
+		entries: [
+			{
+				authors: ["ArBo"],
+				image: "41194808173616560/48D113D28D31EBD9FF47B70BC687509CBC939F5B",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3403624146",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2870292087",
+						lang: "англ.", lastUpdate: "2024-01-18"
+					}
+				]
+			},
+			{
 			authors: ["TTTSHOK"],
 			image: "1986681082527236621/7F38836D8A626EA2CA4C5A885BF0B00589CBA585",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2900502530",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2870292087",
 					lang: "англ.", lastUpdate: "2022-12-11"
 				}
 			]
-		} ]
+			}
+		]
 	},
 	{
 		category: 3,
@@ -2087,12 +2114,12 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.", version: "1.14", lastUpdate: "2024-12-05"
+					lang: "англ.", version: "1.14", lastUpdate: "2025-01-04"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/83117/Any",
-					lang: "англ.", version: "1.14", lastUpdate: "2024-11-20"
+					lang: "англ.", version: "1.14", lastUpdate: "2025-11-20"
 				},
 				{
 					type: "GitHub",
@@ -2116,7 +2143,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lastUpdate: "2024-11-19"
+					lastUpdate: "2025-01-09"
 				},
 				{
 					type: "Dropbox",

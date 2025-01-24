@@ -112,12 +112,12 @@
 			height: 1em;
 			vertical-align: -7.5%;
 			margin-right: 0.25em;
-			cursor: help;
 		}
+		#mod-details > h3 img[title] { cursor: help; }
 		#mod-details > hr { margin-block: 1em; }
 
 		.entry { min-height: calc(var(--entry-thumbnail-height) + 2px); }
-		.entry > img:first-of-type, .entry > div.noimage {
+		.entry > .thumb, .entry > div.noimage {
 			float: left;
 			height: var(--entry-thumbnail-height);
 			margin-right: 1em;
@@ -281,7 +281,7 @@
 				if (j > 0) { modal.innerHTML += "<hr>"; }
 				const entry = document.createElement("div");
 					entry.className = "entry";
-					if (database[i].entries[j].image) { entry.innerHTML += "<img src='https://steamuserimages-a.akamaihd.net/ugc/" + database[i].entries[j].image + "/'>"; }
+					if (database[i].entries[j].image) { entry.innerHTML += "<img class='thumb' src='https://steamuserimages-a.akamaihd.net/ugc/" + database[i].entries[j].image + "/'>"; }
 					else { entry.innerHTML += "<div class='noimage'></div>"; }
 					const modAuthors = document.createElement("p");
 						modAuthors.className = "authors";

@@ -108,15 +108,15 @@
 			margin-top: 0;
 			text-align: center;
 		}
-		#mod-details > h3 img {
+		#mod-details > hr { margin-block: 1em; }
+
+		.entry { min-height: calc(var(--entry-thumbnail-height) + 2px); }
+		.entry .official {
 			height: 1em;
 			vertical-align: -7.5%;
 			margin-right: 0.25em;
 		}
-		#mod-details > h3 img[title] { cursor: help; }
-		#mod-details > hr { margin-block: 1em; }
-
-		.entry { min-height: calc(var(--entry-thumbnail-height) + 2px); }
+		.entry .official[title] { cursor: help; }
 		.entry > .thumb, .entry > div.noimage {
 			float: left;
 			height: var(--entry-thumbnail-height);
@@ -274,7 +274,6 @@
 			const modal = document.getElementById("mod-details");
 
 			const modTitle = document.createElement("h3");
-				if (database[i].official) { modTitle.innerHTML += "<img src='gfx/official-mark.svg' title='Офіційний переклад'>"; }
 				modTitle.innerHTML += database[i].mod;
 			modal.appendChild(modTitle);
 			for (j = 0; j < database[i].entries.length; j++) {
@@ -285,6 +284,7 @@
 					else { entry.innerHTML += "<div class='noimage'></div>"; }
 					const modAuthors = document.createElement("p");
 						modAuthors.className = "authors";
+						if (database[i].official) { modAuthors.innerHTML += "<img class='official' src='gfx/official-mark.svg' title='Офіційний переклад'>"; }
 						modAuthors.innerHTML += "Автор(и): "
 						for (k = 0; k < database[i].entries[j].authors.length; k++) {
 							modAuthors.innerHTML += "<span>" + database[i].entries[j].authors[k] + "</span>";

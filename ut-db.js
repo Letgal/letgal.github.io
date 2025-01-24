@@ -1252,7 +1252,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, official: true,
 		mod: "Ukrainian State: the Great Reborn",
 		entries: [ {
 			authors: ["def", "Godresky", "alex"], note: "<dfn title='Подяки від авторів:\n  &bull; Illuhmanka\n  &bull; Molfar'>�</dfn>",

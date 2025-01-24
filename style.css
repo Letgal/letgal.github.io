@@ -151,6 +151,8 @@ h1 + p { text-align: center; }
 
 .hidden { display: none; }
 .noselect { user-select: none; }
+.sans { font-family: var(--sans-serif); }
+.serif { font-family: var(--serif); }
 .intro {
 	margin-block: 0.5rem;
 	text-align: center;

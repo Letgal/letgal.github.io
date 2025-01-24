@@ -11,6 +11,11 @@ const webLinks = [
 		text: "Українські моди для ігор Paradox",
 		attr: "href", value: "/ut.html"
 	},
+	{
+		tag: "a",
+		text: "Що я створив",
+		attr: "href", value: "/creations.html"
+	}
 	// {
 	// 	tag: "a",
 	// 	text: "Переклади модів Skyrim",

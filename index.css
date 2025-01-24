@@ -21,6 +21,7 @@ a.block, button.block {
 a.block { background: var(--primary); color: #222; }
 a.block:hover { background: var(--primary-hover); text-decoration: none; }
 a.block:active { background: var(--primary-active); }
+
 #logo {
 	position: absolute; top: 0; left: 50%;
 	translate: -50% -50%;
@@ -36,5 +37,5 @@ a.block:active { background: var(--primary-active); }
 	transition: .2s ease;
 	animation: rotation 30s infinite linear;
 }
-#logo:hover img { filter: brightness(130%); }
-#logo:active img { filter: brightness(70%); }
+#logo:hover img { filter: brightness(120%); }
+#logo:active img { filter: brightness(80%); }

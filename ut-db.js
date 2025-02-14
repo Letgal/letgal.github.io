@@ -9,17 +9,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2025-01-13"
+						version: "3.3.5.1", lastUpdate: "2025-02-14"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-01-13"
+						version: "3.3.5.1", lastUpdate: "2025-02-14"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2025-01-13"
+						version: "3.3.5.1", lastUpdate: "2025-02-14"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
@@ -77,7 +77,7 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.37", lastUpdate: "2025-01-14"
+					version: "1.37.5", lastUpdate: "2025-02-02"
 				},
 				{
 					type: "Paradox Mods",
@@ -195,12 +195,12 @@ const databaseStel = [
 			image: "2001325032159963894/F589BCA56EE9E44C1D3BDC5A1B940AE434306989",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2943508186",
 					lang: "англ.", version: "3.11", lastUpdate: "2024-03-17"
 				},
 				{
-					type: "Paradox Mods",
+					type: "Paradox Mods", old: true,
 					link: "https://mods.paradoxplaza.com/mods/8155/Any",
 					lang: "англ.", version: "3.11", lastUpdate: "2024-03-17"
 				}
@@ -583,6 +583,11 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
 					lang: "англ., рос.", lastUpdate: "2024-12-02"
+				},
+				{
+					type: "GitHub",
+					link: "https://github.com/Letgal/hoi4_ul-the_great_war_redux",
+					lang: "англ., рос."
 				}
 			]
 		} ]
@@ -599,6 +604,11 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3305152475",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2150229170",
 					lang: "англ., рос.", lastUpdate: "2025-01-07"
+				},
+				{
+					type: "GitHub",
+					link: "https://github.com/DenySmirnov/Youjo-Senki-Redux-Ukrainian",
+					lang: "англ., рос."
 				}
 			]
 		} ]
@@ -2114,12 +2124,12 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.", version: "1.14", lastUpdate: "2025-01-04"
+					lang: "англ.", version: "1.14", lastUpdate: "2025-01-24"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/83117/Any",
-					lang: "англ.", version: "1.14", lastUpdate: "2025-11-20"
+					lang: "англ.", version: "1.14", lastUpdate: "2024-11-20"
 				},
 				{
 					type: "GitHub",
@@ -2295,13 +2305,18 @@ const databaseCs2 = [
 			image: "2136454577518260848/BBFCA76673510170D7D92F7AE649C3F8A920D4F6",
 			links: [
 				{
-					type: "GitHub",
-					link: "https://github.com/minenkoden/skylines2-ua",
-					version: "1.1.11f1"
+					type: "Paradox Mods",
+					link: "https://mods.paradoxplaza.com/mods/76545/Windows",
+					version: "1.1.11f1", lastUpdate: "2025-02-13"
 				},
 				{
 					type: "Steam (ручне встановлення)",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3067392946"
+				},
+				{
+					type: "GitHub",
+					link: "https://github.com/minenkoden/skylines2-ua",
+					version: "1.1.11f1"
 				}
 			]
 		} ]

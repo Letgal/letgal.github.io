@@ -18,13 +18,6 @@
 		.container ul { font-size: smaller; }
 
 		.container > div { padding: 0.5em; border: 1px solid var(--special2); }
-		.container > div::before {
-			display: block;
-			float: left;
-			width: 100px; aspect-ratio: 1/1;
-			margin: -0.5em; margin-right: 0.5em;
-			background-size: contain; background-repeat: no-repeat;
-		}
 		.container > div h4 {
 			margin: 0;
 			text-align: center;
@@ -33,6 +26,14 @@
 		.container > div ul { margin-block-start: 0.5em; margin-block-end: 0; }
 		.container > a { margin: 0; }
 
+		.thumbnail::before {
+			display: block;
+			float: left;
+			width: 100px; aspect-ratio: 1/1;
+			margin: -0.5em; margin-right: 0.5em;
+			background-size: contain; background-repeat: no-repeat;
+		}
+		.thumbnail ul { position: relative; left: 1em; }
 		.category {
 			padding: 0.25em;
 			border-radius: 0.5em;
@@ -44,7 +45,10 @@
 		#hoi4-uk::before { content: ""; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/63707821971450914/4741CDD77DEF659BB861D31C946CA03E62AB7419/"); }
 		#ck2-uk::before { content: ""; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/63708367289923886/318AF978F23D7E95A663AAD1E666521855D5EDED/"); }
 		#hoi4-eaw-uk::before { content: ""; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/63714075381741610/528380F393A5C2A27F559852140F410DE2D96C46/"); }
-		#hoi4-uk ul, #ck2-uk ul, #hoi4-eaw-uk ul { position: relative; left: 3em; }
+		#hoi4-tgwr-uk::before { content: ""; background-image: url("https://images.steamusercontent.com/ugc/2431467623661212907/D4E9EF0A0FF15730AD7608319EE1D9E38C3BDB8F/"); }
+		/*#hoi4-rcw::before { content: ""; background-image: url(""); }*/
+		#hoi4-srr::before { content: ""; background-image: url("https://images.steamusercontent.com/ugc/63715342993873572/73C9E4E9288E8847E284663C2087E1940C4D2F5D/"); }
+		#hoi4-cap::before { content: ""; background-image: url("https://images.steamusercontent.com/ugc/63715342993872667/9457DB449A16C92E7D6C60703C9F247D9E64B889/"); }
 		#hoi4-minor-uk { grid-column: 1 / span 2; columns: 3; }
 	</style>
 	<script type="text/javascript" src="shared.js"></script>
@@ -52,8 +56,9 @@
 <body>
 	<a id="logo" href="/" title="Повернутися на головну сторінку"><img></a>
 	<h1>Що я створив</h1>
+	<h2>Переклади</h2>
 	<div class="container">
-		<div id="hoi4-uk">
+		<div id="hoi4-uk" class="thumbnail">
 			<h4>Українська локалізація HOI4</h4>
 			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
 			<ul>
@@ -64,7 +69,7 @@
 				<li><a href="https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view">Google Диск</a></li>
 			</ul>
 		</div>
-		<div id="ck2-uk">
+		<div id="ck2-uk" class="thumbnail">
 			<h4>Українська локалізація CK2</h4>
 			<span class="category">Переклад</span> <span class="category" title="Crusader Kings II">CK2</span>
 			<ul>
@@ -75,13 +80,22 @@
 				<li><a href="https://www.nexusmods.com/crusaderkings2/mods/115">Nexus Mods</a></li>
 			</ul>
 		</div>
-		<div id="hoi4-eaw-uk">
+		<div id="hoi4-eaw-uk" class="thumbnail">
 			<h4>Equestria at War</h4>
 			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3176454246">Steam</a></li>
 				<li><a href="https://github.com/Letgal/hoi4_ul-equestria_at_war">GitHub</a></li>
 				<li><a href="https://drive.google.com/drive/folders/1NLaPzRGszZmv8u1Auz-RItKONAO9Avc5">Google Диск</a></li>
+			</ul>
+		</div>
+		<div id="hoi4-tgwr-uk" class="thumbnail">
+			<h4>The Great War Redux</h4>
+			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+			<ul>
+				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2880535545">Steam</a></li>
+				<li><a href="https://github.com/Letgal/hoi4_ul-the_great_war_redux">GitHub</a></li>
+				<li><a href="https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw">MEGA</a></li>
 			</ul>
 		</div>
 		<div id="hoi4-minor-uk">
@@ -108,18 +122,28 @@
 		</div> -->
 		<a class="block" href="https://drukarnia.com.ua/leton" target="_blank" style="grid-column: auto / span 2;">Переклади щоденників розбробників HOI4</a>
 	</div>
-	<!-- <h3>Окремі моди</h3>
-	<div class="creation">
-		<h4>Russian Civil War</h4>
-		<ul><li><a href="https://github.com/Letgal/hoi4_rcw">GitHub</a></li></ul>
+	<h2>Окремі модифікації</h2>
+	<div class="container">
+		<!-- <div id="hoi4-rcw" class="thumbnail">
+			<h4>Russian Civil War</h4>
+			<ul><li><a href="https://github.com/Letgal/hoi4_rcw">GitHub</a></li></ul>
+		</div> -->
+		<div id="hoi4-srr" class="thumbnail">
+			<h4>Rise of the Soviet Republics</h4>
+			<span class="category">Модифікація</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+			<ul>
+				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3421563315">Steam</a></li>
+				<li><a href="https://github.com/Letgal/hoi4_srr">GitHub</a></li>
+			</ul>
+		</div>
+		<div id="hoi4-cap" class="thumbnail">
+			<h4>Censorship&nbsp;&amp; Propaganda</h4>
+			<span class="category">Модифікація</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+			<ul>
+				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3421563013">Steam</a></li>
+				<li><a href="https://github.com/Letgal/hoi4_cap">GitHub</a></li>
+			</ul>
+		</div>
 	</div>
-	<div class="creation">
-		<h4>Soviet Republics, Rise!</h4>
-		<ul><li><a href="https://github.com/Letgal/hoi4_srr">GitHub</a></li></ul>
-	</div>
-	<div class="creation">
-		<h4>Censorship&nbsp;&amp; Propaganda</h4>
-		<ul><li><a href="https://github.com/Letgal/hoi4_cap">GitHub</a></li></ul>
-	</div> -->
 </body>
 </html>

@@ -9,17 +9,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2025-02-14"
+						version: "3.3.5.1", lastUpdate: "2025-03-01"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-02-14"
+						version: "3.3.5.1", lastUpdate: "2025-03-01"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2025-02-14"
+						version: "3.3.5.1", lastUpdate: "2025-03-01"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
@@ -31,17 +31,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2025-01-13"
+						version: "3.3.5.1", lastUpdate: "2025-03-01"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-01-13"
+						version: "3.3.5.1", lastUpdate: "2025-03-01"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2025-01-13"
+						version: "3.3.5.1", lastUpdate: "2025-03-01"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
@@ -183,7 +183,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.14", lastUpdate: "2024-12-29"
+					lang: "англ.", version: "3.14", lastUpdate: "2025-02-24"
 				}
 			]
 		} ]
@@ -348,27 +348,27 @@ const databaseHoi4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.15.3", lastUpdate: "2025-01-20"
+					lang: "англ., рос.", version: "1.16.0", lastUpdate: "2025-03-05"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.15.3", lastUpdate: "2025-01-20"
+					lang: "англ., рос.", version: "1.16.0", lastUpdate: "2025-03-05"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.15.3", lastUpdate: "2025-01-20"
+					lang: "англ., рос.", version: "1.16.0", lastUpdate: "2025-03-05"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					lang: "англ., рос.", version: "1.15.3"
+					lang: "англ., рос.", version: "1.16.0"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.15.3", lastUpdate: "2025-01-20"
+					lang: "англ., рос.", version: "1.16.0", lastUpdate: "2025-03-05"
 				}
 			],
 			},
@@ -377,7 +377,7 @@ const databaseHoi4 = [
 				image: "2506908624515294550/70AF3F0B9EED671CF4B487D384C304E654920AC1",
 				links: [
 					{
-						type: "Steam",
+						type: "Steam", old: true,
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3119420273",
 						lang: "англ., рос.", version: "1.14", lastUpdate: "2024-10-28"
 					}
@@ -397,7 +397,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", lastUpdate: "2024-11-18"
+					lang: "англ.", lastUpdate: "2025-02-10"
 				},
 				{
 					type: "Paradox Mods", old: true,
@@ -495,12 +495,12 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3385590256",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
-						lang: "англ., рос.", version: "1.11.1", lastUpdate: "2025-01-15"
+						lang: "англ., рос.", version: "1.11.2a", lastUpdate: "2025-02-22"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/heartsofironiv/mods/96",
-						lang: "англ., рос.", version: "1.11.1", lastUpdate: "2025-01-15"
+						lang: "англ., рос.", version: "1.11.1", lastUpdate: "2025-02-14"
 					}
 				]
 			},
@@ -582,7 +582,12 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", lastUpdate: "2024-12-02"
+					lang: "англ., рос.", version: "0.13.22", lastUpdate: "2025-03-02"
+				},
+				{
+					type: "MEGA",
+					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
+					lang: "англ., рос.", version: "0.13.22", lastUpdate: "2025-03-02"
 				},
 				{
 					type: "GitHub",
@@ -655,13 +660,7 @@ const databaseHoi4 = [
 						lang: "англ., рос.", version: "2.3.1.5", lastUpdate: "2025-01-23"
 					}
 				]
-			}
-		]
-	},
-	{
-		category: 1,
-		mod: "Equestria at War Super Events",
-		entries: [
+			},
 			{
 				authors: ["Green Kitten"],
 				note: "<dfn title='З допомогою від Letón Hostislavič (технічне налагодження, шрифти)'>�</dfn>",
@@ -671,9 +670,10 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3315940642",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2335819732",
-						lang: "англ.", lastUpdate: "2024-10-17"
+						lang: "англ.", lastUpdate: "2024-10-17",
 					}
-				]
+				],
+				more: "<p class='more-info'>Це переклад <i>Equestria at War Super Events</i>, сабмоду до <i>Equestria at War</i>.</p>"
 			}
 		]
 	},
@@ -1252,7 +1252,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2024-12-23"
+					lang: "рос.", lastUpdate: "2025-03-06"
 				},
 				{
 					type: "Transifex",
@@ -1507,6 +1507,22 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
+		category: 2,
+		mod: "Make Chernygiv Great Again!",
+		entries: [ {
+			authors: ["IvanChik"],
+			image: "46828747823571371/16541C200857DAC8B83003FD54EB6096E274C119",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3426537193",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3422113665",
+					/*lang: "англ.",*/ lastUpdate: "2025-03-02"
+				}
+			]
+		} ]
+	},
+	{
 		category: 3,
 		mod: "Espionage Reworked",
 		entries: [ {
@@ -1585,6 +1601,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3262748463",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1977610093",
 					lang: "англ., рос., укр.", lastUpdate: "2024-06-07"
+				}
+			]
+		} ]
+	},
+	{
+		category: 3,
+		mod: "Better Arabia Formable",
+		entries: [ {
+			authors: ["IvanChik"],
+			image: "46828112624541718/BD67C9D62F80472BC91646E463C27392BA164A7E",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3430295513",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2941725015",
+					/*lang: "англ.",*/ lastUpdate: "2025-02-19"
 				}
 			]
 		} ]
@@ -2124,7 +2156,7 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.", version: "1.14", lastUpdate: "2025-01-24"
+					lang: "англ.", version: "1.14", lastUpdate: "2025-02-16"
 				},
 				{
 					type: "Paradox Mods",

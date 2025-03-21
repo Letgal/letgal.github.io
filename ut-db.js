@@ -2202,11 +2202,31 @@ const databaseV3 = [
 		category: 0,
 		mod: "Victoria 3",
 		entries: [ {
+			authors: ["godofburrito"], note: "та <dfn title='З допомогою від Nemejčyk'>�</dfn>",
+			image: "19802256781477905/48ECE259EBD1668488C89DFD434CFB231874A92C",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
+					lang: "англ.", version: "1.8.6", lastUpdate: "2025-03-19"
+				},
+				{
+					type: "Google Диск",
+					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
+					lang: "англ.", version: "1.8.6"
+				}
+			]
+		} ]
+	},
+	{
+		category: 0,
+		mod: "Victoria 3",
+		entries: [ {
 			authors: ["Godresky"], note: "та <dfn title='З допомогою:\n  &bull; Пан Дмитро\n  &bull; Пані Меліса\n  &bull; remark644\n  &bull; Пан Андріян\n  &bull; _rlly_\n  &bull; twentysixz\n  &bull; Letón Hostislavič (шрифти)\n  &bull; Дружня спільнота\n  &bull; Греко-католицька церква'>інші</dfn>",
 			image: "1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2884178988",
 					lang: "англ.", version: "1.5.12", lastUpdate: "2023-12-29"
 				},
@@ -2216,7 +2236,7 @@ const databaseV3 = [
 					lang: "англ.", version: "1.1.2", lastUpdate: "2023-02-01"
 				},
 				{
-					type: "GitHub",
+					type: "GitHub", old: true,
 					link: "https://github.com/Godresky/Victoria-3-Ukrainian-Translate",
 					lang: "англ.", version: "1.5.12"
 				},
@@ -2226,7 +2246,7 @@ const databaseV3 = [
 					lang: "англ.", lastUpdate: "2023-08-01"
 				},*/
 				{
-					type: "Google Диск",
+					type: "Google Диск", old: true,
 					link: "https://drive.google.com/drive/folders/186_K4LmKJh6JLijl9xXBqJsZbesNsF_c",
 					lang: "англ.", version: "1.5.12", lastUpdate: "2023-12-29"
 				}

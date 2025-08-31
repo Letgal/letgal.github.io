@@ -9,17 +9,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2025-04-20"
+						version: "3.3.5.1", lastUpdate: "2025-07-24"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-04-20"
+						version: "3.3.5.1", lastUpdate: "2025-07-24"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2025-04-20"
+						version: "3.3.5.1", lastUpdate: "2025-07-24"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
@@ -31,17 +31,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2025-04-20"
+						version: "3.3.5.1", lastUpdate: "2025-07-24"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-04-20"
+						version: "3.3.5.1", lastUpdate: "2025-07-24"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2025-04-20"
+						version: "3.3.5.1", lastUpdate: "2025-07-24"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
@@ -165,7 +165,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "3.14", lastUpdate: "2025-03-11"
+					lang: "англ.", version: "4.0.21", lastUpdate: "2025-07-04"
 				}
 			]
 		} ]
@@ -323,34 +323,34 @@ const databaseHoi4 = [
 		mod: "Hearts of Iron IV",
 		entries: [
 			{
-			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "OlshenUA"],
-			note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; ціктакомба\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "63719953033787765/B463C5859C5FDC941CDC385BBB7AF370FC2E07BC",
+			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "Бовкун"],
+			note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; Бовкун\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
+			image: "13857650116292388058/608917456EF2A9CB507EBE9C2A822EB97B2338A3",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.16.4", lastUpdate: "2025-03-29"
+					lang: "англ., рос.", version: "1.16.9", lastUpdate: "2025-06-17"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.16.4", lastUpdate: "2025-03-29"
+					lang: "англ., рос.", version: "1.16.9", lastUpdate: "2025-06-17"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.16.4", lastUpdate: "2025-03-29"
+					lang: "англ., рос.", version: "1.16.9", lastUpdate: "2025-06-17"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					lang: "англ., рос.", version: "1.16.4"
+					version: "1.16.9"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.16.4", lastUpdate: "2025-03-29"
+					lang: "англ., рос.", version: "1.16.9", lastUpdate: "2025-06-17"
 				}
 			],
 			},
@@ -379,7 +379,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", lastUpdate: "2025-02-10"
+					lang: "англ.", version: "1.5.1", lastUpdate: "2025-08-30"
 				},
 				{
 					type: "Paradox Mods", old: true,
@@ -394,7 +394,7 @@ const databaseHoi4 = [
 				},
 				{
 					type: "GitHub",
-					link: "https://github.com/CodyMaster3/kr_ukrainian_localization",
+					link: "https://github.com/CodyMaster3/KR_ukrainian_localization",
 					lang: "англ."
 				}
 			]
@@ -433,7 +433,7 @@ const databaseHoi4 = [
 			}
 		]
 	},
-	{
+	/*{
 		category: 1,
 		mod: "The Fire Rises",
 		entries: [
@@ -450,19 +450,59 @@ const databaseHoi4 = [
 				]
 			}
 		]
+	},*/
+	{
+		category: 1,
+		mod: "Millennium Dawn: A Modern Day Mod",
+		entries: [
+			{
+				authors: ["4oomba"],
+				image: "25429846520414984/49C5D26686BAC8AD878A76B0F41B1BE08A1FAD91",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3385590256",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
+						lang: "англ., рос.", version: "1.12.0d", lastUpdate: "2025-07-06"
+					},
+					{
+						type: "Nexus Mods",
+						link: "https://www.nexusmods.com/heartsofironiv/mods/96",
+						lang: "англ., рос.", version: "1.12.0d", lastUpdate: "2025-07-21"
+					}
+				]
+			},
+			{
+				authors: ["TTTSHOK"],
+				image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384",
+				links: [
+					{
+						type: "Steam", old: true,
+						link: "https://steamcommunity.com/workshop/filedetails/?id=2881606189",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
+						lang: "рос.", lastUpdate: "2023-01-13"
+					}
+				]
+			}
+		]
 	},
 	{
 		category: 1,
 		mod: "Old World Blues",
 		entries: [ {
-			authors: ["Green Kitten"],
+			authors: ["Бовкун", "Green Kitten"], note: "та інші",
 			image: "44568068867294455/6FCE7BB2CEB0CBF368EE5FAA14D38A0D3EE5116E",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3368978184",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2265420196",
-					lang: "англ.", lastUpdate: "2024-11-20"
+					lang: "англ.", version: "5.1.1a", lastUpdate: "2025-07-25"
+				},
+				{
+					type: "GitHub",
+					link: "https://github.com/CodyMaster3/OWB_ukrainian_localization",
+					lang: "англ."
 				}
 			]
 		} ]
@@ -472,25 +512,25 @@ const databaseHoi4 = [
 		mod: "Equestria at War",
 		entries: [
 			{
-				authors: ["Letón Hostislavič", "Green Kitten", "ціктакомба"],
-				note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Green Kitten\n  &bull; ціктакомба\n  &bull; StasJesus\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
-				image: "63714075381741610/528380F393A5C2A27F559852140F410DE2D96C46",
+				authors: ["Letón Hostislavič", "Бовкун", "Green Kitten"],
+				note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Green Kitten\n  &bull; StasJesus\n  &bull; pani_justyna1733\n  &bull; DAACENT\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
+				image: "18059409825619649924/2452D3CEDCF6662EF8A10D0CEE159957974377B9",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.4", lastUpdate: "2025-04-16"
+						lang: "англ., рос.", version: "2.4.0.5", lastUpdate: "2025-08-17"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						lang: "англ., рос.", version: "2.4"
+						version: "2.4.0.5"
 					},
 					{
 						type: "Google Диск",
 						link: "https://drive.google.com/drive/folders/1NLaPzRGszZmv8u1Auz-RItKONAO9Avc5",
-						lang: "англ., рос.", version: "2.4", lastUpdate: "2025-04-16"
+						lang: "англ., рос.", version: "2.4.0.5", lastUpdate: "2025-08-17"
 					}
 				]
 			},
@@ -509,6 +549,65 @@ const databaseHoi4 = [
 				more: "<p class='more-info'>Це переклад <i>Equestria at War Super Events</i>, сабмоду до <i>Equestria at War</i>.</p>"
 			}
 		]
+	},
+	{
+		category: 1,
+		mod: "The Great War",
+		entries: [ {
+			authors: ["Stepan"],
+			image: "2006971200365789308/9C5A8026DAB9A5248D41D20F616B75C0CE869A7A",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3023052626",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=699709023",
+					lang: "англ.", lastUpdate: "2023-09-03"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "The Great War Redux",
+		entries: [ {
+			authors: ["Letón Hostislavič", "TTTSHOK"],
+			note: "та <dfn title='Ініціатор: TTTSHOK\nГоловний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; kiryl\n  &bull; Лицарський хрест\n  &bull; TTTSHOK'>інші</dfn>",
+			image: "14100135373548234701/A16A56E3B3CE73E791A4CCE127D151F3A82602A0",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
+					lang: "англ., рос.", version: "2025-08-27", lastUpdate: "2025-08-27"
+				},
+				{
+					type: "MEGA",
+					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
+					lang: "англ., рос.", version: "2025-08-27", lastUpdate: "2025-08-27"
+				},
+				{
+					type: "GitHub",
+					link: "https://github.com/Letgal/hoi4_ul-the_great_war_redux",
+					lang: "англ., рос."
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "World Ablaze",
+		entries: [ {
+			authors: ["4oomba"],
+			image: "14669128701905600093/41691614D239DBC23E598BBEA6A7AB8E86B1603D",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3528187078",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2149567872",
+					lang: "англ., рос.", version: "9.2", lastUpdate: "2025-07-25"
+				}
+			]
+		} ]
 	},
 	{
 		category: 1,
@@ -544,38 +643,19 @@ const databaseHoi4 = [
 	},
 	{
 		category: 1,
-		mod: "Millennium Dawn: A Modern Day Mod",
-		entries: [
-			{
-				authors: ["4oomba"],
-				image: "25429846520414984/49C5D26686BAC8AD878A76B0F41B1BE08A1FAD91",
-				links: [
-					{
-						type: "Steam",
-						link: "https://steamcommunity.com/workshop/filedetails/?id=3385590256",
-						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
-						lang: "англ., рос.", version: "1.11.2a", lastUpdate: "2025-04-23"
-					},
-					{
-						type: "Nexus Mods",
-						link: "https://www.nexusmods.com/heartsofironiv/mods/96",
-						lang: "англ., рос.", version: "1.11.1", lastUpdate: "2025-02-14"
-					}
-				]
-			},
-			{
-				authors: ["TTTSHOK"],
-				image: "1878592397750023067/E1DEFB09A32AC7FF66E002D7094C2F6AA08C2384",
-				links: [
-					{
-						type: "Steam", old: true,
-						link: "https://steamcommunity.com/workshop/filedetails/?id=2881606189",
-						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
-						lang: "рос.", lastUpdate: "2023-01-13"
-					}
-				]
-			}
-		]
+		mod: "1984 - Revolution",
+		entries: [ {
+			authors: ["denysmirnow"],
+			image: "17742406736927693785/58525E3BB3E1F84BBAA890AFF8A29D0C392A38B2",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3477420924",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3465348500",
+					/*lang: "англ., рос.", */version: "0.2.3", lastUpdate: "2025-08-23"
+				}
+			]
+		} ]
 	},
 	/*{
 		category: 1,
@@ -598,48 +678,6 @@ const databaseHoi4 = [
 			]
 		} ]
 	},*/
-	{
-		category: 1,
-		mod: "The Great War",
-		entries: [ {
-			authors: ["Stepan"],
-			image: "2006971200365789308/9C5A8026DAB9A5248D41D20F616B75C0CE869A7A",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3023052626",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=699709023",
-					lang: "англ.", lastUpdate: "2023-09-03"
-				}
-			]
-		} ]
-	},
-	{
-		category: 1,
-		mod: "The Great War Redux",
-		entries: [ {
-			authors: ["TTTSHOK", "Letón Hostislavič"],
-			image: "2431467623661212907/D4E9EF0A0FF15730AD7608319EE1D9E38C3BDB8F",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "0.13.22", lastUpdate: "2025-03-08"
-				},
-				{
-					type: "MEGA",
-					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "0.13.22", lastUpdate: "2025-03-08"
-				},
-				{
-					type: "GitHub",
-					link: "https://github.com/Letgal/hoi4_ul-the_great_war_redux",
-					lang: "англ., рос."
-				}
-			]
-		} ]
-	},
 	{
 		category: 1,
 		mod: "Youjo Senki Redux",
@@ -825,14 +863,14 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "Millennium Dawn Classic",
 		entries: [ {
-			authors: ["Андрей"],
+			authors: ["Zireael"],
 			image: "2524912417428786242/A605C7F61998B55299B2E383370390CF4732F49B",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3283975327",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1847611462",
-					lang: "рос.", lastUpdate: "2023-07-07"
+					lang: "рос.", lastUpdate: "2024-07-04"
 				}
 			]
 		} ]
@@ -934,6 +972,38 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
+		category: 2, official: true,
+		mod: "Flames of Eastern Europe",
+		entries: [ {
+			authors: ["SteveJobs"],
+			image: "2420208624583163878/8D835B5D6C610A5DB013158851E4BFFF402E3863",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3315532920",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3315326738",
+					lang: "англ., укр.", lastUpdate: "2025-07-04"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2, official: true,
+		mod: "Eastern Frontlines",
+		entries: [ {
+			authors: ["Sil_Olexandr"],
+			image: "2469738708360056199/92EA1F4867E3258DC138114C84D23D63B5A68663",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3242954012",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3242940301",
+					lang: "англ., рос., укр.", lastUpdate: "2025-08-11"
+				}
+			]
+		} ]
+	},
+	{
 		category: 2,
 		mod: "Nordics Reworked",
 		entries: [ {
@@ -950,33 +1020,17 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2, official: true,
-		mod: "Flames of Eastern Europe",
+		category: 2,
+		mod: "Free Caucasus",
 		entries: [ {
-			authors: ["SteveJobs"],
-			image: "2420208624583163878/8D835B5D6C610A5DB013158851E4BFFF402E3863",
+			authors: ["Alfer209", "Лицарський хрест"],
+			image: "10759736117777434626/C3FDF68922FA4DA89501A4A4EEDAD377C8216174",
 			links: [
 				{
 					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3315532920",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3315326738",
-					lang: "англ., укр.", lastUpdate: "2024-09-20"
-				}
-			]
-		} ]
-	},
-	{
-		category: 2, official: true,
-		mod: "Eastern Frontlines",
-		entries: [ {
-			authors: ["Sil_Olexandr"],
-			image: "2469738708360056199/92EA1F4867E3258DC138114C84D23D63B5A68663",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3242954012",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3242940301",
-					lang: "англ., рос., укр.", lastUpdate: "2024-05-21"
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3558871782",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3425218699",
+					lang: "англ.", lastUpdate: "2025-08-31"
 				}
 			]
 		} ]
@@ -1002,7 +1056,7 @@ const databaseHoi4 = [
 		category: 2,
 		mod: "Ultimate German Focus Tree Updated",
 		entries: [ {
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "2017097230051390857/855D3E27EDA32BE3E9DA679F6F6A955BED967C16",
 			links: [
 				{
@@ -1031,7 +1085,7 @@ const databaseHoi4 = [
 				]
 			},
 			{
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "2021599470218417087/35AD31F9D6EF4B91471D4C638C8F01825C9D3B65",
 			links: [
 				{
@@ -1056,6 +1110,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2892791413",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2885517696",
 					lang: "англ.", lastUpdate: "2023-01-12"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
+		mod: "UK Rework",
+		entries: [ {
+			authors: ["Alfer209", "Лицарський хрест", "kiryl"],
+			image: "14158997250084635200/CC0BF6A1B041460ED733E194AEAD7A8F4D1EAFC1",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3552604173",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3537058569",
+					lang: "англ.", lastUpdate: "2025-08-20"
 				}
 			]
 		} ]
@@ -1245,7 +1315,7 @@ const databaseHoi4 = [
 		category: 2, official: true,
 		mod: "Ukraine Above All",
 		entries: [ {
-			authors: ["GBV", "Lonster"], note: "та <dfn title='Опублікував: GBV\nГоловний перекладач: Lonster\nІнші перекладачі:\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>інші</dfn>",
+			authors: ["GBV", "Lonster"], note: "та <dfn title='Оприлюднив: GBV\nГоловний перекладач: Lonster\nІнші перекладачі:\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>інші</dfn>",
 			image: "2040735491762509515/3066631A48A09B3FC6F24AC5D8699F5E84BB2D61",
 			links: [
 				{
@@ -1273,7 +1343,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3437387219",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-						lang: "англ.", version: "1.9", lastUpdate: "2025-04-26"
+						lang: "англ.", version: "1.9.1", lastUpdate: "2025-06-23"
 					}
 				]
 			},
@@ -1304,10 +1374,10 @@ const databaseHoi4 = [
 			image: "2031738275759068112/A00172D4682B7118CCCAC7E5DDD4561DA07EA973",
 			links: [
 				{
-					type: "Steam", old: true,
+					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3012214374",
-					// linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3014624883",
-					lang: "англ., рос.", lastUpdate: "2023-09-30"
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3340306786",
+					lang: "англ., рос.", lastUpdate: "2025-07-22"
 				}
 			]
 		} ]
@@ -1410,6 +1480,22 @@ const databaseHoi4 = [
 	},
 	{
 		category: 2,
+		mod: "Teto Territory",
+		entries: [ {
+			authors: ["Alfer209"],
+			image: "14610729076298111279/3E12256525F05891CC8A4EC57EED1A4828EB8AD8",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3533876886",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3467973842",
+					lang: "англ.", lastUpdate: "2025-07-24"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
 		mod: "Hearts of SCP",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1428,7 +1514,7 @@ const databaseHoi4 = [
 		category: 2, official: true,
 		mod: "Rise of Kharkiv",
 		entries: [ {
-			authors: ["Marsik"],
+			authors: ["Marsenko"],
 			image: "2107179278780894840/74428728AEFF46BACA97A69400FF37C6421712CF",
 			links: [
 				{
@@ -1523,7 +1609,20 @@ const databaseHoi4 = [
 	{
 		category: 2,
 		mod: "Make Chernygiv Great Again!",
-		entries: [ {
+		entries: [
+			{
+				authors: ["MelDyx"],
+				image: "17257020908699302328/EDB322DA0FC147642CBC58787088637B006C9189",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3488210243",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3422113665",
+						lang: "англ.", lastUpdate: "2025-05-26"
+					}
+				]
+			},
+			{
 			authors: ["IvanChyk59"],
 			image: "46828747823571371/16541C200857DAC8B83003FD54EB6096E274C119",
 			links: [
@@ -1531,10 +1630,11 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3426537193",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3422113665",
-					/*lang: "англ.",*/ lastUpdate: "2025-03-19"
+					lang: "англ., рос.", lastUpdate: "2025-05-26"
 				}
 			]
-		} ]
+			}
+		]
 	},
 	/*{
 		category: 3,
@@ -1561,7 +1661,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Universal Formable Nations",
 		entries: [ {
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "5105424732025379617/3EAE90B4E0572CD5E0BB71450D978678AF6A2A54",
 			links: [
 				{
@@ -1579,13 +1679,13 @@ const databaseHoi4 = [
 		entries: [
 			{
 				authors: ["ArBo"],
-				image: "41194808173616560/48D113D28D31EBD9FF47B70BC687509CBC939F5B",
+				image: "9591866676136554618/C7463A9A8F040E088C44B2DECBEA100D47E4D5A6",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3403624146",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2870292087",
-						lang: "англ.", lastUpdate: "2024-01-18"
+						lang: "англ.", lastUpdate: "2025-06-19"
 					}
 				]
 			},
@@ -1639,7 +1739,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Großdeutschland: A Germany Expansion",
 		entries: [ {
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "2538423216295688095/EF3F99C8D4E767197D59E1975AF9EEB98409F94C",
 			links: [
 				{
@@ -1655,7 +1755,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Improved German Opposition",
 		entries: [ {
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "2039602457404816323/3AF9BD3C367B319AD4162A99FA63B72452734DBF",
 			links: [
 				{
@@ -1701,7 +1801,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Snow's Reichkommisariats",
 		entries: [ {
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "2039603094842335081/E9F80654438295288CA023FA2C020776C2DDABAB",
 			links: [
 				{
@@ -1717,7 +1817,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Non-Aligned Reichkommisariats",
 		entries: [ {
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "2039602457419400852/7B8F7ACB90DA5A01C5731F4398DA94F747ED9A28",
 			links: [
 				{
@@ -1813,7 +1913,7 @@ const databaseHoi4 = [
 		category: 3,
 		mod: "Dissolved Germany",
 		entries: [ {
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "2028351009678394474/B8F2199EAA037F6869798F9AC713D4B215C6F654",
 			links: [
 				{
@@ -1837,48 +1937,6 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2897992396",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2881838413",
 					lang: "англ.", lastUpdate: "2022-12-05"
-				}
-			]
-		} ]
-	},
-	{
-		category: 4,
-		mod: "Dynamic Research Slots",
-		entries: [ {
-			authors: ["Letón Hostislavič"],
-			image: "5120061430840103428/B932DFDE5B87DD82E37A299012E6BC539C558551",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=2908253265",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2782571928",
-					lang: "англ., рос.", lastUpdate: "2022-12-29"
-				},
-				{
-					type: "Paradox Mods",
-					link: "https://mods.paradoxplaza.com/mods/55431/Any",
-					lang: "англ., рос.", lastUpdate: "2022-12-29"
-				},
-				{
-					type: "MEGA",
-					link: "https://mega.nz/file/l4BlXKID#5F9mTQPhCrJiOjjdV3gji6yRISJEFtqjwg5BOKbXTUY",
-					lang: "англ., рос."
-				}
-			]
-		} ]
-	},
-	{
-		category: 4,
-		mod: "Unlock All Ideologies For All Countries",
-		entries: [ {
-			authors: ["IvanChyk59"],
-			image: "46832547836121022/6C4B5F955B7A35AA96694AF4F6A2AAA89CC5F8CE",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3460786697",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1781455185",
-					lang: "англ., рос.", lastUpdate: "2025-04-09"
 				}
 			]
 		} ]
@@ -1945,6 +2003,48 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2937829857",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2915734811",
 					lang: "англ., укр.", lastUpdate: "2023-02-23"
+				}
+			]
+		} ]
+	},
+	{
+		category: 4,
+		mod: "Dynamic Research Slots",
+		entries: [ {
+			authors: ["Letón Hostislavič"],
+			image: "5120061430840103428/B932DFDE5B87DD82E37A299012E6BC539C558551",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=2908253265",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2782571928",
+					lang: "англ., рос.", lastUpdate: "2022-12-29"
+				},
+				{
+					type: "Paradox Mods",
+					link: "https://mods.paradoxplaza.com/mods/55431/Any",
+					lang: "англ., рос.", lastUpdate: "2022-12-29"
+				},
+				{
+					type: "MEGA",
+					link: "https://mega.nz/file/l4BlXKID#5F9mTQPhCrJiOjjdV3gji6yRISJEFtqjwg5BOKbXTUY",
+					lang: "англ., рос."
+				}
+			]
+		} ]
+	},
+	{
+		category: 4,
+		mod: "Unlock All Ideologies For All Countries",
+		entries: [ {
+			authors: ["IvanChyk59"],
+			image: "46832547836121022/6C4B5F955B7A35AA96694AF4F6A2AAA89CC5F8CE",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3460786697",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1781455185",
+					lang: "англ., рос.", lastUpdate: "2025-04-09"
 				}
 			]
 		} ]
@@ -2031,6 +2131,22 @@ const databaseHoi4 = [
 	},
 	{
 		category: 4,
+		mod: "War Chess",
+		entries: [ {
+			authors: ["TTTSHOK"],
+			image: "2019338796202461963/06BEE1F4E5EE429E7459FD70AE0C549DEF3D2B7B",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=2938839821",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2936449085",
+					lang: "англ.", lastUpdate: "2023-02-25"
+				}
+			]
+		} ]
+	},
+	{
+		category: 4,
 		mod: "Vanilla Super Events Expanded",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2057,22 +2173,6 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3268869028",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2013056623",
 					lang: "англ., рос.", lastUpdate: "2024-10-19"
-				}
-			]
-		} ]
-	},
-	{
-		category: 4,
-		mod: "War Chess",
-		entries: [ {
-			authors: ["TTTSHOK"],
-			image: "2019338796202461963/06BEE1F4E5EE429E7459FD70AE0C549DEF3D2B7B",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=2938839821",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2936449085",
-					lang: "англ.", lastUpdate: "2023-02-25"
 				}
 			]
 		} ]
@@ -2125,7 +2225,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Annex Subjects",
 		entries: [ {
-			authors: ["Lila Licht"],
+			authors: ["Lila Light"],
 			image: "2013720072663807467/DEE34A2A2D792989452E58B98DEF315EB6BBECCD",
 			links: [
 				{
@@ -2237,15 +2337,15 @@ const databaseHoi4 = [
 	},*/
 	{
 		category: 4,
-		mod: "Strategic region Donbas",
+		mod: "Gulf of America",
 		entries: [ {
 			authors: ["IvanChyk59"],
-			image: "46830098142037477/B02CB97B169CF9B87B227EF5E164D16076C2FC47",
+			image: "46830098154609487/BE5FB1D5E173ADF267E7054D5EAEB0CEBFE79235",
 			links: [
 				{
 					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3443541237",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3443541132",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3443600371",
+					// linkOriginal: "",
 					lang: "англ., рос.", lastUpdate: "2025-04-11"
 				}
 			]
@@ -2266,7 +2366,24 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
+	},
+	{
+		category: 4,
+		mod: "Strategic region Donbas",
+		entries: [ {
+			authors: ["IvanChyk59"],
+			image: "46830098142037477/B02CB97B169CF9B87B227EF5E164D16076C2FC47",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3443541237",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3443541132",
+					lang: "англ., рос.", lastUpdate: "2025-04-11"
+				}
+			]
+		} ]
 	}
+	/*додати Capital Changer і Better Mechanics: Extended Projects*/
 ]
 const databaseIr = [
 	{
@@ -2293,27 +2410,27 @@ const databaseCk3 = [
 		mod: "Crusader Kings III",
 		entries: [ {
 			authors: ["KYR_MAN"], note: "та спільнота",
-			image: "2526038317285070860/29A56491C59F08EBBEDF9E95DDFEDE2B2C8B73D9",
+			image: "14121815734692406372/B05C590FA218C5E6EE2DDBABBBCB45C3BF56A589",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
-					lang: "англ.", version: "1.14", lastUpdate: "2025-02-16"
+					lang: "англ."/*, version: "1.14"*/, lastUpdate: "2025-06-01"
 				},
 				{
-					type: "Paradox Mods",
+					type: "Paradox Mods", old: true,
 					link: "https://mods.paradoxplaza.com/mods/83117/Any",
-					lang: "англ.", version: "1.14", lastUpdate: "2024-11-20"
+					lang: "англ."/*, version: "1.14"*/, lastUpdate: "2024-11-20"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/atelyk/CKIII-Ukr",
-					lang: "англ.", version: "1.14"
+					lang: "англ."/*, version: "1.14"*/
 				},
 				{
 					type: "Crowdin",
 					link: "https://crowdin.com/project/crusader-kings-iii-ukrainian",
-					lang: "англ.", version: "1.14"
+					lang: "англ."/*, version: "1.14"*/
 				}
 			]
 		} ]
@@ -2321,21 +2438,51 @@ const databaseCk3 = [
 	{
 		mod: "Crusader Kings III",
 		entries: [ {
-			authors: ["Doffi", "@AHrEJl"],
+			authors: ["Doffi", "AHrEJl"],
 			image: "2527156431486130539/5B81391D260EC3577AC4CE89B5A48C2EC3233CFB",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lastUpdate: "2025-04-20"
+					lang: "англ.", lastUpdate: "2025-08-29"
 				},
 				{
 					type: "Dropbox",
-					link: "https://www.dropbox.com/scl/fo/wzb9p0kl3pk6xe0y3d4i4/AAkIV9WNoFVz7S7gzRYDfLI",
-					lastUpdate: "2025-03-20"
+					link: "https://www.dropbox.com/scl/fo/wzb9p0kl3pk6xe0y3d4i4/AAkIV9WNoFVz7S7gzRYDfLI?rlkey=yoizokkwh9ajwdrtiarm9n0nl",
+					lang: "англ.", lastUpdate: "2025-06-13"
 				}
 			],
 			more: "<p class='more-info'>Сюди також включено переклади декількох дрібних модифікацій (список є на сторінці Steam).</p>"
+		} ]
+	},
+	{
+		mod: "VIET Events",
+		entries: [ {
+			authors: ["Karley"],
+			image: "20934399048701574/364E3E902F2A79D71E125AA4B0E59C6DAFB1F4DA",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3445880345",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2227658180",
+					/*lang: "англ.", */lastUpdate: "2025-04-13"
+				}
+			]
+		} ]
+	},
+	{
+		mod: "Impregnate Spouse",
+		entries: [ {
+			authors: ["blackskullua"],
+			image: "2471983534604519298/089A71C91F6766EFA49CEBD73B366FB008806EC4",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3165340494",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2216917595",
+					lang: "англ., рос.", lastUpdate: "2024-02-21"
+				}
+			]
 		} ]
 	}
 ]
@@ -2350,14 +2497,15 @@ const databaseV3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
-					lang: "англ.", version: "1.8.6", lastUpdate: "2025-04-10"
+					lang: "англ.", version: "1.9", lastUpdate: "2025-08-24"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
-					lang: "англ.", version: "1.8.6"
+					lang: "англ.", version: "1.9", lastUpdate: "2025-07-19"
 				}
-			]
+			],
+			more: "<p class='more-info'>Сюди також включено переклади <i>Victoria Undead: A Zombie Apocalypse Mod</i> та <i>Eastern Europe</i>.</p>"
 		} ]
 	},
 	{
@@ -2495,13 +2643,13 @@ const databaseCs2 = [
 	{
 		mod: "Cities: Skylines II",
 		entries: [ {
-			authors: ["minenkoden"],
+			authors: ["PanReshalo"],
 			image: "2136454577518260848/BBFCA76673510170D7D92F7AE649C3F8A920D4F6",
 			links: [
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/76545/Windows",
-					version: "1.1.11f1", lastUpdate: "2025-03-22"
+					/*version: "1.1.11f1", */lastUpdate: "2025-06-22"
 				},
 				{
 					type: "Steam (ручне встановлення)",
@@ -2509,8 +2657,8 @@ const databaseCs2 = [
 				},
 				{
 					type: "GitHub",
-					link: "https://github.com/minenkoden/skylines2-ua",
-					version: "1.1.11f1"
+					link: "https://github.com/minenkoden/skylines2-ua"/*,
+					version: "1.1.11f1"*/
 				}
 			]
 		} ]

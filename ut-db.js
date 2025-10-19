@@ -53,7 +53,7 @@ const databaseEu4 = [
 	{
 		mod: "Europa Universalis IV",
 		entries: [ {
-			authors: ["vicner"],
+			authors: ["vicner (Het'man)", "sergey-astral"],
 			image: "314494866252173216/6B212F836B5DCDA7D39FC52C565217D6AA88EAB7",
 			links: [
 				{
@@ -165,7 +165,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "4.0.21", lastUpdate: "2025-07-04"
+					lang: "англ.", version: "4.0.23", lastUpdate: "2025-09-07"
 				}
 			]
 		} ]
@@ -332,7 +332,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", version: "1.5.2", lastUpdate: "2025-10-6"
+					lang: "англ.", version: "1.5.3", lastUpdate: "2025-10-19"
 				},
 				{
 					type: "Paradox Mods", old: true,
@@ -499,7 +499,7 @@ const databaseHoi4 = [
 						lang: "англ.", lastUpdate: "2024-10-17",
 					}
 				],
-				more: "<p class='more-info'>Це переклад <i>Equestria at War Super Events</i>, сабмоду до <i>Equestria at War</i>.</p>"
+				more: "<p class='more-info'>Це&nbsp;— переклад <i>Equestria at War Super Events</i>, сабмоду до <i>Equestria at War</i>.</p>"
 			}
 		]
 	},
@@ -531,12 +531,12 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "2025-09-05", lastUpdate: "2025-09-05"
+					lang: "англ., рос.", version: "0.15.4.2", lastUpdate: "2025-10-11"
 				},
 				{
 					type: "MEGA",
 					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "2025-09-05", lastUpdate: "2025-09-05"
+					lang: "англ., рос.", version: "0.15.4.2", lastUpdate: "2025-10-11"
 				},
 				{
 					type: "GitHub",
@@ -597,18 +597,33 @@ const databaseHoi4 = [
 	{
 		category: 1,
 		mod: "1984 - Revolution",
-		entries: [ {
-			authors: ["denysmirnow"],
-			image: "17742406736927693785/58525E3BB3E1F84BBAA890AFF8A29D0C392A38B2",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3477420924",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3465348500",
-					/*lang: "англ., рос.", */version: "0.2.4", lastUpdate: "2025-09-11"
-				}
-			]
-		} ]
+		entries: [
+			{
+				authors: ["denysmirnow"],
+				image: "17742406736927693785/58525E3BB3E1F84BBAA890AFF8A29D0C392A38B2",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3477420924",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3465348500",
+						/*lang: "англ., рос.", */version: "0.2.4", lastUpdate: "2025-10-16"
+					}
+				]
+			},
+			{
+				authors: ["denysmirnow"],
+				image: "11954479137045578399/3BBF981E1EB5B0D80E6ADB08BC78684425EAD818",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3587894724",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3587357719",
+						/*lang: "англ., рос.", */lastUpdate: "2025-10-16"
+					}
+				],
+				more: "<p class='more-info'>Це&nbsp;— переклад <i>1984 Revolution - Unburnable Bump</i>, сабмоду до <i>1984 - Revolution</i>.</p>"
+			}
+		]
 	},
 	/*{
 		category: 1,
@@ -633,6 +648,22 @@ const databaseHoi4 = [
 	},*/
 	{
 		category: 1,
+		mod: "A Roman World",
+		entries: [ {
+			authors: ["Alfer209", "Лицарський хрест", "Chayok_tea"],
+			image: "14796005753988655435/7A4418D62F6C85102FA1F9EC94577F436E466E53",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3589475512",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3574992633",
+					lang: "англ.", version: "alpha-1.0.1", lastUpdate: "2025-10-19"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
 		mod: "Youjo Senki Redux",
 		entries: [ {
 			authors: ["denysmirnow"],
@@ -648,6 +679,22 @@ const databaseHoi4 = [
 					type: "GitHub",
 					link: "https://github.com/DenySmirnov/Youjo-Senki-Redux-Ukrainian",
 					lang: "англ., рос."
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "Code Geass - Black Requiem",
+		entries: [ {
+			authors: ["[VRKTTS]A1shitemasu", "[VRKTTS]Jerek"],
+			image: "15285257883037490044/2E25257A84A5CC7FBCE731431E9C9CB97D2535EE",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3589850229",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2785523030",
+					lang: "рос.", version: "0.0.25", lastUpdate: "2025-10-19"
 				}
 			]
 		} ]
@@ -816,8 +863,7 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "Their Finest Bruh",
 		entries: [ {
-			authors: ["Stryker"],
-			note: "та інші",
+			authors: ["Stryker"], note: "та інші",
 			image: "11475079230188527365/3E22430DEFC64EC5C6EA1E637ADE4C06E433385E",
 			links: [
 				{
@@ -1755,6 +1801,22 @@ const databaseHoi4 = [
 	},
 	{
 		category: 3,
+		mod: "Reichspakt+",
+		entries: [ {
+			authors: ["Alfer209", "Лицарський хрест"],
+			image: "13996364636900551388/D8F8A72E8718B3E0B6185282E7DCD802EB5AFFB6",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3586799698",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3479440654",
+					lang: "англ.", lastUpdate: "2025-10-14"
+				}
+			]
+		} ]
+	},
+	{
+		category: 3,
 		mod: "Improved German Opposition",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -1997,7 +2059,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Military Laws",
 		entries: [ {
-			authors: ["Гетьман Криївки"],
+			authors: ["I'M HAPPY", "tan_mai.ke", "Mapno"],
 			image: "2054241693281536106/24BE2B8143EFC996AEC02F390CEFD276F7C6E452",
 			links: [
 				{
@@ -2005,6 +2067,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2937829857",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2915734811",
 					lang: "англ., укр.", lastUpdate: "2023-02-23"
+				}
+			]
+		} ]
+	},
+	{
+		category: 4,
+		mod: "Better Mechanics: Extended Projects",
+		entries: [ {
+			authors: ["ArBo"],
+			image: "15143872922352835974/AADA00C50BC5D9DFF2332BA66A41A5216EC46BF1",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3503654177",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3446246309",
+					lang: "англ.", lastUpdate: "2025-06-19"
 				}
 			]
 		} ]
@@ -2055,7 +2133,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Allied Construction Projects",
 		entries: [ {
-			authors: ["TEXA"],
+			authors: ["Dominic DeCoco"],
 			image: "2044109861648817864/E9DF5921B159792F646A6E52A041FE147B9E521D",
 			links: [
 				{
@@ -2243,7 +2321,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Demand It!",
 			entries: [ {
-			authors: ["TEXA"],
+			authors: ["Dominic DeCoco"],
 			image: "2044109228592375815/19CDD2C7694BE647E19439EA83D9A6389399917F",
 			links: [
 				{
@@ -2504,12 +2582,12 @@ const databaseV3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
-					lang: "англ.", version: "1.9", lastUpdate: "2025-08-24"
+					lang: "англ.", version: "1.11", lastUpdate: "2025-10-17"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
-					lang: "англ.", version: "1.9", lastUpdate: "2025-07-19"
+					lang: "англ.", version: "1.11", lastUpdate: "2025-10-17"
 				}
 			],
 			more: "<p class='more-info'>Сюди також включено переклади <i>Victoria Undead: A Zombie Apocalypse Mod</i> та <i>Eastern Europe</i>.</p>"

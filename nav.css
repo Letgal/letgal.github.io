@@ -41,5 +41,6 @@ nav input[type=radio]:checked + label {
 	width: 100%;
 	color: #222;
 	background: var(--border);
+	mask-image: linear-gradient(to right, #0004, #000 33.333%);
 	cursor: default;
 }

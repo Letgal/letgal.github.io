@@ -20,6 +20,13 @@
 		h2 { margin-block-end: 0.5em; }
 		h3 { margin-block-end: calc(1em / 3); }
 
+		button {
+			background: linear-gradient(to bottom, #555B 33.333%, #777B);
+			box-shadow: 0 3px 6px #BBB4 inset;
+		}
+		button:not(.noclick):hover { background: linear-gradient(to bottom, #555 33.333%, #777); filter: brightness(1.1); }
+		button:not(.noclick):active { background: linear-gradient(to bottom, #555 33.333%, #777); filter: brightness(0.8); }
+
 		p[title], span[title] { text-decoration: underline; cursor: help; }
 
 		.game { display: none; }
@@ -154,7 +161,7 @@
 			color: var(--text-color);
 			font-size: 0.8rem;
 		}
-		.links-grid > div.steam h5 { background: linear-gradient(to right, #235, #457); }
+		.links-grid > div.steam h5 { background: linear-gradient(to right, #346, #568); }
 		.links-grid > div.old h5 { background: linear-gradient(to right, #733, #955); }
 		.links-grid > div p { margin: 0 0.5em; }
 		.links-grid > div p i { color: var(--text-color); }

@@ -9,17 +9,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2025-09-24"
+						version: "3.3.5.1", lastUpdate: "2025-11-02"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-09-24"
+						version: "3.3.5.1", lastUpdate: "2025-11-02"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2025-09-24"
+						version: "3.3.5.1", lastUpdate: "2025-11-02"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
@@ -31,17 +31,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2025-09-24"
+						version: "3.3.5.1", lastUpdate: "2025-11-02"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-09-24"
+						version: "3.3.5.1", lastUpdate: "2025-11-02"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2025-09-24"
+						version: "3.3.5.1", lastUpdate: "2025-11-02"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
@@ -277,33 +277,33 @@ const databaseHoi4 = [
 		entries: [
 			{
 			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "Бовкун"],
-			note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; Бовкун\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "13857650116292388058/608917456EF2A9CB507EBE9C2A822EB97B2338A3",
+			note: "та <dfn title='Ініціатор, куратор: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; Бовкун\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
+			image: "14511431738991889004/2411AB23E93B07E8F988DA161A7F43531DD3B4EC",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.16.9", lastUpdate: "2025-09-23"
+					lang: "англ., рос.", version: "1.16.10", lastUpdate: "2025-10-21"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.16.9", lastUpdate: "2025-09-23"
+					lang: "англ., рос.", version: "1.16.10", lastUpdate: "2025-10-21"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.16.9", lastUpdate: "2025-09-23"
+					lang: "англ., рос.", version: "1.16.10", lastUpdate: "2025-10-21"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					version: "1.16.9"
+					version: "1.16.10"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.16.9", lastUpdate: "2025-09-23"
+					lang: "англ., рос.", version: "1.16.10", lastUpdate: "2025-10-21"
 				}
 			],
 			},
@@ -466,24 +466,24 @@ const databaseHoi4 = [
 		entries: [
 			{
 				authors: ["Letón Hostislavič", "Бовкун", "Green Kitten"],
-				note: "та <dfn title='Ініціатор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Green Kitten\n  &bull; StasJesus\n  &bull; pani_justyna1733\n  &bull; DAACENT\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
+				note: "та <dfn title='Ініціатор, куратор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Green Kitten\n  &bull; StasJesus\n  &bull; pani_justyna1733\n  &bull; DAACENT\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
 				image: "18059409825619649924/2452D3CEDCF6662EF8A10D0CEE159957974377B9",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.4.1.1", lastUpdate: "2025-10-07"
+						lang: "англ., рос.", version: "2.4.1.2", lastUpdate: "2025-11-07"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.4.1.1"
+						version: "2.4.1.2"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.4.1.1", lastUpdate: "2025-10-07"
+						lang: "англ., рос.", version: "2.4.1.2", lastUpdate: "2025-11-07"
 					}
 				]
 			},
@@ -505,13 +505,30 @@ const databaseHoi4 = [
 	},
 	{
 		category: 1,
+		mod: "Mankind's Valhalla: The New German Order",
+		entries: [ {
+			authors: ["BT-7"],
+			image: "13139798373161006351/2E8117D868A46B60C924A4A8D528619ABE2D1667",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3596130723",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3467330618",
+					lang: "англ., рос.", lastUpdate: "2025-11-04",
+				}
+			],
+			more: "<p class='more-info'>Це&nbsp;— переклад <i>Mankind's Valhalla: The New German Order</i>, сабмоду до <i>Equestria at War</i>.</p>"
+		} ]
+	},
+	{
+		category: 1,
 		mod: "The Great War",
 		entries: [ {
 			authors: ["Stepan"],
 			image: "2006971200365789308/9C5A8026DAB9A5248D41D20F616B75C0CE869A7A",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3023052626",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=699709023",
 					lang: "англ.", lastUpdate: "2023-09-03"
@@ -524,19 +541,19 @@ const databaseHoi4 = [
 		mod: "The Great War Redux",
 		entries: [ {
 			authors: ["Letón Hostislavič", "TTTSHOK"],
-			note: "та <dfn title='Ініціатор: TTTSHOK\nГоловний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; kiryl\n  &bull; Лицарський хрест\n  &bull; TTTSHOK'>інші</dfn>",
+			note: "та <dfn title='Ініціатор: TTTSHOK\nКуратор, головний перекладач: Letón Hostislavič\nВнесок також зробили (в порядку спадання):\n  &bull; Лицарський хрест\n  &bull; kiryl\n  &bull; TTTSHOK'>інші</dfn>",
 			image: "14100135373548234701/A16A56E3B3CE73E791A4CCE127D151F3A82602A0",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "0.15.4.2", lastUpdate: "2025-10-11"
+					lang: "англ., рос.", version: "0.15.5", lastUpdate: "2025-11-06"
 				},
 				{
 					type: "MEGA",
 					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "0.15.4.2", lastUpdate: "2025-10-11"
+					lang: "англ., рос.", version: "0.15.5", lastUpdate: "2025-11-06"
 				},
 				{
 					type: "GitHub",
@@ -609,7 +626,13 @@ const databaseHoi4 = [
 						/*lang: "англ., рос.", */version: "0.2.4", lastUpdate: "2025-10-16"
 					}
 				]
-			},
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "1984 Revolution - Unburnable Bump",
+		entries: [
 			{
 				authors: ["denysmirnow"],
 				image: "11954479137045578399/3BBF981E1EB5B0D80E6ADB08BC78684425EAD818",
@@ -618,7 +641,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3587894724",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3587357719",
-						/*lang: "англ., рос.", */lastUpdate: "2025-10-16"
+						/*lang: "англ., рос.", */lastUpdate: "2025-10-29"
 					}
 				],
 				more: "<p class='more-info'>Це&nbsp;— переклад <i>1984 Revolution - Unburnable Bump</i>, сабмоду до <i>1984 - Revolution</i>.</p>"
@@ -1522,6 +1545,38 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2969916349",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2954063955",
 					lang: "англ.", lastUpdate: "2023-05-01"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
+		mod: "Luxembourg Focus Tree",
+		entries: [ {
+			authors: ["Alfer209", "kiryl"],
+			image: "16861494146485677481/A76C860469C6F6B70F771EEF3F816ABB15932895",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3599483525",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2795773099",
+					/*lang: "англ.", */lastUpdate: "2025-11-04"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2, official: true,
+		mod: "Generic Focus Tree: Redux",
+		entries: [ {
+			authors: ["BoznaWhere"],
+			image: "17070641435094923081/828C70EEB4E72911375E3766F9FAA8D0DB95032B",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3597454982",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3596666948",
+					/*lang: "англ.",*/ lastUpdate: "2025-11-06"
 				}
 			]
 		} ]
@@ -2518,18 +2573,18 @@ const databaseCk3 = [
 	{
 		mod: "Crusader Kings III",
 		entries: [ {
-			authors: ["Doffi", "AHrEJl"],
+			authors: ["Doffi", "AHrEJl", "Arlechin"],
 			image: "2527156431486130539/5B81391D260EC3577AC4CE89B5A48C2EC3233CFB",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lang: "англ.", lastUpdate: "2025-08-29"
+					lang: "англ.", lastUpdate: "2025-11-08"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/75966/Any",
-					lang: "англ.", lastUpdate: "2025-08-29"
+					lang: "англ.", lastUpdate: "2025-11-08"
 				},
 				{
 					type: "Dropbox",
@@ -2582,12 +2637,12 @@ const databaseV3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
-					lang: "англ.", version: "1.11", lastUpdate: "2025-10-17"
+					lang: "англ.", version: "1.11", lastUpdate: "2025-10-31"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
-					lang: "англ.", version: "1.11", lastUpdate: "2025-10-17"
+					lang: "англ.", version: "1.11", lastUpdate: "2025-10-31"
 				}
 			],
 			more: "<p class='more-info'>Сюди також включено переклади <i>Victoria Undead: A Zombie Apocalypse Mod</i> та <i>Eastern Europe</i>.</p>"

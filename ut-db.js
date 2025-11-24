@@ -278,32 +278,32 @@ const databaseHoi4 = [
 			{
 			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "Бовкун"],
 			note: "та <dfn title='Ініціатор, куратор: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; Бовкун\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "14511431738991889004/2411AB23E93B07E8F988DA161A7F43531DD3B4EC",
+			image: "12574806070928431781/9235AF604F1DB13942598DF5F7EE1040A151BBAC",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.16.10", lastUpdate: "2025-10-21"
+					lang: "англ., рос.", version: "1.17.0", lastUpdate: "2025-11-24"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.16.10", lastUpdate: "2025-10-21"
+					lang: "англ., рос.", version: "1.17.0", lastUpdate: "2025-11-24"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.16.10", lastUpdate: "2025-10-21"
+					lang: "англ., рос.", version: "1.17.0", lastUpdate: "2025-11-24"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					version: "1.16.10"
+					version: "1.17.0"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.16.10", lastUpdate: "2025-10-21"
+					lang: "англ., рос.", version: "1.17.0", lastUpdate: "2025-11-24"
 				}
 			],
 			},
@@ -416,12 +416,12 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3385590256",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
-						lang: "англ., рос.", version: "1.12.0d", lastUpdate: "2025-07-06"
+						lang: "англ., рос.", version: "1.12.2", lastUpdate: "2025-11-20"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/heartsofironiv/mods/96",
-						lang: "англ., рос.", version: "1.12.0d", lastUpdate: "2025-07-21"
+						lang: "англ., рос.", version: "1.11.1", lastUpdate: "2025-07-21"
 					}
 				]
 			},
@@ -473,17 +473,17 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.4.1.2", lastUpdate: "2025-11-07"
+						lang: "англ., рос.", version: "2.4.2", lastUpdate: "2025-11-23"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.4.1.2"
+						version: "2.4.2"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.4.1.2", lastUpdate: "2025-11-07"
+						lang: "англ., рос.", version: "2.4.2", lastUpdate: "2025-11-23"
 					}
 				]
 			},
@@ -548,17 +548,17 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "0.15.5", lastUpdate: "2025-11-06"
+					lang: "англ., рос.", version: "0.15.7", lastUpdate: "2025-11-23"
 				},
 				{
 					type: "MEGA",
 					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "0.15.5", lastUpdate: "2025-11-06"
+					lang: "англ., рос.", version: "0.15.7", lastUpdate: "2025-11-23"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ul-the_great_war_redux",
-					lang: "англ., рос."
+					version: "0.15.7"
 				}
 			]
 		} ]
@@ -706,7 +706,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	{
+	/*{
 		category: 1,
 		mod: "Code Geass - Black Requiem",
 		entries: [ {
@@ -721,7 +721,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 1,
 		mod: "Disaster",
@@ -1383,6 +1383,22 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
+		category: 2,
+		mod: "The Rise of Albania",
+		entries: [ {
+			authors: ["Alfer209"],
+			image: "12482365019687176396/B4EE29F5BA36B47BC7E0F9883866F304C0B136F1",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3603226323",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3600968066",
+					/*lang: "англ.", */lastUpdate: "2025-11-10"
+				}
+			]
+		} ]
+	},
+	{
 		category: 2, official: true,
 		mod: "Ukraine Above All",
 		entries: [ {
@@ -1393,7 +1409,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2025-03-06"
+					lang: "рос.", lastUpdate: "2025-11-22"
 				},
 				{
 					type: "Transifex",
@@ -1576,7 +1592,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3597454982",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3596666948",
-					/*lang: "англ.",*/ lastUpdate: "2025-11-06"
+					/*lang: "англ.",*/ lastUpdate: "2025-11-22"
 				}
 			]
 		} ]
@@ -2296,7 +2312,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	{
+	/*{
 		category: 4,
 		mod: "World News",
 		entries: [ {
@@ -2311,7 +2327,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 4,
 		mod: "Modifier Icons",
@@ -2486,7 +2502,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	{
+	/*{
 		category: 4,
 		mod: "Strategic region Ukrainian Donbas",
 		entries: [ {
@@ -2501,7 +2517,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 4,
 		mod: "Strategic region Donbas",
@@ -2579,12 +2595,12 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lang: "англ.", lastUpdate: "2025-11-08"
+					lang: "англ.", lastUpdate: "2025-11-09"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/75966/Any",
-					lang: "англ.", lastUpdate: "2025-11-08"
+					lang: "англ.", lastUpdate: "2025-11-09"
 				},
 				{
 					type: "Dropbox",
@@ -2637,12 +2653,12 @@ const databaseV3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
-					lang: "англ.", version: "1.11", lastUpdate: "2025-10-31"
+					lang: "англ.", version: "1.11", lastUpdate: "2025-11-17"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
-					lang: "англ.", version: "1.11", lastUpdate: "2025-10-31"
+					lang: "англ.", version: "1.11", lastUpdate: "2025-11-17"
 				}
 			],
 			more: "<p class='more-info'>Сюди також включено переклади <i>Victoria Undead: A Zombie Apocalypse Mod</i> та <i>Eastern Europe</i>.</p>"

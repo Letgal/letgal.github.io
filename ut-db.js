@@ -165,7 +165,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "4.0.23", lastUpdate: "2025-09-07"
+					lang: "англ.", version: "4.2.2", lastUpdate: "2025-11-30"
 				}
 			]
 		} ]
@@ -278,32 +278,32 @@ const databaseHoi4 = [
 			{
 			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "Бовкун"],
 			note: "та <dfn title='Ініціатор, куратор: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; Бовкун\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "12574806070928431781/9235AF604F1DB13942598DF5F7EE1040A151BBAC",
+			image: "15904260664288438533/7724BE3FA3EB73DEC1377A0CB62478557BBB4B9B",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.17.0", lastUpdate: "2025-11-24"
+					lang: "англ., рос.", version: "1.17.1.1", lastUpdate: "2025-12-01"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.17.0", lastUpdate: "2025-11-24"
+					lang: "англ., рос.", version: "1.17.1.1", lastUpdate: "2025-12-01"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.17.0", lastUpdate: "2025-11-24"
+					lang: "англ., рос.", version: "1.17.1.1", lastUpdate: "2025-12-01"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					version: "1.17.0"
+					version: "1.17.1.1"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.17.0", lastUpdate: "2025-11-24"
+					lang: "англ., рос.", version: "1.17.1.1", lastUpdate: "2025-12-01"
 				}
 			],
 			},
@@ -416,7 +416,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3385590256",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2777392649",
-						lang: "англ., рос.", version: "1.12.2", lastUpdate: "2025-11-20"
+						lang: "англ., рос.", version: "1.12.2", lastUpdate: "2025-11-28"
 					},
 					{
 						type: "Nexus Mods",
@@ -548,17 +548,17 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "0.15.7", lastUpdate: "2025-11-23"
+					lang: "англ., рос.", version: "0.15.8", lastUpdate: "2025-12-02"
 				},
 				{
 					type: "MEGA",
 					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "0.15.7", lastUpdate: "2025-11-23"
+					lang: "англ., рос.", version: "0.15.8", lastUpdate: "2025-12-02"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ul-the_great_war_redux",
-					version: "0.15.7"
+					version: "0.15.8"
 				}
 			]
 		} ]
@@ -1749,7 +1749,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3426537193",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3422113665",
-					lang: "англ., рос.", lastUpdate: "2025-05-26"
+					lang: "англ., рос.", lastUpdate: "2025-12-03"
 				}
 			]
 			}
@@ -1991,7 +1991,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3437084774",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3070737125",
-					/*lang: "англ.",*/ lastUpdate: "2025-04-06"
+					/*lang: "англ.",*/ lastUpdate: "2025-11-27"
 				}
 			]
 		} ]
@@ -2195,7 +2195,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3460786697",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1781455185",
-					lang: "англ., рос.", lastUpdate: "2025-04-09"
+					lang: "англ., рос.", lastUpdate: "2025-11-27"
 				}
 			]
 		} ]
@@ -2432,7 +2432,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3451141928",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3435731114",
-					lang: "англ.", lastUpdate: "2025-03-24"
+					lang: "англ.", lastUpdate: "2025-11-27"
 				}
 			]
 		} ]

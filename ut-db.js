@@ -277,33 +277,33 @@ const databaseHoi4 = [
 		entries: [
 			{
 			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "Бовкун"],
-			note: "та <dfn title='Ініціатор, куратор: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; Бовкун\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "15904260664288438533/7724BE3FA3EB73DEC1377A0CB62478557BBB4B9B",
+			note: "та <dfn title='Ініціатор, куратор: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Лицарський хрест\n  &bull; TTTSHOK\n  &bull; Бовкун\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
+			image: "13208306737364024606/473D01ED43226A2AA6325C5347C11DC567FB2192",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.17.1.1", lastUpdate: "2025-12-01"
+					lang: "англ., рос.", version: "1.17.2", lastUpdate: "2025-12-07"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.17.1.1", lastUpdate: "2025-12-01"
+					lang: "англ., рос.", version: "1.17.2", lastUpdate: "2025-12-07"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.17.1.1", lastUpdate: "2025-12-01"
+					lang: "англ., рос.", version: "1.17.2", lastUpdate: "2025-12-07"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					version: "1.17.1.1"
+					version: "1.17.2"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.17.1.1", lastUpdate: "2025-12-01"
+					lang: "англ., рос.", version: "1.17.2", lastUpdate: "2025-12-07"
 				}
 			],
 			},
@@ -473,17 +473,17 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.4.2", lastUpdate: "2025-11-23"
+						lang: "англ., рос.", version: "2.4.2.3", lastUpdate: "2025-12-07"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.4.2"
+						version: "2.4.2.3"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.4.2", lastUpdate: "2025-11-23"
+						lang: "англ., рос.", version: "2.4.2.3", lastUpdate: "2025-12-07"
 					}
 				]
 			},
@@ -514,7 +514,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3596130723",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3467330618",
-					lang: "англ., рос.", lastUpdate: "2025-11-04",
+					lang: "англ., рос.", lastUpdate: "2025-12-09",
 				}
 			],
 			more: "<p class='more-info'>Це&nbsp;— переклад <i>Mankind's Valhalla: The New German Order</i>, сабмоду до <i>Equestria at War</i>.</p>"
@@ -548,12 +548,12 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "0.15.8", lastUpdate: "2025-12-02"
+					lang: "англ., рос.", version: "0.15.8", lastUpdate: "2025-12-06"
 				},
 				{
 					type: "MEGA",
 					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "0.15.8", lastUpdate: "2025-12-02"
+					lang: "англ., рос.", version: "0.15.8", lastUpdate: "2025-12-06"
 				},
 				{
 					type: "GitHub",
@@ -1430,7 +1430,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3437387219",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-						lang: "англ.", version: "2.0", lastUpdate: "2025-09-11"
+						lang: "англ.", version: "2.0", lastUpdate: "2025-12-09"
 					}
 				]
 			},
@@ -1592,7 +1592,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3597454982",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3596666948",
-					/*lang: "англ.",*/ lastUpdate: "2025-11-22"
+					/*lang: "англ.",*/ lastUpdate: "2025-12-08"
 				}
 			]
 		} ]
@@ -1749,7 +1749,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3426537193",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3422113665",
-					lang: "англ., рос.", lastUpdate: "2025-12-03"
+					lang: "англ., рос.", lastUpdate: "2025-12-02"
 				}
 			]
 			}
@@ -2544,9 +2544,14 @@ const databaseIr = [
 			image: "", // https://modscontent.paradox-interactive.com/imperator_rome/d1bc0e50-9d4c-11eb-a3f3-9ffac6a2b1cb/content/cover.jpg
 			links: [
 				{
+					type: "Google Диск",
+					link: "https://drive.google.com/file/d/1PYPtyEwwjeuNmjqWylMeMKTIBLNJs6ao/view",
+					lang: "англ.", version: "2.0.3", lastUpdate: "2020-06-27"
+				},
+				{
 					type: "Telegram",
 					link: "https://t.me/PatchLocalisationUA/140",
-					version: "2.0.3", lastUpdate: "2021-11-22"
+					lang: "англ.", version: "2.0.3", lastUpdate: "2021-11-22"
 				},
 				{
 					type: "Paradox Mods", old: true,

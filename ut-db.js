@@ -3,45 +3,45 @@ const databaseCk2 = [
 		mod: "Crusader Kings II",
 		entries: [
 			{
-				authors: ["Letón Hostislavič"],
+				authors: ["Letičan"],
 				image: "63709816687445419/C97DA1FA5CAD4CB664270A448309DD94435FB19A",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2025-11-02"
+						version: "3.3.5.1", lastUpdate: "2025-12-20"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-11-02"
+						version: "3.3.5.1", lastUpdate: "2025-12-20"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2025-11-02"
+						version: "3.3.5.1", lastUpdate: "2025-12-20"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
 			},
 			{
-				authors: ["Letón Hostislavič"],
+				authors: ["Letičan"],
 				image: "63709816687446934/E6D91F444C189883CA5CA2299BF2BD6C35839463",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2025-11-02"
+						version: "3.3.5.1", lastUpdate: "2025-12-20"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-11-02"
+						version: "3.3.5.1", lastUpdate: "2025-12-20"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2025-11-02"
+						version: "3.3.5.1", lastUpdate: "2025-12-20"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
@@ -165,7 +165,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "4.2.2", lastUpdate: "2025-11-30"
+					lang: "англ.", version: "4.2.2", lastUpdate: "2025-12-31"
 				}
 			]
 		} ]
@@ -276,39 +276,39 @@ const databaseHoi4 = [
 		mod: "Hearts of Iron IV",
 		entries: [
 			{
-			authors: ["Letón Hostislavič", "TTTSHOK", "Lonster", "Бовкун"],
-			note: "та <dfn title='Ініціатор, куратор: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Лицарський хрест\n  &bull; TTTSHOK\n  &bull; Бовкун\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "13208306737364024606/473D01ED43226A2AA6325C5347C11DC567FB2192",
+			authors: ["Letičan", "Бовкун", "Лицарський хрест", "TTTSHOK"],
+			note: "та <dfn title='Ініціатор, куратор: Letičan\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Лицарський хрест\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
+			image: "13973037275201099774/CEE69EC5AD9F613A8597F2B5B23A39D8116CCAA7",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.17.2", lastUpdate: "2025-12-07"
+					lang: "англ., рос.", version: "1.17.3", lastUpdate: "2026-01-12"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.17.2", lastUpdate: "2025-12-07"
+					lang: "англ., рос.", version: "1.17.3", lastUpdate: "2026-01-12"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.17.2", lastUpdate: "2025-12-07"
+					lang: "англ., рос.", version: "1.17.3", lastUpdate: "2026-01-12"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					version: "1.17.2"
+					version: "1.17.3"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.17.2", lastUpdate: "2025-12-07"
+					lang: "англ., рос.", version: "1.17.3", lastUpdate: "2026-01-12"
 				}
 			],
 			},
 			{
-				authors: ["Letón Hostislavič"],
+				authors: ["Letičan"],
 				image: "2506908624515294550/70AF3F0B9EED671CF4B487D384C304E654920AC1",
 				links: [
 					{
@@ -325,14 +325,15 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "Kaiserreich",
 		entries: [ {
-			authors: ["CodyMaster", "Stepan"], note: "та інші",
+			authors: ["Stepan", "CodyMaster"],
+			note: "та <dfn title='Ініціатор: Stepan\nКуратор, головний перекладач: CodyMaster\nВнесок також зробили:\n  &bull; Бовкун\n  &bull; Лицарський хрест\n  &bull; Alfer209\n  &bull; Letičan'>інші</dfn>",
 			image: "34441945430769467/5918FEA9360CB09ABA37EC2C814298B30826AF44",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", version: "1.5.3", lastUpdate: "2025-10-19"
+					lang: "англ.", version: "1.5.6", lastUpdate: "2025-12-21"
 				},
 				{
 					type: "Paradox Mods", old: true,
@@ -443,14 +444,15 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "Old World Blues",
 		entries: [ {
-			authors: ["Бовкун", "Green Kitten"], note: "та інші",
+			authors: ["Green Kitten", "Бовкун"],
+			note: "та <dfn title='Ініціатор: Green Kitten\nГоловний перекладач: Бовкун\nВнесок також зробили:\n  &bull; CargoTck&nbsp;/ Chelovek 228\n  &bull; Letičan\n  &bull; Onuna\n  &bull; CodyMaster'>інші</dfn>",
 			image: "44568068867294455/6FCE7BB2CEB0CBF368EE5FAA14D38A0D3EE5116E",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3368978184",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2265420196",
-					lang: "англ.", version: "5.1.1a", lastUpdate: "2025-07-25"
+					lang: "англ.", version: "5.1.4b", lastUpdate: "2026-01-12"
 				},
 				{
 					type: "GitHub",
@@ -465,31 +467,31 @@ const databaseHoi4 = [
 		mod: "Equestria at War",
 		entries: [
 			{
-				authors: ["Letón Hostislavič", "Бовкун", "Green Kitten"],
-				note: "та <dfn title='Ініціатор, куратор, головний перекладач: Letón Hostislavič\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Green Kitten\n  &bull; StasJesus\n  &bull; pani_justyna1733\n  &bull; DAACENT\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
+				authors: ["Letičan", "Бовкун", "Green Kitten"],
+				note: "та <dfn title='Ініціатор, куратор, головний перекладач: Letičan\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Green Kitten\n  &bull; StasJesus\n  &bull; pani_justyna1733\n  &bull; DAACENT\n  &bull; Daybreaker\n  &bull; Kiparu'>інші</dfn>",
 				image: "18059409825619649924/2452D3CEDCF6662EF8A10D0CEE159957974377B9",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.4.2.3", lastUpdate: "2025-12-07"
+						lang: "англ., рос.", version: "2.4.2.5", lastUpdate: "2026-01-12"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.4.2.3"
+						version: "2.4.2.5"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.4.2.3", lastUpdate: "2025-12-07"
+						lang: "англ., рос.", version: "2.4.2.5", lastUpdate: "2026-01-12"
 					}
 				]
 			},
 			{
 				authors: ["Green Kitten"],
-				note: "<dfn title='З допомогою від Letón Hostislavič (технічне налагодження, шрифти)'>�</dfn>",
+				note: "<dfn title='З допомогою від Letičan (технічне налагодження, шрифти)'>�</dfn>",
 				image: "2384179827567248601/1F8F16C168AA22A53B029F3EAA0C6ADBC3DB608E",
 				links: [
 					{
@@ -540,20 +542,20 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "The Great War Redux",
 		entries: [ {
-			authors: ["Letón Hostislavič", "TTTSHOK"],
-			note: "та <dfn title='Ініціатор: TTTSHOK\nКуратор, головний перекладач: Letón Hostislavič\nВнесок також зробили (в порядку спадання):\n  &bull; Лицарський хрест\n  &bull; kiryl\n  &bull; TTTSHOK'>інші</dfn>",
-			image: "14100135373548234701/A16A56E3B3CE73E791A4CCE127D151F3A82602A0",
+			authors: ["TTTSHOK", "Letičan"],
+			note: "та <dfn title='Ініціатор: TTTSHOK\nКуратор, головний перекладач: Letičan\nВнесок також зробили (в порядку спадання):\n  &bull; Лицарський хрест\n  &bull; kiryl'>інші</dfn>",
+			image: "17910175392895842952/1FE4EB0E923FF985C56E6B9E8B32F0DF5617232A",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "0.15.8", lastUpdate: "2025-12-06"
+					lang: "англ., рос.", version: "0.15.9.1", lastUpdate: "2026-01-09"
 				},
 				{
 					type: "MEGA",
 					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "0.15.8", lastUpdate: "2025-12-06"
+					lang: "англ., рос.", version: "0.15.9.1", lastUpdate: "2026-01-09"
 				},
 				{
 					type: "GitHub",
@@ -870,7 +872,7 @@ const databaseHoi4 = [
 		mod: "hoi4 irl",
 		entries: [ {
 			authors: ["Green Kitten"],
-			note: "<dfn title='З допомогою від Letón Hostislavič (технічне налагодження)'>�</dfn>",
+			note: "<dfn title='З допомогою від Letičan (технічне налагодження)'>�</dfn>",
 			image: "2398817794632762374/65283B1BE0A546E60D76A1CC02C6F6577FA43234",
 			links: [
 				{
@@ -1409,7 +1411,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2025-11-22"
+					lang: "рос.", lastUpdate: "2025-12-24"
 				},
 				{
 					type: "Transifex",
@@ -2114,7 +2116,7 @@ const databaseHoi4 = [
 		mod: "Better Laws and Policies",
 		entries: [ {
 			authors: ["Green Kitten"],
-			note: "<dfn title='З допомогою від Letón Hostislavič (технічне налагодження)'>�</dfn>",
+			note: "<dfn title='З допомогою від Letičan (технічне налагодження)'>�</dfn>",
 			image: "2398817794634846197/29A4F1DD9B3F5A51A672E12550A2CDAF7ACC7C03",
 			links: [
 				{
@@ -2162,7 +2164,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Dynamic Research Slots",
 		entries: [ {
-			authors: ["Letón Hostislavič"],
+			authors: ["Letičan"],
 			image: "5120061430840103428/B932DFDE5B87DD82E37A299012E6BC539C558551",
 			links: [
 				{
@@ -2332,14 +2334,14 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Modifier Icons",
 		entries: [ {
-			authors: ["Letón Hostislavič"],
+			authors: ["Letičan"],
 			image: "10650492408444617216/B923F7DEA19D6DD3C4DA91E642EE82F6EE778013",
 			links: [
 				{
-					type: "Steam", old: true,
+					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2912150988",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2668048070",
-					lang: "англ., рос.", lastUpdate: "2025-09-05"
+					lang: "англ., рос.", version: "від 22&nbsp;лист. 2025", lastUpdate: "2026-01-09"
 				},
 				/*{
 					type: "Paradox Mods", old: true,
@@ -2348,9 +2350,9 @@ const databaseHoi4 = [
 					lang: "англ., рос.", lastUpdate: "2023-01-03"
 				},*/
 				{
-					type: "MEGA", old: true,
+					type: "MEGA",
 					link: "https://mega.nz/folder/AndG1QqI#FdWim65g5LhEp7wdwF--tw",
-					lang: "англ., рос.", lastUpdate: "2025-09-05"
+					lang: "англ., рос.", version: "від 22&nbsp;лист. 2025", lastUpdate: "2026-01-09"
 				}
 			]
 		} ]
@@ -2673,7 +2675,7 @@ const databaseV3 = [
 		category: 0,
 		mod: "Victoria 3",
 		entries: [ {
-			authors: ["Godresky"], note: "та <dfn title='З допомогою:\n  &bull; Пан Дмитро\n  &bull; Пані Меліса\n  &bull; remark644\n  &bull; Пан Андріян\n  &bull; _rlly_\n  &bull; twentysixz\n  &bull; Letón Hostislavič (шрифти)\n  &bull; Дружня спільнота\n  &bull; Греко-католицька церква'>інші</dfn>",
+			authors: ["Godresky"], note: "та <dfn title='З допомогою:\n  &bull; Пан Дмитро\n  &bull; Пані Меліса\n  &bull; remark644\n  &bull; Пан Андріян\n  &bull; _rlly_\n  &bull; twentysixz\n  &bull; Letičan (шрифти)\n  &bull; Дружня спільнота\n  &bull; Греко-католицька церква'>інші</dfn>",
 			image: "1886472472715599338/83EC1B916F4B018906F75F2475CC3B5669642BB4",
 			links: [
 				{
@@ -2729,7 +2731,7 @@ const databaseV3 = [
 		category: 1,
 		mod: "Null &amp; Void",
 		entries: [ {
-			authors: ["Letón Hostislavič"],
+			authors: ["Letičan"],
 			image: "2027231506410589229/ACCF8CF1F8909E29A29D8B65876BD006C2D2DFE5",
 			links: [
 				{

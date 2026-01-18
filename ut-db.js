@@ -9,17 +9,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2025-12-20"
+						version: "3.3.5.1", lastUpdate: "2026-01-18"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-12-20"
+						version: "3.3.5.1", lastUpdate: "2026-01-18"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2025-12-20"
+						version: "3.3.5.1", lastUpdate: "2026-01-18"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
@@ -31,17 +31,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2025-12-20"
+						version: "3.3.5.1", lastUpdate: "2026-01-18"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2025-12-20"
+						version: "3.3.5.1", lastUpdate: "2026-01-18"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2025-12-20"
+						version: "3.3.5.1", lastUpdate: "2026-01-18"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
@@ -919,18 +919,32 @@ const databaseHoi4 = [
 	{
 		category: 2,
 		mod: "The Road to 56",
-		entries: [ {
+		entries: [
+			{
+				authors: ["#кмс по куні&nbsp;/ ImEndy"],
+				image: "10456230751372960702/93C326F74FAC04637AF62AE6D7F5CE4D1E6B3B2C",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3647018356",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
+						lang: "англ.", lastUpdate: "2026-01-17"
+					}
+				]
+			},
+			{
 			authors: ["TTTSHOK"],
 			image: "2012581497125527224/94D24885B344425D83089F3BFD4EE0165A69CCA0",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2928183602",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
 					lang: "англ.", lastUpdate: "2023-07-26"
 				}
 			]
-		} ]
+			}
+		]
 	},
 	{
 		category: 2,
@@ -2567,6 +2581,31 @@ const databaseCk3 = [
 	{
 		mod: "Crusader Kings III",
 		entries: [ {
+			authors: ["Doffi", "AHrEJl", "Arlechin"],
+			image: "2527156431486130539/5B81391D260EC3577AC4CE89B5A48C2EC3233CFB",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
+					lang: "англ.", lastUpdate: "2026-01-15"
+				},
+				{
+					type: "Paradox Mods",
+					link: "https://mods.paradoxplaza.com/mods/75966/Any",
+					lang: "англ.", lastUpdate: "2026-01-15"
+				},
+				{
+					type: "Dropbox", old: true,
+					link: "https://www.dropbox.com/scl/fo/wzb9p0kl3pk6xe0y3d4i4/AAkIV9WNoFVz7S7gzRYDfLI?rlkey=yoizokkwh9ajwdrtiarm9n0nl",
+					lang: "англ.", lastUpdate: "2025-06-13"
+				}
+			],
+			more: "<p class='more-info'>Сюди також включено переклади декількох дрібних модифікацій (список є на сторінці Steam).</p>"
+		} ]
+	},
+	{
+		mod: "Crusader Kings III",
+		entries: [ {
 			authors: ["KYR_MAN"], note: "та спільнота",
 			image: "14121815734692406372/B05C590FA218C5E6EE2DDBABBBCB45C3BF56A589",
 			links: [
@@ -2591,31 +2630,6 @@ const databaseCk3 = [
 					lang: "англ."/*, version: "1.14"*/
 				}
 			]
-		} ]
-	},
-	{
-		mod: "Crusader Kings III",
-		entries: [ {
-			authors: ["Doffi", "AHrEJl", "Arlechin"],
-			image: "2527156431486130539/5B81391D260EC3577AC4CE89B5A48C2EC3233CFB",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lang: "англ.", lastUpdate: "2025-11-09"
-				},
-				{
-					type: "Paradox Mods",
-					link: "https://mods.paradoxplaza.com/mods/75966/Any",
-					lang: "англ.", lastUpdate: "2025-11-09"
-				},
-				{
-					type: "Dropbox",
-					link: "https://www.dropbox.com/scl/fo/wzb9p0kl3pk6xe0y3d4i4/AAkIV9WNoFVz7S7gzRYDfLI?rlkey=yoizokkwh9ajwdrtiarm9n0nl",
-					lang: "англ.", lastUpdate: "2025-06-13"
-				}
-			],
-			more: "<p class='more-info'>Сюди також включено переклади декількох дрібних модифікацій (список є на сторінці Steam).</p>"
 		} ]
 	},
 	{
@@ -2660,12 +2674,12 @@ const databaseV3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
-					lang: "англ.", version: "1.11", lastUpdate: "2025-11-17"
+					lang: "англ.", version: "1.12", lastUpdate: "2026-01-05"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
-					lang: "англ.", version: "1.11", lastUpdate: "2025-11-17"
+					lang: "англ.", version: "1.12", lastUpdate: "2026-01-05"
 				}
 			],
 			more: "<p class='more-info'>Сюди також включено переклади <i>Victoria Undead: A Zombie Apocalypse Mod</i> та <i>Eastern Europe</i>.</p>"
@@ -2704,6 +2718,34 @@ const databaseV3 = [
 					lang: "англ.", version: "1.5.12", lastUpdate: "2023-12-29"
 				}
 			]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "Basileía Romaíon 1736",
+		entries: [ {
+			authors: ["Бовкун"],
+			image: "12199018625554239877/8BE5DCD54B82376F4008031AF9F81B65BCA407DE",
+			links: [ {
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3645954099",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2880120246",
+				lang: "англ.", lastUpdate: "2026-01-17"
+			} ]
+		} ]
+	},
+	{
+		category: 1,
+		mod: "Victoria Undead: A Zombie Apocalypse Mod",
+		entries: [ {
+			authors: ["godofburrito"],
+			image: "19806514870897835/877FA74A12307885096C6EA6521741C532342A98",
+			links: [ {
+				type: "Steam",
+				link: "https://steamcommunity.com/workshop/filedetails/?id=3433075144",
+				linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3387729608",
+				lang: "англ.", lastUpdate: "2025-06-28"
+			} ]
 		} ]
 	},
 	/*{

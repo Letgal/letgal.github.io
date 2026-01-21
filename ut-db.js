@@ -682,7 +682,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3589475512",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3574992633",
-					lang: "англ.", version: "alpha-1.0.1", lastUpdate: "2025-10-19"
+					lang: "англ.", version: "alpha-1.0.1", lastUpdate: "2026-01-21"
 				}
 			]
 		} ]
@@ -928,7 +928,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3647018356",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
-						lang: "англ.", lastUpdate: "2026-01-17"
+						lang: "англ.", lastUpdate: "2026-01-21"
 					}
 				]
 			},
@@ -2582,17 +2582,17 @@ const databaseCk3 = [
 		mod: "Crusader Kings III",
 		entries: [ {
 			authors: ["Doffi", "AHrEJl", "Arlechin"],
-			image: "2527156431486130539/5B81391D260EC3577AC4CE89B5A48C2EC3233CFB",
+			image: "16424358873096392550/50D5DE5185E33E3E83F35BF448EE96D89217F852",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lang: "англ.", lastUpdate: "2026-01-15"
+					lang: "англ.", lastUpdate: "2026-01-21"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/75966/Any",
-					lang: "англ.", lastUpdate: "2026-01-15"
+					lang: "англ.", lastUpdate: "2026-01-21"
 				},
 				{
 					type: "Dropbox", old: true,

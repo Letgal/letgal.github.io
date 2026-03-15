@@ -9,17 +9,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2026-01-18"
+						version: "3.3.5.1", lastUpdate: "2026-03-15"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2026-01-18"
+						version: "3.3.5.1", lastUpdate: "2026-03-15"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2026-01-18"
+						version: "3.3.5.1", lastUpdate: "2026-03-15"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
@@ -31,17 +31,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2026-01-18"
+						version: "3.3.5.1", lastUpdate: "2026-03-15"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2026-01-18"
+						version: "3.3.5.1", lastUpdate: "2026-03-15"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2026-01-18"
+						version: "3.3.5.1", lastUpdate: "2026-03-15"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
@@ -283,27 +283,27 @@ const databaseHoi4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.17.3", lastUpdate: "2026-01-12"
+					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.17.3", lastUpdate: "2026-01-12"
+					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.17.3", lastUpdate: "2026-01-12"
+					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					version: "1.17.3"
+					version: "1.17.4"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.17.3", lastUpdate: "2026-01-12"
+					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
 				}
 			],
 			},
@@ -333,7 +333,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", version: "1.5.6", lastUpdate: "2025-12-21"
+					lang: "англ.", version: "1.5.1", lastUpdate: "2026-02-21"
 				},
 				{
 					type: "Paradox Mods", old: true,
@@ -381,7 +381,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3334431115",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2438003901",
-						lang: "англ.", lastUpdate: "2025-04-01"
+						lang: "англ.", lastUpdate: "2026-01-28"
 					}
 				]
 			}
@@ -464,6 +464,22 @@ const databaseHoi4 = [
 	},
 	{
 		category: 1,
+		mod: "East Coast Rebirth",
+		entries: [ {
+			authors: ["AndrewDubok", "Yariroslav"],
+			image: "10621057437432256950/228A0D55D63F41DFC32217005D4E966E18845ED2",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3676515634",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2665358623",
+					lang: "англ., рос.", version: "2.1.4", lastUpdate: "2026-03-04"
+				}
+			]
+		} ]
+	},
+	{
+		category: 1,
 		mod: "Equestria at War",
 		entries: [
 			{
@@ -475,17 +491,17 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.4.2.5", lastUpdate: "2026-01-12"
+						lang: "англ., рос.", version: "2.5.0.3", lastUpdate: "2026-03-09"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.4.2.5"
+						version: "2.5.0.3"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.4.2.5", lastUpdate: "2026-01-12"
+						lang: "англ., рос.", version: "2.5.0.3", lastUpdate: "2026-03-09"
 					}
 				]
 			},
@@ -928,7 +944,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3647018356",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
-						lang: "англ.", lastUpdate: "2026-01-21"
+						lang: "англ.", lastUpdate: "2026-02-20"
 					}
 				]
 			},
@@ -1446,7 +1462,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3437387219",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-						lang: "англ.", version: "2.0", lastUpdate: "2025-12-09"
+						lang: "англ.", version: "2.0.2", lastUpdate: "2026-03-12"
 					}
 				]
 			},
@@ -2587,12 +2603,12 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lang: "англ.", lastUpdate: "2026-01-21"
+					lang: "англ.", lastUpdate: "2026-03-15"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/75966/Any",
-					lang: "англ.", lastUpdate: "2026-01-21"
+					lang: "англ.", lastUpdate: "2026-03-15"
 				},
 				{
 					type: "Dropbox", old: true,
@@ -2674,12 +2690,12 @@ const databaseV3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
-					lang: "англ.", version: "1.12", lastUpdate: "2026-01-05"
+					lang: "англ.", version: "1.12", lastUpdate: "2026-02-04"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
-					lang: "англ.", version: "1.12", lastUpdate: "2026-01-05"
+					lang: "англ.", version: "1.12", lastUpdate: "2026-02-04"
 				}
 			],
 			more: "<p class='more-info'>Сюди також включено переклади <i>Victoria Undead: A Zombie Apocalypse Mod</i> та <i>Eastern Europe</i>.</p>"

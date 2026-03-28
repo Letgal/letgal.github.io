@@ -218,6 +218,7 @@
 				case "ck3": gameTitle = "Crusader Kings III"; break;
 				case "v3": gameTitle = "Victoria 3"; break;
 				case "cs2": gameTitle = "Cities: Skylines II"; break;
+				case "eu5": gameTitle = "Europa Universalis V"; break;
 				default: gameTitle = "ігор Paradox";
 			}
 			document.getElementById("title").innerHTML = gameTitle;
@@ -340,6 +341,7 @@
 		<input type="radio" name="game" id="ck3-radio" onchange="switchGame('ck3')"><label for="ck3-radio">Crusader Kings III</label>
 		<input type="radio" name="game" id="v3-radio" onchange="switchGame('v3')"><label for="v3-radio">Victoria 3</label>
 		<input type="radio" name="game" id="cs2-radio" onchange="switchGame('cs2')"><label for="cs2-radio">Cities: Skylines II</label>
+		<input type="radio" name="game" id="eu5-radio" onchange="switchGame('eu5')"><label for="eu5-radio">Europa Universalis V</label>
 	</nav>
 
 	<p class="intro">Ця сторінка <abbr style="font-style: italic;" title="(якщо автор не лінуватиметься)">буде</abbr> доповнюватися й оновлюватися з часом.</p>
@@ -429,5 +431,14 @@
 
 	<div id="after" onclick="closeModDetails();"></div>
 	<div id="mod-details"><button id='close' onclick='closeModDetails();'>&times;</button></div>
+
+	<!-- EUROPA UNIVERSALIS V -->
+	<div id="eu5" class="game">
+		<h2>Переклади гри (1)</h2>
+		<button class="mod" onclick="openModDetails(databaseEu5, 0);">Переклад гри</button>
+
+		<h2>Переклади модів (1)</h2>
+		<button class="mod" onclick="openModDetails(databaseEu5, 1);">Legacy of Rus</button>
+	</div>
 </body>
 </html>

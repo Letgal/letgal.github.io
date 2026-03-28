@@ -2885,3 +2885,71 @@ const databaseCs2 = [
 		} ]
 	}
 ]
+const databaseEu5 = [
+	{
+		category: 0,
+		mod: "Europa Universalis V",
+		entries: [
+			{
+				authors: ["Cliffman"],
+				image: "13474546722691378670/CF06FD76A53B2391D8BE3BB29C358EAF7A393ECA",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3600964191",
+						lastUpdate: "2025-12-18"
+					},
+					{
+						type: "Google Диск",
+						link: "https://drive.google.com/file/d/1L80a5dxRp_0TXBzL_aQCIa5_dySIBU9B/view"
+					}
+				],
+				more: "<p class='more-info'>Повна <i>машинна</i> локалізація гри, «для любителів хардкорної українізації», за словами автора.</p>"
+			},
+			{
+				authors: ["Cliffman"],
+				image: "13102029127580921499/7BAB29443EEA2C47B9CAC81F2B59FFD8A39B9D63",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3605784152",
+						lastUpdate: "2026-01-31"
+					},
+					{
+						type: "Google Диск",
+						link: "https://drive.google.com/file/d/1uSbhKA5nhQosKk5UzzrDQaaQF2kiGJ4j/view"
+					}
+				],
+				more: "<p class='more-info'>Помалу <i>вичитувана</i> локалізація гри, «для більш приємної гри», за словами автора.</p>"
+			},
+			{
+				authors: ["Cliffman"],
+				image: "17075890188237483106/1758A6346E739EC9084AD9E04D47D6C61B9C1A94",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3657379329",
+						lastUpdate: "2026-01-31"
+					}
+				],
+				more: "<p class='more-info'>Доповнення до <i>вичитуваної</i> локалізації з додактовим перекладом і різними правками.</p>"
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "Legacy of Rus",
+		entries: [ {
+			authors: ["Dunadan", "Mykhailo Fedorenko"],
+			image: "16801699318317460562/212A73B3FF68B82C4157E279AC4965F953C8F563",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3693534220",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3680340621",
+					lastUpdate: "2026-03-27"
+				}
+			]
+		} ]
+	}
+]

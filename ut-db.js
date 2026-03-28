@@ -165,12 +165,12 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "4.2.2", lastUpdate: "2025-12-31"
+					lang: "англ.", version: "4.3.1", lastUpdate: "2026-03-22"
 				}
 			]
 		} ]
 	},
-	{
+	/*{
 		mod: "Stellaris",
 		entries: [ {
 			authors: ["ser_rocko"],
@@ -188,7 +188,7 @@ const databaseStel = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		mod: "Stellaris",
 		entries: [ {
@@ -278,32 +278,32 @@ const databaseHoi4 = [
 			{
 			authors: ["Letičan", "Бовкун", "Лицарський хрест", "TTTSHOK"],
 			note: "та <dfn title='Ініціатор, куратор: Letičan\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Лицарський хрест\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "13973037275201099774/CEE69EC5AD9F613A8597F2B5B23A39D8116CCAA7",
+			image: "11881177539401232618/99AF05A55AB150109BB03F11416CC5B23ADD1715",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
+					lang: "англ., рос.", version: "1.17.5", lastUpdate: "2026-03-19"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
+					lang: "англ., рос.", version: "1.17.5", lastUpdate: "2026-03-19"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
+					lang: "англ., рос.", version: "1.17.5", lastUpdate: "2026-03-19"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					version: "1.17.4"
+					version: "1.17.5"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
+					lang: "англ., рос.", version: "1.17.5", lastUpdate: "2026-03-19"
 				}
 			],
 			},
@@ -473,7 +473,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3676515634",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2665358623",
-					lang: "англ., рос.", version: "2.1.4", lastUpdate: "2026-03-04"
+					lang: "англ., рос.", version: "2.1.4", lastUpdate: "2026-03-16"
 				}
 			]
 		} ]
@@ -491,17 +491,17 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.5.0.3", lastUpdate: "2026-03-09"
+						lang: "англ., рос.", version: "2.5.0.4", lastUpdate: "2026-03-19"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.5.0.3"
+						version: "2.5.0.4"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.5.0.3", lastUpdate: "2026-03-09"
+						lang: "англ., рос.", version: "2.5.0.4", lastUpdate: "2026-03-19"
 					}
 				]
 			},
@@ -532,7 +532,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3596130723",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3467330618",
-					lang: "англ., рос.", lastUpdate: "2025-12-09",
+					lang: "англ., рос.", lastUpdate: "2026-03-23",
 				}
 			],
 			more: "<p class='more-info'>Це&nbsp;— переклад <i>Mankind's Valhalla: The New German Order</i>, сабмоду до <i>Equestria at War</i>.</p>"
@@ -938,13 +938,13 @@ const databaseHoi4 = [
 		entries: [
 			{
 				authors: ["#кмс по куні&nbsp;/ ImEndy"],
-				image: "10456230751372960702/93C326F74FAC04637AF62AE6D7F5CE4D1E6B3B2C",
+				image: "18240885872008825754/FCBA8FFB38E5288C1B72D4F11FA59C376C226600",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3647018356",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
-						lang: "англ.", lastUpdate: "2026-02-20"
+						lang: "англ.", lastUpdate: "2026-03-28"
 					}
 				]
 			},
@@ -1462,7 +1462,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3437387219",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-						lang: "англ.", version: "2.0.2", lastUpdate: "2026-03-12"
+						lang: "англ.", version: "2.0.2", lastUpdate: "2026-03-28"
 					}
 				]
 			},
@@ -1853,6 +1853,22 @@ const databaseHoi4 = [
 			]
 			}
 		]
+	},
+	{
+		category: 3,
+		mod: "awxe's Formable Nations for RT56",
+		entries: [ {
+			authors: ["KarumaSL"],
+			image: "9525703845623024853/551B04C02C4093EAABC6DBA1C3F04D5FA9368B34",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3686332095",
+					// linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3531061069",
+					lang: "англ.", lastUpdate: "2026-03-17"
+				}
+			]
+		} ]
 	},
 	{
 		category: 3,
@@ -2603,12 +2619,12 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lang: "англ.", lastUpdate: "2026-03-15"
+					lang: "англ.", lastUpdate: "2026-03-26"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/75966/Any",
-					lang: "англ.", lastUpdate: "2026-03-15"
+					lang: "англ.", lastUpdate: "2026-03-26"
 				},
 				{
 					type: "Dropbox", old: true,
@@ -2626,7 +2642,7 @@ const databaseCk3 = [
 			image: "14121815734692406372/B05C590FA218C5E6EE2DDBABBBCB45C3BF56A589",
 			links: [
 				{
-					type: "Steam",
+					type: "Steam", old: true,
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3127700882",
 					lang: "англ."/*, version: "1.14"*/, lastUpdate: "2025-06-01"
 				},
@@ -2887,7 +2903,6 @@ const databaseCs2 = [
 ]
 const databaseEu5 = [
 	{
-		category: 0,
 		mod: "Europa Universalis V",
 		entries: [
 			{
@@ -2937,7 +2952,6 @@ const databaseEu5 = [
 		]
 	},
 	{
-		category: 1,
 		mod: "Legacy of Rus",
 		entries: [ {
 			authors: ["Dunadan", "Mykhailo Fedorenko"],

@@ -10,57 +10,28 @@
 	<style type="text/css">
 		:root { --body-width: calc(100% / 1.5); }
 
-		.container {
-			display: grid; grid-template-columns: 1fr 1fr;
-			gap: 1em;
-		}
-		.container p { font-family: var(--sans-serif); font-size: smaller; }
-		.container ul { font-size: smaller; }
-
-		.container > div { padding: 0.5em; border: 1px solid var(--special2); }
-		.container > div h4 {
-			margin: 0;
-			text-align: center;
-		}
-		.container > div p { margin-block: 0.5em; }
-		.container > div ul { margin-block-start: 0.5em; margin-block-end: 0; }
-		.container > a { margin: 0; }
-
-		.thumbnail::before {
+		.element { min-height: 260px; margin-block-end: 1em; }
+		.thumbnail {
 			display: block;
 			float: left;
-			width: 100px; aspect-ratio: 1/1;
-			margin: -0.5em; margin-right: 0.5em;
-			background-size: contain; background-repeat: no-repeat;
+			width: 200px; aspect-ratio: 1/1;
+			margin-right: 0.5em;
 		}
-		.thumbnail ul { position: relative; left: 1em; }
-		.category {
-			padding: 0.25em;
-			border-radius: 0.5em;
-			background-color: var(--secondary);
-			font-family: var(--sans-serif);
-			font-size: 75%;
-		}
-
-		#hoi4-uk::before { content: ""; background-image: url("https://images.steamusercontent.com/ugc/11881177539401232618/99AF05A55AB150109BB03F11416CC5B23ADD1715/"); }
-		#ck2-uk::before { content: ""; background-image: url("https://steamuserimages-a.akamaihd.net/ugc/63708367289923886/318AF978F23D7E95A663AAD1E666521855D5EDED/"); }
-		#hoi4-eaw-uk::before { content: ""; background-image: url("https://images.steamusercontent.com/ugc/18059409825619649924/2452D3CEDCF6662EF8A10D0CEE159957974377B9/"); }
-		#hoi4-tgwr-uk::before { content: ""; background-image: url("https://images.steamusercontent.com/ugc/17910175392895842952/1FE4EB0E923FF985C56E6B9E8B32F0DF5617232A/"); }
-		/*#hoi4-rcw::before { content: ""; background-image: url(""); }*/
-		#hoi4-srr::before { content: ""; background-image: url("https://images.steamusercontent.com/ugc/63715342993873572/73C9E4E9288E8847E284663C2087E1940C4D2F5D/"); }
-		#hoi4-cap::before { content: ""; background-image: url("https://images.steamusercontent.com/ugc/63715342993872667/9457DB449A16C92E7D6C60703C9F247D9E64B889/"); }
-		#hoi4-minor-uk { grid-column: 1 / span 2; columns: 3; }
+		.thumbnail.frozen { filter: saturate(0); }
 	</style>
 	<script type="text/javascript" src="shared.js"></script>
 </head>
 <body>
 	<a id="logo" href="/" title="Повернутися на головну сторінку"><img></a>
 	<h1>Що я створив</h1>
-	<h2>Переклади</h2>
-	<div class="container">
-		<div id="hoi4-uk" class="thumbnail">
-			<h4>Українська локалізація HOI4</h4>
-			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+	<h2>Переклади та локалізації</h2>
+	<div class="element" id="hoi4-uk">
+		<h3><i>Hearts of Iron IV</i>, українська</h3>
+		<img src="https://images.steamusercontent.com/ugc/11881177539401232618/99AF05A55AB150109BB03F11416CC5B23ADD1715/" class="thumbnail">
+		<p>розпочато <i>навесні 2021&nbsp;р.</i><br>
+		перекладено близько <i>95%</i><br>
+		оновлено для гри версії <i>1.7.5</i></p>
+		<p>Посилання:</p>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2706358548">Steam</a></li>
 				<li><a href="https://mods.paradoxplaza.com/mods/38710/Any">Paradox Mods</a></li>
@@ -69,9 +40,13 @@
 				<li><a href="https://drive.google.com/file/d/1f8ypKACpJyX8s5L3B6GbOmew9BFKzO-z/view">Google Диск</a></li>
 			</ul>
 		</div>
-		<div id="ck2-uk" class="thumbnail">
-			<h4>Українська локалізація CK2</h4>
-			<span class="category">Переклад</span> <span class="category" title="Crusader Kings II">CK2</span>
+	<div class="element" id="ck2-uk">
+		<h3><i>Crusader Kings II</i>, українська</h3>
+		<img src="https://images.steamusercontent.com/ugc/63708367289923886/318AF978F23D7E95A663AAD1E666521855D5EDED/" class="thumbnail">
+		<p>розпочато <i>24&nbsp;липня 2024&nbsp;р.</i><br>
+		перекладено близько <i>45%</i><br>
+		оновлено для гри версії <i>3.3.5.1</i></p>
+		<p>Посилання:</p>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3348083247">Steam</a></li>
 				<li><a href="https://www.nexusmods.com/crusaderkings2/mods/115">Nexus Mods</a></li>
@@ -79,65 +54,70 @@
 				<li><a href="https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA">MEGA (Lite)</a></li>
 			</ul>
 		</div>
-		<div id="hoi4-eaw-uk" class="thumbnail">
-			<h4>Equestria at War</h4>
-			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+	<div class="element" id="hoi4-eaw-uk">
+		<h3><i>Equestria at War</i>, українська</h3>
+		<img src="https://images.steamusercontent.com/ugc/18059409825619649924/2452D3CEDCF6662EF8A10D0CEE159957974377B9/" class="thumbnail">
+		<p>розпочато близько <i>8&nbsp;липня 2023&nbsp;р.</i><br>
+		оновлено для моду версії <i>6.10.2017</i></p>
+		<p>Посилання:</p>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3176454246">Steam</a></li>
 				<li><a href="https://github.com/Letgal/hoi4_ul-equestria_at_war">GitHub</a></li>
 				<li><a href="https://drive.google.com/drive/folders/1NLaPzRGszZmv8u1Auz-RItKONAO9Avc5">Google Диск</a></li>
 			</ul>
 		</div>
-		<div id="hoi4-tgwr-uk" class="thumbnail">
-			<h4>The Great War Redux</h4>
-			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+	<div class="element" id="hoi4-tgwr-uk">
+		<h3><i>The Great War Redux</i>, українська<br><small>(переклад заморожено)</small></h3>
+		<img src="https://images.steamusercontent.com/ugc/17910175392895842952/1FE4EB0E923FF985C56E6B9E8B32F0DF5617232A/" class="thumbnail frozen">
+		<p>розпочато <i>25&nbsp;серпня 2024&nbsp;р.</i><br>
+		оновлено для моду версії <i>0.15.9.1</i></p>
+		<p>Посилання:</p>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2880535545">Steam</a></li>
 				<li><a href="https://github.com/Letgal/hoi4_ul-the_great_war_redux">GitHub</a></li>
 				<li><a href="https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw">MEGA</a></li>
 			</ul>
 		</div>
-		<div id="hoi4-minor-uk">
-			<h4>Невеликі моди</h4>
-			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+	<div class="element" id="hoi4-minor-uk">
+		<h3>Невеликі моди</h3>
 			<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3119420273">Збірка перекладів<small> (Steam)</small></a></li></ul>
-			<p>Dynamic Research Slots:</p>
+		<h4>Dynamic Research Slots:</h4>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2908253265">Steam</a></li>
 				<li><a href="https://mods.paradoxplaza.com/mods/55431/Any">Paradox Mods</a></li>
 				<li><a href="https://mega.nz/file/l4BlXKID#5F9mTQPhCrJiOjjdV3gji6yRISJEFtqjwg5BOKbXTUY">MEGA<small> (ZIP)</small></a></li>
 			</ul>
-			<p>Modifier Icons:</p>
+		<h4>Modifier Icons:</h4>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2912150988">Steam</a></li>
 				<li><a href="https://mods.paradoxplaza.com/mods/55746/Any">Paradox Mods</a></li>
 				<li><a href="https://mega.nz/file/YlgyDLgS#iYBjSz9ANYK7x03x13Mfwe5mauJJTjqa2OD5LLCm38U">MEGA<small> (ZIP)</small></a></li>
 			</ul>
 		</div>
-		<!-- <div>
-			<h4>Словацький переклад</h4>
-			<span class="category">Переклад</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
-			<ul><li><a href="https://github.com/Letgal/hoi4_st">GitHub</a></li></ul>
-		</div> -->
-		<a class="block" href="https://drukarnia.com.ua/leton" target="_blank" style="grid-column: auto / span 2;">Переклади щоденників розбробників HOI4 <i>(старі)</i></a>
+	<!-- <div>
+		<h3>Словацький переклад</h3>
+		<ul><li><a href="https://github.com/Letgal/hoi4_st">GitHub</a></li></ul>
+	</div> -->
+	<a class="block" href="https://drukarnia.com.ua/leton" target="_blank" style="grid-column: auto / span 2;">Переклади щоденників розбробників HOI4 <i>(старі)</i></a>
 	</div>
 	<h2>Окремі модифікації</h2>
-	<div class="container">
-		<!-- <div id="hoi4-rcw" class="thumbnail">
-			<h4>Russian Civil War</h4>
-			<ul><li><a href="https://github.com/Letgal/hoi4_rcw">GitHub</a></li></ul>
-		</div> -->
-		<div id="hoi4-srr" class="thumbnail">
-			<h4>Rise of the Soviet Republics</h4>
-			<span class="category">Модифікація</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+	<div class="element" id="hoi4-rcw">
+		<h3><i>Russian Civil War</i><br><i>(розробку заморожено)</i></h3>
+		<img src="gfx/rcw.png" class="thumbnail frozen" style="width: 150px;">
+			<p>(демо-версія, ніде не доступна)</p>
+			<!-- <ul><li><a href="https://github.com/Letgal/hoi4_rcw">GitHub</a></li></ul> -->
+		</div>
+	<div class="element" id="hoi4-srr">
+		<h3><i>Rise of the Soviet Republics</i><br><i>(розробку покинуто)</i></h3>
+		<img src="https://images.steamusercontent.com/ugc/63715342993873572/73C9E4E9288E8847E284663C2087E1940C4D2F5D/" class="thumbnail frozen" style="width: 150px;">
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3421563315">Steam</a></li>
 				<li><a href="https://github.com/Letgal/hoi4_srr">GitHub</a></li>
 			</ul>
 		</div>
-		<div id="hoi4-cap" class="thumbnail">
-			<h4>Censorship&nbsp;&amp; Propaganda</h4>
-			<span class="category">Модифікація</span> <span class="category" title="Hearts of Iron IV">HOI4</span>
+	<div class="element" id="hoi4-cap">
+		<h3><i>Censorship&nbsp;&amp; Propaganda</i><br><i>(розробку покинуто)</i></h3>
+		<img src="https://images.steamusercontent.com/ugc/63715342993872667/9457DB449A16C92E7D6C60703C9F247D9E64B889/" class="thumbnail frozen" style="width: 150px;">
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=3421563013">Steam</a></li>
 				<li><a href="https://github.com/Letgal/hoi4_cap">GitHub</a></li>

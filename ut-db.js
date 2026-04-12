@@ -22,7 +22,7 @@ const databaseCk2 = [
 						version: "3.3.5.1", lastUpdate: "2026-03-15"
 					}
 				],
-				more: "<p class='more-info'><big><i>Full</i>-версія</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
+				more: "<p class='more-info'><big><i>Full</i>-видання</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
 			},
 			{
 				authors: ["Letičan"],
@@ -44,7 +44,7 @@ const databaseCk2 = [
 						version: "3.3.5.1", lastUpdate: "2026-03-15"
 					}
 				],
-				more: "<p class='more-info'><big><i>Lite</i>-версія</big> (<i>не</i> змінює контрольну суму)</p>"
+				more: "<p class='more-info'><big><i>Lite</i>-видання</big> (<i>не</i> змінює контрольну суму)</p>"
 			}
 		]
 	}
@@ -165,7 +165,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "4.3.1", lastUpdate: "2026-03-22"
+					lang: "англ.", version: "4.3.1", lastUpdate: "2026-04-01"
 				}
 			]
 		} ]
@@ -491,19 +491,20 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.5.0.4", lastUpdate: "2026-03-19"
+						lang: "англ., рос.", version: "2.6", lastUpdate: "2026-04-10"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.5.0.4"
+						version: "2.6"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.5.0.4", lastUpdate: "2026-03-19"
+						lang: "англ., рос.", version: "2.6", lastUpdate: "2026-04-10"
 					}
-				]
+				],
+				more: "<p class='more-info'>Включає частковий переклад <i>Diarchy Expanded</i>, <i>Equestria at War Super Events</i> і <i>Equestria at War Super Events [mahorin\'s edition]</i>.</p>"
 			},
 			{
 				authors: ["Green Kitten"],
@@ -647,7 +648,7 @@ const databaseHoi4 = [
 			}
 		]
 	},
-	{
+	/*{
 		category: 1,
 		mod: "1984 Revolution - Unburnable Bump",
 		entries: [
@@ -659,7 +660,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3587894724",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3587357719",
-						/*lang: "англ., рос.", */lastUpdate: "2025-10-29"
+						lang: "англ., рос.", lastUpdate: "2025-10-29"
 					}
 				],
 				more: "<p class='more-info'>Це&nbsp;— переклад <i>1984 Revolution - Unburnable Bump</i>, сабмоду до <i>1984 - Revolution</i>.</p>"
@@ -944,7 +945,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3647018356",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
-						lang: "англ.", lastUpdate: "2026-03-28"
+						lang: "англ.", lastUpdate: "2026-04-10"
 					}
 				]
 			},
@@ -2706,13 +2707,18 @@ const databaseV3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
-					lang: "англ.", version: "1.12", lastUpdate: "2026-02-04"
+					lang: "англ.", version: "1.12", lastUpdate: "2026-04-12"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
-					lang: "англ.", version: "1.12", lastUpdate: "2026-02-04"
-				}
+					lang: "англ.", version: "1.12", lastUpdate: "2026-04-12"
+				}/*,
+				{
+					type: "GitHub",
+					link: "https://github.com/GodOfBurrito/New-Ukrainian-Localization-Victoria-3",
+					lang: "англ.", version: "1.12"
+				}*/
 			],
 			more: "<p class='more-info'>Сюди також включено переклади <i>Victoria Undead: A Zombie Apocalypse Mod</i> та <i>Eastern Europe</i>.</p>"
 		} ]

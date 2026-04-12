@@ -42,6 +42,8 @@
 			font-size: 1.2rem;
 			font-weight: 500;
 		}
+		button.mod.pre-26 { background: linear-gradient(to bottom, #775B 33.333%, #997B); }
+		button.mod.pre-25 { background: linear-gradient(to bottom, #755B 33.333%, #977B); }
 		a.collection {
 			position: relative; top: calc(-1em / 1.5);
 			display: block;
@@ -70,7 +72,7 @@
 
 		/* MODAL WINDOW & BG */
 		#after {
-			z-index: 2;
+			z-index: 3;
 			display: none; opacity: 0;
 			position: fixed; top: 0; bottom: 0; left: 0; right: 0;
 			background: #0008;
@@ -78,7 +80,7 @@
 			animation: fadeIn .5s ease forwards;
 		}
 		#mod-details {
-			z-index: 2;
+			z-index: 3;
 			display: none;
 			position: fixed; top: var(--header-height); bottom: 0; left: 10%; right: 10%;
 			padding: 1rem;
@@ -236,6 +238,7 @@
 			for (i = 1; i < databaseHoi4.length; i++) {
 				const button = document.createElement("button");
 					button.className = "mod cat" + databaseHoi4[i].category;
+					if (databaseHoi4[i].updateCat) { button.classList.add(databaseHoi4[i].updateCat); }
 					button.setAttribute("onclick", "openModDetails(databaseHoi4, " + i + ")");
 					// if (databaseHoi4[i].official) { button.innerHTML += "<img src='gfx/official-mark.svg' title='Офіційний переклад'>"; }
 					button.innerHTML += databaseHoi4[i].mod;
@@ -388,6 +391,7 @@
 	<!-- HEARTS OF IRON IV -->
 	<div id="hoi4" class="game">
 		<a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" target="_blank">Колекція перекладів у Майстерні Steam</a>
+		<p class="intro" style="z-index: 1; position: sticky; top: var(--header-height); padding: 0.5em; background: var(--root-color); box-shadow: 0 0 1em 0.5em var(--root-color);">Барвами позначено переклади, які востаннє оновлювалися до <b style="color: palegoldenrod;">2026</b> і до <b style="color: salmon;">2025</b> року.</p>
 		<h2>Переклади гри (1)</h2>
 		<button class="mod" onclick="openModDetails(databaseHoi4, 0);">Переклад гри (версія 1.17.5)</button>
 	</div>

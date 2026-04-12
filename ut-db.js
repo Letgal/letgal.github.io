@@ -406,7 +406,7 @@ const databaseHoi4 = [
 		]
 	},*/
 	{
-		category: 1,
+		category: 1, updateCat: "pre-26",
 		mod: "Millennium Dawn: A Modern Day Mod",
 		entries: [
 			{
@@ -539,7 +539,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "The Great War",
 		entries: [ {
 			authors: ["Stepan"],
@@ -582,7 +582,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-26",
 		mod: "World Ablaze",
 		entries: [ {
 			authors: ["4oomba"],
@@ -598,7 +598,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "Red Flood",
 		entries: [ {
 			authors: ["wenyangat"],
@@ -614,7 +614,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "Pax Britannica: An Imperial Timeline",
 		entries: [ {
 			authors: ["wenyangat"],
@@ -630,7 +630,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-26",
 		mod: "1984 - Revolution",
 		entries: [
 			{
@@ -665,7 +665,7 @@ const databaseHoi4 = [
 				more: "<p class='more-info'>Це&nbsp;— переклад <i>1984 Revolution - Unburnable Bump</i>, сабмоду до <i>1984 - Revolution</i>.</p>"
 			}
 		]
-	},
+	},*/
 	/*{
 		category: 1,
 		mod: "The Information Age 2018",
@@ -704,7 +704,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-26",
 		mod: "Youjo Senki Redux",
 		entries: [ {
 			authors: ["denysmirnow"],
@@ -741,7 +741,7 @@ const databaseHoi4 = [
 		} ]
 	},*/
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "Disaster",
 		entries: [ {
 			authors: ["wenyangat"],
@@ -757,7 +757,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "The Age of a New Beginning",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -773,7 +773,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "Across the Dnieper",
 		entries: [ {
 			authors: ["Alfer209", "w1ron[UA]", "ILP"],
@@ -789,7 +789,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "East Showdown",
 		entries: [ {
 			authors: ["Conteynerrr"],
@@ -837,7 +837,7 @@ const databaseHoi4 = [
 		} ]
 	},*/
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "Seçim 2023",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -852,7 +852,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "Scenario: Korea",
 		entries: [ {
 			authors: ["wenyangat"],
@@ -868,7 +868,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "SPEED5: Commanders in Conflict",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -884,7 +884,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "hoi4 irl",
 		entries: [ {
 			authors: ["Green Kitten"],
@@ -901,7 +901,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-26",
 		mod: "Their Finest Bruh",
 		entries: [ {
 			authors: ["Stryker"], note: "та інші",
@@ -917,7 +917,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 1,
+		category: 1, updateCat: "pre-25",
 		mod: "Millennium Dawn Classic",
 		entries: [ {
 			authors: ["Zireael"],
@@ -963,7 +963,7 @@ const databaseHoi4 = [
 		]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "The Road to 56: Expanded &amp; Enhanced",
 		entries: [ {
 			authors: ["wenyangat"],
@@ -979,7 +979,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Horstorical Multiplayer",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -995,7 +995,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Forgotten Nations",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1011,7 +1011,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "South America Rework",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1027,7 +1027,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Arbre générique +",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1043,7 +1043,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2, official: true,
+		category: 2, updateCat: "pre-26", official: true,
 		mod: "Flames of Eastern Europe",
 		entries: [ {
 			authors: ["SteveJobs"],
@@ -1059,7 +1059,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2, official: true,
+		category: 2, updateCat: "pre-26", official: true,
 		mod: "Eastern Frontlines",
 		entries: [ {
 			authors: ["Sil_Olexandr"],
@@ -1075,7 +1075,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Nordics Reworked",
 		entries: [ {
 			authors: ["Lonster"], note: "&amp; <i>Godresky</i>",
@@ -1091,7 +1091,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-26",
 		mod: "Free Caucasus",
 		entries: [ {
 			authors: ["Alfer209", "Лицарський хрест"],
@@ -1107,7 +1107,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "AnimeCountry [REDUX]",
 		entries: [ {
 		authors: ["TTTSHOK"],
@@ -1124,7 +1124,7 @@ const databaseHoi4 = [
 	},
 	// <HR>
 	{
-		category: 2,
+		category: 2, updateCat: "pre-26",
 		mod: "Fight for the Fatherland",
 		entries: [ {
 			authors: ["Alfer209", "Лицарський хрест"],
@@ -1140,7 +1140,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Ultimate German Focus Tree Updated",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -1156,7 +1156,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "German Rework",
 		entries: [
 			{
@@ -1186,7 +1186,7 @@ const databaseHoi4 = [
 		]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "The Storm: A German Focus Tree Overhaul",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1202,7 +1202,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-26",
 		mod: "UK Rework",
 		entries: [ {
 			authors: ["Alfer209", "Лицарський хрест", "kiryl"],
@@ -1218,7 +1218,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Flavor for Vanilla Hungary",
 		entries: [ {
 			authors: ["Aecepog"],
@@ -1239,7 +1239,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Romania Reworked",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1255,7 +1255,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Rise of the Lion - Czechoslovakia Rework",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1271,7 +1271,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-26",
 		mod: "Arise Slavs! - Yugoslavia Overhaul",
 		entries: [ {
 			authors: ["Alfer209", "Лицарський хрест"],
@@ -1287,7 +1287,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Ultimate Greece Rework",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1303,7 +1303,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Better Turkey+",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1319,7 +1319,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Helvetia",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1335,7 +1335,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Focus Tree for Belgium",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1351,7 +1351,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Great Belgium",
 		entries: [ {
 			authors: ["nik_wern"],
@@ -1367,7 +1367,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Focus Tree for Sweden",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1383,7 +1383,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Dreams of Finland Updated",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1399,7 +1399,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Finland Stronk",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1415,7 +1415,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-26",
 		mod: "The Rise of Albania",
 		entries: [ {
 			authors: ["Alfer209"],
@@ -1431,7 +1431,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2, official: true,
+		category: 2, updateCat: "pre-26", official: true,
 		mod: "Ukraine Above All",
 		entries: [ {
 			authors: ["GBV", "Lonster"], note: "та <dfn title='Оприлюднив: GBV\nГоловний перекладач: Lonster\nІнші перекладачі:\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>інші</dfn>",
@@ -1486,7 +1486,7 @@ const databaseHoi4 = [
 		]
 	},
 	{
-		category: 2, official: true,
+		category: 2, updateCat: "pre-26", official: true,
 		mod: "The Last Hetman",
 		entries: [ {
 			authors: ["GGA Studio"],
@@ -1502,7 +1502,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Ukraine 1.12",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1518,7 +1518,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Ireland Expanded",
 		entries: [ {
 			authors: ["nonzoron"],
@@ -1534,7 +1534,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Iran Glory Beta",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1550,7 +1550,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Red Banners: The Future of Yemen",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1566,7 +1566,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Maharaj: A Complete Nepal Overhaul",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1582,7 +1582,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Cuba Rework",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1598,7 +1598,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-26",
 		mod: "Luxembourg Focus Tree",
 		entries: [ {
 			authors: ["Alfer209", "kiryl"],
@@ -1614,7 +1614,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2, official: true,
+		category: 2, updateCat: "pre-26", official: true,
 		mod: "Generic Focus Tree: Redux",
 		entries: [ {
 			authors: ["BoznaWhere"],
@@ -1630,7 +1630,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-26",
 		mod: "Teto Territory",
 		entries: [ {
 			authors: ["Alfer209"],
@@ -1646,7 +1646,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Hearts of SCP",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1662,7 +1662,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2, official: true,
+		category: 2, updateCat: "pre-25", official: true,
 		mod: "Rise of Kharkiv",
 		entries: [ {
 			authors: ["Marsenko"],
@@ -1678,7 +1678,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Anarkhiya-mama, za nas!",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1694,7 +1694,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Catalan War Mod",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1710,7 +1710,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Fembavaria",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1726,7 +1726,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Listenbourg",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1742,7 +1742,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-25",
 		mod: "Пивная страна",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1758,7 +1758,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2,
+		category: 2, updateCat: "pre-26",
 		mod: "Make Chernygiv Great Again!",
 		entries: [
 			{
@@ -1809,7 +1809,7 @@ const databaseHoi4 = [
 		} ]
 	},*/
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Universal Formable Nations",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -1825,7 +1825,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-26",
 		mod: "Formable Nations",
 		entries: [
 			{
@@ -1871,7 +1871,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Country Unions",
 		entries: [ {
 			authors: ["Rayan_293"],
@@ -1887,7 +1887,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-26",
 		mod: "Better Arabia Formable",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -1903,7 +1903,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Großdeutschland: A Germany Expansion",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -1919,7 +1919,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-26",
 		mod: "Reichspakt+",
 		entries: [ {
 			authors: ["Alfer209", "Лицарський хрест"],
@@ -1935,7 +1935,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Improved German Opposition",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -1951,7 +1951,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Reichskommissariats Plus",
 		entries: [
 			{
@@ -1981,7 +1981,7 @@ const databaseHoi4 = [
 		]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Snow's Reichkommisariats",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -1997,7 +1997,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Non-Aligned Reichkommisariats",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -2013,7 +2013,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-26",
 		mod: "Little Intermarium Formable",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2029,7 +2029,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-26",
 		mod: "Cavalry Doctrine",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2045,7 +2045,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Kovas' States Rework",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2061,7 +2061,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Every Province a Victory Point",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2093,7 +2093,7 @@ const databaseHoi4 = [
 		} ]
 	},*/
 	{
-		category: 3,
+		category: 3, updateCat: "pre-25",
 		mod: "Dissolved Germany",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -2109,7 +2109,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Toolpack 1.12",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2125,7 +2125,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "International Arms Market",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2141,7 +2141,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Peace Deals",
 		entries: [ {
 			authors: ["nzr.kslc"],
@@ -2158,7 +2158,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Better Laws and Policies",
 		entries: [ {
 			authors: ["Green Kitten"],
@@ -2175,7 +2175,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Military Laws",
 		entries: [ {
 			authors: ["I'M HAPPY", "tan_mai.ke", "Mapno"],
@@ -2191,7 +2191,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-26",
 		mod: "Better Mechanics: Extended Projects",
 		entries: [ {
 			authors: ["ArBo"],
@@ -2207,7 +2207,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Dynamic Research Slots",
 		entries: [ {
 			authors: ["Letičan"],
@@ -2233,7 +2233,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-26",
 		mod: "Unlock All Ideologies For All Countries",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2249,7 +2249,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Allied Construction Projects",
 		entries: [ {
 			authors: ["Dominic DeCoco"],
@@ -2265,7 +2265,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Resource Factories &amp; 56 Building Slot",
 		entries: [ {
 			authors: ["Rayan_293"],
@@ -2281,7 +2281,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Strategic Artillery Bombardment",
 		entries: [ {
 			authors: ["Ner Kun"],
@@ -2297,7 +2297,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Core With Compliance++",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2313,7 +2313,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Cores &amp; Claims GUI",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2329,7 +2329,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "War Chess",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2345,7 +2345,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-26",
 		mod: "Vanilla Super Events Expanded",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2404,7 +2404,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "TWR GDP Screen",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2421,7 +2421,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Annex Subjects",
 		entries: [ {
 			authors: ["Lila Light"],
@@ -2437,7 +2437,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "Demand It!",
 			entries: [ {
 			authors: ["Dominic DeCoco"],
@@ -2453,7 +2453,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-25",
 		mod: "City Maker",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -2470,7 +2470,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-26",
 		mod: "Post-War Settlement",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2486,7 +2486,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-26",
 		mod: "Decisions to buy Greenland and Canada",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2502,7 +2502,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 4,
+		category: 4, updateCat: "pre-26",
 		mod: "Purchase Syrian Kurdistan",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2535,7 +2535,7 @@ const databaseHoi4 = [
 		} ]
 	},*/
 	{
-		category: 4,
+		category: 4, updateCat: "pre-26",
 		mod: "Gulf of America",
 		entries: [ {
 			authors: ["IvanChyk59"],
@@ -2567,7 +2567,7 @@ const databaseHoi4 = [
 		} ]
 	},*/
 	{
-		category: 4,
+		category: 4, updateCat: "pre-26",
 		mod: "Strategic region Donbas",
 		entries: [ {
 			authors: ["IvanChyk59"],

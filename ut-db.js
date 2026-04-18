@@ -9,17 +9,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3343477113",
-						version: "3.3.5.1", lastUpdate: "2026-03-15"
+						version: "3.3.5.1", lastUpdate: "2026-04-17"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2026-03-15"
+						version: "3.3.5.1", lastUpdate: "2026-04-17"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/B6kHURSK#h-qbPrKXJd4AU_mgFnmGdg",
-						version: "3.3.5.1", lastUpdate: "2026-03-15"
+						version: "3.3.5.1", lastUpdate: "2026-04-17"
 					}
 				],
 				more: "<p class='more-info'><big><i>Full</i>-видання</big> (змінює контрольну суму за рахунок перекладів імен персонажів і назв династій)</p>"
@@ -31,17 +31,17 @@ const databaseCk2 = [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3348154330",
-						version: "3.3.5.1", lastUpdate: "2026-03-15"
+						version: "3.3.5.1", lastUpdate: "2026-04-17"
 					},
 					{
 						type: "Nexus Mods",
 						link: "https://www.nexusmods.com/crusaderkings2/mods/115",
-						version: "3.3.5.1", lastUpdate: "2026-03-15"
+						version: "3.3.5.1", lastUpdate: "2026-04-17"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/0701zLjJ#vaWCcvitbjupnjO_yTAKMA",
-						version: "3.3.5.1", lastUpdate: "2026-03-15"
+						version: "3.3.5.1", lastUpdate: "2026-04-17"
 					}
 				],
 				more: "<p class='more-info'><big><i>Lite</i>-видання</big> (<i>не</i> змінює контрольну суму)</p>"

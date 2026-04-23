@@ -278,32 +278,32 @@ const databaseHoi4 = [
 			{
 			authors: ["Letičan", "Бовкун", "Лицарський хрест", "TTTSHOK"],
 			note: "та <dfn title='Ініціатор, куратор: Letičan\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Лицарський хрест\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "11881177539401232618/99AF05A55AB150109BB03F11416CC5B23ADD1715",
+			image: "18380407486860492528/65BA9924F974A5539FA3BAD29127DCCABA1B5CB2",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.17.5", lastUpdate: "2026-03-19"
+					lang: "англ., рос.", version: "1.18.0", lastUpdate: "2026-04-23"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.17.5", lastUpdate: "2026-03-19"
+					lang: "англ., рос.", version: "1.18.0", lastUpdate: "2026-04-23"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.17.5", lastUpdate: "2026-03-19"
+					lang: "англ., рос.", version: "1.18.0", lastUpdate: "2026-04-23"
 				},
 				{
 					type: "GitHub",
-					link: "https://github.com/Letgal/hoi4_ukrainian_translation",
-					version: "1.17.5"
+					link: "https://github.com/Letgal/hoi4_ut",
+					version: "1.18.0"
 				},
 				{
-					type: "Google Диск",
+					type: "Google Диск", old: true,
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
-					lang: "англ., рос.", version: "1.17.5", lastUpdate: "2026-03-19"
+					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
 				}
 			],
 			},
@@ -491,17 +491,17 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.6", lastUpdate: "2026-04-10"
+						lang: "англ., рос.", version: "2.6.1", lastUpdate: "2026-04-23"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.6"
+						version: "2.6.1"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.6", lastUpdate: "2026-04-10"
+						lang: "англ., рос.", version: "2.6.1", lastUpdate: "2026-04-23"
 					}
 				],
 				more: "<p class='more-info'>Включає частковий переклад <i>Diarchy Expanded</i>, <i>Equestria at War Super Events</i> і <i>Equestria at War Super Events [mahorin\'s edition]</i>.</p>"
@@ -567,17 +567,17 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "0.15.9.1", lastUpdate: "2026-01-09"
+					lang: "англ., рос.", version: "1.15.15", lastUpdate: "2026-04-23"
 				},
 				{
 					type: "MEGA",
 					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "0.15.9.1", lastUpdate: "2026-01-09"
+					lang: "англ., рос.", version: "1.15.15", lastUpdate: "2026-04-23"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ul-the_great_war_redux",
-					version: "0.15.8"
+					version: "1.15.15"
 				}
 			]
 		} ]

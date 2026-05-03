@@ -59,7 +59,7 @@ const databaseEu4 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=632273228",
-					version: "1.37.5", lastUpdate: "2025-02-02"
+					version: "1.37.5", lastUpdate: "2026-04-22"
 				},
 				{
 					type: "Paradox Mods",
@@ -69,7 +69,7 @@ const databaseEu4 = [
 				{
 					type: "GitHub",
 					link: "https://github.com/vicner/eu4",
-					version: "1.37"
+					version: "1.37.5"
 				}
 			]
 		} ]
@@ -160,12 +160,12 @@ const databaseStel = [
 		mod: "Stellaris",
 		entries: [ {
 			authors: ["Aallhan", "Ailigean", "Queez"], note: "та інші",
-			image: "2508017401746832331/083DE52F38CD1B928E26A3764C22F36BE6273DFC",
+			image: "11401825183441362141/083DE52F38CD1B928E26A3764C22F36BE6273DFC",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "4.3.1", lastUpdate: "2026-04-01"
+					lang: "англ.", version: "4.3.1", lastUpdate: "2026-04-29"
 				}
 			]
 		} ]
@@ -1432,7 +1432,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2, updateCat: "pre-26", official: true,
+		category: 2, official: true,
 		mod: "Ukraine Above All",
 		entries: [ {
 			authors: ["GBV", "Lonster"], note: "та <dfn title='Оприлюднив: GBV\nГоловний перекладач: Lonster\nІнші перекладачі:\n  &bull; yaner\n  &bull; OleksaDowbushz\n  &bull; myksyd02\n  &bull; Marksman\n  &bull; Egor.kryzka\n  &bull; p.atamanuyk\n  &bull; Pavlo_Kov\n  &bull; voloshchuk\n  &bull; rostislavdudinets\n  &bull; Ancuneese\n  &bull; shvetsartem600\n  &bull; 19eugen27\n  &bull; ketronix2\n  &bull; derunch42\n  &bull; slavaukrainizt'>інші</dfn>",
@@ -1442,7 +1442,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2025-12-24"
+					lang: "рос.", lastUpdate: "2026-04-23"
 				},
 				{
 					type: "Transifex",
@@ -1546,6 +1546,22 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2915440311",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2950975976",
 					lang: "англ.", lastUpdate: "2023-01-09"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
+		mod: "The Rising Eagle",
+		entries: [ {
+			authors: ["Alfer209", "Лицарський хрест"],
+			image: "17343618363731302676/F3753222A6C78F77F1A40C7EDA25E0A58FC2564D",
+			links: [
+				{
+					type: "Steam", old: true,
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3719459993",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3538753748",
+					lang: "англ.", lastUpdate: "2026-05-03"
 				}
 			]
 		} ]
@@ -2967,7 +2983,7 @@ const databaseEu5 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3693534220",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3680340621",
-					lastUpdate: "2026-03-27"
+					lastUpdate: "2026-03-31"
 				}
 			]
 		} ]

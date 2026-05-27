@@ -46,6 +46,7 @@
 		}
 		button.mod.pre-26 { background: linear-gradient(to bottom, #775B 33.333%, #997B); }
 		button.mod.pre-25 { background: linear-gradient(to bottom, #755B 33.333%, #977B); }
+		button.mod.pre-hidden { display: none; }
 		a.collection {
 			position: relative; top: calc(-1em / 1.5);
 			display: block;
@@ -263,19 +264,19 @@
 			const hoi4AllUtility = document.querySelectorAll("#hoi4 .cat4");
 
 			const headingTotal = document.createElement("h3");
-			headingTotal.innerHTML = "Повні ревізії (" + hoi4AllTotal.length + ")";
+			headingTotal.innerHTML = "Повні ревізії (усього " + hoi4AllTotal.length + ")";
 			document.getElementById("hoi4").insertBefore(headingTotal, firstTotal);
 
 			const headingOverhaul = document.createElement("h3");
-			headingOverhaul.innerHTML = "Ревізії країн (" + hoi4AllOverhaul.length + ")";
+			headingOverhaul.innerHTML = "Ревізії країн (усього " + hoi4AllOverhaul.length + ")";
 			document.getElementById("hoi4").insertBefore(headingOverhaul, firstOverhaul);
 
 			const headingExpansion = document.createElement("h3");
-			headingExpansion.innerHTML = "Розширення вмісту (" + hoi4AllExpansion.length + ")";
+			headingExpansion.innerHTML = "Розширення вмісту (усього " + hoi4AllExpansion.length + ")";
 			document.getElementById("hoi4").insertBefore(headingExpansion, firstExpansion);
 
 			const headingUtility = document.createElement("h3");
-			headingUtility.innerHTML = "Дрібні розширення/утиліти (" + hoi4AllUtility.length + ")";
+			headingUtility.innerHTML = "Дрібні розширення/утиліти (усього " + hoi4AllUtility.length + ")";
 			document.getElementById("hoi4").insertBefore(headingUtility, firstUtility);
 		}
 	</script>
@@ -331,6 +332,18 @@
 
 			document.getElementById("mod-details").innerHTML = "<button id='close' onclick='closeModDetails();'>&times;</button>";
 		}
+
+		function toggleOldMods(year) {
+			var oldMods1 = document.getElementsByClassName("pre-26");
+			var oldMods2 = document.getElementsByClassName("pre-25");
+			if (year == "26") {
+				for (var i in oldMods1) { oldMods1[i].classList.toggle('pre-hidden'); }
+			}
+			if (year == "25") {
+				for (var i in oldMods2) { oldMods2[i].classList.toggle('pre-hidden'); }
+			}
+			// хах, аж дивуюся, як відносно просто все вийшло. ~ L.H.
+		}
 	</script>
 </head>
 <body onload="generateLinks('header'); createFormattedModListForHoi4(); document.getElementById('ck2-radio').click(); document.getElementById('hoi4-radio').click();">
@@ -351,6 +364,7 @@
 
 	<p class="intro">Ця сторінка <abbr style="font-style: italic;" title="(якщо автор не лінуватиметься)">буде</abbr> доповнюватися й оновлюватися з часом.</p>
 	<p class="intro"><b>Зауважте:</b> Деякі відомості можуть бути застарілі.</p>
+	<p class="intro">Сторінка використовує <b>JavaScript</b> для функціоналу.</p>
 	<h1>Моди для <i id="title"></i> українською</h1>
 
 	<!-- CRUSADER KINGS II -->
@@ -398,7 +412,12 @@
 	<!-- HEARTS OF IRON IV -->
 	<div id="hoi4" class="game">
 		<a class="collection" href="https://steamcommunity.com/workshop/filedetails/?id=2732054856" target="_blank">Колекція перекладів у Майстерні Steam</a>
-		<p class="intro" style="z-index: 1; position: sticky; top: var(--header-height); padding: 0.5em; background: var(--root-color); box-shadow: 0 0 1em 0.5em var(--root-color);">Барвами позначено переклади, які востаннє оновлювалися до <b style="color: palegoldenrod;">2026</b> і до <b style="color: salmon;">2025</b> року.</p>
+		<p class="intro" style="z-index: 1; position: sticky; top: var(--header-height); padding: 0.5em; background: var(--root-color); box-shadow: 0 0 1em 0.5em var(--root-color);">
+			Барвами позначено переклади, які востаннє оновлювалися до <b style="color: palegoldenrod;">2026</b> і до <b style="color: salmon;">2025</b> року.
+			<br>Показувати моди, оновлені:
+			<label><input type="checkbox" name="old-mods" onchange="toggleOldMods('26');" checked> раніше <b style="color: palegoldenrod;">2026</b>&nbsp;р.</label>&nbsp;&bullet;
+			<label><input type="checkbox" name="old-mods" onchange="toggleOldMods('25');" checked> раніше <b style="color: salmon;">2025</b>&nbsp;р.</label>
+		</p>
 		<h2>Переклади гри (1)</h2>
 		<button class="mod" onclick="openModDetails(databaseHoi4, 0);">Переклад гри (версія 1.18.0)</button>
 	</div>

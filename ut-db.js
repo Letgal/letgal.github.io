@@ -47,6 +47,23 @@ const databaseCk2 = [
 				more: "<p class='more-info'><big><i>Lite</i>-видання</big> (<i>не</i> змінює контрольну суму)</p>"
 			}
 		]
+	},
+	{
+		mod: "Smart Vassals",
+		entries: [
+			{
+				authors: ["Хто Я"],
+				image: "13480271841478349846/2764A4ECCE35F5A0E1CBDB4F7DE6DA2413140E6C",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3694919444",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3694586473",
+						lastUpdate: "2026-04-01"
+					}
+				]
+			}
+		]
 	}
 ]
 const databaseEu4 = [
@@ -165,7 +182,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "4.3.1", lastUpdate: "2026-04-29"
+					lang: "англ.", version: "4.3.7", lastUpdate: "2026-05-24"
 				}
 			]
 		} ]
@@ -945,7 +962,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3647018356",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
-						lang: "англ.", lastUpdate: "2026-04-10"
+						lang: "англ.", lastUpdate: "2026-05-08"
 					}
 				]
 			},
@@ -1463,7 +1480,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3437387219",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-						lang: "англ.", version: "2.0.2", lastUpdate: "2026-03-28"
+						lang: "англ.", version: "2.1", lastUpdate: "2026-05-20"
 					}
 				]
 			},
@@ -1631,7 +1648,7 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
-		category: 2, updateCat: "pre-26", official: true,
+		category: 2, official: true,
 		mod: "Generic Focus Tree: Redux",
 		entries: [ {
 			authors: ["BoznaWhere"],
@@ -1641,13 +1658,13 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3597454982",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3596666948",
-					/*lang: "англ.",*/ lastUpdate: "2025-12-08"
+					/*lang: "англ.",*/ lastUpdate: "2026-05-04"
 				}
 			]
 		} ]
 	},
 	{
-		category: 2, updateCat: "pre-26",
+		category: 2,
 		mod: "Teto Territory",
 		entries: [ {
 			authors: ["Alfer209"],
@@ -1657,7 +1674,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3533876886",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3467973842",
-					lang: "англ.", lastUpdate: "2025-09-28"
+					lang: "англ.", lastUpdate: "2026-05-03"
 				}
 			]
 		} ]
@@ -2599,7 +2616,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	}
-	/*додати Capital Changer і Better Mechanics: Extended Projects*/
+	/*додати Capital Changer, Better Mechanics: Extended Projects, Formosa: Taiwan, Shanghai: Eve of the Solitary Island, Lion and Tiger in Solitude*/
 ]
 const databaseIr = [
 	{
@@ -2630,18 +2647,18 @@ const databaseCk3 = [
 	{
 		mod: "Crusader Kings III",
 		entries: [ {
-			authors: ["Doffi", "AHrEJl", "Arlechin"],
+			authors: ["Doffi", "AHrEJl", "Arlechin", "kassander"],
 			image: "16424358873096392550/50D5DE5185E33E3E83F35BF448EE96D89217F852",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lang: "англ.", lastUpdate: "2026-03-26"
+					lang: "англ.", lastUpdate: "2026-05-27"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/75966/Any",
-					lang: "англ.", lastUpdate: "2026-03-26"
+					lang: "англ.", lastUpdate: "2026-05-27"
 				},
 				{
 					type: "Dropbox", old: true,

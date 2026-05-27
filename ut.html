@@ -337,16 +337,16 @@
 	<header></header>
 	<nav>
 		<h2>Ігри</h2>
-		<input type="radio" name="game" id="ck2-radio" onchange="switchGame('ck2')"><label for="ck2-radio">Crusader Kings II</label>
-		<input type="radio" name="game" id="eu4-radio" onchange="switchGame('eu4')"><label for="eu4-radio">Europa Universalis IV</label>
-		<input type="radio" name="game" id="cs-radio" onchange="switchGame('cs')"><label for="cs-radio">Cities: Skylines</label>
-		<input type="radio" name="game" id="stel-radio" onchange="switchGame('stel')"><label for="stel-radio">Stellaris</label>
-		<input type="radio" name="game" id="hoi4-radio" onchange="switchGame('hoi4')"><label for="hoi4-radio">Hearts of Iron IV</label>
-		<input type="radio" name="game" id="ir-radio" onchange="switchGame('ir')"><label for="ir-radio">Imperator: Rome</label>
-		<input type="radio" name="game" id="ck3-radio" onchange="switchGame('ck3')"><label for="ck3-radio">Crusader Kings III</label>
-		<input type="radio" name="game" id="v3-radio" onchange="switchGame('v3')"><label for="v3-radio">Victoria 3</label>
-		<input type="radio" name="game" id="cs2-radio" onchange="switchGame('cs2')"><label for="cs2-radio">Cities: Skylines II</label>
-		<input type="radio" name="game" id="eu5-radio" onchange="switchGame('eu5')"><label for="eu5-radio">Europa Universalis V</label>
+		<input type="radio" name="game" id="ck2-radio" onchange="switchGame('ck2')"><label for="ck2-radio">Crusader Kings II <sub>(2012)</sub></label>
+		<input type="radio" name="game" id="eu4-radio" onchange="switchGame('eu4')"><label for="eu4-radio">Europa Universalis IV <sub>(2013)</sub></label>
+		<input type="radio" name="game" id="cs-radio" onchange="switchGame('cs')"><label for="cs-radio">Cities: Skylines <sub>(2013)</sub></label>
+		<input type="radio" name="game" id="stel-radio" onchange="switchGame('stel')"><label for="stel-radio">Stellaris <sub>(2016)</sub></label>
+		<input type="radio" name="game" id="hoi4-radio" onchange="switchGame('hoi4')"><label for="hoi4-radio">Hearts of Iron IV <sub>(2016)</sub></label>
+		<input type="radio" name="game" id="ir-radio" onchange="switchGame('ir')"><label for="ir-radio">Imperator: Rome <sub>(2019)</sub></label>
+		<input type="radio" name="game" id="ck3-radio" onchange="switchGame('ck3')"><label for="ck3-radio">Crusader Kings III <sub>(2020)</sub></label>
+		<input type="radio" name="game" id="v3-radio" onchange="switchGame('v3')"><label for="v3-radio">Victoria 3 <sub>(2022)</sub></label>
+		<input type="radio" name="game" id="cs2-radio" onchange="switchGame('cs2')"><label for="cs2-radio">Cities: Skylines II <sub>(2025)</sub></label>
+		<input type="radio" name="game" id="eu5-radio" onchange="switchGame('eu5')"><label for="eu5-radio">Europa Universalis V <sub>(2026)</sub></label>
 	</nav>
 
 	<p class="intro">Ця сторінка <abbr style="font-style: italic;" title="(якщо автор не лінуватиметься)">буде</abbr> доповнюватися й оновлюватися з часом.</p>
@@ -354,7 +354,12 @@
 	<h1>Моди для <i id="title"></i> українською</h1>
 
 	<!-- CRUSADER KINGS II -->
-	<div id="ck2" class="game"><button class="mod" onclick="openModDetails(databaseCk2, 0);">Переклад гри (версія 3.3.5.1)</button></div>
+	<div id="ck2" class="game">
+		<h2>Переклади гри (1)</h2>
+		<button class="mod" onclick="openModDetails(databaseCk2, 0);">Переклад гри (версія 3.3.5.1)</button>
+		<h2>Переклади модів (1)</h2>
+		<button class="mod" onclick="openModDetails(databaseCk2, 1);">Smart Vassals</button>
+	</div>
 
 	<!-- EUROPA UNIVERSALIS IV -->
 	<div id="eu4" class="game"><button class="mod" onclick="openModDetails(databaseEu4, 0);">Переклад гри (версія 1.37.5)</button></div>
@@ -378,7 +383,7 @@
 	<div id="stel" class="game">
 		<h2>Переклади гри (2)</h2>
 		<div class="gridlist col-2">
-			<button class="mod" onclick="openModDetails(databaseStel, 0);">Версія 4.3.1</button>
+			<button class="mod" onclick="openModDetails(databaseStel, 0);">Версія 4.3.7</button>
 			<!-- <button class="mod old" onclick="openModDetails(databaseStel, 1);">Версія 3.11</button> -->
 			<button class="mod old" onclick="openModDetails(databaseStel, 1);">Версія 3.8.4</button>
 		</div>

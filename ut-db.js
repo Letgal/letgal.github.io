@@ -90,6 +90,23 @@ const databaseEu4 = [
 				}
 			]
 		} ]
+	},
+	{
+		mod: "Ze Great Kaiser's Cheat Menu",
+		entries: [
+			{
+				authors: ["Ner Kun"],
+				image: "13480271841478349846/2764A4ECCE35F5A0E1CBDB4F7DE6DA2413140E6C",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3272117238",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1103546724",
+						lastUpdate: "2024-06-21"
+					}
+				]
+			}
+		]
 	}
 ]
 const databaseCs = [
@@ -182,7 +199,7 @@ const databaseStel = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2907350739",
-					lang: "англ.", version: "4.3.7", lastUpdate: "2026-05-24"
+					lang: "англ.", version: "4.3.7", lastUpdate: "2026-06-14"
 				}
 			]
 		} ]
@@ -295,27 +312,27 @@ const databaseHoi4 = [
 			{
 			authors: ["Letičan", "Бовкун", "Лицарський хрест", "TTTSHOK"],
 			note: "та <dfn title='Ініціатор, куратор: Letičan\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Лицарський хрест\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "18380407486860492528/65BA9924F974A5539FA3BAD29127DCCABA1B5CB2",
+			image: "12158431419187596221/C919B921643551B3F902E7A9F48A583A7291D518",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.18.0", lastUpdate: "2026-04-23"
+					lang: "англ., рос.", version: "1.19.0", lastUpdate: "2026-06-14"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.18.0", lastUpdate: "2026-04-23"
+					lang: "англ., рос.", version: "1.19.0", lastUpdate: "2026-06-14"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.18.0", lastUpdate: "2026-04-23"
+					lang: "англ., рос.", version: "1.19.0", lastUpdate: "2026-06-14"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ut",
-					version: "1.18.0"
+					version: "1.19.0"
 				},
 				{
 					type: "Google Диск", old: true,
@@ -350,7 +367,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2826209198",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1521695605",
-					lang: "англ.", version: "1.5.1", lastUpdate: "2026-02-21"
+					lang: "англ.", version: "1.6.4", lastUpdate: "2026-06-14"
 				},
 				{
 					type: "Paradox Mods", old: true,
@@ -401,6 +418,25 @@ const databaseHoi4 = [
 						lang: "англ.", lastUpdate: "2026-01-28"
 					}
 				]
+			}
+		]
+	},
+	{
+		category: 1,
+		mod: "The New Order: New Years Of Global Order",
+		entries: [
+			{
+				authors: ["YAMATOLUX", "ratnikveka3"],
+				image: "17242399421977994698/F5F2F83EAEBA2ED83B4337F61CAC15F17628A2D9",
+				links: [
+					{
+						type: "Steam",
+						link: "https://steamcommunity.com/workshop/filedetails/?id=3741259839",
+						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3579472890",
+						lang: "англ.", lastUpdate: "2026-06-16"
+					}
+				],
+				more: "<p class='more-info'>Це&nbsp;— переклад <i>New Years Of Global Order</i>, сабмоду до <i>The New Order</i>.</p>"
 			}
 		]
 	},
@@ -469,7 +505,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3368978184",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2265420196",
-					lang: "англ.", version: "5.1.4b", lastUpdate: "2026-01-12"
+					lang: "англ.", version: "5.1.6c", lastUpdate: "2026-06-16"
 				},
 				{
 					type: "GitHub",
@@ -508,17 +544,17 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.6.1", lastUpdate: "2026-04-23"
+						lang: "англ., рос.", version: "2.6.2", lastUpdate: "2026-06-14"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.6.1"
+						version: "2.6.2"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.6.1", lastUpdate: "2026-04-23"
+						lang: "англ., рос.", version: "2.6.2", lastUpdate: "2026-06-14"
 					}
 				],
 				more: "<p class='more-info'>Включає частковий переклад <i>Diarchy Expanded</i>, <i>Equestria at War Super Events</i> і <i>Equestria at War Super Events [mahorin\'s edition]</i>.</p>"
@@ -956,13 +992,13 @@ const databaseHoi4 = [
 		entries: [
 			{
 				authors: ["#кмс по куні&nbsp;/ ImEndy"],
-				image: "18240885872008825754/FCBA8FFB38E5288C1B72D4F11FA59C376C226600",
+				image: "17803687842175509943/0895EC1E351A1D11B9E833F5BE942176A5DBB496",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3647018356",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
-						lang: "англ.", lastUpdate: "2026-05-08"
+						lang: "англ.", lastUpdate: "2026-06-10"
 					}
 				]
 			},
@@ -1459,7 +1495,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2963087258",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1162700576",
-					lang: "рос.", lastUpdate: "2026-04-23"
+					lang: "рос.", lastUpdate: "2026-06-13"
 				},
 				{
 					type: "Transifex",
@@ -2653,12 +2689,12 @@ const databaseCk3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3197478188",
-					lang: "англ.", lastUpdate: "2026-05-27"
+					lang: "англ.", lastUpdate: "2026-06-06"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/75966/Any",
-					lang: "англ.", lastUpdate: "2026-05-27"
+					lang: "англ.", lastUpdate: "2026-06-06"
 				},
 				{
 					type: "Dropbox", old: true,
@@ -2740,17 +2776,17 @@ const databaseV3 = [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3253330121",
-					lang: "англ.", version: "1.12", lastUpdate: "2026-04-12"
+					lang: "англ.", version: "1.13", lastUpdate: "2026-06-03"
 				},
 				{
 					type: "Google Диск",
 					link: "https://drive.google.com/drive/folders/1xVZJcPpfsdSR_h1BUdffZVdBXS36JQDX",
-					lang: "англ.", version: "1.12", lastUpdate: "2026-04-12"
+					lang: "англ.", version: "1.13", lastUpdate: "2026-06-03"
 				}/*,
 				{
 					type: "GitHub",
 					link: "https://github.com/GodOfBurrito/New-Ukrainian-Localization-Victoria-3",
-					lang: "англ.", version: "1.12"
+					lang: "англ.", version: "1.13"
 				}*/
 			],
 			more: "<p class='more-info'>Сюди також включено переклади <i>Victoria Undead: A Zombie Apocalypse Mod</i> та <i>Eastern Europe</i>.</p>"

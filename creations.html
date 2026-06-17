@@ -10,6 +10,8 @@
 	<style type="text/css">
 		:root { --body-width: calc(100% / 1.5); }
 
+		h2 { border-block-end: 1px solid var(--special2); }
+
 		.element { min-height: 260px; margin-block-end: 1em; }
 		.thumbnail {
 			display: block;
@@ -18,6 +20,10 @@
 			margin-right: 0.5em;
 		}
 		.thumbnail.frozen { filter: saturate(0); }
+		.icon {
+			height: 0.8em;
+			margin-inline-end: 0.25em;
+		}
 	</style>
 	<script type="text/javascript" src="shared.js"></script>
 </head>
@@ -26,7 +32,7 @@
 	<h1>Що я створив</h1>
 	<h2>Переклади та локалізації</h2>
 	<div class="element" id="hoi4-uk">
-		<h3><i>Hearts of Iron IV</i>, українська</h3>
+		<h3><img class="icon" src="gfx/game-translation.svg" title="Переклад гри"><i>Hearts of Iron IV</i>, українська</h3>
 		<img src="https://images.steamusercontent.com/ugc/18380407486860492528/65BA9924F974A5539FA3BAD29127DCCABA1B5CB2/" class="thumbnail">
 		<p>розпочато <i>навесні 2021&nbsp;р.</i><br>
 		перекладено <i>90–95%</i><br>
@@ -42,7 +48,7 @@
 			</ul>
 		</div>
 	<div class="element" id="ck2-uk">
-		<h3><i>Crusader Kings II</i>, українська</h3>
+		<h3><img class="icon" src="gfx/game-translation.svg" title="Переклад гри"><i>Crusader Kings II</i>, українська</h3>
 		<img src="https://images.steamusercontent.com/ugc/63708367289923886/318AF978F23D7E95A663AAD1E666521855D5EDED/" class="thumbnail">
 		<p>розпочато <i>24&nbsp;липня 2024&nbsp;р.</i><br>
 		перекладено близько <i>45%</i><br>
@@ -57,7 +63,7 @@
 			</ul>
 		</div>
 	<div class="element" id="hoi4-eaw-uk">
-		<h3><i>Equestria at War</i>, українська</h3>
+		<h3><img class="icon" src="gfx/mod-translation.svg" title="Переклад модифікації"><i>Equestria at War</i>, українська</h3>
 		<img src="https://images.steamusercontent.com/ugc/18059409825619649924/2452D3CEDCF6662EF8A10D0CEE159957974377B9/" class="thumbnail">
 		<p>розпочато близько <i>8&nbsp;липня 2023&nbsp;р.</i><br>
 		оновлено для моду версії <i>2.6.2</i></p>
@@ -70,7 +76,7 @@
 			</ul>
 		</div>
 	<div class="element" id="hoi4-tgwr-uk">
-		<h3><i>The Great War Redux</i>, українська<br><small>(заморожено)</small></h3>
+		<h3><img class="icon" src="gfx/mod-translation.svg" title="Переклад модифікації"><i>The Great War Redux</i>, українська<br><small>(заморожено)</small></h3>
 		<img src="https://images.steamusercontent.com/ugc/17910175392895842952/1FE4EB0E923FF985C56E6B9E8B32F0DF5617232A/" class="thumbnail frozen">
 		<p>розпочато <i>25&nbsp;серпня 2024&nbsp;р.</i><br>
 		оновлено для моду версії <i>1.15.15</i></p>
@@ -85,13 +91,13 @@
 	<div class="element" id="hoi4-minor-uk">
 		<h3>Невеликі моди</h3>
 			<ul><li><a href="https://steamcommunity.com/workshop/filedetails/?id=3119420273">Збірка перекладів дрібних модів<small> (Steam)</small></a></li></ul>
-		<h4>Dynamic Research Slots:</h4>
+			<h4><img class="icon" src="gfx/mod-translation.svg" title="Переклад модифікації">Dynamic Research Slots:</h4>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2908253265">Steam</a></li>
 				<li><a href="https://mods.paradoxplaza.com/mods/55431/Any">Paradox Mods</a></li>
 				<li><a href="https://mega.nz/file/l4BlXKID#5F9mTQPhCrJiOjjdV3gji6yRISJEFtqjwg5BOKbXTUY">MEGA<small> (ZIP)</small></a></li>
 			</ul>
-		<h4>Modifier Icons:</h4>
+			<h4><img class="icon" src="gfx/mod-translation.svg" title="Переклад модифікації">Modifier Icons:</h4>
 			<ul>
 				<li><a href="https://steamcommunity.com/workshop/filedetails/?id=2912150988">Steam</a></li>
 				<li><a href="https://mods.paradoxplaza.com/mods/55746/Any">Paradox Mods</a></li>
@@ -106,14 +112,14 @@
 	</div>
 	<h2>Окремі модифікації</h2>
 	<div class="element" id="hoi4-rcw">
-		<h3><i>Russian Civil War</i><small> для <i>HOI4</i><br>(розробку заморожено)</small></h3>
+		<h3><img class="icon" src="gfx/original-mod.svg" title="Модифікація"><i>Russian Civil War</i><small> для <i>HOI4</i><br>(розробку заморожено)</small></h3>
 		<img src="gfx/rcw.png" class="thumbnail frozen" style="width: 150px;">
 		<p><b>Особистий коментар:</b> Дуже амбіційний проєкт із реалізації громадянської війни в Росії.</p>
 			<p>(демо-версія, ніде не доступна)</p>
 			<!-- <ul><li><a href="https://github.com/Letgal/hoi4_rcw">GitHub</a></li></ul> -->
 		</div>
 	<div class="element" id="hoi4-srr">
-		<h3><i>Rise of the Soviet Republics</i><small> для <i>HOI4</i><br>(розробку покинуто)</small></h3>
+		<h3><img class="icon" src="gfx/original-mod.svg" title="Модифікація"><i>Rise of the Soviet Republics</i><small> для <i>HOI4</i><br>(розробку покинуто)</small></h3>
 		<img src="https://images.steamusercontent.com/ugc/63715342993873572/73C9E4E9288E8847E284663C2087E1940C4D2F5D/" class="thumbnail frozen" style="width: 150px;">
 		<p><b>Особистий коментар:</b> Пробний проєкт для вивчення моддинґу.</p>
 			<ul>
@@ -122,7 +128,7 @@
 			</ul>
 		</div>
 	<div class="element" id="hoi4-cap">
-		<h3><i>Censorship&nbsp;&amp; Propaganda</i><small> для <i>HOI4</i><br>(розробку покинуто)</small></h3>
+		<h3><img class="icon" src="gfx/original-mod.svg" title="Модифікація"><i>Censorship&nbsp;&amp; Propaganda</i><small> для <i>HOI4</i><br>(розробку покинуто)</small></h3>
 		<img src="https://images.steamusercontent.com/ugc/63715342993872667/9457DB449A16C92E7D6C60703C9F247D9E64B889/" class="thumbnail frozen" style="width: 150px;">
 		<p><b>Особистий коментар:</b> Пробний проєкт для вивчення моддинґу.</p>
 			<ul>
@@ -131,7 +137,7 @@
 			</ul>
 		</div>
 	<div class="element" id="hoi4-cap" style="min-height: auto;">
-		<h3><i>Modernism Uprising</i><small> для <i>HOI4</i><br>(розробку покинуто)</small></h3>
+		<h3><img class="icon" src="gfx/original-mod.svg" title="Модифікація"><i>Modernism Uprising</i><small> для <i>HOI4</i><br>(розробку покинуто)</small></h3>
 		<p><b>Особистий коментар:</b> Пробний проєкт для вивчення моддинґу.<br>Не мав єдину ідею, не просунувся далі перших білдів.</p>
 	</div>
 </body>

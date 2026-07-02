@@ -312,27 +312,27 @@ const databaseHoi4 = [
 			{
 			authors: ["Letičan", "Бовкун", "Лицарський хрест", "TTTSHOK"],
 			note: "та <dfn title='Ініціатор, куратор: Letičan\nВнесок зробили (в порядку спадання):\n  &bull; Бовкун\n  &bull; Лицарський хрест\n  &bull; TTTSHOK\n  &bull; Lonster\n  &bull; OlshenUA\n  &bull; Green Kitten\n  &bull; Ner Kun\n  &bull; CodyMaster\n  &bull; Churban\n  &bull; pani_justyna1733\n  &bull; Shrek_UA\n  &bull; Nemejčyk'>інші</dfn>",
-			image: "12158431419187596221/C919B921643551B3F902E7A9F48A583A7291D518",
+			image: "11531103620119857047/1EE0635495A7620703D43640976A25FC8CEAF7DB",
 			links: [
 				{
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2706358548",
-					lang: "англ., рос.", version: "1.19.0", lastUpdate: "2026-06-14"
+					lang: "англ., рос.", version: "1.19.2", lastUpdate: "2026-07-02"
 				},
 				{
 					type: "Paradox Mods",
 					link: "https://mods.paradoxplaza.com/mods/38710/Any",
-					lang: "англ., рос.", version: "1.19.0", lastUpdate: "2026-06-14"
+					lang: "англ., рос.", version: "1.19.2", lastUpdate: "2026-07-02"
 				},
 				{
 					type: "Nexus Mods",
 					link: "https://www.nexusmods.com/heartsofironiv/mods/53",
-					lang: "англ., рос.", version: "1.19.0", lastUpdate: "2026-06-14"
+					lang: "англ., рос.", version: "1.19.2", lastUpdate: "2026-07-02"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ut",
-					version: "1.19.0"
+					version: "1.19.2"
 				},
 				{
 					type: "Google Диск", old: true,
@@ -544,17 +544,17 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3176454246",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=1826643372",
-						lang: "англ., рос.", version: "2.6.2", lastUpdate: "2026-06-14"
+						lang: "англ., рос.", version: "2.6.2.1", lastUpdate: "2026-07-02"
 					},
 					{
 						type: "GitHub",
 						link: "https://github.com/Letgal/hoi4_ut-eaw",
-						version: "2.6.2"
+						version: "2.6.2.1"
 					},
 					{
 						type: "MEGA",
 						link: "https://mega.nz/folder/J7kRGDCK#mc0wPYefGMY36CQ6gM9kmg",
-						lang: "англ., рос.", version: "2.6.2", lastUpdate: "2026-06-14"
+						lang: "англ., рос.", version: "2.6.2.1", lastUpdate: "2026-07-02"
 					}
 				],
 				more: "<p class='more-info'>Включає частковий переклад <i>Diarchy Expanded</i>, <i>Equestria at War Super Events</i> і <i>Equestria at War Super Events [mahorin\'s edition]</i>.</p>"
@@ -586,7 +586,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3596130723",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3467330618",
-					lang: "англ., рос.", lastUpdate: "2026-03-23",
+					lang: "англ., рос.", lastUpdate: "2026-06-3"0,
 				}
 			],
 			more: "<p class='more-info'>Це&nbsp;— переклад <i>Mankind's Valhalla: The New German Order</i>, сабмоду до <i>Equestria at War</i>.</p>"
@@ -620,17 +620,17 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2880535545",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3365515312",
-					lang: "англ., рос.", version: "1.15.15", lastUpdate: "2026-04-23"
+					lang: "англ., рос.", version: "1.15.18", lastUpdate: "2026-07-02"
 				},
 				{
 					type: "MEGA",
 					link: "https://mega.nz/folder/0u9llKQC#6OeVWHhbzXvXrmV2YLmAaw",
-					lang: "англ., рос.", version: "1.15.15", lastUpdate: "2026-04-23"
+					lang: "англ., рос.", version: "1.15.18", lastUpdate: "2026-07-02"
 				},
 				{
 					type: "GitHub",
 					link: "https://github.com/Letgal/hoi4_ul-the_great_war_redux",
-					version: "1.15.15"
+					version: "1.15.18"
 				}
 			]
 		} ]
@@ -992,13 +992,13 @@ const databaseHoi4 = [
 		entries: [
 			{
 				authors: ["#кмс по куні&nbsp;/ ImEndy"],
-				image: "17803687842175509943/0895EC1E351A1D11B9E833F5BE942176A5DBB496",
+				image: "14555982801081910495/F5401664346EC6A94CAAA473ADB46000457B7946",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3647018356",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=820260968",
-						lang: "англ.", lastUpdate: "2026-06-10"
+						lang: "англ.", lastUpdate: "2026-06-24"
 					}
 				]
 			},
@@ -1516,7 +1516,7 @@ const databaseHoi4 = [
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3437387219",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2978206681",
-						lang: "англ.", version: "2.1", lastUpdate: "2026-05-20"
+						lang: "англ.", version: "2.1.1", lastUpdate: "2026-06-18"
 					}
 				]
 			},
@@ -1573,22 +1573,6 @@ const databaseHoi4 = [
 	},
 	{
 		category: 2, updateCat: "pre-25",
-		mod: "Ireland Expanded",
-		entries: [ {
-			authors: ["nonzoron"],
-			image: "2047490891216696224/D4E73A54FA0D16981C21D1E7C9F9D2B6E7CC9729",
-			links: [
-				{
-					type: "Steam",
-					link: "https://steamcommunity.com/workshop/filedetails/?id=2964049988",
-					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2788553865",
-					lang: "англ., рос.", lastUpdate: "2023-04-18"
-				}
-			]
-		} ]
-	},
-	{
-		category: 2, updateCat: "pre-25",
 		mod: "Iran Glory Beta",
 		entries: [ {
 			authors: ["TTTSHOK"],
@@ -1599,6 +1583,38 @@ const databaseHoi4 = [
 					link: "https://steamcommunity.com/workshop/filedetails/?id=2915440311",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2950975976",
 					lang: "англ.", lastUpdate: "2023-01-09"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
+		mod: "1936 Lithuania - Legacy Edition",
+		entries: [ {
+			authors: ["InKviZ"],
+			image: "13133482393099276698/DFF0CBCC0EB1C3D084E1961D1D3E4FB902A1F069",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3730279842",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3099630185",
+					lang: "англ.", lastUpdate: "2026-06-20"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2, updateCat: "pre-25",
+		mod: "Ireland Expanded",
+		entries: [ {
+			authors: ["nonzoron"],
+			image: "2047490891216696224/D4E73A54FA0D16981C21D1E7C9F9D2B6E7CC9729",
+			links: [
+				{
+					type: "Steam", old: true,
+					link: "https://steamcommunity.com/workshop/filedetails/?id=2964049988",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2788553865",
+					lang: "англ., рос.", lastUpdate: "2023-04-18"
 				}
 			]
 		} ]
@@ -1684,6 +1700,54 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
+		category: 2,
+		mod: "Shanghai: Eve of the Solitary Island",
+		entries: [ {
+			authors: ["InKviZ"],
+			image: "12759480741544137371/DACE681995764E3E435B5C4173007FCE00290C08",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3683162994",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3665980962",
+					lang: "англ.", lastUpdate: "2026-06-20"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
+		mod: "Lion and Tiger in Solitude",
+		entries: [ {
+			authors: ["InKviZ"],
+			image: "9312814403718651953/F0424EC405D119813F472671A666BFC98CAEF328",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3679874164",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3617148337",
+					lang: "англ.", lastUpdate: "2026-06-23"
+				}
+			]
+		} ]
+	},
+	{
+		category: 2,
+		mod: "Formosa: Taiwan",
+		entries: [ {
+			authors: ["InKviZ"],
+			image: "15428194419330683987/A48DA7EBBB9C045AFE2D51BEC84134FE8DF52A1C",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3700456069",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3651149071",
+					lang: "англ.", lastUpdate: "2026-06-20"
+				}
+			]
+		} ]
+	},
+	{
 		category: 2, official: true,
 		mod: "Generic Focus Tree: Redux",
 		entries: [ {
@@ -1694,7 +1758,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3597454982",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3596666948",
-					/*lang: "англ.",*/ lastUpdate: "2026-05-04"
+					/*lang: "англ.",*/ lastUpdate: "2026-07-02"
 				}
 			]
 		} ]
@@ -2556,6 +2620,22 @@ const databaseHoi4 = [
 		} ]
 	},
 	{
+		category: 4,
+		mod: "Capital Changer", updateCat: "pre-26",
+		entries: [ {
+			authors: ["IvanChyk59"],
+			image: "46833816906602059/82515413EE00591ACF98AD35AF595B09902443D3",
+			links: [
+				{
+					type: "Steam",
+					link: "https://steamcommunity.com/workshop/filedetails/?id=3470192547",
+					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3003573353",
+					lang: "англ., рос.", lastUpdate: "2025-04-25"
+				}
+			]
+		} ]
+	},
+	{
 		category: 4, updateCat: "pre-26",
 		mod: "Decisions to buy Greenland and Canada",
 		entries: [ {
@@ -2652,7 +2732,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	}
-	/*додати Capital Changer, Better Mechanics: Extended Projects, Formosa: Taiwan, Shanghai: Eve of the Solitary Island, Lion and Tiger in Solitude*/
+	// додати: Житомирщина https://steamcommunity.com/workshop/filedetails/?id=3755228443
 ]
 const databaseIr = [
 	{

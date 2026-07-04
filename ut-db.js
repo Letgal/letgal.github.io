@@ -339,7 +339,7 @@ const databaseHoi4 = [
 					link: "https://drive.google.com/drive/folders/1WUlGCMrhzVBBZNRPZJafIfQWQdjwqmjd",
 					lang: "англ., рос.", version: "1.17.4", lastUpdate: "2026-02-23"
 				}
-			],
+			]
 			},
 			{
 				authors: ["Letičan"],
@@ -515,7 +515,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	},
-	{
+	/*{
 		category: 1,
 		mod: "East Coast Rebirth",
 		entries: [ {
@@ -530,7 +530,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 1,
 		mod: "Equestria at War",
@@ -557,18 +557,18 @@ const databaseHoi4 = [
 						lang: "англ., рос.", version: "2.6.2.1", lastUpdate: "2026-07-02"
 					}
 				],
-				more: "<p class='more-info'>Включає частковий переклад <i>Diarchy Expanded</i>, <i>Equestria at War Super Events</i> і <i>Equestria at War Super Events [mahorin\'s edition]</i>.</p>"
+				more: "<p class='more-info'>Включає частковий переклад <i>Diarchy Expanded</i>, <i>Equestria at War Super Events</i> і <i>Equestria at War Super Events [mahorin's edition]</i>.</p>"
 			},
 			{
 				authors: ["Green Kitten"],
-				note: "<dfn title='З допомогою від Letičan (технічне налагодження, шрифти)'>�</dfn>",
+				note: "<dfn title='З допомогою від Letičan (технічне налагодження, шрифти)'>&#65533;</dfn>",
 				image: "2384179827567248601/1F8F16C168AA22A53B029F3EAA0C6ADBC3DB608E",
 				links: [
 					{
 						type: "Steam",
 						link: "https://steamcommunity.com/workshop/filedetails/?id=3315940642",
 						linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=2335819732",
-						lang: "англ.", lastUpdate: "2024-10-17",
+						lang: "англ.", lastUpdate: "2024-10-17"
 					}
 				],
 				more: "<p class='more-info'>Це&nbsp;— переклад <i>Equestria at War Super Events</i>, сабмоду до <i>Equestria at War</i>.</p>"
@@ -586,7 +586,7 @@ const databaseHoi4 = [
 					type: "Steam",
 					link: "https://steamcommunity.com/workshop/filedetails/?id=3596130723",
 					linkOriginal: "https://steamcommunity.com/workshop/filedetails/?id=3467330618",
-					lang: "англ., рос.", lastUpdate: "2026-06-3"0,
+					lang: "англ., рос.", lastUpdate: "2026-06-30"
 				}
 			],
 			more: "<p class='more-info'>Це&nbsp;— переклад <i>Mankind's Valhalla: The New German Order</i>, сабмоду до <i>Equestria at War</i>.</p>"
@@ -878,7 +878,7 @@ const databaseHoi4 = [
 		category: 1,
 		mod: "The East Crisis",
 		entries: [ {
-			authors: ["wenyangat"], note: "<dfn title='Мод порожній'>�</dfn>",
+			authors: ["wenyangat"], note: "<dfn title='Мод порожній'>&#65533;</dfn>",
 			image: "1793018961918301662/251D1EC898894FE408C9755AC0CE0873A6E6BCCE",
 			links: [
 				{
@@ -942,7 +942,7 @@ const databaseHoi4 = [
 		mod: "hoi4 irl",
 		entries: [ {
 			authors: ["Green Kitten"],
-			note: "<dfn title='З допомогою від Letičan (технічне налагодження)'>�</dfn>",
+			note: "<dfn title='З допомогою від Letičan (технічне налагодження)'>&#65533;</dfn>",
 			image: "2398817794632762374/65283B1BE0A546E60D76A1CC02C6F6577FA43234",
 			links: [
 				{
@@ -1521,7 +1521,7 @@ const databaseHoi4 = [
 				]
 			},
 			{
-				authors: ["def", "Godresky", "alex"], note: "<dfn title='Подяки від авторів:\n  &bull; Illuhmanka\n  &bull; Molfar'>�</dfn>",
+				authors: ["def", "Godresky", "alex"], note: "<dfn title='Подяки від авторів:\n  &bull; Illuhmanka\n  &bull; Molfar'>&#65533;</dfn>",
 				image: "2260308645835966035/7AD7FE313969D61DAE43B7D37673BDA503E57D28",
 				links: [
 					{
@@ -2226,7 +2226,7 @@ const databaseHoi4 = [
 			]
 		} ]
 	},*/
-	{
+	/*{
 		category: 3, updateCat: "pre-25",
 		mod: "Dissolved Germany",
 		entries: [ {
@@ -2241,7 +2241,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 4, updateCat: "pre-25",
 		mod: "Toolpack 1.12",
@@ -2296,7 +2296,7 @@ const databaseHoi4 = [
 		mod: "Better Laws and Policies",
 		entries: [ {
 			authors: ["Green Kitten"],
-			note: "<dfn title='З допомогою від Letičan (технічне налагодження)'>�</dfn>",
+			note: "<dfn title='З допомогою від Letičan (технічне налагодження)'>&#65533;</dfn>",
 			image: "2398817794634846197/29A4F1DD9B3F5A51A672E12550A2CDAF7ACC7C03",
 			links: [
 				{
@@ -2554,7 +2554,7 @@ const databaseHoi4 = [
 			more: "<p class='more-info'><i>Примітка:</i> Інший переклад уже включений у <a onclick='closeModDetails(); openModDetails(databaseHoi4, 0)'>набір дрібних перекладів</a>.</p>"
 		} ]
 	},
-	{
+	/*{
 		category: 4, updateCat: "pre-25",
 		mod: "Annex Subjects",
 		entries: [ {
@@ -2569,7 +2569,7 @@ const databaseHoi4 = [
 				}
 			]
 		} ]
-	},
+	},*/
 	{
 		category: 4, updateCat: "pre-25",
 		mod: "Demand It!",
@@ -2671,7 +2671,7 @@ const databaseHoi4 = [
 		category: 4,
 		mod: "Recall Volunteers (> Not Monika Plus)",
 		entries: [ {
-			authors: ["Ner Kun"], note: "<dfn title='Текст не перекладений'>�</dfn>",
+			authors: ["Ner Kun"], note: "<dfn title='Текст не перекладений'>&#65533;</dfn>",
 			image: "5104298832183720190/96E819FE7014AC645AFF2CBA092601DC6D0A8BC8",
 			links: [
 				{
@@ -2850,7 +2850,7 @@ const databaseV3 = [
 		category: 0,
 		mod: "Victoria 3",
 		entries: [ {
-			authors: ["godofburrito"], note: "<dfn title='З допомогою від Nemejčyk'>�</dfn>",
+			authors: ["godofburrito"], note: "<dfn title='З допомогою від Nemejčyk'>&#65533;</dfn>",
 			image: "19802256781477905/48ECE259EBD1668488C89DFD434CFB231874A92C",
 			links: [
 				{
